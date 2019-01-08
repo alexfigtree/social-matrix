@@ -2,6 +2,7 @@ body {
 	text-align:center;
 	font-family: Arial, Serif;
 	overflow: hidden;
+	overflow-y: auto;
 	/*margin: 0;*/
     /*font-size: 14px;*/
   	/*font-family: "Helvetica Neue", Helvetica;*/
@@ -10,5 +11,11 @@ body {
 #chart {
   position: absolute;
   top: 100px;
+  left: 100px;
+} 
+
+#chart2 {
+  position: absolute;
+  top: 750px;
   left: 100px;
 } 
