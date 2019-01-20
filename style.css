@@ -16,6 +16,15 @@ body {
 
 #chart2 {
   position: absolute;
-  top: 750px;
+  top: 950px;
   left: 100px;
 } 
+
+.tooltip {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  color: green;
+  background-color: yellow;
+  display: block;
+}

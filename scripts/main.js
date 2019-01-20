@@ -3,8 +3,8 @@ define([], function () {
     return ['data1']; // Array of module names
 });
 
-var w = 800,
-	h = 500;
+var w = 900,
+	h = 600;
 
 var colorscale = d3.scale.category10();
 

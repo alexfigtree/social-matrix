@@ -39,7 +39,7 @@ var RadarChart = {
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
-	var Format = d3.format('%');
+	var Format = d3.format("");
 	d3.select(id).select("svg").remove();
 	
 	var padding = {top: 30, right: 0, bottom: 0, left: 100};
@@ -54,8 +54,9 @@ var RadarChart = {
 			;
 
 	var tooltip;
-	
+
 	//Circular segments
+	console.log('cgf', cfg);
 	for(var j=0; j<cfg.levels-1; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
 	  g.selectAll(".levels")
@@ -118,7 +119,32 @@ var RadarChart = {
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
- 
+ 	console.log('axis', axis);
+ 	
+ 	function wrap(text) {
+	  text.each(function() {
+	    var text = d3.select(this),
+	        words = text.text().split(/\s+/).reverse(),
+	        word,
+	        line = [],
+	        lineNumber = 0,
+	        lineHeight = 1.1, // ems
+	        y = text.attr("y"),
+	        dy = parseFloat(text.attr("dy")),
+	        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+	    while (word = words.pop()) {
+	      line.push(word);
+	      tspan.text(line.join(" "));
+	      if (tspan.node().getComputedTextLength() > 100) {
+	        line.pop();
+	        tspan.text(line.join(" "));
+	        line = [word];
+	        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+	      }
+	    }
+	  });
+	}
+
 	d.forEach(function(y, x){
 	  dataValues = [];
 	  g.selectAll(".nodes")
@@ -190,7 +216,8 @@ var RadarChart = {
 					tooltip
 						.attr('x', newX)
 						.attr('y', newY)
-						.text(Format(d.value))
+						.attr('class', 'tooltip') 
+						.text(d.axis)
 						.transition(200)
 						.style('opacity', 1);
 						
@@ -216,9 +243,11 @@ var RadarChart = {
 	  series++;
 	});
 	//Tooltip
-	tooltip = g.append('text')
-			   .style('opacity', 0)
+	tooltip = g.append('text')	
+			   .style('opacity', 1)
 			   .style('font-family', 'sans-serif')
-			   .style('font-size', '13px');
+			   .style('display', 'block')
+			   .style('fill', 'blue')
+			   .style('font-size', '16px');
   }
 };
