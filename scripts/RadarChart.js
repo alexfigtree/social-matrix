@@ -25,7 +25,8 @@ var RadarChart = {
 	 TranslateY: 30,
 	 ExtraWidthX: 100,
 	 ExtraWidthY: 100,
-	 color: d3.scale.category10()
+	 color: d3.scale.category10(),
+	 wrapWidth: 80
 	};
 	
 	if('undefined' !== typeof options){
@@ -37,6 +38,7 @@ var RadarChart = {
 	}
 	cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
+	console.log('allaxis', allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	var Format = d3.format("");
@@ -117,33 +119,42 @@ var RadarChart = {
 		.attr("dy", "1.5em")
 		.attr("transform", function(d, i){return "translate(0, -10)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
-		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
-
- 	console.log('axis', axis);
+		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);})
+		.call(wrap, cfg.wrapWidth);
  	
- 	function wrap(text) {
+ 	console.log('axis', axis[0]);
+ 	
+ 	//console.log('axis[0][0]', axis[0][0].textContent.length);
+ 	
+ 	//wrap(axis[0][0].textContent, 15);
+
+ 	//Taken from http://bl.ocks.org/mbostock/7555321
+	//Wraps SVG text	
+	function wrap(text, width) {
 	  text.each(function() {
-	    var text = d3.select(this),
-	        words = text.text().split(/\s+/).reverse(),
-	        word,
-	        line = [],
-	        lineNumber = 0,
-	        lineHeight = 1.1, // ems
-	        y = text.attr("y"),
-	        dy = parseFloat(text.attr("dy")),
-	        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-	    while (word = words.pop()) {
-	      line.push(word);
-	      tspan.text(line.join(" "));
-	      if (tspan.node().getComputedTextLength() > 100) {
-	        line.pop();
-	        tspan.text(line.join(" "));
-	        line = [word];
-	        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-	      }
-	    }
+		var text = d3.select(this),
+			words = text.text().split(/\s+/).reverse(),
+			word,
+			line = [],
+			lineNumber = 0,
+			lineHeight = 1.4, // ems
+			y = text.attr("y"),
+			x = text.attr("x"),
+			dy = parseFloat(text.attr("dy")),
+			tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+			
+		while (word = words.pop()) {
+		  line.push(word);
+		  tspan.text(line.join(" "));
+		  if (tspan.node().getComputedTextLength() > width) {
+			line.pop();
+			tspan.text(line.join(" "));
+			line = [word];
+			tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+		  }
+		}
 	  });
-	}
+	}//wrap
 
 	d.forEach(function(y, x){
 	  dataValues = [];
@@ -250,4 +261,5 @@ var RadarChart = {
 			   .style('fill', 'blue')
 			   .style('font-size', '16px');
   }
+
 };
