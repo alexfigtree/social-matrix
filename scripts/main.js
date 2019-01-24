@@ -3,7 +3,7 @@ define([], function () {
     return ['data1']; // Array of module names
 });
 
-var w = 900,
+var w = 600,
 	h = 600;
 
 var colorscale = d3.scale.category10();
@@ -17,7 +17,7 @@ var d = data1;
 var mycfg = {
   w: w,
   h: h,
-  maxValue: 0.6,
+  maxValue: 6,
   levels: 7,
   ExtraWidthX: 300
 }

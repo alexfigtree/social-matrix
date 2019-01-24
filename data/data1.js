@@ -1,6 +1,6 @@
 var data1 = [
   [
-    {axis:"Educ. Level",value:6},
+    {axis:"Educ. Level",value:7},
     {axis:"Blank domain",value:2},
     {axis:"Sex",value:3},
     {axis:"Gender Expression",value:3},
@@ -10,7 +10,7 @@ var data1 = [
     {axis:"Marital status",value:5},
     {axis:"Parental status",value:2},
     {axis:"Unique history",value:2},
-    {axis:"Age",value:3},
+    {axis:"Age",value:7},
     {axis:"Appearance",value:4},
     {axis:"Health/ability",value:5},
 
@@ -22,17 +22,17 @@ var data1 = [
 
     {axis:"Impact of historical times",value:1},
     {axis:"Geo. Region",value:1},
-    {axis:"Politics",value:4},
+    {axis:"Politics",value:7},
     {axis:"Chosen Religion",value:4},
     {axis:"Family religion",value:1},
     {axis:"Language(s) Spoken",value:1},
     {axis:"# Generations in country",value:2},
     {axis:"Citizenship status",value:1},
-    {axis:"Ethnicity(its)",value:5},
+    {axis:"Ethnicity(its)",value:7},
     {axis:"Race(s)",value:1},
 
     {axis:"Guardians’ access",value:1},
-    {axis:"Access: Resources, Info, Influence",value:2},
+    {axis:"Access: Resources, Info, Influence",value:7},
     {axis:"Guardians’ marit. status",value:3},
     {axis:"Raised by",value:5},
     {axis:"Guardian’s childhood income",value:2},
