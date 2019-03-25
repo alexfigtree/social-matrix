@@ -15,7 +15,7 @@ var RadarChart = {
 	 w: 600,
 	 h: 600,
 	 factor: 1,
-	 factorLegend: .85,
+	 factorLegend: .95,
 	 levels: 3,
 	 maxValue: 0,
 	 radians: 2 * Math.PI,
@@ -180,7 +180,7 @@ var RadarChart = {
 		.style("font-family", "sans-serif")
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
-		.attr("dy", "1.5em")
+		.attr("dy", "1.2em")
 		.attr("transform", function(d, i){return "translate(0, -10)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);})
