@@ -11,13 +11,13 @@ body {
 #chart {
   position: absolute;
   top: 100px;
-  left: 100px;
+  left: 10%;
 } 
 
 #chart2 {
   position: absolute;
-  top: 950px;
-  left: 100px;
+  top: 880px;
+  left: 10%;
 } 
 
 .tooltip {

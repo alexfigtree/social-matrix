@@ -32,7 +32,7 @@ var data1 = [
     {axis:"Race(s)",value:1},
 
     {axis:"Guardians’ access",value:1},
-    {axis:"Access: Resources, Info, Influence",value:7},
+    {axis:"Access",value:7},
     {axis:"Guardians’ marit. status",value:3},
     {axis:"Raised by",value:5},
     {axis:"Guardian’s childhood income",value:2},
@@ -74,7 +74,7 @@ var data1 = [
     {axis:"Race(s)",value:1},
 
     {axis:"Guardians’ access",value:1},
-    {axis:"Access: Resources, Info, Influence",value:4},
+    {axis:"Access",value:4},
     {axis:"Guardians’ marit. status",value:5},
     {axis:"Raised by",value:5},
     {axis:"Guardian’s childhood income",value:7},
