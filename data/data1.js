@@ -15,7 +15,7 @@ var data1 = [
     {axis:"Health/ability",value:5},
 
     {axis:"Cognitive ability/style",value:2},
-    {axis:"Mental health/subst. abuse",value:5},
+    {axis:"MH/subst. abuse",value:5},
     {axis:"Relation to MH system",value:5},
     {axis:"Relation to legal system",value:3},
     {axis:"Relation to military",value:4},
@@ -57,7 +57,7 @@ var data1 = [
     {axis:"Health/ability",value:4},
 
     {axis:"Cognitive ability/style",value:2},
-    {axis:"Mental health/subst. abuse",value:5},
+    {axis:"MH/subst. abuse",value:5},
     {axis:"Relation to MH system",value:5},
     {axis:"Relation to legal system",value:3},
     {axis:"Relation to military",value:4},
