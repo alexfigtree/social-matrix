@@ -10,13 +10,13 @@ body {
 
 #chart {
   position: absolute;
-  top: 100px;
+  margin-top: 20px;
   left: 10%;
 } 
 
 #chart2 {
   position: absolute;
-  top: 880px;
+  margin-top: 760px;
   left: 10%;
 } 
 
@@ -27,4 +27,20 @@ body {
   color: green;
   background-color: yellow;
   display: block;
+}
+
+.person {
+  height: 1500px;
+}
+
+.footnotes{
+  margin-top: 1450px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 12px;
+}
+.footnotes-header{
+  font-weight: 600;
+  font-size: 16px;
 }
