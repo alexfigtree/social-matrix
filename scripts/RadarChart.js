@@ -38,7 +38,7 @@ var RadarChart = {
 	}
 	cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
-	console.log('allaxis', allAxis);
+	//console.log('allaxis', allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	var Format = d3.format("");
@@ -58,7 +58,7 @@ var RadarChart = {
 	var tooltip;
 
 	//Circular segments
-	console.log('cgf', cfg);
+	//console.log('cgf', cfg);
 	for(var j=0; j<cfg.levels-1; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
 	  g.selectAll(".levels")
@@ -118,7 +118,7 @@ var RadarChart = {
 	//Text indicating at what % each level is: 6:00
 	for(var j=0; j<cfg.levels; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
-	  console.log("level facort 2", levelFactor);
+	  //console.log("level facort 2", levelFactor);
 	  g.selectAll(".levels")
 	   .data([1]) //dummy data
 	   .enter()
@@ -150,13 +150,13 @@ var RadarChart = {
 	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
 	}
 
-	console.log('cfg.w', cfg.w);
+/*	console.log('cfg.w', cfg.w);
 	console.log('levelFactor', levelFactor);
 	console.log('cfg.ToRight', cfg.ToRight);
 	console.log('cfg.h', cfg.h);
 
 	console.log('cfg.w/2-levelFactor + cfg.ToRight', cfg.w/2-levelFactor + cfg.ToRight);
-	console.log('cfg.h/2-levelFactor', cfg.h/2-levelFactor);
+	console.log('cfg.h/2-levelFactor', cfg.h/2-levelFactor);*/
 	series = 0;
 
 	var axis = g.selectAll(".axis")
@@ -186,7 +186,7 @@ var RadarChart = {
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);})
 		.call(wrap, cfg.wrapWidth);
  	
- 	console.log('axis', axis[0]);
+ 	//console.log('axis', axis[0]);
  	
  	//console.log('axis[0][0]', axis[0][0].textContent.length);
  	

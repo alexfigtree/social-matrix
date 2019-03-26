@@ -1,6 +1,6 @@
 body {
-	text-align:center;
-	font-family: Arial, Serif;
+  text-align:center;
+  font-family: Arial, Serif;
 	overflow: hidden;
 	overflow-y: auto;
 	/*margin: 0;*/
@@ -30,11 +30,22 @@ body {
 }
 
 .person {
-  height: 1500px;
+  height: 1600px;
 }
 
+.after-one {
+  margin-left: -11%;
+}
+
+.matrix-header {
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.matrix-header-bottom {
+  margin-bottom: 20px;
+}
 .footnotes{
-  margin-top: 1450px;
+  margin-top: 1500px;
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
@@ -43,4 +54,8 @@ body {
 .footnotes-header{
   font-weight: 600;
   font-size: 16px;
+}
+.footnotes-bottom{
+  text-align: left;
+  margin-left: 28%;
 }
