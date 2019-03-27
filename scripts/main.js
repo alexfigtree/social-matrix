@@ -19,7 +19,7 @@ console.log('try slcings', d.slice(1, 2));
 var mycfg = {
   w: w,
   h: h,
-  maxValue: 6,
+  maxValue: 7,
   levels: 7,
   ExtraWidthX: 300
 }
