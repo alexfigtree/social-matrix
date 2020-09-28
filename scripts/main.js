@@ -1,6 +1,6 @@
 
 define([], function () {
-    return ['data1']; // Array of module names
+    return ['data2']; // Array of module names
 });
 
 var w = 600,
@@ -12,7 +12,7 @@ var colorscale = d3.scale.category10();
 var LegendOptions = ['Before','After'];
 
 //All Subject data
-var d = data1;
+var d = data2;
 console.log('try slcings', d.slice(1, 2));
 
 //Options for the Radar chart, other than default
