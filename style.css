@@ -8,17 +8,17 @@ body {
   	/*font-family: "Helvetica Neue", Helvetica;*/
 }
 
-#chart {
-  position: absolute;
+#chart, #chart2, #chart3, #chart4, #chart5, #chart6, #chart7, #chart8 {
+  /*position: absolute;*/
   margin-top: 20px;
   left: 10%;
 } 
-
+/*
 #chart2 {
   position: absolute;
   margin-top: 760px;
   left: 10%;
-} 
+} */
 
 .tooltip {
   position: absolute;
