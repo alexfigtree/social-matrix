@@ -3,22 +3,17 @@ body {
   font-family: Arial, Serif;
 	overflow: hidden;
 	overflow-y: auto;
-	/*margin: 0;*/
-    /*font-size: 14px;*/
-  	/*font-family: "Helvetica Neue", Helvetica;*/
 }
 
 #chart, #chart2, #chart3, #chart4, #chart5, #chart6, #chart7, #chart8 {
-  /*position: absolute;*/
   margin-top: 20px;
-  left: 10%;
+  left: 0;
+  margin-left: -5%;
 } 
-/*
-#chart2 {
-  position: absolute;
-  margin-top: 760px;
-  left: 10%;
-} */
+
+.after-one {
+  margin-left: 5%;
+}
 
 .tooltip {
   position: absolute;
@@ -29,14 +24,6 @@ body {
   display: block;
 }
 
-.person {
-  height: 1600px;
-}
-
-.after-one {
-  margin-left: -11%;
-}
-
 .matrix-header {
   margin-left: 5%;
   margin-bottom: 20px;
@@ -45,7 +32,7 @@ body {
   margin-bottom: 20px;
 }
 .footnotes{
-  margin-top: 1500px;
+/*  margin-top: 1500px;*/
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
@@ -58,4 +45,9 @@ body {
 .footnotes-bottom{
   text-align: left;
   margin-left: 28%;
+}
+
+.footnotes-bottom-after-one{
+  text-align: left;
+  margin-left: 24%;
 }
