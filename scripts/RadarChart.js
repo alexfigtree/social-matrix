@@ -12,10 +12,10 @@ var RadarChart = {
   draw: function(id, d, options){
   var cfg = {
 	 radius: 5,
-	 w: 1200,
+	 w: 600,
 	 h: 600,
 	 factor: 1,
-	 factorLegend: .85,
+	 factorLegend: .95,
 	 levels: 3,
 	 maxValue: 0,
 	 radians: 2 * Math.PI,
@@ -25,7 +25,8 @@ var RadarChart = {
 	 TranslateY: 30,
 	 ExtraWidthX: 100,
 	 ExtraWidthY: 100,
-	 color: d3.scale.category10()
+	 color: d3.scale.category10(),
+	 wrapWidth: 80
 	};
 	
 	if('undefined' !== typeof options){
@@ -37,6 +38,7 @@ var RadarChart = {
 	}
 	cfg.maxValue = Math.max(cfg.maxValue, d3.max(d, function(i){return d3.max(i.map(function(o){return o.value;}))}));
 	var allAxis = (d[0].map(function(i, j){return i.axis}));
+	//console.log('allaxis', allAxis);
 	var total = allAxis.length;
 	var radius = cfg.factor*Math.min(cfg.w/2, cfg.h/2);
 	var Format = d3.format("");
@@ -56,7 +58,7 @@ var RadarChart = {
 	var tooltip;
 
 	//Circular segments
-	console.log('cgf', cfg);
+	//console.log('cgf', cfg);
 	for(var j=0; j<cfg.levels-1; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
 	  g.selectAll(".levels")
@@ -74,7 +76,7 @@ var RadarChart = {
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor) + ", " + (cfg.h/2-levelFactor) + ")");
 	}
 
-	//Text indicating at what % each level is
+	//Text indicating at what % each level is: 12:00
 	for(var j=0; j<cfg.levels; j++){
 	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
 	  g.selectAll(".levels")
@@ -86,11 +88,75 @@ var RadarChart = {
 	   .attr("class", "legend")
 	   .style("font-family", "sans-serif")
 	   .style("font-size", "10px")
+	   //.attr("transform", "translate(255, 190)")
 	   .attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (cfg.h/2-levelFactor) + ")")
+	   
+	   //.attr("transform", "translate(" + (cfg.w/2-levelFactor + cfg.ToRight) + ", " + (90) + ")")
+	   //.attr("transform", "translate(90,0)")
 	   .attr("fill", "#737373")
 	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
 	}
-	
+
+	//Text indicating at what % each level is: 3:00
+	for(var j=0; j<cfg.levels; j++){
+	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
+	  g.selectAll(".levels")
+	   .data([1]) //dummy data
+	   .enter()
+	   .append("svg:text")
+	   .attr("x", function(d){return levelFactor*(1-cfg.factor*Math.sin(0));})
+	   .attr("y", function(d){return levelFactor*(1.01-cfg.factor*Math.cos(0));})
+	   .attr("class", "legend")
+	   .style("font-family", "sans-serif")
+	   .style("font-size", "10px")
+	   .attr("transform", "translate(300, 300)")
+	   .attr("fill", "#737373")
+	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
+	}
+
+
+	//Text indicating at what % each level is: 6:00
+	for(var j=0; j<cfg.levels; j++){
+	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
+	  //console.log("level facort 2", levelFactor);
+	  g.selectAll(".levels")
+	   .data([1]) //dummy data
+	   .enter()
+	   .append("svg:text")
+	   .attr("x", function(d){return levelFactor*(0.9-cfg.factor*Math.sin(90));})
+	   .attr("y", function(d){return levelFactor*(0.95-cfg.factor*Math.cos(165));})
+	   .attr("class", "legend")
+	   .style("font-family", "sans-serif")
+	   .style("font-size", "10px")
+	   .attr("transform", "translate(300, 300)")
+	   .attr("fill", "#737373")
+	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
+	}
+
+	//Text indicating at what % each level is: 9:00
+	for(var j=0; j<cfg.levels; j++){
+	  var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
+	  g.selectAll(".levels")
+	   .data([1]) //dummy data
+	   .enter()
+	   .append("svg:text")
+	   .attr("x", function(d){return levelFactor*(-0.15-cfg.factor*Math.sin(89));})
+	   .attr("y", function(d){return levelFactor*(-0.05-cfg.factor*Math.cos(165));})
+	   .attr("class", "legend")
+	   .style("font-family", "sans-serif")
+	   .style("font-size", "10px")
+	   .attr("transform", "translate(300, 300)")
+	   .attr("fill", "#737373")
+	   .text(Format((j+1)*cfg.maxValue/cfg.levels));
+	}
+
+/*	console.log('cfg.w', cfg.w);
+	console.log('levelFactor', levelFactor);
+	console.log('cfg.ToRight', cfg.ToRight);
+	console.log('cfg.h', cfg.h);
+
+	console.log('cfg.w/2-levelFactor + cfg.ToRight', cfg.w/2-levelFactor + cfg.ToRight);
+	console.log('cfg.h/2-levelFactor', cfg.h/2-levelFactor);*/
 	series = 0;
 
 	var axis = g.selectAll(".axis")
@@ -114,36 +180,45 @@ var RadarChart = {
 		.style("font-family", "sans-serif")
 		.style("font-size", "11px")
 		.attr("text-anchor", "middle")
-		.attr("dy", "1.5em")
+		.attr("dy", "1.2em")
 		.attr("transform", function(d, i){return "translate(0, -10)"})
 		.attr("x", function(d, i){return cfg.w/2*(1-cfg.factorLegend*Math.sin(i*cfg.radians/total))-60*Math.sin(i*cfg.radians/total);})
-		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
-
- 	console.log('axis', axis);
+		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);})
+		.call(wrap, cfg.wrapWidth);
  	
- 	function wrap(text) {
+ 	//console.log('axis', axis[0]);
+ 	
+ 	//console.log('axis[0][0]', axis[0][0].textContent.length);
+ 	
+ 	//wrap(axis[0][0].textContent, 15);
+
+ 	//Taken from http://bl.ocks.org/mbostock/7555321
+	//Wraps SVG text	
+	function wrap(text, width) {
 	  text.each(function() {
-	    var text = d3.select(this),
-	        words = text.text().split(/\s+/).reverse(),
-	        word,
-	        line = [],
-	        lineNumber = 0,
-	        lineHeight = 1.1, // ems
-	        y = text.attr("y"),
-	        dy = parseFloat(text.attr("dy")),
-	        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-	    while (word = words.pop()) {
-	      line.push(word);
-	      tspan.text(line.join(" "));
-	      if (tspan.node().getComputedTextLength() > 100) {
-	        line.pop();
-	        tspan.text(line.join(" "));
-	        line = [word];
-	        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-	      }
-	    }
+		var text = d3.select(this),
+			words = text.text().split(/\s+/).reverse(),
+			word,
+			line = [],
+			lineNumber = 0,
+			lineHeight = 1.4, // ems
+			y = text.attr("y"),
+			x = text.attr("x"),
+			dy = parseFloat(text.attr("dy")),
+			tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+			
+		while (word = words.pop()) {
+		  line.push(word);
+		  tspan.text(line.join(" "));
+		  if (tspan.node().getComputedTextLength() > width) {
+			line.pop();
+			tspan.text(line.join(" "));
+			line = [word];
+			tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+		  }
+		}
 	  });
-	}
+	}//wrap
 
 	d.forEach(function(y, x){
 	  dataValues = [];
@@ -250,4 +325,5 @@ var RadarChart = {
 			   .style('fill', 'blue')
 			   .style('font-size', '16px');
   }
+
 };

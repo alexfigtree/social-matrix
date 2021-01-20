@@ -1,24 +1,19 @@
 body {
-	text-align:center;
-	font-family: Arial, Serif;
+  text-align:center;
+  font-family: Arial, Serif;
 	overflow: hidden;
 	overflow-y: auto;
-	/*margin: 0;*/
-    /*font-size: 14px;*/
-  	/*font-family: "Helvetica Neue", Helvetica;*/
 }
 
-#chart {
-  position: absolute;
-  top: 100px;
-  left: 100px;
+#chart, #chart2, #chart3, #chart4, #chart5, #chart6, #chart7, #chart8 {
+  margin-top: 20px;
+  left: 0;
+  margin-left: -5%;
 } 
 
-#chart2 {
-  position: absolute;
-  top: 950px;
-  left: 100px;
-} 
+.after-one {
+  margin-left: 5%;
+}
 
 .tooltip {
   position: absolute;
@@ -27,4 +22,32 @@ body {
   color: green;
   background-color: yellow;
   display: block;
+}
+
+.matrix-header {
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.matrix-header-bottom {
+  margin-bottom: 20px;
+}
+.footnotes{
+/*  margin-top: 1500px;*/
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 12px;
+}
+.footnotes-header{
+  font-weight: 600;
+  font-size: 16px;
+}
+.footnotes-bottom{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.footnotes-bottom-after-one{
+  text-align: left;
+  margin-left: 6%;
 }
