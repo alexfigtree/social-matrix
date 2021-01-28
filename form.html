@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Social Matrix Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script data-main="scripts/bootstrap.bundle.min.js" src="scripts/require.js"></script>
+  </head>
+  <body style="overflow-y: auto;">
+    <br>
+    <div><h2 style="text-align:center;">Social Matrix Project - Survey</h2></div>
+    <br>
+
+    <form style="overflow-y: auto; max-width: 80%; margin-left: 10%">
+        <div style="text-align: center;">
+            <h5><b>Matrix of Intersectional Identity, Privilege and Marginalization: A Visual Tool Qualtrics Survey</b>
+            </h5> 
+        
+            <h6>Please fill out one survey for each Person for whom you want to build a matrix. Rate each of the aspect of identity from 1-7 for each question. "1" is the most privileged position (meaning someone has the most power and status, not that they are in the majority. "7" is the most oppressed or marginalized position, but not that they are in the minority). For instance, millionaires are a minority group but they are not oppressed or marginalized. You can explain your choice for most questions.  
+            If you are filling the matrix out for someone other than yourself, please try to answer as you think that person would answer for him/her/themself. </h6>
+            <h6>
+            You will be asked about how you rate your (or another Person) degree of privilege now, and in most cases will also be asked how you would rate yourself (or the other Person) earlier. This can show change over time in an area of identity (for instance, a change in income level, immigration status, or marital status). 
+            </h6>
+            <h6>
+            You can also choose two numbers on a scale of 1-7 for the same area to show mixed  identity (for instance, if you have more than one racial or religious background). If you think that some areas of identity may affect your ratings on other areas, you can explain the relationship between areas of identity. For instance, in describing your rating for “gender,” you might type in “less gender privilege as a black (or gay) man" or "more privilege than most women because highly educated
+            </h6>
+        </div>
+        <hr>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Q 1.2</label>
+        <br>
+                <h5>PERSON's Years of Education, compared to Person's <span style="text-decoration: underline;"> LOCAL COMMUNITY today</span> </h5>
+                <br>
+        How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's local community today? "1" = most privileged (most educated) and "7" = least privileged (least educated).  
+        (In answering this question, consider both time and place. For instance, in the US in 2019, 88% of adults  have high school diplomas, but only 33% have bachelor's degree or higher. Those numbers were much lower 50 years ago. In Mexico in 2019, 45% of adults have finished high school and 8% have college degrees. Therefore, being a high school graduate has different status in Mexico than in the US, and that status has changed over the generations. <b>The numbers will differ for different countries and for people born into different generations.) You can choose two responses if PERSON goes between communities (for instance, between college and a home community). </b>
+        <br><br>
+        <div id="container">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">1 (Most priveleged)</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+              <label class="form-check-label" for="inlineCheckbox3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+              <label class="form-check-label" for="inlineCheckbox4">4</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+              <label class="form-check-label" for="inlineCheckbox5">5</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+              <label class="form-check-label" for="inlineCheckbox6">6</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2">
+              <label class="form-check-label" for="inlineCheckbox7">7 (Most marginalized)</label>
+            </div>
+        </div>
+
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Q 1.3</label>
+                <br>
+                How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's local community at an earlier time ? "1" = most privileged (most educated) and "7" = least privileged (least educated).  
+(In answering this question, consider both time and place. For instance, in the US in 2019, 88% of adults  have high school diplomas, but only 33% have bachelor's degree or higher. Those numbers were much lower 50 years ago. In Mexico in 2019, 45% of adults have finished high school and 8% have college degrees. Therefore, being a high school graduate has different status in Mexico than in the US, and that status has changed over the generations. <b>The numbers will differ for different countries and for people born into different generations.) You can choose two responses if PERSON goes between communities (for instance, between a college community and a home community.) </b>
+<br><br>
+<b style="text-decoration: underline;">Choose one </b><br>
+
+        <br>
+        <div id="container">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">1 (Most priveleged)</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+              <label class="form-check-label" for="inlineCheckbox3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+              <label class="form-check-label" for="inlineCheckbox4">4</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+              <label class="form-check-label" for="inlineCheckbox5">5</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+              <label class="form-check-label" for="inlineCheckbox6">6</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2">
+              <label class="form-check-label" for="inlineCheckbox7">7 (Most marginalized)</label>
+            </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
