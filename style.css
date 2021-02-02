@@ -56,21 +56,31 @@ body {
 .underline-text: {
   text-decoration: underline;
 }
-#container {
+
+*[id^='container']{
   height: 125px;
-  text-align: justify;
-  border: 10px solid black;
-  font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+  text-align: center;
+  font-size: 12px; /* IE 9/10 don't like font-size: 0; */
   min-width: 600px;
 }
-#container div {
-  width: 150px;
-  height: 125px;
+
+*[id^='container'] div {
+  width: 125px;
+  height: 30px;
   display: inline-block;
-  background: red;
 }
-#container:after {
+*[id^='container']:after {
   content: '';
   width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  display: inline-block;
+  /*display: inline-block;*/
+}
+.form-check .form-check-inline {
+  flex-direction: column !important;
+}
+.form-check-label {
+  text-overflow: wrap; 
+  width: 110px;
+}
+.form-check-inline .form-check-input {
+  margin-top: 5px !important;
 }
