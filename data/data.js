@@ -33,7 +33,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:5},
+    {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:2}, //two values
     {axis:"Access",value:3},
@@ -78,7 +78,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:5},
+    {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:3}, //two values
     {axis:"Access",value:3},
@@ -124,7 +124,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:3},
+    {axis:"Ethnicity / Tribe",value:3},
     {axis:"Race(s)",value:2},
     {axis:"Guardians’ Access",value:2}, //two values
     {axis:"Access",value:2},
@@ -169,7 +169,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:3},
+    {axis:"Ethnicity / Tribe",value:3},
     {axis:"Race(s)",value:2},
     {axis:"Guardians’ Access",value:3}, //two values
     {axis:"Access",value:2},
@@ -215,7 +215,7 @@ var data = [
 
     {axis:"Citizenship Status",value:3},
     {axis:"Person's Nation of Origin",value:0}, //missing data
-    {axis:"Ethnicity(its)",value:7},
+    {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, //two values
     {axis:"Access",value:6},
@@ -261,7 +261,7 @@ var data = [
 
     {axis:"Citizenship Status",value:3},
     {axis:"Person's Nation of Origin",value:0}, //missing data
-    {axis:"Ethnicity(its)",value:7},
+    {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, 
     {axis:"Access",value:6},
@@ -308,7 +308,7 @@ var data = [
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:0}, //missing data
-    {axis:"Ethnicity(its)",value:7},
+    {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, 
     {axis:"Access",value:6},
@@ -354,7 +354,7 @@ var data = [
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:0},//missing data
-    {axis:"Ethnicity(its)",value:7},
+    {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6},
     {axis:"Access",value:6},
@@ -401,7 +401,7 @@ var data = [
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:3},
-    {axis:"Ethnicity(its)",value:3},
+    {axis:"Ethnicity / Tribe",value:3},
     {axis:"Race(s)",value:3},
     {axis:"Guardians’ Access",value:6},//two values
     {axis:"Access",value:5},
@@ -447,7 +447,7 @@ var data = [
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:3},
-    {axis:"Ethnicity(its)",value:3},
+    {axis:"Ethnicity / Tribe",value:3},
     {axis:"Race(s)",value:3},
     {axis:"Guardians’ Access",value:6},//two values
     {axis:"Access",value:5},
@@ -494,7 +494,7 @@ var data = [
 
     {axis:"Citizenship Status",value:5},
     {axis:"Person's Nation of Origin",value:5},
-    {axis:"Ethnicity(its)",value:5},
+    {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:5},
     {axis:"Guardians’ Access",value:5},//two values
     {axis:"Access",value:4},
@@ -540,7 +540,7 @@ var data = [
 
     {axis:"Citizenship Status",value:5},
     {axis:"Person's Nation of Origin",value:5},
-    {axis:"Ethnicity(its)",value:5},
+    {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:5},
     {axis:"Guardians’ Access",value:5},//two values  
     {axis:"Access",value:4},
@@ -587,7 +587,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:2},
+    {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2},//two values
     {axis:"Access",value:1},
@@ -633,7 +633,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:2},
+    {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2}, //two values
     {axis:"Access",value:1},
@@ -680,7 +680,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:2},
+    {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2},//two values
     {axis:"Access",value:1},
@@ -726,7 +726,7 @@ var data = [
 
     {axis:"Citizenship Status",value:1},
     {axis:"Person's Nation of Origin",value:1},
-    {axis:"Ethnicity(its)",value:2},
+    {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2}, //two values
     {axis:"Access",value:1},
