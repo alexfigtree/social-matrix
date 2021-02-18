@@ -372,43 +372,43 @@ var data = [
     {axis:"Educ. Level",value:6},
     //would enter additional domain here
     {axis:"Unique History",value:4},
-    {axis:"Sex Assigned at Birth",value:6},
-    {axis:"Gender Expression",value:6},
-    {axis:"Gender ID",value:6},
-    {axis:"Sexual Orientation",value:6},
-    {axis:"Marital Status",value:6},
+    {axis:"Sex Assigned at Birth",value:5},
+    {axis:"Gender Expression",value:3},
+    {axis:"Gender ID",value:1},
+    {axis:"Sexual Orientation",value:1},
+    {axis:"Marital Status",value:2},
 
-    {axis:"Parental Status",value:6},
-    {axis:"Guardians’ Marital Status",value:5},
-    {axis:"Raised By",value:4},
-    {axis:"Age",value:4},
+    {axis:"Parental Status",value:1},
+    {axis:"Guardians’ Marital Status",value:4},
+    {axis:"Raised By",value:5},
+    {axis:"Age",value:2},
     {axis:"Appearance",value:4},
-    {axis:"Health/Ability",value:5},
+    {axis:"Health/Ability",value:2},
 
-    {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:6},
-    {axis:"Relation to MH System",value:6},
-    {axis:"Relation to Legal System",value:6},
+    {axis:"Cognitive Ability/Style",value:5},
+    {axis:"MH/Subst. Abuse",value:1},
+    {axis:"Relation to MH System",value:2},
+    {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
-    {axis:"Impact of Historical Times",value:5},
+    {axis:"Impact of Historical Times",value:4},
 
     {axis:"Geo. Region",value:5},
     {axis:"Politics",value:5},
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:1}, 
     {axis:"Language(s) Spoken",value:2}, 
-    {axis:"# Generations in Country",value:3},
+    {axis:"# Generations in Country",value:5},
 
     {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:3},
-    {axis:"Ethnicity / Tribe",value:3},
-    {axis:"Race(s)",value:3},
+    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Ethnicity / Tribe",value:5},
+    {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:6},//two values
     {axis:"Access",value:5},
 
     {axis:"Guardian’s Childhood House. Income",value:7}, //two values
-    {axis:"Childhood House. Income w. Guardian",value:6},
-    {axis:"Household Income (Now)",value:5},
+    {axis:"Childhood House. Income w. Guardian",value:7},
+    {axis:"Household Income (Now)",value:6},
     {axis:"Guardians’ Occupation",value:4}, //two values
     {axis:"Occupation(s)",value:6},
     {axis:"Guardians’ Educ.",value:5}//two values    
@@ -453,8 +453,8 @@ var data = [
     {axis:"Access",value:5},
 
     {axis:"Guardian’s Childhood House. Income",value:7}, //two values
-    {axis:"Childhood House. Income w. Guardian",value:6},
-    {axis:"Household Income (Now)",value:5},
+    {axis:"Childhood House. Income w. Guardian",value:7},
+    {axis:"Household Income (Now)",value:6},
     {axis:"Guardians’ Occupation",value:5},//two values
     {axis:"Occupation(s)",value:6},
     {axis:"Guardians’ Educ.",value:6}//two values     
@@ -462,23 +462,23 @@ var data = [
   // Subject 3 (F) - Post/Current
   //dark blue, smaller values
   [
-    {axis:"Educ. Level",value:6},
+    {axis:"Educ. Level",value:2},
     //would enter additional domain here
     {axis:"Unique History",value:4},
     {axis:"Sex Assigned at Birth",value:5},
     {axis:"Gender Expression",value:3},
     {axis:"Gender ID",value:1},
     {axis:"Sexual Orientation",value:1},
-    {axis:"Marital Status",value:2},
+    {axis:"Marital Status",value:4},
 
-    {axis:"Parental Status",value:5},
-    {axis:"Guardians’ Marital Status",value:4},
+    {axis:"Parental Status",value:1},
+    {axis:"Guardians’ Marital Status",value:5},
     {axis:"Raised By",value:5},
-    {axis:"Age",value:2},
+    {axis:"Age",value:3},
     {axis:"Appearance",value:4},
     {axis:"Health/Ability",value:2},
 
-    {axis:"Cognitive Ability/Style",value:5},
+    {axis:"Cognitive Ability/Style",value:4},
     {axis:"MH/Subst. Abuse",value:1},
     {axis:"Relation to MH System",value:2},
     {axis:"Relation to Legal System",value:1},
@@ -488,43 +488,43 @@ var data = [
     {axis:"Geo. Region",value:5},
     {axis:"Politics",value:5},
     {axis:"Chosen Religion",value:4},
-    {axis:"Family Religion",value:1}, 
-    {axis:"Language(s) Spoken",value:2}, 
+    {axis:"Family Religion",value:2}, 
+    {axis:"Language(s) Spoken",value:4}, 
     {axis:"# Generations in Country",value:5},
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
-    {axis:"Guardians’ Access",value:6},//two values
-    {axis:"Access",value:5},
+    {axis:"Guardians’ Access",value:5},//two values
+    {axis:"Access",value:4},
 
-    {axis:"Guardian’s Childhood House. Income",value:7}, //two values
-    {axis:"Childhood House. Income w. Guardian",value:7},
+    {axis:"Guardian’s Childhood House. Income",value:6}, //two values
+    {axis:"Childhood House. Income w. Guardian",value:5},
     {axis:"Household Income (Now)",value:6},
-    {axis:"Guardians’ Occupation",value:4},//two values
-    {axis:"Occupation(s)",value:6},
-    {axis:"Guardians’ Educ.",value:5} //two values    
+    {axis:"Guardians’ Occupation",value:5},//two values
+    {axis:"Occupation(s)",value:5},
+    {axis:"Guardians’ Educ.",value:6} //two values    
   ],
   //lighter blue, larger values
   [
-    {axis:"Educ. Level",value:6},
+    {axis:"Educ. Level",value:2},
     //would enter additional domain here
     {axis:"Unique History",value:4},
     {axis:"Sex Assigned at Birth",value:5},
     {axis:"Gender Expression",value:3},
     {axis:"Gender ID",value:1},
     {axis:"Sexual Orientation",value:1},
-    {axis:"Marital Status",value:2},
+    {axis:"Marital Status",value:4},
 
-    {axis:"Parental Status",value:5},
-    {axis:"Guardians’ Marital Status",value:4},
+    {axis:"Parental Status",value:1},
+    {axis:"Guardians’ Marital Status",value:5},
     {axis:"Raised By",value:5},
-    {axis:"Age",value:2},
+    {axis:"Age",value:3},
     {axis:"Appearance",value:4},
     {axis:"Health/Ability",value:2},
 
-    {axis:"Cognitive Ability/Style",value:5},
+    {axis:"Cognitive Ability/Style",value:4},
     {axis:"MH/Subst. Abuse",value:1},
     {axis:"Relation to MH System",value:2},
     {axis:"Relation to Legal System",value:1},
@@ -534,23 +534,23 @@ var data = [
     {axis:"Geo. Region",value:5},
     {axis:"Politics",value:5},
     {axis:"Chosen Religion",value:4},
-    {axis:"Family Religion",value:1}, 
-    {axis:"Language(s) Spoken",value:2}, 
+    {axis:"Family Religion",value:2}, 
+    {axis:"Language(s) Spoken",value:4}, 
     {axis:"# Generations in Country",value:5},
 
     {axis:"Citizenship Status",value:2},
     {axis:"Person's Nation of Origin",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
-    {axis:"Guardians’ Access",value:6},//two values  
-    {axis:"Access",value:5},
+    {axis:"Guardians’ Access",value:5},//two values
+    {axis:"Access",value:4},
 
-    {axis:"Guardian’s Childhood House. Income",value:7}, //two values
-    {axis:"Childhood House. Income w. Guardian",value:7},
+    {axis:"Guardian’s Childhood House. Income",value:6}, //two values
+    {axis:"Childhood House. Income w. Guardian",value:5},
     {axis:"Household Income (Now)",value:6},
-    {axis:"Guardians’ Occupation",value:5},//two values  
-    {axis:"Occupation(s)",value:6},
-    {axis:"Guardians’ Educ.",value:6} //two values      
+    {axis:"Guardians’ Occupation",value:6},//two values
+    {axis:"Occupation(s)",value:5},
+    {axis:"Guardians’ Educ.",value:7} //two values     
   ],
   // Subject 4 (M) - Pre/Earlier
   //dark orange, smaller values
