@@ -74,6 +74,11 @@ body {
   width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
   /*display: inline-block;*/
 }
+
+.checkbox-list {
+  width: 100%;
+  flex-direction: column;
+}
 .form-check .form-check-inline {
   flex-direction: column !important;
 }
