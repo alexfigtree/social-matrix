@@ -9,7 +9,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-    <script data-main="scripts/bootstrap.bundle.min.js" src="scripts/require.js"></script>
+<script>
+    function toggleCheckbox(this){
+        var limit = 2;
+        $('input.form-check-input').on('change', function(evt) {
+           if($(this).siblings(':checked').length >= limit) {
+               this.checked = false;
+           }
+        });
+    }
+</script>
   </head>
   <body style="overflow-y: auto;">
     <br>
@@ -59,7 +68,7 @@
                       <label class="form-check-label" for="inlineCheckbox1.2-1">1=(Most priveleged)</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-1" value="option1">
+                        <input onclick="toggleCheckbox(this)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-1" value="option1">
                     </div> 
                 </div>
                 <div class="form-check form-check-inline">
@@ -67,7 +76,7 @@
                         <label class="form-check-label" for="inlineCheckbox1.2-2">2</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-2" value="option2">
+                        <input onclick="toggleCheckbox(this)"  class="form-check-input" type="checkbox" id="inlineCheckbox1.2-2" value="option2">
                     </div>
                 </div>
                 <div class="form-check form-check-inline">
@@ -75,7 +84,7 @@
                       <label class="form-check-label" for="inlineCheckbox1.2-3">3</label>
                     </div>
                     <div>
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-3" value="option3">
+                        <input onclick="toggleCheckbox(this)"  class="form-check-input" type="checkbox" id="inlineCheckbox1.2-3" value="option3">
                     </div>
                 </div>
                 <div class="form-check form-check-inline">
@@ -83,7 +92,7 @@
                       <label class="form-check-label" for="inlineCheckbox1.2-4">4</label>
                     </div>
                     <div>
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-4" value="option4">
+                      <input onclick="toggleCheckbox(this)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-4" value="option4">
                     </div>
                 </div>
                 <div class="form-check form-check-inline">
@@ -91,7 +100,7 @@
                       <label class="form-check-label" for="inlineCheckbox1.2-5">5</label>
                     </div>
                     <div>
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-5" value="option5">
+                      <input onclick="toggleCheckbox(this)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-5" value="option5">
                     </div>
                 </div>
                 <div class="form-check form-check-inline">
@@ -99,7 +108,7 @@
                         <label class="form-check-label" for="inlineCheckbox1.2-6">6</label>
                     </div>
                     <div>
-                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-6" value="option6">
+                      <input onclick="toggleCheckbox(this)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-6" value="option6">
                     </div>
                 </div>
                 <div class="form-check form-check-inline">
@@ -107,7 +116,7 @@
                       <label class="form-check-label" for="inlineCheckbox1.2-7">7=(Most marginalized)</label>
                   </div>
                   <div>
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1.2-7" value="option7">
+                    <input onclick="toggleCheckbox(this)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-7" value="option7">
                   </div>
                 </div>
             </div>
@@ -5615,6 +5624,7 @@
                 <input type="email" class="form-control" id="exampleInputEmail7.26" aria-describedby="emailHelp">
             </div>
         </div>
+
         <!--  Q7.27 -->
         <hr><br/>
         <div class="form-group">
@@ -5756,7 +5766,34 @@
 
         <hr>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" onClick=submitForm()>Submit</button>
     </form>
   </body>
 </html>
+
+<script>
+
+
+    function submitForm() {
+        generateFootnotes();
+        let idName = document.getElementById("exampleInputEmail7.26");
+        
+        //console.log('arr.length', arr.length);
+        
+    }
+
+    function generateFootnotes() {
+        let arr = document.querySelectorAll("[id*=exampleInputEmail]");
+
+        arr.forEach(element => {
+            let question = getQuestionNumber(element.id);
+            console.log(question, element.value);
+            //figure out what format would be best for presenting footnotes
+        });
+    }
+
+    function getQuestionNumber(idString){
+        return idString.split('exampleInputEmail')[1];
+    }
+
+    </script>
