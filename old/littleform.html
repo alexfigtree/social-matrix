@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Social Matrix Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </head>
+  <body style="overflow-y: auto;">
+    <br>
+    <div><h2 style="text-align:center;">Social Matrix Project - Survey</h2></div>
+    <br>
+
+    <form style="overflow-y: auto; max-width: 80%; margin-left: 10%">
+
+        <hr><br/>
+        <!--  Q1.2 -->
+        <div class="form-group">
+            <label for="formGroupExampleInput1.2"><h4>Q 1.2</h4></label>
+            <br>
+            <h5>
+                PERSON's Years of Education, compared to Person's <span style="text-decoration: underline;"> LOCAL COMMUNITY today</span> 
+            </h5>
+            <br>
+            <br><br>
+            <div id="container1.2">
+                <div class="form-check form-check-inline">
+                    <div>
+                      <label class="form-check-label" for="inlineCheckbox1.2-1">1=(most privileged)</label>
+                    </div>
+                    <div>
+                        <input onclick="toggleCheckbox(value)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-1" value="option1">
+                    </div> 
+                </div>
+                <div class="form-check form-check-inline">
+                    <div>
+                        <label class="form-check-label" for="inlineCheckbox1.2-2">2</label>
+                    </div>
+                    <div>
+                        <input onclick="toggleCheckbox(value)"  class="form-check-input" type="checkbox" id="inlineCheckbox1.2-2" value="option2">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div>   
+                      <label class="form-check-label" for="inlineCheckbox1.2-3">3</label>
+                    </div>
+                    <div>
+                        <input onclick="toggleCheckbox(value)"  class="form-check-input" type="checkbox" id="inlineCheckbox1.2-3" value="option3">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div>
+                      <label class="form-check-label" for="inlineCheckbox1.2-4">4</label>
+                    </div>
+                    <div>
+                      <input onclick="toggleCheckbox(value)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-4" value="option4">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div>
+                      <label class="form-check-label" for="inlineCheckbox1.2-5">5</label>
+                    </div>
+                    <div>
+                      <input onclick="toggleCheckbox(value)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-5" value="option5">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <div>
+                        <label class="form-check-label" for="inlineCheckbox1.2-6">6</label>
+                    </div>
+                    <div>
+                      <input onclick="toggleCheckbox(value)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-6" value="option6">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline">
+                  <div>
+                      <label class="form-check-label" for="inlineCheckbox1.2-7">7=(Most marginalized)</label>
+                  </div>
+                  <div>
+                    <input onclick="toggleCheckbox(value)" class="form-check-input" type="checkbox" id="inlineCheckbox1.2-7" value="option7">
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+      <button type="submit" class="btn btn-primary" onClick=submitForm()>Submit</button>
+
+      <div id='selection'>You have selected: </div>
+    </form>
+  </body>
+</html>
+
+<script>
+    function toggleCheckbox(value){
+        console.log("blcsocd", value);
+        var limit = 2;
+        $('input.form-check-input').on('change', function(evt) {
+           if($(value).siblings(':checked').length >= limit) {
+               value.checked = false;
+           }
+        });
+    }
+
+    function submitForm() {
+        generateFootnotes();
+        getCheckboxValues();
+        //let idName = document.getElementById("exampleInputEmail7.26");
+        
+       // console.log('arr.length', arr.length);
+        
+    }
+
+    function generateFootnotes() {
+        console.log("footnotes being generated");
+        let arr = document.querySelectorAll("[id*=exampleInputEmail]");
+
+        arr.forEach(element => {
+            let question = getQuestionNumber(element.id);
+            console.log(question, element.value);
+            //figure out what format would be best for presenting footnotes
+        });
+    }
+
+    function getQuestionNumber(idString){
+        return idString.split('exampleInputEmail')[1];
+    }
+
+    function getCheckboxValues() {
+        console.log("CheckboxValues being generated");
+        var checkedValue = []; 
+        var inputElements = document.getElementsByClassName('form-check-input');
+        for(var i=0; inputElements[i]; ++i){
+              if(inputElements[i].checked){
+                   checkedValue = inputElements[i].value;
+                   break;
+              }
+        }
+
+        var element = document.getElementById("selection");
+        element.appendChild(checkedValue);
+        
+        //console.log('inputElements', inputElements);
+    }
+    </script>
