@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import FormPostContainer from './FormPostContainer';
 import useStyles from './styles';
 
+import styles from './style.css';
+
 const Home = () => {
   return (
     <div className="container">
