@@ -6,11 +6,91 @@ import App from './containers/App';
 import Home from './Home';
 import FormPostContainer from './FormPostContainer';
 
+import EducLevel from './components/Questions/EducLevel';
+import Occupation from './components/Questions/Occupation';
+/*import HouseholdIncome from './components/Questions/HouseholdIncome';
+import Access from './components/Questions/Access';
+import RaisedBy from './components/Questions/RaisedBy';
+import GuardiansEduc from './components/Questions/GuardiansEduc';
+import GuardiansOccup from './components/Questions/GuardiansOccup';
+import ChildhoodIncome from './components/Questions/ChildhoodIncome';
+import GuardiansChildHouseIncome from './components/Questions/GuardiansChildHouseIncome';
+import GuardiansAccess from './components/Questions/GuardiansAccess';
+import GuardiansMaritalStatus from './components/Questions/GuardiansMaritalStatus';
+import Race from './components/Questions/Race';
+import Ethnicity from './components/Questions/Ethnicity';
+import NationOfOrigin from './components/Questions/NationOfOrigin';
+import CitizenshipStatus from './components/Questions/CitizenshipStatus';
+import GenerationsInCountry from './components/Questions/GenerationsInCountry';
+import LanguageSpoken from './components/Questions/LanguageSpoken';
+import FamilyReligion from './components/Questions/FamilyReligion';
+import ChosenReligion from './components/Questions/ChosenReligion';
+import Politics from './components/Questions/Politics';
+import GeoRegion from './components/Questions/GeoRegion';
+import ImpactHistTimes from './components/Questions/ImpactHistTimes';
+import RelationToMilitary from './components/Questions/RelationToMilitary';
+import RelationLegalSystem from './components/Questions/RelationLegalSystem';
+import RelationMHSystem from './components/Questions/RelationMHSystem';
+import MHSubstAbuse from './components/Questions/MHSubstAbuse';
+import CognitiveAbilityStyle from './components/Questions/CognitiveAbilityStyle';
+import HealthAbility from './components/Questions/HealthAbility';
+import Appearance from './components/Questions/Appearance';
+import Age from './components/Questions/Age';
+import ParentalStatus from './components/Questions/ParentalStatus';
+import MaritalStatus from './components/Questions/MaritalStatus';
+import SexualOrientation from './components/Questions/SexualOrientation';
+import GenderID from './components/Questions/GenderID';
+import GenderExpression from './components/Questions/GenderExpression';
+import SexAtBirth from './components/Questions/SexAtBirth';
+import UniqueHistory from './components/Questions/UniqueHistory';*/
+
+
 export default () => (
   <App>
     <Switch>
       <Route path={routes.FORM} component={FormPostContainer} />
       <Route path={routes.HOME} component={HomePage} />
+
+      <Route path={routes.EDUCLEVEL} component={EducLevel} />
+      <Route path={routes.OCCUPATION} component={Occupation} />
+/*      <Route path={routes.HOUSEHOLDINCOME} component={HouseholdIncome} />
+      <Route path={routes.ACCESS} component={Access} />
+      <Route path={routes.RAISEDBY} component={RaisedBy} />
+      <Route path={routes.GUARDIANSEDUC} component={GuardiansEduc} />
+      <Route path={routes.GUARDIANSOCCUP} component={GuardiansOccup} />
+      <Route path={routes.CHILDHOODINCOME} component={ChildhoodIncome} />
+      <Route path={routes.GUARDIANSCHILDHOUSEINCOME} component={GuardiansChildHouseIncome} />
+      <Route path={routes.GUARDIANSACCESS} component={GuardiansAccess} />
+      <Route path={routes.GUARDIANSMARITALSTATUS} component={GuardiansMaritalStatus} />
+      <Route path={routes.RACE} component={Race} />
+      <Route path={routes.NATIONOFORIGIN} component={NationOfOrigin} />
+      <Route path={routes.CITIZENSHIPSTATUS} component={CitizenshipStatus} />
+      <Route path={routes.GENERATIONSINCOUNTRY} component={GenerationsInCountry} />
+      <Route path={routes.LANGUAGESPOKEN} component={LanguageSpoken} />
+      <Route path={routes.FAMILYRELIGION} component={FamilyReligion} />
+      <Route path={routes.CHOSENRELIGION} component={ChosenReligion} />
+      <Route path={routes.POLITICS} component={Politics} />
+      <Route path={routes.GEOREGION} component={GeoRegion} />
+      <Route path={routes.IMPACTHISTTIMES} component={ImpactHistTimes} />
+      <Route path={routes.RELATIONTOMILITARY} component={RelationToMilitary} />
+      <Route path={routes.RELATIONLEGALSYSTEM} component={RelationLegalSystem} />
+      <Route path={routes.RELATIONMHSYSTEM} component={RelationMHSystem} />
+      <Route path={routes.MHSUBSTABUSE} component={MHSubstAbuse} />
+      <Route path={routes.COGNITIVEABILITYSTYLE} component={CognitiveAbilityStyle} />
+      <Route path={routes.HEALTHABILITY} component={HealthAbility} />
+
+      <Route path={routes.APPEARANCE} component={Appearance} />
+      <Route path={routes.AGE} component={Age} />
+      <Route path={routes.PARENTALSTATUS} component={ParentalStatus} />
+      <Route path={routes.MARITALSTATUS} component={MaritalStatus} />
+      <Route path={routes.SEXUALORIENTATION} component={SexualOrientation} />
+      <Route path={routes.GENDERID} component={GenderID} />
+      <Route path={routes.GENDEREXPRESSION} component={GenderExpression} />
+      <Route path={routes.SEXATBIRTH} component={SexAtBirth} />
+      <Route path={routes.UNIQUEHISTORY} component={UniqueHistory} />*/
+
+
     </Switch>
   </App>
 );
+

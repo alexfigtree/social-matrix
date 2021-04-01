@@ -1,10 +1,15 @@
 import React from 'react';
 import { Container, Divider, Typography} from '@material-ui/core';
 import { useDispatch } from 'react-redux';
-
 import { Link } from "react-router-dom";
 
-import FormPostContainer from './FormPostContainer';
+//import data from './data/data.js';
+//import * as d3 from "d3";
+//import * as AllMain from './scripts/main.js';
+//import * as AllRequire from './scripts/require.js'
+//import { RadarChart } from './scripts/RadarChart.js'
+
+//import FormPostContainer from './FormPostContainer';
 import useStyles from './styles';
 
 import styles from './style.css';
@@ -14,7 +19,6 @@ const Home = () => {
     <div className="container">
         <Typography variant="h2" align="center">Social Matrix Project</Typography>
         <Link to="/form">Take the survey here</Link>
-
 
 
       <Container>
@@ -99,7 +103,7 @@ const Home = () => {
 
       </Container>
 
-
+/*
       <Container className="after-one">
      
         <Container id="body3">
@@ -454,7 +458,7 @@ const Home = () => {
             </Typography>
           
         </Container>
-      </Container>
+      </Container>*/
 
     </div>
 

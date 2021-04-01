@@ -24,6 +24,7 @@ module.exports = {
     ],
     rules: {
       "import/extensions": 0,
+      "import/no-amd": 0,
       "react/prop-types": 0,
       "linebreak-style": 0,
       "react/state-in-constructor": 0,

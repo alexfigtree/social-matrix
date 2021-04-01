@@ -8,7 +8,20 @@
 //For a bit of extra information check the blog about it:
 //http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
 
-var RadarChart = {
+
+import React, { Component } from "react";
+
+
+
+import { d3 } from "d3";
+
+//import * as All from './scripts/d3.js';
+//import * as AllD3Min from './scripts/d3.min.js';
+//import * as AllMain from './scripts/main.js';
+//import * as AllRequire from './require.js'
+
+//function RadarChart = () => {
+export class RadarChart extends Component { 
   draw: function(id, d, options){
   var cfg = {
 	 radius: 5,
@@ -25,7 +38,7 @@ var RadarChart = {
 	 TranslateY: 30,
 	 ExtraWidthX: 100,
 	 ExtraWidthY: 100,
-	 color: d3.scale.category10(),
+	 color: d3.scaleOrdinal(d3.schemeCategory10),
 	 wrapWidth: 80
 	};
 	
@@ -157,7 +170,7 @@ var RadarChart = {
 
 	console.log('cfg.w/2-levelFactor + cfg.ToRight', cfg.w/2-levelFactor + cfg.ToRight);
 	console.log('cfg.h/2-levelFactor', cfg.h/2-levelFactor);*/
-	series = 0;
+	var series = 0;
 
 	var axis = g.selectAll(".axis")
 			.data(allAxis)
@@ -221,7 +234,7 @@ var RadarChart = {
 	}//wrap
 
 	d.forEach(function(y, x){
-	  dataValues = [];
+	  var dataValues = [];
 	  g.selectAll(".nodes")
 		.data(y, function(j, i){
 		  dataValues.push([
@@ -247,7 +260,7 @@ var RadarChart = {
 					 .style("fill", function(j, i){return cfg.color(series)})
 					 .style("fill-opacity", cfg.opacityArea)
 					 .on('mouseover', function (d){
-										z = "polygon."+d3.select(this).attr("class");
+										var z = "polygon."+d3.select(this).attr("class");
 										g.selectAll("polygon")
 										 .transition(200)
 										 .style("fill-opacity", 0.1); 
@@ -266,6 +279,7 @@ var RadarChart = {
 
 
 	d.forEach(function(y, x){
+	  var dataValues = [];
 	  g.selectAll(".nodes")
 		.data(y).enter()
 		.append("svg:circle")
@@ -285,8 +299,8 @@ var RadarChart = {
 		.attr("data-id", function(j){return j.axis})
 		.style("fill", cfg.color(series)).style("fill-opacity", .9)
 		.on('mouseover', function (d){
-					newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-					newY =  parseFloat(d3.select(this).attr('cy')) - 5;
+					var newX =  parseFloat(d3.select(this).attr('cx')) - 10;
+					var newY =  parseFloat(d3.select(this).attr('cy')) - 5;
 					
 					tooltip
 						.attr('x', newX)
@@ -296,7 +310,7 @@ var RadarChart = {
 						.transition(200)
 						.style('opacity', 1);
 						
-					z = "polygon."+d3.select(this).attr("class");
+					var z = "polygon."+d3.select(this).attr("class");
 					g.selectAll("polygon")
 						.transition(200)
 						.style("fill-opacity", 0.1); 
@@ -327,3 +341,15 @@ var RadarChart = {
   }
 
 };
+
+//export default { RadarChart} ;
+
+//export RadarChart;
+//export var data = function() {
+    // ...
+//};
+//export var RadarChart = function() {
+    // ...
+//};
+//export { draw };
+//export function draw(){...};

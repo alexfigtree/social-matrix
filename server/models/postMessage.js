@@ -14,6 +14,14 @@ const postSchema = mongoose.Schema({
         type: Date,
         default: new Date(),
     },
+    matrixData: {
+        question: String,
+        answer: String,
+    },
+    footnotes: {
+        question: String,
+        answer: String,
+    }
 })
 
 var PostMessage = mongoose.model('PostMessage', postSchema);

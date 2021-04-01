@@ -1,122 +1,222 @@
-import React, { useState } from 'react';
-import { FormGroup, Checkbox } from '@material-ui/core';
+import React, { useState, useEffect } from 'react';
+import { FormGroup, FormGroupLabel, FormControlLabel, Checkbox, Typography } from '@material-ui/core';
 import questionData from './QuestionData';
 
 
 function CheckboxField(props) {
   const [currentData, setCurrentData] = React.useState([]);
-  const [limit, setLimit] = React.useState(2);
+  //const [limit, setLimit] = React.useState(2);
   const [data, setData] = React.useState(questionData[0][0]);
   const [checked, setChecked] = React.useState(true);
+  //const [q1_2, setq1_2] = useState(null);
+  //let answersArray = [];
+  //const [answersArray, setAnswersArray] = useState(new Array(2));
+  const [answersArray, setAnswersArray] = useState([]);
+  const { id } = props;
 
-  //console.log('questionDatadid i import correctly', questionData[0]);
+  const questionNumber = props.id;
 
-/*  const selectData = (id, event) => {
-    console.log("hey this is checked", event.target.checked);
-    console.log("with value", event.target.value);
-      let isSelected = event.currentTarget.checked;
-      if (isSelected) {
-        if (this.state.currentData < this.state.limit) {
-          this.setState({ currentData: this.state.currentData+1 });
-        }else{
-          event.preventDefault()
-          event.currentTarget.checked = false;
-        }
-      } else {
-        this.setState({currentData: this.state.currentData - 1});
-      };
+  //const [isChecked, setIsChecked] = useState([1,2,3,4,5,6,7]);
+  //const [isChecked, setIsChecked] = useState(new Array(2));
+  const [checkedArray, setCheckedArray] = useState([1,2,3,4,5,6,7]);
 
-      setChecked(event.target.checked);
-  }*/
-
-  const questionNumber = "inlineCheckbox1.2";
-  const handleChange = async(event) => {
-    //console.log("hey this is checked, id", event.target.id);
-
-    //console.log("with value", event.target.value);
-    setChecked(event.target.checked);
+  //working
+  const onGlobalChange = (answersArray) => {
+    //let temp = answersArray;
+    console.log("onGlobalChange array for id", answersArray, ' ', props.id);
+    //return setCheckedArray(answersArray);
+/*    setChecked(event.target.checked);
+    //setIsChecked(checkedValues);
     //update data:
     if(event.target.checked){
+        let temp = answersArray;
+        console.log("TEMP", typeof temp);
+        //let temp = []
+        temp.push(parseInt(event.target.value));
+        setAnswersArray(temp);
+        console.log('temp answersArray NEW', temp);
+        //let tempVal = answersArray;
+        //data.value = tempVal;
+        //console.log('tempVal', tempVal);                   // update the name property, assign a new value                 
+        //return { data };
+        return temp; 
       //save as first
       //setData({data[0].value: event.target.value});
       //console.log('data.value', data.value);
       //let newValue = ;
-      setData(prevState => {
-        let data = Object.assign({}, prevState.data);  // creating copy of state variable jasper
-        console.log("1) WHAT IA THIS TEMP DATA", data);
-        data.key= 'test';
-        data.value = parseInt(event.target.value);  
-        console.log('setting data.value to parseInt(event.target.value)', parseInt(event.target.value));                   // update the name property, assign a new value                 
-        return { data };                                 // return new object jasper object
-      });
+
+    }*/
+
+
+
+    
+    //return { isChecked: checkedValues };
+/*    this.setState(() => {
+      return { checked: checkedValues };
+    });*/
+  };
+
+  const isDisabled = (value, idName) => {
+    return (
+      //this disables all checkboxes in group, even the ones that are selected
+      //disable if:
+      //1)answers array is too long
+      answersArray.length > 1  && !answersArray.includes(value) && idName === questionNumber+'-'+value
+    );
+
+  };
+  
+  const handleChange = async(event) => {
+    setChecked(event.target.checked);
+    //isDisabled(event.target.value);
+    //update data:
+    let temp = answersArray;
+    if(event.target.checked){
+        //if checking box, do the following:
+        temp.push(parseInt(event.target.value));
+
+        //call isDisabled
+        isDisabled(event.target.value, event.target.id);
+
+    }else{
+      //WORKING:
+      //if unchecking box, do the following:
+      let toDelete = temp.indexOf(parseInt(event.target.value));
+      temp.splice(toDelete, 1);
     }
-    await console.log('data!', data);
+    return temp; 
   };
 
   const test= () => {
-    console.log('get state', data);
-  }
+    localStorage.setItem(id, data);
+  };
     return (
 
-      <FormGroup style={{flexDirection: 'row'}}>
-          <Checkbox
-            id={questionNumber+"-1"}
-            label='1=(most privileged)'
-            iconstyle={{fill: '#000'}}
-            value='1'
-            //onCheck={this.handleCheck}
-            //checked={checked}
-            onChange={handleChange}
+      <FormGroup style={{flexDirection: 'row'}} onChange={onGlobalChange(answersArray)}>
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-1"}
+                //key={index}
+                //checked={-1} 
+                value={1}
+                //checked={isChecked.indexOf(1) !== -1}
+                onChange={handleChange} 
+                
+                name={questionNumber+"-1"} 
+                disabled={isDisabled(1, questionNumber+"-1")}
+                iconstyle={{fill: '#000'}}
+
+                //disabled={shouldDisableCheckbox(1)}
+              />
+            }
+            label="1 = Most privileged"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-2"}
-            label='2'
-            iconstyle={{fill: '#000'}}
-            value='2'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-2"}
+               
+                //checked={-1} 
+                //checked={isChecked.indexOf(2) !== -1}
+                value="2"
+                onChange={handleChange} 
+                name={questionNumber+"-2"}
+                disabled={isDisabled(2, questionNumber+"-2")}
+                //disabled={shouldDisableCheckbox(2)}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="2"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-3"}
-            label='3'
-            iconstyle={{fill: '#000'}}
-            value='3'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-3"}
+                //checked={-1} 
+                //checked={isChecked.indexOf(3) !== -1}
+                onChange={handleChange} 
+                value="3"
+                name={questionNumber+"-3"} 
+                disabled={isDisabled(3, questionNumber+"-3")}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="3"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-4"}
-            label='4'
-            iconstyle={{fill: '#000'}}
-            value='4'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-4"}
+                value="4"
+                //checked={-1} 
+                onChange={handleChange} 
+                name={questionNumber+"-4"}
+                disabled={isDisabled(4, questionNumber+"-4")}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="4"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-5"}
-            label='5'
-            iconstyle={{fill: '#000'}}
-            value='5'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-5"}
+                //checked={-1} 
+                onChange={handleChange} 
+                value="5"
+                name={questionNumber+"-5"} 
+                disabled={isDisabled(5, questionNumber+"-5")}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="5"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-6"}
-            label='6'
-            iconstyle={{fill: '#000'}}
-            value='6'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-6"}
+                //checked={-1} 
+                onChange={handleChange} 
+                value="6"
+                name={questionNumber+"-6"}
+                disabled={isDisabled(6, questionNumber+"-6")}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="6"
+            labelPlacement="top"
           />
-          <Checkbox
-            id={questionNumber+"-7"}
-            label='7=(Most marginalized)'
-            iconstyle={{fill: '#000'}}
-            value='7'
-            //onCheck={this.handleCheck}
-            onChange={handleChange}
+
+          <FormControlLabel
+            control={
+              <Checkbox 
+                id={questionNumber+"-7"}
+             
+                //checked={-1} 
+                onChange={handleChange} 
+                value="7"
+                name={questionNumber+"-7"} 
+                disabled={isDisabled(7, questionNumber+"-7")}
+                iconstyle={{fill: '#000'}}
+              />
+            }
+            label="7 = Most marginalized"
+            labelPlacement="top"
           />
-          <button onClick={test}>hey</button>
+          
+          <button onClick={test}>test</button>
         </FormGroup>
         
     );

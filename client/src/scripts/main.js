@@ -1,7 +1,17 @@
+import * as d3 from "d3";
+import { RadarChart } from './RadarChart.js'
+import * as data from '../data/dataBlank.js'
+import * as AllRequire from './require.js'
+require("amd-loader");
+//var amd = require("./amd");
 
-define([], function () {
+/*define([], function () {
     return ['data']; // Array of module names
 });
+
+ define(function(require, exports, module) {
+        exports.data = ["data"];
+    });*/
 
 var w = 600,
 	h = 600;
@@ -27,7 +37,7 @@ var mycfg = {
   levels: 7,
   ExtraWidthX: 300,
   color: function(i) {
-      c = [orangeDark, orangeLight];
+      var c = [orangeDark, orangeLight];
       return c[i];
       //Should probably be return c[i%(c.length-1)]; to avoid errors
     }
@@ -40,7 +50,7 @@ var mycfgBlue = {
   levels: 7,
   ExtraWidthX: 300,
   color: function(i) {
-      c = [blueDark, blueLight];
+      var c = [blueDark, blueLight];
       return c[i];
       //Should probably be return c[i%(c.length-1)]; to avoid errors
     }
@@ -50,24 +60,24 @@ var mycfgBlue = {
 //Will expect that data is in %'s
 
 //Subject 1 - Pre
-RadarChart.draw("#chart", d.slice(0, 2), mycfg);
+RadarChart.draw("#chart", d.toString().slice(0, 2), mycfg);
 //Subject 1 - Post
-RadarChart.draw("#chart2", d.slice(2, 4), mycfgBlue);
+RadarChart.draw("#chart2", d.toString().slice(2, 4), mycfgBlue);
 
 //Subject 2 - Pre
-RadarChart.draw("#chart3", d.slice(4, 6), mycfg);
+RadarChart.draw("#chart3", d.toString().slice(4, 6), mycfg);
 //Subject 2 - Post
-RadarChart.draw("#chart4", d.slice(6, 8), mycfgBlue);
+RadarChart.draw("#chart4", d.toString().slice(6, 8), mycfgBlue);
 
 //Subject 3 - Pre
-RadarChart.draw("#chart5", d.slice(8, 10), mycfg);
+RadarChart.draw("#chart5", d.toString().slice(8, 10), mycfg);
 //Subject 3 - Post
-RadarChart.draw("#chart6", d.slice(10, 12), mycfgBlue);
+RadarChart.draw("#chart6", d.toString().slice(10, 12), mycfgBlue);
 
 //Subject 4 - Pre
-RadarChart.draw("#chart7", d.slice(12, 14), mycfg);
+RadarChart.draw("#chart7", d.toString().slice(12, 14), mycfg);
 //Subject 4 - Post
-RadarChart.draw("#chart8", d.slice(14, 16), mycfgBlue);
+RadarChart.draw("#chart8", d.toString().slice(14, 16), mycfgBlue);
 
 
 
