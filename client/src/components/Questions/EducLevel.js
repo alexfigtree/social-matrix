@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import { questionData } from '../Form/QuestionData.js';
 
 const EducLevel = ({ currentId, setCurrentId }) => {
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '', footnotes: {}, matrixData: {} });
@@ -29,6 +30,7 @@ const EducLevel = ({ currentId, setCurrentId }) => {
     setq1_3(localStorage.getItem("container1.3"));
     setq1_4(localStorage.getItem("container1.4"));
     setq1_5(localStorage.getItem("container1.5"));
+    console.log('DATA TEST', questionData[0]);
     console.log('1hey q12', q1_2);
     console.log('1hey q13', q1_3);
     console.log('1hey q14', q1_4);
@@ -41,6 +43,31 @@ const EducLevel = ({ currentId, setCurrentId }) => {
   };
 
   const handleSubmit = async (e) => {
+    let educPreSmall = questionData[0];
+    let educPreLarge = questionData[1];
+    let educPostSmall = questionData[2];
+    let educPostLarge = questionData[3];
+
+    //pre: 1.3, 1.5
+    let q1_pre = [...q1_3.split(','), ...q1_5.split(',')];
+    console.log('q1_pre', q1_pre);
+
+    let q1_pre_small = Math.min(...q1_pre);
+    let q1_pre_large = Math.max(...q1_pre);
+    console.log('q1_pre_small', q1_pre_small);
+    console.log('q1_pre_large', q1_pre_large);
+    
+    //post 1.2, 1.4
+    let q1_post = [...q1_2.split(','), ...q1_4.split(',')];
+    console.log('q1_post', q1_post);
+    
+    let q1_post_small = Math.min(...q1_post);
+    let q1_post_large = Math.max(...q1_post);
+    console.log('q1_post_small', q1_post_small);
+    console.log('q1_post_large', q1_post_large);
+
+
+    //console.log('educPreSmall', educPreSmall);
 /*    console.log('hey q12', q1_2);
     console.log('hey q13', q1_3);
     console.log('hey q14', q1_4);

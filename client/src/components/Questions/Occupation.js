@@ -17,6 +17,7 @@ const Occupation = ({ currentId, setCurrentId }) => {
   const [q1_2, setq1_2] = useState(localStorage.getItem("container1.2"));
   const [q1_3, setq1_3] = useState(localStorage.getItem("container1.3"));
   const [q1_4, setq1_4] = useState(localStorage.getItem("container1.4"));
+  const [q1_5, setq1_5] = useState(localStorage.getItem("container1.5"));
 
   useEffect(() => {
     if (post) setPostData(post);
@@ -29,9 +30,11 @@ const Occupation = ({ currentId, setCurrentId }) => {
     setq1_2(localStorage.getItem("container1.2"));
     setq1_3(localStorage.getItem("container1.3"));
     setq1_4(localStorage.getItem("container1.4"));
-    console.log('OCCUP q12', q1_2);
+    setq1_5(localStorage.getItem("container1.5"));
+    console.log('OCCUP q12', typeof q1_2);
     console.log('OCCUP q13', q1_3);
     console.log('OCCUP q14', q1_4);
+    console.log('OCCUP q14', q1_5);
 
   }, []);
 

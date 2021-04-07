@@ -1,4 +1,4 @@
-const questionData = [
+export let questionData = [
   // Subject 1 (JK) - Pre/Earlier
   //dark orange, smaller values
   [
