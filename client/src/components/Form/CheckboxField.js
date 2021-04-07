@@ -12,7 +12,7 @@ function CheckboxField(props) {
   //let answersArray = [];
   //const [answersArray, setAnswersArray] = useState(new Array(2));
   const [answersArray, setAnswersArray] = useState([]);
-  const { id } = props;
+  //const { id } = props;
 
   const questionNumber = props.id;
 
@@ -22,8 +22,8 @@ function CheckboxField(props) {
 
   //working
   const onGlobalChange = (answersArray) => {
-    //let temp = answersArray;
-    console.log("onGlobalChange array for id", answersArray, ' ', props.id);
+    let globalTemp = answersArray;
+    console.log("onGlobalChange array for id", globalTemp, ' ', props.id);
     //return setCheckedArray(answersArray);
 /*    setChecked(event.target.checked);
     //setIsChecked(checkedValues);
@@ -68,6 +68,7 @@ function CheckboxField(props) {
   
   const handleChange = async(event) => {
     setChecked(event.target.checked);
+    
     //isDisabled(event.target.value);
     //update data:
     let temp = answersArray;
@@ -84,12 +85,14 @@ function CheckboxField(props) {
       let toDelete = temp.indexOf(parseInt(event.target.value));
       temp.splice(toDelete, 1);
     }
+    //save latest state and corresponding question number:
+    let questionId = event.target.id.slice(0, event.target.id.lastIndexOf('-'));
+    console.log('values to save: ID: ', questionId);
+    console.log('with value: ', temp);
+    localStorage.setItem(questionId, temp);
     return temp; 
   };
 
-  const test= () => {
-    localStorage.setItem(id, data);
-  };
     return (
 
       <FormGroup style={{flexDirection: 'row'}} onChange={onGlobalChange(answersArray)}>
@@ -216,7 +219,7 @@ function CheckboxField(props) {
             labelPlacement="top"
           />
           
-          <button onClick={test}>test</button>
+        
         </FormGroup>
         
     );

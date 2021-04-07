@@ -14,6 +14,9 @@ const EducLevel = ({ currentId, setCurrentId }) => {
   const dispatch = useDispatch();
   const classes = useStyles();
   const [q1_2, setq1_2] = useState(null);
+  const [q1_3, setq1_3] = useState(null);
+  const [q1_4, setq1_4] = useState(null);
+  const [q1_5, setq1_5] = useState(null);
 
   useEffect(() => {
     if (post) setPostData(post);
@@ -21,8 +24,14 @@ const EducLevel = ({ currentId, setCurrentId }) => {
 
   useEffect(() => {
     //let q1_2 = localStorage.getItem("container1.2");
+
     setq1_2(localStorage.getItem("container1.2"));
-    console.log('hey q12', q1_2);
+    setq1_3(localStorage.getItem("container1.3"));
+    setq1_4(localStorage.getItem("container1.4"));
+    setq1_5(localStorage.getItem("container1.5"));
+    console.log('1hey q12', q1_2);
+    console.log('1hey q13', q1_3);
+    console.log('1hey q14', q1_4);
 
   }, []);
 
@@ -32,15 +41,19 @@ const EducLevel = ({ currentId, setCurrentId }) => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+/*    console.log('hey q12', q1_2);
+    console.log('hey q13', q1_3);
+    console.log('hey q14', q1_4);
+    console.log('hey q15', q1_5);
+    e.preventDefault();*/
 
-    if (currentId === 0) {
+/*    if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
     } else {
       dispatch(updatePost(currentId, postData));
       clear();
-    }
+    }*/
   };
 
   return (
@@ -197,10 +210,9 @@ const EducLevel = ({ currentId, setCurrentId }) => {
         <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
         <TextField name="message" variant="outlined" label="Answer" fullWidth multiline rows={4} value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
 
-        <CheckboxField />
 
         
-        <Link to="/q2"><Button className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/q2"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
       </form>
 
    
