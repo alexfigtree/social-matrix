@@ -43,14 +43,20 @@ const EducLevel = ({ currentId, setCurrentId }) => {
   };
 
   const handleSubmit = async (e) => {
-    let educPreSmall = questionData[0];
-    let educPreLarge = questionData[1];
-    let educPostSmall = questionData[2];
-    let educPostLarge = questionData[3];
+    let tempData = questionData;
+
+    let educPreSmall = tempData[0];
+    let educPreLarge = tempData[1];
+    let educPostSmall = tempData[2];
+    let educPostLarge = tempData[3];
 
     //pre: 1.3, 1.5
+    //first [0] corresponds for first array
+    //second [0] corresponds to educ level
+
+    console.log('educPreSmall[0]', tempData[0][0].value);
     let q1_pre = [...q1_3.split(','), ...q1_5.split(',')];
-    console.log('q1_pre', q1_pre);
+    //console.log('q1_pre', q1_pre);
 
     let q1_pre_small = Math.min(...q1_pre);
     let q1_pre_large = Math.max(...q1_pre);
@@ -59,7 +65,7 @@ const EducLevel = ({ currentId, setCurrentId }) => {
     
     //post 1.2, 1.4
     let q1_post = [...q1_2.split(','), ...q1_4.split(',')];
-    console.log('q1_post', q1_post);
+    //console.log('q1_post', q1_post);
     
     let q1_post_small = Math.min(...q1_post);
     let q1_post_large = Math.max(...q1_post);
@@ -67,6 +73,13 @@ const EducLevel = ({ currentId, setCurrentId }) => {
     console.log('q1_post_large', q1_post_large);
 
 
+    tempData[0][0].value = q1_pre_small;
+    tempData[1][0].value = q1_pre_large;
+    tempData[2][0].value = q1_post_small;
+    tempData[3][0].value = q1_post_large;
+
+    //questionData = tempData;
+    console.log("NEW QUESTION DATA", tempData);
     //console.log('educPreSmall', educPreSmall);
 /*    console.log('hey q12', q1_2);
     console.log('hey q13', q1_3);
