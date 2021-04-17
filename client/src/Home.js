@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="container">
         <Typography variant="h2" align="center">Social Matrix Project</Typography>
-        <Link to="/form">Take the survey here</Link>
+        <Link to="/intro">Take the survey here</Link>
 
 
       <Container>

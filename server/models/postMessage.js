@@ -13,14 +13,6 @@ const postSchema = mongoose.Schema({
     createdAt: {
         type: Date,
         default: new Date(),
-    },
-    matrixData: {
-        question: String,
-        answer: String,
-    },
-    footnotes: {
-        question: String,
-        answer: String,
     }
 })
 

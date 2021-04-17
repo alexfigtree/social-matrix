@@ -7,15 +7,30 @@ import {
 import FormPostContainer from './FormPostContainer';
 import Home from './Home'
 
+import Form from './components/Form/Form';
+//q1
 import EducLevel from './components/Questions/EducLevel';
-import Occupation from './components/Questions/Occupation';
-/*import HouseholdIncome from './components/Questions/HouseholdIncome';
-import Access from './components/Questions/Access';
-import RaisedBy from './components/Questions/RaisedBy';
+//q2
 import GuardiansEduc from './components/Questions/GuardiansEduc';
+//q3
+import Occupation from './components/Questions/Occupation';
+//q4
 import GuardiansOccup from './components/Questions/GuardiansOccup';
+//q5
+import HouseholdIncome from './components/Questions/HouseholdIncome';
+//q6
 import ChildhoodIncome from './components/Questions/ChildhoodIncome';
+//q7
 import GuardiansChildHouseIncome from './components/Questions/GuardiansChildHouseIncome';
+//q8
+import Access from './components/Questions/Access';
+
+/*
+
+import RaisedBy from './components/Questions/RaisedBy';
+
+
+
 import GuardiansAccess from './components/Questions/GuardiansAccess';
 import GuardiansMaritalStatus from './components/Questions/GuardiansMaritalStatus';
 import Race from './components/Questions/Race';
@@ -49,10 +64,18 @@ const App = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/form" component={FormPostContainer} />
-      <Route path="/q1" component={EducLevel} />
-      <Route path="/q2" component={Occupation} />
+      <Route path="/intro" component={FormPostContainer} />
 
+      <Route path="/form" component={Form} />
+      <Route path="/q1" component={EducLevel} />
+      <Route path="/q2" component={GuardiansEduc} />
+      <Route path="/q3" component={Occupation} />
+      <Route path="/q4" component={GuardiansOccup} />
+      <Route path="/q5" component={HouseholdIncome} />
+      <Route path="/q6" component={ChildhoodIncome} />
+      <Route path="/q7" component={GuardiansChildHouseIncome} />
+      <Route path="/q8" component={Access} />
+    
     </Switch>
   )
   

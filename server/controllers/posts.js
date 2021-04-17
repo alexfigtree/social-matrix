@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 
 import PostMessage from '../models/postMessage.js';
+import MatrixData from '../models/matrixData.js';
 
 const router = express.Router();
 
@@ -76,5 +77,45 @@ export const likePost = async (req, res) => {
     res.json(updatedPost);
 }
 
+
+
+export const getMatrix = async (req, res) => { 
+    const { id } = req.params;
+
+    try {
+        const matrix = await MatrixData.findById(id);
+        
+        res.status(200).json(matrix);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+}
+
+export const createMatrix = async (req, res) => {
+    const { matrixData } = req.body;
+
+    const newMatrixData = new MatrixData({ matrixData })
+
+    try {
+        await newMatrixData.save();
+
+        res.status(201).json(newMatrixData );
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+}
+
+export const updateMatrix = async (req, res) => {
+    const { id } = req.params;
+    const { matrixData, footnotes } = req.body;
+    
+    if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No matrix with id: ${id}`);
+
+    const updatedMatrixData= { matrixData, footnotes };
+
+    await MatrixData.findByIdAndUpdate(id, updatedMatrixData, { new: true });
+
+    res.json(updatedMatrixData);
+}
 
 export default router;

@@ -2,16 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Box, InputLabel, TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import FileBase from 'react-file-base64';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
+import { createMatrix, updateMatrix } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import { questionData } from '../Form/QuestionData.js';
 
-const EducLevel = ({ currentId, setCurrentId }) => {
-  const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '', footnotes: {}, matrixData: {} });
-  const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
+const EducLevel = () => {
+  const history = useHistory();
+  const [currentId, setCurrentId] = useState(0);
+  const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+
+  const [matrixData, setMatrixData] = useState({ matrixData: {} });
+  const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
+  
   const dispatch = useDispatch();
   const classes = useStyles();
   const [q1_2, setq1_2] = useState(null);
@@ -20,8 +26,8 @@ const EducLevel = ({ currentId, setCurrentId }) => {
   const [q1_5, setq1_5] = useState(null);
 
   useEffect(() => {
-    if (post) setPostData(post);
-  }, [post]);
+    if (matrix) setMatrixData(matrix);
+  }, [matrix]);
 
   useEffect(() => {
     //let q1_2 = localStorage.getItem("container1.2");
@@ -30,25 +36,25 @@ const EducLevel = ({ currentId, setCurrentId }) => {
     setq1_3(localStorage.getItem("container1.3"));
     setq1_4(localStorage.getItem("container1.4"));
     setq1_5(localStorage.getItem("container1.5"));
-    console.log('DATA TEST', questionData[0]);
+/*    console.log('DATA TEST', questionData[0]);
     console.log('1hey q12', q1_2);
     console.log('1hey q13', q1_3);
-    console.log('1hey q14', q1_4);
+    console.log('1hey q14', q1_4);*/
 
   }, []);
 
   const clear = () => {
-    //setCurrentId(0);
-    setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '', footnotes: {}, matrixData: {} });
+    setCurrentId(0);
+    setMatrixData({ matrixData: {} });
   };
 
   const handleSubmit = async (e) => {
     let tempData = questionData;
 
-    let educPreSmall = tempData[0];
-    let educPreLarge = tempData[1];
-    let educPostSmall = tempData[2];
-    let educPostLarge = tempData[3];
+    //let educPreSmall = tempData[0];
+    //let educPreLarge = tempData[1];
+    //let educPostSmall = tempData[2];
+    //let educPostLarge = tempData[3];
 
     //pre: 1.3, 1.5
     //first [0] corresponds for first array
@@ -80,20 +86,31 @@ const EducLevel = ({ currentId, setCurrentId }) => {
 
     //questionData = tempData;
     console.log("NEW QUESTION DATA", tempData);
+    console.log("TYPEOF NEW QUESTION DATA", typeof tempData);
     //console.log('educPreSmall', educPreSmall);
 /*    console.log('hey q12', q1_2);
     console.log('hey q13', q1_3);
     console.log('hey q14', q1_4);
     console.log('hey q15', q1_5);
     e.preventDefault();*/
+    setMatrixData({ tempData });
+    //setMatrixData({ ...matrixData, matrixData: tempData });
 
-/*    if (currentId === 0) {
-      dispatch(createPost(postData));
+    console.log("what is my matrix data after submitting?", matrixData);
+    e.preventDefault();
+
+    console.log("WHAT IS CURRENT ID", currentId);
+
+    if (currentId === 0) {
+
+      dispatch(createMatrix(matrixData));
       clear();
     } else {
-      dispatch(updatePost(currentId, postData));
+      dispatch(updateMatrix(currentId, matrixData));
       clear();
-    }*/
+    }
+
+    history.push('/q2');
   };
 
   return (
@@ -130,12 +147,9 @@ const EducLevel = ({ currentId, setCurrentId }) => {
             </p>
             <br/><br/>
             <CheckboxField id="container1.2" />
-
-
         </Box>
 
-
-     
+    
         <hr/><br/>
         <Box component="div">
             <label htmlFor="formGroupExampleInput1.3"><h4>Q 1.3</h4></label>
@@ -167,10 +181,7 @@ const EducLevel = ({ currentId, setCurrentId }) => {
             <br/>
             <br/>
             <CheckboxField id="container1.3" />
-
         </Box>
-
-
 
          
         <hr/><br/>
@@ -201,13 +212,9 @@ const EducLevel = ({ currentId, setCurrentId }) => {
             <CheckboxField id="container1.4" />
         </Box>
 
-
-        //Q1.5
+   
         <hr/><br/>
-        <Box component="div"
-
-  
->
+        <Box component="div">
             <label htmlFor="formGroupExampleInput1.5"><h4>Q 1.5</h4></label>
             <br/>
             <p>
@@ -225,8 +232,7 @@ const EducLevel = ({ currentId, setCurrentId }) => {
             <CheckboxField id="container1.5" />
         </Box>
 
-
-        //Q1.6
+   
         <hr/><br/>
         <Box component="div">
             <label htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
@@ -238,20 +244,11 @@ const EducLevel = ({ currentId, setCurrentId }) => {
             </p>
             <br/>
             <TextField id="container1.6" name="exampleInputEmail1.6" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
-
-
         </Box>
 
 
 
 
-<Typography variant="h5">{currentId ? `Editing EDUC "${post.title}"` : 'Q2'}</Typography>
-        <TextField name="creator" variant="outlined" label="Subject" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
-        <TextField name="title" variant="outlined" label="Title" fullWidth value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} />
-        <TextField name="message" variant="outlined" label="Answer" fullWidth multiline rows={4} value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} />
-
-
-        
         <Link to="/q2"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
       </form>
 

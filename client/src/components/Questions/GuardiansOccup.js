@@ -8,7 +8,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 
-const Occupation = () => {
+const GuardiansOccup = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
@@ -55,14 +55,14 @@ const Occupation = () => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    history.push('/q4');
+    history.push('/q5');
   };
 
   return (
     <Paper className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
-        <Typography variant="h5">Occupation</Typography>
+        <Typography variant="h5">Guardian's Occupation</Typography>
         
         <Box component="div">
             <label htmlFor="formGroupExampleInput2.1"><h4>Q 2.1</h4></label>
@@ -140,7 +140,7 @@ const Occupation = () => {
       
         </Box>
         
-        <Link to="/q4"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/q5"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>
 
@@ -149,4 +149,4 @@ const Occupation = () => {
   );
 };
 
-export default Occupation;
+export default GuardiansOccup;

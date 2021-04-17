@@ -6,15 +6,21 @@ import App from './containers/App';
 import Home from './Home';
 import FormPostContainer from './FormPostContainer';
 
+import Form from './components/Form/Form';
 import EducLevel from './components/Questions/EducLevel';
-import Occupation from './components/Questions/Occupation';
-/*import HouseholdIncome from './components/Questions/HouseholdIncome';
-import Access from './components/Questions/Access';
-import RaisedBy from './components/Questions/RaisedBy';
 import GuardiansEduc from './components/Questions/GuardiansEduc';
+import Occupation from './components/Questions/Occupation';
 import GuardiansOccup from './components/Questions/GuardiansOccup';
+import HouseholdIncome from './components/Questions/HouseholdIncome';
 import ChildhoodIncome from './components/Questions/ChildhoodIncome';
 import GuardiansChildHouseIncome from './components/Questions/GuardiansChildHouseIncome';
+import Access from './components/Questions/Access';
+/*
+
+import RaisedBy from './components/Questions/RaisedBy';
+
+
+
 import GuardiansAccess from './components/Questions/GuardiansAccess';
 import GuardiansMaritalStatus from './components/Questions/GuardiansMaritalStatus';
 import Race from './components/Questions/Race';
@@ -48,18 +54,27 @@ import UniqueHistory from './components/Questions/UniqueHistory';*/
 export default () => (
   <App>
     <Switch>
-      <Route path={routes.FORM} component={FormPostContainer} />
+      
       <Route path={routes.HOME} component={HomePage} />
+	  <Route path={routes.INTRO} component={FormPostContainer} />
 
+	  <Route path={routes.FORM} component={Form} />
       <Route path={routes.EDUCLEVEL} component={EducLevel} />
-      <Route path={routes.OCCUPATION} component={Occupation} />
-/*      <Route path={routes.HOUSEHOLDINCOME} component={HouseholdIncome} />
-      <Route path={routes.ACCESS} component={Access} />
-      <Route path={routes.RAISEDBY} component={RaisedBy} />
       <Route path={routes.GUARDIANSEDUC} component={GuardiansEduc} />
+      <Route path={routes.OCCUPATION} component={Occupation} />
       <Route path={routes.GUARDIANSOCCUP} component={GuardiansOccup} />
+      <Route path={routes.HOUSEHOLDINCOME} component={HouseholdIncome} />
       <Route path={routes.CHILDHOODINCOME} component={ChildhoodIncome} />
       <Route path={routes.GUARDIANSCHILDHOUSEINCOME} component={GuardiansChildHouseIncome} />
+	  <Route path={routes.ACCESS} component={Access} />
+
+/*      
+      
+      <Route path={routes.RAISEDBY} component={RaisedBy} />
+      
+      
+      
+      
       <Route path={routes.GUARDIANSACCESS} component={GuardiansAccess} />
       <Route path={routes.GUARDIANSMARITALSTATUS} component={GuardiansMaritalStatus} />
       <Route path={routes.RACE} component={Race} />

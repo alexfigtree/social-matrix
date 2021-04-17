@@ -51,3 +51,35 @@ export const deletePost = (id) => async (dispatch) => {
     console.log(error.message);
   }
 };
+
+
+export const getMatrix = () => async (dispatch) => {
+  try {
+    const { data } = await api.fetchMatrix();
+
+    dispatch({ type: FETCH_ALL, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const createMatrix = (matrix) => async (dispatch) => {
+  try {
+    const { data } = await api.createMatrix(matrix);
+
+    dispatch({ type: CREATE, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const updateMatrix = (id, matrix) => async (dispatch) => {
+  try {
+    const { data } = await api.updateMatrix(id, matrix);
+
+    dispatch({ type: UPDATE, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
