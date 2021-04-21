@@ -24,14 +24,15 @@ import ChildhoodIncome from './components/Questions/ChildhoodIncome';
 import GuardiansChildHouseIncome from './components/Questions/GuardiansChildHouseIncome';
 //q8
 import Access from './components/Questions/Access';
-
+//q9
+import GuardiansAccess from './components/Questions/GuardiansAccess';
 /*
 
 import RaisedBy from './components/Questions/RaisedBy';
 
 
 
-import GuardiansAccess from './components/Questions/GuardiansAccess';
+
 import GuardiansMaritalStatus from './components/Questions/GuardiansMaritalStatus';
 import Race from './components/Questions/Race';
 import Ethnicity from './components/Questions/Ethnicity';

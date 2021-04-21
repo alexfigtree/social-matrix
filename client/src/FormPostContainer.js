@@ -1,26 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Container, Typography, Grow, Grid } from '@material-ui/core';
+import { Box, Container, Typography, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link,
   withRouter
 } from "react-router-dom";
 
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
-import EducLevel from './components/Questions/EducLevel';
 import { getPosts } from './actions/posts';
-import useStyles from './styles';
-
 
 const FormPostContainer = () => {
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
-  const classes = useStyles();
 
   useEffect(() => {
     dispatch(getPosts());

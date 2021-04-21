@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Box, InputLabel, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
 import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 
-//q4
-const GuardiansOccup = () => {
+//q8
+const GuardiansAccess = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
@@ -18,6 +17,7 @@ const GuardiansOccup = () => {
   const dispatch = useDispatch();
   const classes = useStyles();
 
+  //const [q3_5, setq3_5] = useState(localStorage.getItem("container3.5"));
 /*  const [q1_2, setq1_2] = useState(localStorage.getItem("container1.2"));
   const [q1_3, setq1_3] = useState(localStorage.getItem("container1.3"));
   const [q1_4, setq1_4] = useState(localStorage.getItem("container1.4"));
@@ -27,27 +27,13 @@ const GuardiansOccup = () => {
     if (post) setPostData(post);
   }, [post]);
 
-
   useEffect(() => {
-    var retrievedObject = localStorage.getItem('matrixData');
-    console.log('GUARD OCCUP - now q4: retrievedObject: ', JSON.parse(retrievedObject));
+    //setq3_5(localStorage.getItem("container3.5"));
   }, []);
 
   useEffect(() => {
-    //let q1_2 = localStorage.getItem("container1.2");
-
-/*    setq1_2(localStorage.getItem("container1.2"));
-    setq1_3(localStorage.getItem("container1.3"));
-    setq1_4(localStorage.getItem("container1.4"));
-    setq1_5(localStorage.getItem("container1.5"));
-
-    let q2_2 = localStorage.getItem("container2.2");
-    let q2_4 = localStorage.getItem("container2.4");
-    
-    console.log('GUARDOCCUP - prev question 2.4 (Pre)', q2_4);
-    console.log('GUARDOCCUP - prev question 2.2 (POST)', q2_2);*/
-
-
+      var retrievedObject = localStorage.getItem('matrixData');
+      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
   }, []);
 
   const clear = () => {
@@ -56,9 +42,16 @@ const GuardiansOccup = () => {
   };
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
+
     let tempData = matrixData;
 
-    e.preventDefault();
+
+
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
+
+
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -67,18 +60,18 @@ const GuardiansOccup = () => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    history.push('/q5');
+    //history.push('/q10');
   };
 
   return (
     <Paper className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
-        <Typography variant="h5">Guardian's Occupation</Typography>
+        <Typography variant="h5">Access</Typography>
         
-       
+    
         
-        <Link to="/q5"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/q8"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>
 
@@ -87,4 +80,4 @@ const GuardiansOccup = () => {
   );
 };
 
-export default GuardiansOccup;
+export default GuardiansAccess;

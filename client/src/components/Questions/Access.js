@@ -1,41 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { Box, InputLabel, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 
-const Access = ({ currentId, setCurrentId }) => {
+//q8
+const Access = () => {
+  const history = useHistory();
+  const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+  const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
-
-  const [q1_2, setq1_2] = useState(localStorage.getItem("container1.2"));
-  const [q1_3, setq1_3] = useState(localStorage.getItem("container1.3"));
-  const [q1_4, setq1_4] = useState(localStorage.getItem("container1.4"));
-  const [q1_5, setq1_5] = useState(localStorage.getItem("container1.5"));
 
   useEffect(() => {
     if (post) setPostData(post);
   }, [post]);
 
-
   useEffect(() => {
-    //let q1_2 = localStorage.getItem("container1.2");
-
-    setq1_2(localStorage.getItem("container1.2"));
-    setq1_3(localStorage.getItem("container1.3"));
-    setq1_4(localStorage.getItem("container1.4"));
-    setq1_5(localStorage.getItem("container1.5"));
-    console.log('OCCUP q12', typeof q1_2);
-    console.log('OCCUP q13', q1_3);
-    console.log('OCCUP q14', q1_4);
-    console.log('OCCUP q14', q1_5);
-
+      var retrievedObject = localStorage.getItem('matrixData');
+      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
   }, []);
 
   const clear = () => {
@@ -46,6 +34,27 @@ const Access = ({ currentId, setCurrentId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    let tempData = matrixData;
+    
+    const q3_5 = localStorage.getItem("container3.5");
+
+    let domain8_pre_post = [...q3_5.split(',')];
+
+    let domain8_pre_post_small = Math.min(...domain8_pre_post);
+    
+    let domain8_pre_post_large = Math.max(...domain8_pre_post);
+
+
+    tempData[0][30].value = domain8_pre_post_small;
+    tempData[1][30].value = domain8_pre_post_large;
+    tempData[2][30].value = domain8_pre_post_small;
+    tempData[3][30].value = domain8_pre_post_large;
+
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
+
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -53,7 +62,7 @@ const Access = ({ currentId, setCurrentId }) => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    //history.push('/q9');
+    history.push('/q9');
   };
 
   return (

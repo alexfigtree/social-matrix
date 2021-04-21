@@ -18,9 +18,9 @@ export let questionData = [
     {axis:"Health/Ability",value:0},
 
     {axis:"Cognitive Ability/Style",value:0},
-    {axis:"MH/Subst. Abuse",value:0},
-    {axis:"Relation to MH System",value:0},
-    {axis:"Relation to Legal System",value:0},
+    {axis:"MH/Subst. Abuse",value:0}, //take away
+    {axis:"Relation to MH System",value:0}, //change to MH/Substance Use (come with above)
+    {axis:"Relation to Legal System",value:0}, 
     {axis:"Relation to Military",value:0},
     {axis:"Impact of Historical Times",value:0},
 
@@ -29,21 +29,21 @@ export let questionData = [
     {axis:"Chosen Religion",value:0},
     {axis:"Family Religion",value:0},
     {axis:"Language(s) Spoken",value:0},
-    {axis:"# Generations in Country",value:0},
+    {axis:"# Generations in Country",value:0}, //take away
 
-    {axis:"Citizenship Status",value:0},
-    {axis:"Person's Nation of Origin",value:0},
-    {axis:"Ethnicity / Tribe",value:0},
-    {axis:"Race(s)",value:0},
-    {axis:"Guardians’ Access",value:0},
-    {axis:"Access",value:0},
+    {axis:"Citizenship Status",value:0}, //take away
+    {axis:"Person's Nation of Origin",value:0}, //q12
+    {axis:"Ethnicity / Tribe",value:0}, //q11
+    {axis:"Race(s)",value:0}, //q10
+    {axis:"Guardians’ Access",value:0}, //q9
+    {axis:"Access",value:0}, //q8
 
-    {axis:"Guardian’s Childhood House. Income",value:0},
-    {axis:"Childhood House. Income w. Guardian",value:0},
-    {axis:"Household Income (Now)",value:0},
-    {axis:"Guardians’ Occupation",value:0},
-    {axis:"Occupation(s)",value:0},
-    {axis:"Guardians’ Educ.",value:0} 
+    {axis:"Guardian’s Childhood House. Income",value:0}, //q7
+    {axis:"Childhood House. Income w. Guardian",value:0}, //q6
+    {axis:"Household Income (Now)",value:0}, //q5
+    {axis:"Guardians’ Occupation",value:0}, //q4
+    {axis:"Occupation(s)",value:0}, //q3
+    {axis:"Guardians’ Educ.",value:0} //q2
   ],
     //light orange, larger values
   [

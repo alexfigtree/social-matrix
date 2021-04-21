@@ -15,13 +15,14 @@ import HouseholdIncome from './components/Questions/HouseholdIncome';
 import ChildhoodIncome from './components/Questions/ChildhoodIncome';
 import GuardiansChildHouseIncome from './components/Questions/GuardiansChildHouseIncome';
 import Access from './components/Questions/Access';
+import GuardiansAccess from './components/Questions/GuardiansAccess';
 /*
 
 import RaisedBy from './components/Questions/RaisedBy';
 
 
 
-import GuardiansAccess from './components/Questions/GuardiansAccess';
+
 import GuardiansMaritalStatus from './components/Questions/GuardiansMaritalStatus';
 import Race from './components/Questions/Race';
 import Ethnicity from './components/Questions/Ethnicity';
@@ -67,7 +68,7 @@ export default () => (
       <Route path={routes.CHILDHOODINCOME} component={ChildhoodIncome} />
       <Route path={routes.GUARDIANSCHILDHOUSEINCOME} component={GuardiansChildHouseIncome} />
 	  <Route path={routes.ACCESS} component={Access} />
-
+	  <Route path={routes.GUARDIANSACCESS} component={GuardiansAccess} />
 /*      
       
       <Route path={routes.RAISEDBY} component={RaisedBy} />
@@ -75,7 +76,7 @@ export default () => (
       
       
       
-      <Route path={routes.GUARDIANSACCESS} component={GuardiansAccess} />
+      
       <Route path={routes.GUARDIANSMARITALSTATUS} component={GuardiansMaritalStatus} />
       <Route path={routes.RACE} component={Race} />
       <Route path={routes.NATIONOFORIGIN} component={NationOfOrigin} />

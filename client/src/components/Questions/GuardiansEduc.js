@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Box, InputLabel, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
 import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
@@ -10,6 +9,7 @@ import { createMatrix, updateMatrix } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import { questionData } from '../Form/QuestionData.js';
 
+//q2
 const GuardiansEduc = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
@@ -20,10 +20,10 @@ const GuardiansEduc = () => {
   
   const dispatch = useDispatch();
   const classes = useStyles();
-  const [q1_2, setq1_2] = useState(null);
+/*  const [q1_2, setq1_2] = useState(null);
   const [q1_3, setq1_3] = useState(null);
   const [q1_4, setq1_4] = useState(null);
-  const [q1_5, setq1_5] = useState(null);
+  const [q1_5, setq1_5] = useState(null);*/
 
   useEffect(() => {
     if (matrix) setMatrixData(matrix);
@@ -31,10 +31,11 @@ const GuardiansEduc = () => {
 
 
     useEffect(() => {
+        var retrievedObject = localStorage.getItem('matrixData');
+        console.log('retrievedObject during q2 Guard Educ: ', JSON.parse(retrievedObject));
     //let q1_2 = localStorage.getItem("container1.2");
 
-/*s*/
-      }, []);
+    }, []);
 
   const clear = () => {
     setCurrentId(0);
@@ -42,7 +43,7 @@ const GuardiansEduc = () => {
   };
 
   const handleSubmit = async (e) => {
-    let tempData = questionData;
+    let tempData = matrixData;
 
     //let educPreSmall = tempData[0];
     //let educPreLarge = tempData[1];
@@ -95,7 +96,6 @@ const GuardiansEduc = () => {
     //console.log("WHAT IS CURRENT ID", currentId);
 
     if (currentId === 0) {
-
       dispatch(createMatrix(matrixData));
       clear();
     } else {

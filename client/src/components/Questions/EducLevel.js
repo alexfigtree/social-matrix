@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Box, InputLabel, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import FileBase from 'react-file-base64';
 import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
-import { createPost, updatePost } from '../../actions/posts';
 import { createMatrix, updateMatrix } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import { questionData } from '../Form/QuestionData.js';
 
+//q1
 const EducLevel = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
@@ -20,28 +19,12 @@ const EducLevel = () => {
   
   const dispatch = useDispatch();
   const classes = useStyles();
-  const [q1_2, setq1_2] = useState(null);
-  const [q1_3, setq1_3] = useState(null);
-  const [q1_4, setq1_4] = useState(null);
-  const [q1_5, setq1_5] = useState(null);
 
   useEffect(() => {
+    //console.log("MATRIX", matrix);
+    //localStorage.clear();
     if (matrix) setMatrixData(matrix);
   }, [matrix]);
-
-  useEffect(() => {
-    //let q1_2 = localStorage.getItem("container1.2");
-
-    setq1_2(localStorage.getItem("container1.2"));
-    setq1_3(localStorage.getItem("container1.3"));
-    setq1_4(localStorage.getItem("container1.4"));
-    setq1_5(localStorage.getItem("container1.5"));
-/*    console.log('DATA TEST', questionData[0]);
-    console.log('1hey q12', q1_2);
-    console.log('1hey q13', q1_3);
-    console.log('1hey q14', q1_4);*/
-
-  }, []);
 
   const clear = () => {
     setCurrentId(0);
@@ -51,55 +34,48 @@ const EducLevel = () => {
   const handleSubmit = async (e) => {
     let tempData = questionData;
 
-    //let educPreSmall = tempData[0];
-    //let educPreLarge = tempData[1];
-    //let educPostSmall = tempData[2];
-    //let educPostLarge = tempData[3];
-
     //pre: 1.3, 1.5
-    //first [0] corresponds for first array
+    //first [0] corresponds for first object (1/4)
     //second [0] corresponds to educ level
 
-    console.log('educPreSmall[0]', tempData[0][0].value);
-    let q1_pre = [...q1_3.split(','), ...q1_5.split(',')];
-    //console.log('q1_pre', q1_pre);
+    //PRE/EARLIER:  
+    //1.3, 1.5  
+    //POST/CURRENT:
+    //1.2, 1.4
 
-    let q1_pre_small = Math.min(...q1_pre);
-    let q1_pre_large = Math.max(...q1_pre);
-    console.log('q1_pre_small', q1_pre_small);
-    console.log('q1_pre_large', q1_pre_large);
+    const q1_2 = localStorage.getItem("container1.2");
+    const q1_3 = localStorage.getItem("container1.3");
+    const q1_4 = localStorage.getItem("container1.4");
+    const q1_5 = localStorage.getItem("container1.5");
+
+    //pre 1.3, 1.5
+    let domain1_pre = [...q1_3.split(','), ...q1_5.split(',')];
+
+    let domain1_pre_small = Math.min(...domain1_pre);
+    let domain1_pre_large = Math.max(...domain1_pre);
     
     //post 1.2, 1.4
-    let q1_post = [...q1_2.split(','), ...q1_4.split(',')];
-    //console.log('q1_post', q1_post);
+    let domain1_post = [...q1_2.split(','), ...q1_4.split(',')];
     
-    let q1_post_small = Math.min(...q1_post);
-    let q1_post_large = Math.max(...q1_post);
-    console.log('q1_post_small', q1_post_small);
-    console.log('q1_post_large', q1_post_large);
+    let domain1_post_small = Math.min(...domain1_post);
+    let domain1_post_large = Math.max(...domain1_post);
 
 
-    tempData[0][0].value = q1_pre_small;
-    tempData[1][0].value = q1_pre_large;
-    tempData[2][0].value = q1_post_small;
-    tempData[3][0].value = q1_post_large;
+    tempData[0][0].value = domain1_pre_small;
+    tempData[1][0].value = domain1_pre_large;
+    tempData[2][0].value = domain1_post_small;
+    tempData[3][0].value = domain1_post_large;
 
-    //questionData = tempData;
-    console.log("NEW QUESTION DATA", tempData);
-    console.log("TYPEOF NEW QUESTION DATA", typeof tempData);
-    //console.log('educPreSmall', educPreSmall);
-/*    console.log('hey q12', q1_2);
-    console.log('hey q13', q1_3);
-    console.log('hey q14', q1_4);
-    console.log('hey q15', q1_5);
-    e.preventDefault();*/
-    setMatrixData({ tempData });
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
+    //setMatrixData({ tempData });
+
     //setMatrixData({ ...matrixData, matrixData: tempData });
 
-    console.log("what is my matrix data after submitting?", matrixData);
+    //console.log("what is my matrix data after submitting EDUC?", matrixData);
     e.preventDefault();
 
-    console.log("WHAT IS CURRENT ID", currentId);
+    //console.log("WHAT IS CURRENT ID", currentId);
 
     if (currentId === 0) {
 
