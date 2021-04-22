@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -45,10 +45,10 @@ const Access = () => {
     let domain8_pre_post_large = Math.max(...domain8_pre_post);
 
 
-    tempData[0][30].value = domain8_pre_post_small;
-    tempData[1][30].value = domain8_pre_post_large;
-    tempData[2][30].value = domain8_pre_post_small;
-    tempData[3][30].value = domain8_pre_post_large;
+    tempData[0][27].value = domain8_pre_post_small;
+    tempData[1][27].value = domain8_pre_post_large;
+    tempData[2][27].value = domain8_pre_post_small;
+    tempData[3][27].value = domain8_pre_post_large;
 
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
@@ -66,7 +66,7 @@ const Access = () => {
   };
 
   return (
-    <Paper className={classes.paper}>
+    <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Access</Typography>
@@ -105,12 +105,12 @@ const Access = () => {
           
         </Box>
         
-        <Link to="/q8"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/q9"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>
 
    
-    </Paper>
+    </Box>
   );
 };
 

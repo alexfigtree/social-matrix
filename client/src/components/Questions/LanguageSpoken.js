@@ -7,8 +7,8 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 
-//q6
-const ChildhoodIncome = () => {
+//q13
+const LanguageSpoken = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
@@ -24,7 +24,7 @@ const ChildhoodIncome = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: during Childhood Income', JSON.parse(retrievedObject));
+      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
   }, []);
 
   const clear = () => {
@@ -37,6 +37,25 @@ const ChildhoodIncome = () => {
 
     let tempData = matrixData;
 
+    const q5_17 = localStorage.getItem("container5.17");
+
+    let domain13_pre_post = [...q5_17.split(',')];
+
+    let domain13_pre_post_small = Math.min(...domain13_pre_post);
+    
+    let domain13_pre_post_large = Math.max(...domain13_pre_post);
+
+
+    tempData[0][22].value = domain13_pre_post_small;
+    tempData[1][22].value = domain13_pre_post_large;
+    tempData[2][22].value = domain13_pre_post_small;
+    tempData[3][22].value = domain13_pre_post_large;
+
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
+
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -44,17 +63,26 @@ const ChildhoodIncome = () => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    history.push('/q7');
+    history.push('/q14');
   };
 
   return (
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
-        <Typography variant="h5">Childhood Household Income (w/ guardian)</Typography>
+        <Typography variant="h5">Language(s)</Typography>
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.17"><h4>Q 5.17</h4></label>
+            <br/>
+            <p>
+                Rate how privileged or marginalized PERSON's spoken languages are? <b>If PERSON speaks more than one language, select up to two choices.</b>
+            </p>
+            <br/><br/>
+            <CheckboxField id="container5.17" />
+        </Box>
         
-        
-        <Link to="/q7"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/q14"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>
 
@@ -63,4 +91,4 @@ const ChildhoodIncome = () => {
   );
 };
 
-export default ChildhoodIncome;
+export default LanguageSpoken;

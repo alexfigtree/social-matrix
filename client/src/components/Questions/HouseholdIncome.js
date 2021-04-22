@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Button, Typography, Paper } from '@material-ui/core';
+import { Box, Button, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -71,10 +71,10 @@ const HouseholdIncome = () => {
 
   console.log('Values being saved for domain5 pre', domain5_pre_small, ' ', domain5_pre_large);
   console.log('Values being saved for domain5 post', domain5_post_small, ' ', domain5_post_large);
-    tempData[0][33].value = domain5_pre_small;
-    tempData[1][33].value = domain5_pre_large;
-    tempData[2][33].value = domain5_post_small;
-    tempData[3][33].value = domain5_post_large;
+    tempData[0][30].value = domain5_pre_small;
+    tempData[1][30].value = domain5_pre_large;
+    tempData[2][30].value = domain5_post_small;
+    tempData[3][30].value = domain5_post_large;
 
     //questionData = tempData;
     //console.log("NEW QUESTION DATA", tempData);
@@ -103,7 +103,7 @@ const HouseholdIncome = () => {
   };
 
   return (
-    <Paper className={classes.paper}>
+    <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Household Income (Now)</Typography>
@@ -188,7 +188,7 @@ const HouseholdIncome = () => {
       </form>
 
    
-    </Paper>
+    </Box>
   );
 };
 

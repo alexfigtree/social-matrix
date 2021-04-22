@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, TextField, Button, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -90,7 +90,7 @@ const EducLevel = () => {
   };
 
   return (
-    <Paper className={classes.paper}>
+    <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
       <Typography variant="h5">Education Level</Typography>
@@ -229,7 +229,7 @@ const EducLevel = () => {
       </form>
 
    
-    </Paper>
+    </Box>
   );
 };
 

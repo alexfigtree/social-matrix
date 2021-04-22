@@ -7,8 +7,8 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 
-//q9
-const GuardiansAccess = () => {
+//q20
+const RelationLegalSystem = () => {
   const history = useHistory();
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
@@ -37,7 +37,23 @@ const GuardiansAccess = () => {
 
     let tempData = matrixData;
 
+    const q6_28 = localStorage.getItem("container6.28"); //pre
+    const q6_27 = localStorage.getItem("container6.27"); //post
 
+    let domain20_pre = [...q6_28.split(',')];
+    let domain20_pre_small = Math.min(...domain20_pre);
+    let domain20_pre_large = Math.max(...domain20_pre);
+
+
+    let domain20_post = [...q6_27.split(',')];
+    let domain20_post_small = Math.min(...domain20_post);
+    let domain20_post_large = Math.max(...domain20_post);
+
+
+    tempData[0][15].value = domain20_pre_small;
+    tempData[1][15].value = domain20_pre_large;
+    tempData[2][15].value = domain20_post_small;
+    tempData[3][15].value = domain20_post_large;
 
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
@@ -51,18 +67,38 @@ const GuardiansAccess = () => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    history.push('/q10');
+    history.push('/q21');
   };
 
   return (
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
-        <Typography variant="h5">Guardian's Access</Typography>
+        <Typography variant="h5">Relation to Legal System</Typography>
         
-    
-        
-        <Link to="/q10"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.27"><h4>Q 6.27</h4></label>
+            <br/>
+            <p>
+                Rate PERSON's <b>current</b> privilege or marginalization in relation to the legal system.
+            </p>
+            <br/>
+            <CheckboxField id="container6.27" />
+        </Box>
+
+  
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.28"><h4>Q 6.28</h4></label>
+            <br/>
+            <p>
+                Rate PERSON's <b>previous</b> privilege or marginalization in relation to the legal system.
+            </p>
+            <br/>
+            <CheckboxField id="container6.28" />
+        </Box>
+
+        <Link to="/q21"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>
 
@@ -71,4 +107,4 @@ const GuardiansAccess = () => {
   );
 };
 
-export default GuardiansAccess;
+export default RelationLegalSystem;
