@@ -76,24 +76,24 @@ const Appearance = () => {
         
 
         <Box component="div">
-            <label htmlFor="formGroupExampleInput6.40"><h4>Q 6.40</h4></label>
+            <label htmlFor="formGroupExampleInput6.43"><h4>Q 6.43</h4></label>
          
             <p>
-                Please rate PERSON'S <b>current</b> privilege or marginalization in this domain. If PERSON has both a special ability AND a limitation. You can choose 2 numbers.
+                <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>now.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
             </p>
-          
-            <CheckboxField id="container6.40" />
+        
+            <CheckboxField id="container6.43" />
         </Box>
 
-   
+  
         <Box component="div">
-            <label htmlFor="formGroupExampleInput6.41"><h4>Q 6.41</h4></label>
-       
+            <label htmlFor="formGroupExampleInput6.44"><h4>Q 6.44</h4></label>
+         
             <p>
-                Please rate PERSON'S <b>previous</b> privilege or marginalization in this domain. If PERSON has both a special ability AND a limitation. You can choose 2 numbers.
+                <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>earlier.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
             </p>
-          
-            <CheckboxField id="container6.41" />
+         
+            <CheckboxField id="container6.44" />
         </Box>
 
         <Link to="/q25"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

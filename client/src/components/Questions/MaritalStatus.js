@@ -72,24 +72,26 @@ const MaritalStatus = () => {
 
         <Typography variant="h5">Marital Status</Typography>
 
+       
         <Box component="div">
-            <label htmlFor="formGroupExampleInput7.6"><h4>Q 7.6</h4></label>
+            <label htmlFor="formGroupExampleInput7.12"><h4>Q 7.12</h4></label>
+            
             <p>
-                Please rate PERSON's <b>current</b> privilege or marginalization in relation to PERSON's own parental status.
+                Please rate how privileged or marginalized PERSON'S marital/relational status is, <b>currently</b>, including all the aspects of PERSON'S marital/relational status
             </p>
-      
-            <CheckboxField id="container7.6" />
+       
+            <CheckboxField id="container7.12" />
         </Box>
 
      
         <Box component="div">
-            <label htmlFor="formGroupExampleInput7.7"><h4>Q 7.7</h4></label>
-    
+            <label htmlFor="formGroupExampleInput7.13"><h4>Q 7.13</h4></label>
+          
             <p>
-                Please rate PERSON's privilege or marginalization in relation to PERSON's own parental status <b>earlier.</b>
+                Please rate how privileged or marginalized PERSON'S marital/relational status was <b>previously</b>, including all the aspects of PERSON'S marital/relational status.
             </p>
-       
-            <CheckboxField id="container7.7" />
+         
+            <CheckboxField id="container7.13" />
         </Box>
 
         <Link to="/q30"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

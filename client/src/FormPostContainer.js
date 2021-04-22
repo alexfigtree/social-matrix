@@ -59,21 +59,11 @@ const FormPostContainer = () => {
             </Typography>
             <Link to="/q1"><Typography variant="h3" align="center">Start 
             </Typography></Link>
-            <Link to="/q2"><Typography variant="h3" align="center">Q2 
-            </Typography></Link>
-            <Link to="/q3"><Typography variant="h3" align="center">Q3 
-            </Typography></Link>
-            <Link to="/form"><Typography variant="h3" align="center">Test 
-            </Typography></Link>
         </Box>
         		
-                <Form currentId={currentId} setCurrentId={setCurrentId} />
-             
-              <Grid item xs={12} sm={7}>
-                <Posts setCurrentId={setCurrentId} />
-              </Grid>
 
-              <Link to="/q2">Start</Link>
+
+          
               
         </Grid>
       

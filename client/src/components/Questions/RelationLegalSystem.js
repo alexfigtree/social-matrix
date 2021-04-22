@@ -40,6 +40,8 @@ const RelationLegalSystem = () => {
     const q6_28 = localStorage.getItem("container6.28"); //pre
     const q6_27 = localStorage.getItem("container6.27"); //post
 
+    console.log('tests q6_28', q6_28);
+    console.log('tests q6_27', q6_27);
     let domain20_pre = [...q6_28.split(',')];
     let domain20_pre_small = Math.min(...domain20_pre);
     let domain20_pre_large = Math.max(...domain20_pre);
