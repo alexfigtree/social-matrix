@@ -44,6 +44,7 @@ import GenderExpression from './components/Questions/GenderExpression';
 import SexAtBirth from './components/Questions/SexAtBirth';
 import UniqueHistory from './components/Questions/UniqueHistory';
 
+import Results from './components/Results/Results';
 
 export default () => (
   <App>
@@ -91,6 +92,7 @@ export default () => (
       <Route path={routes.SEXATBIRTH} component={SexAtBirth} />
       <Route path={routes.UNIQUEHISTORY} component={UniqueHistory} />
 
+	  <Route path={routes.RESULTS} component={Results} />
     </Switch>
   </App>
 );

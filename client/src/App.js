@@ -77,6 +77,9 @@ import SexAtBirth from './components/Questions/SexAtBirth';
 //q34
 import UniqueHistory from './components/Questions/UniqueHistory';
 
+import Results from './components/Results/Results';
+
+
 const App = () => {
   return (
     <Switch>
@@ -122,6 +125,9 @@ const App = () => {
       <Route path="/q32" component={GenderExpression} />
       <Route path="/q33" component={SexAtBirth} />
       <Route path="/q34" component={UniqueHistory} />
+
+      <Route path="/results" component={Results} />
+
 
     </Switch>
   )

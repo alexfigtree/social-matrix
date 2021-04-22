@@ -63,7 +63,7 @@ const UniqueHistory = () => {
       dispatch(updatePost(currentId, postData));
       clear();
     }
-    //history.push('/q34');
+    history.push('/results');
   };
 
   return (
@@ -91,7 +91,7 @@ const UniqueHistory = () => {
            
             <CheckboxField id="container7.28" />
         </Box>
-        <Link to="/"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
+        <Link to="/results"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>FINISH</Button></Link>
 
       </form>
 
