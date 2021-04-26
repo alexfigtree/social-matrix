@@ -67,12 +67,12 @@ const ParentalStatus = () => {
   };
 
   return (
-    <Box className={classes.paper}>
+    <Box className={classes.paper} style={{ flexDirection: 'col' }}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Parental Status</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.6"><h4>Q 7.6</h4></label>
             <p>
                 Please rate PERSON's <b>current</b> privilege or marginalization in relation to PERSON's own parental status.
@@ -82,7 +82,7 @@ const ParentalStatus = () => {
         </Box>
 
      
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.7"><h4>Q 7.7</h4></label>
     
             <p>
@@ -92,8 +92,10 @@ const ParentalStatus = () => {
             <CheckboxField id="container7.7" />
         </Box>
 
+ 
+      
         <Link to="/q29"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
-
+  
       </form>
 
    
