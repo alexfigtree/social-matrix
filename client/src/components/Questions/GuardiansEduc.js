@@ -15,15 +15,16 @@ const GuardiansEduc = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 
-  const [matrixData, setMatrixData] = useState({ matrixData: {} });
+  const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
   const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
   
   const dispatch = useDispatch();
   const classes = useStyles();
-/*  const [q1_2, setq1_2] = useState(null);
-  const [q1_3, setq1_3] = useState(null);
-  const [q1_4, setq1_4] = useState(null);
-  const [q1_5, setq1_5] = useState(null);*/
+  let [q4_4_1, setq4_4_1] = useState('');
+  let [q4_4_2, setq4_4_2] = useState('');
+  let [q4_4_3, setq4_4_3] = useState('');
+  let [q4_4_4, setq4_4_4] = useState('');
+  let [q4_4_5, setq4_4_5] = useState('');
 
   useEffect(() => {
     if (matrix) setMatrixData(matrix);
@@ -45,52 +46,42 @@ const GuardiansEduc = () => {
   const handleSubmit = async (e) => {
     let tempData = matrixData;
 
-    //let educPreSmall = tempData[0];
-    //let educPreLarge = tempData[1];
-    //let educPostSmall = tempData[2];
-    //let educPostLarge = tempData[3];
-
-    //pre: 1.3, 1.5
-    //first [0] corresponds for first array
-    //second [0] corresponds to educ level
-/*
-    console.log('educPreSmall[0]', tempData[0][0].value);
-    let q1_pre = [...q1_3.split(','), ...q1_5.split(',')];
-    //console.log('q1_pre', q1_pre);
-
-    let q1_pre_small = Math.min(...q1_pre);
-    let q1_pre_large = Math.max(...q1_pre);
-    console.log('q1_pre_small', q1_pre_small);
-    console.log('q1_pre_large', q1_pre_large);
-    
-    //post 1.2, 1.4
-    let q1_post = [...q1_2.split(','), ...q1_4.split(',')];
-    //console.log('q1_post', q1_post);
-    
-    let q1_post_small = Math.min(...q1_post);
-    let q1_post_large = Math.max(...q1_post);
-    console.log('q1_post_small', q1_post_small);
-    console.log('q1_post_large', q1_post_large);
 
 
-    tempData[0][0].value = q1_pre_small;
-    tempData[1][0].value = q1_pre_large;
-    tempData[2][0].value = q1_post_small;
-    tempData[3][0].value = q1_post_large;*/
+    const q4_4_1 = localStorage.getItem("container4.4.1"); //pre and post
+    const q4_4_2 = localStorage.getItem("container4.4.2"); //pre and post
+    let q4_4_3 = localStorage.getItem("container4.4.3"); //pre and post
+    let q4_4_4 = localStorage.getItem("container4.4.4"); //pre and post
+    let q4_4_5 = localStorage.getItem("container4.4.5"); //pre and post
 
-    //questionData = tempData;
-    //console.log("NEW QUESTION DATA", tempData);
-    //console.log("TYPEOF NEW QUESTION DATA", typeof tempData);
-    //console.log('educPreSmall', educPreSmall);
-/*    console.log('hey q12', q1_2);
-    console.log('hey q13', q1_3);
-    console.log('hey q14', q1_4);
-    console.log('hey q15', q1_5);
-    e.preventDefault();*/
-    setMatrixData({ tempData });
-    //setMatrixData({ ...matrixData, matrixData: tempData });
+console.log("1", q4_4_1);
+    console.log("2", q4_4_2);
+    console.log("3", q4_4_3);
+    console.log("4", q4_4_4);
+    console.log("5", q4_4_5);
 
-    //console.log("what is my matrix data after submitting?", matrixData);
+/*    let domain2_not_null = [q4_4_1,q4_4_2,q4_4_3,q4_4_4,q4_4_5].filter(function (el) {
+      
+      return el !== null;
+    });*/
+
+    //console.log('domain2_not_null', domain2_not_null);
+
+    //let domain2_pre_post = [...domain2_not_null.split(',')];
+    //let domain2_pre_post = [domain2_not_null];
+    //console.log('domain2_pre_post', domain2_pre_post);
+    let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')];
+    let domain2_pre_post_small = Math.min(...domain2_pre_post);
+    let domain2_pre_post_large = Math.max(...domain2_pre_post);
+
+    tempData[0][33].value = domain2_pre_post_small;
+    tempData[1][33].value = domain2_pre_post_large;
+    tempData[2][33].value = domain2_pre_post_small;
+    tempData[3][33].value = domain2_pre_post_large;
+
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
+
     e.preventDefault();
 
     //console.log("WHAT IS CURRENT ID", currentId);
@@ -111,7 +102,73 @@ const GuardiansEduc = () => {
 
         <Typography variant="h5">Guardians’ Education</Typography>
 
-        
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput4.4"><h4>Q 4.4</h4></label>
+            <br/>
+            <Typography variant="h5" align="left">
+                <span style={{ textDecoration: 'underline' }}>Parent/guardian's 
+                highest level of education, compared to Parent/Guardian's COUNTRY 
+                AND LOCAL COMMUNITY while raising PERSON, early in raising 
+                PERSON.</span> 
+            </Typography>
+            <br/>
+            <p>
+                How would you rate the privilege of each <b>Parent/Guardian's</b> 
+                level of education early in the time they were <b>raising PERSON</b>, 
+                as compared to everyone in that <b>Parent/Guardian's COUNTRY</b> and 
+                <b>LOCAL COMMUNITY</b>?
+            </p>
+            <p>
+                <b>In answering this question, consider both time and place.</b> For 
+                instance, in the US in 2019, 88% of adults have high school 
+                diplomas, but only 33% have bachelor's degree or higher. Those 
+                numbers were much lower 50 years ago. In Mexico in 2019, 45% of 
+                adults have finished high school and 8% have college degrees. 
+                Therefore, being a high school graduate has different status in 
+                Mexico than in the US, and that status has changed over the 
+                generations. <b>The numbers will differ for different local 
+                communities and for people born into different generations.</b>
+            </p>
+
+            <Typography variant="h5" align="left">
+                <span style={{ textDecoration: 'underline' }}>Choose one 
+                answer for COUNTRY and, if different, a second answer for 
+                LOCAL COMMUNITY, for a total of one or two responses. 
+                If relative educational privilege changed because of getting 
+                more education or im/migrating, you may also choose two 
+                responses.</span> 
+            </Typography>
+            <p>
+                <b>Only answer for the actual number of parents/parenting figures.</b>
+            </p>
+            <br/><br/>
+            <p>
+                Parent/Figure 1
+            </p>
+            <CheckboxField id="container4.4.1" />
+
+            <p>
+                Parent/Figure 2
+            </p>
+            <CheckboxField id="container4.4.2" />
+
+            <p>
+                Parent/Figure 3
+            </p>
+            <CheckboxField id="container4.4.3" />
+
+            <p>
+                Parent/Figure 4
+            </p>
+            <CheckboxField id="container4.4.4" />
+
+            <p>
+                Additional Parent/Figure
+            </p>
+            <CheckboxField id="container4.4.5" />
+        </Box>
+
+
         <Link to="/q3"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
       </form>
 

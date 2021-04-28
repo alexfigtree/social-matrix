@@ -22,7 +22,6 @@ const Results = () => {
       console.log('retrievedObject: Results', JSON.parse(retrievedObject));
   }, []);
 
-  console.log("gerge", JSON.parse(data)[0][0].value);
 /*
 
 
@@ -378,10 +377,6 @@ var legend = svg.append("g")
             ],
           }}
         />
-
-        <Container id="body">
-          <div id="chart" className="svg-align"><div className="matrix-header">Subject 1 - Earlier Matrix</div></div>
-        </Container>
 
     </div>
 

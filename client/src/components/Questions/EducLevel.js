@@ -47,10 +47,10 @@ const EducLevel = () => {
     const q1_3 = localStorage.getItem("container1.3");
     const q1_4 = localStorage.getItem("container1.4");
     const q1_5 = localStorage.getItem("container1.5");
-
+    console.log('...q1_3.split(',')', ...q1_3.split(','));
     //pre 1.3, 1.5
     let domain1_pre = [...q1_3.split(','), ...q1_5.split(',')];
-
+    console.log('domain1_pre_educ_level', domain1_pre);
     let domain1_pre_small = Math.min(...domain1_pre);
     let domain1_pre_large = Math.max(...domain1_pre);
     

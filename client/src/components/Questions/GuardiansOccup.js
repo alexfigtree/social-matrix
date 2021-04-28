@@ -33,23 +33,6 @@ const GuardiansOccup = () => {
     console.log('GUARD OCCUP - now q4: retrievedObject: ', JSON.parse(retrievedObject));
   }, []);
 
-  useEffect(() => {
-    //let q1_2 = localStorage.getItem("container1.2");
-
-/*    setq1_2(localStorage.getItem("container1.2"));
-    setq1_3(localStorage.getItem("container1.3"));
-    setq1_4(localStorage.getItem("container1.4"));
-    setq1_5(localStorage.getItem("container1.5"));
-
-    let q2_2 = localStorage.getItem("container2.2");
-    let q2_4 = localStorage.getItem("container2.4");
-    
-    console.log('GUARDOCCUP - prev question 2.4 (Pre)', q2_4);
-    console.log('GUARDOCCUP - prev question 2.2 (POST)', q2_2);*/
-
-
-  }, []);
-
   const clear = () => {
     setCurrentId(0);
     setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
@@ -57,6 +40,32 @@ const GuardiansOccup = () => {
 
   const handleSubmit = async (e) => {
     let tempData = matrixData;
+
+    let q4_6_1 = localStorage.getItem("container4.6.1"); //pre and post
+    let q4_6_2 = localStorage.getItem("container4.6.2"); //pre and post
+    let q4_6_3 = localStorage.getItem("container4.6.3"); //pre and post
+    let q4_6_4 = localStorage.getItem("container4.6.4"); //pre and post
+    let q4_6_5 = localStorage.getItem("container4.6.5"); //pre and post
+
+    console.log("1", q4_6_1);
+    console.log("2", q4_6_2);
+    console.log("3", q4_6_3);
+    console.log("4", q4_6_4);
+    console.log("5", q4_6_5);
+
+
+    //console.log('domain4_pre_post', domain4_pre_post);
+    let domain4_pre_post = [...q4_6_1.split(','),...q4_6_2.split(','),...q4_6_3.split(','),...q4_6_4.split(','),...q4_6_5.split(',')];
+    let domain4_pre_post_small = Math.min(...domain4_pre_post);
+    let domain4_pre_post_large = Math.max(...domain4_pre_post);
+
+    tempData[0][31].value = domain4_pre_post_small;
+    tempData[1][31].value = domain4_pre_post_large;
+    tempData[2][31].value = domain4_pre_post_small;
+    tempData[3][31].value = domain4_pre_post_large;
+
+    localStorage.setItem('matrixData', JSON.stringify(tempData));
+    setMatrixData(tempData);
 
     e.preventDefault();
 
@@ -76,7 +85,57 @@ const GuardiansOccup = () => {
 
         <Typography variant="h5">Guardian's Occupation</Typography>
         
-       
+          <Box component="div">
+            <label htmlFor="formGroupExampleInput4.6"><h4>Q 4.6</h4></label>
+            <br/>
+            <Typography variant="h5" align="left">
+                <span style={{ textDecoration: 'underline' }}>
+                Parent/Guardians' occupation(s), compared to EachParent'/Guardians 
+                COUNTRY AND LOCAL COMMUNITY later on while raising PERSON.</span> 
+            </Typography>
+            <br/>
+            <p>
+                How would you rate the privilege of each Parent/Guardian 
+                occupation while raising PERSON, as compared to everyone in 
+                Parent/Guardian's COUNTRY and LOCAL COMMUNITY?
+            </p>
+            <p style={{ textDecoration: 'underline' }}>
+                Choose one answer for COUNTRY and, if different, a second answer 
+                for LOCAL COMMUNITY, for a total of one or two responses. If 
+                  relative occupational privilege changed because of Parent/Guardian's 
+                work situation or other change in status, including im/migration, 
+                you may also choose two responses.
+            </p>
+            <p>
+                Please only answer for relevant number of parents/parenting figures.
+            </p>
+            
+            <br/><br/>
+            <p>
+                Parent/Figure 1
+            </p>
+            <CheckboxField id="container4.6.1" />
+
+            <p>
+                Parent/Figure 2
+            </p>
+            <CheckboxField id="container4.6.2" />
+
+            <p>
+                Parent/Figure 3
+            </p>
+            <CheckboxField id="container4.6.3" />
+
+            <p>
+                Parent/Figure 4
+            </p>
+            <CheckboxField id="container4.6.4" />
+
+            <p>
+                Additional Parent/ Parenting Figure
+            </p>
+            <CheckboxField id="container4.6.5" />
+        </Box>
         
         <Link to="/q5"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
