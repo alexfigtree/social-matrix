@@ -1,4 +1,4 @@
-var data = [
+export let data = [
   // Subject 1 (JK) - Pre/Earlier
   //dark orange, smaller values
   [

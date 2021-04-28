@@ -3,7 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router';
 import routes from './constants/routes.json';
 import App from './containers/App';
-import Home from './Home';
+import Home from './components/Home';
 import FormPostContainer from './FormPostContainer';
 
 import Form from './components/Form/Form';

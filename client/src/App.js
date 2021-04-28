@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import FormPostContainer from './FormPostContainer';
-import Home from './Home'
+import Home from './components/Home'
 
 import Form from './components/Form/Form';
 //q1
