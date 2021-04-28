@@ -18,8 +18,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:1}, //two values
-    {axis:"MH/Subst. Abuse",value:3},
-    {axis:"Relation to MH System",value:3},
+    {axis:"MH/Substance Use",value:3},
     {axis:"Relation to Legal System",value:3},
     {axis:"Relation to Military",value:3},
     {axis:"Impact of Historical Times",value:5},
@@ -29,10 +28,8 @@ export let data = [
     {axis:"Chosen Religion",value:5},
     {axis:"Family Religion",value:6},
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:1},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:2}, //two values
@@ -63,8 +60,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:2}, //two values
-    {axis:"MH/Subst. Abuse",value:3},
-    {axis:"Relation to MH System",value:3},
+    {axis:"MH/Substance Use",value:3},
     {axis:"Relation to Legal System",value:3},
     {axis:"Relation to Military",value:3},
     {axis:"Impact of Historical Times",value:5},
@@ -74,10 +70,8 @@ export let data = [
     {axis:"Chosen Religion",value:5},
     {axis:"Family Religion",value:6},
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:3}, //two values
@@ -109,8 +103,7 @@ export let data = [
     {axis:"Health/Ability",value:6},
 
     {axis:"Cognitive Ability/Style",value:2}, //two values
-    {axis:"MH/Subst. Abuse",value:2},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:2},
     {axis:"Impact of Historical Times",value:4},
@@ -120,10 +113,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:4},
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:1},
     {axis:"Ethnicity / Tribe",value:3},
     {axis:"Race(s)",value:2},
     {axis:"Guardians’ Access",value:2}, //two values
@@ -154,8 +145,7 @@ export let data = [
     {axis:"Health/Ability",value:6},
 
     {axis:"Cognitive Ability/Style",value:3}, //two values
-    {axis:"MH/Subst. Abuse",value:2},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:2},
     {axis:"Impact of Historical Times",value:4},
@@ -165,10 +155,8 @@ export let data = [
     {axis:"Chosen Religion",value:5},
     {axis:"Family Religion",value:5},
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:5},
     {axis:"Ethnicity / Tribe",value:4},
     {axis:"Race(s)",value:2},
     {axis:"Guardians’ Access",value:3}, //two values
@@ -200,8 +188,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:5},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:1},
     {axis:"Impact of Historical Times",value:7},
@@ -211,10 +198,8 @@ export let data = [
     {axis:"Chosen Religion",value:7},
     {axis:"Family Religion",value:1}, //two values
     {axis:"Language(s) Spoken",value:1}, //two values
-    {axis:"# Generations in Country",value:7},
 
-    {axis:"Citizenship Status",value:3},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:3},
     {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, //two values
@@ -246,8 +231,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:5},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:5},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:1},
     {axis:"Impact of Historical Times",value:7},
@@ -257,10 +241,8 @@ export let data = [
     {axis:"Chosen Religion",value:7},
     {axis:"Family Religion",value:7}, //two values
     {axis:"Language(s) Spoken",value:3}, //two values
-    {axis:"# Generations in Country",value:7},
 
-    {axis:"Citizenship Status",value:3},
-    {axis:"Person's Nation of Origin",value:5}, 
+    {axis:"Nation of Origin / Citizenship",value:7}, 
     {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, 
@@ -293,8 +275,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:5},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:1},
     {axis:"Impact of Historical Times",value:7},
@@ -304,10 +285,8 @@ export let data = [
     {axis:"Chosen Religion",value:7},
     {axis:"Family Religion",value:1}, //two values
     {axis:"Language(s) Spoken",value:1}, //two values
-    {axis:"# Generations in Country",value:7},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5}, 
+    {axis:"Nation of Origin / Citizenship",value:2}, 
     {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6}, 
@@ -339,8 +318,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:5},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:5},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:1},
     {axis:"Impact of Historical Times",value:7},
@@ -350,10 +328,8 @@ export let data = [
     {axis:"Chosen Religion",value:7},
     {axis:"Family Religion",value:7}, //two values
     {axis:"Language(s) Spoken",value:3}, //two values
-    {axis:"# Generations in Country",value:7},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:7},
     {axis:"Ethnicity / Tribe",value:7},
     {axis:"Race(s)",value:7},
     {axis:"Guardians’ Access",value:6},
@@ -386,8 +362,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:5},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -397,10 +372,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:1}, 
     {axis:"Language(s) Spoken",value:2}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:2},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:6},//two values
@@ -432,8 +405,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:5},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -443,10 +415,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:1}, 
     {axis:"Language(s) Spoken",value:2}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:6},//two values
@@ -479,8 +449,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -490,10 +459,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:2}, 
     {axis:"Language(s) Spoken",value:4}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:2},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:5},//two values
@@ -525,8 +492,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -536,10 +502,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:2}, 
     {axis:"Language(s) Spoken",value:4}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:5},//two values
@@ -572,8 +536,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -583,10 +546,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:2}, 
     {axis:"Language(s) Spoken",value:4}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:2},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:5},//two values
@@ -618,8 +579,7 @@ export let data = [
     {axis:"Health/Ability",value:2},
 
     {axis:"Cognitive Ability/Style",value:4},
-    {axis:"MH/Subst. Abuse",value:1},
-    {axis:"Relation to MH System",value:2},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:4},
@@ -629,10 +589,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:2}, 
     {axis:"Language(s) Spoken",value:4}, 
-    {axis:"# Generations in Country",value:5},
 
-    {axis:"Citizenship Status",value:2},
-    {axis:"Person's Nation of Origin",value:5},
+    {axis:"Nation of Origin / Citizenship",value:5},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:6},
     {axis:"Guardians’ Access",value:5}, //two values
@@ -665,8 +623,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:2},
-    {axis:"MH/Subst. Abuse",value:2},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:1},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:2},
@@ -676,10 +633,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:3}, 
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:2},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:1},
     {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2},//two values
@@ -711,8 +666,7 @@ export let data = [
     {axis:"Health/Ability",value:4},
 
     {axis:"Cognitive Ability/Style",value:2},
-    {axis:"MH/Subst. Abuse",value:2},
-    {axis:"Relation to MH System",value:1},
+    {axis:"MH/Substance Use",value:2},
     {axis:"Relation to Legal System",value:1},
     {axis:"Relation to Military",value:4},
     {axis:"Impact of Historical Times",value:2},
@@ -722,10 +676,8 @@ export let data = [
     {axis:"Chosen Religion",value:4},
     {axis:"Family Religion",value:3}, 
     {axis:"Language(s) Spoken",value:1},
-    {axis:"# Generations in Country",value:2},
 
-    {axis:"Citizenship Status",value:1},
-    {axis:"Person's Nation of Origin",value:1},
+    {axis:"Nation of Origin / Citizenship",value:2},
     {axis:"Ethnicity / Tribe",value:2},
     {axis:"Race(s)",value:1},
     {axis:"Guardians’ Access",value:2}, //two values
