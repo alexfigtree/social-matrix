@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField_RaisedBy from '../Form/CheckboxField_RaisedBy';
+import CheckboxField from '../Form/CheckboxField';
 
 //q26
 const RaisedBy = () => {

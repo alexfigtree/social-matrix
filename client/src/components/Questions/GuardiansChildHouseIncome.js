@@ -97,7 +97,7 @@ const GuardiansChildHouseIncome = () => {
             <p>
               How do you rate the relative privilege of each <b>Parent/Guardian's 
               household income and wealth <span style={{ textDecoration: 'underline' }}>
-              DURING PARENT/GUARDIAN'S OWN CHILDHOOD (not person's childhood)</span>, 
+              DURING PARENT/GUARDIAN'S OWN CHILDHOOD (not person's childhood)</span></b>, 
               as compared to others in each Parent/Guardian's
               <b>community and country at that time?</b>
             </p>
