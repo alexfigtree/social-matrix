@@ -135,7 +135,7 @@ const GuardiansOccup = () => {
                 Additional Parent/ Parenting Figure
             </p>
             <CheckboxField id="container4.6.5" />
-        </Box>
+          </Box>
         
         <Link to="/q5"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
