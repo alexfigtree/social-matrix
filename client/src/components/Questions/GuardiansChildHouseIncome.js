@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q7
 const GuardiansChildHouseIncome = () => {
@@ -13,6 +14,8 @@ const GuardiansChildHouseIncome = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
+
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
@@ -31,6 +34,9 @@ const GuardiansChildHouseIncome = () => {
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: during GuardChildhood Income', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes: during GuardChildhood Income', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -42,8 +48,6 @@ const GuardiansChildHouseIncome = () => {
     e.preventDefault();
 
     let tempData = matrixData;
-
-
 
     let q4_9_1 = localStorage.getItem("container4.9.1"); //pre and post
     let q4_9_2 = localStorage.getItem("container4.9.2"); //pre and post
@@ -69,6 +73,30 @@ const GuardiansChildHouseIncome = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    //footnote 1.6
+    const f4_5_1 = localStorage.getItem("4.5.1");
+    const f4_5_2 = localStorage.getItem("4.5.2");
+    const f4_5_3 = localStorage.getItem("4.5.3");
+    const f4_5_4 = localStorage.getItem("4.5.4");
+    const f4_5_5 = localStorage.getItem("4.5.5");
+
+    const f4_10_1 = localStorage.getItem("4.10.1");
+    const f4_10_2 = localStorage.getItem("4.10.2");
+    const f4_10_3 = localStorage.getItem("4.10.3");
+    const f4_10_4 = localStorage.getItem("4.10.4");
+    const f4_10_5 = localStorage.getItem("4.10.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f4_5_1, f4_5_2, f4_5_3, f4_5_4, f4_5_5, f4_10_1, f4_10_2, f4_10_3, f4_10_4, f4_10_5].filter(Boolean).join("; ");
+    console.log('concatString', concatString);
+    tempFootnotes[0][28].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    setFootnotes(tempFootnotes);
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -85,6 +113,41 @@ const GuardiansChildHouseIncome = () => {
 
         <Typography variant="h5">Guardians’ Childhood Household Income</Typography>
         
+
+          <Box component="div">
+            <label htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
+      
+            <Typography variant="h5" align="left">
+                Please describe each Parent/Guardian's highest educational level 
+                achieved while raising Q4.5 person (for example, "finished 9th grade," 
+                "vocational degree as electrician," or "masters degree in education"). 
+                Please also give year and community in which each Parent's education ended. 
+                 years of education changed in PERSON's childhood, or if Parent's educational 
+                 privilege changed because of im/migration or major changes in economy, 
+                 please specify that.
+            </Typography>
+
+            <Typography variant="h5" align="left">
+                Please only answer for relevant number of parents/parenting figures.
+            </Typography>
+
+            <p>Parent/Parenting Figure 1</p>
+            <FootnoteField id="4.5.1" />
+
+            <p>Parent/Parenting Figure 2</p>
+            <FootnoteField id="4.5.2" />
+
+            <p>Parent/Parenting Figure 3</p>
+            <FootnoteField id="4.5.3" />
+
+            <p>Parent/Parenting Figure 4</p>
+            <FootnoteField id="4.5.4" />
+
+            <p>Additional Parent/Parenting Figure</p>
+            <FootnoteField id="4.5.5" />
+      
+          </Box>
+
           <Box component="div">
             <label htmlFor="formGroupExampleInput4.9"><h4>Q 4.9</h4></label>
             <br/>
@@ -140,6 +203,39 @@ const GuardiansChildHouseIncome = () => {
                 Additional Parent/Figure
             </p>
             <CheckboxField id="container4.9.5" />
+          </Box>
+
+
+          <Box component="div">
+            <label htmlFor="formGroupExampleInput4.10"><h4>Q 4.10</h4></label>
+      
+            <p>
+                Please explain your answer to the last question, including any 
+                significant changes in Parent/Guardian's household wealth during 
+                Parent/Guardian's own childhood, and the reasons for those changes 
+                (for instance, explain changes in wealth because of immigration, 
+                or illness in the family).
+            </p>
+
+            <p>
+                Please only answer for relevant number of parents/parenting figures.
+            </p>
+
+            <p>Parent/Parenting Figure 1</p>
+            <FootnoteField id="4.10.1" />
+
+            <p>Parent/Parenting Figure 2</p>
+            <FootnoteField id="4.10.2" />
+
+            <p>Parent/Parenting Figure 3</p>
+            <FootnoteField id="4.10.3" />
+
+            <p>Parent/Parenting Figure 4</p>
+            <FootnoteField id="4.10.4" />
+
+            <p>Additional Parent/Parenting Figure</p>
+            <FootnoteField id="4.10.5" />
+      
           </Box>
         
         <Link to="/q8"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

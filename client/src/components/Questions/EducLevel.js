@@ -6,7 +6,9 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createMatrix, updateMatrix } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 import { questionData } from '../Form/QuestionData.js';
+import { blankFootnotes } from '../Form/BlankFootnotes.js';
 
 //q1
 const EducLevel = () => {
@@ -15,6 +17,7 @@ const EducLevel = () => {
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 
   const [matrixData, setMatrixData] = useState({ matrixData: {} });
+  const [footnotes, setFootnotes] = useState({ matrixData: {} });
   const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
   
   const dispatch = useDispatch();
@@ -29,6 +32,7 @@ const EducLevel = () => {
   const clear = () => {
     setCurrentId(0);
     setMatrixData({ matrixData: {} });
+    setFootnotes({ footnotes: {} });
   };
 
   const handleSubmit = async (e) => {
@@ -72,7 +76,22 @@ const EducLevel = () => {
 
     //setMatrixData({ ...matrixData, matrixData: tempData });
 
+    //PROCESS FOOTNOTE DATA
+    let tempFootnotes = blankFootnotes;
+    //footnote 1.6
+    const f1_6 = localStorage.getItem("1.6");
+    //generate concatentated string
+
+    console.log('erge', f1_6);
+    tempFootnotes[0][0].value = f1_6;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    setFootnotes(tempFootnotes);
+
+
+
+
     //console.log("what is my matrix data after submitting EDUC?", matrixData);
+    //MISC:
     e.preventDefault();
 
     //console.log("WHAT IS CURRENT ID", currentId);
@@ -88,7 +107,8 @@ const EducLevel = () => {
 
     history.push('/q2');
   };
-
+/*  <FootnoteField id="1.6" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+*/
   return (
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
@@ -208,21 +228,19 @@ const EducLevel = () => {
             <CheckboxField id="container1.5" />
         </Box>
 
-   
-        <hr/><br/>
         <Box component="div">
             <label htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
             <br/>
             <p>
-                <Box component="span" style={{ fontWeight: 600 }}>Please give PERSON's highest level of education</Box>(for example, "finished 9th grade,"
-                "vocational degree as electrician," or "masters degree in education").<Box component="span" style={{ fontWeight: 600 }}>  Also give year,
-                community, and country in which PERSON finished education.</Box>
+                <b>Please give PERSON's highest level of education</b>(for example, "finished 9th grade,"
+                "vocational degree as electrician," or "masters degree in education").<b>  Also give year,
+                community, and country in which PERSON finished education.</b>
             </p>
             <br/>
-            <TextField id="container1.6" name="exampleInputEmail1.6" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+            
+            <FootnoteField id="1.6" />
+           
         </Box>
-
-
 
 
         <Link to="/q2"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

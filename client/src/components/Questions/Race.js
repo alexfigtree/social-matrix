@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q10
 const Race = () => {
@@ -25,6 +26,9 @@ const Race = () => {
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes: Access', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {

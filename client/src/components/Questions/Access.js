@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q8
 const Access = () => {
@@ -24,6 +25,9 @@ const Access = () => {
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes: Access', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -53,6 +57,11 @@ const Access = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    const f3_6 = localStorage.getItem("3.6");
+    tempFootnotes[0][27].value = f3_6;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -70,9 +79,7 @@ const Access = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Access</Typography>
-        
-      
-        <br/>
+ 
         <Box component="div">
             <label htmlFor="formGroupExampleInput3.5"><h4>Q 3.5</h4></label>
             <br/>
@@ -91,17 +98,16 @@ const Access = () => {
             <CheckboxField id="container3.5" />
         </Box>
 
-    
-        <hr/><br/>
         <Box component="div">
             <label htmlFor="formGroupExampleInput3.6"><h4>Q 3.6</h4></label>
             <br/>
             <Typography variant="h5" align="left">
-                Please explain above answer (for instance, high access in some specific areas, lower in others).
+                Please explain above answer (for instance, high access in some 
+                specific areas, lower in others).
             </Typography>
             <br/>
 
-            <TextField id="container3.6" name="exampleInputEmail3.6" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+            <FootnoteField id="3.6" />
           
         </Box>
         

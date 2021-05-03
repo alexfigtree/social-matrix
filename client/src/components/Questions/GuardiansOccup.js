@@ -7,6 +7,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q4
 const GuardiansOccup = () => {
@@ -14,6 +15,9 @@ const GuardiansOccup = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
+
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
@@ -31,6 +35,9 @@ const GuardiansOccup = () => {
   useEffect(() => {
     var retrievedObject = localStorage.getItem('matrixData');
     console.log('GUARD OCCUP - now q4: retrievedObject: ', JSON.parse(retrievedObject));
+
+    var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('GUARD OCCUP - now q4: retrievedFootnotes: ', JSON.parse(retrievedFootnotes)); 
   }, []);
 
   const clear = () => {
@@ -66,6 +73,14 @@ const GuardiansOccup = () => {
 
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    const f4_7 = localStorage.getItem("4.7");
+    tempFootnotes[0][31].value = f4_7;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    setFootnotes(tempFootnotes);
+
 
     e.preventDefault();
 
@@ -136,6 +151,23 @@ const GuardiansOccup = () => {
             </p>
             <CheckboxField id="container4.6.5" />
           </Box>
+
+
+          <Box component="div">
+            <label htmlFor="formGroupExampleInput4.7"><h4>Q 4.7</h4></label>
+      
+            <Typography variant="h5" align="left">
+                Describe each Parent/Guardian's occupation(s) during PERSON's childhood. 
+                Briefly explain why you rated Parent's occupation(s) as you did in 
+                relation to both local community and country. Your answer can include 
+                multiple occupations over time and in different communities and countries 
+                for each parent, if relevant:
+            </Typography>
+      
+            <FootnoteField id="4.7" />
+      
+          </Box>
+
         
         <Link to="/q5"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 

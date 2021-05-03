@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q3
 const Occupation = () => {
@@ -13,6 +14,9 @@ const Occupation = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
+
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
@@ -25,6 +29,9 @@ const Occupation = () => {
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: during Occupation', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes during Occupation: ', JSON.parse(retrievedFootnotes)); 
   //let q1_2 = localStorage.getItem("container1.2");
 
   }, []);
@@ -36,19 +43,8 @@ const Occupation = () => {
 
   const handleSubmit = async (e) => {
 
+    //PROCESS MATRIX DATA:
     let tempData = matrixData;
-    //console.log('random value tests',tempData[0][0]);
-    //define each subObject:
-/*    let educPreSmall = tempData[0];
-    let educPreLarge = tempData[1];
-    let educPostSmall = tempData[2];
-    let educPostLarge = tempData[3];*/
-
-    //pre: 2.4
-
-    //post: 2.2
-
-
 
     //Expected matrixData for:
     //2.2, [2,4] - post
@@ -62,7 +58,6 @@ const Occupation = () => {
     const q2_2 = localStorage.getItem("container2.2");
     const q2_4 = localStorage.getItem("container2.4");
 
-    //console.log('educPreSmall[0]', tempData[0][0].value);
     let domain3_pre = [...q2_4.split(',')];
     let domain3_post = [...q2_2.split(',')];
 
@@ -75,9 +70,9 @@ const Occupation = () => {
     let domain3_post_small = Math.min(...domain3_post);
     let domain3_post_large = Math.max(...domain3_post);
 
-  console.log('Values being saved for domain3 pre', domain3_pre_small, ' ', domain3_pre_large);
-  console.log('Values being saved for domain3 post', domain3_post_small, ' ', domain3_post_large);
-   //first [0] corresponds for first object (1/4)
+    console.log('Values being saved for domain3 pre', domain3_pre_small, ' ', domain3_pre_large);
+    console.log('Values being saved for domain3 post', domain3_post_small, ' ', domain3_post_large);
+    //first [0] corresponds for first object (1/4)
     //second [0] corresponds to educ level
     tempData[0][32].value = domain3_pre_small; //will need to change to 33, 32 ARRAY VALUE
     tempData[1][32].value = domain3_pre_large;
@@ -87,6 +82,22 @@ const Occupation = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    //footnote 1.6
+    const f2_1 = localStorage.getItem("2.1");
+    const f2_3 = localStorage.getItem("2.3");
+    const f2_5 = localStorage.getItem("2.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f2_1, f2_3, f2_5].filter(Boolean).join("; ");
+
+    console.log('concatString', concatString);
+    tempFootnotes[0][32].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    setFootnotes(tempFootnotes);
 
     e.preventDefault();
 
@@ -108,20 +119,18 @@ const Occupation = () => {
         
         <Box component="div">
             <label htmlFor="formGroupExampleInput2.1"><h4>Q 2.1</h4></label>
-         
+           
             <Typography variant="h5" align="left">
                 PERSON'S Current Occupation(s)
             </Typography>
-      
+           
             <p>
                 Include all <b style={{ textDecoration: 'underline' }}>current</b> jobs or occupations (for example, secretary, doctor, homemaker, student, unemployed, on disability).
             </p>
-       
            
-            <TextField id="container2.1" name="exampleInputEmail2.1" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+            <FootnoteField id="2.1" />
           
         </Box>
-
 
         <Box component="div">
             <label htmlFor="formGroupExampleInput2.2"><h4>Q 2.2</h4></label>
@@ -134,21 +143,19 @@ const Occupation = () => {
         </Box>
 
 
-
         <Box component="div">
             <label htmlFor="formGroupExampleInput2.1"><h4>Q 2.3</h4></label>
-          
+            <br/>
             <Typography variant="h5" align="left">
                 PERSON'S Previous Occupation(s)
             </Typography>
-        
+            <br/>
             <p>
                 Include previous long-term jobs or occupations (for example, secretary, doctor,
                 homemaker, student, unemployed, on disability).
             </p>
-            
           
-            <TextField id="container2.3" name="exampleInputEmail2.3"  variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+            <FootnoteField id="2.3" />
          
         </Box>
 
@@ -168,15 +175,13 @@ const Occupation = () => {
        
         <Box component="div">
             <label htmlFor="formGroupExampleInput2.5"><h4>Q 2.5</h4></label>
-            <br/>
+      
             <Typography variant="h5" align="left">
                 Briefly explain your answer(s) on occupation, including any changes because of job
                 change or community/country change:
             </Typography>
-            <br/>
-
       
-            <TextField id="container2.5" name="exampleInputEmail2.5" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} />
+            <FootnoteField id="2.5" />
       
         </Box>
         

@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q9
 const GuardiansAccess = () => {
@@ -25,6 +26,9 @@ const GuardiansAccess = () => {
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes: Access', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -37,7 +41,6 @@ const GuardiansAccess = () => {
 
     let tempData = matrixData;
 
-
     let q4_11_1 = localStorage.getItem("container4.11.1"); //pre and post
     let q4_11_2 = localStorage.getItem("container4.11.2"); //pre and post
     let q4_11_3 = localStorage.getItem("container4.11.3"); //pre and post
@@ -49,7 +52,6 @@ const GuardiansAccess = () => {
     console.log("3", q4_11_3);
     console.log("4", q4_11_4);
     console.log("5", q4_11_5);
-
 
     //console.log('domain9_pre_post', domain9_pre_post);
     let domain9_pre_post = [...q4_11_1.split(','),...q4_11_2.split(','),...q4_11_3.split(','),...q4_11_4.split(','),...q4_11_5.split(',')];
@@ -65,6 +67,22 @@ const GuardiansAccess = () => {
     setMatrixData(tempData);
 
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f4_12_1 = localStorage.getItem("4.12.1");
+    const f4_12_2 = localStorage.getItem("4.12.2");
+    const f4_12_3 = localStorage.getItem("4.12.3");
+    const f4_12_4 = localStorage.getItem("4.12.4");
+    const f4_12_5 = localStorage.getItem("4.12.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f4_12_1, f4_12_2, f4_12_3, f4_12_4, f4_12_5].filter(Boolean).join("; ");
+    console.log('concatString', concatString);
+    tempFootnotes[0][26].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -133,6 +151,32 @@ const GuardiansAccess = () => {
             </p>
             <CheckboxField id="container4.11.5" />
         </Box>
+
+
+          <Box component="div">
+            <label htmlFor="formGroupExampleInput4.12"><h4>Q 4.12</h4></label>
+
+            <p>
+                <b>Briefly explain your answer for each Parent/Guardian. </b>
+                Please only answer for relevant number of parents/parenting figures:
+            </p>
+
+            <p>Parent/Parenting Figure 1</p>
+            <FootnoteField id="4.12.1" />
+
+            <p>Parent/Parenting Figure 2</p>
+            <FootnoteField id="4.12.2" />
+
+            <p>Parent/Parenting Figure 3</p>
+            <FootnoteField id="4.12.3" />
+
+            <p>Parent/Parenting Figure 4</p>
+            <FootnoteField id="4.12.4" />
+
+            <p>Additional Parent/Parenting Figure</p>
+            <FootnoteField id="4.12.5" />
+      
+          </Box>
 
         <Link to="/q10"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 

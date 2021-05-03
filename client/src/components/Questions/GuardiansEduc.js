@@ -9,6 +9,8 @@ import { createMatrix, updateMatrix } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import { questionData } from '../Form/QuestionData.js';
 
+import FootnoteField from '../Form/FootnoteField';
+
 //q2
 const GuardiansEduc = () => {
   const history = useHistory();
@@ -16,6 +18,9 @@ const GuardiansEduc = () => {
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
+
+
   const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
   
   const dispatch = useDispatch();
@@ -30,23 +35,41 @@ const GuardiansEduc = () => {
     if (matrix) setMatrixData(matrix);
   }, [matrix]);
 
+  useEffect(() => {
+    if (footnotes) setMatrixData(footnotes);
+  }, [footnotes]);
 
-    useEffect(() => {
-        var retrievedObject = localStorage.getItem('matrixData');
-        console.log('retrievedObject during q2 Guard Educ: ', JSON.parse(retrievedObject));
-    //let q1_2 = localStorage.getItem("container1.2");
 
-    }, []);
+  useEffect(() => {
+    var retrievedObject = localStorage.getItem('matrixData');
+    console.log('retrievedObject during q2 Guard Educ: ', JSON.parse(retrievedObject));
+
+    var retrievedFootnotes = localStorage.getItem('footnotes');
+    console.log('retrievedFootnotes during q2 Guard Educ: ', JSON.parse(retrievedFootnotes));      
+  //let q1_2 = localStorage.getItem("container1.2");
+
+  }, []);
 
   const clear = () => {
     setCurrentId(0);
     setMatrixData({ matrixData: {} });
+    setFootnotes({ matrixData: {} });
   };
 
   const handleSubmit = async (e) => {
-    let tempData = matrixData;
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    //footnote 1.6
+    const f4_5 = localStorage.getItem("4.5");
+    //generate concatentated string
 
+    console.log('erge', f4_5);
+    tempFootnotes[0][33].value = f4_5;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    setFootnotes(tempFootnotes);
 
+    //PROCESS MATRIX DATA
+    let tempData = JSON.parse(localStorage.getItem('matrixData'));
 
     const q4_4_1 = localStorage.getItem("container4.4.1"); //pre and post
     const q4_4_2 = localStorage.getItem("container4.4.2"); //pre and post
@@ -54,7 +77,7 @@ const GuardiansEduc = () => {
     let q4_4_4 = localStorage.getItem("container4.4.4"); //pre and post
     let q4_4_5 = localStorage.getItem("container4.4.5"); //pre and post
 
-console.log("1", q4_4_1);
+    console.log("1", q4_4_1);
     console.log("2", q4_4_2);
     console.log("3", q4_4_3);
     console.log("4", q4_4_4);
@@ -71,8 +94,12 @@ console.log("1", q4_4_1);
     //let domain2_pre_post = [domain2_not_null];
     //console.log('domain2_pre_post', domain2_pre_post);
     let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')];
+
+    console.log('wergwer', domain2_pre_post);
     let domain2_pre_post_small = Math.min(...domain2_pre_post);
     let domain2_pre_post_large = Math.max(...domain2_pre_post);
+    console.log('domain2_pre_post_small', domain2_pre_post_small);
+    console.log('domain2_pre_post_large', domain2_pre_post_large);
 
     tempData[0][33].value = domain2_pre_post_small;
     tempData[1][33].value = domain2_pre_post_large;
@@ -82,6 +109,8 @@ console.log("1", q4_4_1);
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //MISC
     e.preventDefault();
 
     //console.log("WHAT IS CURRENT ID", currentId);
@@ -166,6 +195,26 @@ console.log("1", q4_4_1);
                 Additional Parent/Figure
             </p>
             <CheckboxField id="container4.4.5" />
+        </Box>
+
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
+            <br/>
+            <p>
+                <b>Please describe each Parent/Guardian's highest educational 
+                level achieved while raising personv</b> (for example, "finished 
+                9th grade," "vocational degree as electrician," or "masters degree 
+                in education").  <b>Please also give year and community in which 
+                each Parent's education ended. If years of education changed in 
+                PERSON's childhood, or if Parent's educational privilege changed 
+                because of im/migration or major changes in economy, please specify 
+                that.</b>
+            </p>
+            <br/>
+            
+            <FootnoteField id="4.5" />
+           
         </Box>
 
 
