@@ -7,6 +7,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField_RaisedBy from '../Form/CheckboxField_RaisedBy';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q26
 const RaisedBy = () => {
@@ -25,7 +26,10 @@ const RaisedBy = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Age', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -130,6 +134,38 @@ const RaisedBy = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+        //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f4_3 = localStorage.getItem("4.3.1");
+
+    const f4_16_1 = localStorage.getItem("4.16.1");
+    const f4_16_2 = localStorage.getItem("4.16.2");
+    const f4_16_3 = localStorage.getItem("4.16.3");
+    const f4_16_4 = localStorage.getItem("4.16.4");
+    const f4_16_5 = localStorage.getItem("4.16.5");
+
+    const f4_18_1 = localStorage.getItem("4.18.1");
+    const f4_18_2 = localStorage.getItem("4.18.2");
+    const f4_18_3 = localStorage.getItem("4.18.3");
+    const f4_18_4 = localStorage.getItem("4.18.4");
+    const f4_18_5 = localStorage.getItem("4.18.5");
+
+    const f4_20_1 = localStorage.getItem("4.20.1");
+    const f4_20_2 = localStorage.getItem("4.20.2");
+    const f4_20_3 = localStorage.getItem("4.20.3");
+    const f4_20_4 = localStorage.getItem("4.20.4");
+    const f4_20_5 = localStorage.getItem("4.20.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f4_3, f4_16_1, f4_16_2, f4_16_3, f4_16_4, f4_16_5, f4_18_1, f4_18_2, f4_18_3, f4_18_4, f4_18_5, f4_20_1, f4_20_2, f4_20_3, f4_20_4, f4_20_5].filter(Boolean).join("; ");
+    tempFootnotes[0][9].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -146,7 +182,7 @@ const RaisedBy = () => {
 
         <Typography variant="h5">Rasied By</Typography>
 
-          <Box component="div">
+          <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.1"><h4>Q 4.1</h4></label>
             <br/>
             <p>
@@ -154,17 +190,15 @@ const RaisedBy = () => {
                 who raised PERSON <b>during the PERSON's growing up.</b>
             </p>
 
-            <Typography variant="h5" align="left">
-                <span style={{ textDecoration: 'italic' }}>Only answer for 
+            <p>Only answer for 
                 those parents or parenting figures who were actively involved 
-                in raising PERSON while Person was growing up.</span> 
-            </Typography>
-            <Typography variant="h5" align="left">
-                <span style={{ textDecoration: 'italic' }}>This question relates 
+                in raising PERSON while Person was growing up.
+            </p>
+            <p>This question relates 
                 to the parents or parenting figures who cared for PERSON in 
                 earlier childhood. You may choose up to two answers per 
-                parent/parenting figure.</span> 
-            </Typography>
+                parent/parenting figure.
+            </p>
             
             <p>
               <b>If your answer for this figure changed while PERSON was being 
@@ -204,7 +238,7 @@ const RaisedBy = () => {
             <CheckboxField_RaisedBy id="container4.1.5" />
           </Box>
 
-          <Box component="div">
+          <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.2"><h4>Q 4.2</h4></label>
             <br/>
             <p>
@@ -244,7 +278,81 @@ const RaisedBy = () => {
           </Box>
 
 
-          <Box component="div">
+          <Box component="div" style={{ width: '100%' }}>
+              <label htmlFor="formGroupExampleInput4.3"><h4>Q 4.3</h4></label>
+           
+              <p>
+                  Please describe any change in parenting role for each Parent/Parenting 
+                  Figure in relation to PERSON. For instance, did this Parent/Parental 
+                  Figure stay, leave or join the PERSON's household, give up a parental 
+                  role, move repeatedly in and out of PERSON's household or life, change 
+                  from being a stepparent or foster parent to adopting PERSON, kick 
+                  PERSON out of the childhood home or get kicked out, or did Parent/Parenting 
+                  Figure get incarcerated, go missing, or die? If so, how old was PERSON at 
+                  the time of any changes.
+              </p>
+             
+              <p>
+                  (If no changes, please type in "N/A.") Please specify:
+              </p>
+
+              <FootnoteField id="4.3" />
+          </Box>
+
+          <Box component="div" style={{ width: '100%' }}>
+              <label htmlFor="formGroupExampleInput4.16"><h4>Q 4.16</h4></label>
+           
+              <p>
+                  Parent/Guardians' Sexual Orientation while raising Person
+              </p>       
+              <p>
+                  Sexual orientation involves whether one is attracted to the 
+                  opposite sex, same sex, both sexes, or one is asexual.
+              </p>
+              <p>
+                  Describe each Parent/Guardian's sexual orientation, and 
+                  whether that orientation changed over time, and if so, 
+                  how old PERSON was at the time. (For instance, "Mother came 
+                  out as lesbian when PERSON was 12").
+              </p>       
+              <p>
+                  Also describe how Parent/Guardian's community responds to 
+                  his/her/their sexual orientation and whether that response 
+                  changed, either over time or because of Parent/Guardian's move 
+                  to a new community or country.
+              </p>
+              <p>
+                  Please only answer for relevant number of parents/parenting figures.
+              </p>       
+          
+              <p>
+                  Parent/Figure 1
+              </p>
+              <FootnoteField id="4.16.1" />
+
+              <p>
+                  Parent/Figure 2
+              </p>
+              <FootnoteField id="4.16.2" />
+
+              <p>
+                  Parent/Figure 3
+              </p>
+              <FootnoteField id="4.16.3" />
+
+              <p>
+                  Parent/Figure 4
+              </p>
+              <FootnoteField id="4.16.4" />
+
+              <p>
+                  Additional Parent/Figure
+              </p>
+              <FootnoteField id="4.16.5" />
+          </Box>
+
+
+          <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.17"><h4>Q 4.17</h4></label>
             <br/>
             <p>
@@ -287,8 +395,64 @@ const RaisedBy = () => {
             <CheckboxField id="container4.17.5" />
           </Box>
 
+          <Box component="div" style={{ width: '100%' }}>
+              <label htmlFor="formGroupExampleInput4.18"><h4>Q 4.18</h4></label>
+           
+              <p>
+                  Parent/Guardians' Gender Identity
+              </p>       
+              <p>
+                  Gender identity involves whether one's assigned sex at birth 
+                  matches or diverges from one's gender identity
+              </p>
+              <p>
+                  Note whether each Parent/Guardian's gender identity is/was cis-gender 
+                  (identifying with the gender assigned at birth), transgender 
+                  (identifying with a different gender than the one assigned at birth) 
+                  or else genderqueer, nonbinary, gender fluid, gender nonconforming, 
+                  agender, pangender, two-spirit, etc.
+              </p>       
+              <p>
+                  If Parent/Guardian's gender identity changed while Parent/Guardian 
+                  was raising person, say how old Person was at the time. (For instance, 
+                  "Mother began to transition when PERSON was 12").
+              </p>
+              <p>
+                If relevant, also note if immigration or a change in community affected 
+                how Parent/Guardian's gender identity is/was received.
 
-          <Box component="div">
+              </p>
+              <p>
+                  Please only answer for relevant number of parents/parenting figures.
+              </p>       
+          
+              <p>
+                  Parent/Figure 1
+              </p>
+              <FootnoteField id="4.18.1" />
+
+              <p>
+                  Parent/Figure 2
+              </p>
+              <FootnoteField id="4.18.2" />
+
+              <p>
+                  Parent/Figure 3
+              </p>
+              <FootnoteField id="4.18.3" />
+
+              <p>
+                  Parent/Figure 4
+              </p>
+              <FootnoteField id="4.18.4" />
+
+              <p>
+                  Additional Parent/Figure
+              </p>
+              <FootnoteField id="4.18.5" />
+          </Box>
+
+          <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.19"><h4>Q 4.19</h4></label>
             <br/>
             <p>
@@ -328,9 +492,56 @@ const RaisedBy = () => {
             <CheckboxField id="container4.19.5" />
           </Box>
 
+          <Box component="div" style={{ width: '100%' }}>
+              <label htmlFor="formGroupExampleInput4.20"><h4>Q 4.20</h4></label>
+           
+              <p>
+                  <b>Parent/Guardians' Age on becoming PERSON's parent/guardian.</b>
+              </p>       
+              <p>
+                  How old was each Parent/Guardian when PERSON was born? If PERSON 
+                  was adopted, how old was PERSON at the time of adoption and how 
+                  old was each Parent/Guardian? if a Parent/Guardian is a stepparent, 
+                  how old was PERSON and how old was the stepparent when they joined 
+                  families? If Parent/Guardian is a foster parent, how old was PERSON 
+                  during the fostering? (If PERSON was not raised by parents or 
+                  guardians, explain.)
+              </p>
+              <p>
+                  Also, if Parent/Guardian's age at the time of having, adopting, or 
+                  otherwise parenting PERSON was unusual in any way, please say why.
+              </p>       
+              <p>
+                  Please only answer for relevant number of parents/parenting figures.
+              </p>       
+          
+              <p>
+                  Parent/Figure 1
+              </p>
+              <FootnoteField id="4.20.1" />
 
+              <p>
+                  Parent/Figure 2
+              </p>
+              <FootnoteField id="4.20.2" />
 
-          <Box component="div">
+              <p>
+                  Parent/Figure 3
+              </p>
+              <FootnoteField id="4.20.3" />
+
+              <p>
+                  Parent/Figure 4
+              </p>
+              <FootnoteField id="4.20.4" />
+
+              <p>
+                  Additional Parent/Figure
+              </p>
+              <FootnoteField id="4.20.5" />
+          </Box>
+
+          <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.21"><h4>Q 4.21</h4></label>
             <br/>
 

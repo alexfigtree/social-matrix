@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q34
 const UniqueHistory = () => {
@@ -24,7 +25,10 @@ const UniqueHistory = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: UniqueHistory', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,17 @@ const UniqueHistory = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_26 = localStorage.getItem("7.26");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_26].filter(Boolean).join("; ");
+    tempFootnotes[0][1].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -72,7 +87,28 @@ const UniqueHistory = () => {
 
         <Typography variant="h5">Unique History</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.26"><h4>Q 7.26</h4></label>
+            <p>
+                <b>Unique Individual/Family History</b>
+            </p>
+            <p>
+                Specify any events or circumstances that may not be addressed 
+                elsewhere in the matrix, (e.g., untimely bereavement, personal 
+                or family trauma history, having been affected by a disaster of 
+                some kind. Also consider how being in a famous (or infamous) or 
+                extremely wealthy family might provide privilege). Other 
+                possibilities include, for instance, growing up as a twin or 
+                triplet, growing up with a very sick sibling or parent, or the like.
+            </p>
+            <p>
+                Describe this history briefly – if no such history, please 
+                write in “N/A” for not applicable
+            </p>
+            <FootnoteField id="7.26" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.27"><h4>Q 7.27</h4></label>
          
             <p>
@@ -82,7 +118,7 @@ const UniqueHistory = () => {
             <CheckboxField id="container7.27" />
         </Box>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.28"><h4>Q 7.28</h4></label>
            
             <p>

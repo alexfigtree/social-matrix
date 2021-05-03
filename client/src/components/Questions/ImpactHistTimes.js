@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q18
 const ImpactHistTimes = () => {
@@ -24,7 +25,10 @@ const ImpactHistTimes = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,7 +62,16 @@ const ImpactHistTimes = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
+    const f6_18 = localStorage.getItem("6.18");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_18].filter(Boolean).join("; ");
+    tempFootnotes[0][17].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -76,7 +89,7 @@ const ImpactHistTimes = () => {
 
         <Typography variant="h5">Impact of Historical Times</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.16"><h4>Q 6.16</h4></label>
             <br/>
             <Typography variant="h5" align="left">Degree PERSON is currently affected by historical period or changes
@@ -89,7 +102,7 @@ const ImpactHistTimes = () => {
         </Box>
 
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.17"><h4>Q 6.17</h4></label>
             <br/>
             <Typography variant="h5" align="left">Degree PERSON was previously affected by historical period or changes.
@@ -101,6 +114,16 @@ const ImpactHistTimes = () => {
             <CheckboxField id="container6.17" />
         </Box>
 
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.18"><h4>Q 6.18</h4></label>
+        
+            <p>
+                Explain your answer to the last two questions, for instance, if you have gained privilege in some domains and lost privilege in other domains as a result of historical changes, explain that here.
+            </p>
+       
+            <FootnoteField id="6.18" />
+        </Box>
         
         <Link to="/q19"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 

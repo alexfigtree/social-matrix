@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q17
 const GeoRegion = () => {
@@ -24,7 +25,10 @@ const GeoRegion = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -59,6 +63,17 @@ const GeoRegion = () => {
     setMatrixData(tempData);
 
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_15 = localStorage.getItem("6.15");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_15].filter(Boolean).join("; ");
+    tempFootnotes[0][18].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -76,7 +91,7 @@ const GeoRegion = () => {
 
         <Typography variant="h5">Geo. Region</Typography>
         
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.13"><h4>Q 6.13</h4></label>
             <br/>
             <Typography variant="h5" align="left">PERSON's <b><span style={{ textDecoration: 'underline' }}>Current</span></b> Geographical Region of Country/World
@@ -89,7 +104,7 @@ const GeoRegion = () => {
         </Box>
 
  
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.14"><h4>Q 6.14</h4></label>
             <br/>
             <Typography variant="h5" align="left">PERSON's Previous Geographical Region of Country/World (if any)
@@ -101,6 +116,16 @@ const GeoRegion = () => {
             <CheckboxField id="container6.14" />
         </Box>
 
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.15"><h4>Q 6.15</h4></label>
+         
+            <p>
+                Explain your answer to the question(s) about PERSON's geographical region(s).
+            </p>
+       
+            <FootnoteField id="6.15" />
+        </Box>
         
         <Link to="/q18"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 

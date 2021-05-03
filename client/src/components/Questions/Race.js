@@ -25,10 +25,10 @@ const Race = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
 
       var retrievedFootnotes = localStorage.getItem('footnotes');
-      console.log('retrievedFootnotes: Access', JSON.parse(retrievedFootnotes));
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -63,7 +63,26 @@ const Race = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
+    //TODO: 5.1
+
+/*    const f4_12_1 = localStorage.getItem("4.12.1");
+    const f4_12_2 = localStorage.getItem("4.12.2");
+    const f4_12_3 = localStorage.getItem("4.12.3");
+    const f4_12_4 = localStorage.getItem("4.12.4");
+    const f4_12_5 = localStorage.getItem("4.12.5");*/
+
+    const f5_4 = localStorage.getItem("5.4");
+
+    //generate concatentated string
+    let concatString = 
+      [f5_4].filter(Boolean).join("; ");
+    console.log('concatString', concatString);
+    tempFootnotes[0][25].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+    
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -75,11 +94,90 @@ const Race = () => {
     history.push('/q11');
   };
 
+
+        // <Box component="div">
+        //     <label htmlFor="formGroupExampleInput5.1"><h4>Q 5.1</h4></label>
+        //     <br/>
+        //     <Typography variant="h5" align="left">
+        //         PERSON'S Race(s)
+        //     </Typography>
+        //     <br/>
+        //     <p>
+        //         Choose all races that apply. Please keep in mind that race is a social construct and not a "fact." Also, please do not use "race" interchangeably with "ethnicity" (because Latinos, Arabs, and Jews can come from any racial group or nationality and therefore should be considered ethnic groups. Similarly, do not use "African American" to mean "Black," because not only African- Americans, but also Jamaicans, Kenyans, Dominicans, and others with African ancestry may identify as Black. (Later questions will ask about ethnicity and tribe.) 
+        //     </p>
+        //     <p>
+        //         <b>This list is alphabetical, and not in any hierarchical order. Please select any race(s) that apply.</b>
+        //     </p>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-1" value="option1">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-1">Asian/Pacific Islander</label>
+        //         </span>   
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-2" value="option2">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-2">Black</label>
+        //         </span>   
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-3" value="option3">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-3">Indigenous/Native American/First Nations People</label>
+        //         </span>   
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-4" value="option4">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-4">Middle Eastern/North African</label>
+        //         </span>   
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-5" value="option5">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-5">Mixed race (specify which races)</label>
+        //         </span>   
+        //         <div><TextField id="exampleInputEmail5.1-5" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} /></input></div>
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-6" value="option6">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-6">White</label>
+        //         </span>   
+        //     </div>
+        //     <div>
+        //         <span>
+        //             <input type="checkbox" id="inlineCheckbox5.1-7" value="option7">
+        //         </span> 
+        //         <span>
+        //           <label for="inlineCheckbox5.1-7">Other (please specify)</label>
+        //         </span>  
+        //         <div><TextField id="5.1.7" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} /></input></div> 
+        //     </div>
+        // </Box>
+
+
   return (
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Race</Typography>
+
+
+
+
 
         <Box component="div">
             <label htmlFor="formGroupExampleInput5.2"><h4>Q 5.2</h4></label>
@@ -116,6 +214,20 @@ const Race = () => {
             <CheckboxField id="container5.3" />
         </Box>
         
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.4"><h4>Q 5.4</h4></label>
+          
+            <p>
+                Please explain your rating responses for <b>current and earlier 
+                experiences of race.</b> For instance, has PERSON had different 
+                experiences of race in different places or different time periods, 
+                or does PERSON have a mixed racial identity?
+            </p>
+         
+
+            <FootnoteField id="5.4" />
+        </Box>
         <Link to="/q11"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>

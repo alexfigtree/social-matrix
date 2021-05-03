@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q28
 const ParentalStatus = () => {
@@ -24,7 +25,10 @@ const ParentalStatus = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: ParentalStatus', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,18 @@ const ParentalStatus = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_4 = localStorage.getItem("7.4");
+    const f7_5 = localStorage.getItem("7.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_4, f7_5].filter(Boolean).join("; ");
+    tempFootnotes[0][7].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -73,6 +89,33 @@ const ParentalStatus = () => {
         <Typography variant="h5">Parental Status</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.4"><h4>Q 7.4</h4></label>
+            <p>
+                If PERSON has had children, give the age(s) at which PERSON 
+                gave birth or adopted or fostered each child.
+            </p>
+
+            <FootnoteField id="7.4" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.5"><h4>Q 7.5</h4></label>
+            <p>
+                <b>Other identities affecting privilege or marginalization of 
+                parental status.</b> If there are factors that particularly 
+                privilege or marginalize PERSON's parental status, describe 
+                them here. For instance, not having children may mean something 
+                different at age 20 and at age 45. A teenaged mother or mother in 
+                her 40s with a baby may be received differently in their 
+                communities. Similarly, married or single parents, as well as 
+                straight or gay parents, may be received differently. Please describe 
+                relevant factors here.
+            </p>
+      
+            <FootnoteField id="7.5" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.6"><h4>Q 7.6</h4></label>
             <p>
                 Please rate PERSON's <b>current</b> privilege or marginalization in relation to PERSON's own parental status.
@@ -81,7 +124,6 @@ const ParentalStatus = () => {
             <CheckboxField id="container7.6" />
         </Box>
 
-     
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.7"><h4>Q 7.7</h4></label>
     
@@ -90,9 +132,7 @@ const ParentalStatus = () => {
             </p>
        
             <CheckboxField id="container7.7" />
-        </Box>
-
- 
+        </Box> 
       
         <Link to="/q29"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
   

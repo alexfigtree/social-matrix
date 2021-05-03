@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q11
 const Ethnicity = () => {
@@ -24,7 +25,10 @@ const Ethnicity = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,16 @@ const Ethnicity = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f5_5 = localStorage.getItem("5.5");
+
+    //generate concatentated string
+    let concatString = 
+      [f5_5].filter(Boolean).join("; ");
+    tempFootnotes[0][24].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -74,6 +88,37 @@ const Ethnicity = () => {
 
         <Typography variant="h5">Ethnicity/Tribe</Typography>
       
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.5"><h4>Q 5.5</h4></label>
+            <br/>
+            <Typography variant="h5" align="left">
+                PERSON's Ethnicity(ies) or Tribe(s)
+            </Typography>
+            <p>
+                Note that some ethnic groups can include people of any race(s). For instance, Arabs, Jews, and Latinos/Latinas/Latinx can be of any race and of many nationalities.
+            </p>
+            <br/>
+            <p>
+                Note also that "American" is not an ethnic group, but a nationality
+            </p>
+            <br/>
+            <p>
+                Race is not the same as ethnicity. For instance, a racially Black Person may be ethnically African-American, Ghanaian, Dominican, or Jamaican-American, etc. A racially White Person may have an ethnic mix of Irish, French, Polish, Swedish, Greek-American, etc.
+            </p>
+            <br/>
+            <p>
+                One person might be part Haitian-American, part Irish-American, part Cherokee, and part African-American, identifying as racially Black but ethnically mixed. A relative with the same ancestry might identify differently. <b>Tribe</b> (for instance, the Cherokee, Wampanoag, Lakota, or Inuit in North America, the Yucatec Maya in Central America, the Quechua and Wayuu in South America, the Pashtun, Hazara and Hmong of Asia, the Ibo and Xhosa of Africa, and the Maori of New Zealand) may be a more significant identification <b>than ethnicity</b> for many people. For example, A Pashtun of Afghanistan may identify more with Pashtun in Pakistan than with members of other tribes in Afghanistan.
+            </p>
+            <br/>
+            <p>
+                List <b>all</b> the ethnic group(s) or tribe(s) with which PERSON or PERSON's family of origin identifies. (Do not use "ethnicity" interchangeably with "race.")
+            </p>
+            <br/>
+
+            <FootnoteField id="5.5" />
+        </Box>
+
         <Box component="div">
             <label htmlFor="formGroupExampleInput5.6"><h4>Q 5.6</h4></label>
             <br/>

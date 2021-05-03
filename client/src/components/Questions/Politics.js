@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q16
 const Politics = () => {
@@ -24,7 +25,10 @@ const Politics = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,6 +62,17 @@ const Politics = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_9 = localStorage.getItem("6.9");
+    const f6_12 = localStorage.getItem("6.12");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_9, f6_12].filter(Boolean).join("; ");
+    tempFootnotes[0][19].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -76,8 +91,17 @@ const Politics = () => {
 
         <Typography variant="h5">Politics</Typography>
         
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.9"><h4>Q 6.9</h4></label>
+         
+            <p>
+                Briefly name or describe Person’s political stance (this could involve the Person’s political party affiliation or involvement in a movement in current or prior country; this can include, for instance, "progressive," "liberal," "conservative," "socialist," "apolitical," etc.)
+            </p>
+          
+            <FootnoteField id="6.9" />
+        </Box>
   
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.10"><h4>Q 6.10</h4></label>
             <br/>
             <p>
@@ -88,7 +112,7 @@ const Politics = () => {
         </Box>
 
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.11"><h4>Q 6.11</h4></label>
             <br/>
             <p>
@@ -96,6 +120,16 @@ const Politics = () => {
             </p>
             <br/><br/>
             <CheckboxField id="container6.11" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.12"><h4>Q 6.12</h4></label>
+           
+            <p>
+                Explain your answer to the question(s) about your political stance.
+            </p>
+        
+            <FootnoteField id="6.12" />
         </Box>
         
         <Link to="/q17"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

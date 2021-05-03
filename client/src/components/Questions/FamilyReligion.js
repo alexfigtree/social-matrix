@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q14
 const FamilyReligion = () => {
@@ -24,7 +25,10 @@ const FamilyReligion = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -59,6 +63,17 @@ const FamilyReligion = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_1 = localStorage.getItem("6.1");
+    const f6_4 = localStorage.getItem("6.4");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_1, f6_4].filter(Boolean).join("; ");
+    tempFootnotes[0][21].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -78,7 +93,23 @@ const FamilyReligion = () => {
         <Typography variant="h5">Family Religion</Typography>
         
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.1"><h4>Q 6.1</h4></label>
+          
+            <Typography variant="h5" align="left">
+                Family Religion/Philosophy (this may go back a generation or two)
+            </Typography>
+       
+            <p>
+                Including all sides of the family, name the all the religion(s) and religious denomination(s) represented in the family the PERSON grew up in (even if PERSON did not practice that religion), including in grandparents’ generation. In some cases, this may be a philosophy (like
+                Confucianism or Taoism) rather than a religion.
+            </p>
+          
+            <FootnoteField id="6.1" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.2"><h4>Q 6.2</h4></label>
             <br/>
             <p>
@@ -88,7 +119,7 @@ const FamilyReligion = () => {
             <CheckboxField id="container6.2" />
         </Box>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.3"><h4>Q 6.3</h4></label>
             <br/>
             <p>
@@ -96,6 +127,17 @@ const FamilyReligion = () => {
             </p>
             <br/><br/>
             <CheckboxField id="container6.3" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.4"><h4>Q 6.4</h4></label>
+         
+            <p>
+                Explain your answer to the last two questions
+            </p>
+         
+            <FootnoteField id="6.4" />
         </Box>
         
         <Link to="/q15"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

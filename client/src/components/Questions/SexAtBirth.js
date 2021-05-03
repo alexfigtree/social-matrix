@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q33
 const SexAtBirth = () => {
@@ -24,7 +25,10 @@ const SexAtBirth = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: SexAtBirth', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,18 @@ const SexAtBirth = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_14 = localStorage.getItem("7.14");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_14].filter(Boolean).join("; ");
+    tempFootnotes[0][2].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -72,7 +88,24 @@ const SexAtBirth = () => {
 
         <Typography variant="h5">Sex Assigned at Birth</Typography>
 
-        <Box component="div">
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.14"><h4>Q 7.14</h4></label>
+            <p>
+                <b>Sex Assignment at Birth</b>
+            </p>
+            <p>
+                Sex assignment at birth refers to one’s assigned sex at birth, that is, 
+                male, female, or intersex (having sex organs for both sexes), or in some 
+                indigenous cultures, two-spirit (assigned as the equivalent of LGBTQI). 
+                Please describe PERSON'S assigned sex at birth below. If PERSON was 
+                born as intersex, please note any sex assignment surgery in infancy 
+                or early childhood.
+            </p>
+            <FootnoteField id="7.14" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.15"><h4>Q 7.15</h4></label>
    
             <p>
@@ -82,7 +115,7 @@ const SexAtBirth = () => {
             <CheckboxField id="container7.15" />
         </Box>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.16"><h4>Q 7.16</h4></label>
      
             <p>

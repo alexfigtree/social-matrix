@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q19
 const RelationToMilitary = () => {
@@ -24,7 +25,10 @@ const RelationToMilitary = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,6 +62,22 @@ const RelationToMilitary = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //PROCESS FOOTNOTE DATA:
+/*    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_19 = localStorage.getItem("6.19");
+    const f6_20 = localStorage.getItem("6.20");
+    const f6_21 = localStorage.getItem("6.21");
+    const f6_22 = localStorage.getItem("6.22");
+    const f6_23 = localStorage.getItem("6.23");
+
+
+    //generate concatentated string
+    let concatString = 
+      [f6_19, f6_8].filter(Boolean).join("; ");
+    tempFootnotes[0][20].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));*/
 
 
     if (currentId === 0) {

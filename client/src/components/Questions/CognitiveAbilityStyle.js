@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q22
 const CognitiveAbilityStyle = () => {
@@ -24,7 +25,10 @@ const CognitiveAbilityStyle = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: CognitiveAbilityStyle', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,6 +62,16 @@ const CognitiveAbilityStyle = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_36 = localStorage.getItem("6.36");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_36].filter(Boolean).join("; ");
+    tempFootnotes[0][13].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -77,7 +91,26 @@ const CognitiveAbilityStyle = () => {
         <Typography variant="h5">Cognitive Ability / Style</Typography>
         
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.36"><h4>Q 6.36</h4></label>
+          
+            <p>
+                <b>PERSON'S Cognitive Ability/Learning Style.</b> Consider any particular intellectual, artistic, or mechanical ability, as well as any learning disabilities, developmental delays, or the onset of brain injury, stroke, dementia, etc.
+            </p>
+       
+            <p>
+                For instance, someone with strong mechanical ability who has reading problems may be marginalized in wealthier communities, but not in working-class or rural, agrarian communities. Someone who is very bright but has had a head injury may have specific disabilities that might be marginalizing in many contexts.
+            </p>
+     
+            <p>
+                Please describe PERSON's cognitive ability or learning style.
+            </p>
+         
+            <FootnoteField id="6.36" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.37"><h4>Q 6.37</h4></label>
             
             <p>
@@ -88,7 +121,7 @@ const CognitiveAbilityStyle = () => {
         </Box>
 
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.38"><h4>Q 6.38</h4></label>
        
             <p>

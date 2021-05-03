@@ -17,9 +17,14 @@ import * as d3 from "d3";
 
 const Results = () => {
  const [data, setData] = useState(localStorage.getItem('matrixData'));
+ const [footnotes, setFootnotes] = useState(localStorage.getItem('footnotes'));
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
       console.log('retrievedObject: Results', JSON.parse(retrievedObject));
+
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
 /*
@@ -105,6 +110,8 @@ var legend = svg.append("g")
         <Typography variant="h2" align="center">Social Matrix Project - Results</Typography>
 
         <Box>{data}</Box>
+
+        <Box>{footnotes}</Box>
 
         <Box style={{ marginTop: '30px', marginBottom: '30px' }}>PRE/EARLIER</Box>
         <Radar

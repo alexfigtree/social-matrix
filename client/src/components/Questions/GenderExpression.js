@@ -72,7 +72,7 @@ const GenderExpression = () => {
 
         <Typography variant="h5">Gender Expression</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.21"><h4>Q 7.21</h4></label>
          
             <p>
@@ -83,7 +83,7 @@ const GenderExpression = () => {
         </Box>
 
  
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.22"><h4>Q 7.22</h4></label>
      
             <p>

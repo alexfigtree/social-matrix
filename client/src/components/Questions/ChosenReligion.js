@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q15
 const ChosenReligion = () => {
@@ -24,7 +25,10 @@ const ChosenReligion = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,7 +62,17 @@ const ChosenReligion = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
+    const f6_5 = localStorage.getItem("6.5");
+    const f6_8 = localStorage.getItem("6.8");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_5, f6_8].filter(Boolean).join("; ");
+    tempFootnotes[0][20].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
     if (currentId === 0) {
       dispatch(createPost(postData));
@@ -76,7 +90,23 @@ const ChosenReligion = () => {
 
         <Typography variant="h5">Chosen Religion</Typography>
         
-            <Box component="div">
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.5"><h4>Q 6.5</h4></label>
+        
+            <Typography variant="h5" align="left">
+                PERSON's own religion of choice
+            </Typography>
+      
+            <p>
+                Please specify PERSON's own religion or spiritual philosophy of choice. This may or may not be the same as the family religion.
+            </p>
+           
+            <FootnoteField id="6.5" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.6"><h4>Q 6.6</h4></label>
             <br/>
             <p>
@@ -87,7 +117,7 @@ const ChosenReligion = () => {
         </Box>
 
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.7"><h4>Q 6.7</h4></label>
             <br/>
             <p>
@@ -95,6 +125,16 @@ const ChosenReligion = () => {
             </p>
             <br/><br/>
             <CheckboxField id="container6.7" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.8"><h4>Q 6.8</h4></label>
+          
+            <p>
+                Explain your answer to the last two questions
+            </p>
+         
+            <FootnoteField id="6.8" />
         </Box>
         
         <Link to="/q16"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

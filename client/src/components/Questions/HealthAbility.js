@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q23
 const HealthAbility = () => {
@@ -24,7 +25,10 @@ const HealthAbility = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: HealthAbility', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,6 +62,18 @@ const HealthAbility = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_39 = localStorage.getItem("6.39");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_39].filter(Boolean).join("; ");
+    tempFootnotes[0][12].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -74,7 +90,22 @@ const HealthAbility = () => {
 
         <Typography variant="h5">Health / Ability</Typography>
         
-                <Box component="div">
+        
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.39"><h4>Q 6.39</h4></label>
+          
+            <Typography variant="h5" align="left">
+                PERSON'S Physical Health/Illness/Ability
+            </Typography>
+            <br/>
+            <p>
+                Please specify any chronic or life-threatening illness as well as any unusual physical talents or abilities (such as strong athletic abilities). You can specify both (e.g., has paralyzed legs or has asthma, but is very athletic).
+            </p>
+         
+            <FootnoteField id="6.39" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.40"><h4>Q 6.40</h4></label>
          
             <p>
@@ -85,7 +116,7 @@ const HealthAbility = () => {
         </Box>
 
    
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.41"><h4>Q 6.41</h4></label>
        
             <p>

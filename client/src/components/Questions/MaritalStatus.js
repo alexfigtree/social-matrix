@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q29
 const MaritalStatus = () => {
@@ -24,7 +25,10 @@ const MaritalStatus = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: MaritalStatus', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,21 @@ const MaritalStatus = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_8 = localStorage.getItem("7.8");
+    const f7_10 = localStorage.getItem("7.10");
+    const f7_11 = localStorage.getItem("7.11");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_8, f7_10, f7_11].filter(Boolean).join("; ");
+    tempFootnotes[0][6].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+    
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -73,6 +92,42 @@ const MaritalStatus = () => {
         <Typography variant="h5">Marital Status</Typography>
 
        
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.8"><h4>Q 7.8</h4></label>
+            <p>
+                <b>PERSON'S Marital/Relational Status</b>
+            </p>
+            <p>
+                Has PERSON ever been married, now or in the past? (Yes/No)
+            </p>
+            <FootnoteField id="7.8" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.10"><h4>Q 7.10</h4></label>
+            <p>
+                State PERSON'S age(s) at the time of each change in relationship 
+                or marital status (e.g., “17 when first seriously coupled," 
+                "single at age 22," "1st marriage age 28, divorce at age 41, 2nd 
+                marriage at age 42,” or "never married, at 48").
+            </p>
+
+            <FootnoteField id="7.10" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.11"><h4>Q 7.11</h4></label>
+            <p>
+                Did these marital/relational statuses involve relationships 
+                with someone of the opposite-sex, same-sex, or someone who 
+                is/was transgender or genderqueer? Please specify.
+            </p>
+
+            <FootnoteField id="7.11" />
+        </Box>
+
         <Box component="div">
             <label htmlFor="formGroupExampleInput7.12"><h4>Q 7.12</h4></label>
             

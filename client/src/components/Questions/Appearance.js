@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q24
 const Appearance = () => {
@@ -24,7 +25,10 @@ const Appearance = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Appearance', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -58,6 +62,18 @@ const Appearance = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f6_42 = localStorage.getItem("6.42");
+
+    //generate concatentated string
+    let concatString = 
+      [f6_42].filter(Boolean).join("; ");
+    tempFootnotes[0][11].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -74,8 +90,26 @@ const Appearance = () => {
 
         <Typography variant="h5">Appearance</Typography>
         
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.42"><h4>Q 6.42</h4></label>
+         
+            <p>
+                Please specify any noteworthy visible features, for instance, being unusually tall or unusually short, very overweight or very underweight, having a gender-nonconforming appearance, being strikingly attractive or having a visible physical disfigurement or disability that draws attention, or being racially unusual in the immediate context.
+            </p>
+           
+            <p>
+                If appearance has changed significantly, specify how.
+            </p>
+      
+            <p>
+                If person does not draw particular attention with his/her/their appearance, write in “N/A” for not applicable.
+            </p>
+            
+            <FootnoteField id="6.42" />
+        </Box>
 
-        <Box component="div">
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.43"><h4>Q 6.43</h4></label>
          
             <p>
@@ -86,7 +120,7 @@ const Appearance = () => {
         </Box>
 
   
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.44"><h4>Q 6.44</h4></label>
          
             <p>

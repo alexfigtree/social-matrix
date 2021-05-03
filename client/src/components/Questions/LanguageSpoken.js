@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q13
 const LanguageSpoken = () => {
@@ -24,7 +25,10 @@ const LanguageSpoken = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -54,6 +58,17 @@ const LanguageSpoken = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f5_15 = localStorage.getItem("5.15");
+    const f5_16 = localStorage.getItem("5.16");
+
+    //generate concatentated string
+    let concatString = 
+      [f5_15, f5_16].filter(Boolean).join("; ");
+    tempFootnotes[0][22].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -71,6 +86,29 @@ const LanguageSpoken = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Language(s)</Typography>
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.15"><h4>Q 5.15</h4></label>
+          
+            <p>
+                What is PERSON's first language or languages? If PERSON grew 
+                up multilingual, name all languages spoken in childhood.
+            </p>
+         
+
+            <FootnoteField id="5.15" />
+        </Box>
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.16"><h4>Q 5.16</h4></label>
+          
+            <p>
+                What additional languages does PERSON speak now?
+            </p>
+         
+            <FootnoteField id="5.16" />
+        </Box>
+
 
         <Box component="div">
             <label htmlFor="formGroupExampleInput5.17"><h4>Q 5.17</h4></label>

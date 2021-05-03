@@ -72,7 +72,7 @@ const SexualOrientation = () => {
 
         <Typography variant="h5">Sexual Orientation</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.24"><h4>Q 7.24</h4></label>
        
             <p>
@@ -82,7 +82,7 @@ const SexualOrientation = () => {
             <CheckboxField id="container7.24" />
         </Box>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.25"><h4>Q 7.25</h4></label>
        
             <p>

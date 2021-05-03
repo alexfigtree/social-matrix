@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q27
 const GuardiansMaritalStatus = () => {
@@ -24,7 +25,10 @@ const GuardiansMaritalStatus = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: GuardiansMaritalStatus', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -61,6 +65,23 @@ const GuardiansMaritalStatus = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f4_13_1 = localStorage.getItem("4.13.1");
+    const f4_13_2 = localStorage.getItem("4.13.2");
+    const f4_13_3 = localStorage.getItem("4.13.3");
+    const f4_13_4 = localStorage.getItem("4.13.4");
+    const f4_13_5 = localStorage.getItem("4.13.5");
+
+    const f4_15 = localStorage.getItem("4.15");
+
+    //generate concatentated string
+    let concatString = 
+      [f4_13_1, f4_13_2,f4_13_3,f4_13_4,f4_13_5,f4_15].filter(Boolean).join("; ");
+    tempFootnotes[0][8].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -77,7 +98,60 @@ const GuardiansMaritalStatus = () => {
 
         <Typography variant="h5">Guardians' Marital Status</Typography>
         
-        <Box component="div">
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput4.13"><h4>Q 4.13</h4></label>
+         
+            <p>
+                <b>Parent/Guardians' Marital Status While Raising Person.</b>
+            </p>       
+            <p>
+                Please describe each Parent/Guardian’s marital status(es) <b>while 
+                raising PERSON and include any changes in marital status while raising 
+                Person.</b>
+            </p>
+            <p>
+                For instance, was each Parent/Guardian married to: PERSON's other 
+                parent/stepparent/guardian; living with PERSON's other parent; 
+                widowed, divorced or separated from (and how many times) the other 
+                parent/guardian, or never married? Is the parent in a monogamous, 
+                polygamous or polyamorous family structure? Say if there was a 
+                change in status, for instance, single parent who married stepparent 
+                when Person was 13 or a birth parent who lost custody of PERSON when 
+                Person was 4.
+            </p>       
+            <p>
+                Please only answer for relevant number of parents/parenting figures.
+            </p>       
+        
+            <p>
+                Parent/Figure 1
+            </p>
+            <FootnoteField id="4.13.1" />
+
+            <p>
+                Parent/Figure 2
+            </p>
+            <FootnoteField id="4.13.2" />
+
+            <p>
+                Parent/Figure 3
+            </p>
+            <FootnoteField id="4.13.3" />
+
+            <p>
+                Parent/Figure 4
+            </p>
+            <FootnoteField id="4.13.4" />
+
+            <p>
+                Additional Parent/Figure
+            </p>
+            <FootnoteField id="4.13.5" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput4.8"><h4>Q 4.14</h4></label>
             <br/>
             <p>
@@ -116,6 +190,17 @@ const GuardiansMaritalStatus = () => {
             <CheckboxField id="container4.14.5" />
         </Box>
 
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput4.15"><h4>Q 4.15</h4></label>
+           
+            <p>
+                Please explain any changes in each Parent/Guardian's marital 
+                status and anything that might affect how that marital status is 
+                received in Parent/Guardian's community.
+            </p>
+           
+            <FootnoteField id="4.15" />
+        </Box>
         <Link to="/q28"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 
       </form>

@@ -6,6 +6,7 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import FootnoteField from '../Form/FootnoteField';
 
 //q31
 const GenderID = () => {
@@ -24,7 +25,10 @@ const GenderID = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: GenderID', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
 
   const clear = () => {
@@ -56,6 +60,19 @@ const GenderID = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_17 = localStorage.getItem("7.17");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_17].filter(Boolean).join("; ");
+    tempFootnotes[0][4].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -72,7 +89,38 @@ const GenderID = () => {
 
         <Typography variant="h5">Gender ID</Typography>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput7.17"><h4>Q 7.17</h4></label>
+            <p>
+                <b>Gender Identity</b>
+            </p>
+            <p>
+                Gender identity refers to whether one identifies as cisgender 
+                (identifying with one’s assigned biological sex); trans (a 
+                transwoman was originally assigned a male sex but now identifies 
+                as female, while a transman was originally assigned a female sex 
+                but identifies as male); genderqueer (those who reject a gender 
+                binary and identify as without gender or with all genders, also 
+                called gender fluid, gender non- binary, or pangender); or as 
+                agender (without gender). Additional terms for people other than 
+                cisgender are used in various cultures (two-spirit people, hijra, muxes, etc.)
+            </p>
+            <p>
+                <b>Note: if filling this out for another person, note that the person’s 
+                own self-identification, and not whether Person has used hormones or had 
+                any surgeries, determines trans status.</b>
+            </p>
+            <p>
+                Name PERSON'S gender identity (i.e., cisgender, transgender, 
+                genderqueer, gender fluid, pangender, gender non-binary, agender, 
+                two-spirit, hijra, muxe, gender fluid, etc., or use PERSON'S preferred 
+                term. If that identification has changed, give all identifications, 
+                with age(s) at time(s) of transition.
+            </p>
+            <FootnoteField id="7.17" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.18"><h4>Q 7.18</h4></label>
       
             <p>
@@ -82,7 +130,7 @@ const GenderID = () => {
             <CheckboxField id="container7.18" />
         </Box>
 
-        <Box component="div">
+        <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.19"><h4>Q 7.19</h4></label>
       
             <p>
