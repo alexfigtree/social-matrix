@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Typography } from '@material-ui/core';
+import { Box, TextField, Button, Typography, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -36,6 +36,12 @@ const RelationToMilitary = () => {
     setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   };
 
+  const handleChange = async (event) => {
+    console.log('CHANGEIN EVENT NAME', event.target.name);
+    console.log('CHANGEIN EVENT VALUE', event.target.value);
+    localStorage.setItem(event.target.name, event.target.value);
+  }; 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -64,20 +70,20 @@ const RelationToMilitary = () => {
 
 
     //PROCESS FOOTNOTE DATA:
-/*    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
     const f6_19 = localStorage.getItem("6.19");
     const f6_20 = localStorage.getItem("6.20");
     const f6_21 = localStorage.getItem("6.21");
     const f6_22 = localStorage.getItem("6.22");
-    const f6_23 = localStorage.getItem("6.23");
+    //const f6_23 = localStorage.getItem("6.23");
 
 
     //generate concatentated string
     let concatString = 
-      [f6_19, f6_8].filter(Boolean).join("; ");
-    tempFootnotes[0][20].value = concatString;
-    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));*/
+      [f6_19, f6_20, f6_21, f6_22].filter(Boolean).join("; ");
+    tempFootnotes[0][16].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
     if (currentId === 0) {
@@ -95,7 +101,74 @@ const RelationToMilitary = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Relation to Military</Typography>
-        
+       
+        <Box component="div" style={{ width: '100%' }}>
+          <label><h4>Q 6.19</h4></label>
+          <label><h4>History with the Military</h4></label>
+          
+          <p>
+                Does PERSON or PERSON's close family relative have a past or present relationship to the military, or to any nongovernmental military group?
+            </p>
+          <RadioGroup aria-label="gender" id="6.19" name="6.19" onChange={handleChange}>
+            <FormControlLabel name="6.19" value="Yes" control={<Radio />} label="Yes" />
+            <FormControlLabel name="6.19" value="No" control={<Radio />} label="No" />
+            <FormControlLabel name="6.19" value="I'm not sure" control={<Radio />} label="I'm not sure" />
+          </RadioGroup>
+       
+        </Box>
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput6.20"><h4>Q 6.20</h4></label>
+            
+            <p>
+              Please name PERSON's <b>relationship to the Military.</b> For example, is 
+              PERSON on active duty in the military, a reservist, or an honorably 
+              or dishonorably discharged veteran, or the spouse, child, parent, 
+              sibling, or other close relative of a military member or veteran, 
+              or a civilian employee of the military?
+            </p>
+            <br/>
+            <p>
+                What was PERSON's or relative's <b>rank</b> in the military, if known?
+            </p>
+            <br/>
+            <p>
+                Alternatively, has PERSON lived as a civilian in a community that is 
+                affected by conflict or has an active military presence?
+            </p>
+            <br/>
+            <p>
+                Please use space below to describe person's current or previous relation 
+                to military and rank.
+            </p>
+
+            <FootnoteField id="6.20" />
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+          <label><h4>Q 6.21</h4></label>
+          <p>
+            Was PERSON or PERSON's relative in a combat zone?
+          </p>
+          <RadioGroup aria-label="gender" id="6.21" name="6.21" onChange={handleChange}>
+            <FormControlLabel name="6.21" value="Yes" control={<Radio />} label="Yes" />
+            <FormControlLabel name="6.21" value="No" control={<Radio />} label="No" />
+          </RadioGroup>
+       
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+          <label><h4>Q 6.22</h4></label>
+          <p>
+            Did PERSON or PERSON's relative get injured or killed in the line of duty, 
+            or experience psychological trauma as a result of military duty?
+          </p>
+          <RadioGroup aria-label="gender" id="6.22" name="6.22" onChange={handleChange}>
+            <FormControlLabel name="6.22" value="Yes" control={<Radio />} label="Yes" />
+            <FormControlLabel name="6.22" value="No" control={<Radio />} label="No" />
+          </RadioGroup>
+       
+        </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.24"><h4>Q 6.24</h4></label>
