@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
 import useStyles from '../Form/styles';
-import { createPost, updatePost } from '../../actions/posts';
+import { createPost, updatePost, createMatrix, createFootnotes, updateMatrix, updateFootnotes } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
 
@@ -14,9 +14,15 @@ const UniqueHistory = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  const [footnotesData, setFootnotesData] = useState(JSON.parse(localStorage.getItem('footnotes')));
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
+
+
+  const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
+  const footnotes = useSelector((state) => (currentId ? state.footnotes.find((footnotesData) => footnotes._id === currentId) : null));
+
 
   useEffect(() => {
     if (post) setPostData(post);
@@ -71,13 +77,26 @@ const UniqueHistory = () => {
     tempFootnotes[0][1].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
+
+
+
+  //const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  //const [footnotesData, setFootnotes] = useState(localStorage.getItem('footnotes'));
+
+  //const dispatch = useDispatch();
+  //const classes = useStyles();
+
     if (currentId === 0) {
-      dispatch(createPost(postData));
+
+      dispatch(createMatrix(tempData));
+      dispatch(createFootnotes(tempFootnotes));
       clear();
     } else {
-      dispatch(updatePost(currentId, postData));
+      dispatch(updateMatrix(currentId, matrixData));
+      dispatch(updateFootnotes(currentId, footnotesData));
       clear();
     }
+
     history.push('/results');
   };
 

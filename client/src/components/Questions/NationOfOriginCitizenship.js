@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Typography } from '@material-ui/core';
+import { Box, TextField, Button, Typography, FormLabel, FormControl, RadioGroup, Radio, FormControlLabel } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -37,6 +37,10 @@ const NationOfOriginCitizenship = () => {
     setCurrentId(0);
     setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   };
+
+  const handleChange = async (event) => {
+    localStorage.setItem(event.target.name, event.target.value);
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -149,7 +153,7 @@ const NationOfOriginCitizenship = () => {
             </div>
         </Box>*/
 
-        
+
   return (
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
@@ -172,7 +176,17 @@ const NationOfOriginCitizenship = () => {
 
     
 
-       
+        <FormControl component="fieldset">
+          <FormLabel component="legend"><h4>Q 5.9</h4></FormLabel>
+          <p>
+                Did PERSON have <b>live or have</b> previous citizenship in another country?
+            </p>
+          <RadioGroup aria-label="gender" id="5.9" name="5.9" onChange={handleChange}>
+            <FormControlLabel name="5.9" value="Yes" control={<Radio />} label="Yes" />
+            <FormControlLabel name="5.9" value="No" control={<Radio />} label="No" />
+            <FormControlLabel name="5.9" value="Lived in another country without citizenship there" control={<Radio />} label="Lived in another country without citizenship there" />
+          </RadioGroup>
+        </FormControl>
 
 
 
