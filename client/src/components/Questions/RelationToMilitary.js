@@ -7,7 +7,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
-
+import CheckboxInputField_Military from '../Form/CheckboxInputField_Military';
 //q19
 const RelationToMilitary = () => {
   const history = useHistory();
@@ -141,6 +141,9 @@ const RelationToMilitary = () => {
                 Please use space below to describe person's current or previous relation 
                 to military and rank.
             </p>
+            <p>
+                If none, write N/A
+            </p>
 
             <FootnoteField id="6.20" />
         </Box>
@@ -148,7 +151,7 @@ const RelationToMilitary = () => {
         <Box component="div" style={{ width: '100%' }}>
           <label><h4>Q 6.21</h4></label>
           <p>
-            Was PERSON or PERSON's relative in a combat zone?
+            Was PERSON or PERSON's relative in a combat zone as member of military?
           </p>
           <RadioGroup aria-label="gender" id="6.21" name="6.21" onChange={handleChange}>
             <FormControlLabel name="6.21" value="Yes" control={<Radio />} label="Yes" />
@@ -169,6 +172,26 @@ const RelationToMilitary = () => {
           </RadioGroup>
        
         </Box>
+
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput6.23"><h4>Q 6.23</h4></label>
+        
+            <Typography variant="h5" align="left">Nature of PERSON's relationship 
+            to the Military
+            </Typography>
+       
+            <p>
+                If PERSON was in military service, was PERSON or relative in a 
+                government-sponsored military unit or in a paramilitary or 
+                guerrilla combat group? or was a child soldier, include that 
+                information as well. <b>Please check all that apply</b>
+            </p>
+    
+            <CheckboxInputField_Military id="6.23" />
+        </Box>
+
+
 
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.24"><h4>Q 6.24</h4></label>

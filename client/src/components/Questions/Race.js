@@ -7,6 +7,8 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
+import CheckboxInputField_Race from '../Form/CheckboxInputField_Race';
+
 
 //q10
 const Race = () => {
@@ -174,6 +176,30 @@ const Race = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Race</Typography>
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.1"><h4>Q 5.1</h4></label>
+        
+            <Typography variant="h5" align="left">PERSON'S Race(s)
+            </Typography>
+       
+            <p>
+                Choose all races that apply. Please keep in mind that race is a 
+                social construct and not a "fact." Also, please do not use "race" 
+                interchangeably with "ethnicity" (because Latinos, Arabs, and Jews 
+                can come from any racial group or nationality and therefore should be 
+                considered ethnic groups. Similarly, do not use "African American" to 
+                mean "Black," because not only African-Americans, but also Jamaicans, 
+                Kenyans, Dominicans, and others with African ancestry may identify as 
+                Black. (Later questions will ask about ethnicity and tribe.)
+            </p>
+            <p>
+                <b>This list is alphabetical, and not in any hierarchical order. 
+                Please select any race(s) that apply.</b>
+            </p>
+    
+            <CheckboxInputField_Race id="5.1" />
+        </Box>
 
 
 

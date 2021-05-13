@@ -111,7 +111,7 @@ function FootnoteField(props) {
 
       <FormGroup style={{flexDirection: 'row'}} >
 
-          <TextField
+        <TextField
             id={questionNumber}
             name={questionNumber}
             //variant="outlined"

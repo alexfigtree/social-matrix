@@ -179,8 +179,11 @@ const NationOfOriginCitizenship = () => {
         <FormControl component="fieldset">
           <FormLabel component="legend"><h4>Q 5.9</h4></FormLabel>
           <p>
-                Did PERSON have <b>live or have</b> previous citizenship in another country?
+                Did PERSON <b>live or have</b> previous citizenship in another country?
             </p>
+
+            <p>State whether PERSON lived in one or more other countries and whether PERSON had citizenship 
+            in one or more other countries. Please specify.</p>
           <RadioGroup aria-label="gender" id="5.9" name="5.9" onChange={handleChange}>
             <FormControlLabel name="5.9" value="Yes" control={<Radio />} label="Yes" />
             <FormControlLabel name="5.9" value="No" control={<Radio />} label="No" />
