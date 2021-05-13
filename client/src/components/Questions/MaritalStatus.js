@@ -36,6 +36,10 @@ const MaritalStatus = () => {
     setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   };
 
+  const handleChange = async (event) => {
+    localStorage.setItem(event.target.name, event.target.value);
+  }; 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
