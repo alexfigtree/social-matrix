@@ -7,6 +7,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
+import CheckboxInputField_Legal from '../Form/CheckboxInputField_Legal';
 
 //q20
 const RelationLegalSystem = () => {
@@ -82,25 +83,38 @@ const RelationLegalSystem = () => {
 
         <Typography variant="h5">Relation to Legal System</Typography>
         
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput6.26"><h4>Q 6.26</h4></label>
+        
+            <Typography variant="h5" align="left">PERSON's Relationship to Legal System
+            </Typography>
+       
+            <p>
+                Please rate Person’s relationship to the legal system 
+                (Please choose all that apply):
+            </p>
+    
+            <CheckboxInputField_Legal id="6.26" />
+        </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.27"><h4>Q 6.27</h4></label>
-            <br/>
+         
             <p>
                 Rate PERSON's <b>current</b> privilege or marginalization in relation to the legal system.
             </p>
-            <br/>
+          
             <CheckboxField id="container6.27" />
         </Box>
 
   
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.28"><h4>Q 6.28</h4></label>
-            <br/>
+       
             <p>
                 Rate PERSON's <b>previous</b> privilege or marginalization in relation to the legal system.
             </p>
-            <br/>
+         
             <CheckboxField id="container6.28" />
         </Box>
 
