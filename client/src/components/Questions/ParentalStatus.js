@@ -91,8 +91,8 @@ const ParentalStatus = () => {
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput7.4"><h4>Q 7.4</h4></label>
             <p>
-                If PERSON has had children, give the age(s) at which PERSON 
-                gave birth or adopted or fostered each child.
+                If PERSON has had children, give the age(s) at which 
+                PERSON gave birth or adopted or fostered each child.
             </p>
 
             <FootnoteField id="7.4" />
@@ -102,16 +102,17 @@ const ParentalStatus = () => {
             <label htmlFor="formGroupExampleInput7.5"><h4>Q 7.5</h4></label>
             <p>
                 <b>Other identities affecting privilege or marginalization of 
-                parental status.</b> If there are factors that particularly 
-                privilege or marginalize PERSON's parental status, describe 
-                them here. For instance, not having children may mean something 
-                different at age 20 and at age 45. A teenaged mother or mother in 
-                her 40s with a baby may be received differently in their 
-                communities. Similarly, married or single parents, as well as 
-                straight or gay parents, may be received differently. Please describe 
-                relevant factors here.
+                parental status.</b> status. If there are factors that particularly 
+                privilege or marginalize PERSON&#39;s parental status, describe them 
+                here. For instance, not having children may mean something different 
+                at age 20 and at age 45. A teenaged mother or mother in her 40s with a 
+                baby may be received differently in their communities. Similarly, 
+                married or single parents, as well as straight or gay parents, may be 
+                received differently.
             </p>
-      
+            <p>
+                Please describe relevant factors here.
+            </p>
             <FootnoteField id="7.5" />
         </Box>
 

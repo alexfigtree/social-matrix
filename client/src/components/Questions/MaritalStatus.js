@@ -74,7 +74,7 @@ const MaritalStatus = () => {
     tempFootnotes[0][6].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
-    
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -98,9 +98,12 @@ const MaritalStatus = () => {
                 <b>PERSON'S Marital/Relational Status</b>
             </p>
             <p>
-                Has PERSON ever been married, now or in the past? (Yes/No)
+                Has PERSON ever been married, now or in the past?
             </p>
-            <FootnoteField id="7.8" />
+            <RadioGroup aria-label="gender" id="7.8" name="7.8" onChange={handleChange}>
+              <FormControlLabel name="7.8" value="Yes" control={<Radio />} label="Yes" />
+              <FormControlLabel name="7.8" value="No" control={<Radio />} label="No" />
+            </RadioGroup>
         </Box>
 
 
@@ -132,7 +135,9 @@ const MaritalStatus = () => {
             <label htmlFor="formGroupExampleInput7.12"><h4>Q 7.12</h4></label>
             
             <p>
-                Please rate how privileged or marginalized PERSON'S marital/relational status is, <b>currently</b>, including all the aspects of PERSON'S marital/relational status
+                Please rate how privileged or marginalized PERSON'S marital/relational 
+                status is, <b>currently</b>, including all the aspects of PERSON'S 
+                marital/relational status
             </p>
        
             <CheckboxField id="container7.12" />
@@ -143,7 +148,9 @@ const MaritalStatus = () => {
             <label htmlFor="formGroupExampleInput7.13"><h4>Q 7.13</h4></label>
           
             <p>
-                Please rate how privileged or marginalized PERSON'S marital/relational status was <b>previously</b>, including all the aspects of PERSON'S marital/relational status.
+                Please rate how privileged or marginalized PERSON'S marital/relational 
+                status was <b>previously</b>, including all the aspects of PERSON'S 
+                marital/relational status.
             </p>
          
             <CheckboxField id="container7.13" />
