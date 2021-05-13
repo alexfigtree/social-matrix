@@ -282,13 +282,13 @@ function CheckboxInputField_Legal(props) {
                   id={questionNumber+"-6"}
                   //checked={-6} 
                   onChange={handleChange} 
-                  value="1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated ((jail, prison or immigration detention). Feel free to explain."
+                  value="1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated (jail, prison or immigration detention). Feel free to explain."
                   name={questionNumber+"-6"} 
                   disabled={isDisabled(6, questionNumber+"-6")}
                   iconstyle={{fill: '#000'}}
                 />
               }
-              label="1+ conviction(s), on probation (without having been incarcerated) or has had a close family member who was incarcerated in the past. Feel free to explain."
+              label="1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated (jail, prison or immigration detention). Feel free to explain."
               labelPlacement="left"
               style={{float: 'left'}}
             />
