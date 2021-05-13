@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Typography } from '@material-ui/core';
+import { Box, TextField, Button, Typography, RadioGroup, Radio, FormControlLabel } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const MaritalStatus = () => {
   const handleChange = async (event) => {
     localStorage.setItem(event.target.name, event.target.value);
   }; 
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
