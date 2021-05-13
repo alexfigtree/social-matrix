@@ -195,22 +195,26 @@ const RelationToMilitary = () => {
 
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.24"><h4>Q 6.24</h4></label>
-            <br/>
+            
             <p>
                 Rate PERSON's <b>current</b> privilege or marginalization in relation to the military. (Please select one).
             </p>
-            <br/>
+            <p>
+                Please select one even if no relationship to the military.
+            </p>
             <CheckboxField id="container6.24" />
         </Box>
 
      
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.25"><h4>Q 6.25</h4></label>
-            <br/>
+           
             <p>
                 Rate PERSON's <b>previous</b> privilege or marginalization in relation to the military. (Please select one).
             </p>
-            <br/>
+            <p>
+                Please select one even if no relationship to the military.
+            </p>
             <CheckboxField id="container6.25" />
         </Box>
 

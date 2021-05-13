@@ -189,7 +189,7 @@ function CheckboxInputField_Military(props) {
 	                iconstyle={{fill: '#000'}}
 	              />
 	            }
-	            label="Other - please specify"
+	            label="Other - please specify or put N/A"
 	            labelPlacement="left"
 	            style={{float: 'left'}}
 	          />
