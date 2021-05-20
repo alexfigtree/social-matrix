@@ -68,30 +68,24 @@ const Race = () => {
     //PROCESS FOOTNOTE DATA:
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
-    //TODO: 5.1
-
-/*    const f4_12_1 = localStorage.getItem("4.12.1");
-    const f4_12_2 = localStorage.getItem("4.12.2");
-    const f4_12_3 = localStorage.getItem("4.12.3");
-    const f4_12_4 = localStorage.getItem("4.12.4");
-    const f4_12_5 = localStorage.getItem("4.12.5");*/
-
-
     const f5_1 = localStorage.getItem("5.1");
+    
+    const f5_1_5_checkbox = localStorage.getItem("5.1-5-checkbox");
     const f5_1_5 = localStorage.getItem("5.1-5");
-    let mixedRace = "Mixed race (specify which races): " + f5_1_5;
+
+    const concat5_1_5 = f5_1_5_checkbox + f5_1_5;
+
+
     const f5_1_7 = localStorage.getItem("5.1-7");
-    let otherRace = "Other (please specify): " + f5_1_7;
+    const f5_1_7_checkbox = localStorage.getItem("5.1-7-checkbox");
+
+    const concat5_1_7 = f5_1_7_checkbox + f5_1_7;
 
     const f5_4 = localStorage.getItem("5.4");
 
-    let concatString5_1 = 
-      [f5_1, mixedRace, otherRace].filter(Boolean).join(" / ");
-
-    let concatString = 
-      [f5_4].filter(Boolean).join("; ");
-    console.log('concatString5_1 + concatString', concatString5_1 + concatString);
-    tempFootnotes[0][25].value = concatString5_1 + concatString;
+    let concatString5_1 =  [f5_1, concat5_1_5, concat5_1_7].filter(Boolean).join(' / '); // 'ab6'
+    
+    tempFootnotes[0][25].value = concatString5_1 + ' / ' + f5_4;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
     
 

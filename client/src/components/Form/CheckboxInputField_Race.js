@@ -10,6 +10,8 @@ function CheckboxInputField_Race(props) {
 
   localStorage.setItem('5.1-5', '');
   localStorage.setItem('5.1-7', '');
+  localStorage.setItem('5.1-5-checkbox', '');
+  localStorage.setItem('5.1-7-checkbox', '');
 
   const questionNumber = props.id;
 
@@ -48,13 +50,19 @@ function CheckboxInputField_Race(props) {
 	//for checkbox
 	const handleCheckboxMixed = async(event) => {
 		setChecked(event.target.checked);
-	enableDisableTextBoxMixed(event.target.id, event.target.checked);
-
+		enableDisableTextBoxMixed(event.target.id, event.target.checked);
+		if(event.target.checked === true){
+			localStorage.setItem('5.1-5-checkbox', "Mixed race (specify which races): ");
+		}
 	};
 
 	const handleCheckboxOther = async(event) => {
 		setChecked(event.target.checked);
-	enableDisableTextBoxOther(event.target.id, event.target.checked);
+		enableDisableTextBoxOther(event.target.id, event.target.checked);
+		if(event.target.checked === true){
+			localStorage.setItem('5.1-7-checkbox', "Other (please specify): ");
+		}
+		
 	};
 
 	const handleMixedInput = async(event) => {
