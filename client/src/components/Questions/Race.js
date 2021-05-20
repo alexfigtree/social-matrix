@@ -76,13 +76,22 @@ const Race = () => {
     const f4_12_4 = localStorage.getItem("4.12.4");
     const f4_12_5 = localStorage.getItem("4.12.5");*/
 
+
+    const f5_1 = localStorage.getItem("5.1");
+    const f5_1_5 = localStorage.getItem("5.1-5");
+    let mixedRace = "Mixed race (specify which races): " + f5_1_5;
+    const f5_1_7 = localStorage.getItem("5.1-7");
+    let otherRace = "Other (please specify): " + f5_1_7;
+
     const f5_4 = localStorage.getItem("5.4");
 
-    //generate concatentated string
+    let concatString5_1 = 
+      [f5_1, mixedRace, otherRace].filter(Boolean).join(" / ");
+
     let concatString = 
       [f5_4].filter(Boolean).join("; ");
-    console.log('concatString', concatString);
-    tempFootnotes[0][25].value = concatString;
+    console.log('concatString5_1 + concatString', concatString5_1 + concatString);
+    tempFootnotes[0][25].value = concatString5_1 + concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
     
 
@@ -95,81 +104,6 @@ const Race = () => {
     }
     history.push('/q11');
   };
-
-
-        // <Box component="div">
-        //     <label htmlFor="formGroupExampleInput5.1"><h4>Q 5.1</h4></label>
-        //     <br/>
-        //     <Typography variant="h5" align="left">
-        //         PERSON'S Race(s)
-        //     </Typography>
-        //     <br/>
-        //     <p>
-        //         Choose all races that apply. Please keep in mind that race is a social construct and not a "fact." Also, please do not use "race" interchangeably with "ethnicity" (because Latinos, Arabs, and Jews can come from any racial group or nationality and therefore should be considered ethnic groups. Similarly, do not use "African American" to mean "Black," because not only African- Americans, but also Jamaicans, Kenyans, Dominicans, and others with African ancestry may identify as Black. (Later questions will ask about ethnicity and tribe.) 
-        //     </p>
-        //     <p>
-        //         <b>This list is alphabetical, and not in any hierarchical order. Please select any race(s) that apply.</b>
-        //     </p>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-1" value="option1">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-1">Asian/Pacific Islander</label>
-        //         </span>   
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-2" value="option2">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-2">Black</label>
-        //         </span>   
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-3" value="option3">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-3">Indigenous/Native American/First Nations People</label>
-        //         </span>   
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-4" value="option4">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-4">Middle Eastern/North African</label>
-        //         </span>   
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-5" value="option5">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-5">Mixed race (specify which races)</label>
-        //         </span>   
-        //         <div><TextField id="exampleInputEmail5.1-5" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} /></input></div>
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-6" value="option6">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-6">White</label>
-        //         </span>   
-        //     </div>
-        //     <div>
-        //         <span>
-        //             <input type="checkbox" id="inlineCheckbox5.1-7" value="option7">
-        //         </span> 
-        //         <span>
-        //           <label for="inlineCheckbox5.1-7">Other (please specify)</label>
-        //         </span>  
-        //         <div><TextField id="5.1.7" variant="outlined" label="" fullWidth value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} /></input></div> 
-        //     </div>
-        // </Box>
-
 
   return (
     <Box className={classes.paper}>
@@ -200,9 +134,6 @@ const Race = () => {
     
             <CheckboxInputField_Race id="5.1" />
         </Box>
-
-
-
 
 
         <Box component="div">

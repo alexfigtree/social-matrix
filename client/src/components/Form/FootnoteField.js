@@ -68,14 +68,6 @@ function FootnoteField(props) {
   };
 
   const handleChange = async(event) => {
-  		//let temp = footnotesArray;
-        console.log("handle change (value) in FOOTNOTE FIELD", event.target.value);
-        //let newArr = [...footnotes]; // copying the old datas array
-        //let item = newArr[index];
-        //item = {...item, [event.target.name]: event.target.value};
-        //newArr[index] = item;
-        //setFootnotes(newArr);
-
 		setFootnotes(event.target.value);
         localStorage.setItem(questionNumber, event.target.value);
     }

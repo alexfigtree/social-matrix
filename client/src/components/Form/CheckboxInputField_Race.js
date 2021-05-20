@@ -1,29 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Box, FormGroup, FormGroupLabel, FormControlLabel, Checkbox, Typograph, TextField } from '@material-ui/core';
-import questionData from './QuestionData';
 
 
 function CheckboxInputField_Race(props) {
-  const [currentData, setCurrentData] = React.useState([]);
-  //const [limit, setLimit] = React.useState(2);
-  const [data, setData] = React.useState(questionData[0][0]);
+
   const [checked, setChecked] = React.useState(true);
-  //const [q1_2, setq1_2] = useState(null);
-  //let answersArray = [];
-  //const [answersArray, setAnswersArray] = useState(new Array(2));
+
   const [answersArray, setAnswersArray] = useState([]);
-  //const { id } = props;
+
+  localStorage.setItem('5.1-5', '');
+  localStorage.setItem('5.1-7', '');
 
   const questionNumber = props.id;
 
-  //const [isChecked, setIsChecked] = useState([1,2,3,4,5,6,7]);
-  //const [isChecked, setIsChecked] = useState(new Array(2));
   const [checkedArray, setCheckedArray] = useState([1,2,3,4,5,6,7]);
 
 	function enableDisableTextBoxMixed(id, isChecked) {
         var mixedRace = document.getElementById("mixedRace");
         mixedRace.disabled = isChecked ? false : true;
-        if (!mixedRace.disable) {
+        if (!mixedRace.disabled) {
             mixedRace.focus();
         }
     }
@@ -35,70 +30,59 @@ function CheckboxInputField_Race(props) {
             otherRace.focus();
         }
     }
-  //working
-  const onGlobalChange = (answersArray) => {
-    let globalTemp = answersArray;
-    console.log("onGlobalChange array for id", globalTemp, ' ', props.id);
-  };
+	//working
+	const onGlobalChange = (answersArray) => {
+		let globalTemp = answersArray;
+		console.log("onGlobalChange array for id", globalTemp, ' ', props.id);
+	};
 
-  const isDisabled = (value, idName) => {
-    return (
-      //this disables all checkboxes in group, even the ones that are selected
-      //disable if:
-      //1)answers array is too long
-      answersArray.length > 1  && !answersArray.includes(value) && idName === questionNumber+'-'+value
-    );
-
-  };
+	const isDisabled = (value, idName) => {
+		return (
+		  //this disables all checkboxes in group, even the ones that are selected
+		  //disable if:
+		  //1)answers array is too long
+		  answersArray.length > 1  && !answersArray.includes(value) && idName === questionNumber+'-'+value
+		);
+	};
   
-  const handleTextFieldChange = async(event) => {
+	//for checkbox
+	const handleCheckboxMixed = async(event) => {
+		setChecked(event.target.checked);
+	enableDisableTextBoxMixed(event.target.id, event.target.checked);
 
-  }
+	};
 
-  const handleChange = async(event) => {
-  	console.log('get right id only call when necessary', event.target.id);
-  	console.log('what is checked value for target id?', event.target.value);
+	const handleCheckboxOther = async(event) => {
+		setChecked(event.target.checked);
+	enableDisableTextBoxOther(event.target.id, event.target.checked);
+	};
 
-  	if(event.target.id == "5.1-5"){
-  		enableDisableTextBoxMixed(event.target.id, event.target.checked);
-  	}
+	const handleMixedInput = async(event) => {
+		localStorage.setItem('5.1-5', event.target.value);
+	};
 
-  	if(event.target.id == "5.1-7"){
-  		enableDisableTextBoxOther(event.target.id, event.target.checked);
-  	}
-  	
-  	if(event.target.id == '5.1-5' || event.target.id == '5.1-7'){
-  		handleTextFieldChange()
-  	}
-    setChecked(event.target.checked);
+	const handleOtherInput = async(event) => {
+		localStorage.setItem('5.1-7', event.target.value);		
+	};
 
-    let temp = answersArray;
-    if(event.target.checked){
-        //if checking box, do the following:
-        temp.push(parseInt(event.target.value));
+ 	//call handleChange to finalize string
+	const handleChange = async(event) => {
+		setChecked(event.target.checked);
 
-        //call isDisabled
-        isDisabled(event.target.value, event.target.id);
+		let temp = answersArray;
+		if(event.target.checked){
+			//temp = temp + ' / ' + pushValue;
+			temp.push(event.target.value);
+		}else{
+		  //WORKING:
+		  //if unchecking box, do the following:
+		  let toDelete = temp.indexOf(parseInt(event.target.value));
+		  temp.splice(toDelete, 1);
+		}
 
-    }else{
-      //WORKING:
-      //if unchecking box, do the following:
-      let toDelete = temp.indexOf(parseInt(event.target.value));
-      temp.splice(toDelete, 1);
-    }
-    //save latest state and corresponding question number:
-    let questionId = event.target.id.slice(0, event.target.id.lastIndexOf('-'));
-    console.log('values to save: ID: ', questionId);
-    console.log('with value: ', temp);
-    localStorage.setItem(questionId, temp);
-
-
-    //Same for checkboxes with input
-    localStorage.setItem(questionNumber, event.target.value);
-
-
-    return temp; 
-  };
+		localStorage.setItem('5.1', temp);
+		return temp; 
+	};
 
     return (
 
@@ -107,48 +91,36 @@ function CheckboxInputField_Race(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-1"}
-                //key={index}
-                //checked={-1} 
                 value="Asian/Pacific Islander"
-                //checked={isChecked.indexOf(1) !== -1}
                 onChange={handleChange} 
-                
                 name={questionNumber+"-1"} 
                 disabled={isDisabled(1, questionNumber+"-1")}
                 iconstyle={{fill: '#000'}}
-
-                //disabled={shouldDisableCheckbox(1)}
               />
             }
             label="Asian/Pacific Islander"
-            labelPlacement="left"
+            labelPlacement="end"
           />
 
           <FormControlLabel
             control={
               <Checkbox 
                 id={questionNumber+"-2"}
-               
-                //checked={-1} 
-                //checked={isChecked.indexOf(2) !== -1}
                 value="Black"
                 onChange={handleChange} 
                 name={questionNumber+"-2"}
                 disabled={isDisabled(2, questionNumber+"-2")}
-                //disabled={shouldDisableCheckbox(2)}
                 iconstyle={{fill: '#000'}}
               />
             }
             label="Black"
-            labelPlacement="left"
+            labelPlacement="end"
           />
 
           <FormControlLabel
             control={
               <Checkbox 
                 id={questionNumber+"-3"}
-                //checked={-1} 
-                //checked={isChecked.indexOf(3) !== -1}
                 onChange={handleChange} 
                 value="Indigenous/Native American/First Nations People"
                 name={questionNumber+"-3"} 
@@ -157,7 +129,7 @@ function CheckboxInputField_Race(props) {
               />
             }
             label="Indigenous/Native American/First Nations People"
-            labelPlacement="left"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -165,7 +137,6 @@ function CheckboxInputField_Race(props) {
               <Checkbox 
                 id={questionNumber+"-4"}
                 value="Middle Eastern/North African"
-                //checked={-1} 
                 onChange={handleChange} 
                 name={questionNumber+"-4"}
                 disabled={isDisabled(4, questionNumber+"-4")}
@@ -173,7 +144,7 @@ function CheckboxInputField_Race(props) {
               />
             }
             label="Middle Eastern/North African"
-            labelPlacement="left"
+            labelPlacement="end"
           />
 
           <Box style={{flexDirection: 'row'}}>
@@ -181,8 +152,7 @@ function CheckboxInputField_Race(props) {
 	            control={
 	              <Checkbox 
 	                id={questionNumber+"-5"}
-	                //checked={-1} 
-	                onChange={handleChange} 
+	                onChange={handleCheckboxMixed} 
 	                value="Mixed race (specify which races)"
 	                name={questionNumber+"-5"} 
 	                disabled={isDisabled(5, questionNumber+"-5")}
@@ -190,17 +160,15 @@ function CheckboxInputField_Race(props) {
 	              />
 	            }
 	            label="Mixed race (specify which races)"
-	            labelPlacement="left"
+	            labelPlacement="end"
 	            style={{float: 'left'}}
 	          />
 	          <TextField
 		            id="mixedRace"
 		            name="mixedRace"
-		            //variant="outlined"
-		            //margin="none"
 		            label=""
 		            onChange={(event) => {
-		                handleChange(event)
+		                handleMixedInput(event)
 		            }}
 		            variant="outlined" 
 		            fullWidth
@@ -213,7 +181,6 @@ function CheckboxInputField_Race(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-6"}
-                //checked={-1} 
                 onChange={handleChange} 
                 value="White"
                 name={questionNumber+"-6"}
@@ -222,7 +189,7 @@ function CheckboxInputField_Race(props) {
               />
             }
             label="White"
-            labelPlacement="left"
+            labelPlacement="end"
           />
 
           <Box style={{flexDirection: 'row'}}>
@@ -230,8 +197,7 @@ function CheckboxInputField_Race(props) {
 	            control={
 	              <Checkbox 
 	                id={questionNumber+"-7"}
-	                //checked={-1} 
-	                onChange={handleChange} 
+	                onChange={handleCheckboxOther} 
 	                value="Other (please specify)"
 	                name={questionNumber+"-7"} 
 	                disabled={isDisabled(7, questionNumber+"-7")}
@@ -239,17 +205,15 @@ function CheckboxInputField_Race(props) {
 	              />
 	            }
 	            label="Other (please specify)"
-	            labelPlacement="left"
+	            labelPlacement="end"
 	            style={{float: 'left'}}
 	          />
 	          <TextField
 		            id="otherRace"
 		            name="otherRace"
-		            //variant="outlined"
-		            //margin="none"
 		            label=""
 		            onChange={(event) => {
-		                handleChange(event)
+		                handleOtherInput(event)
 		            }}
 		            variant="outlined" 
 		            fullWidth
