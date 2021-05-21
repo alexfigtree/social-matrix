@@ -9,6 +9,7 @@ import CheckboxField from '../Form/CheckboxField';
 import CheckboxField5_11 from '../Form/CheckboxField5_11';
 import CheckboxField5_12 from '../Form/CheckboxField5_12';
 import FootnoteField from '../Form/FootnoteField';
+import CheckboxInputField_NOCitizenship from '../Form/CheckboxInputField_NOCitizenship';
 
 //q12
 const NationOfOriginCitizenship = () => {
@@ -68,12 +69,29 @@ const NationOfOriginCitizenship = () => {
 
     const f5_8 = localStorage.getItem("5.8");
     const f5_9 = localStorage.getItem("5.9");
-    const f5_10 = localStorage.getItem("5.10");
+
+
+    const f5_10_1_checkbox = localStorage.getItem("5.10-1-checkbox");
+    const f5_10_1 = localStorage.getItem("5.10-1");
+    const concat5_10_1 = f5_10_1_checkbox + f5_10_1;
+    console.log("concat5_10_1", concat5_10_1);
+
+    const f5_10_2_checkbox = localStorage.getItem("5.10-2-checkbox");
+    const f5_10_2 = localStorage.getItem("5.10-2");
+    const concat5_10_2 = f5_10_2_checkbox + f5_10_2;
+    console.log("concat5_10_2", concat5_10_2);
+
+    const f5_10_3_checkbox = localStorage.getItem("5.10-3-checkbox");
+    const f5_10_3 = localStorage.getItem("5.10-3");
+    const concat5_10_3 = f5_10_3_checkbox + f5_10_3;
+    console.log("concat5_10_3", concat5_10_3);
+
+
     const f5_14 = localStorage.getItem("5.14");
 
     //generate concatentated string
     let concatString = 
-      [f5_8, f5_9, f5_10, f5_14].filter(Boolean).join("; ");
+      [f5_8, f5_9, concat5_10_1, concat5_10_2, concat5_10_3, f5_14].filter(Boolean).join("; ");
     tempFootnotes[0][23].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
@@ -191,6 +209,18 @@ const NationOfOriginCitizenship = () => {
           </RadioGroup>
         </FormControl>
 
+
+        <Box component="div">
+            <label htmlFor="formGroupExampleInput5.10"><h4>Q 5.10</h4></label>
+            
+            <p>Of which country did PERSON (or one or more of PERSON's parents) previously have citizenship?</p>
+         
+            <Typography variant="h5" align="left">
+                (This information is anonymous and will not be shared with governmental authorities, nor is it associated online with Person's identity or computer IP address, nor that of anyone who fills this survey out)
+            </Typography>
+        
+            <CheckboxInputField_NOCitizenship id="container5.10" />
+        </Box>
 
 
         <Box component="div">

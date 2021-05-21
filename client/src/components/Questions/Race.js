@@ -83,7 +83,7 @@ const Race = () => {
 
     const f5_4 = localStorage.getItem("5.4");
 
-    let concatString5_1 =  [f5_1, concat5_1_5, concat5_1_7].filter(Boolean).join(' / '); // 'ab6'
+    let concatString5_1 =  [f5_1, concat5_1_5, concat5_1_7].filter(Boolean).join(' / '); 
     
     tempFootnotes[0][25].value = concatString5_1 + ' / ' + f5_4;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
