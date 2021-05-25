@@ -66,9 +66,6 @@ const RelationLegalSystem = () => {
     setMatrixData(tempData);
 
 
-
-
-
     //PROCESS FOOTNOTE DATA:
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
