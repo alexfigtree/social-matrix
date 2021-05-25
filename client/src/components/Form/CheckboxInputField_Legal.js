@@ -4,37 +4,88 @@ import questionData from './QuestionData';
 
 
 function CheckboxInputField_Legal(props) {
-  const [currentData, setCurrentData] = React.useState([]);
-  //const [limit, setLimit] = React.useState(2);
-  const [data, setData] = React.useState(questionData[0][0]);
+  
   const [checked, setChecked] = React.useState(true);
-  //const [q1_2, setq1_2] = useState(null);
-  //let answersArray = [];
-  //const [answersArray, setAnswersArray] = useState(new Array(2));
+
   const [answersArray, setAnswersArray] = useState([]);
-  //const { id } = props;
+
+  localStorage.setItem('6.26-1', '');
+  localStorage.setItem('6.26-2', '');
+  localStorage.setItem('6.26-3', '');
+  localStorage.setItem('6.26-4', '');
+  localStorage.setItem('6.26-5', '');
+  localStorage.setItem('6.26-6', '');
+  localStorage.setItem('6.26-7', '');
+  localStorage.setItem('6.26-1-checkbox', '');
+  localStorage.setItem('6.26-2-checkbox', '');
+  localStorage.setItem('6.26-3-checkbox', '');
+  localStorage.setItem('6.26-4-checkbox', '');
+  localStorage.setItem('6.26-5-checkbox', '');
+  localStorage.setItem('6.26-6-checkbox', '');
+  localStorage.setItem('6.26-7-checkbox', '');
+
 
   const questionNumber = props.id;
 
-  //const [isChecked, setIsChecked] = useState([1,2,3,4,5,6,7]);
-  //const [isChecked, setIsChecked] = useState(new Array(2));
   const [checkedArray, setCheckedArray] = useState([1,2,3,4,5,6,7]);
 
-	function enableDisableTextBoxMixed(id, isChecked) {
-        var mixedRace = document.getElementById("mixedRace");
-        mixedRace.disabled = isChecked ? false : true;
-        if (!mixedRace.disable) {
-            mixedRace.focus();
-        }
-    }
+  function enableDisableTextBox1(id, isChecked) {
+      var box1 = document.getElementById("1");
+      box1.disabled = isChecked ? false : true;
+      if (!box1.disabled) {
+          box1.focus();
+      }
+  }
 
-	function enableDisableTextBoxOther(id, isChecked) {
-        var otherRace = document.getElementById("otherRace");
-        otherRace.disabled = isChecked ? false : true;
-        if (!otherRace.disabled) {
-            otherRace.focus();
-        }
-    }
+  function enableDisableTextBox2(id, isChecked) {
+      var box2 = document.getElementById("2");
+      box2.disabled = isChecked ? false : true;
+      if (!box2.disabled) {
+          box2.focus();
+      }
+  }
+
+  function enableDisableTextBox3(id, isChecked) {
+      var box3 = document.getElementById("3");
+      box3.disabled = isChecked ? false : true;
+      if (!box3.disabled) {
+          box3.focus();
+      }
+  }
+
+  function enableDisableTextBox4(id, isChecked) {
+      var box4 = document.getElementById("4");
+      box4.disabled = isChecked ? false : true;
+      if (!box4.disabled) {
+          box4.focus();
+      }
+  }
+
+  function enableDisableTextBox5(id, isChecked) {
+      var box5 = document.getElementById("5");
+      box5.disabled = isChecked ? false : true;
+      if (!box5.disabled) {
+          box5.focus();
+      }
+  }
+
+  function enableDisableTextBox6(id, isChecked) {
+      var box6 = document.getElementById("6");
+      box6.disabled = isChecked ? false : true;
+      if (!box6.disabled) {
+          box6.focus();
+      }
+  }
+
+  function enableDisableTextBox7(id, isChecked) {
+      var box7 = document.getElementById("7");
+      box7.disabled = isChecked ? false : true;
+      if (!box7.disabled) {
+          box7.focus();
+      }
+  }
+
+
   //working
   const onGlobalChange = (answersArray) => {
     let globalTemp = answersArray;
@@ -48,69 +99,102 @@ function CheckboxInputField_Legal(props) {
       //1)answers array is too long
       answersArray.length > 1  && !answersArray.includes(value) && idName === questionNumber+'-'+value
     );
-
   };
   
-  const handleTextFieldChange = async(event) => {
-
-  }
-
-  const handleChange = async(event) => {
-  	console.log('get right id only call when necessary', event.target.id);
-  	console.log('what is checked value for target id?', event.target.value);
-
-  	if(event.target.id == "5.1-5"){
-  		enableDisableTextBoxMixed(event.target.id, event.target.checked);
-  	}
-
-  	if(event.target.id == "5.1-7"){
-  		enableDisableTextBoxOther(event.target.id, event.target.checked);
-  	}
-  	
-  	if(event.target.id == '5.1-5' || event.target.id == '5.1-7'){
-  		handleTextFieldChange()
-  	}
+  //for checkbox:
+  const handleCheckbox1 = async(event) => {
     setChecked(event.target.checked);
-
-    let temp = answersArray;
-    if(event.target.checked){
-        //if checking box, do the following:
-        temp.push(parseInt(event.target.value));
-
-        //call isDisabled
-        isDisabled(event.target.value, event.target.id);
-
-    }else{
-      //WORKING:
-      //if unchecking box, do the following:
-      let toDelete = temp.indexOf(parseInt(event.target.value));
-      temp.splice(toDelete, 1);
+    enableDisableTextBox1(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-1-checkbox', "No contact with system, or contact only as a legal professional. Feel free to explain: ");
     }
-    //save latest state and corresponding question number:
-    let questionId = event.target.id.slice(0, event.target.id.lastIndexOf('-'));
-    console.log('values to save: ID: ', questionId);
-    console.log('with value: ', temp);
-    localStorage.setItem(questionId, temp);
-
-
-    //Same for checkboxes with input
-    localStorage.setItem(questionNumber, event.target.value);
-
-
-    return temp; 
   };
 
-    return (
+  const handleCheckbox2 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox2(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-2-checkbox', "Plaintiff in a criminal case (person who lodges a complaint against a defendant). Feel free to explain: ");
+    }
+  };
+
+  const handleCheckbox3 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox3(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-3-checkbox', "Involved in family court case and/or child protective services, or has had a close family member involved in legal system as a defendant or victim. Feel free to explain: ");
+    }
+  };
+
+  const handleCheckbox4 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox4(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-4-checkbox', "1+ arrest(s), no conviction. Feel free to explain: ");
+    }
+  };
+
+  const handleCheckbox5 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox5(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-5-checkbox', "1+ conviction(s), on probation (without having been incarcerated) or has had a close family member who was incarcerated in the past. Feel free to explain: ");
+    }
+  };
+
+  const handleCheckbox6 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox6(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-6-checkbox', "1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated (jail, prison or immigration detention). Feel free to explain: ");
+    }
+  };
+
+  const handleCheckbox7 = async(event) => {
+    setChecked(event.target.checked);
+    enableDisableTextBox7(event.target.id, event.target.checked);
+    if(event.target.checked === true){
+      localStorage.setItem('6.26-7-checkbox', "Currently incarcerated, or previously incarcerated over 1 year (jail, prison, or immigration detention). Feel free to explain: ");
+    }
+  };
+
+  const handleInput1 = async(event) => {
+    localStorage.setItem('6.26-1', event.target.value);
+  };
+
+  const handleInput2 = async(event) => {
+    localStorage.setItem('6.26-2', event.target.value);
+  };
+
+  const handleInput3 = async(event) => {
+    localStorage.setItem('6.26-3', event.target.value);   
+  };
+
+  const handleInput4 = async(event) => {
+    localStorage.setItem('6.26-4', event.target.value);
+  };
+
+  const handleInput5 = async(event) => {
+    localStorage.setItem('6.26-5', event.target.value);
+  };
+
+  const handleInput6 = async(event) => {
+    localStorage.setItem('6.26-6', event.target.value);   
+  };
+
+  const handleInput7 = async(event) => {
+    localStorage.setItem('6.26-7', event.target.value);
+  };
+
+  return (
 
       <FormGroup style={{flexDirection: 'column'}} onChange={onGlobalChange(answersArray)}>
-          
           <Box style={{flexDirection: 'row'}}>
             <FormControlLabel
               control={
                 <Checkbox 
                   id={questionNumber+"-1"}
-                  //checked={-1} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox1} 
                   value="No contact with system, or contact only as a legal professional. Feel free to explain."
                   name={questionNumber+"-1"} 
                   disabled={isDisabled(1, questionNumber+"-1")}
@@ -118,17 +202,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="No contact with system, or contact only as a legal professional. Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-1"}
-                name={questionNumber+"-1"}
-                //variant="outlined"
-                //margin="none"
+                id="1"
+                name="1"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
+                    handleInput1(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -137,15 +219,12 @@ function CheckboxInputField_Legal(props) {
             />
           </Box>
 
-
-
           <Box style={{flexDirection: 'row'}}>
             <FormControlLabel
               control={
                 <Checkbox 
                   id={questionNumber+"-2"}
-                  //checked={-2} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox2} 
                   value="Plaintiff in a criminal case (person who lodges a complaint against a defendant). Feel free to explain."
                   name={questionNumber+"-2"} 
                   disabled={isDisabled(2, questionNumber+"-2")}
@@ -153,17 +232,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="Plaintiff in a criminal case (person who lodges a complaint against a defendant). Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-2"}
-                name={questionNumber+"-2"}
-                //variant="outlined"
-                //margin="none"
+                id="2"
+                name="2"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
+                    handleInput2(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -172,14 +249,12 @@ function CheckboxInputField_Legal(props) {
             />
           </Box>
 
-
           <Box style={{flexDirection: 'row'}}>
             <FormControlLabel
               control={
                 <Checkbox 
                   id={questionNumber+"-3"}
-                  //checked={-3} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox3} 
                   value="Involved in family court case and/or child protective services, or has had a close family member involved in legal system as a defendant or victim. Feel free to explain."
                   name={questionNumber+"-3"} 
                   disabled={isDisabled(3, questionNumber+"-3")}
@@ -187,17 +262,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="Involved in family court case and/or child protective services, or has had a close family member involved in legal system as a defendant or victim. Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-3"}
-                name={questionNumber+"-3"}
-                //variant="outlined"
-                //margin="none"
+                id="3"
+                name="3"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
+                    handleInput3(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -212,8 +285,7 @@ function CheckboxInputField_Legal(props) {
               control={
                 <Checkbox 
                   id={questionNumber+"-4"}
-                  //checked={-4} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox4} 
                   value="1+ arrest(s), no conviction. Feel free to explain."
                   name={questionNumber+"-4"} 
                   disabled={isDisabled(4, questionNumber+"-4")}
@@ -221,51 +293,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="1+ arrest(s), no conviction. Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-4"}
-                name={questionNumber+"-4"}
-                //variant="outlined"
-                //margin="none"
+                id="4"
+                name="4"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
-                }}
-                variant="outlined" 
-                fullWidth
-                disabled="disabled"
-                style={{float: 'right'}}
-            />
-          </Box>
-
-
-          <Box style={{flexDirection: 'row'}}>
-            <FormControlLabel
-              control={
-                <Checkbox 
-                  id={questionNumber+"-5"}
-                  //checked={-5} 
-                  onChange={handleChange} 
-                  value="1+ conviction(s), on probation (without having been incarcerated) or has had a close family member who was incarcerated in the past. Feel free to explain."
-                  name={questionNumber+"-5"} 
-                  disabled={isDisabled(5, questionNumber+"-5")}
-                  iconstyle={{fill: '#000'}}
-                />
-              }
-              label="1+ conviction(s), on probation (without having been incarcerated) or has had a close family member who was incarcerated in the past. Feel free to explain."
-              labelPlacement="left"
-              style={{float: 'left'}}
-            />
-            <TextField
-                id={questionNumber+"-5"}
-                name={questionNumber+"-5"}
-                //variant="outlined"
-                //margin="none"
-                label=""
-                onChange={(event) => {
-                    handleChange(event)
+                    handleInput4(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -280,8 +316,7 @@ function CheckboxInputField_Legal(props) {
               control={
                 <Checkbox 
                   id={questionNumber+"-6"}
-                  //checked={-6} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox6} 
                   value="1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated (jail, prison or immigration detention). Feel free to explain."
                   name={questionNumber+"-6"} 
                   disabled={isDisabled(6, questionNumber+"-6")}
@@ -289,17 +324,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="1+ conviction(s), formerly incarcerated under 1 year (jail, prison or immigration detention) OR has an immediate family member who is currently incarcerated (jail, prison or immigration detention). Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-6"}
-                name={questionNumber+"-6"}
-                //variant="outlined"
-                //margin="none"
+                id="6"
+                name="6"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
+                    handleInput6(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -314,8 +347,7 @@ function CheckboxInputField_Legal(props) {
               control={
                 <Checkbox 
                   id={questionNumber+"-7"}
-                  //checked={-7} 
-                  onChange={handleChange} 
+                  onChange={handleCheckbox7} 
                   value="Currently incarcerated, or previously incarcerated over 1 year (jail, prison, or immigration detention). Feel free to explain."
                   name={questionNumber+"-7"} 
                   disabled={isDisabled(7, questionNumber+"-7")}
@@ -323,17 +355,15 @@ function CheckboxInputField_Legal(props) {
                 />
               }
               label="Currently incarcerated, or previously incarcerated over 1 year (jail, prison, or immigration detention). Feel free to explain."
-              labelPlacement="left"
+              labelPlacement="end"
               style={{float: 'left'}}
             />
             <TextField
-                id={questionNumber+"-7"}
-                name={questionNumber+"-7"}
-                //variant="outlined"
-                //margin="none"
+                id="7"
+                name="7"
                 label=""
                 onChange={(event) => {
-                    handleChange(event)
+                    handleInput7(event)
                 }}
                 variant="outlined" 
                 fullWidth
@@ -342,7 +372,7 @@ function CheckboxInputField_Legal(props) {
             />
           </Box>
 
-
+          
         </FormGroup>
         
     );

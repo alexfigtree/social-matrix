@@ -24,8 +24,12 @@ const MHSubstUse = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: Access', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
   }, []);
+
 
   const clear = () => {
     setCurrentId(0);

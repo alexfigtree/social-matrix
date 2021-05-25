@@ -135,7 +135,7 @@ function CheckboxInputField_NOCitizenship(props) {
 	                onChange={handleCheckboxStateless} 
 	                value="If previously stateless, check here, and explain (for instance, stateless Palestinian in Jordan or stateless Rohingya in Bangladesh)"
 	                name={questionNumber+"-2"} 
-	                disabled={isDisabled(5, questionNumber+"-2")}
+	                disabled={isDisabled(2, questionNumber+"-2")}
 	                iconstyle={{fill: '#000'}}
 	              />
 	            }
@@ -165,7 +165,7 @@ function CheckboxInputField_NOCitizenship(props) {
 	                onChange={handleCheckboxAdditional} 
 	                value="If PERSON also lived in additional countries before arriving in current country, list countries here"
 	                name={questionNumber+"-3"} 
-	                disabled={isDisabled(5, questionNumber+"-3")}
+	                disabled={isDisabled(3, questionNumber+"-3")}
 	                iconstyle={{fill: '#000'}}
 	              />
 	            }

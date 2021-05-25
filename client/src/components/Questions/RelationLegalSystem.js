@@ -67,6 +67,47 @@ const RelationLegalSystem = () => {
 
 
 
+
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+
+    const f6_26_1_checkbox = localStorage.getItem("6.26-1-checkbox");
+    const f6_26_1 = localStorage.getItem("6.26-1");
+    const concat6_26_1 = f6_26_1_checkbox + f6_26_1;
+
+    const f6_26_2_checkbox = localStorage.getItem("6.26-2-checkbox");
+    const f6_26_2 = localStorage.getItem("6.26-2");
+    const concat6_26_2 = f6_26_2_checkbox + f6_26_2;
+
+    const f6_26_3_checkbox = localStorage.getItem("6.26-3-checkbox");
+    const f6_26_3 = localStorage.getItem("6.26-3");
+    const concat6_26_3 = f6_26_3_checkbox + f6_26_3;
+
+    const f6_26_4_checkbox = localStorage.getItem("6.26-4-checkbox");
+    const f6_26_4 = localStorage.getItem("6.26-4");
+    const concat6_26_4 = f6_26_4_checkbox + f6_26_4;
+
+    const f6_26_5_checkbox = localStorage.getItem("6.26-5-checkbox");
+    const f6_26_5 = localStorage.getItem("6.26-5");
+    const concat6_26_5 = f6_26_5_checkbox + f6_26_5;
+
+    const f6_26_6_checkbox = localStorage.getItem("6.26-6-checkbox");
+    const f6_26_6 = localStorage.getItem("6.26-6");
+    const concat6_26_6 = f6_26_6_checkbox + f6_26_6;
+
+    const f6_26_7_checkbox = localStorage.getItem("6.26-7-checkbox");
+    const f6_26_7 = localStorage.getItem("6.26-7");
+    const concat6_26_7 = f6_26_7_checkbox + f6_26_7;
+
+
+    let concatString6_26 =  [concat6_26_1, concat6_26_2, concat6_26_3, concat6_26_4, concat6_26_5, concat6_26_6, concat6_26_7].filter(Boolean).join('; '); 
+    
+    tempFootnotes[0][15].value = concatString6_26;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
