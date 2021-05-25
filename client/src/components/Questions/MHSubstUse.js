@@ -136,6 +136,30 @@ const MHSubstUse = () => {
 
         <Typography variant="h5">MH/Substance Use</Typography>
       
+      <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.29"><h4>Q 6.29</h4></label>
+            <Typography variant="h5" align="left">PERSON's Relation to Mental Health System
+            </Typography>
+       
+            <p>
+                Please choose all that apply.
+            </p>
+            <br/>
+            <CheckboxInputField_Substance6_29 id="container6.29" />
+        </Box>
+
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label htmlFor="formGroupExampleInput6.30"><h4>Q 6.30</h4></label>
+            <Typography variant="h5" align="left">PERSON's Mental Health/Illness
+            </Typography>
+       
+            <p>
+                Please check all answers that apply
+            </p>
+            <br/>
+            <CheckboxInputField_Substance6_30 id="container6.30" />
+        </Box>
     
         <Box component="div" style={{ width: '100%' }}>
             <label htmlFor="formGroupExampleInput6.31"><h4>Q 6.31</h4></label>
