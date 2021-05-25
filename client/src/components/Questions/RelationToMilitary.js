@@ -37,8 +37,6 @@ const RelationToMilitary = () => {
   };
 
   const handleChange = async (event) => {
-    console.log('CHANGEIN EVENT NAME', event.target.name);
-    console.log('CHANGEIN EVENT VALUE', event.target.value);
     localStorage.setItem(event.target.name, event.target.value);
   }; 
 
@@ -78,10 +76,17 @@ const RelationToMilitary = () => {
     const f6_22 = localStorage.getItem("6.22");
     //const f6_23 = localStorage.getItem("6.23");
 
+    const f6_23 = localStorage.getItem("6.23");
+    
+    const f6_23_5_checkbox = localStorage.getItem("6.23-5-checkbox");
+    const f6_23_5 = localStorage.getItem("6.23-5");
+
+    const concat6_23_5 = f6_23_5_checkbox + f6_23_5;
+
 
     //generate concatentated string
     let concatString = 
-      [f6_19, f6_20, f6_21, f6_22].filter(Boolean).join("; ");
+      [f6_19, f6_20, f6_21, f6_22, f6_23, concat6_23_5].filter(Boolean).join("; ");
     tempFootnotes[0][16].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
