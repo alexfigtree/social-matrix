@@ -72,38 +72,50 @@ const MHSubstUse = () => {
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
 
-    const f6_26_1_checkbox = localStorage.getItem("6.26-1-checkbox");
-    const f6_26_1 = localStorage.getItem("6.26-1");
-    const concat6_26_1 = f6_26_1_checkbox + f6_26_1;
+    const f6_29 = localStorage.getItem("6.29");
 
-    const f6_26_2_checkbox = localStorage.getItem("6.26-2-checkbox");
-    const f6_26_2 = localStorage.getItem("6.26-2");
-    const concat6_26_2 = f6_26_2_checkbox + f6_26_2;
+    const f6_29_4_checkbox = localStorage.getItem("6.29-4-checkbox");
+    const f6_29_4 = localStorage.getItem("6.29-4");
+    const concat6_29_4 = f6_29_4_checkbox + f6_29_4;
 
-    const f6_26_3_checkbox = localStorage.getItem("6.26-3-checkbox");
-    const f6_26_3 = localStorage.getItem("6.26-3");
-    const concat6_26_3 = f6_26_3_checkbox + f6_26_3;
+    const f6_29_8_checkbox = localStorage.getItem("6.29-8-checkbox");
+    const f6_29_8 = localStorage.getItem("6.29-8");
+    const concat6_29_8 = f6_29_8_checkbox + f6_29_8;
 
-    const f6_26_4_checkbox = localStorage.getItem("6.26-4-checkbox");
-    const f6_26_4 = localStorage.getItem("6.26-4");
-    const concat6_26_4 = f6_26_4_checkbox + f6_26_4;
-
-    const f6_26_5_checkbox = localStorage.getItem("6.26-5-checkbox");
-    const f6_26_5 = localStorage.getItem("6.26-5");
-    const concat6_26_5 = f6_26_5_checkbox + f6_26_5;
-
-    const f6_26_6_checkbox = localStorage.getItem("6.26-6-checkbox");
-    const f6_26_6 = localStorage.getItem("6.26-6");
-    const concat6_26_6 = f6_26_6_checkbox + f6_26_6;
-
-    const f6_26_7_checkbox = localStorage.getItem("6.26-7-checkbox");
-    const f6_26_7 = localStorage.getItem("6.26-7");
-    const concat6_26_7 = f6_26_7_checkbox + f6_26_7;
-
-
-    let concatString6_26 =  [concat6_26_1, concat6_26_2, concat6_26_3, concat6_26_4, concat6_26_5, concat6_26_6, concat6_26_7].filter(Boolean).join('; '); 
+    let concatString6_29 =  [f6_29, concat6_29_4, concat6_29_8].filter(Boolean).join('; '); 
     
-    tempFootnotes[0][14].value = concatString6_26;
+
+    const f6_30 = localStorage.getItem("6.30");
+
+    const f6_30_2_checkbox = localStorage.getItem("6.30-2-checkbox");
+    const f6_30_2 = localStorage.getItem("6.30-2");
+    const concat6_30_2 = f6_30_2_checkbox + f6_30_2;
+
+    const f6_30_4_checkbox = localStorage.getItem("6.30-4-checkbox");
+    const f6_30_4 = localStorage.getItem("6.30-4");
+    const concat6_30_4 = f6_30_4_checkbox + f6_30_4;
+
+    const f6_30_5_checkbox = localStorage.getItem("6.30-5-checkbox");
+    const f6_30_5 = localStorage.getItem("6.30-5");
+    const concat6_30_5 = f6_30_5_checkbox + f6_30_5;
+
+    const f6_30_6_checkbox = localStorage.getItem("6.30-6-checkbox");
+    const f6_30_6 = localStorage.getItem("6.30-6");
+    const concat6_30_6 = f6_30_6_checkbox + f6_30_6;
+
+    const f6_30_7_checkbox = localStorage.getItem("6.30-7-checkbox");
+    const f6_30_7 = localStorage.getItem("6.30-7");
+    const concat6_30_7 = f6_30_7_checkbox + f6_30_7;
+    let concatString6_30 =  [f6_30, concat6_30_2, concat6_30_4, concat6_30_5, concat6_30_6, concat6_30_7].filter(Boolean).join('; '); 
+    
+
+    const f6_33 = localStorage.getItem("6.33");
+    const f6_33_7_checkbox = localStorage.getItem("6.33-7-checkbox");
+    const f6_33_7 = localStorage.getItem("6.33-7");
+    const concat6_33_7 = f6_33_7_checkbox + f6_33_7;
+    let concatString6_33 =  [f6_33, concat6_33_7].filter(Boolean).join('; '); 
+    
+    tempFootnotes[0][14].value = concatString6_29 + "; " + concatString6_30 + "; " + concatString6_33;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
 
