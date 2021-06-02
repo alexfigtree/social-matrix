@@ -82,7 +82,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="1 = Birth parent who raised/is raising PERSON"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -101,7 +101,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="2 = Adoptive parent who raised/is raising PERSON"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -118,7 +118,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="3 = Stepparent involved in having raised/raising PERSON at least part- time"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -134,7 +134,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="4 = Relative or Friend involved in having raised/is raising PERSON"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
 
@@ -151,7 +151,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="5 = Foster parent who raised/is raising PERSON at least part-time"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -167,7 +167,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="6 = Birth parent not involved in PERSON's life for all or some of PERSON's childhood"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -184,7 +184,7 @@ function CheckboxField_RaisedBy(props) {
               />
             }
             label="7 = Institutional or street setting or lived/is living outside of a home"
-            labelPlacement="top"
+            labelPlacement="end"
           />
           
         
