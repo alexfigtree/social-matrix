@@ -105,7 +105,7 @@ RadarChartDraw("#chart2", d.slice(2, 4), mycfgBlue);
         var svg1 = d3.select('#body')
             .append('svg')
             .attr("width", w+400)
-            .attr("height", h)
+            .attr("height", 0)
             .selectAll('svg');
 
         console.log('svg1', svg1);
@@ -114,7 +114,7 @@ RadarChartDraw("#chart2", d.slice(2, 4), mycfgBlue);
         var svg2 = d3.select('#body2')
             .append('svg')
             .attr("width", w+400)
-            .attr("height", h);
+            .attr("height", 0);
 
 
       //svgBody1 = d3.select('#body');
@@ -602,7 +602,8 @@ var legend = svg.append("g")
      
   
           <div id="body2">
-            <div id="chart2" className="svg-align"><div className="matrix-header">Subject 1 - Current Matrix</div></div>
+            <div className="matrix-header">Subject 1 - Current Matrix</div>
+            <div id="chart2" className="svg-align"></div>
           </div>
           <div className="footnotes-bottom">
             <div className="footnotes-header">Footnotes:</div>
