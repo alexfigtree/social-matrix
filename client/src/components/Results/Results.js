@@ -58,7 +58,7 @@ var LegendOptions = ['P1','P2'];
 
 //All Subject data
 var d = matrixData;
-console.log('matrixData', matrixData);
+
 console.log('test d.slice(0, 2)', d.slice(0, 2));
 var orangeDark = 'rgb(255, 127, 14)';
 var orangeLight = 'rgb(252, 220, 159)';
@@ -108,21 +108,15 @@ RadarChartDraw("#chart2", d.slice(2, 4), mycfgBlue);
             .attr("height", 0)
             .selectAll('svg');
 
-        console.log('svg1', svg1);
-
         ////// Volunteer #1 - Post ////////
         var svg2 = d3.select('#body2')
             .append('svg')
             .attr("width", w+400)
             .attr("height", 0);
 
-
-      //svgBody1 = d3.select('#body');
-      //svgBody2 = d3.select('#body2');
-      
   }, []);
 
-    //console.log("SVGHBODY1 outside ", svgBody1);
+
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 
@@ -155,48 +149,7 @@ RadarChartDraw("#chart2", d.slice(2, 4), mycfgBlue);
 
 
 
-
-
-
-
-
-
-console.log('mainOLD');
-
-//var amd = require("./amd");
-
-/*define([], function () {
-    return ['data']; // Array of module names
-});
-
- define(function(require, exports, module) {
-        exports.data = ["data"];
-    });*/
-
-
-
-
-
-////////////////////////////////////////////
-/////// Initiate - Subject 1 ///////
-////////////////////////////////////////////   
-
-////// Volunteer #1 - Pre////////
-
-        
-
-
-
-
-
-
-
-
-
-
 function RadarChartDraw(id, d, options) {
-console.log('RADRAR CHAR NW being called with id of ', id);
-
     var cfg = {
          radius: 5,
          w: 600,
@@ -436,6 +389,7 @@ console.log('RADRAR CHAR NW being called with id of ', id);
 
     var dataValues = [];
     d.forEach(function(y, x){
+        console.log('efe', d.value);
       g.selectAll(".nodes")
         .data(y).enter()
         .append("svg:circle")
@@ -588,8 +542,6 @@ var legend = svg.append("g")
         <Typography variant="h2" align="center">Social Matrix Project - Results</Typography>
 
  
-        
-        
             
         <div>
           <h1>Your generated social matrix:</h1>
