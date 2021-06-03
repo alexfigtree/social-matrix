@@ -217,7 +217,7 @@ function RadarChartDraw(id, d, options) {
     //Text indicating at what % each level is: 12:00
     for(var j=0; j<cfg.levels; j++){
       var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
-      console.log('level factor', levelFactor);
+
       g.selectAll(".levels")
        .data([1]) //dummy data
        .enter()
@@ -343,6 +343,35 @@ function RadarChartDraw(id, d, options) {
       });
     }//wrap
 
+    //tooltip wrap function:
+    function tooltipWrap(text, width) {
+      text.each(function() {
+        var text = d3.select(this),
+          words = text.text().split(/\s+/).reverse(),
+          word,
+          line = [],
+          lineNumber = 0,
+          lineHeight = 1.4, // ems
+          y = text.attr("y"),
+          x = text.attr("x"),
+          dy = parseFloat(text.attr("dy")),
+          dx = parseFloat(text.attr("dx")),
+          tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+        
+        while (word = words.pop()) {
+          line.push(word);
+          tspan.text(line.join(" "));
+          if (tspan.node().getComputedTextLength() > width) {
+            line.pop();
+            tspan.text(line.join(" "));
+            line = [word];
+            tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + "em").text(word);
+          }
+        }
+      });
+    }
+
+
     d.forEach(function(y, x){
       var dataValues = [];
       g.selectAll(".nodes")
@@ -415,9 +444,10 @@ function RadarChartDraw(id, d, options) {
                     tooltip
                         .attr('x', newX)
                         .attr('y', newY)
-                        .text(Format(d.value))
-                        .transition(200)
-                        .style('opacity', 1);
+                        .text("strignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg srstrignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg srstrignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg sr")
+                        .transition(100)
+                        .style('opacity', 1)
+                        .call(tooltipWrap, 300);
                         
                     var z = "polygon."+d3.select(this).attr("class");
                     g.selectAll("polygon")
@@ -435,7 +465,6 @@ function RadarChartDraw(id, d, options) {
                         .transition(200)
                         .style("fill-opacity", cfg.opacityArea);
                   })
-        .append("svg:title")
         .text(function(j){return Math.max(j.value, 0)});
 
       series++;
