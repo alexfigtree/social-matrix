@@ -37,7 +37,22 @@ import * as data from '../../data/dataBlank.js'
 //import styles from '../style.css';
 
 const Results = () => {
- const [data, setData] = useState(localStorage.getItem('matrixData'));
+    const [data, setData] = useState(localStorage.getItem('matrixData'));
+    const [currentId, setCurrentId] = useState(0);
+    const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+
+/*  useEffect(() => {
+    dispatch(getMatrix());
+    dispatch(getFootnotes());
+  }, [currentId, dispatch]);*/
+  //const [matrixData, setMatrixData] = useState({ matrixData: [{}] });
+  //const [footnotesData, setFootnotes] = useState({ footnotesData: [{}] });
+
+    const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+    const [footnotesData, setFootnotes] = useState(localStorage.getItem('footnotes'));
+  
+
+
  var svgBody1;
  var svgBody2;
  //const [footnotes, setFootnotes] = useState(localStorage.getItem('footnotes'));
@@ -56,10 +71,29 @@ var w = 600,
 //Legend titles
 var LegendOptions = ['P1','P2'];
 
-//All Subject data
-var d = matrixData;
 
-console.log('test d.slice(0, 2)', d.slice(0, 2));
+//All Subject data
+var combinedData = matrixData;
+//combinedData = matrixData + footnotesData;
+var footnotesParsed = JSON.parse(footnotesData);
+
+for (let i = 0; i < combinedData.length; i++) {
+    for (let j = 0; j < 34; j++) {
+
+        footnotesParsed.forEach(function (arrayItem) {
+            if(Object.keys(arrayItem).find(key => arrayItem[parseInt(key)].question === combinedData[i][j].axis)){
+                combinedData[i][j].footnote = arrayItem[parseInt(j)].value;
+            }
+
+        });
+
+    }
+
+}
+console.log('combinedData', combinedData);
+
+var d = combinedData;
+
 var orangeDark = 'rgb(255, 127, 14)';
 var orangeLight = 'rgb(252, 220, 159)';
 var blueDark = 'rgb(9, 67, 122)';
@@ -116,20 +150,6 @@ RadarChartDraw("#chart2", d.slice(2, 4), mycfgBlue);
 
   }, []);
 
-
-  const [currentId, setCurrentId] = useState(0);
-  const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
-
-/*  useEffect(() => {
-    dispatch(getMatrix());
-    dispatch(getFootnotes());
-  }, [currentId, dispatch]);*/
-  //const [matrixData, setMatrixData] = useState({ matrixData: [{}] });
-  //const [footnotesData, setFootnotes] = useState({ footnotesData: [{}] });
-
-  const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
-  const [footnotesData, setFootnotes] = useState(localStorage.getItem('footnotes'));
-  
   const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
   const footnotes = useSelector((state) => (currentId ? state.footnotes.find((footnotesData) => footnotes._id === currentId) : null));
 
@@ -257,7 +277,6 @@ function RadarChartDraw(id, d, options) {
     //Text indicating at what % each level is: 6:00
     for(var j=0; j<cfg.levels; j++){
       var levelFactor = cfg.factor*radius*((j+1)/cfg.levels);
-      //console.log("level facort 2", levelFactor);
       g.selectAll(".levels")
        .data([1]) //dummy data
        .enter()
@@ -418,7 +437,6 @@ function RadarChartDraw(id, d, options) {
 
     var dataValues = [];
     d.forEach(function(y, x){
-        console.log('efe', d.value);
       g.selectAll(".nodes")
         .data(y).enter()
         .append("svg:circle")
@@ -444,7 +462,7 @@ function RadarChartDraw(id, d, options) {
                     tooltip
                         .attr('x', newX)
                         .attr('y', newY)
-                        .text("strignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg srstrignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg srstrignerg ergiern ergei gerge rege erg erg erth  awe  erg ebsrt hrtg rg sr")
+                        .text(d.footnote)
                         .transition(100)
                         .style('opacity', 1)
                         .call(tooltipWrap, 300);
