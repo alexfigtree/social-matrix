@@ -2,7 +2,7 @@ export let questionData = [
   // Subject 1 (JK) - Pre/Earlier
   //dark orange, smaller values
   [
-    {axis:"Educ. Level","value":0}, //q1
+    {axis:"Educ.","value":0}, //q1
     {axis:"Unique History",value:0}, //q34
     {axis:"Sex Assigned at Birth",value:0}, //q33
     {axis:"Gender Expression",value:0}, //q32
@@ -44,7 +44,7 @@ export let questionData = [
   ],
     //light orange, larger values
   [
-    {axis:"Educ. Level","value":0}, //q1
+    {axis:"Educ.","value":0}, //q1
     {axis:"Unique History",value:0}, //q34
     {axis:"Sex Assigned at Birth",value:0}, //q33
     {axis:"Gender Expression",value:0}, //q32
@@ -87,7 +87,7 @@ export let questionData = [
   // Subject 1 (JK) - Post/Current
   //dark blue, smaller values
   [
-    {axis:"Educ. Level","value":0}, //q1
+    {axis:"Educ.","value":0}, //q1
     {axis:"Unique History",value:0}, //q34
     {axis:"Sex Assigned at Birth",value:0}, //q33
     {axis:"Gender Expression",value:0}, //q32
@@ -129,7 +129,7 @@ export let questionData = [
   ],
   //light blue, larger values
   [
-    {axis:"Educ. Level","value":0}, //q1
+    {axis:"Educ.","value":0}, //q1
     {axis:"Unique History",value:0}, //q34
     {axis:"Sex Assigned at Birth",value:0}, //q33
     {axis:"Gender Expression",value:0}, //q32

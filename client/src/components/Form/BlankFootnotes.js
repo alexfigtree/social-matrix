@@ -1,6 +1,6 @@
 export let blankFootnotes = [
   [
-    {question:"Educ. Level","value":''}, //q1
+    {question:"Educ.","value":''}, //q1
     {question:"Unique History",value:''}, //q34
     {question:"Sex Assigned at Birth",value:''}, //q33
     {question:"Gender Expression",value:''}, //q32
