@@ -81,8 +81,8 @@ const ChildhoodIncome = () => {
 
         <Typography variant="h5">Childhood Household Income (w/ guardian)</Typography>
         
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput4.8"><h4>Q 4.8</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.8"><h4>Q 4.8</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>Parent/Guardians' 

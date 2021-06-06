@@ -92,7 +92,7 @@ const GeoRegion = () => {
         <Typography variant="h5">Geo. Region</Typography>
         
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.13"><h4>Q 6.13</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.13"><h4>Q 6.13</h4></label>
             <br/>
             <Typography variant="h5" align="left">PERSON's <b><span style={{ textDecoration: 'underline' }}>Current</span></b> Geographical Region of Country/World
             </Typography>
@@ -105,7 +105,7 @@ const GeoRegion = () => {
 
  
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.14"><h4>Q 6.14</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.14"><h4>Q 6.14</h4></label>
             <br/>
             <Typography variant="h5" align="left">PERSON's Previous Geographical Region of Country/World (if any)
             </Typography>
@@ -118,7 +118,7 @@ const GeoRegion = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.15"><h4>Q 6.15</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.15"><h4>Q 6.15</h4></label>
          
             <p>
                 Explain your answer to the question(s) about PERSON's geographical region(s).

@@ -73,7 +73,7 @@ const GenderExpression = () => {
         <Typography variant="h5">Gender Expression</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.21"><h4>Q 7.21</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.21"><h4>Q 7.21</h4></label>
          
             <p>
                 Please rate how privileged or marginalized PERSON' gender expression is <b>currently</b>, including all the aspects of that status. Consider any changes in PERSON'S gender expression, social attitudes over time in PERSON'S larger community and whether those attitudes have shifted, and whether Person has moved to from one community or region to another, with implications for how PERSON is perceived.
@@ -84,7 +84,7 @@ const GenderExpression = () => {
 
  
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.22"><h4>Q 7.22</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.22"><h4>Q 7.22</h4></label>
      
             <p>
                 Please rate how privileged or marginalized PERSON' gender expression <b>was previously</b>, including all the aspects of that status. Consider any changes in PERSON'S gender expression, social attitudes over time in PERSON'S larger community and whether those attitudes have shifted, and whether Person has moved to from one community or region to another, with implications for how PERSON is perceived.

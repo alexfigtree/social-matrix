@@ -89,7 +89,7 @@ const ParentalStatus = () => {
         <Typography variant="h5">Parental Status</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.4"><h4>Q 7.4</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.4"><h4>Q 7.4</h4></label>
             <p>
                 If PERSON has had children, give the age(s) at which 
                 PERSON gave birth or adopted or fostered each child.
@@ -99,7 +99,7 @@ const ParentalStatus = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.5"><h4>Q 7.5</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.5"><h4>Q 7.5</h4></label>
             <p>
                 <b>Other identities affecting privilege or marginalization of 
                 parental status.</b> status. If there are factors that particularly 
@@ -117,7 +117,7 @@ const ParentalStatus = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.6"><h4>Q 7.6</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.6"><h4>Q 7.6</h4></label>
             <p>
                 Please rate PERSON's <b>current</b> privilege or marginalization in relation to PERSON's own parental status.
             </p>
@@ -126,7 +126,7 @@ const ParentalStatus = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.7"><h4>Q 7.7</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.7"><h4>Q 7.7</h4></label>
     
             <p>
                 Please rate PERSON's privilege or marginalization in relation to PERSON's own parental status <b>earlier.</b>

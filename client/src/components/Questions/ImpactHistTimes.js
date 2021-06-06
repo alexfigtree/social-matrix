@@ -90,33 +90,33 @@ const ImpactHistTimes = () => {
         <Typography variant="h5">Impact of Historical Times</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.16"><h4>Q 6.16</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.16"><h4>Q 6.16</h4></label>
+          
             <Typography variant="h5" align="left">Degree PERSON is currently affected by historical period or changes
             </Typography>
             <p>
                 Subjectively rate the extent to which PERSON's privilege or marginalization was affected as a result of having lived through historical, cultural, or political events. For example, did PERSON live through war, famine, or persecution and did the PERSON suffer or benefit as a result of those events? Or has PERSON experienced oppression or marginalization because of race, religion, sexual orientation, immigration status, or marital status?
             </p>
-            <br/>
+         
             <CheckboxField id="container6.16" />
         </Box>
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.17"><h4>Q 6.17</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.17"><h4>Q 6.17</h4></label>
+        
             <Typography variant="h5" align="left">Degree PERSON was previously affected by historical period or changes.
             </Typography>
             <p>
                 Subjectively rate the extent to which PERSON's privilege or marginalizing <b>was previously affected</b> as a result of having lived through historical, cultural, or political events. For example, did PERSON live through war, famine, or persecution and did the PERSON suffer or benefit as a result of those events? Or did PERSON experienced oppression or marginalization because of race, religion, sexual orientation, immigration status, or marital status?
             </p>
-            <br/>
+         
             <CheckboxField id="container6.17" />
         </Box>
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.18"><h4>Q 6.18</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.18"><h4>Q 6.18</h4></label>
         
             <p>
                 Explain your answer to the last two questions, for instance, if you have gained privilege in some domains and lost privilege in other domains as a result of historical changes, explain that here.

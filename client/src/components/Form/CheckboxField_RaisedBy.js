@@ -65,6 +65,7 @@ function CheckboxField_RaisedBy(props) {
 
       <FormGroup style={{flexDirection: 'row'}} onChange={onGlobalChange(answersArray)}>
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-1"}
@@ -86,6 +87,7 @@ function CheckboxField_RaisedBy(props) {
           />
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-2"}
@@ -105,6 +107,7 @@ function CheckboxField_RaisedBy(props) {
           />
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-3"}
@@ -122,6 +125,7 @@ function CheckboxField_RaisedBy(props) {
           />
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-4"}
@@ -139,6 +143,7 @@ function CheckboxField_RaisedBy(props) {
 
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-5"}
@@ -155,6 +160,7 @@ function CheckboxField_RaisedBy(props) {
           />
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-6"}
@@ -171,6 +177,7 @@ function CheckboxField_RaisedBy(props) {
           />
 
           <FormControlLabel
+            style={{flexDirection: 'row', width: '100%'}}
             control={
               <Checkbox 
                 id={questionNumber+"-7"}

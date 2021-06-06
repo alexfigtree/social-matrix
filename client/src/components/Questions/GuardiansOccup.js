@@ -100,15 +100,15 @@ const GuardiansOccup = () => {
 
         <Typography variant="h5">Guardian's Occupation</Typography>
         
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.6"><h4>Q 4.6</h4></label>
-            <br/>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.6"><h4>Q 4.6</h4></label>
+           
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>
                 Parent/Guardians' occupation(s), compared to EachParent'/Guardians 
                 COUNTRY AND LOCAL COMMUNITY later on while raising PERSON.</span> 
             </Typography>
-            <br/>
+        
             <p>
                 How would you rate the privilege of each Parent/Guardian 
                 occupation while raising PERSON, as compared to everyone in 
@@ -125,7 +125,6 @@ const GuardiansOccup = () => {
                 Please only answer for relevant number of parents/parenting figures.
             </p>
             
-            <br/><br/>
             <p>
                 Parent/Figure 1
             </p>
@@ -152,9 +151,8 @@ const GuardiansOccup = () => {
             <CheckboxField id="container4.6.5" />
           </Box>
 
-
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.7"><h4>Q 4.7</h4></label>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.7"><h4>Q 4.7</h4></label>
       
             <Typography variant="h5" align="left">
                 Describe each Parent/Guardian's occupation(s) during PERSON's childhood. 

@@ -107,79 +107,75 @@ const HouseholdIncome = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Household Income (Now)</Typography>
-        
-       
-        <br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.1"><h4>Q 3.1</h4></label>
-            <br/>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.1"><h4>Q 3.1</h4></label>
+     
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}> Current Household Income Relative to Community:</span> 
             </Typography>
-            <br/>
+     
             <p>
                 How do you rate the relative privilege of PERSON's <b>current</b>household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY, today? </b>
             </p>
             <p>
                 <b>(As with education, take into account how income levels differ between both local communities, and historical eras. You may choose up to two answers.)</b>
             </p>
-            <br/><br/>
+       
             <CheckboxField id="container3.1" />
         </Box>
 
-       
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.2"><h4>Q 3.2</h4></label>
-            <br/>
+ 
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.2"><h4>Q 3.2</h4></label>
+         
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>Current Household Income Relative to COUNTRY:</span> 
             </Typography>
-            <br/>
+         
             <p>
                 How do you rate the relative privilege of PERSON's <b>current </b>household income, assets, and debts, <b>as compared to the rest of PERSON's COUNTRY, today</b>?
             </p>
             <p>
                 <b>(As with education, take into account how income levels differ between countries, regions, local communities, and historical eras. You may choose up to two answers.)</b>
             </p>
-            <br/><br/>
+           
             <CheckboxField id="container3.2" />
         </Box>
 
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.3"><h4>Q 3.3</h4></label>
-            <br/>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.3"><h4>Q 3.3</h4></label>
+     
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}> Previous Household Income Relative to Community:</span> 
             </Typography>
-            <br/>
+  
             <p>
                 How do you rate the relative privilege of PERSON's <b>PREVIOUS</b> household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY? (For instance, there may have been a significant change in household income over time.</b>You may choose up to two answers.)
             </p>
             <p>
                 <b>(As with education, take into account how income levels differ between both local communities, and historical eras.)</b>
             </p>
-            <br/><br/>
+        
             <CheckboxField id="container3.3" />
         </Box>
 
    
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.4"><h4>Q 3.4</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.4"><h4>Q 3.4</h4></label>
+         
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>PREVIOUS Household Income Relative to COUNTRY:</span> 
             </Typography>
-            <br/>
+          
             <p>
                 How do you rate the relative privilege of PERSON's <b>PREVIOUS</b> household income, assets, and debts,  <b>as compared to the rest of PERSON's COUNTRY at the time? (For instance, there may have been a significant change in household income over time. </b>You may choose up to two answers.)
             </p>
             <p>
                 <b>(As with education, income levels differ between countries, regions, local communities, and historical eras.)</b>
             </p>
-            <br/><br/>
+         
             <CheckboxField id="container3.4" />
         </Box>
         

@@ -92,7 +92,7 @@ const Politics = () => {
         <Typography variant="h5">Politics</Typography>
         
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.9"><h4>Q 6.9</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.9"><h4>Q 6.9</h4></label>
          
             <p>
                 Briefly name or describe Person’s political stance (this could involve the Person’s political party affiliation or involvement in a movement in current or prior country; this can include, for instance, "progressive," "liberal," "conservative," "socialist," "apolitical," etc.)
@@ -102,28 +102,28 @@ const Politics = () => {
         </Box>
   
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.10"><h4>Q 6.10</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.10"><h4>Q 6.10</h4></label>
+            
             <p>
                 Rate the extent to which PERSON's political stance is <b>currently</b> privileged and accepted, or is marginalized in the PERSON's country or region (that is, whether that political stance is the dominant one or is marginalized or targeted.
             </p>
-            <br/><br/>
+        
             <CheckboxField id="container6.10" />
         </Box>
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.11"><h4>Q 6.11</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.11"><h4>Q 6.11</h4></label>
+        
             <p>
                 Rate the extent to which PERSON's political stance was privileged and accepted, or was marginalized in the PERSON's country or region <b>at an earlier time </b> (that is, whether that political stance was the dominant one or was marginalized or targeted.
             </p>
-            <br/><br/>
+         
             <CheckboxField id="container6.11" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.12"><h4>Q 6.12</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.12"><h4>Q 6.12</h4></label>
            
             <p>
                 Explain your answer to the question(s) about your political stance.

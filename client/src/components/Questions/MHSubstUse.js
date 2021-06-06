@@ -137,79 +137,79 @@ const MHSubstUse = () => {
         <Typography variant="h5">MH/Substance Use</Typography>
       
       <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.29"><h4>Q 6.29</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.29"><h4>Q 6.29</h4></label>
             <Typography variant="h5" align="left">PERSON's Relation to Mental Health System
             </Typography>
        
             <p>
                 Please choose all that apply.
             </p>
-            <br/>
+      
             <CheckboxInputField_Substance6_29 id="container6.29" />
         </Box>
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.30"><h4>Q 6.30</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.30"><h4>Q 6.30</h4></label>
             <Typography variant="h5" align="left">PERSON's Mental Health/Illness
             </Typography>
        
             <p>
                 Please check all answers that apply
             </p>
-            <br/>
+          
             <CheckboxInputField_Substance6_30 id="container6.30" />
         </Box>
     
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.31"><h4>Q 6.31</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.31"><h4>Q 6.31</h4></label>
+         
             <p>
                 Rate PERSON's <b>current</b> privilege or marginalization in relation to mental health or mental illness.
             </p>
-            <br/>
+     
             <CheckboxField id="container6.31" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.32"><h4>Q 6.32</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.32"><h4>Q 6.32</h4></label>
+        
             <p>
                 Rate PERSON's <b>previous</b> privilege or marginalization in relation to mental health or mental illness.
             </p>
-            <br/>
+       
             <CheckboxField id="container6.32" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.33"><h4>Q 6.33</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.33"><h4>Q 6.33</h4></label>
             <Typography variant="h5" align="left">PERSON'S Relationship to Substance Use/Dependence/Addiction
             </Typography>
        
             <p>
                 Please choose <b>all that apply</b> in relation to substance use, dependence, and/or addiction. Consider all recreational substances (including alcohol and nicotine, as well as drugs) and prescription drugs that are misused.
             </p>
-            <br/>
+      
             <CheckboxInputField_Substance6_33 id="container6.33" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.34"><h4>Q 6.34</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.34"><h4>Q 6.34</h4></label>
+        
             <p>
                 Please rate PERSON's <b>current</b> relationship to substance use and abuse.
             </p>
-            <br/>
+          
             <CheckboxField id="container6.34" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.35"><h4>Q 6.35</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.35"><h4>Q 6.35</h4></label>
+           
             <p>
                 Please rate PERSON's <b>previous</b> relationship to substance use and abuse.
             </p>
-            <br/>
+        
             <CheckboxField id="container6.35" />
         </Box>
 

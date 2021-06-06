@@ -95,7 +95,7 @@ function CheckboxField(props) {
 
     return (
 
-      <FormGroup style={{flexDirection: 'row'}} onChange={onGlobalChange(answersArray)}>
+      <FormGroup style={{flexDirection: 'row', justifyContent: 'center'}} onChange={onGlobalChange(answersArray)}>
           <FormControlLabel
             control={
               <Checkbox 

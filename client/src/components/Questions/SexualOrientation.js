@@ -73,7 +73,7 @@ const SexualOrientation = () => {
         <Typography variant="h5">Sexual Orientation</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.24"><h4>Q 7.24</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.24"><h4>Q 7.24</h4></label>
        
             <p>
                 Please rate how privileged or marginalized PERSON'S sexual orientation is, <b>currently</b>. You can choose more than one number if PERSON'S status is different in PERSON's different communities and social contexts (for instance, with friends vs. at work or in one's religious community, or in different geographical locations PERSON relates to.)
@@ -83,7 +83,7 @@ const SexualOrientation = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.25"><h4>Q 7.25</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.25"><h4>Q 7.25</h4></label>
        
             <p>
                 Please rate how privileged or marginalized PERSON'S sexual orientation was <b>previously</b>. You can choose more than one number if PERSON'S status is different in PERSON's different communities and social contexts (for instance, with friends vs. at work or in one's religious community, or in different geographical locations PERSON relates to.)

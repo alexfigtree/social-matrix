@@ -91,7 +91,7 @@ const Appearance = () => {
         <Typography variant="h5">Appearance</Typography>
         
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.42"><h4>Q 6.42</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.42"><h4>Q 6.42</h4></label>
          
             <p>
                 Please specify any noteworthy visible features, for instance, being unusually tall or unusually short, very overweight or very underweight, having a gender-nonconforming appearance, being strikingly attractive or having a visible physical disfigurement or disability that draws attention, or being racially unusual in the immediate context.
@@ -110,7 +110,7 @@ const Appearance = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.43"><h4>Q 6.43</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.43"><h4>Q 6.43</h4></label>
          
             <p>
                 <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>now.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
@@ -121,7 +121,7 @@ const Appearance = () => {
 
   
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.44"><h4>Q 6.44</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.44"><h4>Q 6.44</h4></label>
          
             <p>
                 <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>earlier.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).

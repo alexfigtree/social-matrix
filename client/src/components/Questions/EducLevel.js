@@ -116,8 +116,8 @@ const EducLevel = () => {
       <Typography variant="h5">Education Level</Typography>
 
         
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput1.2"><h4>Q 1.2</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.2"><h4>Q 1.2</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 PERSON's Years of Education, compared to Person's  <Box component="span" style={{ textDecoration: 'underline' }}> LOCAL COMMUNITY today </Box> 
@@ -145,10 +145,8 @@ const EducLevel = () => {
             <CheckboxField id="container1.2" />
         </Box>
 
-    
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput1.3"><h4>Q 1.3</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.3"><h4>Q 1.3</h4></label>
             <br/>
             <br/>
             <p>
@@ -179,10 +177,8 @@ const EducLevel = () => {
             <CheckboxField id="container1.3" />
         </Box>
 
-         
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput1.4"><h4>Q 1.4</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.4"><h4>Q 1.4</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 PERSON's Years of Education, compared to Person's <Box component="span" style={{ textDecoration: 'underline' }}> COUNTRY as a whole, today.</Box>
@@ -208,10 +204,8 @@ const EducLevel = () => {
             <CheckboxField id="container1.4" />
         </Box>
 
-   
-        <hr/><br/>
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput1.5"><h4>Q 1.5</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.5"><h4>Q 1.5</h4></label>
             <br/>
             <p>
                 How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>country of residence at an earlier time?</Box>  
@@ -228,8 +222,8 @@ const EducLevel = () => {
             <CheckboxField id="container1.5" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
             <br/>
             <p>
                 <b>Please give PERSON's highest level of education</b>(for example, "finished 9th grade,"
@@ -238,10 +232,8 @@ const EducLevel = () => {
             </p>
             <br/>
             
-            <FootnoteField id="1.6" />
-           
+            <FootnoteField id="1.6" />   
         </Box>
-
 
         <Link to="/q2"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
       </form>

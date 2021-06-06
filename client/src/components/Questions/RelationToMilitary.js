@@ -108,10 +108,10 @@ const RelationToMilitary = () => {
         <Typography variant="h5">Relation to Military</Typography>
        
         <Box component="div" style={{ width: '100%' }}>
-          <label><h4>Q 6.19</h4></label>
+          <label className={classes.questionLabel}><h4>Q 6.19</h4></label>
           <label><h4>History with the Military</h4></label>
           
-          <p>
+           <p>
                 Does PERSON or PERSON's close family relative have a past or present relationship to the military, or to any nongovernmental military group?
             </p>
           <RadioGroup aria-label="gender" id="6.19" name="6.19" onChange={handleChange}>
@@ -123,7 +123,7 @@ const RelationToMilitary = () => {
         </Box>
 
         <Box component="div">
-            <label htmlFor="formGroupExampleInput6.20"><h4>Q 6.20</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.20"><h4>Q 6.20</h4></label>
             
             <p>
               Please name PERSON's <b>relationship to the Military.</b> For example, is 
@@ -132,16 +132,16 @@ const RelationToMilitary = () => {
               sibling, or other close relative of a military member or veteran, 
               or a civilian employee of the military?
             </p>
-            <br/>
+      
             <p>
                 What was PERSON's or relative's <b>rank</b> in the military, if known?
             </p>
-            <br/>
+         
             <p>
                 Alternatively, has PERSON lived as a civilian in a community that is 
                 affected by conflict or has an active military presence?
             </p>
-            <br/>
+       
             <p>
                 Please use space below to describe person's current or previous relation 
                 to military and rank.
@@ -154,7 +154,7 @@ const RelationToMilitary = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-          <label><h4>Q 6.21</h4></label>
+          <label className={classes.questionLabel}><h4>Q 6.21</h4></label>
           <p>
             Was PERSON or PERSON's relative in a combat zone as member of military?
           </p>
@@ -166,7 +166,7 @@ const RelationToMilitary = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-          <label><h4>Q 6.22</h4></label>
+          <label className={classes.questionLabel}><h4>Q 6.22</h4></label>
           <p>
             Did PERSON or PERSON's relative get injured or killed in the line of duty, 
             or experience psychological trauma as a result of military duty?
@@ -180,7 +180,7 @@ const RelationToMilitary = () => {
 
 
         <Box component="div">
-            <label htmlFor="formGroupExampleInput6.23"><h4>Q 6.23</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.23"><h4>Q 6.23</h4></label>
         
             <Typography variant="h5" align="left">Nature of PERSON's relationship 
             to the Military
@@ -199,7 +199,7 @@ const RelationToMilitary = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.24"><h4>Q 6.24</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.24"><h4>Q 6.24</h4></label>
             
             <p>
                 Rate PERSON's <b>current</b> privilege or marginalization in relation to the military. (Please select one).
@@ -212,7 +212,7 @@ const RelationToMilitary = () => {
 
      
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.25"><h4>Q 6.25</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.25"><h4>Q 6.25</h4></label>
            
             <p>
                 Rate PERSON's <b>previous</b> privilege or marginalization in relation to the military. (Please select one).

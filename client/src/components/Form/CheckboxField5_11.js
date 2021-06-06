@@ -114,7 +114,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="1 = Born in country of residence"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -133,7 +133,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="2 = Naturalized citizen of the country of residence"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -150,7 +150,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="3 = Documented resident of country of residence (e.g., has student visa, work visa, green card, or alternatively, is a resident of home country but with military deployment orders allowing PERSON to be in current country)"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -166,7 +166,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="4 = Has spouse or parent with a student visa, work visa, or green card or deployment orders in country of residence"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
 
@@ -183,7 +183,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="5 = In process of applying for documentation for asylum in country of residence"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -199,7 +199,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="6 = Undocumented immigrant or refugee (and so at risk of being detained or deported)"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -216,7 +216,7 @@ function CheckboxField5_11(props) {
               />
             }
             label="7 = Undocumented immigrant who as been detained or deported"
-            labelPlacement="top"
+            labelPlacement="end"
           />
           
         

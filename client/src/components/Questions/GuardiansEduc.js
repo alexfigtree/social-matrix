@@ -95,7 +95,6 @@ const GuardiansEduc = () => {
     //console.log('domain2_pre_post', domain2_pre_post);
     let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')];
 
-    console.log('wergwer', domain2_pre_post);
     let domain2_pre_post_small = Math.min(...domain2_pre_post);
     let domain2_pre_post_large = Math.max(...domain2_pre_post);
     console.log('domain2_pre_post_small', domain2_pre_post_small);
@@ -131,16 +130,16 @@ const GuardiansEduc = () => {
 
         <Typography variant="h5">Guardians’ Education</Typography>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput4.4"><h4>Q 4.4</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.4"><h4>Q 4.4</h4></label>
+        
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>Parent/guardian's 
                 highest level of education, compared to Parent/Guardian's COUNTRY 
                 AND LOCAL COMMUNITY while raising PERSON, early in raising 
                 PERSON.</span> 
             </Typography>
-            <br/>
+       
             <p>
                 How would you rate the privilege of each <b>Parent/Guardian's</b> 
                 level of education early in the time they were <b>raising PERSON</b>, 
@@ -198,9 +197,9 @@ const GuardiansEduc = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
+            
             <p>
                 <b>Please describe each Parent/Guardian's highest educational 
                 level achieved while raising personv</b> (for example, "finished 
@@ -211,7 +210,7 @@ const GuardiansEduc = () => {
                 because of im/migration or major changes in economy, please specify 
                 that.</b>
             </p>
-            <br/>
+       
             
             <FootnoteField id="4.5" />
            

@@ -105,8 +105,8 @@ const Race = () => {
 
         <Typography variant="h5">Race</Typography>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.1"><h4>Q 5.1</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.1"><h4>Q 5.1</h4></label>
         
             <Typography variant="h5" align="left">PERSON'S Race(s)
             </Typography>
@@ -130,12 +130,12 @@ const Race = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.2"><h4>Q 5.2</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.2"><h4>Q 5.2</h4></label>
+            
             <Typography variant="h5" align="left">PERSON’s <span style={{ textDecoration: 'underline' }}>Current </span>Experience of Racial Privilege
             </Typography>
-            <br/>
+        
             <p>
                 Please choose the number that fits PERSON'S <span style={{ textDecoration: 'underline' }}>current</span> experience of relative racial privilege or marginalization best. Consider racial context, for instance, country, region, PERSON’s class and occupational privilege, and any other factors that are relevant. PERSON's racial identity and relative racial privilege or marginalization may have changed following immigration or a historical change in race relations.
             </p>
@@ -143,17 +143,17 @@ const Race = () => {
                 If PERSON has mixed racial privilege (either because PERSON has a mixed racial background or because PERSON goes
                 between contexts in which that racial identity is perceived differently), you may choose two numbers rather than one.
             </p>
-            <br/><br/>
+    
             <CheckboxField id="container5.2" />
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.3"><h4>Q 5.3</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.3"><h4>Q 5.3</h4></label>
+      
             <Typography variant="h5" align="left">PERSON’s <span style={{ textDecoration: 'underline' }}>Earlier </span>Experience of Racial Privilege
             </Typography>
-            <br/>
+       
             <p>
                 Please choose the number that fits PERSON'S <span style={{ textDecoration: 'underline' }}>earlier</span> experience of relative racial privilege or marginalization best. Consider racial context, for instance, country, region, PERSON’s class and occupational privilege, and any other factors that are relevant. PERSON's racial identity and relative racial privilege or marginalization may have changed following immigration or a historical change in race relations.
             </p>
@@ -161,13 +161,13 @@ const Race = () => {
                 If PERSON has mixed racial privilege (either because PERSON has a mixed racial background or because PERSON goes
                 between contexts in which that racial identity is perceived differently), you may choose two numbers rather than one.
             </p>
-            <br/><br/>
+       
             <CheckboxField id="container5.3" />
         </Box>
         
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.4"><h4>Q 5.4</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.4"><h4>Q 5.4</h4></label>
           
             <p>
                 Please explain your rating responses for <b>current and earlier 
@@ -176,7 +176,6 @@ const Race = () => {
                 or does PERSON have a mixed racial identity?
             </p>
          
-
             <FootnoteField id="5.4" />
         </Box>
         <Link to="/q11"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

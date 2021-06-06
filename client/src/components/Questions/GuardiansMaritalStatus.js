@@ -100,7 +100,7 @@ const GuardiansMaritalStatus = () => {
         
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.13"><h4>Q 4.13</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.13"><h4>Q 4.13</h4></label>
          
             <p>
                 <b>Parent/Guardians' Marital Status While Raising Person.</b>
@@ -152,8 +152,8 @@ const GuardiansMaritalStatus = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.8"><h4>Q 4.14</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.8"><h4>Q 4.14</h4></label>
+          
             <p>
                 How would you rate the marital status(es) of each Parent/Guardian while raising PERSON?
             </p>
@@ -163,7 +163,7 @@ const GuardiansMaritalStatus = () => {
             <p>
                 Please only answer for relevant number of parents/parenting figures.
             </p>
-            <br/><br/>
+          
             <p>
                 Parent/Figure 1
             </p>
@@ -191,7 +191,7 @@ const GuardiansMaritalStatus = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.15"><h4>Q 4.15</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.15"><h4>Q 4.15</h4></label>
            
             <p>
                 Please explain any changes in each Parent/Guardian's marital 

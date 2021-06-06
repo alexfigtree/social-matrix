@@ -87,20 +87,17 @@ const LanguageSpoken = () => {
 
         <Typography variant="h5">Language(s)</Typography>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.15"><h4>Q 5.15</h4></label>
-          
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.15"><h4>Q 5.15</h4></label>
             <p>
                 What is PERSON's first language or languages? If PERSON grew 
                 up multilingual, name all languages spoken in childhood.
             </p>
-         
-
             <FootnoteField id="5.15" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.16"><h4>Q 5.16</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.16"><h4>Q 5.16</h4></label>
           
             <p>
                 What additional languages does PERSON speak now?
@@ -110,13 +107,13 @@ const LanguageSpoken = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.17"><h4>Q 5.17</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.17"><h4>Q 5.17</h4></label>
+          
             <p>
                 Rate how privileged or marginalized PERSON's spoken languages are? <b>If PERSON speaks more than one language, select up to two choices.</b>
             </p>
-            <br/><br/>
+          
             <CheckboxField id="container5.17" />
         </Box>
         

@@ -89,8 +89,8 @@ const Ethnicity = () => {
         <Typography variant="h5">Ethnicity/Tribe</Typography>
       
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.5"><h4>Q 5.5</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.5"><h4>Q 5.5</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 PERSON's Ethnicity(ies) or Tribe(s)
@@ -119,8 +119,8 @@ const Ethnicity = () => {
             <FootnoteField id="5.5" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.6"><h4>Q 5.6</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.6"><h4>Q 5.6</h4></label>
             <br/>
             <p>
                 Please subjectively choose how privileged or marginalized you see PERSON's ethnic or tribal identity as being, <b><span style={{ textDecoration: 'underline' }}>currently</span></b>. If PERSON identifies with more than one ethnicity or tribe, you can choose two numbers.
@@ -129,8 +129,8 @@ const Ethnicity = () => {
             <CheckboxField id="container5.6" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.7"><h4>Q 5.7</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.7"><h4>Q 5.7</h4></label>
             <br/>
             <p>
                 Please subjectively choose how privileged or marginalized you see PERSON's ethnic or tribal identity as having been <b><span style={{ textDecoration: 'underline' }}>earlier</span></b>. For instance, the relative privilege or marginalization of

@@ -114,8 +114,8 @@ const GuardiansChildHouseIncome = () => {
         <Typography variant="h5">Guardians’ Childhood Household Income</Typography>
         
 
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
       
             <Typography variant="h5" align="left">
                 Please describe each Parent/Guardian's highest educational level 
@@ -148,15 +148,15 @@ const GuardiansChildHouseIncome = () => {
       
           </Box>
 
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.9"><h4>Q 4.9</h4></label>
-            <br/>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.9"><h4>Q 4.9</h4></label>
+         
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>Parent/Guardians' 
                 occupation(s), compared to EachParent'/Guardians COUNTRY AND
                  LOCAL COMMUNITY later on while raising PERSON.</span> 
             </Typography>
-            <br/>
+       
             <p>
               How do you rate the relative privilege of each <b>Parent/Guardian's 
               household income and wealth <span style={{ textDecoration: 'underline' }}>
@@ -178,7 +178,7 @@ const GuardiansChildHouseIncome = () => {
             <p>
                 Please only answer for relevant number of parents/parenting figures.
             </p>
-            <br/><br/>
+          
             <p>
                 Parent/Figure 1
             </p>
@@ -206,8 +206,8 @@ const GuardiansChildHouseIncome = () => {
           </Box>
 
 
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.10"><h4>Q 4.10</h4></label>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.10"><h4>Q 4.10</h4></label>
       
             <p>
                 Please explain your answer to the last question, including any 

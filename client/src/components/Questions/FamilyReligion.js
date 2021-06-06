@@ -94,7 +94,7 @@ const FamilyReligion = () => {
         
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.1"><h4>Q 6.1</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.1"><h4>Q 6.1</h4></label>
           
             <Typography variant="h5" align="left">
                 Family Religion/Philosophy (this may go back a generation or two)
@@ -110,7 +110,7 @@ const FamilyReligion = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.2"><h4>Q 6.2</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.2"><h4>Q 6.2</h4></label>
             <br/>
             <p>
                 Including all sides of PERSON's family, rate the extent to which that religion is <b>currently</b> dominant or marginalized in PERSON's country or region. You may include two choices, if there is more than one religion in your family of origin.
@@ -120,7 +120,7 @@ const FamilyReligion = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.3"><h4>Q 6.3</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.3"><h4>Q 6.3</h4></label>
             <br/>
             <p>
                 Rate the extent to which that religion(s) or philosophy(ies) was dominant or marginalized <b style={{ textDecoration: 'underline' }}>earlier</b> in PERSON'S life. For instance, the family's religion may be more or less marginalized now than in the past because of immigration or because of earlier religious conversion in the family, or because of historical changes in how that religion was received.
@@ -131,7 +131,7 @@ const FamilyReligion = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.4"><h4>Q 6.4</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.4"><h4>Q 6.4</h4></label>
          
             <p>
                 Explain your answer to the last two questions

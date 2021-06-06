@@ -114,7 +114,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="1 = Many generations before PERSON in the country"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -133,7 +133,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="2 = Two to three generations before PERSON in the country"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -150,7 +150,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="3 = One generation before PERSON in the country"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -166,7 +166,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="4 = PERSON and parents/guardians immigrated to country"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
 
@@ -183,7 +183,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="5 = Person is an immigrant or has a visa allowing long-term stays in country"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -199,7 +199,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="6 = PERSON is an undocumented immigrant"
-            labelPlacement="top"
+            labelPlacement="end"
           />
 
           <FormControlLabel
@@ -216,7 +216,7 @@ function CheckboxField5_12(props) {
               />
             }
             label="7 = PERSON is an undocumented immigrant who has been deported or detained"
-            labelPlacement="top"
+            labelPlacement="end"
           />
           
         

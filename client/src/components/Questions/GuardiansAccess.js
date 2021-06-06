@@ -101,13 +101,13 @@ const GuardiansAccess = () => {
         <Typography variant="h5">Guardian's Access</Typography>
         
                 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput4.8"><h4>Q 4.11</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.8"><h4>Q 4.11</h4></label>
+         
             <Typography variant="h5" align="left">
                 Parent/Guardians' Access to Resources, Information, Influence:
             </Typography>
-            <br/>
+       
             <p>
               How much do you think each Parent/Guardian can advocate for 
               him/her/themself, get medical care, find jobs, get support, 
@@ -125,7 +125,7 @@ const GuardiansAccess = () => {
             <p>
                 Please only answer for relevant number of parents/parenting figures.
             </p>
-            <br/><br/>
+         
             <p>
                 Parent/Figure 1
             </p>
@@ -153,8 +153,8 @@ const GuardiansAccess = () => {
         </Box>
 
 
-          <Box component="div">
-            <label htmlFor="formGroupExampleInput4.12"><h4>Q 4.12</h4></label>
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.12"><h4>Q 4.12</h4></label>
 
             <p>
                 <b>Briefly explain your answer for each Parent/Guardian. </b>

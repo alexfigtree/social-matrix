@@ -92,12 +92,12 @@ const HealthAbility = () => {
         
         
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.39"><h4>Q 6.39</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.39"><h4>Q 6.39</h4></label>
           
             <Typography variant="h5" align="left">
                 PERSON'S Physical Health/Illness/Ability
             </Typography>
-            <br/>
+          
             <p>
                 Please specify any chronic or life-threatening illness as well as any unusual physical talents or abilities (such as strong athletic abilities). You can specify both (e.g., has paralyzed legs or has asthma, but is very athletic).
             </p>
@@ -106,7 +106,7 @@ const HealthAbility = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.40"><h4>Q 6.40</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.40"><h4>Q 6.40</h4></label>
          
             <p>
                 Please rate PERSON'S <b>current</b> privilege or marginalization in this domain. If PERSON has both a special ability AND a limitation. You can choose 2 numbers.
@@ -117,7 +117,7 @@ const HealthAbility = () => {
 
    
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.41"><h4>Q 6.41</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.41"><h4>Q 6.41</h4></label>
        
             <p>
                 Please rate PERSON'S <b>previous</b> privilege or marginalization in this domain. If PERSON has both a special ability AND a limitation. You can choose 2 numbers.

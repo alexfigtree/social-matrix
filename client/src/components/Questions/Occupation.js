@@ -115,10 +115,11 @@ const Occupation = () => {
     <Box className={classes.paper}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
-        <Typography variant="h5">Occupation</Typography>
+        <Typography variant="h4" align="center" style={{ width: '100%' }}>Occupation</Typography>
+
         
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput2.1"><h4>Q 2.1</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput2.1"><h4>Q 2.1</h4></label>
            
             <Typography variant="h5" align="left">
                 PERSON'S Current Occupation(s)
@@ -132,8 +133,8 @@ const Occupation = () => {
           
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput2.2"><h4>Q 2.2</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput2.2"><h4>Q 2.2</h4></label>
           
             <p>
                 <b>Please rate current occupation(s):</b> (relative to PERSON's <b>current community</b>). (You may choose up to two responses)
@@ -143,13 +144,13 @@ const Occupation = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput2.1"><h4>Q 2.3</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput2.1"><h4>Q 2.3</h4></label>
+          
             <Typography variant="h5" align="left">
                 PERSON'S Previous Occupation(s)
             </Typography>
-            <br/>
+        
             <p>
                 Include previous long-term jobs or occupations (for example, secretary, doctor,
                 homemaker, student, unemployed, on disability).
@@ -160,30 +161,31 @@ const Occupation = () => {
         </Box>
 
         
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput2.4"><h4>Q 2.4</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput2.4"><h4>Q 2.4</h4></label>
             
             <p>
                 <b>Please rate occupation:</b> (relative to PERSON's <b>community at the time Person had this
                 occupation</b>). (You may choose up to two responses)
             </p>
-            <br/>
+          
             <CheckboxField id="container2.4" />
         </Box>
 
 
        
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput2.5"><h4>Q 2.5</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput2.5"><h4>Q 2.5</h4></label>
       
-            <Typography variant="h5" align="left">
+            <p>
                 Briefly explain your answer(s) on occupation, including any changes because of job
                 change or community/country change:
-            </Typography>
+            </p>
       
             <FootnoteField id="2.5" />
       
         </Box>
+
         
         <Link to="/q4"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
 

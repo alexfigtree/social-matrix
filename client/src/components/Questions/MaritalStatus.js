@@ -97,7 +97,7 @@ const MaritalStatus = () => {
 
        
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.8"><h4>Q 7.8</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.8"><h4>Q 7.8</h4></label>
             <p>
                 <b>PERSON'S Marital/Relational Status</b>
             </p>
@@ -112,7 +112,7 @@ const MaritalStatus = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.10"><h4>Q 7.10</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.10"><h4>Q 7.10</h4></label>
             <p>
                 State PERSON'S age(s) at the time of each change in relationship 
                 or marital status (e.g., “17 when first seriously coupled," 
@@ -125,7 +125,7 @@ const MaritalStatus = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.11"><h4>Q 7.11</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.11"><h4>Q 7.11</h4></label>
             <p>
                 Did these marital/relational statuses involve relationships 
                 with someone of the opposite-sex, same-sex, or someone who 
@@ -135,8 +135,8 @@ const MaritalStatus = () => {
             <FootnoteField id="7.11" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput7.12"><h4>Q 7.12</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.12"><h4>Q 7.12</h4></label>
             
             <p>
                 Please rate how privileged or marginalized PERSON'S marital/relational 
@@ -148,8 +148,8 @@ const MaritalStatus = () => {
         </Box>
 
      
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput7.13"><h4>Q 7.13</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.13"><h4>Q 7.13</h4></label>
           
             <p>
                 Please rate how privileged or marginalized PERSON'S marital/relational 

@@ -92,7 +92,7 @@ const CognitiveAbilityStyle = () => {
         
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.36"><h4>Q 6.36</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.36"><h4>Q 6.36</h4></label>
           
             <p>
                 <b>PERSON'S Cognitive Ability/Learning Style.</b> Consider any particular intellectual, artistic, or mechanical ability, as well as any learning disabilities, developmental delays, or the onset of brain injury, stroke, dementia, etc.
@@ -111,7 +111,7 @@ const CognitiveAbilityStyle = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.37"><h4>Q 6.37</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.37"><h4>Q 6.37</h4></label>
             
             <p>
                 Please rate PERSON's <b>current</b> privilege or marginalization around cognitive ability. If PERSON has <b>both</b> a special ability and a limitation or disability choose two numbers.
@@ -122,7 +122,7 @@ const CognitiveAbilityStyle = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.38"><h4>Q 6.38</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.38"><h4>Q 6.38</h4></label>
        
             <p>
                 Please rate PERSON's <b>previous</b> privilege or marginalization around cognitive ability. If PERSON has <b>both</b> a special ability and a limitation or disability choose two numbers.

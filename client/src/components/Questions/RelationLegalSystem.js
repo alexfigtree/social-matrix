@@ -122,7 +122,7 @@ const RelationLegalSystem = () => {
         <Typography variant="h5">Relation to Legal System</Typography>
         
         <Box component="div">
-            <label htmlFor="formGroupExampleInput6.26"><h4>Q 6.26</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.26"><h4>Q 6.26</h4></label>
         
             <Typography variant="h5" align="left">PERSON's Relationship to Legal System
             </Typography>
@@ -136,7 +136,7 @@ const RelationLegalSystem = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.27"><h4>Q 6.27</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.27"><h4>Q 6.27</h4></label>
          
             <p>
                 Rate PERSON's <b>current</b> privilege or marginalization in relation to the legal system.
@@ -147,7 +147,7 @@ const RelationLegalSystem = () => {
 
   
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.28"><h4>Q 6.28</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.28"><h4>Q 6.28</h4></label>
        
             <p>
                 Rate PERSON's <b>previous</b> privilege or marginalization in relation to the legal system.

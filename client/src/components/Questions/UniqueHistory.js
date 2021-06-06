@@ -107,7 +107,7 @@ const UniqueHistory = () => {
         <Typography variant="h5">Unique History</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.26"><h4>Q 7.26</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.26"><h4>Q 7.26</h4></label>
             <p>
                 <b>Unique Individual/Family History</b>
             </p>
@@ -128,7 +128,7 @@ const UniqueHistory = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.27"><h4>Q 7.27</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.27"><h4>Q 7.27</h4></label>
          
             <p>
                 Rate PERSON'S <b>CURRENT</b> relative privilege or marginalization in relation to unique individual or family history (PERSON might have more than one answer because of having more privilege in one unique area than in another unique area).
@@ -138,7 +138,7 @@ const UniqueHistory = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.28"><h4>Q 7.28</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.28"><h4>Q 7.28</h4></label>
            
             <p>
                 Rate PERSON'S <b>PREVIOUS</b> relative privilege or marginalization in relation to unique individual or family history (PERSON might have more than one answer because of having more privilege in one unique area than in another unique area).

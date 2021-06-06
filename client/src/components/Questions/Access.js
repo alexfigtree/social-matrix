@@ -80,8 +80,8 @@ const Access = () => {
 
         <Typography variant="h5">Access</Typography>
  
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.5"><h4>Q 3.5</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.5"><h4>Q 3.5</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>PERSON's Access to Resources, Information, Influence:</span> 
@@ -98,8 +98,8 @@ const Access = () => {
             <CheckboxField id="container3.5" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput3.6"><h4>Q 3.6</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput3.6"><h4>Q 3.6</h4></label>
             <br/>
             <Typography variant="h5" align="left">
                 Please explain above answer (for instance, high access in some 

@@ -92,7 +92,7 @@ const ChosenReligion = () => {
         
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.5"><h4>Q 6.5</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.5"><h4>Q 6.5</h4></label>
         
             <Typography variant="h5" align="left">
                 PERSON's own religion of choice
@@ -107,7 +107,7 @@ const ChosenReligion = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.6"><h4>Q 6.6</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.6"><h4>Q 6.6</h4></label>
             <br/>
             <p>
                 Rate the extent to which PERSON's religion or philosophy(ies) is <b>currently</b> dominant or marginalized in PERSON'S life. For instance, the family's religion may be more or less marginalized now than in the past because of immigration or because of earlier religious conversion in the family, or because of historical changes in how that religion was received.
@@ -118,7 +118,7 @@ const ChosenReligion = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.7"><h4>Q 6.7</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.7"><h4>Q 6.7</h4></label>
             <br/>
             <p>
                 Rate the extent to which PERSON's religion(s) or philosophy(ies) was dominant or marginalized <b style={{ textDecoration: 'underline' }}>earlier</b>  in PERSON'S social context. For instance, PERSON's religion may be more or less marginalized now than in the past because of immigration or because of earlier religious conversion, or because of historical changes in how that religion was received.
@@ -128,7 +128,7 @@ const ChosenReligion = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput6.8"><h4>Q 6.8</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.8"><h4>Q 6.8</h4></label>
           
             <p>
                 Explain your answer to the last two questions

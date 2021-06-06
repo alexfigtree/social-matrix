@@ -90,7 +90,7 @@ const SexAtBirth = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.14"><h4>Q 7.14</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.14"><h4>Q 7.14</h4></label>
             <p>
                 <b>Sex Assignment at Birth</b>
             </p>
@@ -106,7 +106,7 @@ const SexAtBirth = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.15"><h4>Q 7.15</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.15"><h4>Q 7.15</h4></label>
    
             <p>
                 Please rate how privileged or marginalized PERSON'S assigned sex at birth is, <b>currently</b>, including all the aspects of that status, in PERSON’s current social context
@@ -116,7 +116,7 @@ const SexAtBirth = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.16"><h4>Q 7.16</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.16"><h4>Q 7.16</h4></label>
      
             <p>
                 Please rate how privileged or marginalized PERSON'S assigned sex at birth was <b>previously</b>, including all the aspects of that status, in PERSON’s previous social context

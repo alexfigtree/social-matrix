@@ -86,7 +86,7 @@ const Age = () => {
         <Typography variant="h5">Age</Typography>
         
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.1"><h4>Q 7.1</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.1"><h4>Q 7.1</h4></label>
          
             <Typography variant="h5" align="left">
                 Age
@@ -102,7 +102,7 @@ const Age = () => {
 
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.2"><h4>Q 7.2</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.2"><h4>Q 7.2</h4></label>
         
             <p>
                 Please rate PERSON’s privilege or marginalization in relation to age.

@@ -179,8 +179,8 @@ const NationOfOriginCitizenship = () => {
         <Typography variant="h5">Nation of Origin / Citizenship</Typography>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.8"><h4>Q 5.8</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.8"><h4>Q 5.8</h4></label>
    
             <Typography variant="h5" align="left">
                 In what country/countries does PERSON currently have citizenship? If person has dual citizenship, please state both countries.
@@ -194,8 +194,8 @@ const NationOfOriginCitizenship = () => {
 
     
 
-        <FormControl component="fieldset">
-          <FormLabel component="legend"><h4>Q 5.9</h4></FormLabel>
+        <FormControl component="fieldset" style={{ width: '100%' }}>
+          <FormLabel className={classes.questionLabel} component="legend"><h4>Q 5.9</h4></FormLabel>
           <p>
                 Did PERSON <b>live or have</b> previous citizenship in another country?
             </p>
@@ -210,8 +210,8 @@ const NationOfOriginCitizenship = () => {
         </FormControl>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.10"><h4>Q 5.10</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.10"><h4>Q 5.10</h4></label>
             
             <p>Of which country did PERSON (or one or more of PERSON's parents) previously have citizenship?</p>
          
@@ -223,8 +223,8 @@ const NationOfOriginCitizenship = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.11"><h4>Q 5.11</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.11"><h4>Q 5.11</h4></label>
             
             <Typography variant="h5" align="left">
                 Is/was Person:
@@ -233,13 +233,13 @@ const NationOfOriginCitizenship = () => {
             <Typography variant="h5" align="left">
                 (This information is anonymous and will not be shared with governmental authorities, nor is it associated online with Person's identity or computer IP address, nor that of anyone who fills this survey out)
             </Typography>
-            <br/>
+           
             <CheckboxField5_11 id="container5.11" />
         </Box>
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.12"><h4>Q 5.12</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.12"><h4>Q 5.12</h4></label>
+          
             <p>
                 How many generations has PERSON's family been in country of residence?
             </p>
@@ -248,19 +248,19 @@ const NationOfOriginCitizenship = () => {
         </Box>
 
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.13"><h4>Q 5.13</h4></label>
-            <br/>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.13"><h4>Q 5.13</h4></label>
+       
             <p>
                 Whenever PERSON or PERSON's ancestors arrived, what was their reception by the country? A very welcoming response would be 1=most privileged and an extremely unwelcoming response would be 7=most marginalized.
             </p>
-            <br/>
+         
             <CheckboxField id="container5.13" />
         </Box>
         
 
-        <Box component="div">
-            <label htmlFor="formGroupExampleInput5.14"><h4>Q 5.14</h4></label>
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.14"><h4>Q 5.14</h4></label>
           
             <p>
                 Please briefly explain the reception that PERSON or PERSON's 

@@ -90,7 +90,7 @@ const GenderID = () => {
         <Typography variant="h5">Gender ID</Typography>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.17"><h4>Q 7.17</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.17"><h4>Q 7.17</h4></label>
             <p>
                 <b>Gender Identity</b>
             </p>
@@ -121,7 +121,7 @@ const GenderID = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.18"><h4>Q 7.18</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.18"><h4>Q 7.18</h4></label>
       
             <p>
                 Please rate how privileged or marginalized PERSON'S gender identity is <b>currently</b>, including all the aspects of that status, considering attitudes over time in PERSON'S larger community and whether those attitudes have shifted, shifts in where PERSON has lived, and, if relevant, any visible gender transition PERSON has started or completed over time.
@@ -131,7 +131,7 @@ const GenderID = () => {
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput7.19"><h4>Q 7.19</h4></label>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.19"><h4>Q 7.19</h4></label>
       
             <p>
                 Please rate how privileged or marginalized PERSON'S gender identity was <b>previously</b>, including all the aspects of that status, considering attitudes over time in PERSON'S larger community and whether those attitudes have shifted, shifts in where PERSON has lived, and, if relevant, any visible gender transition PERSON has started or completed over time.
