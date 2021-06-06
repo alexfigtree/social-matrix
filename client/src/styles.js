@@ -9,11 +9,39 @@ export default makeStyles(() => ({
   },
   //From Phase 1
 
-  test: {
-  	color: 'blue'
-  },
   tooltip: {
-  	color: 'green'
+  	fill: 'blue',
+  	'& .hidden': {
+  		display: 'none'
+  	},
+  	'& .text': {
+  		fill: 'red'
+  	}
+  },
+  tooltipTest:{
+  	fill: 'purple'
+  },
+  test: {
+  	color: 'black'
+  },
+  text: {
+  	'& .tooltip': {
+  		fill: 'red !important'
+  	},
+  },
+  div: {
+  	'& .tooltip': {
+
+		  position: 'absolute',		
+		  width: '60px',	
+		  height: '28px',		
+		  padding: '2px',	
+		  background: 'white',
+		  border: '1px',					
+		  borderRadius: '8px'
+		 /*  pointer-events: none;	This line needs to be removed */
+
+  	}
   }
   //End of Phase 1 styles
 }));

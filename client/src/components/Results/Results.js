@@ -138,7 +138,7 @@ const Results = () => {
     function RadarChartDraw(id, d, options) {
         var cfg = {
              radius: 5,
-             w: 600,
+             w: 800,
              h: 600,
              factor: 1,
              factorLegend: .85,
@@ -147,7 +147,7 @@ const Results = () => {
              radians: 2 * Math.PI,
              opacityArea: 0.5,
              ToRight: 5,
-             TranslateX: 80,
+             TranslateX: 100,
              TranslateY: 30,
              ExtraWidthX: 100,
              ExtraWidthY: 100,
@@ -170,12 +170,17 @@ const Results = () => {
         var Format = d3.format("");
         d3.select(id).select("svg").remove();
         
-        var padding = {top: 30, right: 0, bottom: 0, left: 100};
+        var padding = {top: 50, right: 0, bottom: 0, left: 100};
+        var margin = {top: 50, right: 0, bottom: 0, left: 100};
 
         var g = d3.select(id)
                 .append("svg")
                 .attr("width", cfg.w+cfg.ExtraWidthX)
                 .attr("height", cfg.h+cfg.ExtraWidthY)
+                .attr("transform", "translate(" + padding.left + ")")
+                .attr("transform", "translate(" + padding.top + ")")
+                .attr("transform", "translate(" + margin.left + ")")
+                .attr("transform", "translate(" + margin.top + ")")
                 .append("g")
                 .attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
                 ;
@@ -421,28 +426,40 @@ const Results = () => {
             .style("fill", cfg.color(series)).style("fill-opacity", .9)
 
             .on('mouseover', function (d){
-                        var newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-                        var newY =  parseFloat(d3.select(this).attr('cy')) - 5;
-                        console.log("NEWX", newX);
-                        console.log("NEWY", newY);
+                        //var newX =  parseFloat(d3.select(this).attr('cx')) - 10;
+                        //var newY =  parseFloat(d3.select(this).attr('cy')) - 5;
+                        //this.parentNode.appendChild(this);
+                        var newX =  0;
+                        var newY =  0;
+
                         tooltip
-                            .attr('x', newX)
-                            .attr('y', newY)
-                        
+                            .attr('x', newX-100)
+                            .attr('y', newY-20)
                             .attr('class', 'tooltip') 
                             .text(d.footnote)
                             .transition(100)
+                            .style('fill', 'blue')
                             .style('opacity', 1)
-                            
-                            .call(tooltipWrap, 300);
+                            .style('marginLeft', -100)
+                            .call(tooltipWrap, 200);
+
                             
                         var z = "polygon."+d3.select(this).attr("class");
+
+                        var div = d3.select("body")
+                            .append("div")  // declare the tooltip div 
+                            .attr("class", "tooltip")              // apply the 'tooltip' class
+                            .style("opacity", 0);   
+
+
                         g.selectAll("polygon")
                             .transition(200)
                             .style("fill-opacity", 0.1);
                         g.selectAll(z)
                             .transition(200)
                             .style("fill-opacity", .7);
+
+
                       })
             .on('mouseout', function(){
                         tooltip
@@ -460,33 +477,29 @@ const Results = () => {
         tooltip = g.append('text')
                    .style('opacity', 0)
                    .style('font-family', 'sans-serif')
-                   .style('font-size', '13px');
+                   .style('font-size', '13px')
+                   .style('marginLeft', '-100px')
+                   .attr("transform", "translate(0, 0)");
 
-                   g.selectAll('tooltip')
-                    .style('display', 'block')
-                           .style('border', '1px solid black')
-                           .style('background-color', 'white');
     };
 
   return (
     <div className="container">
         <Typography variant="h2" align="center" className={classes.test}>Social Matrix Project - Results</Typography>
 
- 
-            
         <div>
           <h1>Your generated social matrix:</h1>
         
     
           <div id="body">
-             <div className="matrix-header">Earlier Matrix</div>
-            <div id="chart" className="svg-align"></div>
+             <div className="matrix-header" style={{ marginLeft: '-10px' }}>Earlier Matrix:</div>
+            <div id="chart" className="svg-align" style={{ marginLeft: '-15px' }}></div>
           </div>
      
   
           <div id="body2">
-            <div className="matrix-header">Current Matrix</div>
-            <div id="chart2" className="svg-align"></div>
+            <div className="matrix-header" style={{ marginLeft: '-10px' }}>Current Matrix:</div>
+            <div id="chart2" className="svg-align" style={{ marginLeft: '-15px' }}></div>
           </div>
           <div className="footnotes-bottom">
             <div className="footnotes-header">Footnotes:</div>
