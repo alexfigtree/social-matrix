@@ -8,6 +8,8 @@ import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField_RaisedBy from '../Form/CheckboxField_RaisedBy';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
+import RadioFieldWithInput4_22 from '../Form/RadioFieldWithInput4_22';
+import RadioFieldWithInput4_23 from '../Form/RadioFieldWithInput4_23';
 
 //q26
 const RaisedBy = () => {
@@ -30,6 +32,32 @@ const RaisedBy = () => {
 
       var retrievedFootnotes = localStorage.getItem('footnotes');
       console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
+
+      localStorage.setItem('4.3', '');
+      localStorage.setItem('4.16.1', '');
+      localStorage.setItem('4.16.2', '');
+      localStorage.setItem('4.16.3', '');
+      localStorage.setItem('4.16.4', '');
+      localStorage.setItem('4.16.5', '');
+
+      localStorage.setItem('4.18.1', '');
+      localStorage.setItem('4.18.2', '');
+      localStorage.setItem('4.18.3', '');
+      localStorage.setItem('4.18.4', '');
+      localStorage.setItem('4.18.5', '');
+
+      localStorage.setItem('4.20.1', '');
+      localStorage.setItem('4.20.2', '');
+      localStorage.setItem('4.20.3', '');
+      localStorage.setItem('4.20.4', '');
+      localStorage.setItem('4.20.5', '');
+
+      localStorage.setItem('4.22', '');
+      localStorage.setItem('4.22-1-yes', '');
+
+      localStorage.setItem('4.23', '');
+      localStorage.setItem('4.23-1-yes', '');
+
   }, []);
 
   const clear = () => {
@@ -97,7 +125,8 @@ const RaisedBy = () => {
       ...q4_21_3.split(','),
       ...q4_21_4.split(','),
       ...q4_21_5.split(','),
-    ];
+    ].filter(Boolean);
+
     let domain26_pre_small = Math.min(...domain26_pre);
     let domain26_pre_large = Math.max(...domain26_pre);
 
@@ -122,7 +151,8 @@ const RaisedBy = () => {
       ...q4_21_3.split(','),
       ...q4_21_4.split(','),
       ...q4_21_5.split(','),
-    ];
+    ].filter(Boolean);
+
     let domain26_post_small = Math.min(...domain26_post);
     let domain26_post_large = Math.max(...domain26_post);
 
@@ -135,10 +165,10 @@ const RaisedBy = () => {
     setMatrixData(tempData);
 
 
-        //PROCESS FOOTNOTE DATA:
+    //PROCESS FOOTNOTE DATA:
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
-    const f4_3 = localStorage.getItem("4.3.1");
+    const f4_3 = localStorage.getItem("4.3");
 
     const f4_16_1 = localStorage.getItem("4.16.1");
     const f4_16_2 = localStorage.getItem("4.16.2");
@@ -146,6 +176,7 @@ const RaisedBy = () => {
     const f4_16_4 = localStorage.getItem("4.16.4");
     const f4_16_5 = localStorage.getItem("4.16.5");
 
+    console.log('test for footnoets f4_16_1', f4_16_1);
     const f4_18_1 = localStorage.getItem("4.18.1");
     const f4_18_2 = localStorage.getItem("4.18.2");
     const f4_18_3 = localStorage.getItem("4.18.3");
@@ -158,9 +189,17 @@ const RaisedBy = () => {
     const f4_20_4 = localStorage.getItem("4.20.4");
     const f4_20_5 = localStorage.getItem("4.20.5");
 
+    const f4_22 = localStorage.getItem("4.22");
+    const f4_22_1_yes = localStorage.getItem("4.22-1-yes");
+    const concatString4_22 = [f4_22, f4_22_1_yes].filter(Boolean).join(": ");
+    
+    const f4_23 = localStorage.getItem("4.23");
+    const f4_23_1_yes = localStorage.getItem("4.23-1-yes");
+    const concatString4_23 = [f4_23, f4_23_1_yes].filter(Boolean).join(": ");
+
     //generate concatentated string
     let concatString = 
-      [f4_3, f4_16_1, f4_16_2, f4_16_3, f4_16_4, f4_16_5, f4_18_1, f4_18_2, f4_18_3, f4_18_4, f4_18_5, f4_20_1, f4_20_2, f4_20_3, f4_20_4, f4_20_5].filter(Boolean).join("; ");
+      [f4_3, f4_16_1, f4_16_2, f4_16_3, f4_16_4, f4_16_5, f4_18_1, f4_18_2, f4_18_3, f4_18_4, f4_18_5, f4_20_1, f4_20_2, f4_20_3, f4_20_4, f4_20_5, concatString4_22, concatString4_23].filter(Boolean).join("; ");
     tempFootnotes[0][9].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
@@ -183,8 +222,8 @@ const RaisedBy = () => {
         <Typography variant="h5">Rasied By</Typography>
 
           <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.1"><h4>Q 4.1</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.1"><h4>Q 4.1</h4></label>
+     
             <p>
                 These questions are about ALL the parents or parenting figures 
                 who raised PERSON <b>during the PERSON's growing up.</b>
@@ -211,7 +250,7 @@ const RaisedBy = () => {
                 During the time PERSON was being raised early on, was/were 
                 Parent/Parenting Figure(s):
             </p>
-            <br/><br/>
+        
             <p>
                 Parent/Parenting Figure 1
             </p>
@@ -239,10 +278,10 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.2"><h4>Q 4.2</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.2"><h4>Q 4.2</h4></label>
+        
             <p>
-                Parent/Guardian Status - Later
+                <b>Parent/Guardian Status - Later</b>
             </p>
             <p>
                 If the role of any parent/parenting figure changed in relation 
@@ -250,7 +289,6 @@ const RaisedBy = () => {
                 them here, reflecting that later period.
             </p>
 
-            <br/><br/>
             <p>
                 Parent/Parenting Figure 1
             </p>
@@ -277,9 +315,8 @@ const RaisedBy = () => {
             <CheckboxField_RaisedBy id="container4.2.5" />
           </Box>
 
-
           <Box component="div" style={{ width: '100%' }}>
-              <label htmlFor="formGroupExampleInput4.3"><h4>Q 4.3</h4></label>
+              <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.3"><h4>Q 4.3</h4></label>
            
               <p>
                   Please describe any change in parenting role for each Parent/Parenting 
@@ -300,7 +337,7 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-              <label htmlFor="formGroupExampleInput4.16"><h4>Q 4.16</h4></label>
+              <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.16"><h4>Q 4.16</h4></label>
            
               <p>
                   Parent/Guardians' Sexual Orientation while raising Person
@@ -351,10 +388,9 @@ const RaisedBy = () => {
               <FootnoteField id="4.16.5" />
           </Box>
 
-
           <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.17"><h4>Q 4.17</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.17"><h4>Q 4.17</h4></label>
+          
             <p>
                 How would you rate the relative privilege or marginalization of 
                 each Parent/Guardian's sexual orientation while raising PERSON?
@@ -367,8 +403,7 @@ const RaisedBy = () => {
             <p>
                 Please only answer for relevant number of parents/parenting figures.
             </p>
-            
-            <br/><br/>
+
             <p>
                 Parent/Figure 1
             </p>
@@ -396,7 +431,7 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-              <label htmlFor="formGroupExampleInput4.18"><h4>Q 4.18</h4></label>
+              <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.18"><h4>Q 4.18</h4></label>
            
               <p>
                   Parent/Guardians' Gender Identity
@@ -453,8 +488,7 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.19"><h4>Q 4.19</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.19"><h4>Q 4.19</h4></label>
             <p>
                 How would you rate each Parent/Guardian's relative privilege 
                 in relation to gender identity? (Give 2 answers if there is a 
@@ -465,7 +499,6 @@ const RaisedBy = () => {
                 Please only answer for relevant number of parents/parenting figures.
             </p>
             
-            <br/><br/>
             <p>
                 Parent/Figure 1
             </p>
@@ -493,7 +526,7 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-              <label htmlFor="formGroupExampleInput4.20"><h4>Q 4.20</h4></label>
+              <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.20"><h4>Q 4.20</h4></label>
            
               <p>
                   <b>Parent/Guardians' Age on becoming PERSON's parent/guardian.</b>
@@ -542,8 +575,7 @@ const RaisedBy = () => {
           </Box>
 
           <Box component="div" style={{ width: '100%' }}>
-            <label htmlFor="formGroupExampleInput4.21"><h4>Q 4.21</h4></label>
-            <br/>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.21"><h4>Q 4.21</h4></label>
 
             <p><b>Please rate Parent/Guardians’ Age on becoming PERSON’s parents/guardians.</b></p>
             <p>How would you rate each Parent/Guardian's age at the time of first 
@@ -559,8 +591,7 @@ const RaisedBy = () => {
             <p>
                 Please only answer for relevant number of parents/parenting figures.
             </p>
-            
-            <br/><br/>
+
             <p>
                 Parent/Figure 1
             </p>
@@ -585,6 +616,34 @@ const RaisedBy = () => {
                 Additional Parent/ Parenting Figure
             </p>
             <CheckboxField id="container4.21.5" />
+          </Box>
+
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.22"><h4>Q 4.22</h4></label>
+
+            <p>Has PERSON ever lived for an extended period of time apart from parents 
+            or guardians while growing up?</p>
+            
+            <p>Some examples include living in foster care, an orphanage, or 
+            institutional care like juvenile hall or in a psychiatric hospital), been a 
+            refugee on one's own, or in an immigration detention center, in a homeless 
+            shelter, or on the streets without familiar parenting figures.</p>
+
+            <RadioFieldWithInput4_22 id="4.22" />
+          </Box>
+
+          <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.23"><h4>Q 4.23</h4></label>
+
+            <p>Has PERSON ever lived for an extended period of time apart from parents 
+            or guardians while growing up?</p>
+            
+            <p>Some examples include living in foster care, an orphanage, or 
+            institutional care like juvenile hall or in a psychiatric hospital), been a 
+            refugee on one's own, or in an immigration detention center, in a homeless 
+            shelter, or on the streets without familiar parenting figures.</p>
+
+            <RadioFieldWithInput4_23 id="4.23" />
           </Box>
 
         <Link to="/q27"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
