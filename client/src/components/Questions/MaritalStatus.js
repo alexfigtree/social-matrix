@@ -7,6 +7,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
+import CheckboxInputField_MaritalStatus from '../Form/CheckboxInputField_MaritalStatus';
 
 //q29
 const MaritalStatus = () => {
@@ -29,6 +30,21 @@ const MaritalStatus = () => {
 
       var retrievedFootnotes = localStorage.getItem('footnotes');
       console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
+
+      localStorage.setItem('7.8', '');
+      localStorage.setItem('7.9-1', '');
+      localStorage.setItem('7.9-2', '');
+      localStorage.setItem('7.9-3', '');
+      localStorage.setItem('7.9-4', '');
+      localStorage.setItem('7.9-5', '');
+      localStorage.setItem('7.9-6', '');
+      localStorage.setItem('7.9-7', '');
+      localStorage.setItem('7.9-8', '');
+      localStorage.setItem('7.9-9', '');
+      localStorage.setItem('7.9-10', '');
+      localStorage.setItem('7.9-10-checkbox', '');
+      localStorage.setItem('7.10', '');
+      localStorage.setItem('7.11', '');
   }, []);
 
   const clear = () => {
@@ -69,12 +85,28 @@ const MaritalStatus = () => {
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
     const f7_8 = localStorage.getItem("7.8");
+
+    const f7_9_1 = localStorage.getItem("7.9-1");
+    const f7_9_2 = localStorage.getItem("7.9-2");
+    const f7_9_3 = localStorage.getItem("7.9-3");
+    const f7_9_4 = localStorage.getItem("7.9-4");
+    const f7_9_5 = localStorage.getItem("7.9-5");
+    const f7_9_6 = localStorage.getItem("7.9-6");
+    const f7_9_7 = localStorage.getItem("7.9-7");
+    const f7_9_8 = localStorage.getItem("7.9-8");
+    const f7_9_9 = localStorage.getItem("7.9-9");
+    const f7_9_10 = localStorage.getItem("7.9-10");
+    const f7_9_10_checkbox = localStorage.getItem("7.9-10-checkbox");
+
+    let concatString7_9_10 = 
+      [f7_9_10_checkbox, f7_9_10].filter(Boolean).join(": ");
+
     const f7_10 = localStorage.getItem("7.10");
     const f7_11 = localStorage.getItem("7.11");
 
     //generate concatentated string
     let concatString = 
-      [f7_8, f7_10, f7_11].filter(Boolean).join("; ");
+      [f7_8, concatString7_9_10, f7_10, f7_11].filter(Boolean).join("; ");
     tempFootnotes[0][6].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
@@ -108,6 +140,15 @@ const MaritalStatus = () => {
               <FormControlLabel name="7.8" value="Yes" control={<Radio />} label="Yes" />
               <FormControlLabel name="7.8" value="No" control={<Radio />} label="No" />
             </RadioGroup>
+        </Box>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.9"><h4>Q 7.9</h4></label>
+            <p>
+                State whether PERSON is: (choose all that apply)
+            </p>
+
+            <CheckboxInputField_MaritalStatus id="7.9" />
         </Box>
 
 

@@ -90,7 +90,7 @@ function CheckboxInputField_ParentalStatus(props) {
       temp.splice(toDelete, 1);
     }
 
-    localStorage.setItem('6.23', temp);
+    localStorage.setItem('7.3', temp);
     return temp; 
   };
 
