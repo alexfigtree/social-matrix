@@ -7,7 +7,7 @@ import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
 import FootnoteField from '../Form/FootnoteField';
-
+import CheckboxInputField_ParentalStatus from '../Form/CheckboxInputField_ParentalStatus';
 //q28
 const ParentalStatus = () => {
   const history = useHistory();
@@ -29,6 +29,32 @@ const ParentalStatus = () => {
 
       var retrievedFootnotes = localStorage.getItem('footnotes');
       console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
+
+      localStorage.setItem('7.3-1', '');
+      localStorage.setItem('7.3-2', '');
+      localStorage.setItem('7.3-3', '');
+      localStorage.setItem('7.3-4', '');
+
+      localStorage.setItem('7.3-5', '');
+      localStorage.setItem('7.3-5-checkbox', '');
+   
+      localStorage.setItem('7.3-6', '');
+      localStorage.setItem('7.3-7', '');
+      localStorage.setItem('7.3-8', '');
+      localStorage.setItem('7.3-9', '');
+      localStorage.setItem('7.3-10', '');
+      localStorage.setItem('7.3-11', '');
+      localStorage.setItem('7.3-12', '');
+      localStorage.setItem('7.3-13', '');
+      localStorage.setItem('7.3-14', '');
+      localStorage.setItem('7.3-15', '');
+
+      localStorage.setItem('7.3-16', '');
+      localStorage.setItem('7.3-16-checkbox', '');
+
+      localStorage.setItem('7.4', '');
+      localStorage.setItem('7.5', '');
+
   }, []);
 
   const clear = () => {
@@ -63,12 +89,38 @@ const ParentalStatus = () => {
     //PROCESS FOOTNOTE DATA:
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
 
+
+    const f7_3_1 = localStorage.getItem("7.3-1");
+    const f7_3_2 = localStorage.getItem("7.3-2");
+    const f7_3_3 = localStorage.getItem("7.3-3");
+    const f7_3_4 = localStorage.getItem("7.3-4");
+    const f7_3_5 = localStorage.getItem("7.3-5");
+    const f7_3_5_checkbox = localStorage.getItem("7.3-5-checkbox");
+    const f7_3_6 = localStorage.getItem("7.3-6");
+    const f7_3_7 = localStorage.getItem("7.3-7");
+    const f7_3_8 = localStorage.getItem("7.3-8");
+    const f7_3_9 = localStorage.getItem("7.3-9");
+    const f7_3_10 = localStorage.getItem("7.3-10");
+    const f7_3_11 = localStorage.getItem("7.3-11");
+    const f7_3_12 = localStorage.getItem("7.3-12");
+    const f7_3_13 = localStorage.getItem("7.3-13");
+    const f7_3_14 = localStorage.getItem("7.3-14");
+    const f7_3_15 = localStorage.getItem("7.3-15");
+    const f7_3_16 = localStorage.getItem("7.3-16");
+    const f7_3_16_checkbox = localStorage.getItem("7.3-16-checkbox");
+
+    let concatString7_3_5 = 
+      [f7_3_5_checkbox, f7_3_5].filter(Boolean).join(": ");
+
+    let concatString7_3_16 = 
+      [f7_3_16_checkbox, f7_3_16].filter(Boolean).join(": ");
+
     const f7_4 = localStorage.getItem("7.4");
     const f7_5 = localStorage.getItem("7.5");
 
     //generate concatentated string
     let concatString = 
-      [f7_4, f7_5].filter(Boolean).join("; ");
+      [f7_3_1, f7_3_2, f7_3_3, f7_3_4, concatString7_3_5, f7_3_6, f7_3_7, f7_3_8, f7_3_9, f7_3_10, f7_3_11, f7_3_12, f7_3_13, f7_3_14, f7_3_15, concatString7_3_16, f7_4, f7_5].filter(Boolean).join("; ");
     tempFootnotes[0][7].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
@@ -87,6 +139,19 @@ const ParentalStatus = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Parental Status</Typography>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.3"><h4>Q 7.3</h4></label>
+            
+            <Typography variant="h5" align="left">
+                PERSON'S Own Parental Status
+            </Typography>
+            <p>
+                Select <b>all</b> responses that describe PERSON's own parental status. For instance, PERSON might be both a birth parent who raised his/her own children and a foster parent or a birth parent who gave one child up for adoption.
+            </p>
+
+            <CheckboxInputField_ParentalStatus id="7.3" />
+        </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.4"><h4>Q 7.4</h4></label>

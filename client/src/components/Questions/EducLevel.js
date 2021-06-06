@@ -118,11 +118,11 @@ const EducLevel = () => {
         
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.2"><h4>Q 1.2</h4></label>
-            <br/>
+        
             <Typography variant="h5" align="left">
                 PERSON's Years of Education, compared to Person's  <Box component="span" style={{ textDecoration: 'underline' }}> LOCAL COMMUNITY today </Box> 
             </Typography>
-            <br/>
+    
             <p>
                 How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's 
                 <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>local 
@@ -141,14 +141,13 @@ const EducLevel = () => {
                   two responses if PERSON goes between communities (for instance, between college and a 
                 home community). </Box>
             </p>
-            <br/><br/>
+        
             <CheckboxField id="container1.2" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.3"><h4>Q 1.3</h4></label>
-            <br/>
-            <br/>
+     
             <p>
                 How would you rate the privilege of PERSON's level of education, 
                 as compared to everyone in PERSON's 
@@ -168,22 +167,20 @@ const EducLevel = () => {
                 choose two responses if PERSON goes between communities (for instance, between college 
                 and a home community). </Box>
             </p>
-            <br/>
+      
             <Box component="div"><Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>
             Choose one</Box></Box>
 
-            <br/>
-            <br/>
             <CheckboxField id="container1.3" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.4"><h4>Q 1.4</h4></label>
-            <br/>
+     
             <Typography variant="h5" align="left">
                 PERSON's Years of Education, compared to Person's <Box component="span" style={{ textDecoration: 'underline' }}> COUNTRY as a whole, today.</Box>
             </Typography>
-            <br/>
+        
             <p>
                 How would you rate PERSON's level of education, as compared to everyone in PERSON's 
                 <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>current 
@@ -198,15 +195,12 @@ const EducLevel = () => {
                 style={{ fontWeight: 600 }}> You can choose two
                 responses if PERSON goes between countries or lived transnationally.</Box>
             </p>
-            <br/>
-
-
             <CheckboxField id="container1.4" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.5"><h4>Q 1.5</h4></label>
-            <br/>
+  
             <p>
                 How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>country of residence at an earlier time?</Box>  
             </p>
@@ -216,21 +210,17 @@ const EducLevel = () => {
                 with less higher education than in the US.
                 <Box component="span" style={{ fontWeight: 600 }}>You can choose two responses if PERSON went between countries or lived transnationally. </Box>
             </p>
-            <br/>
-            <br/>
-
             <CheckboxField id="container1.5" />
         </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
-            <br/>
+      
             <p>
                 <b>Please give PERSON's highest level of education</b>(for example, "finished 9th grade,"
                 "vocational degree as electrician," or "masters degree in education").<b>  Also give year,
                 community, and country in which PERSON finished education.</b>
             </p>
-            <br/>
             
             <FootnoteField id="1.6" />   
         </Box>
