@@ -29,6 +29,14 @@ const GuardiansMaritalStatus = () => {
 
       var retrievedFootnotes = localStorage.getItem('footnotes');
       console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
+
+      localStorage.setItem('4.13.1', '');
+      localStorage.setItem('4.13.2', '');
+      localStorage.setItem('4.13.3', '');
+      localStorage.setItem('4.13.4', '');
+      localStorage.setItem('4.13.5', '');
+      localStorage.setItem('4.15', '');
+
   }, []);
 
   const clear = () => {
