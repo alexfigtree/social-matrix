@@ -9,6 +9,11 @@ export default makeStyles(() => ({
   },
   //From Phase 1
 
-
+  test: {
+  	color: 'blue'
+  },
+  tooltip: {
+  	color: 'green'
+  }
   //End of Phase 1 styles
 }));

@@ -15,8 +15,17 @@ body {
   margin-left: 5%;
 }
 
-.tooltip {
+text.tooltip {
   position: absolute;
+  height: 30px;
+  width: 50px;
+  color: green;
+  background-color: yellow;
+  display: block;
+}
+
+polygon.radar-chart-serie1 > tooltip {
+    position: absolute;
   height: 30px;
   width: 50px;
   color: green;

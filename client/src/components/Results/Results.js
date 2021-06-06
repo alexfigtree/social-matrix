@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import * as d3 from "d3";
 import * as data from '../../data/dataBlank.js'
 
+
+import useStyles from '../../styles';
+
 import { getMatrix, createMatrix, updateMatrix, createFootnotes, getFootnotes, updateFootnotes } from '../../actions/posts';
 
 const Results = () => {
@@ -18,6 +21,9 @@ const Results = () => {
   
     var svgBody1;
     var svgBody2;
+
+    const classes = useStyles();
+
 
     useEffect(() => {
         var retrievedObject = localStorage.getItem('matrixData');
@@ -333,9 +339,7 @@ const Results = () => {
               lineHeight = 1.1, // ems
               y = text.attr("y"),
               x = text.attr("x"),
-              dy = parseFloat(text.attr("dy")),
-              dx = parseFloat(text.attr("dx")),
-              tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+              tspan = text.text(null).append("tspan").attr("x", x).attr("y", y);
             
             while (word = words.pop()) {
               line.push(word);
@@ -415,22 +419,27 @@ const Results = () => {
             })
             .attr("data-id", function(j){return j.axis})
             .style("fill", cfg.color(series)).style("fill-opacity", .9)
+
             .on('mouseover', function (d){
                         var newX =  parseFloat(d3.select(this).attr('cx')) - 10;
                         var newY =  parseFloat(d3.select(this).attr('cy')) - 5;
-                        
+                        console.log("NEWX", newX);
+                        console.log("NEWY", newY);
                         tooltip
                             .attr('x', newX)
                             .attr('y', newY)
+                        
+                            .attr('class', 'tooltip') 
                             .text(d.footnote)
                             .transition(100)
                             .style('opacity', 1)
+                            
                             .call(tooltipWrap, 300);
                             
                         var z = "polygon."+d3.select(this).attr("class");
                         g.selectAll("polygon")
                             .transition(200)
-                            .style("fill-opacity", 0.1); 
+                            .style("fill-opacity", 0.1);
                         g.selectAll(z)
                             .transition(200)
                             .style("fill-opacity", .7);
@@ -451,13 +460,17 @@ const Results = () => {
         tooltip = g.append('text')
                    .style('opacity', 0)
                    .style('font-family', 'sans-serif')
-                   .style('display', 'block')
                    .style('font-size', '13px');
+
+                   g.selectAll('tooltip')
+                    .style('display', 'block')
+                           .style('border', '1px solid black')
+                           .style('background-color', 'white');
     };
 
   return (
     <div className="container">
-        <Typography variant="h2" align="center">Social Matrix Project - Results</Typography>
+        <Typography variant="h2" align="center" className={classes.test}>Social Matrix Project - Results</Typography>
 
  
             

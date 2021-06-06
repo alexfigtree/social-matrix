@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
-  paper: {
+  Box: {
     paddingTop: theme.spacing(5),
     paddingLeft: theme.spacing(30),
     paddingRight: theme.spacing(30),
@@ -24,4 +24,5 @@ export default makeStyles((theme) => ({
   buttonSubmit: {
     marginBottom: 10,
   },
+  
 }));
