@@ -6,6 +6,8 @@ import { Link, useHistory } from "react-router-dom";
 import useStyles from '../Form/styles';
 import { createPost, updatePost } from '../../actions/posts';
 import CheckboxField from '../Form/CheckboxField';
+import CheckboxInputField_SexOrientation from '../Form/CheckboxInputField_SexOrientation';
+
 
 //q30
 const SexualOrientation = () => {
@@ -13,6 +15,7 @@ const SexualOrientation = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
@@ -24,7 +27,11 @@ const SexualOrientation = () => {
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: SexualOrientation', JSON.parse(retrievedObject));
+      console.log('retrievedObject', JSON.parse(retrievedObject));
+
+      var retrievedFootnotes = localStorage.getItem('footnotes');
+      console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));      
+
   }, []);
 
   const clear = () => {
@@ -56,6 +63,26 @@ const SexualOrientation = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+
+    //PROCESS FOOTNOTE DATA:
+    let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
+
+    const f7_23 = localStorage.getItem("7.23");
+
+    const f7_23_7 = localStorage.getItem("7.23-7");
+    const f7_23_7_checkbox = localStorage.getItem("7.23-7-checkbox");
+
+    let concatString7_23_7 = 
+      [f7_23_7_checkbox, f7_23_7].filter(Boolean).join(": ");
+
+    //generate concatentated string
+    let concatString = 
+      [f7_23, concatString7_23_7].filter(Boolean).join("; ");
+    tempFootnotes[0][5].value = concatString;
+    localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
+
+
+
     if (currentId === 0) {
       dispatch(createPost(postData));
       clear();
@@ -71,6 +98,19 @@ const SexualOrientation = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Sexual Orientation</Typography>
+
+        <Box component="div" style={{ width: '100%' }}>
+            <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.23"><h4>Q 7.23</h4></label>
+       
+            <Typography variant="h5" align="left">
+                Sexual Orientation
+            </Typography>
+            <p>
+                Sexual orientation refers to whether one is sexually and romantically attracted to and/or involved romantically with the opposite sex, one’s own sex, both sexes, or all sexes.
+            </p>
+     
+            <CheckboxInputField_SexOrientation id="7.23" />
+        </Box>
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.24"><h4>Q 7.24</h4></label>
