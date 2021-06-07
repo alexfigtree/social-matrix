@@ -9,15 +9,31 @@ function CheckboxInputField_ParentalStatus(props) {
 
   const [answersArray, setAnswersArray] = useState([]);
 
-  localStorage.setItem('7.3-5', '');
-  localStorage.setItem('7.3-5-checkbox', '');
-
-  localStorage.setItem('7.3-16', '');
-  localStorage.setItem('7.3-16-checkbox', '');
-
   const questionNumber = props.id;
 
   const [checkedArray, setCheckedArray] = useState([1,2,3,4,5,6,7]);
+
+        localStorage.setItem('7.3-1', '');
+      localStorage.setItem('7.3-2', '');
+      localStorage.setItem('7.3-3', '');
+      localStorage.setItem('7.3-4', '');
+
+      localStorage.setItem('7.3-5', '');
+      localStorage.setItem('7.3-5-checkbox', '');
+   
+      localStorage.setItem('7.3-6', '');
+      localStorage.setItem('7.3-7', '');
+      localStorage.setItem('7.3-8', '');
+      localStorage.setItem('7.3-9', '');
+      localStorage.setItem('7.3-10', '');
+      localStorage.setItem('7.3-11', '');
+      localStorage.setItem('7.3-12', '');
+      localStorage.setItem('7.3-13', '');
+      localStorage.setItem('7.3-14', '');
+      localStorage.setItem('7.3-15', '');
+
+      localStorage.setItem('7.3-16', '');
+      localStorage.setItem('7.3-16-checkbox', '');
 
   function enableDisableTextBoxRelative(id, isChecked) {
         var relative = document.getElementById("relative");
@@ -91,6 +107,7 @@ function CheckboxInputField_ParentalStatus(props) {
     }
 
     localStorage.setItem('7.3', temp);
+
     return temp; 
   };
 

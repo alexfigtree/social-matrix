@@ -74,18 +74,14 @@ const NationOfOriginCitizenship = () => {
     const f5_10_1_checkbox = localStorage.getItem("5.10-1-checkbox");
     const f5_10_1 = localStorage.getItem("5.10-1");
     const concat5_10_1 = f5_10_1_checkbox + f5_10_1;
-    console.log("concat5_10_1", concat5_10_1);
 
     const f5_10_2_checkbox = localStorage.getItem("5.10-2-checkbox");
     const f5_10_2 = localStorage.getItem("5.10-2");
     const concat5_10_2 = f5_10_2_checkbox + f5_10_2;
-    console.log("concat5_10_2", concat5_10_2);
 
     const f5_10_3_checkbox = localStorage.getItem("5.10-3-checkbox");
     const f5_10_3 = localStorage.getItem("5.10-3");
     const concat5_10_3 = f5_10_3_checkbox + f5_10_3;
-    console.log("concat5_10_3", concat5_10_3);
-
 
     const f5_14 = localStorage.getItem("5.14");
 

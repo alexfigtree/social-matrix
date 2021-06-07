@@ -86,15 +86,7 @@ const MaritalStatus = () => {
 
     const f7_8 = localStorage.getItem("7.8");
 
-    const f7_9_1 = localStorage.getItem("7.9-1");
-    const f7_9_2 = localStorage.getItem("7.9-2");
-    const f7_9_3 = localStorage.getItem("7.9-3");
-    const f7_9_4 = localStorage.getItem("7.9-4");
-    const f7_9_5 = localStorage.getItem("7.9-5");
-    const f7_9_6 = localStorage.getItem("7.9-6");
-    const f7_9_7 = localStorage.getItem("7.9-7");
-    const f7_9_8 = localStorage.getItem("7.9-8");
-    const f7_9_9 = localStorage.getItem("7.9-9");
+    const f7_9 = localStorage.getItem("7.9");
     const f7_9_10 = localStorage.getItem("7.9-10");
     const f7_9_10_checkbox = localStorage.getItem("7.9-10-checkbox");
 
@@ -106,7 +98,7 @@ const MaritalStatus = () => {
 
     //generate concatentated string
     let concatString = 
-      [f7_8, concatString7_9_10, f7_10, f7_11].filter(Boolean).join("; ");
+      [f7_8, f7_9, concatString7_9_10, f7_10, f7_11].filter(Boolean).join("; ");
     tempFootnotes[0][6].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 

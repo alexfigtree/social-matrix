@@ -9,9 +9,6 @@ function CheckboxInputField_MaritalStatus(props) {
 
   const [answersArray, setAnswersArray] = useState([]);
 
-  localStorage.setItem('7.9-10', '');
-  localStorage.setItem('7.9-10-checkbox', '');
-
   const questionNumber = props.id;
 
   const [checkedArray, setCheckedArray] = useState([1,2,3,4,5,6,7]);
@@ -39,14 +36,12 @@ function CheckboxInputField_MaritalStatus(props) {
   };
   
   //for checkbox
-
   const handleCheckboxOther = async(event) => {
     setChecked(event.target.checked);
     enableDisableTextBoxOther(event.target.id, event.target.checked);
     if(event.target.checked === true){
       localStorage.setItem('7.9-10-checkbox', "Other - specify");
     }
-    
   };
 
   const handleOtherInput = async(event) => {
@@ -69,6 +64,7 @@ function CheckboxInputField_MaritalStatus(props) {
     }
 
     localStorage.setItem('7.9', temp);
+
     return temp; 
   };
 
