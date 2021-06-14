@@ -11,3 +11,7 @@ export const deletePost = (id) => axios.delete(`${url}/${id}`);
 export const fetchMatrix = () => axios.get(url);
 export const createMatrix = (newMatrix) => axios.post(url, newMatrix);
 export const updateMatrix = (id, updatedMatrix) => axios.patch(`${url}/${id}`, updatedMatrix);
+
+export const fetchFootnotes = () => axios.get(url);
+export const createFootnotes = (newFootnotes) => axios.post(url, newFootnotes);
+export const updateFootnotes = (id, updatedFootnotes) => axios.patch(`${url}/${id}`, updatedFootnotes);

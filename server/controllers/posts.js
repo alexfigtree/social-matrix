@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 
 import PostMessage from '../models/postMessage.js';
 import MatrixData from '../models/matrixData.js';
+import FootnotesData from '../models/footnotesData.js';
 
 const router = express.Router();
 
@@ -78,8 +79,17 @@ export const likePost = async (req, res) => {
 }
 
 
-
 export const getMatrix = async (req, res) => { 
+
+    try {
+        const matrixData = await MatrixData.find();
+                
+        res.status(200).json(matrixData);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+/*
+
     const { id } = req.params;
 
     try {
@@ -88,7 +98,7 @@ export const getMatrix = async (req, res) => {
         res.status(200).json(matrix);
     } catch (error) {
         res.status(404).json({ message: error.message });
-    }
+    }*/
 }
 
 export const createMatrix = async (req, res) => {
@@ -99,7 +109,7 @@ export const createMatrix = async (req, res) => {
     try {
         await newMatrixData.save();
 
-        res.status(201).json(newMatrixData );
+        res.status(201).json(newMatrixData);
     } catch (error) {
         res.status(409).json({ message: error.message });
     }
@@ -107,15 +117,65 @@ export const createMatrix = async (req, res) => {
 
 export const updateMatrix = async (req, res) => {
     const { id } = req.params;
-    const { matrixData, footnotes } = req.body;
+    const { matrixData } = req.body;
     
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No matrix with id: ${id}`);
 
-    const updatedMatrixData= { matrixData, footnotes };
+    const updatedMatrixData= { matrixData, _id: id };
 
     await MatrixData.findByIdAndUpdate(id, updatedMatrixData, { new: true });
 
     res.json(updatedMatrixData);
+}
+
+
+
+export const getFootnotes = async (req, res) => { 
+    try {
+        const footnotes = await FootnotesData.find();
+                
+        res.status(200).json(footnotes);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+}
+
+export const getFootnote = async (req, res) => { 
+    const { id } = req.params;
+
+    try {
+        const footnote = await FootnotesData.findById(id);
+        
+        res.status(200).json(footnote);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+}
+
+export const createFootnotes = async (req, res) => {
+    const { footnotes } = req.body;
+
+    const newFootnotesData = new FootnotesData({ footnotesData })
+
+    try {
+        await newFootnotesData.save();
+
+        res.status(201).json(newFootnotesData );
+    } catch (error) {
+        res.status(409).json({ message: error.message });
+    }
+}
+export const updateFootnotes = async (req, res) => {
+    const { id } = req.params;
+    const { footnotesData } = req.body;
+    
+    if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
+
+    const updatedFootnotes = { footnotesData, _id: id };
+
+    await FootnotesData.findByIdAndUpdate(id, updatedFootnotes, { new: true });
+
+    res.json(updatedFootnotes);
 }
 
 export default router;

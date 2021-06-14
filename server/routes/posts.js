@@ -9,7 +9,10 @@ import {
 	deletePost,
 	getMatrix,
 	createMatrix,
-	updateMatrix
+	updateMatrix,
+	createFootnotes,
+	getFootnotes,
+	updateFootnotes
 } from '../controllers/posts.js';
 
 const router = express.Router();
@@ -24,5 +27,9 @@ router.patch('/:id/likePost', likePost);
 router.post('/', createMatrix);
 router.get('/:id', getMatrix);
 router.patch('/:id', updateMatrix);
+
+router.post('/', createFootnotes);
+router.get('/:id', getFootnotes);
+router.patch('/:id', updateFootnotes);
 
 export default router;
