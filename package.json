@@ -6,6 +6,6 @@
     "node": "12.x"
   },
   "scripts": {
-	  "start": "node index.js"
+	  "start": "node client/src/index.js"
   }
 }
