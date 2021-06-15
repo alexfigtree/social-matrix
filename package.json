@@ -1,12 +1,12 @@
 {
   "name": "social-matrix",
   "description": "a really cool app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
         "start": "node server/index.js",
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
-    },
+    }
 }
