@@ -8,15 +8,24 @@ body {
 #chart, #chart2, #chart3, #chart4, #chart5, #chart6, #chart7, #chart8 {
   margin-top: 20px;
   left: 0;
-  margin-left: -5%;
+  margin-left: 12%;
 } 
 
 .after-one {
   margin-left: 5%;
 }
 
-.tooltip {
+text.tooltip {
   position: absolute;
+  height: 30px;
+  width: 50px;
+  color: green;
+  background-color: yellow;
+  display: block;
+}
+
+polygon.radar-chart-serie1 > tooltip {
+    position: absolute;
   height: 30px;
   width: 50px;
   color: green;

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Radar chart</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <title>Social Matrix Project</title>
+    <link rel="stylesheet" type="text/css" href="client/src/style.css">
+    <script data-main="client/src/scripts/main" src="client/src/scripts/require.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="scripts/RadarChart.js"></script>
+    <script src="client/src/scripts/RadarChart.js"></script>
   </head>
   <body style="overflow-y: auto;">
     <br>
@@ -15,244 +15,170 @@
 
     <!--Subject #1 -->
     <div>
+      <div><a href="social-matrix/form.html" class="button">Create your own matrix</a></div>
       
       <!-- Pre -->
       <div id="body">
-        <div id="chart" class="svg-align"><div class="matrix-header">Subject 1 - Earlier</div></div>
+        <div id="chart" class="svg-align"><div class="matrix-header">Subject 1 - Earlier Matrix</div></div>
       </div>
       <br>
       <!-- Post -->
       <div id="body2">
-        <div id="chart2" class="svg-align"><div class="matrix-header">Subject 1 - Current</div></div>
+        <div id="chart2" class="svg-align"><div class="matrix-header">Subject 1 - Current Matrix</div></div>
       </div>
       <div class="footnotes-bottom">
         <div class="footnotes-header">Footnotes:</div>
-        1.6 P's_Educ    PhD Social-Clinical Psychology, 1979, US
-        <br>
-        2.1 P's_Occup   Professor, Clinical Psychologist 
-        <br>
-        2.5 P's_Occup   More highly privileged in country than community
-        <br>
-        3.6 P's_Access    Very high access to info, influence (as professor), good access to $ resources
-        <br> 
-        4.2 Raised_By   Raised by Mo & Fa 
-        <br>
-        4.4 Pars_Educ   Parent 1: Mo in college when I was born, BA when I was 13, MA when I was 15/ Parent 2: Fa got MD when I was 1 
-        <br>
-        4.6 Pars_Occup    Mother homemaker till I was 7-8, then student, then master's level psychologist/ Father psychiatrist 
-        <br> 
-        4.9 Pars_Ch_Income    Mo. w/ more wealth in her father's home till age 12, then no contact/ Father's family working poor, then upper-middle- income 
-        <br>
-        4.11  Pars_Access   Mother not Internet savvy, but good access to $, info Father very internet-savvy, influential, high access to resources 
-        <br>
-        4.12  Pars_Marit    Birth parents married till I was 25 
-        <br> 
-        4.14  Pars_Marit    N/A 
-        <br>
-        4.15  Raised_By   Parent 1: Straight, Parent 2: Straight 
-        <br> 
-        4.17  Raised_By   Parent 1: cis-gender woman/Parent 2: cis-gender man 
-        <br>
-        4.19  Raised_By   Mother 19, Father 22
-        <br>  
-        4.21  Raised_By   No  
-        <br>
-        4.22  Raised_By   No  
-        <br>
-        5.1 Race    White 
-        <br>
-        5.4 Race    European Jews not fully white in my childhood, esp. in south. > privilege now, but also >antisemitism. I raised multiracial children. 
-        <br>
-        5.5 Ethnic_Tribe    Jewish (Ashkenazi & Sephardi) 
-        <br>
-        5.8 Citiz_Status    US  
-        <br>
-        5.1 Nation_orig   US 
-        <br> 
-        5.11  Citiz_Status    B. US 
-        <br>
-        5.13  Lang_Orig.    English 
-        <br>
-        5.14  Lang_Addit.   Spanish, French, a little Hebrew and Yiddish 
-        <br> 
-        6.1 Fam_Relig_Descr.    Judaism (reform) 
-        <br> 
-        6.4 Fam_Relig_Expl.   More acceptance of non-Christian religions, except by the radical right 
-        <br>
-        6.5 Chosen_Relig_Descr,   Judaism (reform)  
-        <br>
-        6.8 Chosen_Relig_Expl   Less antisemitism, more religious inclusion (except for radical right) 
-        <br>  
-        6.9 Politics_Descr.   progressive/socialist 
-        <br>
-        6.12  Politics_Expl.    Somewhat marginalized, less so in my community  
-        <br>
-        6.15  Geo_Region    Grew up in NY, now in MA  
-        <br>
-        6.18  Hx_Events   I grew up during a more antisemitic time, post-WWII. I've gained privilege b/c my interracial, multi-faith family is less marginalized now. Feminism is more accepted. Importance of medical advances 
-        <br>
-        6.20. Relat_Milit_Descr.    Father drafted into Navy as a lieutenant (doctor) when I was 3-5 
-        <br> 
-        6.23  Relat_Milit_Checklist   Father was in US Navy 
-        <br>
-        6.26  Relat_Legal   had a close family member involved in legal system as a defendant 
-        <br>
-        6.29  Relat_MH_Sys    Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy  
-        <br>
-        6.30, 6.33  MI_SA   Family issues, death of son with Mental Illness, close relative of someone with SA 
-        <br> 
-        6.36  Cogn_Style    Very intelligent, 2 TBIs left minor difficulties w/ executive functioning 
-        <br>
-        6.39  Health_Abil   chronic asthma, GERD, controlled hypertension, arthritis, allergies ?> life-threatening heart condition @68 
-        <br>
-        6.42  Appear    Attractive, gray hair, short  
-        <br>
-        7.1 Age   68 (b. 1952)  
-        <br>
-        7.3 P's_Parental_status   Adoptive parent of child w/ serious mental illness who died, stepparent of multiracial grown children 
-        <br>
-        7.4 P's_Parental_status   Gained stepchildren at age 29; adoptive mother at 34, child died when I was 53  
-        <br>
-        7.5 P's_Parental_status   Adoptive child had mental illness, died at 19; stepchildren are multiracial 
-        <br>
-        7.9 P's_Marit_status    in 2nd marriage 
-        <br>
-        7.10. P's_Marit_status    LT @ 18, m. at 21, Div. @ 26; LT @ 29, m. @ 30  
-        <br>
-        7.11  P's_Marit_status    Opposite sex  
-        <br>
-        7.14  P?s_Bio_Sex   Female  
-        <br>
-        7.17  P's_Gender_ID   Cis-gender woman 
-        <br> 
-        7.20. P's Gender_Express    Feminine-looking woman  
-        <br>
-        7.23  P's sexual_orient   Straight  
-        <br>
-        7.26  Unique_Hx   Son?s death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness 
-        <br>
-        7.29  Blank   N/A 
-      </div>
+          1) <i>Educ. Level:</i> PhD Social-Clinical Psychology, 1979, US
+          <br>
+          2) <i>Guardians’ Educ:</i> Parent 1: Mo in college when I was born, BA when I was 13, MA when I was 15/ Parent 2: Fa got MD when I was 1
+          <br>
+          3) <i>Occupation(s):</i> Professor, Clinical Psychologist; More highly privileged in country than community
+          <br> 
+          4) <i>Guardians’ Occupation:</i> Mother homemaker till I was 7-8, then student, then master's level psychologist/ Father psychiatrist
+          <br>
+          7) <i>Guardian’s Childhood House. Income:</i> Mo. w/ more wealth in her father's home till age 12, then no contact/ Father's family working poor, then upper-middle- income
+          <br> 
+          8) <i>Access:</i>  Very high access to info, influence (as professor), good access to $ resources 
+          <br>
+          9) <i>Guardians’ Access:</i>  Mother not Internet savvy, but good access to $, info Father very internet-savvy, influential, high access to resources
+          <br>
+          10) <i>Race(s):</i>  White; European Jews not fully white in my childhood, esp. in south. > privilege now, but also >antisemitism. I raised multiracial children.
+          <br>
+          11) <i>Ethnicity / Tribe:</i>  Jewish (Ashkenazi & Sephardi)
+          <br> 
+          12) <i>Person's Nation of Origin:</i>  US
+          <br>
+          13) <i>Citizenship Status. Income:</i>  US; B. US
+          <br> 
+          15) <i>Language(s) Spoken:</i>  English; Spanish, French, a little Hebrew and Yiddish
+          <br>
+          16) <i>Family Religion:</i> Judaism (reform); More acceptance of non-Christian religions, except by the radical right
+          <br> 
+          17) <i>Chosen Religion:</i> Judaism (reform); Less antisemitism, more religious inclusion (except for radical right)
+          <br>
+          18) <i>Politics:</i> progressive/socialist; Somewhat marginalized, less so in my community
+          <br> 
+          19) <i>Geo. Region:</i> Grew up in NY, now in MA 
+          <br>
+          20) <i>Impact of Historical Times:</i> I grew up during a more antisemitic time, post-WWII. I've gained privilege b/c my interracial, multi-faith family is less marginalized now. Feminism is more accepted. Importance of medical advances
+          <br>
+          21) <i>Relation to Military:</i> Father drafted into Navy as a lieutenant (doctor) when I was 3-5; Father was in US Navy
+          <br>
+          22) <i>Relation to Legal System:</i> had a close family member involved in legal system as a defendant
+          <br> 
+          23) <i>Relation to MH System:</i> Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy
+          <br>
+          24) <i>MH/Subst. Abuse:</i> Family issues, death of son with Mental Illness, close relative of someone with SA
+          <br> 
+          25) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
+          <br>
+          26) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies ?> life-threatening heart condition @68
+          <br> 
+          27) <i>Appearance:</i> Attractive, gray hair, short
+          <br>
+          28) <i>Age:</i> 68 (b. 1952)
+          <br> 
+          29) <i>Raised By:</i> Raised by Mo & Fa; Parent 1: Straight, Parent 2: Straight; Parent 1: cis-gender woman/Parent 2: cis-gender man; Mother 19, Father 22; No; No
+          <br>
+          30) <i>Guardians’ Marital Status:</i> Birth parents married till I was 25; N/A
+          <br>
+          31) <i>Parental Status:</i> Adoptive parent of child w/ serious mental illness who died, stepparent of multiracial grown children; Gained stepchildren at age 29; adoptive mother at 34, child died when I was 53; Adoptive child had mental illness, died at 19; stepchildren are multiracial
+          <br>
+          32) <i>Marital Status:</i> in 2nd marriage; LT @ 18, m. at 21, Div. @ 26; LT @ 29, m. @ 30; Opposite sex
+          <br> 
+          33) <i>Sexual Orientation:</i> Straight
+          <br>
+          34) <i>Gender ID:</i> Cis-gender woman
+          <br> 
+          35) <i>Gender Expression:</i> Feminine-looking woman
+          <br>
+          36) <i>Sex Assigned at Birth:</i> Female
+          <br> 
+          37) <i>Unique History:</i> Son?s death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
+        </div>
     </div>
 
     <!--Subject #2 -->
     <div class="after-one">
       <!-- Pre -->
       <div id="body3">
-        <div id="chart3"><div class="matrix-header-bottom">Subject 2 - Earlier</div></div>
+        <div id="chart3"><div class="matrix-header-bottom">Subject 2 - Earlier Matrix</div></div>
       </div>
       <br>
       <!-- Post -->
       <div id="body4">
-        <div id="chart4"><div class="matrix-header-bottom">Subject 2 - Current</div></div>
+        <div id="chart4"><div class="matrix-header-bottom">Subject 2 - Current Matrix</div></div>
       </div>
       <div class="footnotes-bottom-after-one">
         <div class="footnotes-header">Footnotes:</div>
-        1.6 P's_Educ  Masters, Clinical Psych, 2019 
-        <br>
-        2.1 P's_Occup Grad Student 
-        <br>
-        2.5 P's_Occup No changes in occupation   
-        <br>
-        3.6 P's_Access  Resources and information, but not influence, are pretty accessible, as a black woman 
-        <br>  
-        4.2 Raised_By Raised by Mo & Fa  
-        <br> 
-        4.4 Pars_Educ Par 1: Doctor of Medicine in Dentistry 1989, US DMD certificate when I was 8-10 after immigration / Par 2: Doctor of Pharmacy when I was 14 b/c pharmacy tech degree w/ less status in US than in Botswana    
-        <br>
-        4.6 Pars_Occup  Parent 1: Rating of 1 for DMD, rating of 6 after having to return to school/ Parent 2: Pharm D=1,pharmacy tech, student=6 
-        <br>  
-        4.9 Pars_Ch_Income  No changes in Parent's childhood household income   
-        <br>
-        4.11  Pars_Access access to influence lower than access to information and resources  
-        <br>  
-        4.12  Pars_Marit  Married to my other parent  
-        <br>  
-        4.14  Pars_Marit  No changes in marital status 
-        <br>   
-        4.15  Raised_By Heterosexual   
-        <br> 
-        4.17  Raised_By Parent 1: cis-gender woman/Parent 2: cis-gender man  
-        <br>  
-        4.19  Raised_By Par 1: 34/ Par 2:26   
-        <br>
-        4.21  Raised_By No, never lived apart from parents
-        <br>   
-        4.22  Raised_By No, never lived in boarding school   
-        <br> 
-        5.1 Raised_By Black   
-        <br>
-        5.4 Race  Most marginalized 
-        <br>   
-        5.5 Race  Digo (tribe), Kimvita (clan), Kenyan (Mijikenda - 9-tribe subgroup) {consider putting clan, subgroup into additional axis, w/explanation)   
-        <br>
-        5.8 Ethnic_Tribe  United States, Kenya    
-        <br>
-        5.1 Citiz_Status  N/A-Skip logic 
-        <br>   
-        5.11  Nation_orig Naturalized citizen   
-        <br>
-        5.13  Citiz_Status  English and Swahili   
-        <br>
-        5.14  Lang_Orig.  No additional language    
-        <br>
-        6.1 Lang_Addit. Muslim and Christian    
-        <br>
-        6.4 Fam_Relig_Descr.  Mo b. Christian, became Muslim; Fa Muslim   
-        <br>
-        6.5 Chosen_Relig_Descr, Muslim  
-        <br>   
-        6.8 Chosen_Relig_Expl Islam most marginalized religion in US    
-        <br>
-        6.9 Politics_Descr. Progressive 
-        <br>  
-        6.12  Politics_Expl.  More marginalized than privileged 
-        <br>  
-        6.15  Geo_Region  Not war torn, but not peaceful  
-        <br>  
-        6.18  Hx_Events Islam more marginalized since 9/11 
-        <br>   
-        6.20. Relat_Milit_Descr.  N/A- skip logic: No relationship to military   
-        <br> 
-        6.23  Relat_Milit_Checklist N/A skip logic: No relationship to military   
-        <br>
-        6.26  Relat_Legal No contact with system    
-        <br>
-        6.29  Relat_MH_Sys  No relationship with mental health system, except as a mental health professional   
-        <br>
-        6.30. 6.33  MI_SA Close relative of someone with significant substance abuse problem    
-        <br>
-        6.36  Cogn_Style  No special abilities or disabilities
-        <br>    
-        6.39  Health_Abil No illnesses or abilities   
-        <br>
-        6.42  Appear  N/A   
-        <br>
-        7.1 Age 26 
-        <br>   
-        7.3 P's_Parental_status Not a parent, guardian, or other parenting figure  
-        <br> 
-        7.4 P's_Parental_status N/A-Skip logic
-        <br>    
-        7.5 P's_Parental_status N/A-Skip logic    
-        <br>
-        7.9 P's_Marit_status  Single 
-        <br>   
-        7.10. P's_Marit_status  single at 26   
-        <br> 
-        7.11  P's_Marit_status  opposite-sex    
-        <br>
-        7.14  P?s_Bio_Sex Female  
-        <br>  
-        7.17  P's_Gender_ID cis-gender
-        <br>    
-        7.20. P's Gender_Express  Gender-normative 
-        <br>   
-        7.23  P's sexual_orient Straight  
-        <br>  
-        7.26  Unique_Hx prominent chiefs and founder of village from family, some family in poverty   
-        <br>
-        7.29  Blank N/A   
+          1) <i>Educ. Level:</i> Masters, Clinical Psych, 2019
+          <br>
+          2) <i>Guardians’ Educ:</i> Par 1: Doctor of Medicine in Dentistry 1989, US DMD certificate when I was 8-10 after immigration / Par 2: Doctor of Pharmacy when I was 14 b/c pharmacy tech degree w/ less status in US than in Botswana
+          <br>
+          3) <i>Occupation(s):</i> Grad Student; No changes in occupation
+          <br> 
+          4) <i>Guardians’ Occupation:</i> Parent 1: Rating of 1 for DMD, rating of 6 after having to return to school/ Parent 2: Pharm D=1,pharmacy tech, student=6
+          <br>
+          7) <i>Guardian’s Childhood House. Income:</i> No changes in Parent's childhood household income
+          <br> 
+          8) <i>Access:</i>  Resources and information, but not influence, are pretty accessible, as a black woman
+          <br>
+          9) <i>Guardians’ Access:</i>  access to influence lower than access to information and resources
+          <br>
+          10) <i>Race(s):</i>  Black; Most marginalized
+          <br>
+          11) <i>Ethnicity / Tribe:</i>  Digo (tribe), Kimvita (clan), Kenyan (Mijikenda - 9-tribe subgroup) {consider putting clan, subgroup into additional axis, w/explanation)
+          <br> 
+          12) <i>Person's Nation of Origin:</i>  N/A-Skip logic
+          <br>
+          13) <i>Citizenship Status. Income:</i>  United States, Kenya; Naturalized citizen
+          <br> 
+          15) <i>Language(s) Spoken:</i>  English and Swahili; No additional language
+          <br>
+          16) <i>Family Religion:</i> Muslim and Christian; Mo b. Christian, became Muslim; Fa Muslim
+          <br> 
+          17) <i>Chosen Religion:</i> Muslim; Islam most marginalized religion in US
+          <br>
+          18) <i>Politics:</i> Progressive; More marginalized than privileged
+          <br> 
+          19) <i>Geo. Region:</i> Not war torn, but not peaceful
+          <br>
+          20) <i>Impact of Historical Times:</i> Islam more marginalized since 9/11
+          <br>
+          21) <i>Relation to Military:</i> N/A- skip logic: No relationship to military; N/A- skip logic: No relationship to military
+          <br>
+          22) <i>Relation to Legal System:</i> No contact with system
+          <br> 
+          23) <i>Relation to MH System:</i> No relationship with mental health system, except as a mental health professional
+          <br>
+          24) <i>MH/Subst. Abuse:</i> Close relative of someone with significant substance abuse problem
+          <br> 
+          25) <i>Cognitive Ability/Style:</i> No special abilities or disabilities
+          <br>
+          26) <i>Health/Ability:</i> No illnesses or abilities
+          <br> 
+          27) <i>Appearance:</i> N/A
+          <br>
+          28) <i>Age:</i> 26
+          <br> 
+          29) <i>Raised By:</i> Raised by Mo & Fa; Heterosexual; Parent 1: cis-gender woman/Parent 2: cis-gender man; Par 1: 34/ Par 2:26; No, never lived apart from parents; No, never lived in boarding school
+          <br>
+          30) <i>Guardians’ Marital Status:</i> Married to my other parent; No changes in marital status
+          <br>
+          31) <i>Parental Status:</i> Not a parent, guardian, or other parenting figure; N/A-Skip logic; N/A-Skip logic
+          <br>
+          32) <i>Marital Status:</i> Single; single at 26; opposite-sex
+          <br> 
+          33) <i>Sexual Orientation:</i> Straight
+          <br>
+          34) <i>Gender ID:</i> cis-gender
+          <br> 
+          35) <i>Gender Expression:</i> Gender-normative
+          <br>
+          36) <i>Sex Assigned at Birth:</i> Female
+          <br> 
+          37) <i>Unique History:</i> prominent chiefs and founder of village from family, some family in poverty
+        </div> 
       </div>
     </div>
 
@@ -260,120 +186,83 @@
     <div class="after-one">
       <!-- Pre -->
       <div id="body5">
-        <div id="chart5"><div class="matrix-header-bottom">Subject 3 - Earlier</div></div>
+        <div id="chart5"><div class="matrix-header-bottom">Subject 3 - Earlier Matrix</div></div>
       </div>
       <br>
       <!-- Post -->
       <div id="body6">
-        <div id="chart6"><div class="matrix-header-bottom">Subject 3 - Current</div></div>
+        <div id="chart6"><div class="matrix-header-bottom">Subject 3 - Current Matrix</div></div>
       </div>
       <div class="footnotes-bottom-after-one">
         <div class="footnotes-header">Footnotes:</div>
-        1.6 P's_Educ  MA 
-        <br>
-        2.1 P's_Occup CNA, cashier then. Now researcher/student 
-        <br>
-        2.5 P's_Occup Changed career approximately 6 years ago 
-        <br>
-        3.6 P's_Access  mother has very limited access; father deceased 
-        <br>  
-        4.2 Raised_By raised by mother, father, and other immediate relatives  
-        <br> 
-        4.4 Pars_Educ Father completed 6 grade and mother completed 10 grade    
-        <br>
-        4.6 Pars_Occup  mother CNA and father motorcycle mechanic  
-        <br>  
-        4.9 Pars_Ch_Income  both low income 
-        <br>  
-        4.11  Pars_Access both limited access to resources  
-        <br>  
-        4.12  Pars_Marit  parents separated when I was approximately 4 years old   
-        <br> 
-        4.14  Pars_Marit  mother divorced and father deceased   
-        <br>
-        4.15  Raised_By straight    
-        <br>
-        4.17  Raised_By both parents are straight 
-        <br>  
-        4.19  Raised_By mother was about 23 and father about 25 average   
-        <br>
-        4.21  Raised_By no    
-        <br>
-        4.22  Raised_By no   
-        <br> 
-        5.1 Race  black/brown  
-        <br> 
-        5.4 Race  black/brown   
-        <br>
-        5.5 Ethnic_Tribe  Dominican
-        <br>   
-        5.8 Citiz_Status  DR and USA
-        <br>    
-        5.1 Nation_orig Dominican   
-        <br>
-        5.11  Citiz_Status  Naturalized citizen of the country of residence   
-        <br>
-        5.13  Lang_Orig.  Spanish   
-        <br>
-        5.14  Lang_Addit. English
-        <br>   
-        6.1 Fam_Relig_Descr.  Christian
-        <br>   
-        6.4 Fam_Relig_Expl. born Christian which is practiced by approx 98% of DR   
-        <br>
-        6.5 Chosen_Relig_Descr, Atheist   
-        <br>
-        6.8 Chosen_Relig_Expl born Christian which is practiced by approx 98% of DR   
-        <br>
-        6.9 Politics_Descr. Progressive 
-        <br> 
-        6.12  Politics_Expl.  I can be a little radical at times   
-        <br> 
-        6.15  Geo_Region  born and raised in the DR; now live in CT, USA    
-        <br>
-        6.18  Hx_Events none    
-        <br>
-        6.20. Relat_Milit_Descr.  no relationship with the military 
-        <br>               
-        6.23  Relat_Milit_Checklist no relationship with the military
-        <br>   
-        6.26  Relat_Legal no relationship with the legal system
-        <br>   
-        6.29  Relat_MH_Sys  no relationship with the MH   
-        <br>
-        6.30, 6.33  MI_SA no history with mental health problems 
-        <br>   
-        6.36  Cogn_Style  Average   
-        <br>
-        6.39  Health_Abil Average   
-        <br>
-        6.42  Appear  average   
-        <br>
-        7.1 Age 45    
-        <br>
-        7.3 P's_Parental_status have two biological daughters   
-        <br>
-        7.4 P's_Parental_status 18 and 15   
-        <br>
-        7.5 P's_Parental_status none    
-        <br>
-        7.9 P's_Marit_status  divorced 
-        <br>    
-        7.10. P's_Marit_status  married at 25 and divorced at 33 
-        <br>   
-        7.11  P's_Marit_status  opposite sex    
-        <br>
-        7.14  P?s_Bio_Sex female
-        <br>     
-        7.17  P's_Gender_ID cisgender   
-        <br>
-        7.20. P's Gender_Express  I don't wear make up but I don?t wear ties either 
-        <br>
-        7.23  P's sexual_orient straight    
-        <br>
-        7.26  Unique_Hx N/A   
-        <br>
-        7.29  Blank N/A   
+          1) <i>Educ. Level:</i> MA
+          <br>
+          2) <i>Guardians’ Educ:</i> Father completed 6 grade and mother completed 10 grade
+          <br>
+          3) <i>Occupation(s):</i> CNA, cashier then. Now researcher/student; Changed career approximately 6 years ago
+          <br> 
+          4) <i>Guardians’ Occupation:</i> mother CNA and father motorcycle mechanic
+          <br>
+          7) <i>Guardian’s Childhood House. Income:</i> both low income
+          <br> 
+          8) <i>Access:</i>  mother has very limited access; father deceased
+          <br>
+          9) <i>Guardians’ Access:</i>  both limited access to resources
+          <br>
+          10) <i>Race(s):</i>  black/brown; black/brown
+          <br>
+          11) <i>Ethnicity / Tribe:</i>  Dominican
+          <br> 
+          12) <i>Person's Nation of Origin:</i>  Dominican
+          <br>
+          13) <i>Citizenship Status. Income:</i>  DR and USA; Naturalized citizen of the country of residence
+          <br> 
+          15) <i>Language(s) Spoken:</i>  Spanish; English
+          <br>
+          16) <i>Family Religion:</i> Christian; born Christian which is practiced by approx 98% of DR
+          <br> 
+          17) <i>Chosen Religion:</i> Atheist; born Christian which is practiced by approx 98% of DR
+          <br>
+          18) <i>Politics:</i> Progressive; I can be a little radical at times
+          <br> 
+          19) <i>Geo. Region:</i> born and raised in the DR; now live in CT, USA
+          <br>
+          20) <i>Impact of Historical Times:</i> none
+          <br>
+          21) <i>Relation to Military:</i> no relationship with the military; no relationship with the military
+          <br>
+          22) <i>Relation to Legal System:</i> no relationship with the legal system
+          <br> 
+          23) <i>Relation to MH System:</i> no relationship with the MH
+          <br>
+          24) <i>MH/Subst. Abuse:</i> no history with mental health problems
+          <br> 
+          25) <i>Cognitive Ability/Style:</i> Average
+          <br>
+          26) <i>Health/Ability:</i> Average
+          <br> 
+          27) <i>Appearance:</i> average
+          <br>
+          28) <i>Age:</i> 45
+          <br> 
+          29) <i>Raised By:</i> raised by mother, father, and other immediate relatives; straight; both parents are straight; mother was about 23 and father about 25 average; no; no
+          <br>
+          30) <i>Guardians’ Marital Status:</i> parents separated when I was approximately 4 years old; mother divorced and father deceased
+          <br>
+          31) <i>Parental Status:</i> have two biological daughters; 18 and 15; none
+          <br>
+          32) <i>Marital Status:</i> divorced; married at 25 and divorced at 33; opposite sex
+          <br> 
+          33) <i>Sexual Orientation:</i> straight
+          <br>
+          34) <i>Gender ID:</i> cisgender
+          <br> 
+          35) <i>Gender Expression:</i> I don't wear make up but I don?t wear ties either
+          <br>
+          36) <i>Sex Assigned at Birth:</i> female
+          <br> 
+          37) <i>Unique History:</i> N/A
+        </div>   
       </div>
     </div>
 
@@ -381,130 +270,94 @@
     <div class="after-one">
       <!-- Pre -->
       <div id="body7">
-        <div id="chart7"><div class="matrix-header-bottom">Subject 4 - Earlier</div></div>
+        <div id="chart7"><div class="matrix-header-bottom">Subject 4 - Earlier Matrix</div></div>
       </div>
       <br>
       <!-- Post -->
       <div id="body8">
-        <div id="chart8"><div class="matrix-header-bottom">Subject 4 - Current</div></div>
+        <div id="chart8"><div class="matrix-header-bottom">Subject 4 - Current Matrix</div></div>
       </div>
       <div class="footnotes-bottom-after-one">
         <div class="footnotes-header">Footnotes:</div>
-        1.6 P's_Educ  Masters of Science in Education for Clinical Mental Health Counseling, 2019, USA 
-        <br>
-        2.1 P's_Occup Community Support Specialist, Research Assistant, Clinical Intern, and Graduate Student 
-        <br>
-        2.5 P's_Occup Currently, I am classified as a "professional," holding the title of a community support specialist. Compared with the current economic climate within the United States, I have a lot of privilege with being employed during a pandemic.  
-        <br>
-        3.6 P's_Access  I have the ability to advocate for myself, as well as, obtain medical care and obtain a job. Additionally, I have a Euro-centric name that would assist me in getting a job/loan/etc., if needed
-        <br>  
-        4.2 Raised_By Blank 
-        <br>
-        4.4 Pars_Educ Par 1: Masters degree of education. Education ended in 2005. Parent?s education changed due to going back to school for a masters degree. Par 2: Bachelors degree of science. Education ended in 2009. 
-        <br> 
-        4.6 Pars_Occup  Par 1: mother was stay at home. Went back to school at night when other parent was laid off. Worked full time and went to school at night to obtain Masters degree. Par 2: Father was laid off due to onset of physical disability. Held infrequent low paying jobs throughout my childhood.  
-        <br>
-        4.9 Pars_Ch_Income  Par 1: Parent?s childhood had little money, single income household. Par 2: Parent?s childhood had little money and single income household. 
-        <br> 
-        4.11  Pars_Access Par 1: Parent has been able to advocate for assistance. Has the ability to advocate and will be taken seriously. Par 2: has had difficulty in advocated for themself due to cognitive impairment. Has the ability to advocate and will taken seriously, when they want to.
-        <br>  
-        4.12  Pars_Marit  Par 1: Monogamous and married once. Par 2: Monogamous and married once. 
-        <br>
-        4.14  Pars_Marit  Par 1: Monogamous and married once. Par 2: Monogamous and married once. 
-        <br>
-        4.15  Raised_By Par 1: Heterosexual Par 2: Heterosexual 
-        <br>
-        4.17  Raised_By Both parents are cisgender and heterosexual 
-        <br>
-        4.19  Raised_By Par 1: 33/ Par 2:36 
-        <br>
-        4.21  Raised_By No, never lived apart from parents  
-        <br>
-        4.22  Raised_By No, never lived in boarding school  
-        <br>
-        5.1 Race  White 
-        <br>
-        5.4 Race  Most privileged. They identify and have always identified as white and lived in majority white-identifying places. 
-        <br> 
-        5.5 Ethnic_Tribe  Jewish  
-        <br>
-        5.8 Citiz_Status  United States 
-        <br>
-        5.1 Nation_orig Born in County of residence with generations spanning 4+  
-        <br>
-        5.11  Citiz_Status  Naturalized Citizen 
-        <br>
-        5.13  Lang_Orig.  English 
-        <br>
-        5.14  Lang_Addit. No additional language
-        <br>  
-        6.1 Fam_Relig_Descr.  Jewish  
-        <br>
-        6.4 Fam_Relig_Expl. My family?s experience with identifying as Jewish have remained consistent over their lifespan due to living in areas where they are accepted.  
-        <br>
-        6.5 Chosen_Relig_Descr, Athiest/Areligious  
-        <br>
-        6.8 Chosen_Relig_Expl Born Jewish 
-        <br>
-        6.9 Politics_Descr. Democratic Socialist 
-        <br>  
-        6.12  Politics_Expl.  Socialism and socialist-identity have been incredibly marginalized and persecuted in the US. More understanding of the construct has come to light in recent years and is becoming more acceptable, albeit still marginalized.  
-        <br>
-        6.15  Geo_Region  Geographically, I have lived in privileged spaces. Mostly economically thriving and safe from war, most disasters and within a democratically leaning country. The region is well off with power, influence, and wealth comparatively with other countries.
-        <br> 
-        6.18  Hx_Events Historically, I have held privilege as a cisgender, white man. However, I lose privilege in other domains such as identifying as LGBTQ and nonbinary. 
-        <br>
-        6.20. Relat_Milit_Descr.  No relationship with military 
-        <br>
-        6.23  Relat_Milit_Checklist No relationship with military 
-        <br>
-        6.26  Relat_Legal No relationship with legal system 
-        <br>
-        6.29  Relat_MH_Sys  Currently or previously in short term outpatient psychiatric treatment or psychotherapy.  
-        <br>
-        6.30, 6.33  MI_SA In recovery from addiction to alcohol 
-        <br>
-        6.36  Cogn_Style  No major cognitive disability or learning styles that impedes day to day functioning  
-        <br>
-        6.39  Health_Abil Previous history of asthma and currently lives with Crohn?s Disease and Ulcerative Colitis. 
-        <br>
-        6.42  Appear  Blank 
-        <br>
-        7.1 Age 25 and 1995 
-        <br>
-        7.3 P's_Parental_status Not a parent, guardian, or other parenting figure 
-        <br>
-        7.4 P's_Parental_status blank 
-        <br>
-        7.5 P's_Parental_status blank
-        <br>  
-        7.9 P's_Marit_status  Coupled but unmarried 
-        <br>
-        7.10. P's_Marit_status  18 when first seriously coupled, singled at 21, coupled at 22, singled at 23, coupled at 24.  
-        <br>
-        7.11  P's_Marit_status  Same Sex  
-        <br>
-        7.14  P?s_Bio_Sex Male  
-        <br>
-        7.17  P's_Gender_ID Nonbinary 
-        <br>      
-        7.20. P's Gender_Express  Gender non-binary wears clothing that could be construed as feminine or masculine 
-        <br>
-        7.23  P's sexual_orient Gay 
-        <br>
-        7.26  Unique_Hx Personal history of trauma/abuse 
-        <br>  
-        7.29  Blank N/A 
+        <div class="footnotes-header">Footnotes:</div>
+          1) <i>Educ. Level:</i> Masters of Science in Education for Clinical Mental Health Counseling, 2019, USA 
+          <br>
+          2) <i>Guardians’ Educ:</i> Par 1: Masters degree of education. Education ended in 2005. Parent?s education changed due to going back to school for a masters degree. Par 2: Bachelors degree of science. Education ended in 2009. 
+          <br>
+          3) <i>Occupation(s):</i> Community Support Specialist, Research Assistant, Clinical Intern, and Graduate Student; Currently, I am classified as a "professional," holding the title of a community support specialist. Compared with the current economic climate within the United States, I have a lot of privilege with being employed during a pandemic.   
+          <br> 
+          4) <i>Guardians’ Occupation:</i> Par 1: mother was stay at home. Went back to school at night when other parent was laid off. Worked full time and went to school at night to obtain Masters degree. Par 2: Father was laid off due to onset of physical disability. Held infrequent low paying jobs throughout my childhood. 
+          <br>
+          7) <i>Guardian’s Childhood House. Income:</i> Par 1: Parent?s childhood had little money, single income household. Par 2: Parent?s childhood had little money and single income household.  
+          <br> 
+          8) <i>Access:</i>  I have the ability to advocate for myself, as well as, obtain medical care and obtain a job. Additionally, I have a Euro-centric name that would assist me in getting a job/loan/etc., if needed 
+          <br>
+          9) <i>Guardians’ Access:</i>  Par 1: Parent has been able to advocate for assistance. Has the ability to advocate and will be taken seriously. Par 2: has had difficulty in advocated for themself due to cognitive impairment. Has the ability to advocate and will taken seriously, when they want to.  
+          <br>
+          10) <i>Race(s):</i>  White; Most privileged. They identify and have always identified as white and lived in majority white-identifying places.  
+          <br>
+          11) <i>Ethnicity / Tribe:</i>  Jewish
+          <br> 
+          12) <i>Person's Nation of Origin:</i>  Born in County of residence with generations spanning 4+ 
+          <br>
+          13) <i>Citizenship Status. Income:</i>  United States; Naturalized Citizen  
+          <br> 
+          15) <i>Language(s) Spoken:</i>  English; No additional language 
+          <br>
+          16) <i>Family Religion:</i> Jewish; My family?s experience with identifying as Jewish have remained consistent over their lifespan due to living in areas where they are accepted.  
+          <br> 
+          17) <i>Chosen Religion:</i> Athiest/Areligious; Born Jewish 
+          <br>
+          18) <i>Politics:</i> Democratic Socialist; Socialism and socialist-identity have been incredibly marginalized and persecuted in the US. More understanding of the construct has come to light in recent years and is becoming more acceptable, albeit still marginalized. 
+          <br> 
+          19) <i>Geo. Region:</i> Geographically, I have lived in privileged spaces. Mostly economically thriving and safe from war, most disasters and within a democratically leaning country. The region is well off with power, influence, and wealth comparatively with other countries. 
+          <br>
+          20) <i>Impact of Historical Times:</i> Historically, I have held privilege as a cisgender, white man. However, I lose privilege in other domains such as identifying as LGBTQ and nonbinary.  
+          <br>
+          21) <i>Relation to Military:</i> No relationship with military  ; No relationship with military 
+          <br>
+          22) <i>Relation to Legal System:</i> No relationship with legal system  
+          <br> 
+          23) <i>Relation to MH System:</i> Currently or previously in short term outpatient psychiatric treatment or psychotherapy.  
+          <br>
+          24) <i>MH/Subst. Abuse:</i> In recovery from addiction to alcohol 
+          <br> 
+          25) <i>Cognitive Ability/Style:</i> No major cognitive disability or learning styles that impedes day to day functioning  
+          <br>
+          26) <i>Health/Ability:</i> Previous history of asthma and currently lives with Crohn?s Disease and Ulcerative Colitis.  
+          <br> 
+          27) <i>Appearance:</i> Blank
+          <br>
+          28) <i>Age:</i> 25 and 1995 
+          <br> 
+          29) <i>Raised By:</i> Blank; Par 1: Heterosexual Par 2: Heterosexual; Both parents are cisgender and heterosexual; Par 1: 33/ Par 2:36; No, never lived apart from parents; No, never lived in boarding school  
+          <br>
+          30) <i>Guardians’ Marital Status:</i> Par 1: Monogamous and married once. Par 2: Monogamous and married once.; Par 1: Monogamous and married once. Par 2: Monogamous and married once. 
+          <br>
+          31) <i>Parental Status:</i> Not a parent, guardian, or other parenting figure; blank; blank
+          <br>
+          32) <i>Marital Status:</i> Coupled but unmarried; 18 when first seriously coupled, singled at 21, coupled at 22, singled at 23, coupled at 24.; Same Sex
+          <br> 
+          33) <i>Sexual Orientation:</i> Gay
+          <br>
+          34) <i>Gender ID:</i> Nonbinary
+          <br> 
+          35) <i>Gender Expression:</i> Gender non-binary wears clothing that could be construed as feminine or masculine 
+          <br>
+          36) <i>Sex Assigned at Birth:</i> Male
+          <br> 
+          37) <i>Unique History:</i> Personal history of trauma/abuse
+        </div> 
       </div>
     </div>
 
 
-    <script type="text/javascript" src="./data/data.js"></script>
+    <script type="text/javascript" src="client/src/data/data.js"></script>
   <!--   <script src="scripts/d3.js"></script> -->
-    <script src="scripts/d3.min.js"></script>
+    <script src="client/src/scripts/d3.min.js"></script>
     <!-- <script src="scripts/d3.v3.min.js"></script> -->
     <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
-    <script type="text/javascript" src="./scripts/main.js"></script> 
+    <script type="text/javascript" src="client/src/scripts/main.js"></script> 
     
      
   </body>
