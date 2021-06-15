@@ -3,7 +3,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import ReactDOM from "react-dom";
 
 import FormPostContainer from './FormPostContainer';
 import Home from './components/Home'
