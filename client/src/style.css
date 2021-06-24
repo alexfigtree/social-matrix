@@ -65,7 +65,9 @@ polygon.radar-chart-serie1 > tooltip {
 .underline-text: {
   text-decoration: underline;
 }
-
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
 *[id^='container']{
   height: 125px;
   text-align: center;

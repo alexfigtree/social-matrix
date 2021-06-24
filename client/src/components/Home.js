@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Container, Divider, Typography} from '@material-ui/core';
+import { 
+    Box, 
+    Container, 
+    Divider, 
+    Typography,
+    AppBar,
+    Toolbar,
+    IconButton,
+    Button
+} from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 import Radar from 'react-d3-radar';
@@ -1912,9 +1921,29 @@ const Home = () => {
 
     return (
         <div className="container">
-            <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '30px' }} align="center">Social Matrix Project</Typography>
-            <Link to="/intro" style={{ fontSize: '22px', marginTop: '30px' }}>Take the survey here</Link>
 
+            <AppBar position="static" 
+                style={{ 
+                    flexDirection: 'row', 
+                    float: 'right',
+                    backgroundColor: 'white',
+                    border: 'none',
+                    color: 'black',
+                    display: 'block',
+                    padding: '15px',
+                    boxShadow: 'none !important'
+
+                }}
+            >
+              <Link to="/" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>The Social Matrix</Link>
+              <Link to="/identity" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Areas of Identity</Link>
+              <Link to="/faq" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>FAQ's</Link>
+              <Link to="/uses" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Uses</Link>
+              <Link to="/intro" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Take Survey</Link>
+              <Link to="/references" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>References</Link>
+              <Link to="/contact" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Contact</Link>
+            </AppBar>
+            <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Social Matrix Project</Typography>
 
             <div className="" style={{ marginTop: '20px', marginBottom: '20px' }}>Examples:</div>
             <div id="body">
