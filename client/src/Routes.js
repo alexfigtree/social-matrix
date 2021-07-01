@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router';
-import ReactDOM from "react-dom";
 import routes from './constants/routes.json';
 import App from './containers/App';
 import Home from './components/Home';
