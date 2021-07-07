@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
+  "engines": {
+    "node": "12.18.0"
+  }
+  "type": "module",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
@@ -25,10 +29,16 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "client-install": "npm install --prefix client",
+    "build": "concurrently \"cd client && npm run build\" \"npm build \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd ./client/src && npm start ",
+    "server-prod": "node src/App.js",
+    "server": "nodemon app.js",
+    "start": "cd ./src && node index.js",
+    "start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client"
   },
   "eslintConfig": {
     "extends": "react-app"
