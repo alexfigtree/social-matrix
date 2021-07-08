@@ -9,11 +9,12 @@
         "start": "node server/index.js",
         "eject": "react-scripts eject",
     	"client-install": "npm install --prefix client",
-    	"build": "concurrently \"cd client && npm run build\" \"npm build \"",
+    	"build": "cd client && npm build",
     	"test": "echo \"Error: no test specified\" && exit 1",
-    	"client": "cd ./client/src && npm start ",
+    	"client": "cd client && npm start",
     	"server-prod": "node src/App.js",
-    	"server": "nodemon app.js",
+    	"server": "nodemon server/index.js",
+    	"dev": "concurrently \"nodemon server/server.js\" \"cd client && npm run start\"",
     	"start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
         "heroku-postbuild": "cd client && npm install && npm run build"
     }
