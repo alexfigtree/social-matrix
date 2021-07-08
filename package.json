@@ -7,7 +7,7 @@
   },
   "scripts": {
         "start": "node server/index.js",
-         "eject": "react-scripts eject",
+        "eject": "react-scripts eject",
     	"client-install": "npm install --prefix client",
     	"build": "concurrently \"cd client && npm run build\" \"npm build \"",
     	"test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +15,6 @@
     	"server-prod": "node src/App.js",
     	"server": "nodemon app.js",
     	"start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install npm && run build"
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install && npm run build"
     }
 }
