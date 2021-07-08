@@ -9,7 +9,7 @@
         "start": "node server/index.js",
         "eject": "react-scripts eject",
     	"client-install": "npm install --prefix client",
-    	"build": "concurrently \"cd client && npm run build\" \"npm build \"",
+    	"build": "concurrently \"cd client && npm run build\"",
     	"test": "echo \"Error: no test specified\" && exit 1",
     	"client": "cd ./client/src && npm start ",
     	"server-prod": "node src/App.js",
