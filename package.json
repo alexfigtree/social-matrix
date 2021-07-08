@@ -14,7 +14,6 @@
     	"client": "cd ./client/src && npm start ",
     	"server-prod": "node src/App.js",
     	"server": "nodemon app.js",
-    	// "start": "cd ./src && node index.js",
     	"start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
         "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install npm && run build"
     }
