@@ -8,6 +8,8 @@ import {
 import FormPostContainer from './FormPostContainer';
 import Home from './components/Home';
 
+import NavBar from './components/NavBar';
+
 import AreasOfIdentity from './components/AreasOfIdentity';
 import FAQ from './components/FAQ';
 import Uses from './components/Uses';
