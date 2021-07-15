@@ -1,4 +1,4 @@
-/*eslint no-unused-expressions: "error"*/
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { Box, Container, Divider, Typography} from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';

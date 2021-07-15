@@ -1,5 +1,6 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
-import { TextField, Button, Typography, Paper } from '@material-ui/core';
+import { TextField, Button, Typography, Box } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 
 import useStyles from './styles';
@@ -34,7 +35,7 @@ const Form = ({ currentId, setCurrentId }) => {
   };
 
   return (
-    <Paper className={classes.paper}>
+    <Box className={classes.Box}>
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
       
@@ -50,7 +51,7 @@ const Form = ({ currentId, setCurrentId }) => {
       </form>
 
    
-    </Paper>
+    </Box>
   );
 };
 

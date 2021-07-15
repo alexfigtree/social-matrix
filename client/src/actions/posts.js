@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
 
 import * as api from '../api/index.js';
@@ -15,6 +16,16 @@ export const getPosts = () => async (dispatch) => {
 export const createPost = (post) => async (dispatch) => {
   try {
     const { data } = await api.createPost(post);
+
+    dispatch({ type: CREATE, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const createFootnotes = (footnote) => async (dispatch) => {
+  try {
+    const { data } = await api.createFootnotes(footnote);
 
     dispatch({ type: CREATE, payload: data });
   } catch (error) {
@@ -83,3 +94,12 @@ export const updateMatrix = (id, matrix) => async (dispatch) => {
   }
 };
 
+export const updateFootnotes = (id, footnotes) => async (dispatch) => {
+  try {
+    const { data } = await api.updateFootnotes(id, footnotes);
+
+    dispatch({ type: UPDATE, payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { FormGroup, FormGroupLabel, FormControlLabel, Checkbox, Typography } from '@material-ui/core';
 import questionData from './QuestionData';

@@ -1,17 +1,18 @@
+/* eslint-disable */
 import React from 'react';
 import {
   Switch,
-  Route
-} from "react-router-dom";
+  Route,
+} from 'react-router-dom';
 
 import FormPostContainer from './FormPostContainer';
-import Home from './components/Home'
+import Home from './components/Home';
 
-import AreasOfIdentity from './components/AreasOfIdentity'
-import FAQ from './components/FAQ'
-import Uses from './components/Uses'
-import References from './components/References'
-import Contact from './components/Contact'
+import AreasOfIdentity from './components/AreasOfIdentity';
+import FAQ from './components/FAQ';
+import Uses from './components/Uses';
+import References from './components/References';
+import Contact from './components/Contact';
 
 import Form from './components/Form/Form';
 //q1
@@ -84,7 +85,7 @@ import SexAtBirth from './components/Questions/SexAtBirth';
 import UniqueHistory from './components/Questions/UniqueHistory';
 
 import Results from './components/Results/Results';
-
+/*
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 if(process.env.NODE_ENV === 'production') {
@@ -98,7 +99,7 @@ if(process.env.NODE_ENV === 'production') {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/public/index.html'));
 })
-
+*/
 const App = () => {
   return (
     <Switch>

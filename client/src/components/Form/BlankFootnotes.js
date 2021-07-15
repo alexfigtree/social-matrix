@@ -1,3 +1,4 @@
+/* eslint-disable */
 export let blankFootnotes = [
   [
     {question:"Educ.","value":''}, //q1

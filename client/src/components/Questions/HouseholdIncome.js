@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';

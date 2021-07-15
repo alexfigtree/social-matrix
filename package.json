@@ -1,21 +1,32 @@
 {
   "name": "social-matrix",
-  "description": "a really cool app",
+  "description": "social matrix project",
   "version": "1.0.1",
   "engines": {
     "node": "12.x"
   },
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-        "start": "node server/index.js",
-        "eject": "react-scripts eject",
-    	"client-install": "npm install --prefix client",
-    	"build": "cd client && npm build",
-    	"test": "echo \"Error: no test specified\" && exit 1",
-    	"client": "cd client && npm start",
-    	"server-prod": "node src/App.js",
-    	"server": "nodemon server/index.js",
-    	"dev": "concurrently \"nodemon server/server.js\" \"cd client && npm run start\"",
-    	"start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
-        "heroku-postbuild": "cd client && npm install && npm run build"
-    }
+    "start": "node index.js",
+    "eject": "react-scripts eject",
+    "client-install": "npm install --prefix client",
+    "build": "cd client && npm build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server-prod": "node src/App.js",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\"",
+    "start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.29",
+    "nodemon": "^2.0.7",
+    "react-d3-radar": "^1.0.0-rc6"
+  }
 }
