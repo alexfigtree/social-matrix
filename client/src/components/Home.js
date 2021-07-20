@@ -550,27 +550,27 @@ const Home = () => {
 
             <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Social Matrix Project</Typography>
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 Everyone has some areas of identity or social membership that provide them with privilege or
                 power, but they also have other aspects of identity in which they have little to no privilege or
                 power. Those are their areas of marginalization.
             </Typography>
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 We all have areas of privilege we don’t even notice. Those areas of privilege can lead to blind
                 spots and those blind spots can lead us to act in unintentionally biased or discriminatory ways
                 that can be hurtful to others. At the same time, we may be vulnerable because of our
                 marginalized areas – the areas where we have least power or privilege.
             </Typography>
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 The way these areas of privilege and marginalization relate to each other involves 
                 INTERSECTIONALITY, the way in which different aspects of identity combine to create an 
                 overall experience of relative privilege or relative marginalization.
             </Typography>
 
             <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                The Social Matrix Diagram includes many different <Link to="/identity" style={{ fontSize: '22px' }}>Areas of Identity</Link>, like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
+                The Social Matrix Diagram includes many different <Link to="/identity" style={{ fontSize: '20px' }}>Areas of Identity</Link>, like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
                 identity falls along a line (or axis) going from the most highly privileged “1” at the center 
                  the diagram to the most marginalized “7” at the outermost circle. 
             </Typography>
@@ -1038,7 +1038,7 @@ const Home = () => {
             </Typography>
 
             <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                Our areas of privilege can lead to blind spots, which can lead us to act in 
+                Our areas of privilege can lead to <Link to="/references" style={{ fontSize: '20px' }}>blind spots</Link>, which can lead us to act in 
                 unintentionally biased or discriminatory ways that can be hurtful to others.  
                 t the same time, we may be vulnerable because of our marginalized areas – the 
                 areas where we have least power or privilege and where we might feel shame or 

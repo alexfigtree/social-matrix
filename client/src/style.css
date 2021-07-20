@@ -1,8 +1,13 @@
 body {
   text-align:center;
   font-family: Arial, Serif;
+  background-color: linen;
 	overflow: hidden;
 	overflow-y: auto;
+}
+
+header {
+  background-color: linen;
 }
 
 #chart, #chart2, #chart3, #chart4, #chart5, #chart6, #chart7, #chart8 {

@@ -16,7 +16,7 @@ function NavBar(props) {
           style={{ 
               flexDirection: 'row', 
               float: 'right',
-              backgroundColor: 'white',
+              backgroundColor: 'linen',
               border: 'none',
               color: 'black',
               display: 'block',
