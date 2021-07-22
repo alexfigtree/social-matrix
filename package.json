@@ -11,7 +11,7 @@
     "start": "node index.js",
     "eject": "react-scripts eject",
     "client-install": "npm install --prefix client",
-    "build": "cd client && npm build",
+    "build": "cd client && npm run-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "server-prod": "node src/App.js",
