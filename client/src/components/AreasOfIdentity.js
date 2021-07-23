@@ -814,59 +814,98 @@ const AreasOfIdentity = () => {
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Marital Status</p>
                 <p>
+                In most societies and communities,  being married is privileged over being single, 
+                divorced, or widowed, especially for people who are parenting children, except among 
+                those generally considered too young to marry. Some communities and some social welfare 
+                states may be somewhat indifferent to marital status, however. The age at which one is 
+                considered marriageable varies across communities and societies, with more religiously 
+                conservative regions often accepting earlier marriage, in some cases even before puberty, 
+                especially for girls. The same societies and communities are more likely than secular ones 
+                to marginalize or even prohibit divorce. In some countries, marriage is a religious 
+                contract controlled by religious leaders, but in most countries it is a civil contract 
+                controlled by the state. Until recently, marriage was only legal between one man and one 
+                woman in most countries, although some societies allow men to marry more than one woman 
+                at a time and some indigenous cultures have allowed same-sex marriage and marriage between 
+                “two-spirit” or gender queer people for centuries. Otherwise, same-sex couples have only 
+                been allowed to have civil or religious marriages in recent years, and only in more 
+                politically and religiously liberal countries or states. While being widowed is the 
+                statistical norm for people in their 70s and older, it is still marginalizing in 
+                societies that privilege marriage and it is especially so among young people. 
                 </p> 
             </Typography>
 
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sexual Orientation</p>
                 <p>
+                  Sexual orientation involves one’s sexual and romantic attraction to people of the same sex (in which case one may identify as gay or lesbian or queer), opposite sex (heterosexual or straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). Some people are attracted to neither sex and are called asexual, while someone who falls between asexual and sexual is called graysexual or demisexual. Sexual orientation is distinct from gender identity, gender expression, or the sex assigned at birth. For instance, a nonbinary or genderqueer person (who identifies with both genders or neither) may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
+                </p> 
+
+                <p>
+                  A person’s relative privilege or marginalization on the basis of sexual orientation varies considerably with the politics and prevailing religion of their community or region. In some countries, especially (but not only) those led by theocracies, any sexual behavior other than heterosexual behavior within marriage is illegal; in some extreme cases, homosexuality is legally punishable by death. In contrast, some indigenous cultures, including many Native American nations, embrace gays and lesbians (as well as genderqueer people) as two-spirit people with special roles in society. The degree to which any sexual orientation other than heterosexual is marginalized is also influenced by the person’s race, ethnicity or tribe, class privilege, and family religion and chosen religion, in that those aspects of identity can influence how the person’s immediate reference group perceives their sexual orientation. 
+                </p> 
+
+                <p>
+                  The HIV/AIDS epidemic, which disproportionately hit gay men (as well as IV drug users) and their sex partners, from the late 1970s until the 1990s was highly marginalizing specifically because of its association to gay men at time when homophobia was the norm. Even today, in a time when life-saving treatment is available for what is now usually a chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, again because of its association with Black and bisexual gay men and IV drug users, and all their partners, of either gender, in the US. it is also prevalent in several African and Caribbean nations that have far fewer resources for treating it than in the US and Europe. 
+                </p> 
+
+                <p>
+                  Having a sexual orientation that is marginalized in one’s community can limit one’s access to resources, influence and  housing, as well as to job, educational, volunteering opportunities, and, until very recently in the U.S, military service. For that reason, some people even today “pass” as straight. Even such fundamental human rights as the right to marriage, and to adopt children or even keep custody of birth children are denied in many countries, as they were in most states in the U.S until a Supreme Court ruling protecting those rights in 2015. In religiously or politically conservative families, people who identify as anything other than straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered by their families and others in their personal lives. For this reason, many people who were other than straight hid their sexuality, or stayed in the closet, in earlier generations. The need to do that continues in many politically and religiously conservative countries and regions today. Some youth are physically abused by parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth are more likely than straight youth to run away from or be kicked out of their homes and, without financial support from family, to become homeless and at risk of physical and sexual exploitation as a result. 
+
                 </p> 
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender ID</p>
                 <p>
+                  Gender identity involves one’s identification as a woman, man, or as both or neither. Gender is a social construct involving what gender(s) people identify with and how they are perceived, unlike sex, which is assigned at birth based on genitals. Cisgender people identify with the gender that is consistent with the sex they were assigned at birth and adhere to a gender binary. However, increasing numbers of people, especially in younger generations, perceive themselves on a non-binary gender continuum and call themselves non-binary, genderqueer or queer, gender non-conforming, gender fluid, or gender-expansive. These terms all mean that they do not experience themselves as being entirely male or entirely female, but rather a blend of the two, although in the case of gender fluidity, they may experience themselves as oscillating between being male and female.
+                </p>
+
+                <p>
+                  In addition, some people identify as transgender, meaning they experience themselves as having the gender identity opposite to the one assigned at birth. People who identify as female but were assigned a male sex at birth are transwomen and those who who identify as  male but were assigned a female sex at birth are transmen regardless of whether they have used hormonal  interventions. Transgender people usually, but not always, utilize hormonal treatment in order to live congruently with their gender identity, and some also choose to undergo gender confirmation surgery, also known as gender affirming surgery. These surgeries include a range of procedures: breast reduction or augmentation, removal of facial and body hair, facial reconstruction to attain a jawline consistent with their chosen gender identity, and finally, removal of original reproductive organs and replacement with those of their chosen gender identity). (Note to cisgender people: it is hurtful and at least microaggressive to ask about these medical procedures without express permission from the transgender person, just as one is expected not to ask about the sex organs of anyone else.)
+                </p>
+
+                <p>
+                  These medical treatments can be hard to come by for economic and societal reasons, including clinician bias and prejudicial insurance policies, such as requiring a psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s assigned gender contradicting one’s experienced gender). In addition, many prisons and jails deny such treatments, as the US. Military did until 2021. Finally, transgender people, particularly transgender women of Color, are extremely vulnerable to violent assault and murder because of a combination of transphobia, homophobia, and racism. They are also vulnerable to suicidality because of the extreme stigma they face and the lack of emotional support and affirmation from family and the cisgender community.
+                </p>
+
+                <p>
+                  Trans people can identify as heterosexual, gay or lesbian, or more broadly, as genderqueer. they may be attracted to people of a different gender, or multiple genders, after transitioning than they were before, or their attractions may remain unchanged. Thus, a transman who previously was attracted to women while living as a lesbian may still keep those attractions, and be perceived as heterosexual. Or, he might find his attractions shifting to men, or to both genders. His gender expression, which had originally been gender-nonconforming, may remain gender-non-conforming, but it may become traditionally masculine. 
+
                 </p> 
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender Expression</p>
                 <p>
+                  Gender expression refers not to internal experience of gender identity or sexual orientation, but rather how one expresses one’s gender identity through appearance, including one’s choice of clothes, hair, body art, and jewelry, as well as behavior and the pitch of one’s voice. In recent years, younger people in particular have distinguished gender expression from gender identity and sexual orientation.  However, any appearance that does not conform to sex assigned at birth can be marginalizing, especially by older generations who are unfamiliar or uncomfortable with younger people’s broader and more playful expressions of masculinity and femininity, and in religiously and politically conservative communities and regions. LGBTQ+ people and straight people alike who present with gender nonconforming expressions are at risk of violence from homophobic and transphobic family and community members.  
                 </p> 
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sex Assigned at Birth</p>
                 <p>
-                </p> 
+                  Most people are born with either male reproductive organs and are assigned male sex at birth, or they are born with female reproductive organs and are assigned female sex and are therefore perceived by family and others as boys or girls, respectively. However, some children experience and declare themselves as identifying with the opposite sex to the one they were assigned and therefore want to express their gender accordingly. In many societies, such declarations and gender expressions are met with resistance, and sometimes with abuse at home and at school because of transphobia.  Others identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
+                </p>
+
+                <p>
+                  In many cases, the person’s recognition of the incongruity between their experienced gender and assigned sex emerges later, in adolescence or even well into adulthood. Some older adults who ultimately come out as transgender had trouble making sense of their experience in their youth, because people of their generation or in their part of the world may not have had any language to express that experience and/or are unaware that anyone else shares their experience. They may therefore identify as gay or lesbian until they can access the concept of transgender identity. Being able to “pass” as one chosen sex provides privilege (for instance, transmen, once they have been on male hormones long enough, appear male and carry privilege, while transwomen, even after years on female hormones and even after breast reduction surgery, may still have visibly male features and are at risk of violence). 
+                </p>
+
+                <p>
+                  In about one case in 2,000, babies are born with the sexual organs of both sexes; they are intersex people (historically called hermaphrodites), a group so marginalized that their existence is barely known. Historically, doctors would remove all or most of one set of sexual organs and declare the baby to have the sex congruent with the remaining sexual organs. These babies, on growing up, however, often experienced what is officially diagnosed as gender dysphoria (but which would be better described as understandable distress over the incongruity between their experienced and assigned sex), even when they did not know their medical history.  In recent years, doctors have been less eager to “correct” intersex conditions, so as to allow intersex people time to mature and make their own decisions about whether to remain intersex, to have gender confirmation surgery congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
+                </p>
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Unique History</p>
                 <p>
+                  Unique history involves any events or situations in the life of an individual or family that does not fall under any of the other areas of identity in the Social Matrix Diagram.  Examples might include having suffered severe physical, sexual, or emotional abuse at the hands of family members or others, having lived in many countries or regions, having been victimized by human trafficking, or living through an individual, family, or collective disaster. Unique history can also include being famous (or infamous) or in the family of someone famous (or infamous), or in a leadership position in a tribe or clan or in politics.  It might also involve something like being a twin or triplet, which is a unique relationship and which has special status in some ethnic and tribal groups. In addition, having an unusual talent, having a sibling who is or was very ill, or having been bereaved of a close family member in childhood. Unique history is included in the Social Matrix Diagram in order to ensure that any circumstances that are not addressed elsewhere in the diagram, but that are defining of experience and identity in some important way, can be included. In filling out the Social Matrix survey, this area of identity gives you the opportunity to see yourself (and, if you share your diagram with others, to be seen) more fully.
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
-                <p>
-                </p> 
-            </Typography>
-
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
-                <p>
-                </p> 
-            </Typography>
-
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
-                <p>
-                </p> 
-            </Typography>
 
         </div>
 

@@ -548,7 +548,7 @@ const Home = () => {
 
             <NavBar />
 
-            <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Social Matrix Project</Typography>
+            <Typography variant="h3" style={{ marginBottom: '20px', paddingTop: '60px', marginLeft: '10%', marginRight: '10%' }} align="center">THE SOCIAL MATRIX DIAGRAM: A TOOL FOR VISUALIZING INTERSECTIONAL IDENTITY</Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 Everyone has some areas of identity or social membership that provide them with privilege or
@@ -569,14 +569,14 @@ const Home = () => {
                 overall experience of relative privilege or relative marginalization.
             </Typography>
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 The Social Matrix Diagram includes many different <Link to="/identity" style={{ fontSize: '20px' }}>Areas of Identity</Link>, like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
                 identity falls along a line (or axis) going from the most highly privileged “1” at the center 
                  the diagram to the most marginalized “7” at the outermost circle. 
             </Typography>
 
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 The more total area is filled in with color on the diagram, the more marginalized you are, 
                 overall. The less total area that is colored in, the more privileged you are. However, 
                 even one or two areas of great marginalization can have an impact on the total experience 
@@ -588,7 +588,7 @@ const Home = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 You can see several examples of Social Matrix Diagrams here:
             </Typography>
 
@@ -1031,13 +1031,13 @@ const Home = () => {
      
 
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', marginTop: '40px', paddingBottom: '20px', paddingTop: '20px'}}>
                 Everyone has some aspects of identity or social membership that give them privilege or 
                 power, but they also have other aspects of identity in which they have little to no 
                 privilege or power. Those are their areas of marginalization.
             </Typography>
 
-            <Typography variant="h6" align="center" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 Our areas of privilege can lead to <Link to="/references" style={{ fontSize: '20px' }}>blind spots</Link>, which can lead us to act in 
                 unintentionally biased or discriminatory ways that can be hurtful to others.  
                 t the same time, we may be vulnerable because of our marginalized areas – the 

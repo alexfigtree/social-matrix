@@ -485,7 +485,7 @@ const Results = () => {
 
   return (
     <div className="container">
-        <Typography variant="h2" align="center" className={classes.test}>Social Matrix Project - Results</Typography>
+        <Typography variant="h2" align="center" className={classes.test}>Social Matrix Diagram - Results</Typography>
 
         <div>
           <h1>Your generated social matrix:</h1>
