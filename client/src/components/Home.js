@@ -1038,7 +1038,7 @@ const Home = () => {
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                Our areas of privilege can lead to <a href="/references#refIntersect" style={{ fontSize: '20px', textDecoration: 'none' }}>blind spots</a>, which can lead us to act in 
+                Our areas of privilege can lead to <a href="/references#refImpBias" style={{ fontSize: '20px', textDecoration: 'none' }}>blind spots</a>, which can lead us to act in 
                 unintentionally biased or discriminatory ways that can be hurtful to others.  
                 t the same time, we may be vulnerable because of our marginalized areas – the 
                 areas where we have least power or privilege and where we might feel shame or 
