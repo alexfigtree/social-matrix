@@ -31,6 +31,7 @@ function NavBar(props) {
         <Link to="/uses" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Uses</Link>
         <Link to="/intro" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Take Survey</Link>
         <Link to="/references" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>References</Link>
+        <Link to="/ourTeam" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Our Team</Link>
         <Link to="/contact" style={{ fontSize: '22px', marginTop: '30px', padding: '25px', textDecoration: 'none' }}>Contact</Link>
       </AppBar>
     );
