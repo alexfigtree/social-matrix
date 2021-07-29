@@ -36,34 +36,34 @@ const AreasOfIdentity = () => {
                 are also called domains of identity, are: 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography id="education" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '20px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Educational Level</p>
                 <p>This area covers how many years of education you have and what your diplomas 
                   are, if any. How privileged a certain number of years of education would be depends 
                   largely on context. For instance, having a high school diploma only is somewhat 
-                  marginalized in the US, but not in many developing countries with less access to 
-                  higher education. It also varies with your age, since a high school diploma was 
-                  enough to ensure a middle-class life until about 30 years ago. Education is also 
-                  tied to occupation, since many jobs require certain degrees or certifications, and 
-                  to income, as people with higher education make more money than those without. There 
+                  marginalized in the <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>US, but not in many developing countries</a> with less access to 
+                  higher education. It also varies with your <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a> , since a high school diploma was 
+                  enough to ensure a middle-class life <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until about 30 years ago</a>. Education is also 
+                  tied to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, since many jobs require certain degrees or certifications, and 
+                  to <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a>, as people with higher education make more money than those without. There 
                   are also disparities in both the quality of education and the level of education 
-                  achieved on the basis of race, language(s) spoken, cognitive ability, health/ability, 
-                  and community, as well as how much education one’s parents or guardians have.
+                  achieved on the basis of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race</a>, <a href="/identity#language" style={{ fontSize: '20px', textDecoration: 'none' }}>language(s) spoken</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race</a>, <a href="/identity#language" style={{ fontSize: '20px', textDecoration: 'none' }}>cognitive ability</a>, <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health/ability</a>, 
+                  and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community</a>, as well as how much <a href="/identity#guardiansEducation" style={{ fontSize: '20px', textDecoration: 'none' }}>education one’s parents or guardians have.</a>
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="guardiansEducation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Education</p>
-                <p>This area addresses the educational level of your parents or guardians, to give an 
-                  idea of your family’s educational history. Because your parents or guardians grew up in 
-                  an earlier time when education was less widely accessible and perhaps in a different 
-                  country, region, or community, their educational level may be considered differently 
-                  from your own and may carry have a different impact on occupation and therefore on income. 
+                <p>This area addresses the <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> of your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a>, to give an 
+                  idea of your family’s educational history. Because your parents or guardians grew up <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
+                  an earlier time</a> when education was <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>less widely accessible</a> and perhaps in a <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>different 
+                  country, region, or community</a>, their educational level may be considered differently 
+                  from your own and may carry have a different impact on <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> and therefore on <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a>. 
                 </p> 
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Occupation</p>
                 <p>For your occupation, consider both the status of that education in your community 
                   and the country (the degree of respect it does or doesn’t get), the amount of control 
@@ -77,7 +77,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
                 <p>Your parents’ or guardians’ occupation is a window into your family occupational 
                 history. As with educational level, the amount of status or respect their occupation gets  
@@ -87,7 +87,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="householdIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Household Income</p>
                 <p>How privileged or marginalized your household income (your income plus the income 
                   of anyone else in your household, minus your expenses) is depends not only on what 
@@ -142,7 +142,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="childhoodHouseholdIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
                 <p>
                   Childhood household income is the income your family lived on when you were a 
@@ -159,7 +159,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="guardiansChildhoodIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Childhood Household Income</p>
                 <p>
                   Childhood household income is the income your parents or guardians lived on when they were 
@@ -174,7 +174,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="access" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Access</p>
                 <p>
                   This domain involves how much access you have to resources (for instance, to jobs, 
@@ -189,7 +189,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="guardiansAccess" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Access</p>
                 <p>
                   This domain involves how much access your parents or guardians have to resources, 
@@ -198,7 +198,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="race" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Race</p>
                 <p>
                   This domain relates to the race(s) you identify with and the race(s) that other 
@@ -217,7 +217,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="ethnicity" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Ethnicity/Tribe</p>
                 <p>
                     Ethnicity or tribe is distinct from race. For instance, someone who is racially 
@@ -252,7 +252,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="nationOfOrigin" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Nation of Origin/Citizenship  </p>
                 <p>
                     This area of identity includes the country (or countries) where you have 
@@ -280,7 +280,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="language" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Language(s)</p>
                 <p>
                   This area of identity refers to your primary language and any 
@@ -308,7 +308,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="familyReligion" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Family Religion</p>
                 <p>
                   This area of identity refers to the religion of your parents/guardians 
@@ -336,7 +336,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="chosenReligion" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Chosen Religion</p>
                 <p>
                   This area of identity refers to your own religious affiliation and practice, if any, 
@@ -354,7 +354,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="politics" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Politics</p>
                 <p>
                   Political beliefs, political engagement, and party membership can be sources of privilege or marginalization, 
@@ -378,7 +378,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="geoRegion" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Geographical Region</p>
                 <p>
                   The region of the world you live in can affect your privilege or marginalization, 
@@ -408,7 +408,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="impactHistTimes" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Impact of Historical Era</p>
                 <p>
                   Historical events such as wars, persecution, famines, epidemics and pandemics, 
@@ -441,7 +441,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="relationToMilitary" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Relation to Military</p>
                 <p>
                   Being in the military, or having a loved one in the military, can be experienced 
@@ -494,7 +494,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="relationToLegalSystem" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Relation to Legal System</p>
                 <p>
                   A person can get involved in the legal system because of arrest, 
@@ -542,7 +542,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="mentalHealth" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Mental Health/Substance Use</p>
                 <p>
                     Having difficulties with or mental illness a relationship with the mental 
@@ -566,7 +566,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="cognitiveAbility" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Cognitive Ability/Style</p>
                 <p>
                   Most often, higher intelligence and particular cognitive talents 
@@ -596,7 +596,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="health" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Health/Ability</p>
                 <p>
                   Health problems and various kinds of physical disabilities are stigmatized and therefore 
@@ -631,7 +631,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="appearance" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Appearance</p>
                 <p>
                     Appearance can be a source of privilege if one is considered attractive or if 
@@ -656,7 +656,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="age" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Age</p>
                 <p>
                   The privilege or marginalization associated with different ages is very culture-specific. 
@@ -697,7 +697,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="raisedBy" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Raised By</p>
                 <p>
                   In most, but not all, societies, being raised, or having been raised by both birth parents who are in a 
@@ -732,7 +732,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="guardiansMaritalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Marital Status</p>
                 <p>
                   Being raised by parents who are married to each other is a privileged 
@@ -757,7 +757,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="parentalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Parental Status</p>
                 <p>
                   Whether being a parent or guardian is privileged or marginalized depends on 
@@ -813,7 +813,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="maritalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Marital Status</p>
                 <p>
                 In most societies and communities,  being married is privileged over being single, 
@@ -837,7 +837,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="sexOrientation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sexual Orientation</p>
                 <p>
                   Sexual orientation involves one’s sexual and romantic attraction to people of the same sex (in which case one may identify as gay or lesbian or queer), opposite sex (heterosexual or straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). Some people are attracted to neither sex and are called asexual, while someone who falls between asexual and sexual is called graysexual or demisexual. Sexual orientation is distinct from gender identity, gender expression, or the sex assigned at birth. For instance, a nonbinary or genderqueer person (who identifies with both genders or neither) may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
@@ -857,7 +857,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="genderID" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender ID</p>
                 <p>
                   Gender identity involves one’s identification as a woman, man, or as both or neither. Gender is a social construct involving what gender(s) people identify with and how they are perceived, unlike sex, which is assigned at birth based on genitals. Cisgender people identify with the gender that is consistent with the sex they were assigned at birth and adhere to a gender binary. However, increasing numbers of people, especially in younger generations, perceive themselves on a non-binary gender continuum and call themselves non-binary, genderqueer or queer, gender non-conforming, gender fluid, or gender-expansive. These terms all mean that they do not experience themselves as being entirely male or entirely female, but rather a blend of the two, although in the case of gender fluidity, they may experience themselves as oscillating between being male and female.
@@ -877,14 +877,14 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="genderExpression" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender Expression</p>
                 <p>
                   Gender expression refers not to internal experience of gender identity or sexual orientation, but rather how one expresses one’s gender identity through appearance, including one’s choice of clothes, hair, body art, and jewelry, as well as behavior and the pitch of one’s voice. In recent years, younger people in particular have distinguished gender expression from gender identity and sexual orientation.  However, any appearance that does not conform to sex assigned at birth can be marginalizing, especially by older generations who are unfamiliar or uncomfortable with younger people’s broader and more playful expressions of masculinity and femininity, and in religiously and politically conservative communities and regions. LGBTQ+ people and straight people alike who present with gender nonconforming expressions are at risk of violence from homophobic and transphobic family and community members.  
                 </p> 
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="sexAtBirth" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sex Assigned at Birth</p>
                 <p>
                   Most people are born with either male reproductive organs and are assigned male sex at birth, or they are born with female reproductive organs and are assigned female sex and are therefore perceived by family and others as boys or girls, respectively. However, some children experience and declare themselves as identifying with the opposite sex to the one they were assigned and therefore want to express their gender accordingly. In many societies, such declarations and gender expressions are met with resistance, and sometimes with abuse at home and at school because of transphobia.  Others identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
@@ -899,7 +899,7 @@ const AreasOfIdentity = () => {
                 </p>
             </Typography>
 
-            <Typography variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="uniqueHistory" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Unique History</p>
                 <p>
                   Unique history involves any events or situations in the life of an individual or family that does not fall under any of the other areas of identity in the Social Matrix Diagram.  Examples might include having suffered severe physical, sexual, or emotional abuse at the hands of family members or others, having lived in many countries or regions, having been victimized by human trafficking, or living through an individual, family, or collective disaster. Unique history can also include being famous (or infamous) or in the family of someone famous (or infamous), or in a leadership position in a tribe or clan or in politics.  It might also involve something like being a twin or triplet, which is a unique relationship and which has special status in some ethnic and tribal groups. In addition, having an unusual talent, having a sibling who is or was very ill, or having been bereaved of a close family member in childhood. Unique history is included in the Social Matrix Diagram in order to ensure that any circumstances that are not addressed elsewhere in the diagram, but that are defining of experience and identity in some important way, can be included. In filling out the Social Matrix survey, this area of identity gives you the opportunity to see yourself (and, if you share your diagram with others, to be seen) more fully.
