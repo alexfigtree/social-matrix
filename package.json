@@ -17,7 +17,7 @@
     "server-prod": "node src/App.js",
     "server": "nodemon index.js",
     "dev": "concurrently \"nodemon server.js\" \"cd client && npm run start\"",
-    "start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" ",
+    "start:dev": "concurrently --kill-others  \"npm run client\" \"npm run server\" "
   },
   "dependencies": {
     "body-parser": "^1.19.0",
