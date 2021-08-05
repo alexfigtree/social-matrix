@@ -17,19 +17,20 @@ import useStyles from '../styles';
 import styles from '../style.css';
 import NavBar from './NavBar.js';
 
-const Contact = () => {
-
+const OurTeam = () => {
     return (
         <div className="container">
 
             <NavBar />
 
-            <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Contact</Typography>
-     
+            <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Our Team</Typography>
+      
 
+            
+           
         </div>
 
   )
 };
 
-export default Contact;
+export default OurTeam;

@@ -8,10 +8,13 @@ import {
 import FormPostContainer from './FormPostContainer';
 import Home from './components/Home';
 
+import NavBar from './components/NavBar';
+
 import AreasOfIdentity from './components/AreasOfIdentity';
 import FAQ from './components/FAQ';
 import Uses from './components/Uses';
 import References from './components/References';
+import OurTeam from './components/OurTeam';
 import Contact from './components/Contact';
 
 import Form from './components/Form/Form';
@@ -110,6 +113,7 @@ const App = () => {
       <Route path="/faq" component={FAQ} />
       <Route path="/uses" component={Uses} />
       <Route path="/references" component={References} />
+      <Route path="/ourTeam" component={OurTeam} />
       <Route path="/contact" component={Contact} />
 
       <Route path="/form" component={Form} />
