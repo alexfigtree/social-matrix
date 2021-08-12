@@ -65,14 +65,15 @@ const AreasOfIdentity = () => {
 
             <Typography id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Occupation</p>
-                <p>For your occupation, consider both the status of that <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> in your community 
-                  and the country (the degree of respect it does or doesn’t get), the amount of control 
+                <p>For your occupation, consider both the status of that 
+                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> 
+                in your <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community and the country</a> (the degree of respect it does or doesn’t get), the amount of control 
                   you have over your work life and schedule, and the income associated with that occupation. 
                   ome occupations are more secure than others, in that they provide reliable employment and 
                   physical safety, while other occupations may be prone to layoffs and exploitation, or to 
                   physical danger. The relative privilege or marginalization an occupation provides may vary 
                   greatly with historical period (since more work was agricultural or manual in the past) and 
-                  with geographical region. 
+                  with <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
                 </p> 
             </Typography>
 
@@ -81,8 +82,8 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
                 <p>Your parents’ or guardians’ occupation is a window into your family occupational 
                 history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
-                or got) may vary with when they came of occupational age and the country, region, or 
-                community where they did so. 
+                or got) may vary with when they came of occupational age and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}> 
+                  the country, region, or community</a> where they did so. 
                 </p> 
             </Typography>
 
@@ -95,8 +96,9 @@ const AreasOfIdentity = () => {
                 country. For instance, the same salary might allow you to buy a comfortable house in 
                 urban Missouri or rural Arkansas, but only to rent a small apartment in New York City 
                 or San Francisco, cities with dramatic income divides between rich and poor and 
-                inadequate affordable housing. The same income might mean you are rich in the 
-                Dominican Republic or Sri Lanka. It is also useful to think about assets as well 
+                inadequate affordable housing. <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>The same income might mean you are rich in the 
+                Dominican Republic or Sri Lanka.</a> It is also useful to think about assets as well 
                 (savings, retirement and college funds, the value of one’s home, if you own it, help 
                   from family, etc., minus your debts) – do you have enough assets that you can live 
                 comfortably and weather unexpected expenses, or are you living paycheck to paycheck or 
@@ -107,7 +109,8 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  Household income and wealth are strongly affected by race in many countries.  
+                  Household income and wealth are strongly affected by race in many <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>countries.</a>.  
                   or example, in the US, Black, Latinx, and Native American people, as well as 
                   those from some Asian countries, generally make significantly less money than 
                   White people, and have far less wealth.  In addition, prejudicial governmental, 
@@ -134,9 +137,11 @@ const AreasOfIdentity = () => {
                   Finally, household income has a strong relationship with health and 
                   longevity; people with higher household incomes tend to be significantly 
                   healthier and longer-lived than poorer people, because they have better 
-                  access to healthcare and healthy food,  and tend to live in neighborhoods 
+                  access to healthcare and healthy food,  and tend to live in <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> 
                   with more trees (which decrease overheating and pollution), while poorer 
-                  people tend to live in neighborhoods with little greenery and more 
+                  people tend to live in <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> with little greenery and more 
                   unhealthful pollution-creating industries. 
                 </p>
             </Typography>
@@ -151,8 +156,10 @@ const AreasOfIdentity = () => {
                     together), you can answer this for as many households as you lived in. Keep in 
                   mind that a particular income then had more buying power than today if you are 
                   adult now, because of inflation. Also consider when and where you lived, since 
-                  both historical period and geographical location influence the buying power of 
-                  any particular income. In addition, some countries provide guaranteed minimum 
+                  both historical period and <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical location</a>  influence the buying power of 
+                  any particular income. In addition, <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>  provide guaranteed minimum 
                   incomes for families with children, which considerably decreases poverty, as 
                   does universal health care in most countries in the developed world.
                 </p> 
@@ -167,8 +174,8 @@ const AreasOfIdentity = () => {
                   (because their own parents or other guardians didn’t live together), you can answer this 
                   for as many households as they lived in. Keep in mind that a particular income then had more 
                     buying power than today or during your own childhood, because of inflation. Also consider 
-                  when and where your parents or guardians lived, since both historical period and geographical 
-                  ocation (country, region, or even which part of a city or town) influence the buying power of 
+                  when and where your parents or guardians lived, since both historical period and <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical location</a> (country, region, or even which part of a city or town) influence the buying power of 
                   ny particular income. 
                 </p> 
             </Typography>
@@ -181,8 +188,9 @@ const AreasOfIdentity = () => {
                     loans, gifts, or benefits, and such professional help as lawyers, and quality health 
                     care and education), information (for instance, knowing how to search for information 
                     online), and influence (political, professional, or otherwise). This access is especially 
-                    affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, income, race, and language(s) spoken, as well as geographical 
-                    region, which influences how close medical care is, how specialized the services, 
+                    affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, 
+                    income, race, and language(s) spoken, as well as <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close medical care is, how specialized the services, 
                     and even how inclusive local buildings, roads and transportation are to people with 
                     disabilities. 
                 </p> 
@@ -205,7 +213,8 @@ const AreasOfIdentity = () => {
                   people perceive you to have. Race is a socially constructed concept (going back 
                     a little over 500 years) and not a biological one, but it has major social 
                   impact. How privileged or marginalized you experience your racial identity to be 
-                  may vary with where you live, and with other areas of relative privilege or 
+                  may vary with <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>where you live</a>, and with other areas of relative privilege or 
                   marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, occupation, income, and citizenship 
                   status, as well as with your skin color and visible physical features. Historical 
                   era also makes a difference, as older people of color lived through institutionalized 
@@ -236,16 +245,19 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   How privileged or marginalized you experience your ethnicity/tribe to be may depend 
-                  in part on what region of the world and what region of your country you live In. 
+                  in part on what <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>region of the world and what region</a> of your country you live In. 
                   It may also depend on as well whether your ethnic/tribal group is persecuted, facing 
                   legal quotas on immigration into a country (as was the case for Chinese people, Jews, 
                     Southern Europeans and Arabs at different times) or otherwise marginalized in the 
-                  country of residence. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and occupation also can play a role in how 
+                  <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and occupation also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
                   occupations offer some modest protection against discrimination. Race and appearance 
                   also play a role here; for instance, lighter-skinned people who identify as 
                   indigenous/Native American/First Nations people or as Arab may be less marginalized 
-                  in the US or in some postcolonial parts of Africa than those who are darker-skinned.  
+                  in the <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>US or in some postcolonial parts of Africa</a> than those who are darker-skinned.  
                   Historically, and even into the present, some countries have deemed particular ethnic 
                   groups or tribes and not others as “foreign,” and targeted them for discrimination, 
                   persecution, and even ethnic cleansing or genocide. 
@@ -255,7 +267,8 @@ const AreasOfIdentity = () => {
             <Typography id="nationOfOrigin" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Nation of Origin/Citizenship  </p>
                 <p>
-                    This area of identity includes the country (or countries) where you have 
+                    This area of identity includes the <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country (or countries)</a> where you have 
                     citizenship, as well as your family’s nation(s) of origin. It also includes 
                     how long you or your family members/ancestors have been in your country of 
                     residence, and with what citizenship status. In most cases, people whose 
@@ -267,7 +280,8 @@ const AreasOfIdentity = () => {
                     Rico, who have citizenship, often have less citizenship privilege (legal 
                       protection, etc.) than more recent white immigrants and their children. 
                     This is especially true for indigenous people (First Nation peoples or 
-                      Native Americans) living on reservations that lack adequate healthcare, 
+                      Native Americans) <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>living on reservations</a> that lack adequate healthcare, 
                     education, and basic utilities (water, electricity, and internet access). 
                     Some refugees may feel more privileged than those they left behind because 
                     they are out of a danger zone, even if they experience marginalization in 
@@ -286,23 +300,28 @@ const AreasOfIdentity = () => {
                   This area of identity refers to your primary language and any 
                   additional languages you speak. While speaking more than one language 
                   can be an advantage (a source of privilege) in many ways, if you are 
-                  not fully fluent in the language of the country or region where you 
+                  not fully fluent in the language of the <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country or region</a> where you 
                   live, or if you speak that language with an accent that identifies you 
-                  as from another country, or even a different region of the country, you 
+                  as from another <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country, or even a different region of the country,</a> you 
                   may be at a disadvantage (marginalized) as well. You may be at even 
                   greater disadvantage speaking with an accent if you are a Person of 
                   Color, as racism intersects with language discrimination, unless that 
-                  accent marks you as from a wealthy or colonizing nation. Immigrants who 
+                  accent marks you as from a <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. Immigrants who 
                   do not speak the dominant language of their country of residence, or who 
                   speak that language with a heavy accent may be actively discriminated 
                   against in job applications or applications, looking for housing, in 
                   interactions with colleagues or clients, etc. They may also receive 
                   inadequate or even incorrect medical treatment because of language 
-                  barriers. Even an accent identifying you as from a different region 
-                  of the same country can be marginalizing, especially when there is 
-                  political or civil conflict between regions or ethnic tension.   
+                  barriers. Even an accent identifying you as from a <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>different region of the same country</a> can be marginalizing, especially when there is 
+                  political or civil conflict between <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>regions</a> or ethnic tension.   
                   Finally, the language you use can identify you with the colonizer or 
-                  the colonized in colonial and postcolonial countries, with different 
+                  the colonized in <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>colonial and postcolonial countries</a>, with different 
                   ethnic or tribal groups of that country, or with how much and what 
                   quality <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> you have received. 
                 </p> 
@@ -320,7 +339,8 @@ const AreasOfIdentity = () => {
                   smaller sects.  Similarly, Islam includes Sunni, Shia, and Sufi 
                   sects, etc., and Judaism includes various Orthodox and Ultra-orthodox 
                   (Haredi) sects, along with Conservative, Reform, Reconstructionist, 
-                  and Humanist sects. Most countries have a dominant religion, however 
+                  and Humanist sects. Most <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> have a dominant religion, however 
                   unofficially, and some have an official religion. Affiliation with 
                   the dominant or official religion is therefore a source of privilege, 
                   while affiliation with a different religion can be  source of 
@@ -328,10 +348,12 @@ const AreasOfIdentity = () => {
                   prohibit the practice of any religion at all, while others prohibit 
                   particular religions. In addition, some regions of a particular 
                   country are predominantly one religion, while other regions are 
-                  predominantly a different one. Depending on location, your religious 
+                  predominantly a different one. Depending on <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>location</a>, your religious 
                   affiliation can therefore be either a source of privilege or 
                   marginalization. Finally, not practicing or identifying with a 
-                  religion can also be marginalizing in some countries or regions that 
+                  religion can also be marginalizing in some <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>countries or regions</a> that 
                   privilege those who follow the dominant faith.
                 </p> 
             </Typography>
@@ -340,13 +362,15 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Chosen Religion</p>
                 <p>
                   This area of identity refers to your own religious affiliation and practice, if any, 
-                  which may (or ay not) differ from those of your family of origin. Unlike most of the 
-                  world, in the US, about 40% of American adults identify with a different religion than 
-                  the one in which they were raised. In some countries, converting to a new religion may 
+                  which may (or ay not) differ from those of your family of origin. Unlike <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>most of the world, in the US</a>, about 40% of American adults identify with a different religion than 
+                  the one in which they were raised. In <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
                   be discouraged or in theocracies (national government run by a state religion), 
                   even forbidden, sometimes under penalty of death. This is particularly the case for 
                   converts to a marginalized or prohibited religion or whose racial appearance differs 
-                  from that of most members of their new religion in their geographical region. 
+                  from that of most members of their new religion in their <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
                   Converts may also be rejected by family of origin and in some cases, not be welcomed 
                   as full members of their new religion. Choosing not to affiliate with any religion 
                   can be also marginalizing within the family and in larger society. (For more on 
@@ -358,7 +382,8 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Politics</p>
                 <p>
                   Political beliefs, political engagement, and party membership can be sources of privilege or marginalization, 
-                  depending on country and region of country. For instance, in the US, being registered 
+                  depending on <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country and region of country</a>. For instance, in the US, being registered 
                   as a Democrat, or as the member of a left-wing party like the Socialists, 
                   would be highly marginalizing in parts of the Southern or Midwestern U.S., 
                   but more privileged (or at least not marginalized) in parts of the Northeast 
@@ -369,7 +394,8 @@ const AreasOfIdentity = () => {
                   proscribed starting in 1917 and explicitly illegal from 1954 until the late 
                   1960s. Being a dissident or the member of a party that opposes the ruling 
                   party is illegal and risks imprisonment, torture, or death in some 
-                  dictatorships and authoritarian regimes around the world and in some cases 
+                  dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
                   is therefore a reason for seeking asylum in other countries.  Even being the 
                   child of a parent who participated in a banned political party can mean not 
                   getting jobs, housing, or benefits. In addition, the prevailing politics of a 
@@ -420,11 +446,13 @@ const AreasOfIdentity = () => {
                   of major technological change or living through these events as an adult can shape 
                   how you view your world and live in it. It can even affect how your children and 
                   grandchildren view and live in their world. Similarly, surviving a severe natural 
-                  or human-made disaster that affected many people in your community or region can 
+                  or human-made disaster that affected many people in your <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a> can 
                   affect the rest of your life, and even your children’s and grandchildren’s lives. 
                   In different ways, living through historical periods of repression like Jim Crow 
-                  in the US, Apartheid in South Africa, or the aftermath of military coups in Chile, 
-                  Libya, Myanmar, and other countries can affect the rest of your life. In contrast, 
+                  in the US, Apartheid in South Africa, or the aftermath of military coups in <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>Chile, 
+                  Libya, Myanmar, and other countries</a> can affect the rest of your life. In contrast, 
                   living through a period of affluence, peace, universal education, and human rights 
                   also affects your lifetime. Finally, living through social and political movements 
                   can dramatically change the quality of many people’s lives and the privilege or 
@@ -459,7 +487,8 @@ const AreasOfIdentity = () => {
                   hold and how respected did they feel in that position? 
                 </p> 
                 <p>
-                  In some countries, military service is mandatory for men (and for women, 
+                  In some <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a>, military service is mandatory for men (and for women, 
                   in a few). In that case, is it marginalizing or a privilege not to have 
                   served?  In countries with paramilitary or guerrilla fighters, people 
                   are often forced into service, even as children, which can be highly 
@@ -468,7 +497,8 @@ const AreasOfIdentity = () => {
                   (and some boys) forced into such groups are also forced to serve as 
                   sex slaves and are ostracized if they are able to get back home, 
                   especially if they had children by their rapists. In countries 
-                  like the U.S., which has not had a military draft since the 
+                  like <a href="/identity#geoRegion" 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>, which has not had a military draft since the 
                   Vietnam War, do you feel privileged by your (or your loved one’s) 
                   military service or marginalized by it? Do you feel privileged or 
                   marginalized as a civilian without a military record? 
@@ -589,7 +619,7 @@ const AreasOfIdentity = () => {
                   abused in those settings. Different societies tend to prioritize different kinds 
                   of cognitive ability than others, so which cognitive skills are occupationally 
                   and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationally</a> privileged depends partly on the social context of one’s 
-                  geographical region. In addition, children of color are more likely to be 
+                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. In addition, children of color are more likely to be 
                   incorrectly diagnosed with learning disabilities than white children, or 
                   have their learning disabilities misunderstood as lack of intelligence 
                   because of implicit bias. In addition, children with learning disabilities 
@@ -618,13 +648,12 @@ const AreasOfIdentity = () => {
                   provide those protections.
                 </p> 
                 <p>
-                  The problems created by illness and disability are worsened in impoverished communities, 
-                  regions, and countries with limited access to healthcare, education, healthy food, 
-                  transportation and sustainable work; the same communities are also most often the ones 
-                  that are saddled with toxic waste and pollution. Highly marginalized diseases include 
+                  The problems created by illness and disability are worsened in impoverished <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities, regions, and countries</a> with limited access to healthcare, education, healthy food, 
+                  transportation and sustainable work; the same <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities are also most often the ones 
+                  that are saddled with toxic waste and pollution</a>. Highly marginalized diseases include 
                   HIV/AIDS (because of its association with gay men and IV-drug users), hepatitis (again, 
                     because of the association with drug users), and lung diseases (which are often blamed 
-                    on smoking rather than environmental issues). In addition, clinician bias, 
+                    on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, clinician bias, 
                     institutional racism, and language barriers make the problems of access and inclusion 
                     all the greater for people of color and immigrants.  At the same time, lack of 
                     information and clinician bias, including homophobia, transphobia, and racism, limit 
@@ -642,10 +671,10 @@ const AreasOfIdentity = () => {
                     one’s phenotype or dress is consistent with the dominant racial, ethnic/tribal,  
                     religious, or economic group. It can be marginalizing if not, especially in the 
                     case of disfigurement or visible disability. In many societies, being tall is 
-                    privileging, as is looking lean and physically fit, and, in most western societies, 
+                    privileging, as is looking lean and physically fit, and, in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, 
                     youthful. In most western societies, being either obese or overly thin is marginalizing, 
                     although an overweight or even obese appearance is privileged as a mark of wealth in 
-                    some cultures. Some societies, and more affluent (or sometimes even economically 
+                    some cultures. Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
                     people actively transform their appearance through expensive and time-consuming 
                     non-invasive cosmetic procedures, cosmetic surgeries, some of which are dangerous 
@@ -664,7 +693,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Age</p>
                 <p>
                   The privilege or marginalization associated with different ages is very specific to 
-                  particular ethnic or tribal groups and to particular regions.  
+                  particular ethnic or tribal groups <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>and to particular regions. </a>
                   For instance, in many Asian, African, and indigenous societies, the older you are, 
                   the more respect and status you receive from others. Elders in those cultures tend to be 
                   seen as sources of wisdom to be respected and obeyed as a result, although that is 
@@ -680,12 +709,11 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   Adult attitudes toward childhood and adolescence vary across different cultures 
-                  and across wealthy, middle-income and wealthy countries, although minors are 
-                  generally are more dependent and have fewer rights than adults. In poorer countries 
-                  and communities, even families’ economic necessity may force even very young 
+                  and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
+                  generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even families’ economic necessity may force even very young 
                   children to abandon – or never have the chance <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
                   demanding and underpaid work or, for girls, marriage, even before puberty. 
-                  In contrast, youth in wealthy nations, especially those in more class-privileged 
+                  In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
                   higher education</a> as well, which offers youth and the adults they become both 
                   economic and occupational protection.
@@ -696,8 +724,8 @@ const AreasOfIdentity = () => {
                   rights, sexual orientation, gender identity, gender expression, and immigration policy, 
                   and have different levels of skill and access to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among racial and 
-                  economic groups,  with shorter life spans for poorer people worldwide and for 
-                  Black and Native American and US-born Latinx people in the U.S.), how people can 
+                  economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
+                  Black and Native American and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
                   expect to live out their family and work lives have shifted.
                 </p>
             </Typography>
@@ -707,7 +735,7 @@ const AreasOfIdentity = () => {
                 <p>
                   In most, but not all, societies, being raised, or having been raised by both birth parents who are in a 
                   heterosexual first marriage to each other is privileging, although that no longer 
-                  describes the majority of households with children in most western societies. In recent 
+                  describes the majority of households with children in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>western societies</a>. In recent 
                   years, many western countries have legalized same-sex marriage and have recognized the 
                   gay and lesbian partners of birth parents as adoptive and stepparents. Those family 
                   constellations are still somewhat to very marginalized, especially in some religious 
@@ -718,13 +746,12 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   However, single parents face little to no marginalization in some European countries 
-                  that provide universal parental leave and subsidized childcare, and in some U.S. 
-                  communities where single parent families are common. Being raised by adoptive parents 
+                  that provide universal parental leave and subsidized childcare, and in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>some U.S. communities</a> where single parent families are common. Being raised by adoptive parents 
                   (through formal or informal adoption) is still somewhat marginalizing (adoptive family 
                   members are often asked about their “real” parents or children, as if adoption did not 
-                  create real families) in some societies but highly stigmatized in others. Being raised 
+                  create real families) in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>some societies</a> but highly stigmatized in others. Being raised 
                   by a stepparent (or series of stepparents) can be marginalizing as well, although less 
-                  so as divorce and remarriage has become the statistical norm in many communities. 
+                  so as divorce and remarriage has become the statistical norm in many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. 
                   Being raised by foster parents, even when they are birth relatives, is highly 
                   marginalizing. In many countries, therefore, children who do not come from two-parent 
                   families are raised in orphanages (and infertile or single adults go involuntarily 
@@ -742,16 +769,16 @@ const AreasOfIdentity = () => {
                 <p>
                   Being raised by parents who are married to each other is a privileged 
                   position. Although the stigma attached to families headed by single 
-                  parents has greatly diminished in many countries in the world in 
+                  parents has greatly diminished in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>many countries in the world</a> in 
                   recent decades and has largely disappeared in some European countries, 
-                  it continues in countries and communities that are more religiously 
+                  it continues in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a> that are more religiously 
                   and culturally conservative. Even in communities that are fully 
                   accepting single parent families, however, household income is 
                   generally much lower in those families, especially the majority 
                   that are headed by women, than in families headed by single men or 
                   heterosexual or gay male couples because of income disparities 
                   between the genders. That income disparity is all the greater in 
-                  poor communities and communities of color, although some countries 
+                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and communities of color, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
                   provide enough universal financial support for families, including 
                   childcare and subsidies for children, that that disparity is blunted. 
                   In many societies, especially culturally and religiously conservative 
@@ -768,15 +795,14 @@ const AreasOfIdentity = () => {
                   Whether being a parent or guardian is privileged or marginalized depends on 
                   one’s age, marital status, sexual orientation,  and whether one (or one’s child) 
                   is cisgender, transgender, or genderqueer. Parental status is also affected by 
-                  household income and geographical region, since some countries’ governments offer 
+                  household income and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
                   paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
-                  and in some cases, higher education,</a> while others do not. In many communities or 
-                  regions, becoming a parent or guardian before one’s 20s is marginalized, while in 
+                  and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian before one’s 20s is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
                   is marginalized and a source of pity or moral judgment, even when that is a 
                   thought-out choice and not the unwelcome result of infertility or being single. 
                   Becoming a parent without being in a heterosexual marriage is marginalized in 
-                  many or most communities and regions world-wide, especially those with a 
+                  many or most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions world-wide</a>, especially those with a 
                   dominant religion that is socially conservative.
                 </p> 
 
@@ -809,9 +835,9 @@ const AreasOfIdentity = () => {
                     being a parent who is poor is marginalizing. Being a gay, lesbian, 
                     or a transgender, or genderqueer parent, or one with problems of 
                     chronic illness or disability or of mental illness or substance abuse 
-                    is marginalizing in most communities. Finally, having aborted a 
+                    is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
                     pregnancy is often marginalized and is illegal in religiously and 
-                    politically conservative regions and countries, while miscarrying 
+                    politically conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while miscarrying 
                     or having a stillbirth are grievous losses that go widely 
                     unrecognized by others. 
 
@@ -821,11 +847,11 @@ const AreasOfIdentity = () => {
             <Typography id="maritalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Marital Status</p>
                 <p>
-                In most societies and communities,  being married is privileged over being single, 
+                In most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies and communities</a>,  being married is privileged over being single, 
                 divorced, or widowed, especially for people who are parenting children, except among 
                 those generally considered too young to marry. Some communities and some social welfare 
                 states may be somewhat indifferent to marital status, however. The age at which one is 
-                considered marriageable varies across communities and societies, with more religiously 
+                considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more religiously 
                 conservative regions often accepting earlier marriage, in some cases even before puberty, 
                 especially for girls. The same societies and communities are more likely than secular ones 
                 to marginalize or even prohibit divorce. In some countries, marriage is a religious 
@@ -836,7 +862,7 @@ const AreasOfIdentity = () => {
                 both gay and genderqueer (both of whom those cultures call “two-spirit” people) to 
                 each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
-                politically and religiously liberal countries or states. While being widowed is the 
+                politically and religiously liberal <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or states</a>. While being widowed is the 
                 statistical norm for people in their 70s and older, it is still marginalizing in 
                 societies that privilege marriage and it is especially so among young people. 
                 </p> 
@@ -858,8 +884,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   A person’s relative privilege or marginalization on the basis of sexual orientation 
-                  varies considerably with the politics and prevailing religion of their community or 
-                  region. In some countries, especially (but not only) those led by theocracies, any 
+                  varies considerably with the politics and prevailing religion of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
                   sexual behavior other than heterosexual behavior within marriage is illegal; in some 
                   extreme cases, homosexuality is legally punishable by death. In contrast, some 
                   indigenous cultures, including many Native American nations, embrace gays and 
@@ -880,13 +905,13 @@ const AreasOfIdentity = () => {
                   Even today, in a time when life-saving treatment is available for what is now usually a 
                   chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
                   again because of its association with Black and bisexual gay men and IV drug users, 
-                  and all their partners, of either gender, in the US. it is also prevalent in several 
-                  African and Caribbean nations that have far fewer resources for treating it than in 
+                  and all their partners, of either gender, <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>in the US. it is also prevalent in several 
+                  African and Caribbean nations</a> that have far fewer resources for treating it than in 
                   the US and Europe. 
                 </p> 
 
                 <p>
-                  Having a sexual orientation that is marginalized in one’s community can limit 
+                  Having a sexual orientation that is marginalized in one’s <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community</a> can limit 
                   one’s access to resources, influence and  housing, as well as to jobs, 
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   educational</a> (and therefore, financial), and
@@ -900,7 +925,7 @@ const AreasOfIdentity = () => {
                   by their families and others in their personal lives. For this reason, many people 
                   who were other than straight hid their sexuality, or stayed in the closet, in earlier 
                   generations. The need to do that continues in many politically and religiously 
-                  conservative countries and regions today. Some youth are physically abused by 
+                  conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
                   are more likely than straight youth to run away from or be kicked out of their 
                   homes and, without financial support from family, to become homeless and at 
@@ -980,9 +1005,9 @@ const AreasOfIdentity = () => {
                   any appearance that does not conform to sex assigned at birth can be marginalizing, 
                   especially by older generations who are unfamiliar or uncomfortable with younger 
                   people’s broader and more playful expressions of masculinity and femininity, and in 
-                  religiously and politically conservative communities and regions. LGBTQ+ people and 
+                  religiously and politically conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
                   straight people alike who present with gender nonconforming expressions are at risk 
-                  of violence from homophobic and transphobic family and community members.  
+                  of violence from homophobic and transphobic family and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
                 </p> 
             </Typography>
 
@@ -1003,8 +1028,7 @@ const AreasOfIdentity = () => {
                   In many cases, the person’s recognition of the incongruity between their experienced 
                   gender and assigned sex emerges later, in adolescence or even well into adulthood. 
                   Some older adults who ultimately come out as transgender had trouble making sense of 
-                  their experience in their youth, because people of their generation or in their part 
-                  of the world may not have had any language to express that experience and/or are 
+                  their experience in their youth, because people of their generation or in their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>part of the world</a> may not have had any language to express that experience and/or are 
                   unaware that anyone else shares their experience. With the evolution of language, 
                   individuals in older generations may use an overarching term of “gay” to mean lesbian, 
                   bisexual, or queer. They may also identify as gay or lesbian before identifying and 
