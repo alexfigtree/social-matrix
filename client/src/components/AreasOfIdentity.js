@@ -42,7 +42,7 @@ const AreasOfIdentity = () => {
                   are, if any. How privileged a certain number of years of education would be depends 
                   largely on context. For instance, having a high school diploma only is somewhat 
                   marginalized in the <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>US, but not in many developing countries</a> with less access to 
-                  higher education. It also varies with your <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a> , since a high school diploma was 
+                  higher education. It also varies with your <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, since a high school diploma was 
                   enough to ensure a middle-class life <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until about 30 years ago</a>. Education is also 
                   tied to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, since many jobs require certain degrees or certifications, and 
                   to <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a>, as people with higher education make more money than those without. There 
@@ -136,7 +136,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Finally, household income has a strong relationship with health and 
                   longevity; people with higher household incomes tend to be significantly 
-                  healthier and longer-lived than poorer people, because they have better 
+                  healthier and <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>longer-lived</a> than poorer people, because they have better 
                   access to healthcare and healthy food,  and tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> 
                   with more trees (which decrease overheating and pollution), while poorer 
@@ -464,7 +464,7 @@ const AreasOfIdentity = () => {
                   like the anti-Apartheid movement in South Africa. Other examples of major changes 
                   that differentially affect people’s access to information, education, healthcare, 
                   and even to geographically distant loved ones involve technological changes in 
-                  computing. Because many older people do not have the skills and comfort level 
+                  computing. Because many <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older people</a> do not have the skills and comfort level 
                   needed to use personal computers, tablets, and smartphones that most younger 
                   people do, they may be less able to take advantage of those technological advances.
                 </p> 
@@ -491,7 +491,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a>, military service is mandatory for men (and for women, 
                   in a few). In that case, is it marginalizing or a privilege not to have 
                   served?  In countries with paramilitary or guerrilla fighters, people 
-                  are often forced into service, even as children, which can be highly 
+                  are often forced into service, even as <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a>, which can be highly 
                   traumatizing and marginalizing or a source of social status, 
                   depending on the politics of the home community. Many girls 
                   (and some boys) forced into such groups are also forced to serve as 
@@ -671,8 +671,8 @@ const AreasOfIdentity = () => {
                     one’s phenotype or dress is consistent with the dominant racial, ethnic/tribal,  
                     religious, or economic group. It can be marginalizing if not, especially in the 
                     case of disfigurement or visible disability. In many societies, being tall is 
-                    privileging, as is looking lean and physically fit, and, in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, 
-                    youthful. In most western societies, being either obese or overly thin is marginalizing, 
+                    privileging, as is looking lean and physically fit, and, in most western societies, 
+                    <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
                     although an overweight or even obese appearance is privileged as a mark of wealth in 
                     some cultures. Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
@@ -793,11 +793,11 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Parental Status</p>
                 <p>
                   Whether being a parent or guardian is privileged or marginalized depends on 
-                  one’s age, marital status, sexual orientation,  and whether one (or one’s child) 
+                  one’s <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, marital status, sexual orientation,  and whether one (or one’s child) 
                   is cisgender, transgender, or genderqueer. Parental status is also affected by 
                   household income and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
                   paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
-                  and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian before one’s 20s is marginalized, while in 
+                  and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>before one's 20s</a> is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
                   is marginalized and a source of pity or moral judgment, even when that is a 
                   thought-out choice and not the unwelcome result of infertility or being single. 
@@ -849,10 +849,10 @@ const AreasOfIdentity = () => {
                 <p>
                 In most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies and communities</a>,  being married is privileged over being single, 
                 divorced, or widowed, especially for people who are parenting children, except among 
-                those generally considered too young to marry. Some communities and some social welfare 
+                those generally considered too <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>young</a> to marry. Some communities and some social welfare 
                 states may be somewhat indifferent to marital status, however. The age at which one is 
                 considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more religiously 
-                conservative regions often accepting earlier marriage, in some cases even before puberty, 
+                conservative regions often accepting <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>earlier marriage, in some cases even before puberty,</a> 
                 especially for girls. The same societies and communities are more likely than secular ones 
                 to marginalize or even prohibit divorce. In some countries, marriage is a religious 
                 contract controlled by religious leaders, but in most countries it is a civil contract 
@@ -863,8 +863,8 @@ const AreasOfIdentity = () => {
                 each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
                 politically and religiously liberal <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or states</a>. While being widowed is the 
-                statistical norm for people in their 70s and older, it is still marginalizing in 
-                societies that privilege marriage and it is especially so among young people. 
+                statistical norm for <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>people in their 70s</a> and older, it is still marginalizing in 
+                societies that privilege marriage and it is especially so among <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>young people</a>. 
                 </p> 
             </Typography>
 
@@ -923,8 +923,7 @@ const AreasOfIdentity = () => {
                   or politically conservative families, people who identify as anything other than 
                   straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered 
                   by their families and others in their personal lives. For this reason, many people 
-                  who were other than straight hid their sexuality, or stayed in the closet, in earlier 
-                  generations. The need to do that continues in many politically and religiously 
+                  who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many politically and religiously 
                   conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
                   are more likely than straight youth to run away from or be kicked out of their 
@@ -942,7 +941,7 @@ const AreasOfIdentity = () => {
                   they are perceived, unlike sex, which is assigned at birth based on genitals. 
                   Cisgender people identify with the gender that is consistent with the sex they 
                   were assigned at birth and adhere to a gender binary. However, increasing numbers 
-                  of people, especially in younger generations, perceive themselves on a non-binary 
+                  of people, especially in <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>younger generations</a>, perceive themselves on a non-binary 
                   gender continuum and call themselves non-binary, genderqueer or queer, gender 
                   non-conforming, gender fluid, or gender-expansive. These terms all mean that they 
                   do not experience themselves as being entirely male or entirely female, but 
@@ -1000,10 +999,10 @@ const AreasOfIdentity = () => {
                   Gender expression refers not to internal experience of gender identity or sexual 
                   orientation, but rather how one expresses one’s gender identity through appearance, 
                   including one’s choice of clothes, hair, body art, and jewelry, as well as behavior 
-                  and the pitch of one’s voice. In recent years, younger people in particular have 
+                  and the pitch of one’s voice. In recent years, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>younger people</a> in particular have 
                   distinguished gender expression from gender identity and sexual orientation.  However, 
                   any appearance that does not conform to sex assigned at birth can be marginalizing, 
-                  especially by older generations who are unfamiliar or uncomfortable with younger 
+                  especially by <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older generations</a> who are unfamiliar or uncomfortable with younger 
                   people’s broader and more playful expressions of masculinity and femininity, and in 
                   religiously and politically conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
                   straight people alike who present with gender nonconforming expressions are at risk 
@@ -1026,8 +1025,8 @@ const AreasOfIdentity = () => {
 
                 <p>
                   In many cases, the person’s recognition of the incongruity between their experienced 
-                  gender and assigned sex emerges later, in adolescence or even well into adulthood. 
-                  Some older adults who ultimately come out as transgender had trouble making sense of 
+                  gender and assigned sex emerges later, in adolescence or even well into <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>adulthood</a>. 
+                  Some <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older adults</a> who ultimately come out as transgender had trouble making sense of 
                   their experience in their youth, because people of their generation or in their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>part of the world</a> may not have had any language to express that experience and/or are 
                   unaware that anyone else shares their experience. With the evolution of language, 
                   individuals in older generations may use an overarching term of “gay” to mean lesbian, 
@@ -1048,7 +1047,7 @@ const AreasOfIdentity = () => {
                   diagnosed as gender dysphoria (but which would be better described as understandable 
                   distress over the incongruity between their experienced and assigned sex), even when 
                   they did not know their medical history.  In recent years, doctors have been less eager 
-                  to “correct” intersex conditions, so as to allow intersex people time to mature and make 
+                  to “correct” intersex conditions, so as to allow intersex people time to <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>mature</a> and make 
                   their own decisions about whether to remain intersex, to have gender confirmation surgery 
                   congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
                 </p>
