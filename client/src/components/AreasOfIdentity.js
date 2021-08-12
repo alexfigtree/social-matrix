@@ -68,7 +68,7 @@ const AreasOfIdentity = () => {
                 <p>For your occupation, consider both the status of that 
                 <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> 
                 in your <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community and the country</a> (the degree of respect it does or doesn’t get), the amount of control 
-                  you have over your work life and schedule, and the income associated with that occupation. 
+                  you have over your work life and schedule, and the <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a> associated with that occupation. 
                   ome occupations are more secure than others, in that they provide reliable employment and 
                   physical safety, while other occupations may be prone to layoffs and exploitation, or to 
                   physical danger. The relative privilege or marginalization an occupation provides may vary 
@@ -189,7 +189,7 @@ const AreasOfIdentity = () => {
                     care and education), information (for instance, knowing how to search for information 
                     online), and influence (political, professional, or otherwise). This access is especially 
                     affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, 
-                    income, race, and language(s) spoken, as well as <a href="/identity#geoRegion" 
+                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> race, and language(s) spoken, as well as <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close medical care is, how specialized the services, 
                     and even how inclusive local buildings, roads and transportation are to people with 
                     disabilities. 
@@ -215,7 +215,7 @@ const AreasOfIdentity = () => {
                   impact. How privileged or marginalized you experience your racial identity to be 
                   may vary with <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>where you live</a>, and with other areas of relative privilege or 
-                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, income, and citizenship 
+                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> and citizenship 
                   status, as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
                   era</a> also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
@@ -673,7 +673,7 @@ const AreasOfIdentity = () => {
                     case of disfigurement or visible disability. In many societies, being tall is 
                     privileging, as is looking lean and physically fit, and, in most western societies, 
                     <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
-                    although an overweight or even obese appearance is privileged as a mark of wealth in 
+                    although an overweight or even obese appearance is privileged as a mark of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>wealth</a> in 
                     some cultures. Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
                     people actively transform their appearance through expensive and time-consuming 
@@ -914,7 +914,7 @@ const AreasOfIdentity = () => {
                   Having a sexual orientation that is marginalized in one’s <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community</a> can limit 
                   one’s access to resources, influence and  housing, as well as to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs,</a> 
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
-                  educational</a> (and therefore, financial), and
+                  educational</a> (and therefore, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial</a>), and
                   volunteering opportunities, and, until very recently in the U.S, military service. 
                   For that reason, some people even today “pass” as straight. Even such fundamental 
                   human rights as the right to marriage, and to adopt children or even keep custody 
