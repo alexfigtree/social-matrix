@@ -80,7 +80,7 @@ const AreasOfIdentity = () => {
 
             <Typography id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
-                <p>Your parents’ or guardians’ occupation is a window into your family occupational 
+                <p>Your parents’ or guardians’ <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> is a window into your family occupational 
                 history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
                 or got) may vary with <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>when they came of occupational age</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}> 
                   the country, region, or community</a> where they did so. 
@@ -215,7 +215,7 @@ const AreasOfIdentity = () => {
                   impact. How privileged or marginalized you experience your racial identity to be 
                   may vary with <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>where you live</a>, and with other areas of relative privilege or 
-                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, occupation, income, and citizenship 
+                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, income, and citizenship 
                   status, as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
                   era</a> also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
@@ -251,7 +251,7 @@ const AreasOfIdentity = () => {
                   legal quotas on immigration into a country (as was the case for Chinese people, Jews, 
                     Southern Europeans and Arabs at different times) or otherwise marginalized in the 
                   <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and occupation also can play a role in how 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
                   occupations offer some modest protection against discrimination. Race and appearance 
                   also play a role here; for instance, lighter-skinned people who identify as 
@@ -312,8 +312,8 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. Immigrants who 
                   do not speak the dominant language of their country of residence, or who 
                   speak that language with a heavy accent may be actively discriminated 
-                  against in job applications or applications, looking for housing, in 
-                  interactions with colleagues or clients, etc. They may also receive 
+                  against in <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>job applications or applications,</a> looking for housing, in 
+                  interactions with <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>colleagues or clients,</a> etc. They may also receive 
                   inadequate or even incorrect medical treatment because of language 
                   barriers. Even an accent identifying you as from a <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>different region of the same country</a> can be marginalizing, especially when there is 
@@ -397,8 +397,8 @@ const AreasOfIdentity = () => {
                   dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
                   is therefore a reason for seeking asylum in other countries.  Even being the 
-                  child of a parent who participated in a banned political party can mean not 
-                  getting jobs, housing, or benefits. In addition, the prevailing politics of a 
+                  child of a parent who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
+                  getting jobs,</a> housing, or benefits. In addition, the prevailing politics of a 
                   country affects what human rights and what health and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are accessible to all residents.
                 </p> 
@@ -483,8 +483,8 @@ const AreasOfIdentity = () => {
                   with severe physical injuries or moral injuries, psychological trauma or 
                   cognitive problems caused by brain injury? These difficulties can also 
                   affect family relations, including parenting, as well as social relationships 
-                  and may limit occupational opportunities. What rank did the service member 
-                  hold and how respected did they feel in that position? 
+                  and may limit <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational opportunities. What rank did the service member 
+                  hold and how respected did they feel in that position?</a>
                 </p> 
                 <p>
                   In some <a href="/identity#geoRegion" 
@@ -536,12 +536,12 @@ const AreasOfIdentity = () => {
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
-                  in the legal system, as a part of their work, usually in a more 
+                  in the legal system, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>as a part of their work,</a> usually in a more 
                   privileged position. Being arrested, tried, and convicted (or 
                     even found not guilty), being a victim in a criminal case, and 
                   some family court cases can be highly marginalizing and often 
                   traumatizing. Even without imprisonment, an arrest record can mean 
-                  being turned down for many jobs and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> possibilities. 
+                  being turned down for many <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> possibilities. 
                   Time in prison makes later employment, housing, education, and 
                   receiving such benefits as food stamps impossible in many cases.  
                   In addition, imprisonment itself is often highly traumatizing, 
@@ -551,7 +551,7 @@ const AreasOfIdentity = () => {
                   or plaintiff in a criminal case can be traumatizing as well. 
                 </p> 
                 <p>
-                  Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more unreliably employed people and 
+                  Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
                   People of Color, as well as people with histories of substance abuse
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
@@ -568,8 +568,8 @@ const AreasOfIdentity = () => {
                   incarcerations and even deaths at the hands of the police. People 
                   with mental illness and substance abuse problems are also 
                   disproportionately arrested, tried, and incarcerated.  Finally, 
-                  some jurors, attorneys, judges, courtroom staff, expert witnesses, 
-                  and police officers, while privileged in their roles in the legal 
+                  some jurors, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>attorneys, judges, courtroom staff, expert witnesses, 
+                  and police officers,</a> while privileged in their roles in the legal 
                   system, may feel traumatized by participating in particularly painful 
                   court cases.
 
@@ -617,7 +617,7 @@ const AreasOfIdentity = () => {
                   limitations, including those with developmental delays and severe brain injury, 
                   are institutionalized even as children, sometimes for life, and can be regularly 
                   abused in those settings. Different societies tend to prioritize different kinds 
-                  of cognitive ability than others, so which cognitive skills are occupationally 
+                  of cognitive ability than others, so which cognitive skills are <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupationally</a> 
                   and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationally</a> privileged depends partly on the social context of one’s 
                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. In addition, children of color are more likely to be 
                   incorrectly diagnosed with learning disabilities than white children, or 
@@ -639,7 +639,7 @@ const AreasOfIdentity = () => {
                   they were invisible or completely incompetent. Some healthy, able-bodied people even 
                   blame people with illness or disabilities for their problems. Lack of inclusive 
                   community and regional planning, as well as lack of health care for all, can make it 
-                  difficult to participate fully or at all in community activities like work, socializing, 
+                  difficult to participate fully or at all in community activities like <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work,</a> socializing, 
                   civic, political, and religious engagement, or even to use public transportation in the 
                   absence of accommodations for blindness, deafness, wheelchair use, and other disabilities. 
                   The Americans with Disabilities Act requires that all U.S. buildings, transportation, and 
@@ -700,7 +700,7 @@ const AreasOfIdentity = () => {
                   changing somewhat with globalization. In the U.S. and other western societies, in 
                   contrast, youth is exalted and is generally privileged (with some exceptions), 
                   while old age is associated with being decrepit or senile and is often marginalized, 
-                    especially occupationally. This is somewhat less the case in professional occupations 
+                    especially occupationally. This is somewhat less the case in professional <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupations</a> 
                   that require <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a> and that value experience over physical strength or 
                   technological savvy, while working-class occupations tend to require strength or 
                   speed and business job require speed and being up-to-date with technology. 
@@ -712,11 +712,11 @@ const AreasOfIdentity = () => {
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even families’ economic necessity may force even very young 
                   children to abandon – or never have the chance <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
-                  demanding and underpaid work or, for girls, marriage, even before puberty. 
+                  demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for girls, marriage, even before puberty. 
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
                   higher education</a> as well, which offers youth and the adults they become both 
-                  economic and occupational protection.
+                  economic and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational</a> protection.
                 </p>
                 <p>
                   Age or generation also has cultural implications in that different generations often 
@@ -891,7 +891,7 @@ const AreasOfIdentity = () => {
                   lesbians (as well as genderqueer people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
                   marginalized is also influenced by the person’s race, ethnicity or tribe, class 
-                  privilege (household income, occupation, and <a href="/identity#education" 
+                  privilege (household income, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
                     style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), 
                     and family religion 
                   and chosen religion, in that those aspects of identity 
@@ -912,7 +912,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   Having a sexual orientation that is marginalized in one’s <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community</a> can limit 
-                  one’s access to resources, influence and  housing, as well as to jobs, 
+                  one’s access to resources, influence and  housing, as well as to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs,</a> 
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   educational</a> (and therefore, financial), and
                   volunteering opportunities, and, until very recently in the U.S, military service. 
