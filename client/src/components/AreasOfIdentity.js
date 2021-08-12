@@ -65,7 +65,7 @@ const AreasOfIdentity = () => {
 
             <Typography id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Occupation</p>
-                <p>For your occupation, consider both the status of that education in your community 
+                <p>For your occupation, consider both the status of that <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> in your community 
                   and the country (the degree of respect it does or doesn’t get), the amount of control 
                   you have over your work life and schedule, and the income associated with that occupation. 
                   ome occupations are more secure than others, in that they provide reliable employment and 
@@ -80,7 +80,7 @@ const AreasOfIdentity = () => {
             <Typography id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
                 <p>Your parents’ or guardians’ occupation is a window into your family occupational 
-                history. As with educational level, the amount of status or respect their occupation gets  
+                history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
                 or got) may vary with when they came of occupational age and the country, region, or 
                 community where they did so. 
                 </p> 
@@ -102,7 +102,7 @@ const AreasOfIdentity = () => {
                 comfortably and weather unexpected expenses, or are you living paycheck to paycheck or 
                 dipping into savings or credit card debt to pay monthly expenses? Take major expenses 
                 into consideration, such as major medical costs that are not covered by insurance or 
-                high college tuition or debt, because a relatively high gross income might not be so 
+                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high college tuition or debt</a>, because a relatively high gross income might not be so 
                 high after paying for those expenses.  
                 </p> 
 
@@ -114,14 +114,14 @@ const AreasOfIdentity = () => {
                   housing, and banking policies historically and in the present on the basis of race, 
                   ethnicity, and religion have systematically ensured that Black, Latino, and Native 
                   American people (and, previously, Jews and Catholics) were denied access to 
-                  neighborhoods with high-quality schools, which maintains racial inequality. Similarly, 
+                  neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains racial inequality. Similarly, 
                   veterans’ benefits between World War II and the end of the Vietnam War era ensured 
-                  upward economic mobility to white veterans who received free higher education and 
+                  upward economic mobility to white veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
                   subsidized home mortgages, but were denied to Black veterans.
                 </p>
 
                 <p>
-                  Gender, gender identity, and educational level achieved all affect 
+                  Gender, gender identity, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> achieved all affect 
                   household income as well, with women making less than men (and Black, 
                     Indigenous, and Latinx women making much less and having less wealth 
                     than White men) and lesbian couples making less and having less wealth 
@@ -181,7 +181,7 @@ const AreasOfIdentity = () => {
                     loans, gifts, or benefits, and such professional help as lawyers, and quality health 
                     care and education), information (for instance, knowing how to search for information 
                     online), and influence (political, professional, or otherwise). This access is especially 
-                    affected by education, income, race, and language(s) spoken, as well as geographical 
+                    affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, income, race, and language(s) spoken, as well as geographical 
                     region, which influences how close medical care is, how specialized the services, 
                     and even how inclusive local buildings, roads and transportation are to people with 
                     disabilities. 
@@ -206,7 +206,7 @@ const AreasOfIdentity = () => {
                     a little over 500 years) and not a biological one, but it has major social 
                   impact. How privileged or marginalized you experience your racial identity to be 
                   may vary with where you live, and with other areas of relative privilege or 
-                  marginalization, such as educational attainment, occupation, income, and citizenship 
+                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, occupation, income, and citizenship 
                   status, as well as with your skin color and visible physical features. Historical 
                   era also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
@@ -240,7 +240,7 @@ const AreasOfIdentity = () => {
                   It may also depend on as well whether your ethnic/tribal group is persecuted, facing 
                   legal quotas on immigration into a country (as was the case for Chinese people, Jews, 
                     Southern Europeans and Arabs at different times) or otherwise marginalized in the 
-                  country of residence. Educational level and occupation also can play a role in how 
+                  country of residence. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and occupation also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
                   occupations offer some modest protection against discrimination. Race and appearance 
                   also play a role here; for instance, lighter-skinned people who identify as 
@@ -304,7 +304,7 @@ const AreasOfIdentity = () => {
                   Finally, the language you use can identify you with the colonizer or 
                   the colonized in colonial and postcolonial countries, with different 
                   ethnic or tribal groups of that country, or with how much and what 
-                  quality education you have received. 
+                  quality <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> you have received. 
                 </p> 
             </Typography>
 
@@ -373,7 +373,7 @@ const AreasOfIdentity = () => {
                   is therefore a reason for seeking asylum in other countries.  Even being the 
                   child of a parent who participated in a banned political party can mean not 
                   getting jobs, housing, or benefits. In addition, the prevailing politics of a 
-                  country affects what human rights and what health and educational resources 
+                  country affects what human rights and what health and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are accessible to all residents.
                 </p> 
             </Typography>
@@ -387,7 +387,7 @@ const AreasOfIdentity = () => {
                   environmental disasters and resultant displacement,  while others are relatively 
                   protected from those serious problems. The region you live in affects your access 
                   to resources, in that some regions have greater access than others to adequate 
-                  healthcare and education (and the people in those regions are more likely to take 
+                  healthcare and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
                     advantage of those resources), as well as safe housing. Even within a country, 
                   some regions are poorer and/or more prone to natural disaster and less protected 
                   from human-made environmental health hazards than others, and the people in those 
@@ -403,7 +403,7 @@ const AreasOfIdentity = () => {
                     have greater health risks. In addition, some countries in the developed world 
                     (but not the U.S.) guarantee paid parental leave, subsidies for children, and 
                     subsidized child and elder care, as well as universal health care and free or 
-                    subsidized higher education, which means increased wealth for even poor people 
+                    subsidized <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a>, which means increased wealth for even poor people 
                     because they are not spending their own money for those essential needs.
                 </p> 
             </Typography>
@@ -508,7 +508,7 @@ const AreasOfIdentity = () => {
                     even found not guilty), being a victim in a criminal case, and 
                   some family court cases can be highly marginalizing and often 
                   traumatizing. Even without imprisonment, an arrest record can mean 
-                  being turned down for many jobs and educational possibilities. 
+                  being turned down for many jobs and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> possibilities. 
                   Time in prison makes later employment, housing, education, and 
                   receiving such benefits as food stamps impossible in many cases.  
                   In addition, imprisonment itself is often highly traumatizing, 
@@ -518,7 +518,7 @@ const AreasOfIdentity = () => {
                   or plaintiff in a criminal case can be traumatizing as well. 
                 </p> 
                 <p>
-                  Poorer, less well-educated, and more unreliably employed people and 
+                  Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more unreliably employed people and 
                   People of Color, as well as people with histories of substance abuse
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
@@ -584,7 +584,7 @@ const AreasOfIdentity = () => {
                   are institutionalized even as children, sometimes for life, and can be regularly 
                   abused in those settings. Different societies tend to prioritize different kinds 
                   of cognitive ability than others, so which cognitive skills are occupationally 
-                  and educationally privileged depends partly on the social context of one’s 
+                  and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationally</a> privileged depends partly on the social context of one’s 
                   geographical region. In addition, children of color are more likely to be 
                   incorrectly diagnosed with learning disabilities than white children, or 
                   have their learning disabilities misunderstood as lack of intelligence 
@@ -667,7 +667,7 @@ const AreasOfIdentity = () => {
                   contrast, youth is exalted and is generally privileged (with some exceptions), 
                   while old age is associated with being decrepit or senile and is often marginalized, 
                     especially occupationally. This is somewhat less the case in professional occupations 
-                  that require higher education and that value experience over physical strength or 
+                  that require <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a> and that value experience over physical strength or 
                   technological savvy, while working-class occupations tend to require strength or 
                   speed and business job require speed and being up-to-date with technology. 
                   Once a person is well into old age, however, marginalization tends to set in for 
@@ -678,11 +678,11 @@ const AreasOfIdentity = () => {
                   and across wealthy, middle-income and wealthy countries, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer countries 
                   and communities, even families’ economic necessity may force even very young 
-                  children to abandon – or never have the chance to attend – school – and into 
+                  children to abandon – or never have the chance <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
                   demanding and underpaid work or, for girls, marriage, even before puberty. 
                   In contrast, youth in wealthy nations, especially those in more class-privileged 
-                  families, usually benefit from finishing secondary school and a large minority get 
-                  higher education as well, which offers youth and the adults they become both 
+                  families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
+                  higher education</a> as well, which offers youth and the adults they become both 
                   economic and occupational protection.
                 </p>
                 <p>
@@ -764,8 +764,8 @@ const AreasOfIdentity = () => {
                   one’s age, marital status, sexual orientation,  and whether one (or one’s child) 
                   is cisgender, transgender, or genderqueer. Parental status is also affected by 
                   household income and geographical region, since some countries’ governments offer 
-                  paid parental leave and subsidized childcare, as well as free primary, secondary, 
-                  and in some cases, higher education, while others do not. In many communities or 
+                  paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
+                  and in some cases, higher education,</a> while others do not. In many communities or 
                   regions, becoming a parent or guardian before one’s 20s is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
                   is marginalized and a source of pity or moral judgment, even when that is a 
@@ -840,19 +840,61 @@ const AreasOfIdentity = () => {
             <Typography id="sexOrientation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sexual Orientation</p>
                 <p>
-                  Sexual orientation involves one’s sexual and romantic attraction to people of the same sex (in which case one may identify as gay or lesbian or queer), opposite sex (heterosexual or straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). Some people are attracted to neither sex and are called asexual, while someone who falls between asexual and sexual is called graysexual or demisexual. Sexual orientation is distinct from gender identity, gender expression, or the sex assigned at birth. For instance, a nonbinary or genderqueer person (who identifies with both genders or neither) may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
+                  Sexual orientation involves one’s sexual and romantic attraction to people of the same sex 
+                  (in which case one may identify as gay or lesbian or queer), opposite sex (heterosexual or 
+                  straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). 
+                  Some people are attracted to neither sex and are called asexual, while someone who falls 
+                  between asexual and sexual is called graysexual or demisexual. Sexual orientation is 
+                  distinct from gender identity, gender expression, or the sex assigned at birth. For 
+                  instance, a nonbinary or genderqueer person (who identifies with both genders or neither) 
+                  may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
                 </p> 
 
                 <p>
-                  A person’s relative privilege or marginalization on the basis of sexual orientation varies considerably with the politics and prevailing religion of their community or region. In some countries, especially (but not only) those led by theocracies, any sexual behavior other than heterosexual behavior within marriage is illegal; in some extreme cases, homosexuality is legally punishable by death. In contrast, some indigenous cultures, including many Native American nations, embrace gays and lesbians (as well as genderqueer people) as two-spirit people with special roles in society. The degree to which any sexual orientation other than heterosexual is marginalized is also influenced by the person’s race, ethnicity or tribe, class privilege, and family religion and chosen religion, in that those aspects of identity can influence how the person’s immediate reference group perceives their sexual orientation. 
+                  A person’s relative privilege or marginalization on the basis of sexual orientation 
+                  varies considerably with the politics and prevailing religion of their community or 
+                  region. In some countries, especially (but not only) those led by theocracies, any 
+                  sexual behavior other than heterosexual behavior within marriage is illegal; in some 
+                  extreme cases, homosexuality is legally punishable by death. In contrast, some 
+                  indigenous cultures, including many Native American nations, embrace gays and 
+                  lesbians (as well as genderqueer people) as two-spirit people with special roles in 
+                  society. The degree to which any sexual orientation other than heterosexual is 
+                  marginalized is also influenced by the person’s race, ethnicity or tribe, class 
+                  privilege (household income, occupation, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), and family religion 
+                  and chosen religion, in that those aspects of identity 
+                  can influence how the person’s immediate reference group perceives their sexual orientation. 
                 </p> 
 
                 <p>
-                  The HIV/AIDS epidemic, which disproportionately hit gay men (as well as IV drug users) and their sex partners, from the late 1970s until the 1990s was highly marginalizing specifically because of its association to gay men at time when homophobia was the norm. Even today, in a time when life-saving treatment is available for what is now usually a chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, again because of its association with Black and bisexual gay men and IV drug users, and all their partners, of either gender, in the US. it is also prevalent in several African and Caribbean nations that have far fewer resources for treating it than in the US and Europe. 
+                  The HIV/AIDS epidemic, which disproportionately hit gay men (as well as IV drug users) 
+                  and their sex partners, from the late 1970s until the 1990s was highly marginalizing 
+                  specifically because of its association to gay men at time when homophobia was the norm. 
+                  Even today, in a time when life-saving treatment is available for what is now usually a 
+                  chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
+                  again because of its association with Black and bisexual gay men and IV drug users, 
+                  and all their partners, of either gender, in the US. it is also prevalent in several 
+                  African and Caribbean nations that have far fewer resources for treating it than in 
+                  the US and Europe. 
                 </p> 
 
                 <p>
-                  Having a sexual orientation that is marginalized in one’s community can limit one’s access to resources, influence and  housing, as well as to job, educational, volunteering opportunities, and, until very recently in the U.S, military service. For that reason, some people even today “pass” as straight. Even such fundamental human rights as the right to marriage, and to adopt children or even keep custody of birth children are denied in many countries, as they were in most states in the U.S until a Supreme Court ruling protecting those rights in 2015. In religiously or politically conservative families, people who identify as anything other than straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered by their families and others in their personal lives. For this reason, many people who were other than straight hid their sexuality, or stayed in the closet, in earlier generations. The need to do that continues in many politically and religiously conservative countries and regions today. Some youth are physically abused by parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth are more likely than straight youth to run away from or be kicked out of their homes and, without financial support from family, to become homeless and at risk of physical and sexual exploitation as a result. 
+                  Having a sexual orientation that is marginalized in one’s community can limit 
+                  one’s access to resources, influence and  housing, as well as to jobs, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationals</a> (and therefore, financial), 
+                  volunteering opportunities, and, until very recently in the U.S, military service. 
+                  For that reason, some people even today “pass” as straight. Even such fundamental 
+                  human rights as the right to marriage, and to adopt children or even keep custody 
+                  of birth children are denied in many countries, as they were in most states in the 
+                  U.S until a Supreme Court ruling protecting those rights in 2015. In religiously 
+                  or politically conservative families, people who identify as anything other than 
+                  straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered 
+                  by their families and others in their personal lives. For this reason, many people 
+                  who were other than straight hid their sexuality, or stayed in the closet, in earlier 
+                  generations. The need to do that continues in many politically and religiously 
+                  conservative countries and regions today. Some youth are physically abused by 
+                  parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
+                  are more likely than straight youth to run away from or be kicked out of their 
+                  homes and, without financial support from family, to become homeless and at 
+                  risk of physical and sexual exploitation as a result. 
 
                 </p> 
             </Typography>
@@ -860,19 +902,59 @@ const AreasOfIdentity = () => {
             <Typography id="genderID" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender ID</p>
                 <p>
-                  Gender identity involves one’s identification as a woman, man, or as both or neither. Gender is a social construct involving what gender(s) people identify with and how they are perceived, unlike sex, which is assigned at birth based on genitals. Cisgender people identify with the gender that is consistent with the sex they were assigned at birth and adhere to a gender binary. However, increasing numbers of people, especially in younger generations, perceive themselves on a non-binary gender continuum and call themselves non-binary, genderqueer or queer, gender non-conforming, gender fluid, or gender-expansive. These terms all mean that they do not experience themselves as being entirely male or entirely female, but rather a blend of the two, although in the case of gender fluidity, they may experience themselves as oscillating between being male and female.
+                  Gender identity involves one’s identification as a woman, man, or as both or neither. 
+                  Gender is a social construct involving what gender(s) people identify with and how 
+                  they are perceived, unlike sex, which is assigned at birth based on genitals. 
+                  Cisgender people identify with the gender that is consistent with the sex they 
+                  were assigned at birth and adhere to a gender binary. However, increasing numbers 
+                  of people, especially in younger generations, perceive themselves on a non-binary 
+                  gender continuum and call themselves non-binary, genderqueer or queer, gender 
+                  non-conforming, gender fluid, or gender-expansive. These terms all mean that they 
+                  do not experience themselves as being entirely male or entirely female, but 
+                  rather a blend of the two, although in the case of gender fluidity, they may 
+                  experience themselves as oscillating between being male and female.
                 </p>
 
                 <p>
-                  In addition, some people identify as transgender, meaning they experience themselves as having the gender identity opposite to the one assigned at birth. People who identify as female but were assigned a male sex at birth are transwomen and those who who identify as  male but were assigned a female sex at birth are transmen regardless of whether they have used hormonal  interventions. Transgender people usually, but not always, utilize hormonal treatment in order to live congruently with their gender identity, and some also choose to undergo gender confirmation surgery, also known as gender affirming surgery. These surgeries include a range of procedures: breast reduction or augmentation, removal of facial and body hair, facial reconstruction to attain a jawline consistent with their chosen gender identity, and finally, removal of original reproductive organs and replacement with those of their chosen gender identity). (Note to cisgender people: it is hurtful and at least microaggressive to ask about these medical procedures without express permission from the transgender person, just as one is expected not to ask about the sex organs of anyone else.)
+                  In addition, some people identify as transgender, meaning they experience 
+                  themselves as having the gender identity opposite to the one assigned at birth. 
+                  People who identify as female but were assigned a male sex at birth are transwomen 
+                  and those who who identify as  male but were assigned a female sex at birth are 
+                  transmen regardless of whether they have used hormonal  interventions. Transgender 
+                  people usually, but not always, utilize hormonal treatment in order to live 
+                  congruently with their gender identity, and some also choose to undergo gender 
+                  confirmation surgery, also known as gender affirming surgery. These surgeries 
+                  include a range of procedures: breast reduction or augmentation, removal of 
+                  facial and body hair, facial reconstruction to attain a jawline consistent with 
+                  their chosen gender identity, and finally, removal of original reproductive 
+                  organs and replacement with those of their chosen gender identity). (Note to 
+                  cisgender people: it is hurtful and at least microaggressive to ask about these 
+                  medical procedures without express permission from the transgender person, just 
+                  as one is expected not to ask about the sex organs of anyone else.)
                 </p>
 
                 <p>
-                  These medical treatments can be hard to come by for economic and societal reasons, including clinician bias and prejudicial insurance policies, such as requiring a psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s assigned gender contradicting one’s experienced gender). In addition, many prisons and jails deny such treatments, as the US. Military did until 2021. Finally, transgender people, particularly transgender women of Color, are extremely vulnerable to violent assault and murder because of a combination of transphobia, homophobia, and racism. They are also vulnerable to suicidality because of the extreme stigma they face and the lack of emotional support and affirmation from family and the cisgender community.
+                  These medical treatments can be hard to come by for economic and societal reasons, 
+                  including clinician bias and prejudicial insurance policies, such as requiring a 
+                  psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
+                  assigned gender contradicting one’s experienced gender). In addition, many prisons 
+                  and jails deny such treatments, as the US. Military did until 2021. Finally, 
+                  transgender people, particularly transgender women of Color, are extremely 
+                  vulnerable to violent assault and murder because of a combination of transphobia, 
+                  homophobia, and racism. They are also vulnerable to suicidality because of the 
+                  extreme stigma they face and the lack of emotional support and affirmation from 
+                  family and the cisgender community.
                 </p>
 
                 <p>
-                  Trans people can identify as heterosexual, gay or lesbian, or more broadly, as genderqueer. they may be attracted to people of a different gender, or multiple genders, after transitioning than they were before, or their attractions may remain unchanged. Thus, a transman who previously was attracted to women while living as a lesbian may still keep those attractions, and be perceived as heterosexual. Or, he might find his attractions shifting to men, or to both genders. His gender expression, which had originally been gender-nonconforming, may remain gender-non-conforming, but it may become traditionally masculine. 
+                  Trans people can identify as heterosexual, gay or lesbian, or more broadly, as 
+                  genderqueer. they may be attracted to people of a different gender, or multiple 
+                  genders, after transitioning than they were before, or their attractions may 
+                  remain unchanged. Thus, a transman who previously was attracted to women while 
+                  living as a lesbian may still keep those attractions, and be perceived as 
+                  heterosexual. Or, he might find his attractions shifting to men, or to both genders. 
+                  His gender expression, which had originally been gender-nonconforming, may remain 
+                  gender-non-conforming, but it may become traditionally masculine. 
 
                 </p> 
             </Typography>
@@ -880,29 +962,74 @@ const AreasOfIdentity = () => {
             <Typography id="genderExpression" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender Expression</p>
                 <p>
-                  Gender expression refers not to internal experience of gender identity or sexual orientation, but rather how one expresses one’s gender identity through appearance, including one’s choice of clothes, hair, body art, and jewelry, as well as behavior and the pitch of one’s voice. In recent years, younger people in particular have distinguished gender expression from gender identity and sexual orientation.  However, any appearance that does not conform to sex assigned at birth can be marginalizing, especially by older generations who are unfamiliar or uncomfortable with younger people’s broader and more playful expressions of masculinity and femininity, and in religiously and politically conservative communities and regions. LGBTQ+ people and straight people alike who present with gender nonconforming expressions are at risk of violence from homophobic and transphobic family and community members.  
+                  Gender expression refers not to internal experience of gender identity or sexual 
+                  orientation, but rather how one expresses one’s gender identity through appearance, 
+                  including one’s choice of clothes, hair, body art, and jewelry, as well as behavior 
+                  and the pitch of one’s voice. In recent years, younger people in particular have 
+                  distinguished gender expression from gender identity and sexual orientation.  However, 
+                  any appearance that does not conform to sex assigned at birth can be marginalizing, 
+                  especially by older generations who are unfamiliar or uncomfortable with younger 
+                  people’s broader and more playful expressions of masculinity and femininity, and in 
+                  religiously and politically conservative communities and regions. LGBTQ+ people and 
+                  straight people alike who present with gender nonconforming expressions are at risk 
+                  of violence from homophobic and transphobic family and community members.  
                 </p> 
             </Typography>
 
             <Typography id="sexAtBirth" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Sex Assigned at Birth</p>
                 <p>
-                  Most people are born with either male reproductive organs and are assigned male sex at birth, or they are born with female reproductive organs and are assigned female sex and are therefore perceived by family and others as boys or girls, respectively. However, some children experience and declare themselves as identifying with the opposite sex to the one they were assigned and therefore want to express their gender accordingly. In many societies, such declarations and gender expressions are met with resistance, and sometimes with abuse at home and at school because of transphobia.  Others identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
+                  Most people are born with either male reproductive organs and are assigned male sex at 
+                  birth, or they are born with female reproductive organs and are assigned female sex and 
+                  are therefore perceived by family and others as boys or girls, respectively. However, 
+                  some children experience and declare themselves as identifying with the opposite sex 
+                  to the one they were assigned and therefore want to express their gender accordingly. 
+                  In many societies, such declarations and gender expressions are met with resistance, 
+                  and sometimes with abuse at home and at school because of transphobia.  Others 
+                  identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
                 </p>
 
                 <p>
-                  In many cases, the person’s recognition of the incongruity between their experienced gender and assigned sex emerges later, in adolescence or even well into adulthood. Some older adults who ultimately come out as transgender had trouble making sense of their experience in their youth, because people of their generation or in their part of the world may not have had any language to express that experience and/or are unaware that anyone else shares their experience. They may therefore identify as gay or lesbian until they can access the concept of transgender identity. Being able to “pass” as one chosen sex provides privilege (for instance, transmen, once they have been on male hormones long enough, appear male and carry privilege, while transwomen, even after years on female hormones and even after breast reduction surgery, may still have visibly male features and are at risk of violence). 
+                  In many cases, the person’s recognition of the incongruity between their experienced gender 
+                  and assigned sex emerges later, in adolescence or even well into adulthood. Some older adults 
+                  who ultimately come out as transgender had trouble making sense of their experience in their 
+                  youth, because people of their generation or in their part of the world may not have had any 
+                  language to express that experience and/or are unaware that anyone else shares their experience. They may therefore identify as gay or lesbian until they can access the concept of transgender identity. Being able to “pass” as one chosen sex provides privilege (for instance, transmen, once they have been on male hormones long enough, appear male and carry privilege, while transwomen, even after years on female hormones and even after breast reduction surgery, may still have visibly male features and are at risk of violence). 
                 </p>
 
                 <p>
-                  In about one case in 2,000, babies are born with the sexual organs of both sexes; they are intersex people (historically called hermaphrodites), a group so marginalized that their existence is barely known. Historically, doctors would remove all or most of one set of sexual organs and declare the baby to have the sex congruent with the remaining sexual organs. These babies, on growing up, however, often experienced what is officially diagnosed as gender dysphoria (but which would be better described as understandable distress over the incongruity between their experienced and assigned sex), even when they did not know their medical history.  In recent years, doctors have been less eager to “correct” intersex conditions, so as to allow intersex people time to mature and make their own decisions about whether to remain intersex, to have gender confirmation surgery congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
+                  In about one case in 2,000, babies are born with the sexual organs of both sexes; they are 
+                  intersex people (historically called hermaphrodites), a group so marginalized that their 
+                  existence is barely known. Historically, doctors would remove all or most of one set of 
+                  sexual organs and declare the baby to have the sex congruent with the remaining sexual 
+                  organs. These babies, on growing up, however, often experienced what is officially 
+                  diagnosed as gender dysphoria (but which would be better described as understandable 
+                  distress over the incongruity between their experienced and assigned sex), even when 
+                  they did not know their medical history.  In recent years, doctors have been less eager 
+                  to “correct” intersex conditions, so as to allow intersex people time to mature and make 
+                  their own decisions about whether to remain intersex, to have gender confirmation surgery 
+                  congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
                 </p>
             </Typography>
 
             <Typography id="uniqueHistory" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Unique History</p>
                 <p>
-                  Unique history involves any events or situations in the life of an individual or family that does not fall under any of the other areas of identity in the Social Matrix Diagram.  Examples might include having suffered severe physical, sexual, or emotional abuse at the hands of family members or others, having lived in many countries or regions, having been victimized by human trafficking, or living through an individual, family, or collective disaster. Unique history can also include being famous (or infamous) or in the family of someone famous (or infamous), or in a leadership position in a tribe or clan or in politics.  It might also involve something like being a twin or triplet, which is a unique relationship and which has special status in some ethnic and tribal groups. In addition, having an unusual talent, having a sibling who is or was very ill, or having been bereaved of a close family member in childhood. Unique history is included in the Social Matrix Diagram in order to ensure that any circumstances that are not addressed elsewhere in the diagram, but that are defining of experience and identity in some important way, can be included. In filling out the Social Matrix survey, this area of identity gives you the opportunity to see yourself (and, if you share your diagram with others, to be seen) more fully.
+                  Unique history involves any events or situations in the life of an individual or family 
+                  that does not fall under any of the other areas of identity in the Social Matrix Diagram.  
+                  Examples might include having suffered severe physical, sexual, or emotional abuse at the 
+                  hands of family members or others, having lived in many countries or regions, having been 
+                  victimized by human trafficking, or living through an individual, family, or collective 
+                  disaster. Unique history can also include being famous (or infamous) or in the family of 
+                  someone famous (or infamous), or in a leadership position in a tribe or clan or in politics.  
+                  It might also involve something like being a twin or triplet, which is a unique relationship 
+                  and which has special status in some ethnic and tribal groups. In addition, having an unusual 
+                  talent, having a sibling who is or was very ill, or having been bereaved of a close family 
+                  member in childhood. Unique history is included in the Social Matrix Diagram in order to 
+                  ensure that any circumstances that are not addressed elsewhere in the diagram, but that 
+                  are defining of experience and identity in some important way, can be included. In 
+                  filling out the Social Matrix survey, this area of identity gives you the opportunity 
+                  to see yourself (and, if you share your diagram with others, to be seen) more fully.
                 </p> 
             </Typography>
 
