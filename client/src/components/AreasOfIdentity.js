@@ -112,8 +112,8 @@ const AreasOfIdentity = () => {
                   those from some Asian countries, generally make significantly less money than 
                   White people, and have far less wealth.  In addition, prejudicial governmental, 
                   housing, and banking policies historically and in the present on the basis of race, 
-                  ethnicity, and religion have systematically ensured that Black, Latino, and Native 
-                  American people (and, previously, Jews and Catholics) were denied access to 
+                  ethnicity, and religion have systematically ensured that Black, Native 
+                  American, and Latino people (and, previously, Jews and Catholics) were denied access to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains racial inequality. Similarly, 
                   veterans’ benefits between World War II and the end of the Vietnam War era ensured 
                   upward economic mobility to white veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
@@ -416,28 +416,29 @@ const AreasOfIdentity = () => {
                   toward more or fewer human rights, can greatly affect the people who live through 
                   them, and can even affect their children and grandchildren. Growing up during such 
                   major events as a civil or international war or during a period of persecution or 
-                  genocide, or during a time of major technological change or living through these 
-                  events as an adult can shape how you view your world and live in it. It can even 
-                  affect how your children and grandchildren view and live in their world. Similarly, 
-                  surviving a severe natural or human-made disaster that affected many people in your 
-                  community or region can affect the rest of your life, and even your children’s and 
-                  grandchildren’s lives. In different ways, living through historical periods of 
-                  repression like Jim Crow in the US, Apartheid in South Africa, or the aftermath of 
-                  military coups in Chile, Libya, Myanmar, and other countries can affect the rest of 
-                  your life. In contrast, living through a period of affluence, peace, universal 
-                  education, and human rights also affects your lifetime. Finally, living through 
-                  social movements can dramatically change the quality of many people’s lives and 
-                  the privilege or marginalization they experience, and how they are perceived by 
-                  others. Examples of such movements include the US Civil Rights Movement, the 
-                  Women’s Rights Movement, and Rights for LGBTQ+ people, and Black Lives Matter 
-                  in many countries and for documented and undocumented immigrants and Stop Asian 
-                  Hate in the U.S., as well as nation-specific movements like the anti-Apartheid 
-                  movement in South Africa. Other examples of major changes that differentially 
-                  affect people’s access to information, education, healthcare, and even to 
-                  geographically distant loved ones involve technological changes in computing. 
-                  Because many older people do not have the skills and comfort level needed to use 
-                  personal computers, tablets, and smart phones that most younger people do, they may 
-                  be less able to take advantage of those technological advances. 
+                  genocide on the basis of ethnicity/tribe, religion, or politics, or during a time 
+                  of major technological change or living through these events as an adult can shape 
+                  how you view your world and live in it. It can even affect how your children and 
+                  grandchildren view and live in their world. Similarly, surviving a severe natural 
+                  or human-made disaster that affected many people in your community or region can 
+                  affect the rest of your life, and even your children’s and grandchildren’s lives. 
+                  In different ways, living through historical periods of repression like Jim Crow 
+                  in the US, Apartheid in South Africa, or the aftermath of military coups in Chile, 
+                  Libya, Myanmar, and other countries can affect the rest of your life. In contrast, 
+                  living through a period of affluence, peace, universal education, and human rights 
+                  also affects your lifetime. Finally, living through social and political movements 
+                  can dramatically change the quality of many people’s lives and the privilege or 
+                  marginalization they experience, and how they are perceived by others. Examples 
+                  of such movements include the US Civil Rights Movement;the Women’s Rights Movement; 
+                  and Rights for gays and lesbians,  trans people, and gender non-conforming people; 
+                  and Black Lives Matter in many countries; and for documented and undocumented 
+                  immigrants and Stop Asian Hate in the U.S., as well as nation-specific movements 
+                  like the anti-Apartheid movement in South Africa. Other examples of major changes 
+                  that differentially affect people’s access to information, education, healthcare, 
+                  and even to geographically distant loved ones involve technological changes in 
+                  computing. Because many older people do not have the skills and comfort level 
+                  needed to use personal computers, tablets, and smartphones that most younger 
+                  people do, they may be less able to take advantage of those technological advances.
                 </p> 
             </Typography>
 
@@ -499,7 +500,9 @@ const AreasOfIdentity = () => {
                 <p>
                   A person can get involved in the legal system because of arrest, 
                   conviction, and/or imprisonment in a criminal matter, because one 
-                  is a victim in a criminal case, or through involvement in family court. 
+                  is a victim in a criminal case, or through involvement in family court 
+                  that can award or remove from parents the custody of children and 
+                  visitation , as well as deciding on adoption, divorce or alimony decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
@@ -523,7 +526,8 @@ const AreasOfIdentity = () => {
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
-                  of violent crimes. Family members also often are often stigmatized 
+                  of violent crimes. Parents, partners, children and other loved ones 
+                  also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
                   courts decide custody arrangements. Family members can be evicted 
                   from public housing for letting a formerly incarcerated relative 
@@ -531,7 +535,7 @@ const AreasOfIdentity = () => {
                   incarcerated from family events. Entire communities that are 
                   poor and of color can be marginalized by aggressive, sometimes 
                   violent, policing, which means disproportionate arrests, 
-                  incarcerations and deaths at the hands of the police. People 
+                  incarcerations and even deaths at the hands of the police. People 
                   with mental illness and substance abuse problems are also 
                   disproportionately arrested, tried, and incarcerated.  Finally, 
                   some jurors, attorneys, judges, courtroom staff, expert witnesses, 
@@ -545,7 +549,7 @@ const AreasOfIdentity = () => {
             <Typography id="mentalHealth" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Mental Health/Substance Use</p>
                 <p>
-                    Having difficulties with or mental illness a relationship with the mental 
+                    Having difficulties with or mental illness or a relationship with the mental 
                     health system can also be stigmatizing and therefore a source of 
                     marginalization, especially if that mental illness is apparent to others. 
                     So can having a substance use disorder like alcoholism or drug addiction, 
@@ -648,7 +652,7 @@ const AreasOfIdentity = () => {
                     and distorting of the body, Botox, and the like.  Appearance consistent with being 
                     cisgender and gender conforming is privileging in most contexts, while appearing 
                     genderqueer, or transgender, or gender nonconforming or as gay or is marginalizing 
-                    in most contexts. Dress, which is often a signal of class position and can be 
+                    in most contexts. Dress is often a signal of income,  and occupation, which can be either 
                     privileging or marginalizing. In addition, dressing and grooming oneself in a way 
                     that stands out as “different” or “odd (such as wearing shabby clothes and unkempt 
                       hair to an office, or the mismatched, gaudy clothing and makeup and unkempt hair 
@@ -659,7 +663,8 @@ const AreasOfIdentity = () => {
             <Typography id="age" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Age</p>
                 <p>
-                  The privilege or marginalization associated with different ages is very culture-specific. 
+                  The privilege or marginalization associated with different ages is very specific to 
+                  particular ethnic or tribal groups and to particular regions.  
                   For instance, in many Asian, African, and indigenous societies, the older you are, 
                   the more respect and status you receive from others. Elders in those cultures tend to be 
                   seen as sources of wisdom to be respected and obeyed as a result, although that is 
@@ -726,7 +731,7 @@ const AreasOfIdentity = () => {
                   childless). Some children live apart from one or both parents because of parental 
                   death or abandonment, or court-decided custody arrangements, or parental imprisonment. 
                   Other children are kicked out of, or run away from, their homes because their parents 
-                  respond abusively to their coming out as gay, transgender, or genderqueer. Still others 
+                  respond abusively to their coming out as gay or lesbian, or as transgender, or genderqueer. Still others 
                   lose their parents in war or refugee situations, or during a large-scale disaster or 
                   pandemic.
                 </p> 
@@ -776,12 +781,12 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  It is increasingly common for committed lesbian couples to become parents, 
-                  while gay male couples, who, as men tend to have higher incomes, may 
-                    face opposing pressures to parent or to remain childfree, depending on 
-                  their local and gay community. This marginalization is less prevalent in 
-                  areas that are politically liberal, and that provide economic and child 
-                  care support to families with children. 
+                  It is increasingly common for women in committed lesbian couples to 
+                  become parents, while gay male couples, who, as men tend to have higher 
+                  incomes, may face opposing pressures to parent or to remain childfree, 
+                  depending on their local and gay community. This marginalization is less 
+                  prevalent in areas that are politically liberal, and that provide 
+                  economic and child care support to families with children. 
                 </p>
 
                 <p>
@@ -827,8 +832,9 @@ const AreasOfIdentity = () => {
                 contract controlled by religious leaders, but in most countries it is a civil contract 
                 controlled by the state. Until recently, marriage was only legal between one man and one 
                 woman in most countries, although some societies allow men to marry more than one woman 
-                at a time and some indigenous cultures have allowed same-sex marriage and marriage between 
-                “two-spirit” or gender queer people for centuries. Otherwise, same-sex couples have only 
+                at a time and some indigenous cultures have allowed same-sex marriage and marriage of 
+                both gay and genderqueer (both of whom those cultures call “two-spirit” people) to 
+                each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
                 politically and religiously liberal countries or states. While being widowed is the 
                 statistical norm for people in their 70s and older, it is still marginalizing in 
@@ -860,7 +866,9 @@ const AreasOfIdentity = () => {
                   lesbians (as well as genderqueer people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
                   marginalized is also influenced by the person’s race, ethnicity or tribe, class 
-                  privilege (household income, occupation, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), and family religion 
+                  privilege (household income, occupation, and <a href="/identity#education" 
+                    style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), 
+                    and family religion 
                   and chosen religion, in that those aspects of identity 
                   can influence how the person’s immediate reference group perceives their sexual orientation. 
                 </p> 
@@ -879,7 +887,9 @@ const AreasOfIdentity = () => {
 
                 <p>
                   Having a sexual orientation that is marginalized in one’s community can limit 
-                  one’s access to resources, influence and  housing, as well as to jobs, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationals</a> (and therefore, financial), 
+                  one’s access to resources, influence and  housing, as well as to jobs, 
+                  <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
+                  educational</a> (and therefore, financial), and
                   volunteering opportunities, and, until very recently in the U.S, military service. 
                   For that reason, some people even today “pass” as straight. Even such fundamental 
                   human rights as the right to marriage, and to adopt children or even keep custody 
@@ -990,11 +1000,19 @@ const AreasOfIdentity = () => {
                 </p>
 
                 <p>
-                  In many cases, the person’s recognition of the incongruity between their experienced gender 
-                  and assigned sex emerges later, in adolescence or even well into adulthood. Some older adults 
-                  who ultimately come out as transgender had trouble making sense of their experience in their 
-                  youth, because people of their generation or in their part of the world may not have had any 
-                  language to express that experience and/or are unaware that anyone else shares their experience. They may therefore identify as gay or lesbian until they can access the concept of transgender identity. Being able to “pass” as one chosen sex provides privilege (for instance, transmen, once they have been on male hormones long enough, appear male and carry privilege, while transwomen, even after years on female hormones and even after breast reduction surgery, may still have visibly male features and are at risk of violence). 
+                  In many cases, the person’s recognition of the incongruity between their experienced 
+                  gender and assigned sex emerges later, in adolescence or even well into adulthood. 
+                  Some older adults who ultimately come out as transgender had trouble making sense of 
+                  their experience in their youth, because people of their generation or in their part 
+                  of the world may not have had any language to express that experience and/or are 
+                  unaware that anyone else shares their experience. With the evolution of language, 
+                  individuals in older generations may use an overarching term of “gay” to mean lesbian, 
+                  bisexual, or queer. They may also identify as gay or lesbian before identifying and 
+                  understanding transgender identity. Appearing congruent with one’s chosen sex provides 
+                  privilege (for instance, transmen, once they have been on male hormones long enough, 
+                    appear male and carry privilege, while transwomen, even after years on female hormones 
+                    and even after breast reduction surgery, may still have visibly male features and are 
+                    at risk of violence).
                 </p>
 
                 <p>
@@ -1021,7 +1039,8 @@ const AreasOfIdentity = () => {
                   hands of family members or others, having lived in many countries or regions, having been 
                   victimized by human trafficking, or living through an individual, family, or collective 
                   disaster. Unique history can also include being famous (or infamous) or in the family of 
-                  someone famous (or infamous), or in a leadership position in a tribe or clan or in politics.  
+                  someone famous (or infamous), or in a leadership position in a tribe or clan or in politics, 
+                  all of which offer greater access to influence and resources.    
                   It might also involve something like being a twin or triplet, which is a unique relationship 
                   and which has special status in some ethnic and tribal groups. In addition, having an unusual 
                   talent, having a sibling who is or was very ill, or having been bereaved of a close family 
