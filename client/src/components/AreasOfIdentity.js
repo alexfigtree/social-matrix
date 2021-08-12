@@ -72,7 +72,7 @@ const AreasOfIdentity = () => {
                   ome occupations are more secure than others, in that they provide reliable employment and 
                   physical safety, while other occupations may be prone to layoffs and exploitation, or to 
                   physical danger. The relative privilege or marginalization an occupation provides may vary 
-                  greatly with historical period (since more work was agricultural or manual in the past) and 
+                  greatly with <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> (since more work was agricultural or manual in the past) and 
                   with <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
                 </p> 
             </Typography>
@@ -82,7 +82,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
                 <p>Your parents’ or guardians’ occupation is a window into your family occupational 
                 history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
-                or got) may vary with when they came of occupational age and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}> 
+                or got) may vary with <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>when they came of occupational age</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}> 
                   the country, region, or community</a> where they did so. 
                 </p> 
             </Typography>
@@ -118,7 +118,7 @@ const AreasOfIdentity = () => {
                   ethnicity, and religion have systematically ensured that Black, Native 
                   American, and Latino people (and, previously, Jews and Catholics) were denied access to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains racial inequality. Similarly, 
-                  veterans’ benefits between World War II and the end of the Vietnam War era ensured 
+                  veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
                   upward economic mobility to white veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
                   subsidized home mortgages, but were denied to Black veterans.
                 </p>
@@ -154,9 +154,9 @@ const AreasOfIdentity = () => {
                   child, which should also include household wealth or debt load. If you grew up 
                   in multiple households (because your parents or other guardians didn’t live 
                     together), you can answer this for as many households as you lived in. Keep in 
-                  mind that a particular income then had more buying power than today if you are 
+                  mind that a particular income then had more <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>buying power than today</a> if you are 
                   adult now, because of inflation. Also consider when and where you lived, since 
-                  both historical period and <a href="/identity#geoRegion" 
+                  both <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> and <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical location</a>  influence the buying power of 
                   any particular income. In addition, <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>  provide guaranteed minimum 
@@ -172,9 +172,9 @@ const AreasOfIdentity = () => {
                   Childhood household income is the income your parents or guardians lived on when they were 
                   children, together with household wealth or debt. If they grew up in multiple households 
                   (because their own parents or other guardians didn’t live together), you can answer this 
-                  for as many households as they lived in. Keep in mind that a particular income then had more 
-                    buying power than today or during your own childhood, because of inflation. Also consider 
-                  when and where your parents or guardians lived, since both historical period and <a href="/identity#geoRegion" 
+                  for as many households as they lived in. Keep in mind that <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>a particular income then had more 
+                    buying power than today</a> or during your own childhood, because of inflation. Also consider 
+                  when and where your parents or guardians lived, since both <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> and <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical location</a> (country, region, or even which part of a city or town) influence the buying power of 
                   ny particular income. 
                 </p> 
@@ -216,8 +216,8 @@ const AreasOfIdentity = () => {
                   may vary with <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>where you live</a>, and with other areas of relative privilege or 
                   marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, occupation, income, and citizenship 
-                  status, as well as with your skin color and visible physical features. Historical 
-                  era also makes a difference, as older people of color lived through institutionalized 
+                  status, as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
+                  era</a> also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
                     Indigenous people) , as well as exclusion acts controlling immigration and, more 
                   recently, hate crimes, particularly against Asians). You may identify with more 
@@ -234,8 +234,8 @@ const AreasOfIdentity = () => {
                     who is racially Black might be ethnically African American, Haitian, Jamaican, 
                     Ugandan, or Kenyan, etc. People from all racial groups may identify ethnically as 
                     Latino/a/Latinx/Hispanic or as Jewish. (Judaism is a religion but Jewishness has 
-                      been considered an ethnicity, regardless of religious observance, since the 
-                      Spanish Inquisition.) People who are African or MENA (Middle Eastern/North African) 
+                      been considered an ethnicity, regardless of religious observance, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>since the 
+                      Spanish Inquisition.)</a> People who are African or MENA (Middle Eastern/North African) 
                       may identify racially as Black or Asian, or in some cases, White, but identify 
                       ethnically as Arab, Jewish, or Druze, etc.). Tribe may be most relevant for people 
                       of African, Middle Eastern, South, Central, or East Asian descent or for people 
@@ -259,8 +259,8 @@ const AreasOfIdentity = () => {
                   in the <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>US or in some postcolonial parts of Africa</a> than those who are darker-skinned.  
                   Historically, and even into the present, some countries have deemed particular ethnic 
-                  groups or tribes and not others as “foreign,” and targeted them for discrimination, 
-                  persecution, and even ethnic cleansing or genocide. 
+                  groups or tribes and not others as “foreign,” and targeted them for <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>discrimination, 
+                  persecution, and even ethnic cleansing or genocide.</a>
                 </p>
             </Typography>
 
@@ -289,7 +289,7 @@ const AreasOfIdentity = () => {
                     country of residence do not have citizenship by virtue of their ethnicity 
                     or tribe and are essentially stateless; this includes the Rohinge of 
                     Myanmar (Burma), Palestinians living in the West Bank and Gaza and in 
-                    refugee camps elsewhere and, until into the 20th century, Jews in the 
+                    refugee camps elsewhere and, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until into the 20th century</a>, Jews in the 
                     former Soviet Union and many European states, and Romany people throughout Europe. 
                 </p> 
             </Typography>
@@ -391,8 +391,8 @@ const AreasOfIdentity = () => {
                   source of polarization and even antagonism between people of different beliefs. 
                   In Communist-led countries, membership in the Communist party provides benefits 
                   and access to power, but membership in the Communist Party in the U.S. was 
-                  proscribed starting in 1917 and explicitly illegal from 1954 until the late 
-                  1960s. Being a dissident or the member of a party that opposes the ruling 
+                  proscribed starting in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1917 and explicitly illegal from 1954 until the late 
+                  1960s.</a> Being a dissident or the member of a party that opposes the ruling 
                   party is illegal and risks imprisonment, torture, or death in some 
                   dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
@@ -409,8 +409,8 @@ const AreasOfIdentity = () => {
                 <p>
                   The region of the world you live in can affect your privilege or marginalization, 
                   in that some countries are affluent and others are poor. Some regions and 
-                  countries are harshly affected by ethnic conflict, war, and/or a variety of 
-                  environmental disasters and resultant displacement,  while others are relatively 
+                  countries are harshly affected by ethnic <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
+                  environmental disasters and resultant displacement</a>,  while others are relatively 
                   protected from those serious problems. The region you live in affects your access 
                   to resources, in that some regions have greater access than others to adequate 
                   healthcare and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
@@ -421,8 +421,8 @@ const AreasOfIdentity = () => {
                   resources. For instance, in the U.S., some inner-city and rural communities and 
                   regions areas are effectively food deserts and medical access deserts while others 
                   are more at risk environmentally. Institutional racism in housing policy and 
-                  banking means that some areas have more substandard housing than others. From 
-                  World War II until after the Vietnam War, the government subsidized mortgages 
+                  banking means that some areas have more substandard housing than others. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>From 
+                  World War II until after the Vietnam War,</a> the government subsidized mortgages 
                   and education for white veterans, but not for Black veterans; redlining (keeping 
                     Black people out of white neighborhoods was another institutionalized policy. 
                     Having less access to adequate housing, in turn, led to Black and Brown people 
@@ -477,9 +477,9 @@ const AreasOfIdentity = () => {
                   as privileging or marginalizing, based on many different issues. The same can 
                   apply to belonging to a paramilitary or guerrilla group. One issue involves 
                   how most people in the country perceived that war. Are returning veterans 
-                  hailed as heroes, as happened for World War II, or as war criminals, as 
+                  hailed as <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>heroes, as happened for World War II, or as war criminals, as 
                   happened for many US soldiers returning from Vietnam, or did military 
-                  service take place in peacetime? Did the service member come home from war 
+                  service take place in peacetime?</a> Did the service member come home from war 
                   with severe physical injuries or moral injuries, psychological trauma or 
                   cognitive problems caused by brain injury? These difficulties can also 
                   affect family relations, including parenting, as well as social relationships 
@@ -498,8 +498,8 @@ const AreasOfIdentity = () => {
                   sex slaves and are ostracized if they are able to get back home, 
                   especially if they had children by their rapists. In countries 
                   like <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>, which has not had a military draft since the 
-                  Vietnam War, do you feel privileged by your (or your loved one’s) 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>, which has not had a military draft <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>since the 
+                  Vietnam War,</a> do you feel privileged by your (or your loved one’s) 
                   military service or marginalized by it? Do you feel privileged or 
                   marginalized as a civilian without a military record? 
                 </p>
@@ -514,8 +514,8 @@ const AreasOfIdentity = () => {
                   and being passed over for promotions than men. The U.S. military was 
                   racially segregated until after World War II and Black, Brown, and 
                   Native people were routinely sent to be “cannon fodder” or to menial 
-                  labor in the military until quite recently. From World War II until 
-                  after the Vietnam War, the government subsidized mortgages and 
+                  labor in the military until quite recently. From <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>World War II until 
+                  after the Vietnam War,</a> the government subsidized mortgages and 
                   education for white veterans, through the GI Bill, creating 
                   generations of upward mobility for white veterans, but not for 
                   Black veterans. It also denied openly LGBTQ people the right to 
@@ -759,8 +759,8 @@ const AreasOfIdentity = () => {
                   death or abandonment, or court-decided custody arrangements, or parental imprisonment. 
                   Other children are kicked out of, or run away from, their homes because their parents 
                   respond abusively to their coming out as gay or lesbian, or as transgender, or genderqueer. Still others 
-                  lose their parents in war or refugee situations, or during a large-scale disaster or 
-                  pandemic.
+                  lose their parents in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>war or refugee situations, or during a large-scale disaster or 
+                  pandemic.</a>
                 </p> 
             </Typography>
 
@@ -783,8 +783,8 @@ const AreasOfIdentity = () => {
                   childcare and subsidies for children, that that disparity is blunted. 
                   In many societies, especially culturally and religiously conservative 
                   ones,  divorce is frowned upon at best and some countries (especially 
-                    those that are predominantly Catholic) only made divorce legal in 
-                  the late 20th century or early 21st century. 
+                    those that are predominantly Catholic) only made divorce legal <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
+                  the late 20th century or early 21st century.</a>
 
                 </p> 
             </Typography>
@@ -900,7 +900,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   The HIV/AIDS epidemic, which disproportionately hit gay men (as well as IV drug users) 
-                  and their sex partners, from the late 1970s until the 1990s was highly marginalizing 
+                  and their sex partners, from the late <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1970s until the 1990s</a> was highly marginalizing 
                   specifically because of its association to gay men at time when homophobia was the norm. 
                   Even today, in a time when life-saving treatment is available for what is now usually a 
                   chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
@@ -1027,7 +1027,7 @@ const AreasOfIdentity = () => {
                   In many cases, the person’s recognition of the incongruity between their experienced 
                   gender and assigned sex emerges later, in adolescence or even well into <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>adulthood</a>. 
                   Some <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older adults</a> who ultimately come out as transgender had trouble making sense of 
-                  their experience in their youth, because people of their generation or in their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>part of the world</a> may not have had any language to express that experience and/or are 
+                  their experience in their youth, because people <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>of their generation</a> or in their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>part of the world</a> may not have had any language to express that experience and/or are 
                   unaware that anyone else shares their experience. With the evolution of language, 
                   individuals in older generations may use an overarching term of “gay” to mean lesbian, 
                   bisexual, or queer. They may also identify as gay or lesbian before identifying and 
@@ -1041,12 +1041,12 @@ const AreasOfIdentity = () => {
                 <p>
                   In about one case in 2,000, babies are born with the sexual organs of both sexes; they are 
                   intersex people (historically called hermaphrodites), a group so marginalized that their 
-                  existence is barely known. Historically, doctors would remove all or most of one set of 
+                  existence is barely known. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historically,</a> doctors would remove all or most of one set of 
                   sexual organs and declare the baby to have the sex congruent with the remaining sexual 
                   organs. These babies, on growing up, however, often experienced what is officially 
                   diagnosed as gender dysphoria (but which would be better described as understandable 
                   distress over the incongruity between their experienced and assigned sex), even when 
-                  they did not know their medical history.  In recent years, doctors have been less eager 
+                  they did not know their medical history.  <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>In recent years,</a> doctors have been less eager 
                   to “correct” intersex conditions, so as to allow intersex people time to <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>mature</a> and make 
                   their own decisions about whether to remain intersex, to have gender confirmation surgery 
                   congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
