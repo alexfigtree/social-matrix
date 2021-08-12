@@ -109,27 +109,27 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  Household income and wealth are strongly affected by race in many <a href="/identity#geoRegion" 
+                  Household income and wealth are strongly affected by <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race</a> in many <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>countries.</a>.  
                   or example, in the US, Black, Latinx, and Native American people, as well as 
                   those from some Asian countries, generally make significantly less money than 
                   White people, and have far less wealth.  In addition, prejudicial governmental, 
                   housing, and banking policies historically and in the present on the basis of race, 
-                  ethnicity, and religion have systematically ensured that Black, Native 
-                  American, and Latino people (and, previously, Jews and Catholics) were denied access to 
-                  neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains racial inequality. Similarly, 
+                  ethnicity, and religion have systematically ensured that <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, Native 
+                  American,</a> and Latino people (and, previously, Jews and Catholics) were denied access to 
+                  neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial inequality.</a> Similarly, 
                   veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
-                  upward economic mobility to white veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
-                  subsidized home mortgages, but were denied to Black veterans.
+                  upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
+                  subsidized home mortgages, but were denied to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans.</a>
                 </p>
 
                 <p>
                   Gender, gender identity, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> achieved all affect 
-                  household income as well, with women making less than men (and Black, 
-                    Indigenous, and Latinx women making much less and having less wealth 
+                  household income as well, with women making less than men (and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, 
+                    Indigenous,</a> and Latinx women making much less and having less wealth 
                     than White men) and lesbian couples making less and having less wealth 
                   than heterosexual couples, while gay male couples make more and have more 
-                  wealth. Transgender Black and Brown people generally make less and have 
+                  wealth. Transgender <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown people</a> generally make less and have 
                   less wealth than all other groups.
                 </p>
 
@@ -189,7 +189,7 @@ const AreasOfIdentity = () => {
                     care and education), information (for instance, knowing how to search for information 
                     online), and influence (political, professional, or otherwise). This access is especially 
                     affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, 
-                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> race, and language(s) spoken, as well as <a href="/identity#geoRegion" 
+                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> and language(s) spoken, as well as <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close medical care is, how specialized the services, 
                     and even how inclusive local buildings, roads and transportation are to people with 
                     disabilities. 
@@ -229,7 +229,7 @@ const AreasOfIdentity = () => {
             <Typography id="ethnicity" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Ethnicity/Tribe</p>
                 <p>
-                    Ethnicity or tribe is distinct from race. For instance, someone who is racially 
+                    Ethnicity or tribe is distinct from <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race.</a> For instance, someone who is racially 
                     White might be ethnically Irish, German, Greek, Italian, or Jewish, while someone 
                     who is racially Black might be ethnically African American, Haitian, Jamaican, 
                     Ugandan, or Kenyan, etc. People from all racial groups may identify ethnically as 
@@ -253,7 +253,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
-                  occupations offer some modest protection against discrimination. Race and appearance 
+                  occupations offer some modest protection against discrimination. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Race</a> and appearance 
                   also play a role here; for instance, lighter-skinned people who identify as 
                   indigenous/Native American/First Nations people or as Arab may be less marginalized 
                   in the <a href="/identity#geoRegion" 
@@ -275,12 +275,12 @@ const AreasOfIdentity = () => {
                     families have been in their current country of residence for many generations 
                     may experience more privilege than immigrants or refugees to a new country 
                     and their children. There are exceptions, however. For example, in the US, 
-                    Native Americans/indigenous people, people descended from forcibly enslaved 
+                    <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Native Americans/indigenous people, people descended from forcibly enslaved 
                     Africans, and Latino/a/Latinx people near the Mexican border and in Puerto 
-                    Rico, who have citizenship, often have less citizenship privilege (legal 
+                    Rico,</a> who have citizenship, often have less citizenship privilege (legal 
                       protection, etc.) than more recent white immigrants and their children. 
-                    This is especially true for indigenous people (First Nation peoples or 
-                      Native Americans) <a href="/identity#geoRegion" 
+                    This is especially true for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous people (First Nation peoples or 
+                      Native Americans)</a> <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>living on reservations</a> that lack adequate healthcare, 
                     education, and basic utilities (water, electricity, and internet access). 
                     Some refugees may feel more privileged than those they left behind because 
@@ -306,8 +306,8 @@ const AreasOfIdentity = () => {
                   as from another <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>country, or even a different region of the country,</a> you 
                   may be at a disadvantage (marginalized) as well. You may be at even 
-                  greater disadvantage speaking with an accent if you are a Person of 
-                  Color, as racism intersects with language discrimination, unless that 
+                  greater disadvantage speaking with an accent if you are a <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Person of 
+                  Color,</a> as racism intersects with language discrimination, unless that 
                   accent marks you as from a <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. Immigrants who 
                   do not speak the dominant language of their country of residence, or who 
@@ -368,7 +368,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
                   be discouraged or in theocracies (national government run by a state religion), 
                   even forbidden, sometimes under penalty of death. This is particularly the case for 
-                  converts to a marginalized or prohibited religion or whose racial appearance differs 
+                  converts to a marginalized or prohibited religion or whose <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> appearance differs 
                   from that of most members of their new religion in their <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
                   Converts may also be rejected by family of origin and in some cases, not be welcomed 
@@ -420,12 +420,12 @@ const AreasOfIdentity = () => {
                   regions may be less likely to access and utilize healthcare and educational 
                   resources. For instance, in the U.S., some inner-city and rural communities and 
                   regions areas are effectively food deserts and medical access deserts while others 
-                  are more at risk environmentally. Institutional racism in housing policy and 
+                  are more at risk environmentally. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Institutional racism</a> in housing policy and 
                   banking means that some areas have more substandard housing than others. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>From 
                   World War II until after the Vietnam War,</a> the government subsidized mortgages 
-                  and education for white veterans, but not for Black veterans; redlining (keeping 
+                  and education for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans; redlining (keeping 
                     Black people out of white neighborhoods was another institutionalized policy. 
-                    Having less access to adequate housing, in turn, led to Black and Brown people 
+                    Having less access to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
                     have greater health risks. In addition, some countries in the developed world 
                     (but not the U.S.) guarantee paid parental leave, subsidies for children, and 
                     subsidized child and elder care, as well as universal health care and free or 
@@ -457,11 +457,11 @@ const AreasOfIdentity = () => {
                   also affects your lifetime. Finally, living through social and political movements 
                   can dramatically change the quality of many people’s lives and the privilege or 
                   marginalization they experience, and how they are perceived by others. Examples 
-                  of such movements include the US Civil Rights Movement;the Women’s Rights Movement; 
+                  of such movements include the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>US Civil Rights Movement</a>;the Women’s Rights Movement; 
                   and Rights for gays and lesbians,  trans people, and gender non-conforming people; 
-                  and Black Lives Matter in many countries; and for documented and undocumented 
-                  immigrants and Stop Asian Hate in the U.S., as well as nation-specific movements 
-                  like the anti-Apartheid movement in South Africa. Other examples of major changes 
+                  and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for documented and undocumented 
+                  immigrants and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
+                  like the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>anti-Apartheid movement in South Africa.</a> Other examples of major changes 
                   that differentially affect people’s access to information, education, healthcare, 
                   and even to geographically distant loved ones involve technological changes in 
                   computing. Because many <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older people</a> do not have the skills and comfort level 
@@ -505,20 +505,20 @@ const AreasOfIdentity = () => {
                 </p>
                 <p>
                   The military in many countries have historically (and often still) 
-                  engaged prejudicially on the basis of gender, race, sexual 
+                  engaged prejudicially on the basis of gender, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> sexual 
                   orientation, gender identity, and, in some countries, ethnicity. 
                   For instance, in the U.S., men were required to register for the 
                   draft (although there has not been a draft since 1973) and women 
                   were not. Women are still discriminated against within the military, 
                   and are far more likely to risk sexually assault and sexual harassment 
-                  and being passed over for promotions than men. The U.S. military was 
-                  racially segregated until after World War II and Black, Brown, and 
-                  Native people were routinely sent to be “cannon fodder” or to menial 
+                  and being passed over for promotions than men. The U.S. military was <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racially segregated</a> until after World War II and Black, Brown, and 
+                  Native people</a> were routinely sent to be “cannon fodder” or to menial 
                   labor in the military until quite recently. From <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>World War II until 
                   after the Vietnam War,</a> the government subsidized mortgages and 
-                  education for white veterans, through the GI Bill, creating 
-                  generations of upward mobility for white veterans, but not for 
-                  Black veterans. It also denied openly LGBTQ people the right to 
+                  education for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, through the GI Bill, creating 
+                  generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans. It also denied openly LGBTQ people the right to 
                   serve in the military until quite recently as well, and until 
                   2021, even transgender service members were denied the right to 
                   needed hormonal treatments and gender confirming surgeries. 
@@ -552,7 +552,7 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
-                  People of Color, as well as people with histories of substance abuse
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>People of Color,</a> as well as people with histories of substance abuse
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
@@ -563,9 +563,9 @@ const AreasOfIdentity = () => {
                   from public housing for letting a formerly incarcerated relative 
                   stay with them; they may also exclude relatives who have been 
                   incarcerated from family events. Entire communities that are 
-                  poor and of color can be marginalized by aggressive, sometimes 
+                  poor and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
                   violent, policing, which means disproportionate arrests, 
-                  incarcerations and even deaths at the hands of the police. People 
+                  incarcerations and even deaths at the hands of the police.</a> People 
                   with mental illness and substance abuse problems are also 
                   disproportionately arrested, tried, and incarcerated.  Finally, 
                   some jurors, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>attorneys, judges, courtroom staff, expert witnesses, 
@@ -594,7 +594,7 @@ const AreasOfIdentity = () => {
                     People with serious mental illnesses are more likely to be arrested and 
                     incarcerated, including time in Isolation while incarcerated, as well as 
                     to experience aggressive or violent policing, because they are seen as 
-                    threatening. This is particularly true for men of color, who are more 
+                    threatening. This is particularly true for men <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color,</a> who are more 
                     likely than others to be shot or arrested by police called in to help 
                     with a psychiatric crisis. 
                 </p> 
@@ -619,13 +619,13 @@ const AreasOfIdentity = () => {
                   abused in those settings. Different societies tend to prioritize different kinds 
                   of cognitive ability than others, so which cognitive skills are <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupationally</a> 
                   and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationally</a> privileged depends partly on the social context of one’s 
-                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. In addition, children of color are more likely to be 
+                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. In addition, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>children of color</a> are more likely to be 
                   incorrectly diagnosed with learning disabilities than white children, or 
                   have their learning disabilities misunderstood as lack of intelligence 
                   because of implicit bias. In addition, children with learning disabilities 
                   are often disciplined and seen as having behavioral problems rather than 
                   helped in school settings, with disproportionate school suspensions and 
-                  expulsions, especially when they are of color. These disciplinary responses 
+                  expulsions, especially when they are <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a> These disciplinary responses 
                   increase the likelihood of arrest and incarceration.
                 </p> 
             </Typography>
@@ -660,7 +660,7 @@ const AreasOfIdentity = () => {
                     or block access to needed health care (including hormone replacement therapy, 
                       gender-appropriate treatment planning, and gender confirmation surgeries, as well 
                       as needed sexual health care) to transgender and nonbinary individuals, especially 
-                    those of color.
+                    those <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a>
                 </p>
             </Typography>
 
@@ -668,7 +668,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Appearance</p>
                 <p>
                     Appearance can be a source of privilege if one is considered attractive or if 
-                    one’s phenotype or dress is consistent with the dominant racial, ethnic/tribal,  
+                    one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> ethnic/tribal,  
                     religious, or economic group. It can be marginalizing if not, especially in the 
                     case of disfigurement or visible disability. In many societies, being tall is 
                     privileging, as is looking lean and physically fit, and, in most western societies, 
@@ -700,7 +700,7 @@ const AreasOfIdentity = () => {
                   changing somewhat with globalization. In the U.S. and other western societies, in 
                   contrast, youth is exalted and is generally privileged (with some exceptions), 
                   while old age is associated with being decrepit or senile and is often marginalized, 
-                    especially occupationally. This is somewhat less the case in professional <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupations</a> 
+                    especially occupationally. This is somewhat less the case in professional <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupations </a> 
                   that require <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a> and that value experience over physical strength or 
                   technological savvy, while working-class occupations tend to require strength or 
                   speed and business job require speed and being up-to-date with technology. 
@@ -720,12 +720,12 @@ const AreasOfIdentity = () => {
                 </p>
                 <p>
                   Age or generation also has cultural implications in that different generations often 
-                  trend differently in relation to attitudes about politics, race, gender and reproductive 
+                  trend differently in relation to attitudes about politics, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> gender and reproductive 
                   rights, sexual orientation, gender identity, gender expression, and immigration policy, 
                   and have different levels of skill and access to computers and smart phones, among other 
-                  things. Finally, as life expectancy increases (however unequally among racial and 
+                  things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
-                  Black and Native American and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Native American</a> and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
                   expect to live out their family and work lives have shifted.
                 </p>
             </Typography>
@@ -904,7 +904,7 @@ const AreasOfIdentity = () => {
                   specifically because of its association to gay men at time when homophobia was the norm. 
                   Even today, in a time when life-saving treatment is available for what is now usually a 
                   chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
-                  again because of its association with Black and bisexual gay men and IV drug users, 
+                  again because of its association with <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> and bisexual gay men and IV drug users, 
                   and all their partners, of either gender, <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>in the US. it is also prevalent in several 
                   African and Caribbean nations</a> that have far fewer resources for treating it than in 
                   the US and Europe. 
@@ -973,9 +973,9 @@ const AreasOfIdentity = () => {
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many prisons 
                   and jails deny such treatments, as the US. Military did until 2021. Finally, 
-                  transgender people, particularly transgender women of Color, are extremely 
+                  transgender people, particularly transgender women <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
                   vulnerable to violent assault and murder because of a combination of transphobia, 
-                  homophobia, and racism. They are also vulnerable to suicidality because of the 
+                  homophobia, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
                   extreme stigma they face and the lack of emotional support and affirmation from 
                   family and the cisgender community.
                 </p>
