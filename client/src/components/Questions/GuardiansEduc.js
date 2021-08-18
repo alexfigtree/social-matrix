@@ -65,16 +65,17 @@ const GuardiansEduc = () => {
     const f4_5 = localStorage.getItem("4.5");
     //generate concatentated string
 
-    console.log('erge', f4_5);
+    //console.log('erge', f4_5);
     tempFootnotes[0][33].value = f4_5;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
     setFootnotes(tempFootnotes);
 
+
     //PROCESS MATRIX DATA
     let tempData = JSON.parse(localStorage.getItem('matrixData'));
 
-    const q4_4_1 = localStorage.getItem("container4.4.1"); //pre and post
-    const q4_4_2 = localStorage.getItem("container4.4.2"); //pre and post
+    let q4_4_1 = localStorage.getItem("container4.4.1"); //pre and post
+    let q4_4_2 = localStorage.getItem("container4.4.2"); //pre and post
     let q4_4_3 = localStorage.getItem("container4.4.3"); //pre and post
     let q4_4_4 = localStorage.getItem("container4.4.4"); //pre and post
     let q4_4_5 = localStorage.getItem("container4.4.5"); //pre and post
@@ -85,20 +86,23 @@ const GuardiansEduc = () => {
     console.log("4", q4_4_4);
     console.log("5", q4_4_5);
 
-/*    let domain2_not_null = [q4_4_1,q4_4_2,q4_4_3,q4_4_4,q4_4_5].filter(function (el) {
+    let domain2_not_null = [q4_4_1,q4_4_2,q4_4_3,q4_4_4,q4_4_5].filter(function (el) {
       
       return el !== null;
-    });*/
+    });
 
-    //console.log('domain2_not_null', domain2_not_null);
+    console.log('domain2_not_null', domain2_not_null);
 
     //let domain2_pre_post = [...domain2_not_null.split(',')];
     //let domain2_pre_post = [domain2_not_null];
     //console.log('domain2_pre_post', domain2_pre_post);
-    let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')];
 
-    let domain2_pre_post_small = Math.min(...domain2_pre_post);
-    let domain2_pre_post_large = Math.max(...domain2_pre_post);
+    //let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')].filter(Boolean);
+
+ 
+    console.log('domain pre post TEST', domain2_not_null);
+    let domain2_pre_post_small = Math.min(...domain2_not_null);
+    let domain2_pre_post_large = Math.max(...domain2_not_null);
     console.log('domain2_pre_post_small', domain2_pre_post_small);
     console.log('domain2_pre_post_large', domain2_pre_post_large);
 

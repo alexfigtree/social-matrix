@@ -53,20 +53,27 @@ const HouseholdIncome = () => {
     console.log('q3_2', q3_2);
     console.log('q3_3', q3_3);
     console.log('q3_4', q3_4);
-    let domain5_pre = [...q3_3.split(','), ...q3_4.split(',')];
-    console.log('domain5_pre', domain5_pre);
+    //let domain5_pre = [...q3_3.split(','), ...q3_4.split(',')];
+    let domain5_pre_not_null = [q3_3,q3_4].filter(function (el) {
+      return el !== null;
+    });
+    console.log('domain5_pre_not_null', domain5_pre_not_null);
 
-    let domain5_pre_small = Math.min(...domain5_pre);
-    let domain5_pre_large = Math.max(...domain5_pre);
+    let domain5_pre_small = Math.min(...domain5_pre_not_null);
+    let domain5_pre_large = Math.max(...domain5_pre_not_null);
     //console.log('q1_pre_small', q1_pre_small);
     //console.log('domain5_pre_large', domain5_pre_large);
     
     //post 1.2, 1.4
-    let domain5_post = [...q3_1.split(','), ...q3_2.split(',')];
-    console.log('domain5_post', domain5_post);
+    //let domain5_post = [...q3_1.split(','), ...q3_2.split(',')].filter(Boolean);
+    let domain5_post_not_null = [q3_1,q3_2].filter(function (el) {
+      return el !== null;
+    });
     
-    let domain5_post_small = Math.min(...domain5_post);
-    let domain5_post_large = Math.max(...domain5_post);
+    console.log('domain5_post_not_null', domain5_post_not_null);
+    
+    let domain5_post_small = Math.min(...domain5_post_not_null);
+    let domain5_post_large = Math.max(...domain5_post_not_null);
     //console.log('q1_post_small', q1_post_small);
     //console.log('q1_post_large', q1_post_large);
 

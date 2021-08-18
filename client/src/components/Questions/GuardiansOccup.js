@@ -61,11 +61,13 @@ const GuardiansOccup = () => {
     console.log("4", q4_6_4);
     console.log("5", q4_6_5);
 
-
+    let domain4_not_null = [q4_6_1,q4_6_2,q4_6_3,q4_6_4,q4_6_5].filter(function (el) {
+      return el !== null;
+    });
     //console.log('domain4_pre_post', domain4_pre_post);
-    let domain4_pre_post = [...q4_6_1.split(','),...q4_6_2.split(','),...q4_6_3.split(','),...q4_6_4.split(','),...q4_6_5.split(',')];
-    let domain4_pre_post_small = Math.min(...domain4_pre_post);
-    let domain4_pre_post_large = Math.max(...domain4_pre_post);
+    //let domain4_pre_post = [...q4_6_1.split(','),...q4_6_2.split(','),...q4_6_3.split(','),...q4_6_4.split(','),...q4_6_5.split(',')].filter(Boolean);
+    let domain4_pre_post_small = Math.min(...domain4_not_null);
+    let domain4_pre_post_large = Math.max(...domain4_not_null);
 
     tempData[0][31].value = domain4_pre_post_small;
     tempData[1][31].value = domain4_pre_post_large;

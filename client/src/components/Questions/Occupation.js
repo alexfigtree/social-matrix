@@ -26,6 +26,9 @@ const Occupation = () => {
     if (post) setPostData(post);
   }, [post]);
 
+  let [q2_2, setq2_2] = useState('');
+  let [q2_4, setq2_4] = useState('');
+
 
   useEffect(() => {
       var retrievedObject = localStorage.getItem('matrixData');

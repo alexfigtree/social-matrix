@@ -14,29 +14,47 @@ const ChildhoodIncome = () => {
   const [currentId, setCurrentId] = useState(0);
   const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
   const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
-  const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
+
+  const [footnotes, setFootnotes] = useState(JSON.parse(localStorage.getItem('footnotes')));
+  //const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
+  const matrix = useSelector((state) => (currentId ? state.matrixData.find((matrixData) => matrixData._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
 
-  useEffect(() => {
-    if (post) setPostData(post);
-  }, [post]);
+  let [q4_8_1, setq4_8_1] = useState('');
+  let [q4_8_2, setq4_8_2] = useState('');
+  let [q4_8_3, setq4_8_3] = useState('');
+  let [q4_8_4, setq4_8_4] = useState('');
+  let [q4_8_5, setq4_8_5] = useState('');
+  
+  // useEffect(() => {
+  //   if (post) setPostData(post);
+  // }, [post]);
 
+  useEffect(() => {
+    if (matrix) setMatrixData(matrix);
+  }, [matrix]);
 
   useEffect(() => {
-      var retrievedObject = localStorage.getItem('matrixData');
-      console.log('retrievedObject: during Childhood Income', JSON.parse(retrievedObject));
+    if (footnotes) setMatrixData(footnotes);
+  }, [footnotes]);
+
+  useEffect(() => {
+    var retrievedObject = localStorage.getItem('matrixData');
+    console.log('retrievedObject during q6 Childhood Income: ', JSON.parse(retrievedObject));
+
+    var retrievedFootnotes = localStorage.getItem('footnotes');
+    console.log('retrievedFootnotes during q6 Childhood Income: ', JSON.parse(retrievedFootnotes));      
   }, []);
 
   const clear = () => {
     setCurrentId(0);
-    setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+    setMatrixData({ matrixData: {} });
+    setFootnotes({ matrixData: {} });
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    let tempData = matrixData;
+    let tempData = JSON.parse(localStorage.getItem('matrixData'));
 
 
     let q4_8_1 = localStorage.getItem("container4.8.1"); //pre and post
@@ -53,9 +71,12 @@ const ChildhoodIncome = () => {
 
 
     //console.log('domain6_pre_post', domain6_pre_post);
-    let domain6_pre_post = [...q4_8_1.split(','),...q4_8_2.split(','),...q4_8_3.split(','),...q4_8_4.split(','),...q4_8_5.split(',')];
-    let domain6_pre_post_small = Math.min(...domain6_pre_post);
-    let domain6_pre_post_large = Math.max(...domain6_pre_post);
+    //let domain6_pre_post = [...q4_8_1.split(','),...q4_8_2.split(','),...q4_8_3.split(','),...q4_8_4.split(','),...q4_8_5.split(',')].filter(Boolean);
+    let domain6_not_null = [q4_8_1,q4_8_2,q4_8_3,q4_8_4,q4_8_5].filter(function (el) {
+      return el !== null;
+    });
+    let domain6_pre_post_small = Math.min(...domain6_not_null);
+    let domain6_pre_post_large = Math.max(...domain6_not_null);
 
     tempData[0][29].value = domain6_pre_post_small;
     tempData[1][29].value = domain6_pre_post_large;
@@ -65,6 +86,8 @@ const ChildhoodIncome = () => {
     localStorage.setItem('matrixData', JSON.stringify(tempData));
     setMatrixData(tempData);
 
+    //MISC
+    e.preventDefault();
 
     if (currentId === 0) {
       dispatch(createPost(postData));

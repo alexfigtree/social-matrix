@@ -649,7 +649,7 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h6" align="left">25) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
                     </Typography>
-                    <Typography variant="h6" align="left">26) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies ?> life-threatening heart condition @68
+                    <Typography variant="h6" align="left">26) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies --> life-threatening heart condition @68
                     </Typography>
                     <Typography variant="h6" align="left">27) <i>Appearance:</i> Attractive, gray hair, short
                     </Typography>
@@ -671,7 +671,7 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h6" align="left">36) <i>Sex Assigned at Birth:</i> Female
                     </Typography>
-                    <Typography variant="h6" align="left">37) <i>Unique History:</i> Son?s death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
+                    <Typography variant="h6" align="left">37) <i>Unique History:</i> Son's death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
                     </Typography>
             </Container>
 
