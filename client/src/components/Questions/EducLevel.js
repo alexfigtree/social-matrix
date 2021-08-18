@@ -52,12 +52,12 @@ const EducLevel = () => {
     const q1_3 = localStorage.getItem("container1.3");
     const q1_4 = localStorage.getItem("container1.4");
     const q1_5 = localStorage.getItem("container1.5");
-    console.log('...q1_3.split(',')', ...q1_3.split(','));
+  
     //pre 1.3, 1.5
     let domain1_pre_not_null = [q1_3,q1_5].filter(function (el) {
       return el !== null;
     });
-    console.log('domain1_pre_educ_level', domain1_pre);
+
     let domain1_pre_small = Math.min(...domain1_pre_not_null);
     let domain1_pre_large = Math.max(...domain1_pre_not_null);
     
@@ -86,15 +86,11 @@ const EducLevel = () => {
     const f1_6 = localStorage.getItem("1.6");
     //generate concatentated string
 
-    console.log('erge', f1_6);
     tempFootnotes[0][0].value = f1_6;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
     setFootnotes(tempFootnotes);
 
 
-
-
-    //console.log("what is my matrix data after submitting EDUC?", matrixData);
     //MISC:
     e.preventDefault();
 

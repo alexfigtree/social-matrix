@@ -21,6 +21,12 @@ const GuardiansChildHouseIncome = () => {
   const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
   const dispatch = useDispatch();
   const classes = useStyles();
+
+  let [q4_9_1, setq4_9_1] = useState('');
+  let [q4_9_2, setq4_9_2] = useState('');
+  let [q4_9_3, setq4_9_3] = useState('');
+  let [q4_9_4, setq4_9_4] = useState('');
+  let [q4_9_5, setq4_9_5] = useState('');
 /*
 
   const [q1_2, setq1_2] = useState(localStorage.getItem("container1.2"));
