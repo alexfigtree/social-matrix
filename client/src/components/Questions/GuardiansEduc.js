@@ -86,21 +86,10 @@ const GuardiansEduc = () => {
     console.log("4", q4_4_4);
     console.log("5", q4_4_5);
 
-    let domain2_not_null = [q4_4_1,q4_4_2,q4_4_3,q4_4_4,q4_4_5].filter(function (el) {
-      
+    let domain2_not_null = [q4_4_1,q4_4_2,q4_4_3,q4_4_4,q4_4_5].filter(function (el) { 
       return el !== null;
     });
-
-    console.log('domain2_not_null', domain2_not_null);
-
-    //let domain2_pre_post = [...domain2_not_null.split(',')];
-    //let domain2_pre_post = [domain2_not_null];
-    //console.log('domain2_pre_post', domain2_pre_post);
-
-    //let domain2_pre_post = [...q4_4_1.split(','),...q4_4_2.split(','),...q4_4_3.split(','),...q4_4_4.split(','),...q4_4_5.split(',')].filter(Boolean);
-
- 
-    console.log('domain pre post TEST', domain2_not_null);
+    
     let domain2_pre_post_small = Math.min(...domain2_not_null);
     let domain2_pre_post_large = Math.max(...domain2_not_null);
     console.log('domain2_pre_post_small', domain2_pre_post_small);

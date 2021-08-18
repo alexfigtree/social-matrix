@@ -45,14 +45,17 @@ const Appearance = () => {
     const q6_44 = localStorage.getItem("container6.44"); //pre
     const q6_43 = localStorage.getItem("container6.43"); //post
 
-    let domain24_pre = [...q6_44.split(',')];
-    let domain24_pre_small = Math.min(...domain24_pre);
-    let domain24_pre_large = Math.max(...domain24_pre);
+    let domain24_pre_not_null = [q6_44].filter(function (el) {
+      return el !== null;
+    });
+    let domain24_pre_small = Math.min(...domain24_pre_not_null);
+    let domain24_pre_large = Math.max(...domain24_pre_not_null);
 
-
-    let domain24_post = [...q6_43.split(',')];
-    let domain24_post_small = Math.min(...domain24_post);
-    let domain24_post_large = Math.max(...domain24_post);
+    let domain24_post_not_null = [q6_43].filter(function (el) {
+      return el !== null;
+    });
+    let domain24_post_small = Math.min(...domain24_post_not_null);
+    let domain24_post_large = Math.max(...domain24_post_not_null);
 
 
     tempData[0][11].value = domain24_pre_small;

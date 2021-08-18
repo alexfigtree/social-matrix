@@ -54,16 +54,19 @@ const EducLevel = () => {
     const q1_5 = localStorage.getItem("container1.5");
     console.log('...q1_3.split(',')', ...q1_3.split(','));
     //pre 1.3, 1.5
-    let domain1_pre = [...q1_3.split(','), ...q1_5.split(',')];
+    let domain1_pre_not_null = [q1_3,q1_5].filter(function (el) {
+      return el !== null;
+    });
     console.log('domain1_pre_educ_level', domain1_pre);
-    let domain1_pre_small = Math.min(...domain1_pre);
-    let domain1_pre_large = Math.max(...domain1_pre);
+    let domain1_pre_small = Math.min(...domain1_pre_not_null);
+    let domain1_pre_large = Math.max(...domain1_pre_not_null);
     
     //post 1.2, 1.4
-    let domain1_post = [...q1_2.split(','), ...q1_4.split(',')];
-    
-    let domain1_post_small = Math.min(...domain1_post);
-    let domain1_post_large = Math.max(...domain1_post);
+    let domain1_post_not_null = [q1_2,q1_4].filter(function (el) {
+      return el !== null;
+    });
+    let domain1_post_small = Math.min(...domain1_post_not_null);
+    let domain1_post_large = Math.max(...domain1_post_not_null);
 
 
     tempData[0][0].value = domain1_pre_small;

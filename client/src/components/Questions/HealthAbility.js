@@ -45,14 +45,18 @@ const HealthAbility = () => {
     const q6_41 = localStorage.getItem("container6.41"); //pre
     const q6_40 = localStorage.getItem("container6.40"); //post
 
-    let domain23_pre = [...q6_41.split(',')];
-    let domain23_pre_small = Math.min(...domain23_pre);
-    let domain23_pre_large = Math.max(...domain23_pre);
+    let domain23_pre_not_null = [q6_41].filter(function (el) {
+      return el !== null;
+    });
+    let domain23_pre_small = Math.min(...domain23_pre_not_null);
+    let domain23_pre_large = Math.max(...domain23_pre_not_null);
 
 
-    let domain23_post = [...q6_40.split(',')];
-    let domain23_post_small = Math.min(...domain23_post);
-    let domain23_post_large = Math.max(...domain23_post);
+    let domain23_post_not_null = [q6_40].filter(function (el) {
+      return el !== null;
+    });
+    let domain23_post_small = Math.min(...domain23_post_not_null);
+    let domain23_post_large = Math.max(...domain23_post_not_null);
 
 
     tempData[0][12].value = domain23_pre_small;

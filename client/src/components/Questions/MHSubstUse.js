@@ -51,13 +51,17 @@ const MHSubstUse = () => {
     const q6_31 = localStorage.getItem("container6.31"); //post
     const q6_34 = localStorage.getItem("container6.34"); //post
 
-    let domain21_pre = [...q6_32.split(','),...q6_35.split(',')];
-    let domain21_pre_small = Math.min(...domain21_pre);
-    let domain21_pre_large = Math.max(...domain21_pre);
+    let domain21_pre_not_null = [q6_32,q6_35].filter(function (el) {
+      return el !== null;
+    });
+    let domain21_pre_small = Math.min(...domain21_pre_not_null);
+    let domain21_pre_large = Math.max(...domain21_pre_not_null);
 
-    let domain21_post = [...q6_31.split(','),...q6_34.split(',')];
-    let domain21_post_small = Math.min(...domain21_post);
-    let domain21_post_large = Math.max(...domain21_post);
+    let domain21_post_not_null = [q6_31,q6_34].filter(function (el) {
+      return el !== null;
+    });
+    let domain21_post_small = Math.min(...domain21_post_not_null);
+    let domain21_post_large = Math.max(...domain21_post_not_null);
 
     tempData[0][14].value = domain21_pre_small;
     tempData[1][14].value = domain21_pre_large;

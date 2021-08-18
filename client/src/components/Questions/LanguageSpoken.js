@@ -44,11 +44,13 @@ const LanguageSpoken = () => {
 
     const q5_17 = localStorage.getItem("container5.17");
 
-    let domain13_pre_post = [...q5_17.split(',')];
+    let domain13_not_null = [q5_17].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain13_pre_post_small = Math.min(...domain13_pre_post);
+    let domain13_pre_post_small = Math.min(...domain13_not_null);
     
-    let domain13_pre_post_large = Math.max(...domain13_pre_post);
+    let domain13_pre_post_large = Math.max(...domain13_not_null);
 
 
     tempData[0][22].value = domain13_pre_post_small;

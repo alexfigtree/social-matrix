@@ -48,13 +48,18 @@ const SexualOrientation = () => {
     const q7_25 = localStorage.getItem("container7.25"); //pre
     const q7_24 = localStorage.getItem("container7.24"); //post
 
-    let domain30_pre = [...q7_25.split(',')];
-    let domain30_pre_small = Math.min(...domain30_pre);
-    let domain30_pre_large = Math.max(...domain30_pre);
+    let domain30_pre_not_null = [q7_25].filter(function (el) {
+      return el !== null;
+    });
+    let domain30_pre_small = Math.min(...domain30_pre_not_null);
+    let domain30_pre_large = Math.max(...domain30_pre_not_null);
 
-    let domain30_post = [...q7_24.split(',')];
-    let domain30_post_small = Math.min(...domain30_post);
-    let domain30_post_large = Math.max(...domain30_post);
+    let domain30_post_not_null = [q7_24].filter(function (el) {
+      return el !== null;
+    });
+    let dom
+    let domain30_post_small = Math.min(...domain30_post_not_null);
+    let domain30_post_large = Math.max(...domain30_post_not_null);
 
     tempData[0][5].value = domain30_pre_small;
     tempData[1][5].value = domain30_pre_large;

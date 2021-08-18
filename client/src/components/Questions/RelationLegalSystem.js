@@ -46,16 +46,18 @@ const RelationLegalSystem = () => {
     const q6_28 = localStorage.getItem("container6.28"); //pre
     const q6_27 = localStorage.getItem("container6.27"); //post
 
-    console.log('tests q6_28', q6_28);
-    console.log('tests q6_27', q6_27);
-    let domain20_pre = [...q6_28.split(',')];
-    let domain20_pre_small = Math.min(...domain20_pre);
-    let domain20_pre_large = Math.max(...domain20_pre);
+    let domain20_pre_not_null = [q6_28].filter(function (el) {
+      return el !== null;
+    });
+    let domain20_pre_small = Math.min(...domain20_pre_not_null);
+    let domain20_pre_large = Math.max(...domain20_pre_not_null);
 
 
-    let domain20_post = [...q6_27.split(',')];
-    let domain20_post_small = Math.min(...domain20_post);
-    let domain20_post_large = Math.max(...domain20_post);
+    let domain20_post_not_null = [q6_27].filter(function (el) {
+      return el !== null;
+    });
+    let domain20_post_small = Math.min(...domain20_post_not_null);
+    let domain20_post_large = Math.max(...domain20_post_not_null);
 
 
     tempData[0][15].value = domain20_pre_small;

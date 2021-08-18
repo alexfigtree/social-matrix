@@ -47,14 +47,18 @@ const Race = () => {
     const q5_2 = localStorage.getItem("container5.2"); //post
     const q5_3 = localStorage.getItem("container5.3"); //pre
 
-    let domain10_pre = [...q5_3.split(',')];
-    let domain10_pre_small = Math.min(...domain10_pre);
-    let domain10_pre_large = Math.max(...domain10_pre);
+    let domain10_pre_not_null = [q5_3].filter(function (el) {
+      return el !== null;
+    });
+    let domain10_pre_small = Math.min(...domain10_pre_not_null);
+    let domain10_pre_large = Math.max(...domain10_pre_not_null);
 
 
-    let domain10_post = [...q5_2.split(',')];
-    let domain10_post_small = Math.min(...domain10_post);
-    let domain10_post_large = Math.max(...domain10_post);
+    let domain10_post_not_null = [q5_2].filter(function (el) {
+      return el !== null;
+    });
+    let domain10_post_small = Math.min(...domain10_post_not_null);
+    let domain10_post_large = Math.max(...domain10_post_not_null);
 
 
     tempData[0][25].value = domain10_pre_small;

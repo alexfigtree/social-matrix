@@ -53,9 +53,11 @@ const NationOfOriginCitizenship = () => {
     const q5_12 = localStorage.getItem("container5.12"); //pre and post
     const q5_13 = localStorage.getItem("container5.13"); //pre and post
 
-    let domain12_pre_post = [...q5_11.split(','),...q5_12.split(','),...q5_13.split(',')];
-    let domain12_pre_post_small = Math.min(...domain12_pre_post);
-    let domain12_pre_post_large = Math.max(...domain12_pre_post);
+    let domain12_not_null = [q5_11,q5_12,q5_13].filter(function (el) {
+      return el !== null;
+    });
+    let domain12_pre_post_small = Math.min(...domain12_not_null);
+    let domain12_pre_post_large = Math.max(...domain12_not_null);
 
     tempData[0][23].value = domain12_pre_post_small;
     tempData[1][23].value = domain12_pre_post_large;

@@ -49,13 +49,19 @@ const ParentalStatus = () => {
     const q7_7 = localStorage.getItem("container7.7"); //pre
     const q7_6 = localStorage.getItem("container7.6"); //post
 
-    let domain28_pre = [...q7_7.split(',')];
-    let domain28_pre_small = Math.min(...domain28_pre);
-    let domain28_pre_large = Math.max(...domain28_pre);
 
-    let domain28_post = [...q7_6.split(',')];
-    let domain28_post_small = Math.min(...domain28_post);
-    let domain28_post_large = Math.max(...domain28_post);
+    let domain28_pre_not_null = [q7_7].filter(function (el) {
+      return el !== null;
+    });
+    let domain28_pre_small = Math.min(...domain28_pre_not_null);
+    let domain28_pre_large = Math.max(...domain28_pre_not_null);
+
+
+    let domain28_post_not_null = [q7_6].filter(function (el) {
+      return el !== null;
+    });
+    let domain28_post_small = Math.min(...domain28_post_not_null);
+    let domain28_post_large = Math.max(...domain28_post_not_null);
 
     tempData[0][7].value = domain28_pre_small;
     tempData[1][7].value = domain28_pre_large;

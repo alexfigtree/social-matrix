@@ -55,9 +55,11 @@ const GuardiansAccess = () => {
     console.log("5", q4_11_5);
 
     //console.log('domain9_pre_post', domain9_pre_post);
-    let domain9_pre_post = [...q4_11_1.split(','),...q4_11_2.split(','),...q4_11_3.split(','),...q4_11_4.split(','),...q4_11_5.split(',')];
-    let domain9_pre_post_small = Math.min(...domain9_pre_post);
-    let domain9_pre_post_large = Math.max(...domain9_pre_post);
+    let domain9_not_null = [q4_11_1,q4_11_2,q4_11_3,q4_11_4,q4_11_5].filter(function (el) {
+      return el !== null;
+    });
+    let domain9_pre_post_small = Math.min(...domain9_not_null);
+    let domain9_pre_post_large = Math.max(...domain9_not_null);
 
     tempData[0][26].value = domain9_pre_post_small;
     tempData[1][26].value = domain9_pre_post_large;

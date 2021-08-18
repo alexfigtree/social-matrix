@@ -45,14 +45,18 @@ const ChosenReligion = () => {
     const q6_7 = localStorage.getItem("container6.7"); //pre
     const q6_6 = localStorage.getItem("container6.6"); //post
 
-    let domain15_pre = [...q6_7.split(',')];
-    let domain15_pre_small = Math.min(...domain15_pre);
-    let domain15_pre_large = Math.max(...domain15_pre);
+    let domain15_pre_not_null = [q6_7].filter(function (el) {
+      return el !== null;
+    });
+    let domain15_pre_small = Math.min(...domain15_pre_not_null);
+    let domain15_pre_large = Math.max(...domain15_pre_not_null);
 
 
-    let domain15_post = [...q6_6.split(',')];
-    let domain15_post_small = Math.min(...domain15_post);
-    let domain15_post_large = Math.max(...domain15_post);
+    let domain15_post_not_null = [q6_6].filter(function (el) {
+      return el !== null;
+    });
+    let domain15_post_small = Math.min(...domain15_post_not_null);
+    let domain15_post_large = Math.max(...domain15_post_not_null);
 
 
     tempData[0][20].value = domain15_pre_small;

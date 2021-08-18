@@ -43,11 +43,13 @@ const Access = () => {
     
     const q3_5 = localStorage.getItem("container3.5");
 
-    let domain8_pre_post = [...q3_5.split(',')];
+    let domain8_not_null = [q3_5].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain8_pre_post_small = Math.min(...domain8_pre_post);
+    let domain8_pre_post_small = Math.min(...domain8_not_null);
     
-    let domain8_pre_post_large = Math.max(...domain8_pre_post);
+    let domain8_pre_post_large = Math.max(...domain8_not_null);
 
 
     tempData[0][27].value = domain8_pre_post_small;

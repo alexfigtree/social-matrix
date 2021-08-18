@@ -45,13 +45,17 @@ const Ethnicity = () => {
     const q5_6 = localStorage.getItem("container5.6"); //post
     const q5_7 = localStorage.getItem("container5.7"); //pre
 
-    let domain11_pre = [...q5_7.split(',')];
-    let domain11_pre_small = Math.min(...domain11_pre);
-    let domain11_pre_large = Math.max(...domain11_pre);
+    let domain11_pre_not_null = [q5_7].filter(function (el) {
+      return el !== null;
+    });
+    let domain11_pre_small = Math.min(...domain11_pre_not_null);
+    let domain11_pre_large = Math.max(...domain11_pre_not_null);
 
-    let domain11_post = [...q5_6.split(',')];
-    let domain11_post_small = Math.min(...domain11_post);
-    let domain11_post_large = Math.max(...domain11_post);
+    let domain11_post_not_null = [q5_6].filter(function (el) {
+      return el !== null;
+    });
+    let domain11_post_small = Math.min(...domain11_post_not_null);
+    let domain11_post_large = Math.max(...domain11_post_not_null);
 
     tempData[0][24].value = domain11_pre_small;
     tempData[1][24].value = domain11_pre_large;

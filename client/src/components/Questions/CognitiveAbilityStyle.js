@@ -45,14 +45,18 @@ const CognitiveAbilityStyle = () => {
     const q6_38 = localStorage.getItem("container6.38"); //pre
     const q6_37 = localStorage.getItem("container6.37"); //post
 
-    let domain22_pre = [...q6_38.split(',')];
-    let domain22_pre_small = Math.min(...domain22_pre);
-    let domain22_pre_large = Math.max(...domain22_pre);
 
+    let domain22_pre_not_null = [q6_38].filter(function (el) {
+      return el !== null;
+    });
+    let domain22_pre_small = Math.min(...domain22_pre_not_null);
+    let domain22_pre_large = Math.max(...domain22_pre_not_null);
 
-    let domain22_post = [...q6_37.split(',')];
-    let domain22_post_small = Math.min(...domain22_post);
-    let domain22_post_large = Math.max(...domain22_post);
+    let domain22_post_not_null = [q6_37].filter(function (el) {
+      return el !== null;
+    });
+    let domain22_post_small = Math.min(...domain22_post_not_null);
+    let domain22_post_large = Math.max(...domain22_post_not_null);
 
 
     tempData[0][13].value = domain22_pre_small;

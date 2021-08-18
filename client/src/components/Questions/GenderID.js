@@ -45,13 +45,17 @@ const GenderID = () => {
     const q7_19 = localStorage.getItem("container7.19"); //pre
     const q7_18 = localStorage.getItem("container7.18"); //post
 
-    let domain31_pre = [...q7_19.split(',')];
-    let domain31_pre_small = Math.min(...domain31_pre);
-    let domain31_pre_large = Math.max(...domain31_pre);
+    let domain31_pre_not_null = [q7_19].filter(function (el) {
+      return el !== null;
+    });
+    let domain31_pre_small = Math.min(...domain31_pre_not_null);
+    let domain31_pre_large = Math.max(...domain31_pre_not_null);
 
-    let domain31_post = [...q7_18.split(',')];
-    let domain31_post_small = Math.min(...domain31_post);
-    let domain31_post_large = Math.max(...domain31_post);
+    let domain31_post_not_null = [q7_18].filter(function (el) {
+      return el !== null;
+    });
+    let domain31_post_small = Math.min(...domain31_post_not_null);
+    let domain31_post_large = Math.max(...domain31_post_not_null);
 
     tempData[0][4].value = domain31_pre_small;
     tempData[1][4].value = domain31_pre_large;

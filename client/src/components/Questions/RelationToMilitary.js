@@ -49,14 +49,18 @@ const RelationToMilitary = () => {
     const q6_25 = localStorage.getItem("container6.25"); //pre
     const q6_24 = localStorage.getItem("container6.24"); //post
 
-    let domain19_pre = [...q6_25.split(',')];
-    let domain19_pre_small = Math.min(...domain19_pre);
-    let domain19_pre_large = Math.max(...domain19_pre);
+    let domain19_pre_not_null = [q6_25].filter(function (el) {
+      return el !== null;
+    });
+    let domain19_pre_small = Math.min(...domain19_pre_not_null);
+    let domain19_pre_large = Math.max(...domain19_pre_not_null);
 
 
-    let domain19_post = [...q6_24.split(',')];
-    let domain19_post_small = Math.min(...domain19_post);
-    let domain19_post_large = Math.max(...domain19_post);
+    let domain19_post_not_null = [q6_24].filter(function (el) {
+      return el !== null;
+    });
+    let domain19_post_small = Math.min(...domain19_post_not_null);
+    let domain19_post_large = Math.max(...domain19_post_not_null);
 
 
     tempData[0][16].value = domain19_pre_small;

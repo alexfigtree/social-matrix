@@ -51,13 +51,17 @@ const UniqueHistory = () => {
     const q7_28 = localStorage.getItem("container7.28"); //pre
     const q7_27 = localStorage.getItem("container7.27"); //post
 
-    let domain34_pre = [...q7_28.split(',')];
-    let domain34_pre_small = Math.min(...domain34_pre);
-    let domain34_pre_large = Math.max(...domain34_pre);
+    let domain34_pre_not_null = [q7_28].filter(function (el) {
+      return el !== null;
+    });
+    let domain34_pre_small = Math.min(...domain34_pre_not_null);
+    let domain34_pre_large = Math.max(...domain34_pre_not_null);
 
-    let domain34_post = [...q7_27.split(',')];
-    let domain34_post_small = Math.min(...domain34_post);
-    let domain34_post_large = Math.max(...domain34_post);
+    let domain34_post_not_null = [q7_27].filter(function (el) {
+      return el !== null;
+    });
+    let domain34_post_small = Math.min(...domain34_post_not_null);
+    let domain34_post_large = Math.max(...domain34_post_not_null);
 
     tempData[0][1].value = domain34_pre_small;
     tempData[1][1].value = domain34_pre_large;

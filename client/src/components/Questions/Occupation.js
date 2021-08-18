@@ -62,17 +62,22 @@ const Occupation = () => {
     const q2_2 = localStorage.getItem("container2.2");
     const q2_4 = localStorage.getItem("container2.4");
 
-    let domain3_pre = [...q2_4.split(',')];
-    let domain3_post = [...q2_2.split(',')];
+    let domain3_pre_not_null = [q2_4].filter(function (el) {
+      return el !== null;
+    });
 
-    console.log('domain3_pre', domain3_pre);
-    console.log('domain3_pre', domain3_post);
+    let domain3_post_not_null = [q2_2].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain3_pre_small = Math.min(...domain3_pre);
-    let domain3_pre_large = Math.max(...domain3_pre);
+    console.log('domain3_pre', domain3_pre_not_null);
+    console.log('domain3_pre', domain3_post_not_null);
 
-    let domain3_post_small = Math.min(...domain3_post);
-    let domain3_post_large = Math.max(...domain3_post);
+    let domain3_pre_small = Math.min(...domain3_pre_not_null);
+    let domain3_pre_large = Math.max(...domain3_pre_not_null);
+
+    let domain3_post_small = Math.min(...domain3_post_not_null);
+    let domain3_post_large = Math.max(...domain3_post_not_null);
 
     console.log('Values being saved for domain3 pre', domain3_pre_small, ' ', domain3_pre_large);
     console.log('Values being saved for domain3 post', domain3_post_small, ' ', domain3_post_large);

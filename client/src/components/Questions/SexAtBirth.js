@@ -45,13 +45,18 @@ const SexAtBirth = () => {
     const q7_16 = localStorage.getItem("container7.16"); //pre
     const q7_15 = localStorage.getItem("container7.15"); //post
 
-    let domain33_pre = [...q7_16.split(',')];
-    let domain33_pre_small = Math.min(...domain33_pre);
-    let domain33_pre_large = Math.max(...domain33_pre);
+    let domain33_pre_not_null = [q7_16].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain33_post = [...q7_15.split(',')];
-    let domain33_post_small = Math.min(...domain33_post);
-    let domain33_post_large = Math.max(...domain33_post);
+    let domain33_pre_small = Math.min(...domain33_pre_not_null);
+    let domain33_pre_large = Math.max(...domain33_pre_not_null);
+
+    let domain33_post_not_null = [q7_15].filter(function (el) {
+      return el !== null;
+    });
+    let domain33_post_small = Math.min(...domain33_post_not_null);
+    let domain33_post_large = Math.max(...domain33_post_not_null);
 
     tempData[0][2].value = domain33_pre_small;
     tempData[1][2].value = domain33_pre_large;

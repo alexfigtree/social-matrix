@@ -63,9 +63,11 @@ const GuardiansChildHouseIncome = () => {
     console.log("4", q4_9_4);
     console.log("5", q4_9_5);
 
-    let domain7_pre_post = [...q4_9_1.split(','),...q4_9_2.split(','),...q4_9_3.split(','),...q4_9_4.split(','),...q4_9_5.split(',')];
-    let domain7_pre_post_small = Math.min(...domain7_pre_post);
-    let domain7_pre_post_large = Math.max(...domain7_pre_post);
+    let domain7_not_null = [q4_9_1,q4_9_2,q4_9_3,q4_9_4,q4_9_5].filter(function (el) {
+      return el !== null;
+    });
+    let domain7_pre_post_small = Math.min(...domain7_not_null);
+    let domain7_pre_post_large = Math.max(...domain7_not_null);
 
     tempData[0][28].value = domain7_pre_post_small;
     tempData[1][28].value = domain7_pre_post_large;

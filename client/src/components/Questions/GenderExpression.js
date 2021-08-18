@@ -46,13 +46,17 @@ const GenderExpression = () => {
     const q7_22 = localStorage.getItem("container7.22"); //pre
     const q7_21 = localStorage.getItem("container7.21"); //post
 
-    let domain32_pre = [...q7_22.split(',')];
-    let domain32_pre_small = Math.min(...domain32_pre);
-    let domain32_pre_large = Math.max(...domain32_pre);
+    let domain32_pre_not_null = [q7_22].filter(function (el) {
+      return el !== null;
+    });
+    let domain32_pre_small = Math.min(...domain32_pre_not_null);
+    let domain32_pre_large = Math.max(...domain32_pre_not_null);
 
-    let domain32_post = [...q7_21.split(',')];
-    let domain32_post_small = Math.min(...domain32_post);
-    let domain32_post_large = Math.max(...domain32_post);
+    let domain32_post_not_null = [q7_21].filter(function (el) {
+      return el !== null;
+    });
+    let domain32_post_small = Math.min(...domain32_post_not_null);
+    let domain32_post_large = Math.max(...domain32_post_not_null);
 
     tempData[0][3].value = domain32_pre_small;
     tempData[1][3].value = domain32_pre_large;

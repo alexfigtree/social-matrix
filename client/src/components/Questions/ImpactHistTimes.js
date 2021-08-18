@@ -45,14 +45,18 @@ const ImpactHistTimes = () => {
     const q6_17 = localStorage.getItem("container6.17"); //pre
     const q6_16 = localStorage.getItem("container6.16"); //post
 
-    let domain18_pre = [...q6_17.split(',')];
-    let domain18_pre_small = Math.min(...domain18_pre);
-    let domain18_pre_large = Math.max(...domain18_pre);
+    let domain18_pre_not_null = [q6_17].filter(function (el) {
+      return el !== null;
+    });
+    let domain18_pre_small = Math.min(...domain18_pre_not_null);
+    let domain18_pre_large = Math.max(...domain18_pre_not_null);
 
 
-    let domain18_post = [...q6_16.split(',')];
-    let domain18_post_small = Math.min(...domain18_post);
-    let domain18_post_large = Math.max(...domain18_post);
+    let domain18_post_not_null = [q6_16].filter(function (el) {
+      return el !== null;
+    });
+    let domain18_post_small = Math.min(...domain18_post_not_null);
+    let domain18_post_large = Math.max(...domain18_post_not_null);
 
 
     tempData[0][17].value = domain18_pre_small;

@@ -62,9 +62,12 @@ const GuardiansMaritalStatus = () => {
     console.log("4", q4_14_4);
     console.log("5", q4_14_5);
 
-    let domain27_pre_post = [...q4_14_1.split(','),...q4_14_2.split(','),...q4_14_3.split(','),...q4_14_4.split(','),...q4_14_5.split(',')];
-    let domain27_pre_post_small = Math.min(...domain27_pre_post);
-    let domain27_pre_post_large = Math.max(...domain27_pre_post);
+    let domain27_not_null = [q4_14_1,q4_14_2,q4_14_3,q4_14_4,q4_14_5].filter(function (el) {
+      return el !== null;
+    });
+
+    let domain27_pre_post_small = Math.min(...domain27_not_null);
+    let domain27_pre_post_large = Math.max(...domain27_not_null);
 
     tempData[0][8].value = domain27_pre_post_small;
     tempData[1][8].value = domain27_pre_post_large;

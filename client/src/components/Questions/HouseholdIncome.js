@@ -49,15 +49,11 @@ const HouseholdIncome = () => {
     const q3_3 = localStorage.getItem("container3.3");
     const q3_4 = localStorage.getItem("container3.4");
 
-    console.log('q3_1', q3_1);
-    console.log('q3_2', q3_2);
-    console.log('q3_3', q3_3);
-    console.log('q3_4', q3_4);
+
     //let domain5_pre = [...q3_3.split(','), ...q3_4.split(',')];
     let domain5_pre_not_null = [q3_3,q3_4].filter(function (el) {
       return el !== null;
     });
-    console.log('domain5_pre_not_null', domain5_pre_not_null);
 
     let domain5_pre_small = Math.min(...domain5_pre_not_null);
     let domain5_pre_large = Math.max(...domain5_pre_not_null);

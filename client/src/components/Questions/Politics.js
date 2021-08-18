@@ -45,14 +45,18 @@ const Politics = () => {
     const q6_11 = localStorage.getItem("container6.11"); //pre
     const q6_10 = localStorage.getItem("container6.10"); //post
 
-    let domain16_pre = [...q6_11.split(',')];
-    let domain16_pre_small = Math.min(...domain16_pre);
-    let domain16_pre_large = Math.max(...domain16_pre);
+    let domain16_pre_not_null = [q6_11].filter(function (el) {
+      return el !== null;
+    });
+    let domain16_pre_small = Math.min(...domain16_pre_not_null);
+    let domain16_pre_large = Math.max(...domain16_pre_not_null);
 
 
-    let domain16_post = [...q6_10.split(',')];
-    let domain16_post_small = Math.min(...domain16_post);
-    let domain16_post_large = Math.max(...domain16_post);
+    let domain16_post_not_null = [q6_10].filter(function (el) {
+      return el !== null;
+    });
+    let domain16_post_small = Math.min(...domain16_post_not_null);
+    let domain16_post_large = Math.max(...domain16_post_not_null);
 
 
     tempData[0][19].value = domain16_pre_small;

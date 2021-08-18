@@ -45,14 +45,17 @@ const GeoRegion = () => {
     const q6_14 = localStorage.getItem("container6.14"); //pre
     const q6_13 = localStorage.getItem("container6.13"); //post
 
-    let domain17_pre = [...q6_14.split(',')];
-    let domain17_pre_small = Math.min(...domain17_pre);
-    let domain17_pre_large = Math.max(...domain17_pre);
+    let domain17_pre_not_null = [q6_14].filter(function (el) {
+      return el !== null;
+    });
+    let domain17_pre_small = Math.min(...domain17_pre_not_null);
+    let domain17_pre_large = Math.max(...domain17_pre_not_null);
 
-
-    let domain17_post = [...q6_13.split(',')];
-    let domain17_post_small = Math.min(...domain17_post);
-    let domain17_post_large = Math.max(...domain17_post);
+    let domain17_post_not_null = [q6_13].filter(function (el) {
+      return el !== null;
+    });
+    let domain17_post_small = Math.min(...domain17_post_not_null);
+    let domain17_post_large = Math.max(...domain17_post_not_null);
 
 
     tempData[0][18].value = domain17_pre_small;

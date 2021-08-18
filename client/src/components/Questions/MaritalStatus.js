@@ -65,13 +65,18 @@ const MaritalStatus = () => {
     const q7_13 = localStorage.getItem("container7.13"); //pre
     const q7_12 = localStorage.getItem("container7.12"); //post
 
-    let domain29_pre = [...q7_13.split(',')];
-    let domain29_pre_small = Math.min(...domain29_pre);
-    let domain29_pre_large = Math.max(...domain29_pre);
+    let domain29_pre_not_null = [q7_13].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain29_post = [...q7_12.split(',')];
-    let domain29_post_small = Math.min(...domain29_post);
-    let domain29_post_large = Math.max(...domain29_post);
+    let domain29_pre_small = Math.min(...domain29_pre_not_null);
+    let domain29_pre_large = Math.max(...domain29_pre_not_null);
+
+    let domain29_post_not_null = [q7_12].filter(function (el) {
+      return el !== null;
+    });
+    let domain29_post_small = Math.min(...domain29_post_not_null);
+    let domain29_post_large = Math.max(...domain29_post_not_null);
 
     tempData[0][6].value = domain29_pre_small;
     tempData[1][6].value = domain29_pre_large;

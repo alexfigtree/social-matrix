@@ -44,11 +44,14 @@ const Age = () => {
 
     const q7_2 = localStorage.getItem("container7.2");
 
-    let domain25_pre_post = [...q7_2.split(',')];
+    let domain25_not_null = [q7_2].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain25_pre_post_small = Math.min(...domain25_pre_post);
+
+    let domain25_pre_post_small = Math.min(...domain25_not_null);
     
-    let domain25_pre_post_large = Math.max(...domain25_pre_post);
+    let domain25_pre_post_large = Math.max(...domain25_not_null);
 
 
     tempData[0][10].value = domain25_pre_post_small;

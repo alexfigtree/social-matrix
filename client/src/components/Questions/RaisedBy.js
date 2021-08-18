@@ -103,59 +103,18 @@ const RaisedBy = () => {
     let q4_21_4 = localStorage.getItem("container4.21.4"); //pre and post
     let q4_21_5 = localStorage.getItem("container4.21.5"); //pre and post
 
+    let domain26_pre_not_null = [q4_1_1,q4_1_2,q4_1_3,q4_1_4,q4_1_5,q4_17_1,q4_17_2,q4_17_3,q4_17_4,q4_17_5,q4_19_1,q4_19_2,q4_19_3,q4_19_4,q4_19_5,q4_21_1,q4_21_2,q4_21_3,q4_21_4,q4_21_5].filter(function (el) {
+      return el !== null;
+    });
+    let domain26_pre_small = Math.min(...domain26_pre_not_null);
+    let domain26_pre_large = Math.max(...domain26_pre_not_null);
 
-    //console.log('domain26_pre_post', domain26_pre_post);
-    let domain26_pre = [
-      ...q4_1_1.split(','),
-      ...q4_1_2.split(','),
-      ...q4_1_3.split(','),
-      ...q4_1_4.split(','),
-      ...q4_1_5.split(','),
-      ...q4_17_1.split(','),
-      ...q4_17_2.split(','),
-      ...q4_17_3.split(','),
-      ...q4_17_4.split(','),
-      ...q4_17_5.split(','),
-      ...q4_19_1.split(','),
-      ...q4_19_2.split(','),
-      ...q4_19_3.split(','),
-      ...q4_19_4.split(','),
-      ...q4_19_5.split(','),
-      ...q4_21_1.split(','),
-      ...q4_21_2.split(','),
-      ...q4_21_3.split(','),
-      ...q4_21_4.split(','),
-      ...q4_21_5.split(','),
-    ].filter(Boolean);
+    let domain26_post_not_null = [q4_2_1,q4_2_2,q4_2_3,q4_2_4,q4_2_5,q4_17_1,q4_17_2, q4_17_3, q4_17_4, q4_17_5,q4_19_1, q4_19_2, q4_19_3, q4_19_4, q4_19_5,q4_21_1, q4_21_2, q4_21_3, q4_21_4, q4_21_5].filter(function (el) {
+      return el !== null;
+    });
 
-    let domain26_pre_small = Math.min(...domain26_pre);
-    let domain26_pre_large = Math.max(...domain26_pre);
-
-    let domain26_post = [
-      ...q4_2_1.split(','),
-      ...q4_2_2.split(','),
-      ...q4_2_3.split(','),
-      ...q4_2_4.split(','),
-      ...q4_2_5.split(','),
-      ...q4_17_1.split(','),
-      ...q4_17_2.split(','),
-      ...q4_17_3.split(','),
-      ...q4_17_4.split(','),
-      ...q4_17_5.split(','),
-      ...q4_19_1.split(','),
-      ...q4_19_2.split(','),
-      ...q4_19_3.split(','),
-      ...q4_19_4.split(','),
-      ...q4_19_5.split(','),
-      ...q4_21_1.split(','),
-      ...q4_21_2.split(','),
-      ...q4_21_3.split(','),
-      ...q4_21_4.split(','),
-      ...q4_21_5.split(','),
-    ].filter(Boolean);
-
-    let domain26_post_small = Math.min(...domain26_post);
-    let domain26_post_large = Math.max(...domain26_post);
+    let domain26_post_small = Math.min(...domain26_post_not_null);
+    let domain26_post_large = Math.max(...domain26_post_not_null);
 
     tempData[0][9].value = domain26_pre_small;
     tempData[1][9].value = domain26_pre_large;
@@ -177,7 +136,7 @@ const RaisedBy = () => {
     const f4_16_4 = localStorage.getItem("4.16.4");
     const f4_16_5 = localStorage.getItem("4.16.5");
 
-    console.log('test for footnoets f4_16_1', f4_16_1);
+    //console.log('test for footnoets f4_16_1', f4_16_1);
     const f4_18_1 = localStorage.getItem("4.18.1");
     const f4_18_2 = localStorage.getItem("4.18.2");
     const f4_18_3 = localStorage.getItem("4.18.3");
