@@ -4,8 +4,7 @@ import { Box, Container, Divider, Typography} from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 import * as d3 from "d3";
-import * as data from '../../data/dataBlank.js'
-
+import * as data from '../../data/dataBlank.js';
 
 import useStyles from '../../styles';
 
@@ -18,12 +17,48 @@ const Results = () => {
 
     const [matrixData, setMatrixData] = useState(JSON.parse(localStorage.getItem('matrixData')));
     const [footnotesData, setFootnotes] = useState(localStorage.getItem('footnotes'));
-  
+ 
+    const [educ, setEduc] = useState('');
+    const [uniqueHistory, setUniqueHistory] = useState('');
+    const [sexAtBirth, setSexAtBirth] = useState('');
+    const [genderExpression, setGenderExpression] = useState('');
+    const [sexualOrientation, setSexualOrientation] = useState('');
+    const [maritalStatus, setMaritalStatus] = useState('');
+    const [parentalStatus, setParentalStatus] = useState('');
+    const [genderID, setGenderID] = useState('');
+    const [guardiansMaritalStatus, setGuardiansMaritalStatus] = useState('');
+    
+    const [raisedBy, setRaisedBy] = useState('');
+    const [age, setAge] = useState('');
+    const [appearance, setAppearance] = useState('');
+    const [healthAbility, setHealthAbility] = useState('');
+    const [cognitiveAbilityStyle, setCognitiveAbilityStyle] = useState('');
+    const [mHSubstanceUse, setMHSubstanceUse] = useState('');
+    const [relationLegalSystem, setRelationLegalSystem] = useState('');
+    const [relationMilitary, setRelationMilitary] = useState('');
+    const [impactHistTimes, setImpactHistTimes] = useState('');
+    const [geoRegion, setGeoRegion] = useState('');
+    const [politics, setPolitics] = useState('');
+    const [chosenReligion, setChosenReligion] = useState('');
+
+    const [familyReligion, setFamilyReligion] = useState('');
+    const [languagesSpoken, setLanguagesSpoken] = useState('');
+    const [noc, setNOC] = useState('');
+    const [ethnicity, setEthnicity] = useState('');
+    const [race, setRace] = useState('');
+    const [guardiansAccess, setGuardiansAccess] = useState('');
+    const [access, setAccess] = useState('');
+    const [guardiansChildhoodIncome, setGuardiansChildhoodIncome] = useState('');
+    const [childhoodIncome, setChildhoodIncome] = useState('');
+    const [income, setIncome] = useState('');
+    const [guardiansOccupation, setGuardiansOccupation] = useState('');
+    const [occupation, setOccupation] = useState('');
+    const [guardiansEduc, setGuardiansEduc] = useState('');
+   
     var svgBody1;
     var svgBody2;
 
     const classes = useStyles();
-
 
     useEffect(() => {
         var retrievedObject = localStorage.getItem('matrixData');
@@ -32,7 +67,6 @@ const Results = () => {
 
         var retrievedFootnotes = localStorage.getItem('footnotes');
         console.log('retrievedFootnotes', JSON.parse(retrievedFootnotes));
-
 
         var w = 600,
             h = 600;
@@ -43,22 +77,116 @@ const Results = () => {
 
         //All Subject data
         var combinedData = matrixData;
-        //combinedData = matrixData + footnotesData;
-        var footnotesParsed = JSON.parse(footnotesData);
 
-        for (let i = 0; i < combinedData.length; i++) {
-            for (let j = 0; j < 34; j++) {
-
-                footnotesParsed.forEach(function (arrayItem) {
-                    if(Object.keys(arrayItem).find(key => arrayItem[parseInt(key)].question === combinedData[i][j].axis)){
-                        combinedData[i][j].footnote = arrayItem[parseInt(j)].value;
-                    }
-
-                });
-
+        JSON.parse(footnotesData).map((item) =>
+          item.forEach(element => {
+            console.log('elemet', element.question);
+            if(element.question == "Educ."){
+              setEduc(element.value)
+            }
+            if(element.question == "Unique History"){
+              setUniqueHistory(element.value)
+            }
+            if(element.question == "Sex Assigned at Birth"){
+              setSexAtBirth(element.value)
+            }
+            if(element.question == "Gender Expression"){
+              setGenderExpression(element.value)
+            }
+            if(element.question == "Sexual Orientation"){
+              setSexualOrientation(element.value)
+            }
+            if(element.question == "Marital Status"){
+              setMaritalStatus(element.value)
+            }
+            if(element.question == "Parental Status"){
+              setParentalStatus(element.value)
+            }
+            if(element.question == "Gender ID"){
+              setGenderID(element.value)
+            }
+            if(element.question == "Guardians’ Marital Status"){
+              setGuardiansMaritalStatus(element.value)
+            }
+            if(element.question == "Raised By"){
+              setRaisedBy(element.value)
+            }
+            if(element.question == "Age"){
+              setAge(element.value)
+            }
+            if(element.question == "Appearance"){
+              setAppearance(element.value)
+            }
+            if(element.question == "Health/Ability"){
+              setHealthAbility(element.value)
+            }
+            if(element.question == "Cognitive Ability/Style"){
+              setCognitiveAbilityStyle(element.value)
+            }
+            if(element.question == "MH/Substance Use"){
+              setMHSubstanceUse(element.value)
+            }
+            if(element.question == "Relation to Legal System"){
+              setRelationLegalSystem(element.value)
+            }
+            if(element.question == "Relation to Military"){
+              setRelationMilitary(element.value)
+            }
+            if(element.question == "Impact of Historical Times"){
+              setImpactHistTimes(element.value)
+            }
+            if(element.question == "Geo. Region"){
+              setGeoRegion(element.value)
+            }
+            if(element.question == "Politics"){
+              setPolitics(element.value)
+            }
+            if(element.question == "Chosen Religion"){
+              setChosenReligion(element.value)
+            }
+            if(element.question == "Family Religion"){
+              setFamilyReligion(element.value)
+            }
+            if(element.question == "Language(s) Spoken"){
+              setLanguagesSpoken(element.value)
+            }
+            if(element.question == "Nation of Origin / Citizenship"){
+              setNOC(element.value)
+            }
+            if(element.question == "Ethnicity / Tribe"){
+              setEthnicity(element.value)
+            }
+            if(element.question == "Race(s)"){
+              setRace(element.value)
+            }
+            if(element.question == "Guardians’ Access"){
+              setGuardiansAccess(element.value)
+            }
+            if(element.question == "Access"){
+              setAccess(element.value)
+            }
+            if(element.question == "Guardian’s Childhood House. Income"){
+              setGuardiansChildhoodIncome(element.value)
+            }
+            if(element.question == "Childhood House. Income w. Guardian"){
+              setChildhoodIncome(element.value)
+            }
+            if(element.question == "Household Income (Now)"){
+              setIncome(element.value)
+            }
+            if(element.question == "Guardians’ Occupation"){
+              setGuardiansOccupation(element.value)
+            }
+            if(element.question == "Occupation(s)"){
+              setOccupation(element.value)
+            }
+            if(element.question == "Guardians’ Educ."){
+              setGuardiansEduc(element.value)
             }
 
-        }
+          })
+        );
+
 
         var d = combinedData;
 
@@ -489,8 +617,7 @@ const Results = () => {
 
         <div>
           <h1>Your generated social matrix:</h1>
-        
-    
+         
           <div id="body">
              <div className="matrix-header" style={{ marginLeft: '-10px' }}>Earlier Matrix:</div>
             <div id="chart" className="svg-align" style={{ marginLeft: '-15px' }}></div>
@@ -501,90 +628,82 @@ const Results = () => {
             <div className="matrix-header" style={{ marginLeft: '-10px' }}>Current Matrix:</div>
             <div id="chart2" className="svg-align" style={{ marginLeft: '-15px' }}></div>
           </div>
+
+
           <div className="footnotes-bottom">
             <div className="footnotes-header">Footnotes:</div>
-            1) <i>Educ. Level:</i> PhD Social-Clinical Psychology, 1979, US
             <br />
-            2) <i>Guardians’ Educ:</i> Parent 1: Mo in college when I was born, BA when I was 13, MA when I was 15/ Parent 2: Fa got MD when I was 1
+            1) <i>Educ. Level: </i>{educ}
             <br />
-            3) <i>Occupation(s):</i> Professor, Clinical Psychologist; More highly privileged in country than community
+            2) <i>Guardians’ Educ: </i> {guardiansEduc}
+            <br />
+            3) <i>Occupation(s): </i> {occupation}
             <br /> 
-            4) <i>Guardians’ Occupation:</i> Mother homemaker till I was 7-8, then student, then master's level psychologist/ Father psychiatrist
+            4) <i>Guardians’ Occupation: </i> {guardiansOccupation}
             <br />
-            7) <i>Guardian’s Childhood House. Income:</i> Mo. w/ more wealth in her father's home till age 12, then no contact/ Father's family working poor, then upper-middle- income
+            5) <i>Household Income(Now): </i> {income}
+            <br />
+            6) <i>Childhood House. Income w. Guardian: </i> {childhoodIncome}
+            <br />
+            7) <i>Guardian’s Childhood House. Income: </i> {guardiansChildhoodIncome}
             <br /> 
-            8) <i>Access:</i>  Very high access to info, influence (as professor), good access to $ resources 
+            8) <i>Access: </i> {access}
             <br />
-            9) <i>Guardians’ Access:</i>  Mother not Internet savvy, but good access to $, info Father very internet-savvy, influential, high access to resources
+            9) <i>Guardians’ Access: </i> {guardiansAccess}
             <br />
-            10) <i>Race(s):</i>  White; European Jews not fully white in my childhood, esp. in south. &gt; privilege now, but also &gt;antisemitism. I raised multiracial children.
+            10) <i>Race(s): </i> {race}
             <br />
-            11) <i>Ethnicity / Tribe:</i>  Jewish (Ashkenazi &amp; Sephardi)
+            11) <i>Ethnicity / Tribe: </i> {ethnicity}
             <br /> 
-            12) <i>Person's Nation of Origin:</i>  US
+            12) <i>Nation of Origin/ Citizenship: </i>  {noc}
             <br />
-            13) <i>Citizenship Status. Income:</i>  US; B. US
+            13) <i>Language(s) Spoken: </i> {languagesSpoken}
+            <br />
+            14) <i>Family Religion: </i> {familyReligion}
             <br /> 
-            15) <i>Language(s) Spoken:</i>  English; Spanish, French, a little Hebrew and Yiddish
+            15) <i>Chosen Religion: </i> {chosenReligion}
             <br />
-            16) <i>Family Religion:</i> Judaism (reform); More acceptance of non-Christian religions, except by the radical right
+            16) <i>Politics: </i> {politics}
             <br /> 
-            17) <i>Chosen Religion:</i> Judaism (reform); Less antisemitism, more religious inclusion (except for radical right)
+            17) <i>Geo. Region: </i> {geoRegion} 
             <br />
-            18) <i>Politics:</i> progressive/socialist; Somewhat marginalized, less so in my community
+            18) <i>Impact of Historical Times: </i> {impactHistTimes}
+            <br />
+            19) <i>Relation to Military: </i> {relationMilitary}
+            <br />
+            20) <i>Relation to Legal System: </i> {relationLegalSystem}
             <br /> 
-            19) <i>Geo. Region:</i> Grew up in NY, now in MA 
-            <br />
-            20) <i>Impact of Historical Times:</i> I grew up during a more antisemitic time, post-WWII. I've gained privilege b/c my interracial, multi-faith family is less marginalized now. Feminism is more accepted. Importance of medical advances
-            <br />
-            21) <i>Relation to Military:</i> Father drafted into Navy as a lieutenant (doctor) when I was 3-5; Father was in US Navy
-            <br />
-            22) <i>Relation to Legal System:</i> had a close family member involved in legal system as a defendant
+            21) <i>MH/Subst. Abuse: </i> {mHSubstanceUse}
             <br /> 
-            23) <i>Relation to MH System:</i> Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy
+            22) <i>Cognitive Ability/Style: </i> {cognitiveAbilityStyle}
             <br />
-            24) <i>MH/Subst. Abuse:</i> Family issues, death of son with Mental Illness, close relative of someone with SA
+            23) <i>Health/Ability: </i> {healthAbility}
             <br /> 
-            25) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
+            24) <i>Appearance: </i> {appearance}
             <br />
-            26) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies ?&gt; life-threatening heart condition @68
+            25) <i>Age: </i> {age}
             <br /> 
-            27) <i>Appearance:</i> Attractive, gray hair, short
+            26) <i>Raised By: </i> {raisedBy}
             <br />
-            28) <i>Age:</i> 68 (b. 1952)
+            27) <i>Guardians’ Marital Status: </i>{guardiansMaritalStatus}
+            <br />
+            28) <i>Parental Status: </i>{parentalStatus}
+            <br />
+            29) <i>Marital Status: </i>{maritalStatus}
             <br /> 
-            29) <i>Raised By:</i> Raised by Mo &amp; Fa; Parent 1: Straight, Parent 2: Straight; Parent 1: cis-gender woman/Parent 2: cis-gender man; Mother 19, Father 22; No; No
+            30) <i>Sexual Orientation: </i>{sexualOrientation}
             <br />
-            30) <i>Guardians’ Marital Status:</i> Birth parents married till I was 25; N/A
-            <br />
-            31) <i>Parental Status:</i> Adoptive parent of child w/ serious mental illness who died, stepparent of multiracial grown children; Gained stepchildren at age 29; adoptive mother at 34, child died when I was 53; Adoptive child had mental illness, died at 19; stepchildren are multiracial
-            <br />
-            32) <i>Marital Status:</i> in 2nd marriage; LT @ 18, m. at 21, Div. @ 26; LT @ 29, m. @ 30; Opposite sex
+            31) <i>Gender ID: </i>{genderID}
             <br /> 
-            33) <i>Sexual Orientation:</i> Straight
+            32) <i>Gender Expression: </i>{genderExpression}
             <br />
-            34) <i>Gender ID:</i> Cis-gender woman
+            33) <i>Sex Assigned at Birth: </i>{sexAtBirth}
             <br /> 
-            35) <i>Gender Expression:</i> Feminine-looking woman
-            <br />
-            36) <i>Sex Assigned at Birth:</i> Female
+            34) <i>Unique History: </i>{uniqueHistory}
             <br /> 
-            37) <i>Unique History:</i> Son?s death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
+            <br /> 
           </div>
         </div>
-
-    
-
-
-        <Box>{data}</Box>
-
-        <Box component="div" style={{ marginTop: '30px' }}>{footnotesData}</Box>
-
-        <Box style={{ marginTop: '30px', marginBottom: '30px' }}>PRE/EARLIER</Box>
-
-        
-        <Box style={{ marginTop: '30px', marginBottom: '30px' }}>POST/LATER</Box>
-
 
     </div>
 
