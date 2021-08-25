@@ -8,6 +8,8 @@ import * as data from '../../data/dataBlank.js';
 
 import useStyles from '../../styles';
 
+import html2pdf from 'html2pdf.js';
+
 import { getMatrix, createMatrix, updateMatrix, createFootnotes, getFootnotes, updateFootnotes } from '../../actions/posts';
 
 const Results = () => {
@@ -80,7 +82,6 @@ const Results = () => {
 
         JSON.parse(footnotesData).map((item) =>
           item.forEach(element => {
-            console.log('elemet', element.question);
             if(element.question == "Educ."){
               setEduc(element.value)
             }
@@ -611,22 +612,48 @@ const Results = () => {
 
     };
 
+    const download = () => {
+      var element = document.getElementById('results-container');
+
+      var opt = {
+        filename: 'my-social-matrix.pdf',
+      };
+
+      html2pdf().set(opt).from(element).save();
+    };
+
   return (
-    <div className="container">
+    <div className="container" id="results-container">
+        <br />
         <Typography variant="h2" align="center" className={classes.test}>Social Matrix Diagram - Results</Typography>
 
         <div>
           <h1>Your generated social matrix:</h1>
-         
+
+          <a
+            href="/results"
+            download
+            onClick={e => download(e)}
+          >
+            Download Your Results Here
+          </a>
+          
+          <br />
+          <br />
+          <br />
+          <br />
           <div id="body">
-             <div className="matrix-header" style={{ marginLeft: '-10px' }}>Earlier Matrix:</div>
-            <div id="chart" className="svg-align" style={{ marginLeft: '-15px' }}></div>
+             <div className="matrix-header" style={{ marginLeft: '-40px' }}>Earlier Matrix:</div>
+            <div id="chart" className="svg-align" style={{ marginLeft: '-200px' }}></div>
           </div>
      
-  
+          <br />
+          <br />
+          <br />
+          <br />
           <div id="body2">
-            <div className="matrix-header" style={{ marginLeft: '-10px' }}>Current Matrix:</div>
-            <div id="chart2" className="svg-align" style={{ marginLeft: '-15px' }}></div>
+            <div className="matrix-header" style={{ marginLeft: '-40px' }}>Current Matrix:</div>
+            <div id="chart2" className="svg-align" style={{ marginLeft: '-200px' }}></div>
           </div>
 
 
