@@ -619,7 +619,7 @@ const Results = () => {
         filename: 'my-social-matrix.pdf',
       };
 
-      //html2pdf().set(opt).from(element).save();
+      html2pdf().set(opt).from(element).save();
     };
 
   return (
