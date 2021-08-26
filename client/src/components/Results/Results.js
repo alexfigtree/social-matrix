@@ -8,7 +8,7 @@ import * as data from '../../data/dataBlank.js';
 
 import useStyles from '../../styles';
 
-import html2pdf from 'html2pdf.js';
+//import html2pdf from 'html2pdf.js';
 
 import { getMatrix, createMatrix, updateMatrix, createFootnotes, getFootnotes, updateFootnotes } from '../../actions/posts';
 
@@ -619,7 +619,7 @@ const Results = () => {
         filename: 'my-social-matrix.pdf',
       };
 
-      html2pdf().set(opt).from(element).save();
+      //html2pdf().set(opt).from(element).save();
     };
 
   return (
