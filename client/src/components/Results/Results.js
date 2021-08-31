@@ -617,6 +617,8 @@ const Results = () => {
 
       var opt = {
         filename: 'my-social-matrix.pdf',
+        margin: [0,0,1,0],
+        pagebreak: { mode: 'avoid-all', before: '#footnotes-header' }
       };
 
       html2pdf().set(opt).from(element).save();
@@ -643,7 +645,7 @@ const Results = () => {
           <br />
           <br />
           <div id="body">
-             <div className="matrix-header" style={{ marginLeft: '-40px' }}>Earlier Matrix:</div>
+             <div className="matrix-header" style={{ marginLeft: '-40px'}}>Earlier Matrix:</div>
             <div id="chart" className="svg-align" style={{ marginLeft: '-200px' }}></div>
           </div>
      
@@ -659,7 +661,6 @@ const Results = () => {
 
           <div className="footnotes-bottom">
             <div className="footnotes-header">Footnotes:</div>
-            <br />
             1) <i>Educ. Level: </i>{educ}
             <br />
             2) <i>Guardians’ Educ: </i> {guardiansEduc}

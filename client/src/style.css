@@ -65,9 +65,13 @@ polygon.radar-chart-serie1 > tooltip {
   font-size: 16px;
 }
 .footnotes-bottom{
+  padding-top: 20px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  break-before: 'always';
 }
+
 
 .footnotes-bottom-after-one{
   text-align: left;
