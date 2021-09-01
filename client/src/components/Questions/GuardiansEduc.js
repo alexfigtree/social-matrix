@@ -197,7 +197,7 @@ const GuardiansEduc = () => {
             
             <p>
                 <b>Please describe each Parent/Guardian's highest educational 
-                level achieved while raising personv</b> (for example, "finished 
+                level achieved while raising person</b> (for example, "finished 
                 9th grade," "vocational degree as electrician," or "masters degree 
                 in education").  <b>Please also give year and community in which 
                 each Parent's education ended. If years of education changed in 
