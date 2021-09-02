@@ -78,14 +78,14 @@ function CheckboxInputField_SexOrientation(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-1"}
-                value="Married for first time"
+                value="Straight"
                 onChange={handleChange} 
                 name={questionNumber+"-1"} 
                 disabled={isDisabled(1, questionNumber+"-1")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Married for first time"
+            label="Straight"
             labelPlacement="end"
           />
 
@@ -93,14 +93,14 @@ function CheckboxInputField_SexOrientation(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-2"}
-                value="Married for second or additional time"
+                value="Gay or lesbian"
                 onChange={handleChange} 
                 name={questionNumber+"-2"}
                 disabled={isDisabled(2, questionNumber+"-2")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Married for second or additional time"
+            label="Gay or lesbian"
             labelPlacement="end"
           />
 
@@ -109,13 +109,13 @@ function CheckboxInputField_SexOrientation(props) {
               <Checkbox 
                 id={questionNumber+"-3"}
                 onChange={handleChange} 
-                value="Coupled but unmarried"
+                value="Bisexual"
                 name={questionNumber+"-3"} 
                 disabled={isDisabled(3, questionNumber+"-3")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Coupled but unmarried"
+            label="Bisexual"
             labelPlacement="end"
           />
 
@@ -123,14 +123,14 @@ function CheckboxInputField_SexOrientation(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-4"}
-                value="Single"
+                value="Pansexual"
                 onChange={handleChange} 
                 name={questionNumber+"-4"}
                 disabled={isDisabled(4, questionNumber+"-4")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Single"
+            label="Pansexual"
             labelPlacement="end"
           />
 
@@ -140,13 +140,13 @@ function CheckboxInputField_SexOrientation(props) {
               <Checkbox 
                 id={questionNumber+"-5"}
                 onChange={handleChange} 
-                value="Divorced"
+                value="Queer"
                 name={questionNumber+"-5"} 
                 disabled={isDisabled(5, questionNumber+"-5")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Divorced"
+            label="Queer"
             labelPlacement="end"
             style={{float: 'left'}}
           />
@@ -156,14 +156,14 @@ function CheckboxInputField_SexOrientation(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-6"}
-                value="Widowed"
+                value="Asexual"
                 onChange={handleChange} 
                 name={questionNumber+"-6"}
                 disabled={isDisabled(6, questionNumber+"-6")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="Widowed"
+            label="Asexual"
             labelPlacement="end"
           />
      
