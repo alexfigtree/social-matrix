@@ -56,9 +56,6 @@ const RaisedBy = () => {
       localStorage.setItem('4.22', '');
       localStorage.setItem('4.22-1-yes', '');
 
-      localStorage.setItem('4.23', '');
-      localStorage.setItem('4.23-1-yes', '');
-
   }, []);
 
   const clear = () => {
@@ -153,13 +150,9 @@ const RaisedBy = () => {
     const f4_22_1_yes = localStorage.getItem("4.22-1-yes");
     const concatString4_22 = [f4_22, f4_22_1_yes].filter(Boolean).join(": ");
     
-    const f4_23 = localStorage.getItem("4.23");
-    const f4_23_1_yes = localStorage.getItem("4.23-1-yes");
-    const concatString4_23 = [f4_23, f4_23_1_yes].filter(Boolean).join(": ");
-
     //generate concatentated string
     let concatString = 
-      [f4_3, f4_16_1, f4_16_2, f4_16_3, f4_16_4, f4_16_5, f4_18_1, f4_18_2, f4_18_3, f4_18_4, f4_18_5, f4_20_1, f4_20_2, f4_20_3, f4_20_4, f4_20_5, concatString4_22, concatString4_23].filter(Boolean).join("; ");
+      [f4_3, f4_16_1, f4_16_2, f4_16_3, f4_16_4, f4_16_5, f4_18_1, f4_18_2, f4_18_3, f4_18_4, f4_18_5, f4_20_1, f4_20_2, f4_20_3, f4_20_4, f4_20_5, concatString4_22].filter(Boolean).join("; ");
     tempFootnotes[0][9].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
 
@@ -590,20 +583,6 @@ const RaisedBy = () => {
             shelter, or on the streets without familiar parenting figures.</p>
 
             <RadioFieldWithInput4_22 id="4.22" />
-          </Box>
-
-          <Box component="div" style={{ width: '100%' }}>
-            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.23"><h4>Q 4.23</h4></label>
-
-            <p>Has PERSON ever lived for an extended period of time apart from parents 
-            or guardians while growing up?</p>
-            
-            <p>Some examples include living in foster care, an orphanage, or 
-            institutional care like juvenile hall or in a psychiatric hospital), been a 
-            refugee on one's own, or in an immigration detention center, in a homeless 
-            shelter, or on the streets without familiar parenting figures.</p>
-
-            <RadioFieldWithInput4_23 id="4.23" />
           </Box>
 
         <Link to="/q27"><Button onClick={handleSubmit} style={{ marginTop: '20px' }} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>
