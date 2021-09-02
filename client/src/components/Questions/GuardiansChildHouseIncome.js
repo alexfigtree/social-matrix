@@ -160,12 +160,6 @@ const GuardiansChildHouseIncome = () => {
 
           <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.9"><h4>Q 4.9</h4></label>
-         
-            <Typography variant="h5" align="left">
-                <span style={{ textDecoration: 'underline' }}>Parent/Guardians' 
-                occupation(s), compared to EachParent'/Guardians COUNTRY AND
-                 LOCAL COMMUNITY later on while raising PERSON.</span> 
-            </Typography>
        
             <p>
               How do you rate the relative privilege of each <b>Parent/Guardian's 
