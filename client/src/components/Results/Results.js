@@ -80,6 +80,24 @@ const Results = () => {
         //All Subject data
         var combinedData = matrixData;
 
+        //parse footnotes for tooltips:
+        var footnotesParsed = JSON.parse(footnotesData);
+
+        for (let i = 0; i < combinedData.length; i++) {
+            for (let j = 0; j < 34; j++) {
+
+                footnotesParsed.forEach(function (arrayItem) {
+                    if(Object.keys(arrayItem).find(key => arrayItem[parseInt(key)].question === combinedData[i][j].axis)){
+                        combinedData[i][j].footnote = arrayItem[parseInt(j)].value;
+                    }
+
+                });
+
+            }
+
+        }
+
+        //collect specific footnotes for text display under matrices:
         JSON.parse(footnotesData).map((item) =>
           item.forEach(element => {
             if(element.question == "Educ."){
@@ -187,7 +205,6 @@ const Results = () => {
 
           })
         );
-
 
         var d = combinedData;
 
