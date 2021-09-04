@@ -570,7 +570,7 @@ const Home = () => {
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                The Social Matrix Diagram includes many different <a href="/identity" style={{ fontSize: '20px', textDecoration: 'none' }}> areas of identity </a>, like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
+                The Social Matrix Diagram includes many different <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}> areas of identity </a>, like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
                 identity falls along a line (or axis) going from the most highly privileged “1” at the center 
                  the diagram to the most marginalized “7” at the outermost circle. 
             </Typography>

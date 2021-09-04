@@ -36,7 +36,7 @@ const AreasOfIdentity = () => {
                 are also called domains of identity, are: 
             </Typography>
 
-            <Typography id="education" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '20px'}}>
+            <Typography name="education" id="education" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '20px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Educational Level</p>
                 <p>This area covers how many years of education you have and what your diplomas 
                   are, if any. How privileged a certain number of years of education would be depends 
@@ -52,7 +52,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography id="guardiansEducation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography name="guardiansEducation" id="guardiansEducation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Education</p>
                 <p>This area addresses the <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> of your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a>, to give an 
                   idea of your family’s educational history. Because your parents or guardians grew up <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
@@ -63,7 +63,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography name="occupation" id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Occupation</p>
                 <p>For your occupation, consider both the status of that 
                 <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> 
@@ -78,7 +78,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography name="guardiansOccupation" id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
                 <p>Your parents’ or guardians’ <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> is a window into your family occupational 
                 history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
@@ -88,7 +88,7 @@ const AreasOfIdentity = () => {
             </Typography>
 
 
-            <Typography id="householdIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography name="householdIncome" id="householdIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Household Income</p>
                 <p>How privileged or marginalized your household income (your income plus the income 
                   of anyone else in your household, minus your expenses) is depends not only on what 
