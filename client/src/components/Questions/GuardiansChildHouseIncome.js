@@ -86,11 +86,6 @@ const GuardiansChildHouseIncome = () => {
     //PROCESS FOOTNOTE DATA:
     let tempFootnotes =JSON.parse(localStorage.getItem('footnotes'));
     //footnote 1.6
-    const f4_5_1 = localStorage.getItem("4.5.1");
-    const f4_5_2 = localStorage.getItem("4.5.2");
-    const f4_5_3 = localStorage.getItem("4.5.3");
-    const f4_5_4 = localStorage.getItem("4.5.4");
-    const f4_5_5 = localStorage.getItem("4.5.5");
 
     const f4_10_1 = localStorage.getItem("4.10.1");
     const f4_10_2 = localStorage.getItem("4.10.2");
@@ -100,7 +95,7 @@ const GuardiansChildHouseIncome = () => {
 
     //generate concatentated string
     let concatString = 
-      [f4_5_1, f4_5_2, f4_5_3, f4_5_4, f4_5_5, f4_10_1, f4_10_2, f4_10_3, f4_10_4, f4_10_5].filter(Boolean).join("; ");
+      [f4_10_1, f4_10_2, f4_10_3, f4_10_4, f4_10_5].filter(Boolean).join("; ");
     console.log('concatString', concatString);
     tempFootnotes[0][28].value = concatString;
     localStorage.setItem('footnotes', JSON.stringify(tempFootnotes));
@@ -122,41 +117,6 @@ const GuardiansChildHouseIncome = () => {
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}>
 
         <Typography variant="h5">Guardians’ Childhood Household Income</Typography>
-        
-
-          <Box component="div" style={{ width: '100%' }}>
-            <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.5"><h4>Q 4.5</h4></label>
-      
-            <Typography variant="h5" align="left">
-                Please describe each Parent/Guardian's highest educational level 
-                achieved while raising Q4.5 person (for example, "finished 9th grade," 
-                "vocational degree as electrician," or "masters degree in education"). 
-                Please also give year and community in which each Parent's education ended. 
-                 years of education changed in PERSON's childhood, or if Parent's educational 
-                 privilege changed because of im/migration or major changes in economy, 
-                 please specify that.
-            </Typography>
-
-            <Typography variant="h5" align="left">
-                Please only answer for relevant number of parents/parenting figures.
-            </Typography>
-
-            <p>Parent/Parenting Figure 1</p>
-            <FootnoteField id="4.5.1" />
-
-            <p>Parent/Parenting Figure 2</p>
-            <FootnoteField id="4.5.2" />
-
-            <p>Parent/Parenting Figure 3</p>
-            <FootnoteField id="4.5.3" />
-
-            <p>Parent/Parenting Figure 4</p>
-            <FootnoteField id="4.5.4" />
-
-            <p>Additional Parent/Parenting Figure</p>
-            <FootnoteField id="4.5.5" />
-      
-          </Box>
 
           <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.9"><h4>Q 4.9</h4></label>
