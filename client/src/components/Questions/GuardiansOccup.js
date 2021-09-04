@@ -108,7 +108,7 @@ const GuardiansOccup = () => {
            
             <Typography variant="h5" align="left">
                 <span style={{ textDecoration: 'underline' }}>
-                Parent/Guardians' occupation(s), compared to EachParent'/Guardians 
+                Parent/Guardians' occupation(s), compared to each Parent'/Guardian's 
                 COUNTRY AND LOCAL COMMUNITY later on while raising PERSON.</span> 
             </Typography>
         
