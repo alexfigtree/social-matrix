@@ -120,7 +120,7 @@ const HouseholdIncome = () => {
             </Typography>
      
             <p>
-                How do you rate the relative privilege of PERSON's <b>current</b>household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY, today? </b>
+                How do you rate the relative privilege of PERSON's <b>current </b>household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY, today? </b>
             </p>
             <p>
                 <b>(As with education, take into account how income levels differ between both local communities, and historical eras. You may choose up to two answers.)</b>
@@ -156,7 +156,7 @@ const HouseholdIncome = () => {
             </Typography>
   
             <p>
-                How do you rate the relative privilege of PERSON's <b>PREVIOUS</b> household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY? (For instance, there may have been a significant change in household income over time.</b>You may choose up to two answers.)
+                How do you rate the relative privilege of PERSON's <b>PREVIOUS</b> household income, assets, and debts, <b>as compared to the rest of PERSON's LOCAL COMMUNITY? (For instance, there may have been a significant change in household income over time. </b> You may choose up to two answers.)
             </p>
             <p>
                 <b>(As with education, take into account how income levels differ between both local communities, and historical eras.)</b>
