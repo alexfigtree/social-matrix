@@ -195,9 +195,9 @@ const NationOfOriginCitizenship = () => {
 
         <FormControl component="fieldset" style={{ width: '100%' }}>
           <FormLabel className={classes.questionLabel} component="legend"><h4>Q 5.9</h4></FormLabel>
-          <p>
+            <Typography variant="h5" align="left">
                 Did PERSON <b>live or have</b> previous citizenship in another country?
-            </p>
+            </Typography>
 
             <p>State whether PERSON lived in one or more other countries and whether PERSON had citizenship 
             in one or more other countries. Please specify.</p>
@@ -211,10 +211,12 @@ const NationOfOriginCitizenship = () => {
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.10"><h4>Q 5.10</h4></label>
-            
-            <p>Of which country did PERSON (or one or more of PERSON's parents) previously have citizenship?</p>
-         
             <Typography variant="h5" align="left">
+                Of which country did PERSON (or one or more of PERSON's parents) previously have citizenship?
+            </Typography>
+            
+         
+            <Typography variant="h6" align="left">
                 (This information is anonymous and will not be shared with governmental authorities, nor is it associated online with Person's identity or computer IP address, nor that of anyone who fills this survey out)
             </Typography>
         
@@ -229,7 +231,7 @@ const NationOfOriginCitizenship = () => {
                 Is/was Person:
             </Typography>
          
-            <Typography variant="h5" align="left">
+            <Typography variant="h6" align="left">
                 (This information is anonymous and will not be shared with governmental authorities, nor is it associated online with Person's identity or computer IP address, nor that of anyone who fills this survey out)
             </Typography>
            
@@ -238,10 +240,9 @@ const NationOfOriginCitizenship = () => {
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.12"><h4>Q 5.12</h4></label>
-          
-            <p>
+            <Typography variant="h5" align="left">
                 How many generations has PERSON's family been in country of residence?
-            </p>
+            </Typography>
             
             <CheckboxField5_12 id="container5.12" />
         </Box>
@@ -249,25 +250,23 @@ const NationOfOriginCitizenship = () => {
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.13"><h4>Q 5.13</h4></label>
-       
-            <p>
+            <Typography variant="h6" align="left">
                 Whenever PERSON or PERSON's ancestors arrived, what was their reception by the country? A very welcoming response would be 1=most privileged and an extremely unwelcoming response would be 7=most marginalized.
-            </p>
-         
+            </Typography>
+         <br/>
             <CheckboxField id="container5.13" />
         </Box>
         
 
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput5.14"><h4>Q 5.14</h4></label>
-          
-            <p>
+            <Typography variant="h6" align="left">
                 Please briefly explain the reception that PERSON or PERSON's 
                 ancestors received on coming to the country. For instance, did they 
                 meet prejudice on the basis of race, religion, ethnicity, health, 
                 or immigration status?
-            </p>
-         
+            </Typography> 
+            <br/>
             <FootnoteField id="5.14" />
         </Box>
         <Link to="/q13"><Button onClick={handleSubmit} className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" fullWidth>Next</Button></Link>

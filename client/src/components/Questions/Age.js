@@ -91,10 +91,6 @@ const Age = () => {
         
         <Box component="div" style={{ width: '100%' }}>
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.1"><h4>Q 7.1</h4></label>
-         
-            <Typography variant="h5" align="left">
-                Age
-            </Typography>
            
             <p>
                 Give PERSON’s current age and birth year. For a deceased person, give age at time of death approximate year of death. If you are not sure, write in an approximate age, with a question mark.

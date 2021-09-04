@@ -108,7 +108,7 @@ const GuardiansAccess = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput4.11"><h4>Q 4.11</h4></label>
          
             <Typography variant="h5" align="left">
-                Parent/Guardians' Access to Resources, Information, Influence:
+                Parent/Guardian's Access to Resources, Information, Influence:
             </Typography>
        
             <p>

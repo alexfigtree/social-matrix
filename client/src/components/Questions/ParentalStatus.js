@@ -137,7 +137,7 @@ const ParentalStatus = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput7.5"><h4>Q 7.5</h4></label>
             <p>
                 <b>Other identities affecting privilege or marginalization of 
-                parental status.</b> status. If there are factors that particularly 
+                parental status.</b> If there are factors that particularly 
                 privilege or marginalize PERSON&#39;s parental status, describe them 
                 here. For instance, not having children may mean something different 
                 at age 20 and at age 45. A teenaged mother or mother in her 40s with a 
