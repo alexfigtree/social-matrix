@@ -183,7 +183,7 @@ const EducLevel = () => {
         
             <p>
                 How would you rate PERSON's level of education, as compared to everyone in PERSON's 
-                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>current 
+                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}> current 
                 country of residence as a whole (which may differ from the local community)?</Box> ("1" = 
                 most privileged or most educated) and "7" = least privileged or least educated)
                 (In answering this question, consider both time and place. For instance, in the US in 2019,
@@ -217,7 +217,7 @@ const EducLevel = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.6"><h4>Q 1.6</h4></label>
       
             <p>
-                <b>Please give PERSON's highest level of education</b>(for example, "finished 9th grade,"
+                <b>Please give PERSON's highest level of education </b>(for example, "finished 9th grade,"
                 "vocational degree as electrician," or "masters degree in education").<b>  Also give year,
                 community, and country in which PERSON finished education.</b>
             </p>

@@ -136,10 +136,10 @@ const GuardiansEduc = () => {
             </Typography>
        
             <p>
-                How would you rate the privilege of each <b>Parent/Guardian's</b> 
+                How would you rate the privilege of each <b>Parent/Guardian's </b> 
                 level of education early in the time they were <b>raising PERSON</b>, 
                 as compared to everyone in that <b>Parent/Guardian's COUNTRY</b> and 
-                <b>LOCAL COMMUNITY</b>?
+                <b> LOCAL COMMUNITY</b>?
             </p>
             <p>
                 <b>In answering this question, consider both time and place.</b> For 
@@ -149,7 +149,7 @@ const GuardiansEduc = () => {
                 adults have finished high school and 8% have college degrees. 
                 Therefore, being a high school graduate has different status in 
                 Mexico than in the US, and that status has changed over the 
-                generations. <b>The numbers will differ for different local 
+                generations. <b>The numbers will differ for different countries, different local 
                 communities and for people born into different generations.</b>
             </p>
 
