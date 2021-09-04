@@ -65,8 +65,8 @@ const FormPostContainer = () => {
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
               You will be asked about how you rate your (or another person’s) degree of 
               privilege <b>now</b>.  In most cases you will also be asked how you would rate 
-              yourself (or the other person) <b>at an earlier time</b>. Doing this can show 
-              change over time in an area of identity (for instance, a change in income 
+              yourself (or the other person) <b>at an earlier time of your choosing for each area of identity.</b>. Doing this can show 
+               gradual or sudden change over time in an area of identity (for instance, a change in income 
               level, immigration status, or marital status). <b>Please choose no more than 
               two ratings for each question, except when the instructions say you can 
               choose all answers that apply.</b>
@@ -84,18 +84,12 @@ const FormPostContainer = () => {
               <b style={{ fontWeight: 600, textDecoration: 'underline' }}>Informed Consent</b>
             </Typography>           
 
-
-            <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-              Filling out this online survey will create a two copies of your Social Matrix Diagrams, one for your current intersectional areas of identity and one for you at an earlier time. The information in your survey and in your diagrams will not be traceable to you or to your computer, to protect your confidentiality. However, that that information may be used anonymously in future research by Jodie Kliman, PhD or her research assistants and colleagues, using a code number that is automatically generated when you click “I agree.” Such research may include testing the effectiveness of the Social Matrix survey and diagram and exploring the role of different aspects of privilege and marginalization on health, mental health, and wellbeing. 
-            </Typography>
-
-
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
               Filling out this online survey will create a two copies of your Social Matrix 
               Diagrams, one for your current intersectional areas of identity and one for you 
               at an earlier time. The information in your survey and in your diagrams will not 
               be traceable to you or to your computer, to protect your confidentiality. However, 
-              that that information may be used anonymously in future research by Jodie Kliman, 
+              that information may be used anonymously in future research by Jodie Kliman, 
               PhD or her research assistants and colleagues, using a code number that is 
               automatically generated when you click “I agree.” Such research may include 
               testing the effectiveness of the Social Matrix survey and diagram and exploring 
