@@ -10,6 +10,8 @@ import useStyles from '../../styles';
 
 import html2pdf from 'html2pdf.js';
 
+import NavBar from '../NavBar.js';
+
 import { getMatrix, createMatrix, updateMatrix, createFootnotes, getFootnotes, updateFootnotes } from '../../actions/posts';
 
 const Results = () => {
@@ -643,6 +645,7 @@ const Results = () => {
 
   return (
     <div className="container" id="results-container">
+        <NavBar />
         <br />
         <Typography variant="h2" align="center" className={classes.test}>Social Matrix Diagram - Results</Typography>
 
