@@ -565,14 +565,15 @@ const Home = () => {
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                The way these areas of privilege and marginalization relate to each other involves 
-                <a href="/faq#intersectionality" style={{ fontSize: '20px', textDecoration: 'none' }}> INTERSECTIONALITY </a>, the way in which different aspects of identity combine to create an 
+                The way these areas of privilege and marginalization relate to each other involves&nbsp;
+                <HashLink style={{ textDecoration: 'none', fontSize: '20px'}} to="/faq#intersectionality">INTERSECTIONALITY</HashLink>
+                , the way in which different aspects of identity combine to create an 
                 overall experience of relative privilege or relative marginalization.
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
                 The Social Matrix Diagram includes many different&nbsp; 
-                <HashLink style={{ textDecoration: 'none', fontSize: '20px'}} to="/identity#householdIncome">areas of identity</HashLink>
+                <HashLink style={{ textDecoration: 'none', fontSize: '20px'}} to="/identity">areas of identity</HashLink>
                 , like educational level, income level, race, ethnicity, religion, sexual orientation, etc. Each aspect of 
                 identity falls along a line (or axis) going from the most highly privileged “1” at the center 
                  the diagram to the most marginalized “7” at the outermost circle. 
@@ -687,7 +688,8 @@ const Home = () => {
             </Typography>
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                Our areas of privilege can lead to <a href="/references#refImpBias" style={{ fontSize: '20px', textDecoration: 'none' }}>blind spots</a>, which can lead us to act in 
+                Our areas of privilege can lead to&nbsp;
+                <HashLink style={{ textDecoration: 'none', fontSize: '20px'}} to="/references#refImpBias">blind spots</HashLink>, which can lead us to act in 
                 unintentionally biased or discriminatory ways that can be hurtful to others.  
                 t the same time, we may be vulnerable because of our marginalized areas – the 
                 areas where we have least power or privilege and where we might feel shame or 
