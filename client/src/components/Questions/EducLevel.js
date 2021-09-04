@@ -124,22 +124,22 @@ const EducLevel = () => {
             </Typography>
     
             <p>
-                How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's 
-                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>local 
-                community today</Box>? "1" = most privileged (most educated) and "7" = least privileged 
+                How would you rate the privilege of PERSON's level of education, as compared to everyone in PERSON's &nbsp;
+                <span style={{ fontWeight: 600, textDecoration: 'underline' }}>local 
+                community today</span>? "1" = most privileged (most educated) and "7" = least privileged 
                 (least educated).  
             </p>
             <p>
-                (<Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>In 
-                answering this question, consider both time and place.</Box> For instance, in the US in 
+                (<span style={{ fontWeight: 600, textDecoration: 'underline' }}>In 
+                answering this question, consider both time and place.</span> For instance, in the US in 
                 2019, 88% of adults  have high school diplomas, but only 33% have bachelor's degree or 
                 higher. Those numbers were much lower 50 years ago. In Mexico in 2019, 45% of adults have 
                 finished high school and 8% have college degrees. Therefore, being a high school graduate 
                 has different status in Mexico than in the US, and that status has changed over the 
-                generations. <Box component="span" style={{ fontWeight: 600 }}>The numbers will differ 
+                generations. <span style={{ fontWeight: 600 }}>The numbers will differ 
                 for different communities and different countries and for people born into different generations.) You can choose 
                   two responses if PERSON goes between communities (for instance, between college and a 
-                home community). </Box>
+                home community). </span>
             </p>
         
             <CheckboxField id="container1.2" />
@@ -150,26 +150,26 @@ const EducLevel = () => {
      
             <p>
                 How would you rate the privilege of PERSON's level of education, 
-                as compared to everyone in PERSON's 
+                as compared to everyone in PERSON's &nbsp;
                 <span style={{ fontWeight: 600, textDecoration: 'underline' }}> 
                 local community today at an earlier time</span>? "1" = most privileged (most educated) 
                 and "7" = least privileged (least educated).  
             </p>
             <p>
-                (<Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>
-                In answering this question, consider both time and place.</Box> For instance, in the 
+                (<span style={{ fontWeight: 600, textDecoration: 'underline' }}>
+                In answering this question, consider both time and place.</span> For instance, in the 
                 US in 2019, 88% of adults  have high school diplomas, but only 33% have bachelor's 
                 degree or higher. Those numbers were much lower 50 years ago. In Mexico in 2019, 45% of 
                 adults have finished high school and 8% have college degrees. Therefore, being a high 
                 school graduate has different status in Mexico than in the US, and that status has changed 
-                over the generations. <Box component="span" style={{ fontWeight: 600 }}>The numbers will 
+                over the generations. <span style={{ fontWeight: 600 }}>The numbers will 
                 differ for different communities and different countries and for people born into different generations.) You can 
                 choose two responses if PERSON goes between communities (for instance, between college 
-                and a home community). </Box>
+                and a home community). </span>
             </p>
       
-            <Box component="div"><Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>
-            Choose one</Box></Box>
+            <Box component="div"><span style={{ fontWeight: 600, textDecoration: 'underline' }}>
+            Choose one</span></Box>
 
             <CheckboxField id="container1.3" />
         </Box>
@@ -182,8 +182,8 @@ const EducLevel = () => {
             </Typography>
         
             <p>
-                How would you rate PERSON's level of education, as compared to everyone in PERSON's 
-                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}> current 
+                How would you rate PERSON's level of education, as compared to everyone in PERSON's &nbsp;
+                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>current 
                 country of residence as a whole (which may differ from the local community)?</Box> ("1" = 
                 most privileged or most educated) and "7" = least privileged or least educated)
                 (In answering this question, consider both time and place. For instance, in the US in 2019,
@@ -207,7 +207,7 @@ const EducLevel = () => {
             <p>
                 (In answering this question, consider both time and place. For instance, a high school diploma
                 provided more privilege 50 years ago than today and may be more privileged in those countries
-                with less higher education than in the US.
+                with less higher education than in the US.&nbsp;
                 <Box component="span" style={{ fontWeight: 600 }}>You can choose two responses if PERSON went between countries or lived transnationally. </Box>
             </p>
             <CheckboxField id="container1.5" />
