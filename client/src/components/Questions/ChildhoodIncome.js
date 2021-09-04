@@ -116,7 +116,7 @@ const ChildhoodIncome = () => {
             <br/>
             <p>
               Please rate each Parent/Guardian's relative income and wealth while 
-              raising PERSON. You can give up to two answers for each Parent/Guardians 
+              raising PERSON. You can give up to two answers for each Parent/Guardian's 
               household income and wealth if it changed during PERSON's childhood or 
               was mixed (for instance because of going between two or more 
               parents/guardian's' homes).
@@ -125,7 +125,7 @@ const ChildhoodIncome = () => {
                 Note: A person's wealth (household incomes, assets, and debts) can 
                 change over time and buys more or less in different locations. 
                 How do you rate Parent/Guardian's income and wealth <b>while 
-                raising PERSON, as compared to the local community and country</b> 
+                raising PERSON, as compared to the local community and country </b> 
                 at that time??
             </p>
             <p>

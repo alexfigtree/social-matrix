@@ -117,7 +117,7 @@ const Appearance = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.43"><h4>Q 6.43</h4></label>
          
             <p>
-                <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>now.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
+                <b>Physical Appearance now.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>now.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
             </p>
         
             <CheckboxField id="container6.43" />
@@ -128,7 +128,7 @@ const Appearance = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput6.44"><h4>Q 6.44</h4></label>
          
             <p>
-                <b>Physical Appearance.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>earlier.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
+                <b>Physical Appearance earlier.</b> Please subjectively rate Person’s privilege or marginalization in physical appearance <b>earlier.</b> If Person does not draw either positive or negative or overly curious attention on the basis of appearance, please choose “4” (neither privileged nor marginalized).
             </p>
          
             <CheckboxField id="container6.44" />

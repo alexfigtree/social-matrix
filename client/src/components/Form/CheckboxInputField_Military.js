@@ -125,14 +125,14 @@ function CheckboxInputField_Military(props) {
             control={
               <Checkbox 
                 id={questionNumber+"-4"}
-                value="military sex slave"
+                value="Military sex slave"
                 onChange={handleChange} 
                 name={questionNumber+"-4"}
                 disabled={isDisabled(4, questionNumber+"-4")}
                 iconstyle={{fill: '#000'}}
               />
             }
-            label="military sex slave"
+            label="Military sex slave"
             labelPlacement="end"
           />
 

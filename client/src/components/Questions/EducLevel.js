@@ -120,7 +120,7 @@ const EducLevel = () => {
             <label className={classes.questionLabel} htmlFor="formGroupExampleInput1.2"><h4>Q 1.2</h4></label>
         
             <Typography variant="h5" align="left">
-                PERSON's Years of Education, compared to Person's  <Box component="span" style={{ textDecoration: 'underline' }}> LOCAL COMMUNITY today </Box> 
+                PERSON's Years of Education, compared to Person's  <span style={{ textDecoration: 'underline' }}> LOCAL COMMUNITY today </span> 
             </Typography>
     
             <p>
@@ -137,7 +137,7 @@ const EducLevel = () => {
                 finished high school and 8% have college degrees. Therefore, being a high school graduate 
                 has different status in Mexico than in the US, and that status has changed over the 
                 generations. <Box component="span" style={{ fontWeight: 600 }}>The numbers will differ 
-                for different countries and for people born into different generations.) You can choose 
+                for different communities and different countries and for people born into different generations.) You can choose 
                   two responses if PERSON goes between communities (for instance, between college and a 
                 home community). </Box>
             </p>
@@ -151,8 +151,8 @@ const EducLevel = () => {
             <p>
                 How would you rate the privilege of PERSON's level of education, 
                 as compared to everyone in PERSON's 
-                <Box component="span" style={{ fontWeight: 600, textDecoration: 'underline' }}>
-                local community today at an earlier time</Box>? "1" = most privileged (most educated) 
+                <span style={{ fontWeight: 600, textDecoration: 'underline' }}> 
+                local community today at an earlier time</span>? "1" = most privileged (most educated) 
                 and "7" = least privileged (least educated).  
             </p>
             <p>
@@ -163,7 +163,7 @@ const EducLevel = () => {
                 adults have finished high school and 8% have college degrees. Therefore, being a high 
                 school graduate has different status in Mexico than in the US, and that status has changed 
                 over the generations. <Box component="span" style={{ fontWeight: 600 }}>The numbers will 
-                differ for different countries and for people born into different generations.) You can 
+                differ for different communities and different countries and for people born into different generations.) You can 
                 choose two responses if PERSON goes between communities (for instance, between college 
                 and a home community). </Box>
             </p>
