@@ -122,7 +122,7 @@ const AreasOfIdentity = () => {
                   housing, and banking policies</a>
                    historically and in the present on the basis of race, 
                   ethnicity, and religion have systematically ensured that <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, Native 
-                  American,</a> and Latino people (and, previously, Jews and Catholics) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
+                  American,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latino</a> people (and, previously, Jews and Catholics) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial inequality.</a> Similarly, 
                   veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
                   upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> received </a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
@@ -132,7 +132,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Gender, gender identity, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> achieved all affect 
                   household income as well, with women making less than men (and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, 
-                    Indigenous,</a> and Latinx women making much less and having less wealth 
+                    Indigenous,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latinx</a> women making much less and having less wealth 
                     than White men) and lesbian couples making less and having less wealth 
                   than heterosexual couples, while gay male couples make more and have more 
                   wealth. Transgender <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown people</a> generally make less and have 
@@ -227,7 +227,7 @@ const AreasOfIdentity = () => {
                   and legally-enforced segregation and discrimination (particularly for Black and 
                     Indigenous people) , as well as <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>exclusion acts controlling immigration</a> and, more 
                   recently, hate crimes, particularly against Asians). You may identify with more 
-                  than one race, or as biracial or multiracial. Ethnicity and tribe are a different area of 
+                  than one race, or as biracial or multiracial. <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Ethnicity and tribe</a> are a different area of 
                   identity, even though they may have a relationship to race. 
                 </p> 
             </Typography>
@@ -292,12 +292,11 @@ const AreasOfIdentity = () => {
                     education, and basic utilities (water, electricity, and internet access).</a>
                     Some refugees may feel more privileged than those they left behind because 
                     they are out of a danger zone, even if they experience marginalization in 
-                    the receiving country. The members of some ethnic groups born in their 
-                    country of residence do not have citizenship by virtue of their ethnicity 
-                    or tribe and are essentially stateless; this includes the Rohinge of 
+                    the receiving country. The members of some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic groups</a> born in their 
+                    country of residence do not have citizenship by virtue of their <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity or tribe</a> and are essentially stateless; this includes the Rohinge of 
                     Myanmar (Burma), Palestinians living in the West Bank and Gaza and in 
                     refugee camps elsewhere and, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until into the 20th century</a>, Jews in the 
-                    former Soviet Union and many European states, and Romany people throughout Europe. 
+                    former Soviet Union and many European states, and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Romany people</a> throughout Europe. 
                 </p> 
             </Typography>
 
@@ -326,10 +325,9 @@ const AreasOfIdentity = () => {
                   barriers. Even an accent identifying you as from a <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>different region of the same country</a> can be marginalizing, especially when there is 
                   <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>political or civil conflict</a> between <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>regions</a> or ethnic tension.   
+                style={{ fontSize: '20px', textDecoration: 'none' }}>regions</a> or <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic tension</a>.   
                   Finally, the language you use can identify you with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>colonizer or the colonized</a> in <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>colonial and postcolonial countries</a>, with different 
-                  ethnic or tribal groups of that country, or with how much and what 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>colonial and postcolonial countries</a>, with <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>different ethnic or tribal groups</a> of that country, or with how much and what 
                   quality <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> you have received. 
                 </p> 
             </Typography>
@@ -415,7 +413,7 @@ const AreasOfIdentity = () => {
                 <p>
                   The region of the world you live in can affect your privilege or marginalization, 
                   in that some countries are affluent and others are poor. Some regions and 
-                  countries are harshly affected by ethnic <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
+                  countries are harshly affected by <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic</a> <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
                   environmental disasters and resultant displacement</a>,  while others are relatively 
                   protected from those serious problems. The region you live in affects your <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access to resources</a>, in that some regions have greater access than others to adequate 
                   <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthcare</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
@@ -449,8 +447,10 @@ const AreasOfIdentity = () => {
                   and other kinds of social upheaval, as well as phenomena like social movements 
                   toward more or fewer human rights, can greatly affect the people who live through 
                   them, and can even affect their children and grandchildren. Growing up during such 
-                  major events as a civil or international war or during a period of persecution or 
-                  genocide on the basis of ethnicity/tribe, religion, or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, or during a time 
+                  major events as a civil or international war or during a period of 
+                  <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>persecution or 
+                  genocide on the basis of ethnicity/tribe</a>
+                  , religion, or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, or during a time 
                   of major technological change or living through these events as an adult can shape 
                   how you view your world and live in it. It can even affect how your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children and grandchildren</a> view and live in their world. Similarly, surviving a severe natural 
                   or human-made disaster that affected many people in your <a href="/identity#geoRegion" 
@@ -514,7 +514,7 @@ const AreasOfIdentity = () => {
                 <p>
                   The military in many countries have historically (and often still) 
                   engaged prejudicially on the basis of gender, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> sexual 
-                  orientation, gender identity, and, in some countries, ethnicity. 
+                  orientation, gender identity, and, in some countries, <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity</a>. 
                   For instance, in the U.S., men were required to register for the 
                   draft (although there has not been a draft since 1973) and women 
                   were not. Women are still discriminated against within the military, 
@@ -678,13 +678,15 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Appearance</p>
                 <p>
                     Appearance can be a source of privilege if one is considered attractive or if 
-                    one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> ethnic/tribal,  
+                    one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic/tribal</a>,  
                     religious, or economic group. It can be marginalizing if not, especially in the 
                     case of disfigurement or <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>visible disability</a>. In many societies, being tall is 
                     privileging, as is looking <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>lean and physically fit</a>, and, in most western societies, 
                     <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
-                    although an overweight or even obese appearance is privileged as a mark of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>wealth</a> in 
-                    some cultures. Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
+                    although an overweight or even obese appearance is privileged as a mark of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>wealth</a> 
+                    in 
+                    <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>some cultures</a>
+                    . Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
                     people actively transform their appearance through expensive and time-consuming 
                     non-invasive cosmetic procedures, 
@@ -704,9 +706,13 @@ const AreasOfIdentity = () => {
             <Typography id="age" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Age</p>
                 <p>
-                  The privilege or marginalization associated with different ages is very specific to 
-                  particular ethnic or tribal groups <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>and to particular regions. </a>
-                  For instance, in many Asian, African, and indigenous societies, the older you are, 
+                  The privilege or marginalization associated with different ages is very 
+                  <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>specific to 
+                  particular ethnic or tribal groups</a>
+                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>and to particular regions. </a>
+                  For instance, in many 
+                  <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Asian, African, and indigenous societies,</a>
+                   the older you are, 
                   the more respect and status you receive from others. Elders in those cultures tend to be 
                   seen as sources of wisdom to be respected and obeyed as a result, although that is 
                   changing somewhat with globalization. In the U.S. and other western societies, in 
@@ -720,7 +726,7 @@ const AreasOfIdentity = () => {
                   professionals as well. 
                 </p> 
                 <p>
-                  Adult attitudes toward childhood and adolescence vary across different cultures 
+                  Adult attitudes toward childhood and adolescence vary across different <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>cultures</a> 
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families'</a> economic necessity may force even very young 
                   children to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>abandon - or never have the chance</a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
@@ -737,7 +743,7 @@ const AreasOfIdentity = () => {
                   and have different levels of skill and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
-                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black and Native American</a> and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black and Native American</a> <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>and US-born Latinx</a> people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
                   expect to live out their family and work lives have shifted.
                 </p>
             </Typography>
@@ -785,7 +791,7 @@ const AreasOfIdentity = () => {
                   parents has greatly diminished in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>many countries in the world</a> in 
                   recent decades and has largely disappeared in some European countries, 
                   it continues in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a> that are more religiously 
-                  and culturally conservative. Even in communities that are fully 
+                  and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> conservative. Even in communities that are fully 
                   accepting single parent families, however, household income is 
                   generally much lower in those families, especially the majority 
                   that are headed by women, than in families headed by single men or 
@@ -794,7 +800,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and communities of color, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
                   provide enough <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>universal financial support for families</a>, including 
                   childcare and subsidies for children, that that disparity is blunted. 
-                  In many societies, especially culturally and religiously conservative 
+                  In many societies, especially <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> and religiously conservative 
                   ones,  divorce is frowned upon at best and some countries (especially 
                     those that are predominantly Catholic) only made divorce legal <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
                   the late 20th century or early 21st century.</a>
@@ -871,7 +877,7 @@ const AreasOfIdentity = () => {
                 contract controlled by religious <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a civil contract 
                 controlled by the state. Until recently, marriage was only legal between one man and one 
                 woman in most countries, although some societies allow men to marry more than one woman 
-                at a time and some indigenous cultures have allowed same-sex marriage and marriage of 
+                at a time and some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous cultures</a> have allowed same-sex marriage and marriage of 
                 both gay and genderqueer (both of whom those cultures call “two-spirit” people) to 
                 each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
@@ -900,10 +906,10 @@ const AreasOfIdentity = () => {
                   varies considerably with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a> and prevailing religion of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
                   sexual behavior other than heterosexual behavior within marriage is illegal; in some 
                   extreme cases, homosexuality is legally punishable by death. In contrast, some 
-                  indigenous cultures, including many Native American nations, embrace gays and 
+                  indigenous cultures, including many <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Native American nations</a>, embrace gays and 
                   lesbians (as well as genderqueer people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
-                  marginalized is also influenced by the person’s race, ethnicity or tribe, class 
+                  marginalized is also influenced by the person’s <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>race, ethnicity, or tribe</a>, class 
                   privilege (household income, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
                     style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), 
                     and family religion 
