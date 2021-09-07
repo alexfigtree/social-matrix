@@ -107,7 +107,7 @@ const AreasOfIdentity = () => {
                   from family, etc., minus your debts) – do you have enough assets that you can live 
                 comfortably and weather unexpected expenses, or are you living paycheck to paycheck or 
                 dipping into savings or credit card debt to pay monthly expenses? Take major expenses 
-                into consideration, such as major medical costs that are not covered by insurance or 
+                into consideration, such as <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>major medical costs</a> that are not covered by insurance or 
                 <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}> high college tuition or debt</a>, because a relatively high gross income might not be so 
                 high after paying for those expenses.  
                 </p> 
@@ -140,13 +140,13 @@ const AreasOfIdentity = () => {
                 <p>
                   Finally, household income has a strong relationship with health and 
                   longevity; people with higher household incomes tend to be significantly 
-                  healthier and <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>longer-lived</a> than poorer people, because they have better 
-                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to healthcare and healthy food,  and tend to live in <a href="/identity#geoRegion" 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthier</a> and <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>longer-lived</a> than poorer people, because they have better 
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthcare and healthy food</a>,  and tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> 
                   with more trees (which decrease overheating and pollution), while poorer 
                   people tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> with little greenery and more 
-                  unhealthful pollution-creating industries. 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>unhealthful</a> pollution-creating industries. 
                 </p>
             </Typography>
 
@@ -195,9 +195,8 @@ const AreasOfIdentity = () => {
                     online), and influence (political, professional, or otherwise). This access is especially 
                     affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, 
                     <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> and language(s) spoken, as well as <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close medical care is, how specialized the services, 
-                    and even how inclusive local buildings, roads and transportation are to people with 
-                    disabilities. 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>medical care</a> is, how specialized the services, 
+                    and even how inclusive local buildings, roads and transportation are to <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>people with disabilities</a>. 
                 </p> 
             </Typography>
 
@@ -405,7 +404,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
                   is therefore a reason for seeking asylum in other countries.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
                   getting jobs,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>housing, or benefits.</a> In addition, the prevailing politics of a 
-                  country affects what human rights and what health and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
+                  country affects what human rights and what <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>accessible</a> to all residents.
                 </p> 
             </Typography>
@@ -418,10 +417,10 @@ const AreasOfIdentity = () => {
                   countries are harshly affected by ethnic <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
                   environmental disasters and resultant displacement</a>,  while others are relatively 
                   protected from those serious problems. The region you live in affects your <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access to resources</a>, in that some regions have greater access than others to adequate 
-                  healthcare and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthcare</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
                     advantage of those resources), as well as safe housing. Even within a country, 
                   some regions are poorer and/or more prone to natural disaster and less protected 
-                  from human-made environmental health hazards than others, and the people in those 
+                  from <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>human-made environmental health hazards</a> than others, and the people in those 
                   regions may be less likely to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and utilize healthcare and educational 
                   resources. For instance, in the U.S., some inner-city and rural communities and 
                   regions areas are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>effectively food deserts and medical access deserts</a>
@@ -434,7 +433,7 @@ const AreasOfIdentity = () => {
                    for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans; redlining (keeping 
                     Black people out of white neighborhoods was another institutionalized policy. 
                     <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> Having less access</a> to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
-                    have greater health risks. In addition, some countries in the developed world 
+                    have greater <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health risks</a>. In addition, some countries in the developed world 
                     (but not the U.S.) guarantee paid parental leave, subsidies for children, and 
                     subsidized child and elder care, as well as universal health care and free or 
                     subsidized <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a>, which means increased wealth for even poor people 
@@ -445,7 +444,7 @@ const AreasOfIdentity = () => {
             <Typography id="impactHistTimes" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Impact of Historical Era</p>
                 <p>
-                  Historical events such as wars, persecution, famines, epidemics and pandemics, 
+                  Historical events such as wars, persecution, famines, <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>epidemics and pandemics</a>, 
                   and other kinds of social upheaval, as well as phenomena like social movements 
                   toward more or fewer human rights, can greatly affect the people who live through 
                   them, and can even affect their children and grandchildren. Growing up during such 
@@ -486,7 +485,7 @@ const AreasOfIdentity = () => {
                   hailed as <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>heroes, as happened for World War II, or as war criminals, as 
                   happened for many US soldiers returning from Vietnam, or did military 
                   service take place in peacetime?</a> Did the service member come home from war 
-                  with severe physical injuries or moral injuries, psychological trauma or 
+                  with severe <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>physical injuries</a> or moral injuries, psychological trauma or 
                   cognitive problems caused by brain injury? These difficulties can also 
                   affect family relations, including <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parenting</a>, as well as social relationships 
                   and may limit <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational opportunities. What rank did the service member 
@@ -525,8 +524,10 @@ const AreasOfIdentity = () => {
                   generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black</a> veterans. It also denied openly LGBTQ people the right to 
                   serve in the military until quite recently as well, and until 
-                  2021, even transgender service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> to 
-                  needed hormonal treatments and gender confirming surgeries. 
+                  2021, even transgender service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>to 
+                  needed hormonal treatments and gender confirming surgeries. </a>
+
                 </p>
             </Typography>
 
@@ -676,15 +677,17 @@ const AreasOfIdentity = () => {
                     Appearance can be a source of privilege if one is considered attractive or if 
                     one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> ethnic/tribal,  
                     religious, or economic group. It can be marginalizing if not, especially in the 
-                    case of disfigurement or visible disability. In many societies, being tall is 
-                    privileging, as is looking lean and physically fit, and, in most western societies, 
+                    case of disfigurement or <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>visible disability</a>. In many societies, being tall is 
+                    privileging, as is looking <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>lean and physically fit</a>, and, in most western societies, 
                     <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
                     although an overweight or even obese appearance is privileged as a mark of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>wealth</a> in 
                     some cultures. Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
                     people actively transform their appearance through expensive and time-consuming 
-                    non-invasive cosmetic procedures, cosmetic surgeries, some of which are dangerous 
-                    and distorting of the body, Botox, and the like.  Appearance consistent with being 
+                    non-invasive cosmetic procedures, 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>cosmetic surgeries, some of which are dangerous 
+                    and distorting of the body, Botox,</a>
+                     and the like.  Appearance consistent with being 
                     cisgender and gender conforming is privileging in most contexts, while appearing 
                     genderqueer, or transgender, or gender nonconforming or as gay or is marginalizing 
                     in most contexts. Dress is often a signal of income,  and occupation, which can be either 
@@ -705,7 +708,7 @@ const AreasOfIdentity = () => {
                   seen as sources of wisdom to be respected and obeyed as a result, although that is 
                   changing somewhat with globalization. In the U.S. and other western societies, in 
                   contrast, youth is exalted and is generally privileged (with some exceptions), 
-                  while old age is associated with being decrepit or senile and is often marginalized, 
+                  while old age is associated with being <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>decrepit</a> or senile and is often marginalized, 
                     especially occupationally. This is somewhat less the case in professional <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupations </a> 
                   that require <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a> and that value experience over physical strength or 
                   technological savvy, while working-class occupations tend to require strength or 
@@ -807,7 +810,7 @@ const AreasOfIdentity = () => {
                   and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>before one's 20s</a> is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
                   is marginalized and a source of pity or moral judgment, even when that is a 
-                  thought-out choice and not the unwelcome result of infertility or being single. 
+                  thought-out choice and not the unwelcome result of <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>infertility</a> or being single. 
                   Becoming a parent without being in a heterosexual marriage is marginalized in 
                   many or most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions world-wide</a>, especially those with a 
                   dominant religion that is socially conservative.
@@ -830,10 +833,10 @@ const AreasOfIdentity = () => {
                     the parent. In contrast, having given up custody of one’s child or 
                     children via adoption or abandonment or having lost custody in court 
                     is marginalizing, as, in most cases, being a surrogate mother. 
-                    Having a child who is healthy and able bodied, who has a particular 
+                    Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a particular 
                     talent, and who does not have problems with mental health or substance 
                     abuse is privileging for parents, while having a child who has 
-                    chronically illness or disability (especially if those are apparent to 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are apparent to 
                     others) or who has problems with mental illness or substance abuse or 
                     limited cognitive ability is marginalizing, especially if the parent 
                     has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
@@ -841,7 +844,7 @@ const AreasOfIdentity = () => {
                     extended family assets and income or higher is privileging, while 
                     being a parent who is poor is marginalizing. Being a gay, lesbian, 
                     or a transgender, or genderqueer parent, or one with problems of 
-                    chronic illness or disability or of mental illness or substance abuse 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of mental illness or substance abuse 
                     is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
                     pregnancy is often marginalized and is illegal in religiously and 
                     politically conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while miscarrying 
@@ -906,11 +909,13 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  The HIV/AIDS epidemic, which disproportionately hit gay men (as well as IV drug users) 
+                  The <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>HIV/AIDS epidemic</a>, which disproportionately hit gay men (as well as IV drug users) 
                   and their sex partners, from the late <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1970s until the 1990s</a> was highly marginalizing 
                   specifically because of its association to gay men at time when homophobia was the norm. 
-                  Even today, in a time when life-saving treatment is available for what is now usually a 
-                  chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
+                  Even today, in a time when 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>life-saving treatment is available for what is now usually a 
+                  chronic rather than fatal condition, an HIV/AIDS diagnosis</a>
+                   is still highly stigmatized, 
                   again because of its association with <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> and bisexual gay men and IV drug users, 
                   and all their partners, of either gender, <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>in the US. it is also prevalent in several 
                   African and Caribbean nations</a> that <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>have far fewer resources</a> for treating it than in 
@@ -961,9 +966,11 @@ const AreasOfIdentity = () => {
                   People who identify as female but were assigned a male sex at birth are transwomen 
                   and those who who identify as  male but were assigned a female sex at birth are 
                   transmen regardless of whether they have used hormonal  interventions. Transgender 
-                  people usually, but not always, utilize hormonal treatment in order to live 
-                  congruently with their gender identity, and some also choose to undergo gender 
-                  confirmation surgery, also known as gender affirming surgery. These surgeries 
+                  people usually, but not always, utilize <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>hormonal treatment</a> in order to live 
+                  congruently with their gender identity, and some also choose to undergo 
+                  <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>gender 
+                  confirmation surgery</a>
+                  , also known as gender affirming surgery. These surgeries 
                   include a range of procedures: breast reduction or augmentation, removal of 
                   facial and body hair, facial reconstruction to attain a jawline consistent with 
                   their chosen gender identity, and finally, removal of original reproductive 
@@ -1039,16 +1046,22 @@ const AreasOfIdentity = () => {
                   bisexual, or queer. They may also identify as gay or lesbian before identifying and 
                   understanding transgender identity. Appearing congruent with one’s chosen sex provides 
                   privilege (for instance, transmen, once they have been on male hormones long enough, 
-                    appear male and carry privilege, while transwomen, even after years on female hormones 
-                    and even after breast reduction surgery, may still have visibly male features and are 
+                    appear male and carry privilege, while transwomen, even after years on 
+                   
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>female hormones 
+                    and even after breast reduction surgeryy</a>
+                    , may still have visibly male features and are 
                     at risk of violence).
                 </p>
 
                 <p>
                   In about one case in 2,000, babies are born with the sexual organs of both sexes; they are 
                   intersex people (historically called hermaphrodites), a group so marginalized that their 
-                  existence is barely known. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historically,</a> doctors would remove all or most of one set of 
-                  sexual organs and declare the baby to have the sex congruent with the remaining sexual 
+                  existence is barely known. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historically,</a> 
+                   
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>doctors would remove all or most of one set of 
+                  sexual organs</a>
+                     and declare the baby to have the sex congruent with the remaining sexual 
                   organs. These babies, on growing up, however, often experienced what is officially 
                   diagnosed as gender dysphoria (but which would be better described as understandable 
                   distress over the incongruity between their experienced and assigned sex), even when 
