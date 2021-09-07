@@ -97,9 +97,10 @@ const AreasOfIdentity = () => {
                   of anyone else in your household, minus your expenses) is depends not only on what 
                 your salary or other income is, but also on cost of living in your community and your 
                 country. For instance, the same salary might allow you to buy a comfortable house in 
-                urban Missouri or rural Arkansas, but only to rent a small apartment in New York City 
+                <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> urban Missouri or rural Arkansas, but only to rent a small apartment in New York City 
                 or San Francisco, cities with dramatic income divides between rich and poor and 
-                inadequate affordable housing. <a href="/identity#geoRegion" 
+                inadequate affordable housing.</a>
+                 <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>The same income might mean you are rich in the 
                 Dominican Republic or Sri Lanka.</a> It is also useful to think about assets as well 
                 (savings, retirement and college funds, the value of one’s home, if you own it, help 
@@ -119,11 +120,11 @@ const AreasOfIdentity = () => {
                   White people, and have far less wealth.  In addition, prejudicial governmental, 
                   housing, and banking policies historically and in the present on the basis of race, 
                   ethnicity, and religion have systematically ensured that <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, Native 
-                  American,</a> and Latino people (and, previously, Jews and Catholics) were denied access to 
+                  American,</a> and Latino people (and, previously, Jews and Catholics) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial inequality.</a> Similarly, 
                   veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
-                  upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who received <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
-                  subsidized home mortgages, but were denied to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans.</a>
+                  upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> received </a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
+                  subsidized home mortgages, but were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied</a> to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans.</a>
                 </p>
 
                 <p>
@@ -140,7 +141,7 @@ const AreasOfIdentity = () => {
                   Finally, household income has a strong relationship with health and 
                   longevity; people with higher household incomes tend to be significantly 
                   healthier and <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>longer-lived</a> than poorer people, because they have better 
-                  access to healthcare and healthy food,  and tend to live in <a href="/identity#geoRegion" 
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to healthcare and healthy food,  and tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> 
                   with more trees (which decrease overheating and pollution), while poorer 
                   people tend to live in <a href="/identity#geoRegion" 
@@ -204,7 +205,7 @@ const AreasOfIdentity = () => {
             <Typography id="guardiansAccess" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}><a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>Guardians' Access</a></p>
                 <p>
-                  This domain involves how much access your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> have to resources, 
+                  This domain involves how much <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> have to resources, 
                   information, and influence. For more on how access relates to other 
                   aspects of identity, see “Access.”
                 </p> 
@@ -285,8 +286,9 @@ const AreasOfIdentity = () => {
                       protection, etc.) than more recent white immigrants and their children. 
                     This is especially true for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous people (First Nation peoples or 
                       Native Americans)</a> <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>living on reservations</a> that lack adequate healthcare, 
-                    education, and basic utilities (water, electricity, and internet access). 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>living on reservations</a> that 
+                    <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>lack adequate healthcare, 
+                    education, and basic utilities (water, electricity, and internet access).</a>
                     Some refugees may feel more privileged than those they left behind because 
                     they are out of a danger zone, even if they experience marginalization in 
                     the receiving country. The members of some ethnic groups born in their 
@@ -316,9 +318,10 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. Immigrants who 
                   do not speak the dominant language of their country of residence, or who 
                   speak that language with a heavy accent may be actively discriminated 
-                  against in <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>job applications or applications,</a> looking for housing, in 
+                  against in <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>job applications or applications,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>looking for housing</a>, in 
                   interactions with <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>colleagues or clients,</a> etc. They may also receive 
-                  inadequate or even incorrect medical treatment because of language 
+<a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>inadequate or even incorrect medical treatment</a>
+                   because of language 
                   barriers. Even an accent identifying you as from a <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>different region of the same country</a> can be marginalizing, especially when there is 
                   political or civil conflict between <a href="/identity#geoRegion" 
@@ -394,16 +397,16 @@ const AreasOfIdentity = () => {
                   and West Coast. In addition, political affiliation and beliefs can be a 
                   source of polarization and even antagonism between people of different beliefs. 
                   In Communist-led countries, membership in the Communist party provides benefits 
-                  and access to power, but membership in the Communist Party in the U.S. was 
+                  and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access to power</a>, but membership in the Communist Party in the U.S. was 
                   proscribed starting in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1917 and explicitly illegal from 1954 until the late 
                   1960s.</a> Being a dissident or the member of a party that opposes the ruling 
                   party is illegal and risks imprisonment, torture, or death in some 
                   dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
                   is therefore a reason for seeking asylum in other countries.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
-                  getting jobs,</a> housing, or benefits. In addition, the prevailing politics of a 
+                  getting jobs,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>housing, or benefits.</a> In addition, the prevailing politics of a 
                   country affects what human rights and what health and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
-                  are accessible to all residents.
+                  are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>accessible</a> to all residents.
                 </p> 
             </Typography>
 
@@ -414,21 +417,23 @@ const AreasOfIdentity = () => {
                   in that some countries are affluent and others are poor. Some regions and 
                   countries are harshly affected by ethnic <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
                   environmental disasters and resultant displacement</a>,  while others are relatively 
-                  protected from those serious problems. The region you live in affects your access 
-                  to resources, in that some regions have greater access than others to adequate 
+                  protected from those serious problems. The region you live in affects your <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access to resources</a>, in that some regions have greater access than others to adequate 
                   healthcare and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> (and the people in those regions are more likely to take 
                     advantage of those resources), as well as safe housing. Even within a country, 
                   some regions are poorer and/or more prone to natural disaster and less protected 
                   from human-made environmental health hazards than others, and the people in those 
-                  regions may be less likely to access and utilize healthcare and educational 
+                  regions may be less likely to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and utilize healthcare and educational 
                   resources. For instance, in the U.S., some inner-city and rural communities and 
-                  regions areas are effectively food deserts and medical access deserts while others 
-                  are more at risk environmentally. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Institutional racism</a> in housing policy and 
-                  banking means that some areas have more substandard housing than others. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>From 
-                  World War II until after the Vietnam War,</a> the government subsidized mortgages 
-                  and education for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans; redlining (keeping 
+                  regions areas are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>effectively food deserts and medical access deserts</a>
+                   while others 
+                  are more at risk environmentally. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Institutional racism</a> in <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>housing policy and banking</a> means that some areas have more substandard housing than others. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>From 
+                  World War II until after the Vietnam War,</a> the 
+                  
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>government subsidized mortgages 
+                  and education</a>
+                   for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans; redlining (keeping 
                     Black people out of white neighborhoods was another institutionalized policy. 
-                    Having less access to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
+                    <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> Having less access</a> to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
                     have greater health risks. In addition, some countries in the developed world 
                     (but not the U.S.) guarantee paid parental leave, subsidies for children, and 
                     subsidized child and elder care, as well as universal health care and free or 
@@ -455,7 +460,7 @@ const AreasOfIdentity = () => {
                   in the US, Apartheid in South Africa, or the aftermath of military coups in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>Chile, 
                   Libya, Myanmar, and other countries</a> can affect the rest of your life. In contrast, 
-                  living through a period of affluence, peace, universal education, and human rights 
+                  living through a period of affluence, peace, <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>universal education, and human rights </a> 
                   also affects your lifetime. Finally, living through social and political movements 
                   can dramatically change the quality of many people’s lives and the privilege or 
                   marginalization they experience, and how they are perceived by others. Examples 
@@ -464,10 +469,9 @@ const AreasOfIdentity = () => {
                   and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for documented and undocumented 
                   immigrants and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
                   like the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>anti-Apartheid movement in South Africa.</a> Other examples of major changes 
-                  that differentially affect people’s access to information, education, healthcare, 
+                  that differentially affect people’s <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to information, education, healthcare, 
                   and even to geographically distant loved ones involve technological changes in 
-                  computing. Because many <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older people</a> do not have the skills and comfort level 
-                  needed to use personal computers, tablets, and smartphones that most younger 
+                  computing. Because many <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older people</a> do not have <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>the skills and comfort level neeeded to use </a> personal computers, tablets, and smartphones that most younger 
                   people do, they may be less able to take advantage of those technological advances.
                 </p> 
             </Typography>
@@ -517,12 +521,11 @@ const AreasOfIdentity = () => {
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racially segregated</a> until after World War II and Black, Brown, and 
                   Native people</a> were routinely sent to be “cannon fodder” or to menial 
                   labor in the military until quite recently. From <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>World War II until 
-                  after the Vietnam War,</a> the government subsidized mortgages and 
-                  education for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, through the GI Bill, creating 
+                  after the Vietnam War,</a> the <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>government subsidized mortgages and education</a> for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, through the GI Bill, creating 
                   generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black</a> veterans. It also denied openly LGBTQ people the right to 
                   serve in the military until quite recently as well, and until 
-                  2021, even transgender service members were denied the right to 
+                  2021, even transgender service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> to 
                   needed hormonal treatments and gender confirming surgeries. 
                 </p>
             </Typography>
@@ -543,7 +546,7 @@ const AreasOfIdentity = () => {
                     even found not guilty), being a victim in a criminal case, and 
                   some family court cases can be highly marginalizing and often 
                   traumatizing. Even without imprisonment, an arrest record can mean 
-                  being turned down for many <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> possibilities. 
+                  being <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>turned down</a> for many <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>possibilities</a>. 
                   Time in prison makes later employment, housing, education, and 
                   receiving such benefits as food stamps impossible in many cases.  
                   In addition, imprisonment itself is often highly traumatizing, 
@@ -561,8 +564,7 @@ const AreasOfIdentity = () => {
                   of violent crimes. Parents, partners, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> and other loved ones 
                   also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
-                  courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be evicted 
-                  from public housing for letting a formerly incarcerated relative 
+                  courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>evicted from public housing</a> for letting a formerly incarcerated relative 
                   stay with them; they may also exclude relatives who have been 
                   incarcerated from family events. Entire communities that are 
                   poor and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
@@ -591,7 +593,7 @@ const AreasOfIdentity = () => {
                     the mental health system, or having undergone residential or inpatient 
                     rehabilitation for substances are all highly marginalizing as well. 
                     Having been labeled with mental illness and/or substance abuse can mean 
-                    losing control over one’s choices (including through involuntary 
+                    <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>losing control over one's choices</a> (including through involuntary 
                       hospitalization), but also because of losing credibility with others. 
                     People with serious mental illnesses are more likely to be arrested and 
                     incarcerated, including time in Isolation while incarcerated, as well as 
@@ -643,23 +645,25 @@ const AreasOfIdentity = () => {
                   community and regional planning, as well as lack of health care for all, can make it 
                   difficult to participate fully or at all in community activities like <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work,</a> socializing, 
                   civic, political, and religious engagement, or even to use public transportation in the 
-                  absence of accommodations for blindness, deafness, wheelchair use, and other disabilities. 
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>absence of accomodations</a> for blindness, deafness, wheelchair use, and other disabilities. 
                   The Americans with Disabilities Act requires that all U.S. buildings, transportation, and 
                   streets be accessible to people with disabilities of all kinds, but lack of accessible 
                   housing, buildings, transportation, and sidewalks persists. Many countries do not even 
                   provide those protections.
                 </p> 
                 <p>
-                  The problems created by illness and disability are worsened in impoverished <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities, regions, and countries</a> with limited access to healthcare, education, healthy food, 
-                  transportation and sustainable work; the same <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities are also most often the ones 
+                  The problems created by illness and disability are worsened in impoverished <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities, regions, and countries</a> with 
+                  
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>limited access to healthcare, education, healthy food, 
+                  transportation and sustainable work;</a>
+                   the same <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities are also most often the ones 
                   that are saddled with toxic waste and pollution</a>. Highly marginalized diseases include 
                   HIV/AIDS (because of its association with gay men and IV-drug users), hepatitis (again, 
                     because of the association with drug users), and lung diseases (which are often blamed 
                     on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, clinician bias, 
-                    institutional racism, and language barriers make the problems of access and inclusion 
+                    institutional racism, and language barriers make the problems of <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and inclusion 
                     all the greater for people of color and immigrants.  At the same time, lack of 
-                    information and clinician bias, including homophobia, transphobia, and racism, limit 
-                    or block access to needed health care (including hormone replacement therapy, 
+                    information and clinician bias, including homophobia, transphobia, and racism, <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>limit or block access</a> to needed health care (including hormone replacement therapy, 
                       gender-appropriate treatment planning, and gender confirmation surgeries, as well 
                       as needed sexual health care) to transgender and nonbinary individuals, especially 
                     those <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a>
@@ -713,7 +717,7 @@ const AreasOfIdentity = () => {
                   Adult attitudes toward childhood and adolescence vary across different cultures 
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families'</a> economic necessity may force even very young 
-                  children to abandon – or never have the chance <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
+                  children to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>abandon - or never have the chance</a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
                   demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for girls, marriage, even before puberty. 
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
@@ -724,7 +728,7 @@ const AreasOfIdentity = () => {
                   Age or generation also has cultural implications in that different generations often 
                   trend differently in relation to attitudes about politics, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> gender and reproductive 
                   rights, sexual orientation, gender identity, gender expression, and immigration policy, 
-                  and have different levels of skill and access to computers and smart phones, among other 
+                  and have different levels of skill and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black and Native American</a> and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
@@ -832,7 +836,7 @@ const AreasOfIdentity = () => {
                     chronically illness or disability (especially if those are apparent to 
                     others) or who has problems with mental illness or substance abuse or 
                     limited cognitive ability is marginalizing, especially if the parent 
-                    has limited access to needed health or mental health care or other 
+                    has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
                     services for the child. Being a parent with adequate personal or 
                     extended family assets and income or higher is privileging, while 
                     being a parent who is poor is marginalizing. Being a gay, lesbian, 
@@ -909,13 +913,13 @@ const AreasOfIdentity = () => {
                   chronic rather than fatal condition, an HIV/AIDS diagnosis is still highly stigmatized, 
                   again because of its association with <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> and bisexual gay men and IV drug users, 
                   and all their partners, of either gender, <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>in the US. it is also prevalent in several 
-                  African and Caribbean nations</a> that have far fewer resources for treating it than in 
+                  African and Caribbean nations</a> that <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>have far fewer resources</a> for treating it than in 
                   the US and Europe. 
                 </p> 
 
                 <p>
                   Having a sexual orientation that is marginalized in one’s <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community</a> can limit 
-                  one’s access to resources, influence and  housing, as well as to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs,</a> 
+                  one’s <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to resources, influence and  housing, as well as to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs,</a> 
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   educational</a> (and therefore, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial</a>), and
                   volunteering opportunities, and, until very recently in the U.S, military service. 
@@ -929,7 +933,7 @@ const AreasOfIdentity = () => {
                   who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many politically and religiously 
                   conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
-                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without financial support from family, to become homeless and at 
+                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without financial support from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
                   risk of physical and sexual exploitation as a result. 
 
                 </p> 
@@ -971,7 +975,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   These medical treatments can be hard to come by for economic and societal reasons, 
-                  including clinician bias and prejudicial insurance policies, such as requiring a 
+                  including clinician bias and prejudicial <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many prisons 
                   and jails deny such treatments, as the US. Military did until 2021. Finally, 
