@@ -66,7 +66,7 @@ const AreasOfIdentity = () => {
             <Typography name="occupation" id="occupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Occupation</p>
                 <p>For your occupation, consider both the status of that 
-                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a> 
+                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}> education </a> 
                 in your <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community and the country</a> (the degree of respect it does or doesn’t get), the amount of control 
                   you have over your work life and schedule, and the <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a> associated with that occupation. 
                   ome occupations are more secure than others, in that they provide reliable employment and 
@@ -80,7 +80,10 @@ const AreasOfIdentity = () => {
 
             <Typography name="guardiansOccupation" id="guardiansOccupation" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Occupation</p>
-                <p>Your parents’ or guardians’ <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> is a window into your family occupational 
+                <p>Your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents’ or guardians’</a>
+
+
+                 <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> is a window into your family occupational 
                 history. As with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>, the amount of status or respect their occupation gets  
                 or got) may vary with <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>when they came of occupational age</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}> 
                   the country, region, or community</a> where they did so. 
@@ -104,7 +107,7 @@ const AreasOfIdentity = () => {
                 comfortably and weather unexpected expenses, or are you living paycheck to paycheck or 
                 dipping into savings or credit card debt to pay monthly expenses? Take major expenses 
                 into consideration, such as major medical costs that are not covered by insurance or 
-                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high college tuition or debt</a>, because a relatively high gross income might not be so 
+                <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}> high college tuition or debt</a>, because a relatively high gross income might not be so 
                 high after paying for those expenses.  
                 </p> 
 
@@ -152,7 +155,8 @@ const AreasOfIdentity = () => {
                 <p>
                   Childhood household income is the income your family lived on when you were a 
                   child, which should also include household wealth or debt load. If you grew up 
-                  in multiple households (because your parents or other guardians didn’t live 
+                  in multiple households (
+                    <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because your parents or other guardians</a> didn’t live 
                     together), you can answer this for as many households as you lived in. Keep in 
                   mind that a particular income then had more <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>buying power than today</a> if you are 
                   adult now, because of inflation. Also consider when and where you lived, since 
@@ -169,9 +173,9 @@ const AreasOfIdentity = () => {
             <Typography id="guardiansChildhoodIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Childhood Household Income</p>
                 <p>
-                  Childhood household income is the income your parents or guardians lived on when they were 
+                  Childhood household income is the income your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> lived on when they were 
                   children, together with household wealth or debt. If they grew up in multiple households 
-                  (because their own parents or other guardians didn’t live together), you can answer this 
+                  (<a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because their own parents or guardians</a> didn’t live together), you can answer this 
                   for as many households as they lived in. Keep in mind that <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>a particular income then had more 
                     buying power than today</a> or during your own childhood, because of inflation. Also consider 
                   when and where your parents or guardians lived, since both <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> and <a href="/identity#geoRegion" 
@@ -198,9 +202,9 @@ const AreasOfIdentity = () => {
 
 
             <Typography id="guardiansAccess" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
-                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Access</p>
+                <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}><a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>Guardians' Access</a></p>
                 <p>
-                  This domain involves how much access your parents or guardians have to resources, 
+                  This domain involves how much access your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> have to resources, 
                   information, and influence. For more on how access relates to other 
                   aspects of identity, see “Access.”
                 </p> 
@@ -251,7 +255,7 @@ const AreasOfIdentity = () => {
                   legal quotas on immigration into a country (as was the case for Chinese people, Jews, 
                     Southern Europeans and Arabs at different times) or otherwise marginalized in the 
                   <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
+                style={{ fontSize: '20px', textDecoration: 'none' }}> country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
                   occupations offer some modest protection against discrimination. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Race</a> and appearance 
                   also play a role here; for instance, lighter-skinned people who identify as 
@@ -330,7 +334,7 @@ const AreasOfIdentity = () => {
             <Typography id="familyReligion" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Family Religion</p>
                 <p>
-                  This area of identity refers to the religion of your parents/guardians 
+                  This area of identity refers to the religion of your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents/guardians </a> 
                   and recent ancestors (which may differ from your current religious 
                     affiliation, if any). Many religions have sects, subgroups with 
                   their own unique beliefs and practices within a larger religion. 
@@ -371,7 +375,7 @@ const AreasOfIdentity = () => {
                   converts to a marginalized or prohibited religion or whose <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> appearance differs 
                   from that of most members of their new religion in their <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
-                  Converts may also be rejected by family of origin and in some cases, not be welcomed 
+                  Converts may also be rejected by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a> and in some cases, not be welcomed 
                   as full members of their new religion. Choosing not to affiliate with any religion 
                   can be also marginalizing within the family and in larger society. (For more on 
                   religious affiliation, whether through birth or conversion, see Family Religion.) 
@@ -396,8 +400,7 @@ const AreasOfIdentity = () => {
                   party is illegal and risks imprisonment, torture, or death in some 
                   dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
-                  is therefore a reason for seeking asylum in other countries.  Even being the 
-                  child of a parent who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
+                  is therefore a reason for seeking asylum in other countries.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
                   getting jobs,</a> housing, or benefits. In addition, the prevailing politics of a 
                   country affects what human rights and what health and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are accessible to all residents.
@@ -444,8 +447,7 @@ const AreasOfIdentity = () => {
                   major events as a civil or international war or during a period of persecution or 
                   genocide on the basis of ethnicity/tribe, religion, or politics, or during a time 
                   of major technological change or living through these events as an adult can shape 
-                  how you view your world and live in it. It can even affect how your children and 
-                  grandchildren view and live in their world. Similarly, surviving a severe natural 
+                  how you view your world and live in it. It can even affect how your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children and grandchildren</a> view and live in their world. Similarly, surviving a severe natural 
                   or human-made disaster that affected many people in your <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a> can 
                   affect the rest of your life, and even your children’s and grandchildren’s lives. 
@@ -482,7 +484,7 @@ const AreasOfIdentity = () => {
                   service take place in peacetime?</a> Did the service member come home from war 
                   with severe physical injuries or moral injuries, psychological trauma or 
                   cognitive problems caused by brain injury? These difficulties can also 
-                  affect family relations, including parenting, as well as social relationships 
+                  affect family relations, including <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parenting</a>, as well as social relationships 
                   and may limit <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational opportunities. What rank did the service member 
                   hold and how respected did they feel in that position?</a>
                 </p> 
@@ -518,7 +520,7 @@ const AreasOfIdentity = () => {
                   after the Vietnam War,</a> the government subsidized mortgages and 
                   education for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, through the GI Bill, creating 
                   generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
-                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans. It also denied openly LGBTQ people the right to 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black</a> veterans. It also denied openly LGBTQ people the right to 
                   serve in the military until quite recently as well, and until 
                   2021, even transgender service members were denied the right to 
                   needed hormonal treatments and gender confirming surgeries. 
@@ -531,7 +533,7 @@ const AreasOfIdentity = () => {
                   A person can get involved in the legal system because of arrest, 
                   conviction, and/or imprisonment in a criminal matter, because one 
                   is a victim in a criminal case, or through involvement in family court 
-                  that can award or remove from parents the custody of children and 
+                  that can award or remove from parents the custody <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> and 
                   visitation , as well as deciding on adoption, divorce or alimony decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
@@ -552,14 +554,14 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
-                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>People of Color,</a> as well as people with histories of substance abuse
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> People of Color,</a> as well as people with histories of substance abuse
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
-                  of violent crimes. Parents, partners, children and other loved ones 
+                  of violent crimes. Parents, partners, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> and other loved ones 
                   also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
-                  courts decide custody arrangements. Family members can be evicted 
+                  courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be evicted 
                   from public housing for letting a formerly incarcerated relative 
                   stay with them; they may also exclude relatives who have been 
                   incarcerated from family events. Entire communities that are 
@@ -615,7 +617,7 @@ const AreasOfIdentity = () => {
                   overall intellectual functioning as measured on school tests but have important 
                   talents that may privilege them  in some ways. Some people with major cognitive 
                   limitations, including those with developmental delays and severe brain injury, 
-                  are institutionalized even as children, sometimes for life, and can be regularly 
+                  are <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>institutionalized even as children</a>, sometimes for life, and can be regularly 
                   abused in those settings. Different societies tend to prioritize different kinds 
                   of cognitive ability than others, so which cognitive skills are <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupationally</a> 
                   and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educationally</a> privileged depends partly on the social context of one’s 
@@ -710,7 +712,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Adult attitudes toward childhood and adolescence vary across different cultures 
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
-                  generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even families’ economic necessity may force even very young 
+                  generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families'</a> economic necessity may force even very young 
                   children to abandon – or never have the chance <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
                   demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for girls, marriage, even before puberty. 
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
@@ -725,10 +727,11 @@ const AreasOfIdentity = () => {
                   and have different levels of skill and access to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
-                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Native American</a> and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black and Native American</a> and US-born Latinx people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
                   expect to live out their family and work lives have shifted.
                 </p>
             </Typography>
+
 
             <Typography id="raisedBy" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Raised By</p>
@@ -920,14 +923,13 @@ const AreasOfIdentity = () => {
                   human rights as the right to marriage, and to adopt children or even keep custody 
                   of birth children are denied in many countries, as they were in most states in the 
                   U.S until a Supreme Court ruling protecting those rights in 2015. In religiously 
-                  or politically conservative families, people who identify as anything other than 
+                  or politically conservative <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families</a>, people who identify as anything other than 
                   straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered 
                   by their families and others in their personal lives. For this reason, many people 
                   who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many politically and religiously 
                   conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
-                  are more likely than straight youth to run away from or be kicked out of their 
-                  homes and, without financial support from family, to become homeless and at 
+                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without financial support from family, to become homeless and at 
                   risk of physical and sexual exploitation as a result. 
 
                 </p> 
@@ -977,7 +979,7 @@ const AreasOfIdentity = () => {
                   vulnerable to violent assault and murder because of a combination of transphobia, 
                   homophobia, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
                   extreme stigma they face and the lack of emotional support and affirmation from 
-                  family and the cisgender community.
+                  <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and the cisgender community.
                 </p>
 
                 <p>
@@ -1006,7 +1008,7 @@ const AreasOfIdentity = () => {
                   people’s broader and more playful expressions of masculinity and femininity, and in 
                   religiously and politically conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
                   straight people alike who present with gender nonconforming expressions are at risk 
-                  of violence from homophobic and transphobic family and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
+                  of violence from homophobic and transphobic <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
                 </p> 
             </Typography>
 
@@ -1015,7 +1017,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Most people are born with either male reproductive organs and are assigned male sex at 
                   birth, or they are born with female reproductive organs and are assigned female sex and 
-                  are therefore perceived by family and others as boys or girls, respectively. However, 
+                  are therefore perceived by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and others as boys or girls, respectively. However, 
                   some children experience and declare themselves as identifying with the opposite sex 
                   to the one they were assigned and therefore want to express their gender accordingly. 
                   In many societies, such declarations and gender expressions are met with resistance, 
@@ -1056,8 +1058,8 @@ const AreasOfIdentity = () => {
             <Typography id="uniqueHistory" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Unique History</p>
                 <p>
-                  Unique history involves any events or situations in the life of an individual or family 
-                  that does not fall under any of the other areas of identity in the Social Matrix Diagram.  
+                  Unique history involves any events or situations in the life of an individual or <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family </a> 
+                   that does not fall under any of the other areas of identity in the Social Matrix Diagram.  
                   Examples might include having suffered severe physical, sexual, or emotional abuse at the 
                   hands of family members or others, having lived in many countries or regions, having been 
                   victimized by human trafficking, or living through an individual, family, or collective 
