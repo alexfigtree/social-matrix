@@ -124,8 +124,9 @@ const AreasOfIdentity = () => {
                   ethnicity, and religion have systematically ensured that <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, Native 
                   American,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latino</a> people (and, <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>previously, Jews and Catholics</a>) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial inequality.</a> Similarly, 
-                  veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
-                  upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> received </a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
+                  <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans’ benefits</a>
+                   <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
+                  upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans</a> who <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> received </a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
                   subsidized home mortgages, but were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied</a> to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans.</a>
                 </p>
 
@@ -428,7 +429,7 @@ const AreasOfIdentity = () => {
                   
                   <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>government subsidized mortgages 
                   and education</a>
-                   for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> veterans; redlining (keeping 
+                   for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans</a>, but not for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>veterans</a>; redlining (keeping 
                     Black people out of white neighborhoods was another institutionalized policy. 
                     <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> Having less access</a> to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
                     have greater <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health risks</a>. In addition, some countries in the developed world 
@@ -939,7 +940,7 @@ const AreasOfIdentity = () => {
                   one’s <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to resources, influence and  housing, as well as to <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs,</a> 
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   educational</a> (and therefore, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial</a>), and
-                  volunteering opportunities, and, until very recently in the U.S, military service. 
+                  volunteering opportunities, and, until very recently in the U.S, <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>military service</a>. 
                   For that reason, some people even today “pass” as straight. Even such fundamental 
                   human rights as the right to marriage, and to adopt children or even keep custody 
                   of birth children are denied in many countries, as they were in most states in the 
@@ -997,7 +998,7 @@ const AreasOfIdentity = () => {
                   including clinician bias and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many prisons 
-                  and jails deny such treatments, as the US. Military did until 2021. Finally, 
+                  and jails deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
                   transgender people, particularly transgender women <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
                   vulnerable to violent assault and murder because of a combination of transphobia, 
                   homophobia, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
