@@ -122,7 +122,7 @@ const AreasOfIdentity = () => {
                   housing, and banking policies</a>
                    historically and in the present on the basis of race, 
                   ethnicity, and religion have systematically ensured that <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, Native 
-                  American,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latino</a> people (and, previously, Jews and Catholics) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
+                  American,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latino</a> people (and, <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>previously, Jews and Catholics</a>) were denied <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> access </a> to 
                   neighborhoods with <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>high-quality schools</a>, which maintains <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial inequality.</a> Similarly, 
                   veterans’ benefits <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>between World War II and the end of the Vietnam War era</a> ensured 
                   upward economic mobility to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans who <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> received </a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>free higher education</a> and 
@@ -239,7 +239,7 @@ const AreasOfIdentity = () => {
                     White might be ethnically Irish, German, Greek, Italian, or Jewish, while someone 
                     who is racially Black might be ethnically African American, Haitian, Jamaican, 
                     Ugandan, or Kenyan, etc. People from all racial groups may identify ethnically as 
-                    Latino/a/Latinx/Hispanic or as Jewish. (Judaism is a religion but Jewishness has 
+                    Latino/a/Latinx/Hispanic or as Jewish. (<a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Judaisim is a religion</a> but Jewishness has 
                       been considered an ethnicity, regardless of religious observance, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>since the 
                       Spanish Inquisition.)</a> People who are African or MENA (Middle Eastern/North African) 
                       may identify racially as Black or Asian, or in some cases, White, but identify 
@@ -255,7 +255,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>region of the world and what region</a> of your country you live In. 
                   It may also depend on as well whether your ethnic/tribal group is <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>persecuted</a>, facing 
                   <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>legal quotas on immigration</a> into a country (as was the case for Chinese people, Jews, 
-                    Southern Europeans and Arabs at different times) or otherwise marginalized in the 
+                    Southern Europeans and Arabs and for <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Jews</a> at different times) or otherwise marginalized in the 
                   <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}> country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
@@ -295,7 +295,7 @@ const AreasOfIdentity = () => {
                     the receiving country. The members of some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic groups</a> born in their 
                     country of residence do not have citizenship by virtue of their <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity or tribe</a> and are essentially stateless; this includes the Rohinge of 
                     Myanmar (Burma), Palestinians living in the West Bank and Gaza and in 
-                    refugee camps elsewhere and, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until into the 20th century</a>, Jews in the 
+                    refugee camps elsewhere and, <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>until into the 20th century</a>, <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Jews</a> in the 
                     former Soviet Union and many European states, and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Romany people</a> throughout Europe. 
                 </p> 
             </Typography>
@@ -336,8 +336,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Family Religion</p>
                 <p>
                   This area of identity refers to the religion of your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents/guardians </a> 
-                  and recent ancestors (which may differ from your current religious 
-                    affiliation, if any). Many religions have sects, subgroups with 
+                  and recent ancestors (which may differ from your <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>current religious affiliation</a>, if any). Many religions have sects, subgroups with 
                   their own unique beliefs and practices within a larger religion. 
                   For instance, Christianity, most broadly divided among Catholic, 
                   Protestant, and Eastern Orthodox faiths, is further divided into 
@@ -367,7 +366,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Chosen Religion</p>
                 <p>
                   This area of identity refers to your own religious affiliation and practice, if any, 
-                  which may (or ay not) differ from those of your family of origin. Unlike <a href="/identity#geoRegion" 
+                  which may (or ay not) differ from those of your <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a>. Unlike <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>most of the world, in the US</a>, about 40% of American adults identify with a different religion than 
                   the one in which they were raised. In <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
@@ -379,7 +378,7 @@ const AreasOfIdentity = () => {
                   Converts may also be rejected by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a> and in some cases, not be welcomed 
                   as full members of their new religion. Choosing not to affiliate with any religion 
                   can be also marginalizing within the family and in larger society. (For more on 
-                  religious affiliation, whether through birth or conversion, see Family Religion.) 
+                  religious affiliation, whether through birth or conversion, see <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Family Religion</a>.) 
                 </p> 
             </Typography>
 
@@ -450,7 +449,7 @@ const AreasOfIdentity = () => {
                   major events as a civil or international war or during a period of 
                   <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>persecution or 
                   genocide on the basis of ethnicity/tribe</a>
-                  , religion, or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, or during a time 
+                  , <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a>, or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, or during a time 
                   of major technological change or living through these events as an adult can shape 
                   how you view your world and live in it. It can even affect how your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children and grandchildren</a> view and live in their world. Similarly, surviving a severe natural 
                   or human-made disaster that affected many people in your <a href="/identity#geoRegion" 
@@ -679,7 +678,7 @@ const AreasOfIdentity = () => {
                 <p>
                     Appearance can be a source of privilege if one is considered attractive or if 
                     one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic/tribal</a>,  
-                    religious, or economic group. It can be marginalizing if not, especially in the 
+                    <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious</a>, or economic group. It can be marginalizing if not, especially in the 
                     case of disfigurement or <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>visible disability</a>. In many societies, being tall is 
                     privileging, as is looking <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>lean and physically fit</a>, and, in most western societies, 
                     <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
@@ -790,7 +789,7 @@ const AreasOfIdentity = () => {
                   position. Although the stigma attached to families headed by single 
                   parents has greatly diminished in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>many countries in the world</a> in 
                   recent decades and has largely disappeared in some European countries, 
-                  it continues in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a> that are more religiously 
+                  it continues in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a> that are more <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                   and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> conservative. Even in communities that are fully 
                   accepting single parent families, however, household income is 
                   generally much lower in those families, especially the majority 
@@ -800,9 +799,9 @@ const AreasOfIdentity = () => {
                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and communities of color, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
                   provide enough <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>universal financial support for families</a>, including 
                   childcare and subsidies for children, that that disparity is blunted. 
-                  In many societies, especially <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> and religiously conservative 
+                  In many societies, especially <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> conservative 
                   ones,  divorce is frowned upon at best and some countries (especially 
-                    those that are predominantly Catholic) only made divorce legal <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
+                    those that are predominantly <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Catholic</a>) only made divorce legal <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>in 
                   the late 20th century or early 21st century.</a>
 
                 </p> 
@@ -822,7 +821,7 @@ const AreasOfIdentity = () => {
                   thought-out choice and not the unwelcome result of <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>infertility</a> or being single. 
                   Becoming a parent without being in a heterosexual marriage is marginalized in 
                   many or most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions world-wide</a>, especially those with a 
-                  dominant religion that is socially conservative.
+                  dominant <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a> that is socially conservative.
                 </p> 
 
                 <p>
@@ -870,18 +869,22 @@ const AreasOfIdentity = () => {
                 divorced, or widowed, especially for people who are parenting children, except among 
                 those generally considered too <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>young</a> to marry. Some communities and 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>some social welfare states</a>may be somewhat indifferent to marital status, however. The age at which one is 
-                considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more religiously 
+                considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>conservative</a> regions often accepting <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>earlier marriage, in some cases even before puberty,</a> 
                 especially for girls. The same societies and communities are more likely than secular ones 
-                to marginalize or even prohibit divorce. In some countries, marriage is a religious 
-                contract controlled by religious <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a civil contract 
+                to marginalize or even prohibit divorce. In some countries, marriage is a 
+                
+                <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious 
+                contract controlled by religious </a>
+                
+                <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a civil contract 
                 controlled by the state. Until recently, marriage was only legal between one man and one 
                 woman in most countries, although some societies allow men to marry more than one woman 
                 at a time and some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous cultures</a> have allowed same-sex marriage and marriage of 
                 both gay and genderqueer (both of whom those cultures call “two-spirit” people) to 
                 each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
-                <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and religiously liberal <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or states</a>. While being widowed is the 
+                <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> liberal <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or states</a>. While being widowed is the 
                 statistical norm for <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>people in their 70s</a> and older, it is still marginalizing in 
                 societies that privilege marriage and it is especially so among <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>young people</a>. 
                 </p> 
@@ -903,7 +906,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   A person’s relative privilege or marginalization on the basis of sexual orientation 
-                  varies considerably with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a> and prevailing religion of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
+                  varies considerably with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a> and prevailing <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a> of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
                   sexual behavior other than heterosexual behavior within marriage is illegal; in some 
                   extreme cases, homosexuality is legally punishable by death. In contrast, some 
                   indigenous cultures, including many <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Native American nations</a>, embrace gays and 
@@ -912,8 +915,8 @@ const AreasOfIdentity = () => {
                   marginalized is also influenced by the person’s <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>race, ethnicity, or tribe</a>, class 
                   privilege (household income, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
                     style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), 
-                    and family religion 
-                  and chosen religion, in that those aspects of identity 
+                    and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>family religion</a> 
+                  and <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>chosen religion</a>, in that those aspects of identity 
                   can influence how the person’s immediate reference group perceives their sexual orientation. 
                 </p> 
 
@@ -940,11 +943,11 @@ const AreasOfIdentity = () => {
                   For that reason, some people even today “pass” as straight. Even such fundamental 
                   human rights as the right to marriage, and to adopt children or even keep custody 
                   of birth children are denied in many countries, as they were in most states in the 
-                  U.S until a Supreme Court ruling protecting those rights in 2015. In religiously 
+                  U.S until a Supreme Court ruling protecting those rights in 2015. In <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                   or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families</a>, people who identify as anything other than 
                   straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered 
                   by their families and others in their personal lives. For this reason, many people 
-                  who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and religiously 
+                  who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                   conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
                   are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without financial support from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
@@ -1026,7 +1029,7 @@ const AreasOfIdentity = () => {
                   any appearance that does not conform to sex assigned at birth can be marginalizing, 
                   especially by <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older generations</a> who are unfamiliar or uncomfortable with younger 
                   people’s broader and more playful expressions of masculinity and femininity, and in 
-                  religiously and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
+                  <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
                   straight people alike who present with gender nonconforming expressions are at risk 
                   of violence from homophobic and transphobic <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
                 </p> 
