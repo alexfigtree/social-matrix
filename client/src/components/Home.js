@@ -629,7 +629,7 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h6" align="left">12) <i>Person's Nation of Origin:</i>  US
                     </Typography>
-                    <Typography variant="h6" align="left">13) <i>Citizenship Status. Income:</i>  US; B. US
+                    <Typography variant="h6" align="left">13) <i>Citizenship Status. Income:</i>  US; b. US
                     </Typography>
                     <Typography variant="h6" align="left">15) <i>Language(s) Spoken:</i>  English; Spanish, French, a little Hebrew and Yiddish
                     </Typography>
@@ -649,7 +649,7 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h6" align="left">23) <i>Relation to MH System:</i> Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy
                     </Typography>
-                    <Typography variant="h6" align="left">24) <i>MH/Subst. Abuse:</i> Family issues, death of son with Mental Illness, close relative of someone with SA
+                    <Typography variant="h6" align="left">24) <i>MH/Subst. Use:</i> Family issues, death of son with Mental Illness, close relative of someone with SA
                     </Typography>
                     <Typography variant="h6" align="left">25) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
                     </Typography>

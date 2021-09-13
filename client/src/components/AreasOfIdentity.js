@@ -131,12 +131,15 @@ const AreasOfIdentity = () => {
                 </p>
 
                 <p>
-                  Gender, gender identity, and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> achieved all affect 
-                  household income as well, with women making less than men (and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, 
-                    Indigenous,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latinx</a> women making much less and having less wealth 
-                    than White men) and lesbian couples making less and having less wealth 
-                  than heterosexual couples, while gay male couples make more and have more 
-                  wealth. Transgender <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown people</a> generally make less and have 
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Gender, gender identity,</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a> achieved all affect 
+                  household income as well, with <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women making less than men</a> (and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black, 
+                    Indigenous,</a> and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Latinx</a> 
+                    
+                    <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women making much less and having less wealth 
+                    than White men</a>
+                    ) and lesbian couples making less and having less wealth 
+                  than heterosexual couples, while gay <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> couples make more and have more 
+                  wealth. <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Transgender</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown people</a> generally make less and have 
                   less wealth than all other groups.
                 </p>
 
@@ -466,8 +469,8 @@ const AreasOfIdentity = () => {
                   also affects your lifetime. Finally, living through social and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>political</a> movements 
                   can dramatically change the quality of many people’s lives and the privilege or 
                   marginalization they experience, and how they are perceived by others. Examples 
-                  of such movements include the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>US Civil Rights Movement</a>;the Women’s Rights Movement; 
-                  and Rights for gays and lesbians,  trans people, and gender non-conforming people; 
+                  of such movements include the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>US Civil Rights Movement</a>;the <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Women's Rights Movement</a>; 
+                  and Rights for gays and lesbians, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>trans people,</a>, and gender non-conforming people; 
                   and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for documented and undocumented 
                   immigrants and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
                   like the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>anti-Apartheid movement in South Africa.</a> Other examples of major changes 
@@ -501,8 +504,7 @@ const AreasOfIdentity = () => {
                   served?  In countries with <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>paramilitary or guerilla fighters</a>, people 
                   are often forced into service, even as <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a>, which can be highly 
                   traumatizing and marginalizing or a source of social status, 
-                  depending on the politics of the home community. Many girls 
-                  (and some boys) forced into such groups are also forced to serve as 
+                  depending on the politics of the home community. Many <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls (and some boys)</a> forced into such groups are also forced to serve as 
                   sex slaves and are ostracized if they are able to get back home, 
                   especially if they had children by their rapists. In countries 
                   like <a href="/identity#geoRegion" 
@@ -513,8 +515,8 @@ const AreasOfIdentity = () => {
                 </p>
                 <p>
                   The military in many countries have historically (and often still) 
-                  engaged prejudicially on the basis of gender, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> sexual 
-                  orientation, gender identity, and, in some countries, <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity</a>. 
+                  engaged prejudicially on the basis of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> sexual 
+                  orientation, and, in some countries, <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity</a>. 
                   For instance, in the U.S., men were required to register for the 
                   draft (although there has not been a draft since 1973) and women 
                   were not. Women are still discriminated against within the military, 
@@ -527,7 +529,7 @@ const AreasOfIdentity = () => {
                   generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black</a> veterans. It also denied openly LGBTQ people the right to 
                   serve in the military until quite recently as well, and until 
-                  2021, even transgender service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> 
+                  2021, even <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender,</a> service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> 
                   <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>to 
                   needed hormonal treatments and gender confirming surgeries. </a>
 
@@ -602,7 +604,7 @@ const AreasOfIdentity = () => {
                     People with serious mental illnesses are more likely to be arrested and 
                     incarcerated, including time in Isolation while incarcerated, as well as 
                     to experience aggressive or violent policing, because they are seen as 
-                    threatening. This is particularly true for men <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color,</a> who are more 
+                    threatening. This is particularly true for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color,</a> who are more 
                     likely than others to be shot or arrested by police called in to help 
                     with a psychiatric crisis. 
                 </p> 
@@ -667,9 +669,12 @@ const AreasOfIdentity = () => {
                     on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, clinician bias, 
                     institutional racism, and language barriers make the problems of <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and inclusion 
                     all the greater for people of color and immigrants.  At the same time, lack of 
-                    information and clinician bias, including homophobia, transphobia, and racism, <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>limit or block access</a> to needed health care (including hormone replacement therapy, 
-                      gender-appropriate treatment planning, and gender confirmation surgeries, as well 
-                      as needed sexual health care) to transgender and nonbinary individuals, especially 
+                    information and clinician bias, including homophobia, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>, and racism, <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>limit or block access</a> to needed health care (
+                    
+                    <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>including hormone replacement therapy, 
+                      gender-appropriate treatment planning, and gender confirmation surgeries,</a>
+                       as well 
+                      as needed sexual health care) to <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender and nonbinary individuals</a>, especially 
                     those <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a>
                 </p>
             </Typography>
@@ -693,7 +698,7 @@ const AreasOfIdentity = () => {
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>cosmetic surgeries, some of which are dangerous 
                     and distorting of the body, Botox,</a>
                      and the like.  Appearance consistent with being 
-                    cisgender and gender conforming is privileging in most contexts, while appearing 
+                    <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender</a> and gender conforming is privileging in most contexts, while appearing 
                     genderqueer, or transgender, or gender nonconforming or as gay or is marginalizing 
                     in most contexts. Dress is often a signal of income,  and occupation, which can be either 
                     privileging or marginalizing. In addition, dressing and grooming oneself in a way 
@@ -730,7 +735,7 @@ const AreasOfIdentity = () => {
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families'</a> economic necessity may force even very young 
                   children to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>abandon - or never have the chance</a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
-                  demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for girls, marriage, even before puberty. 
+                  demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls</a>, marriage, even before puberty. 
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
                   higher education</a> as well, which offers youth and the adults they become both 
@@ -738,8 +743,8 @@ const AreasOfIdentity = () => {
                 </p>
                 <p>
                   Age or generation also has cultural implications in that different generations often 
-                  trend differently in relation to attitudes about <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> gender and reproductive 
-                  rights, sexual orientation, gender identity, gender expression, and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>immigration policy</a>, 
+                  trend differently in relation to attitudes about <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> 
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender and reproductive rights,</a> sexual orientation, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, gender expression, and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>immigration policy</a>, 
                   and have different levels of skill and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
@@ -777,7 +782,7 @@ const AreasOfIdentity = () => {
                   childless). Some children live apart from one or both parents because of parental 
                   death or abandonment, or court-decided custody arrangements, or parental imprisonment. 
                   Other children are kicked out of, or run away from, their homes because their parents 
-                  respond abusively to their coming out as gay or lesbian, or as transgender, or genderqueer. Still others 
+                  respond abusively to their coming out as gay or lesbian, or as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a>. Still others 
                   lose their parents in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>war or refugee situations, or during a large-scale disaster or 
                   pandemic.</a>
                 </p> 
@@ -794,8 +799,8 @@ const AreasOfIdentity = () => {
                   and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> conservative. Even in communities that are fully 
                   accepting single parent families, however, household income is 
                   generally much lower in those families, especially the majority 
-                  that are headed by women, than in families headed by single men or 
-                  heterosexual or gay male couples because of income disparities 
+                  that are headed by <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women,</a> than in families headed by single <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> or 
+                  heterosexual or gay male couples because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>income disparities</a> 
                   between the genders. That income disparity is all the greater in 
                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and communities of color, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
                   provide enough <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>universal financial support for families</a>, including 
@@ -813,7 +818,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Whether being a parent or guardian is privileged or marginalized depends on 
                   one’s <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, marital status, sexual orientation,  and whether one (or one’s child) 
-                  is cisgender, transgender, or genderqueer. Parental status is also affected by 
+                  is <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender, transgender, or genderqueer</a>. Parental status is also affected by 
                   household income and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
                   paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
                   and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>before one's 20s</a> is marginalized, while in 
@@ -826,8 +831,8 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  It is increasingly common for women in committed lesbian couples to 
-                  become parents, while gay male couples, who, as men tend to have higher 
+                  It is increasingly common for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> in committed lesbian couples to 
+                  become parents, while gay <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> couples, who, as men tend to have higher 
                   incomes, may face opposing pressures to parent or to remain childfree, 
                   depending on their local and gay community. This marginalization is less 
                   prevalent in areas that are <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically liberal</a>, and that provide 
@@ -838,7 +843,7 @@ const AreasOfIdentity = () => {
                     Whether a person is a birthparent raising children, or an adoptive or 
                     stepparent, the partner of the birth or adoptive parent, or a foster 
                     parent or relative raising a child also affects relative privilege and 
-                    marginalization, as does the sexual orientation and gender identity of 
+                    marginalization, as does the sexual orientation and <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a> of 
                     the parent. In contrast, having given up custody of one’s child or 
                     children via adoption or abandonment or having lost custody in court 
                     is marginalizing, as, in most cases, being a surrogate mother. 
@@ -852,7 +857,7 @@ const AreasOfIdentity = () => {
                     services for the child. Being a parent with adequate personal or 
                     extended family assets and income or higher is privileging, while 
                     being a parent who is poor is marginalizing. Being a gay, lesbian, 
-                    or a transgender, or genderqueer parent, or one with problems of 
+                    or a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a> parent, or one with problems of 
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of mental illness or substance abuse 
                     is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
                     pregnancy is often marginalized and is illegal in religiously and 
@@ -882,7 +887,7 @@ const AreasOfIdentity = () => {
                 controlled by the state. Until recently, marriage was only legal between one man and one 
                 woman in most countries, although some societies allow men to marry more than one woman 
                 at a time and some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous cultures</a> have allowed same-sex marriage and marriage of 
-                both gay and genderqueer (both of whom those cultures call “two-spirit” people) to 
+                both gay and <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> (both of whom those cultures call “two-spirit” people) to 
                 each other or to straight people for centuries. Otherwise, same-sex couples have only 
                 been allowed to have civil or religious marriages in recent years, and only in more 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> liberal <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or states</a>. While being widowed is the 
@@ -900,8 +905,8 @@ const AreasOfIdentity = () => {
                   straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). 
                   Some people are attracted to neither sex and are called asexual, while someone who falls 
                   between asexual and sexual is called graysexual or demisexual. Sexual orientation is 
-                  distinct from gender identity, gender expression, or the sex assigned at birth. For 
-                  instance, a nonbinary or genderqueer person (who identifies with both genders or neither) 
+                  distinct from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, gender expression, or the sex assigned at birth. For 
+                  instance, a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>nonbinary and genderqueer</a> person (who identifies with both genders or neither) 
                   may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
                 </p> 
 
@@ -911,7 +916,7 @@ const AreasOfIdentity = () => {
                   sexual behavior other than heterosexual behavior within marriage is illegal; in some 
                   extreme cases, homosexuality is legally punishable by death. In contrast, some 
                   indigenous cultures, including many <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Native American nations</a>, embrace gays and 
-                  lesbians (as well as genderqueer people) as two-spirit people with special roles in 
+                  lesbians (as well as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
                   marginalized is also influenced by the person’s <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>race, ethnicity, or tribe</a>, class 
                   privilege (household income, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
@@ -922,7 +927,7 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  The <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>HIV/AIDS epidemic</a>, which disproportionately hit gay men (as well as IV drug users) 
+                  The <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>HIV/AIDS epidemic</a>, which disproportionately hit gay <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> (as well as IV drug users) 
                   and their sex partners, from the late <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1970s until the 1990s</a> was highly marginalizing 
                   specifically because of its association to gay men at time when homophobia was the norm. 
                   Even today, in a time when 
@@ -957,7 +962,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography id="genderID" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="gender" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender ID</p>
                 <p>
                   Gender identity involves one’s identification as a woman, man, or as both or neither. 
@@ -999,7 +1004,7 @@ const AreasOfIdentity = () => {
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many prisons 
                   and jails deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
-                  transgender people, particularly transgender women <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
+                  transgender people, particularly transgender <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
                   vulnerable to violent assault and murder because of a combination of transphobia, 
                   homophobia, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
                   extreme stigma they face and the lack of emotional support and affirmation from 
@@ -1026,13 +1031,13 @@ const AreasOfIdentity = () => {
                   orientation, but rather how one expresses one’s gender identity through appearance, 
                   including one’s choice of clothes, hair, body art, and jewelry, as well as behavior 
                   and the pitch of one’s voice. In recent years, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>younger people</a> in particular have 
-                  distinguished gender expression from gender identity and sexual orientation.  However, 
+                  distinguished gender expression from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a> and sexual orientation.  However, 
                   any appearance that does not conform to sex assigned at birth can be marginalizing, 
                   especially by <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older generations</a> who are unfamiliar or uncomfortable with younger 
-                  people’s broader and more playful expressions of masculinity and femininity, and in 
+                  people’s broader and more playful expressions of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>masculinity and femininity</a>, and in 
                   <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions</a>. LGBTQ+ people and 
                   straight people alike who present with gender nonconforming expressions are at risk 
-                  of violence from homophobic and transphobic <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
+                  of violence from homophobic and <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobic</a> <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community members</a>.  
                 </p> 
             </Typography>
 
@@ -1042,22 +1047,24 @@ const AreasOfIdentity = () => {
                   Most people are born with either male reproductive organs and are assigned male sex at 
                   birth, or they are born with female reproductive organs and are assigned female sex and 
                   are therefore perceived by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and others as boys or girls, respectively. However, 
-                  some children experience and declare themselves as identifying with the opposite sex 
-                  to the one they were assigned and therefore want to express their gender accordingly. 
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>some children experience and declare themselves as identifying with the opposite sex</a>
+
+                   
+                  to the one they were assigned and therefore want to <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>express their gender</a> accordingly. 
                   In many societies, such declarations and gender expressions are met with resistance, 
-                  and sometimes with abuse at home and at school because of transphobia.  Others 
+                  and sometimes with abuse at home and at school because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
                   identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
                 </p>
 
                 <p>
                   In many cases, the person’s recognition of the incongruity between their experienced 
                   gender and assigned sex emerges later, in adolescence or even well into <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>adulthood</a>. 
-                  Some <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older adults</a> who ultimately come out as transgender had trouble making sense of 
+                  Some <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>older adults</a> who ultimately come out as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender</a> had trouble making sense of 
                   their experience in their youth, because people <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>of their generation</a> or in their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>part of the world</a> may not have had any language to express that experience and/or are 
                   unaware that anyone else shares their experience. With the evolution of language, 
                   individuals in older generations may use an overarching term of “gay” to mean lesbian, 
                   bisexual, or queer. They may also identify as gay or lesbian before identifying and 
-                  understanding transgender identity. Appearing congruent with one’s chosen sex provides 
+                  understanding transgender identity. Appearing <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>congruent with one's chosen sex</a> provides 
                   privilege (for instance, transmen, once they have been on male hormones long enough, 
                     appear male and carry privilege, while transwomen, even after years on 
                    
@@ -1076,12 +1083,18 @@ const AreasOfIdentity = () => {
                   sexual organs</a>
                      and declare the baby to have the sex congruent with the remaining sexual 
                   organs. These babies, on growing up, however, often experienced what is officially 
-                  diagnosed as gender dysphoria (but which would be better described as understandable 
-                  distress over the incongruity between their experienced and assigned sex), even when 
+                  diagnosed as gender dysphoria (but which would be better described as 
+                  
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>understandable 
+                  distress over the incongruity between their experienced and assigned sex</a>
+                  ), even when 
                   they did not know their medical history.  <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>In recent years,</a> doctors have been less eager 
                   to “correct” intersex conditions, so as to allow intersex people time to <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>mature</a> and make 
-                  their own decisions about whether to remain intersex, to have gender confirmation surgery 
-                  congruent with their chosen gender, or, in more recent years, to identify as genderqueer.
+                  their own decisions about whether to remain intersex, to have 
+                  
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender confirmation surgery 
+                  congruent with their chosen gender</a>
+                  , or, in more recent years, to identify as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a>.
                 </p>
             </Typography>
 
