@@ -423,7 +423,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
                   is therefore a reason for <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>seeking asylum in other countries</a>.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
                   getting jobs,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>housing, or benefits.</a> In addition, the prevailing politics of a 
-                  country affects what human rights and what <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
+                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>country</a> affects what human rights and what <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>accessible</a> to all residents.
                 </p> 
             </Typography>
@@ -514,7 +514,12 @@ const AreasOfIdentity = () => {
                   hailed as <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>heroes, as happened for World War II, or as war criminals, as 
                   happened for many US soldiers returning from Vietnam, or did military 
                   service take place in peacetime?</a> Did the service member come home from war 
-                  with severe <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>physical injuries</a> or moral injuries, psychological trauma or 
+                  with severe <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>physical injuries</a> or 
+
+                  
+                  
+                  <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>moral injuries, psychological trauma</a>
+                   or 
                   cognitive problems caused by brain injury? These difficulties can also 
                   affect family relations, including <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parenting</a>, as well as social relationships 
                   and may limit <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational opportunities. What rank did the service member 
@@ -526,7 +531,7 @@ const AreasOfIdentity = () => {
                   in a few). In that case, is it marginalizing or a privilege not to have 
                   served?  In countries with <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>paramilitary or guerilla fighters</a>, people 
                   are often forced into service, even as <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a>, which can be highly 
-                  traumatizing and marginalizing or a source of social status, 
+                  <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a> and marginalizing or a source of social status, 
                   depending on the politics of the home community. Many <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls (and some boys)</a> forced into such groups are also forced to serve as 
                   sex slaves and are ostracized if they are able to get back home, 
                   especially if they had children by their rapists. In countries 
@@ -578,7 +583,7 @@ const AreasOfIdentity = () => {
                   being <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>turned down</a> for many <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>jobs</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>possibilities</a>. 
                   Time in prison makes later employment, housing, education, and 
                   receiving such benefits as food stamps impossible in many cases.  
-                  In addition, imprisonment itself is often highly traumatizing, 
+                  In addition, imprisonment itself is often highly <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a>, 
                   especially when solitary confinement or physical threat from either 
                   from other incarcerated people or from correctional officers, 
                   leading to life-long psychological difficulties. Being a victim 
@@ -599,11 +604,14 @@ const AreasOfIdentity = () => {
                   <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>poor</a> and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
                   violent, policing, which means disproportionate arrests, 
                   incarcerations and even deaths at the hands of the police.</a> People 
-                  with mental illness and substance abuse problems are also 
+                  with 
+                  
+                  <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>mental illness and substance abuse problems</a>
+                   are also 
                   disproportionately arrested, tried, and incarcerated.  Finally, 
                   some jurors, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>attorneys, judges, courtroom staff, expert witnesses, 
                   and police officers,</a> while privileged in their roles in the legal 
-                  system, may feel traumatized by participating in particularly painful 
+                  system, may feel <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatized</a> by participating in particularly painful 
                   court cases.
 
                 </p>
@@ -658,7 +666,7 @@ const AreasOfIdentity = () => {
                   incorrectly diagnosed with learning disabilities than white children, or 
                   have their learning disabilities misunderstood as lack of intelligence 
                   because of implicit bias. In addition, children with learning disabilities 
-                  are often disciplined and seen as having behavioral problems rather than 
+                  are often disciplined and seen as having <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>behavioral problems</a> rather than 
                   helped in school settings, with disproportionate school suspensions and 
                   expulsions, especially when they are <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a> These disciplinary responses 
                   increase the likelihood of <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>arrest and incarceration</a>.
@@ -689,8 +697,8 @@ const AreasOfIdentity = () => {
                   transportation and sustainable work;</a>
                    the same <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities are also most often the ones 
                   that are saddled with toxic waste and pollution</a>. Highly marginalized diseases include 
-                  HIV/AIDS (because of its association with <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay men</a> and IV-drug users), hepatitis (again, 
-                    because of the association with drug users), and lung diseases (which are often blamed 
+                  HIV/AIDS (because of its association with <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay men</a> and <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>IV-drug users</a>), hepatitis (again, 
+                    because of the association with <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>drug users</a>), and lung diseases (which are often blamed 
                     on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, clinician bias, 
                     institutional racism, and language barriers make the problems of <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and inclusion 
                     all the greater for people of color and immigrants.  At the same time, lack of 
@@ -731,7 +739,7 @@ const AreasOfIdentity = () => {
                     privileging or marginalizing. In addition, dressing and grooming oneself in a way 
                     that stands out as “different” or “odd (such as wearing shabby clothes and unkempt 
                       hair to an office, or the mismatched, gaudy clothing and makeup and unkempt hair 
-                      and often seen when someone is in a psychiatric crisis) is marginalizing.
+                      and often seen when someone is in a <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>psychiatric crisis</a>) is marginalizing.
                 </p> 
             </Typography>
 
@@ -881,16 +889,15 @@ const AreasOfIdentity = () => {
                     children via adoption or abandonment or having <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>lost custody in court</a> 
                     is marginalizing, as, in most cases, being a surrogate mother. 
                     Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a particular 
-                    talent, and who does not have problems with mental health or substance 
-                    abuse is privileging for parents, while having a child who has 
-                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>apparent to others</a>) or who has problems with mental illness or substance abuse or 
+                    talent, and who does not have <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>problems with mental health or substance abuse</a> is privileging for parents, while having a child who has 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>apparent to others</a>) or who has <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>problems with mental health or substance abuse</a> or 
                     limited cognitive ability is marginalizing, especially if the parent 
                     has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
                     services for the child. Being a parent with adequate personal or 
                     extended family <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>assets and income</a> or higher is privileging, while 
                     being a parent who is poor is marginalizing. Being a <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay, lesbian</a>, 
                     or a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a> parent, or one with problems of 
-                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of mental illness or substance abuse 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>mental illness or substance abuse</a> 
                     is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
                     pregnancy is often marginalized and is <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>illegal</a> in religiously and 
                     <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while miscarrying 
@@ -961,14 +968,14 @@ const AreasOfIdentity = () => {
                 </p> 
 
                 <p>
-                  The <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>HIV/AIDS epidemic</a>, which disproportionately hit gay <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> (as well as IV drug users) 
+                  The <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>HIV/AIDS epidemic</a>, which disproportionately hit gay <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> (as well as <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>IV drug users</a>) 
                   and their sex partners, from the late <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>1970s until the 1990s</a> was highly marginalizing 
                   specifically because of its association to gay men at time when homophobia was the norm. 
                   Even today, in a time when 
                   <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>life-saving treatment is available for what is now usually a 
                   chronic rather than fatal condition, an HIV/AIDS diagnosis</a>
                    is still highly stigmatized, 
-                  again because of its association with <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> and bisexual gay men and IV drug users, 
+                  again because of its association with <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black</a> and bisexual gay men and <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>IV drug users</a>, 
                   and all their partners, of either gender, <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>in the US. it is also prevalent in several 
                   African and Caribbean nations</a> that <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>have far fewer resources</a> for treating it than in 
                   the US and Europe. 
@@ -1035,7 +1042,8 @@ const AreasOfIdentity = () => {
                 <p>
                   These medical treatments can be hard to come by for <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> and societal reasons, 
                   including clinician bias and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
-                  psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
+                  <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>psychiatric diagnosis of “gender dysphoria”</a>
+                   (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>prisons and jails</a> deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
                   transgender people, particularly transgender <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
                   vulnerable to violent assault and murder because of a combination of transphobia, 
@@ -1118,7 +1126,7 @@ const AreasOfIdentity = () => {
                   sexual organs</a>
                      and declare the baby to have the sex congruent with the remaining sexual 
                   organs. These babies, on growing up, however, often experienced what is officially 
-                  diagnosed as gender dysphoria (but which would be better described as 
+                  diagnosed as <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>gender dysphoria</a> (but which would be better described as 
                   
                   <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>understandable 
                   distress over the incongruity between their experienced and assigned sex</a>
