@@ -239,8 +239,11 @@ const AreasOfIdentity = () => {
                   <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>skin color and visible physical features</a>
 
                   . <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
-                  era</a> also makes a difference, as older people of color lived through institutionalized 
-                  and legally-enforced segregation and discrimination (particularly for Black and 
+                  era</a> also makes a difference, as older people of color lived through 
+
+                  <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>institutionalized 
+                  and legally-enforced segregation and discrimination</a>
+                   (particularly for Black and 
                     Indigenous people) , as well as <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>exclusion acts controlling immigration</a> and, more 
                   recently, hate crimes, particularly against <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>Asians</a>). You may identify with more 
                   than one race, or as biracial or multiracial. <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Ethnicity and tribe</a> are a different area of 
@@ -366,8 +369,8 @@ const AreasOfIdentity = () => {
                   unofficially, and some have an official religion. Affiliation with 
                   the dominant or official religion is therefore a source of privilege, 
                   while affiliation with a different religion can be  source of 
-                    marginalization, or even <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>persecution</a>. Some countries officially 
-                  prohibit the practice of any religion at all, while others prohibit 
+                    marginalization, or even <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>persecution</a>. 
+                  Some countries <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>officially prohibit</a> the practice of any religion at all, while others prohibit 
                   particular religions. In addition, some regions of a particular 
                   country are predominantly one religion, while other regions are 
                   predominantly a different one. Depending on <a href="/identity#geoRegion" 
@@ -389,7 +392,7 @@ const AreasOfIdentity = () => {
                   the one in which they were raised. In <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
                   be discouraged or in <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>theocracies</a> (national government run by a state religion), 
-                  even forbidden, sometimes under penalty of death. This is particularly the case for 
+                  even forbidden, sometimes <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>under penalty of death</a> . This is particularly the case for 
                   converts to a marginalized or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prohibited religiion</a> or whose <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>appearance</a> differs 
                   from that of most members of their new religion in their <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
@@ -619,13 +622,15 @@ const AreasOfIdentity = () => {
                     the mental health system, or having undergone residential or inpatient 
                     rehabilitation for substances are all highly marginalizing as well. 
                     Having been labeled with mental illness and/or substance abuse can mean 
-                    <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>losing control over one's choices</a> (including through involuntary 
-                      hospitalization), but also because of losing credibility with others. 
-                    People with serious mental illnesses are more likely to be arrested and 
+                    <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>losing control over one's choices</a> (including through <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>involuntary hospitalization</a>), but also because of losing credibility with others. 
+                    People with serious mental illnesses are more likely to be 
+                     
+                    <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>arrested and 
                     incarcerated, including time in Isolation while incarcerated, as well as 
-                    to experience aggressive or violent policing, because they are seen as 
+                    to experience aggressive or violent policing</a> 
+                    , because they are seen as 
                     threatening. This is particularly true for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color,</a> who are more 
-                    likely than others to be shot or arrested by police called in to help 
+                    likely than others to be <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>shot or arrested by police</a> called in to help 
                     with a psychiatric crisis. 
                 </p> 
             </Typography>
@@ -656,7 +661,7 @@ const AreasOfIdentity = () => {
                   are often disciplined and seen as having behavioral problems rather than 
                   helped in school settings, with disproportionate school suspensions and 
                   expulsions, especially when they are <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a> These disciplinary responses 
-                  increase the likelihood of arrest and incarceration.
+                  increase the likelihood of <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>arrest and incarceration</a>.
                 </p> 
             </Typography>
 
@@ -805,7 +810,9 @@ const AreasOfIdentity = () => {
                   marginalizing. In many countries, therefore, children who do not come from two-parent 
                   families are raised in orphanages (and infertile or single adults go involuntarily 
                   childless). Some children live apart from one or both parents because of parental 
-                  death or abandonment, or court-decided custody arrangements, or parental imprisonment. 
+                  death or abandonment, or 
+                  <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>court-decided custody arrangements, or parental imprisonment</a>
+                  . 
                   Other children are kicked out of, or run away from, their homes because their parents 
                   respond abusively to their coming out as <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay or lesbian</a>, or as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a>. Still others 
                   lose their parents in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>war or refugee situations, or during a large-scale disaster or 
@@ -871,7 +878,7 @@ const AreasOfIdentity = () => {
                     parent or relative raising a child also affects relative privilege and 
                     marginalization, as does the <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a> and <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a> of 
                     the parent. In contrast, having given up custody of one’s child or 
-                    children via adoption or abandonment or having lost custody in court 
+                    children via adoption or abandonment or having <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>lost custody in court</a> 
                     is marginalizing, as, in most cases, being a surrogate mother. 
                     Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a particular 
                     talent, and who does not have problems with mental health or substance 
@@ -885,7 +892,7 @@ const AreasOfIdentity = () => {
                     or a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a> parent, or one with problems of 
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of mental illness or substance abuse 
                     is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
-                    pregnancy is often marginalized and is illegal in religiously and 
+                    pregnancy is often marginalized and is <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>illegal</a> in religiously and 
                     <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while miscarrying 
                     or having a stillbirth are grievous losses that go widely 
                     unrecognized by others. 
@@ -941,7 +948,7 @@ const AreasOfIdentity = () => {
                   A person’s relative privilege or marginalization on the basis of sexual orientation 
                   varies considerably with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a> and prevailing <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a> of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
                   sexual behavior other than heterosexual behavior within <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marriage</a> is illegal; in some 
-                  extreme cases, homosexuality is legally punishable by death. In contrast, some 
+                  extreme cases, homosexuality is <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>legally punishable by death</a>. In contrast, some 
                   indigenous cultures, including many <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Native American nations</a>, embrace gays and 
                   lesbians (as well as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
@@ -1029,8 +1036,7 @@ const AreasOfIdentity = () => {
                   These medical treatments can be hard to come by for <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> and societal reasons, 
                   including clinician bias and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
-                  assigned gender contradicting one’s experienced gender). In addition, many prisons 
-                  and jails deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
+                  assigned gender contradicting one’s experienced gender). In addition, many <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>prisons and jails</a> deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
                   transgender people, particularly transgender <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
                   vulnerable to violent assault and murder because of a combination of transphobia, 
                   <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>homophobia</a>, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
@@ -1134,7 +1140,7 @@ const AreasOfIdentity = () => {
                    that does not fall under any of the other areas of identity in the Social Matrix Diagram.  
                   Examples might include having suffered severe physical, sexual, or emotional abuse at the 
                   hands of family members or others, having lived in many countries or regions, having been 
-                  victimized by human trafficking, or living through an individual, family, or collective 
+                  <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>victimized by human trafficking</a>, or living through an individual, family, or collective 
                   disaster. Unique history can also include being famous (or infamous) or in the family of 
                   someone famous (or infamous), or in a leadership position in a tribe or clan or in politics, 
                   all of which offer greater access to influence and resources.    
