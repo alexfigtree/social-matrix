@@ -235,7 +235,10 @@ const AreasOfIdentity = () => {
                   marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> and 
                   <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>citizenship 
                   status</a>
-                  , as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
+                  , as well as with your 
+                  <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>skin color and visible physical features</a>
+
+                  . <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
                   era</a> also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
                     Indigenous people) , as well as <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>exclusion acts controlling immigration</a> and, more 
@@ -275,7 +278,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}> country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
                   occupations offer some modest protection against discrimination. <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Race</a> and appearance 
-                  also play a role here; for instance, lighter-skinned people who identify as 
+                  also play a role here; for instance, <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>lighter-skinned people</a> who identify as 
                   indigenous/Native American/First Nations people or as Arab may be less marginalized 
                   in the <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>US or in some postcolonial parts of Africa</a> than those who are darker-skinned.  
@@ -387,7 +390,7 @@ const AreasOfIdentity = () => {
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
                   be discouraged or in <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>theocracies</a> (national government run by a state religion), 
                   even forbidden, sometimes under penalty of death. This is particularly the case for 
-                  converts to a marginalized or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prohibited religiion</a> or whose <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> appearance differs 
+                  converts to a marginalized or <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prohibited religiion</a> or whose <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>appearance</a> differs 
                   from that of most members of their new religion in their <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. 
                   Converts may also be rejected by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a> and in some cases, not be welcomed 
@@ -662,7 +665,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Health problems and various kinds of physical disabilities are stigmatized and therefore 
                   marginalized in many societies. Many healthy, able-bodied people feel anxious around 
-                  persons with significant and visible illness or disability, and may treat them as if 
+                  persons with significant and <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>visible</a> illness or disability, and may treat them as if 
                   they were invisible or completely incompetent. Some healthy, able-bodied people even 
                   blame people with illness or disabilities for their problems. Lack of inclusive 
                   community and regional planning, as well as lack of health care for all, can make it 
@@ -873,8 +876,7 @@ const AreasOfIdentity = () => {
                     Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a particular 
                     talent, and who does not have problems with mental health or substance 
                     abuse is privileging for parents, while having a child who has 
-                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are apparent to 
-                    others) or who has problems with mental illness or substance abuse or 
+                    <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>apparent to others</a>) or who has problems with mental illness or substance abuse or 
                     limited cognitive ability is marginalizing, especially if the parent 
                     has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
                     services for the child. Being a parent with adequate personal or 
@@ -971,7 +973,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   educational</a> (and therefore, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial</a>), and
                   volunteering opportunities, and, until very recently in the U.S, <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>military service</a>. 
-                  For that reason, some people even today “pass” as straight. Even such fundamental 
+                  For that reason, some people even today <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>"pass"</a> as straight. Even such fundamental 
                   human rights as the right to marriage, and to adopt children or even keep custody 
                   of birth children are denied in many countries, as they were in most states in the 
                   U.S until a Supreme Court ruling protecting those rights in 2015. In <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
@@ -1055,7 +1057,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Gender Expression</p>
                 <p>
                   Gender expression refers not to internal experience of gender identity or sexual 
-                  orientation, but rather how one expresses one’s gender identity through appearance, 
+                  orientation, but rather how one expresses one’s gender identity through <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>appearance</a>, 
                   including one’s choice of clothes, hair, body art, and jewelry, as well as behavior 
                   and the pitch of one’s voice. In recent years, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>younger people</a> in particular have 
                   distinguished gender expression from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a> and <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>.  However, 
@@ -1091,13 +1093,13 @@ const AreasOfIdentity = () => {
                   unaware that anyone else shares their experience. With the evolution of language, 
                   individuals in older generations may use an overarching term of “gay” to mean lesbian, 
                   bisexual, or queer. They may also identify as gay or lesbian before identifying and 
-                  understanding transgender identity. Appearing <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>congruent with one's chosen sex</a> provides 
+                  understanding transgender identity. <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>Appearing</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>congruent with one's chosen sex</a> provides 
                   privilege (for instance, transmen, once they have been on male hormones long enough, 
-                    appear male and carry privilege, while transwomen, even after years on 
+                    <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>appear male</a> and carry privilege, while transwomen, even after years on 
                    
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>female hormones 
                     and even after breast reduction surgeryy</a>
-                    , may still have visibly male features and are 
+                    , may still have <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>visibly male features</a> and are 
                     at risk of violence).
                 </p>
 
