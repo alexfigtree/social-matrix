@@ -470,7 +470,7 @@ const AreasOfIdentity = () => {
                   can dramatically change the quality of many people’s lives and the privilege or 
                   marginalization they experience, and how they are perceived by others. Examples 
                   of such movements include the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>US Civil Rights Movement</a>;the <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Women's Rights Movement</a>; 
-                  and Rights for gays and lesbians, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>trans people,</a>, and gender non-conforming people; 
+                  and Rights for gays and lesbians, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>trans people,</a>, and <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender non-conforming people</a>; 
                   and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for documented and undocumented 
                   immigrants and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
                   like the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>anti-Apartheid movement in South Africa.</a> Other examples of major changes 
@@ -698,8 +698,10 @@ const AreasOfIdentity = () => {
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>cosmetic surgeries, some of which are dangerous 
                     and distorting of the body, Botox,</a>
                      and the like.  Appearance consistent with being 
-                    <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender</a> and gender conforming is privileging in most contexts, while appearing 
-                    genderqueer, or transgender, or gender nonconforming or as gay or is marginalizing 
+                    <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender</a> and <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender conforming</a> is privileging in most contexts, while appearing 
+                    
+                    <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer, or transgender, or gender nonconforming</a>
+                     or as gay or is marginalizing 
                     in most contexts. Dress is often a signal of income,  and occupation, which can be either 
                     privileging or marginalizing. In addition, dressing and grooming oneself in a way 
                     that stands out as “different” or “odd (such as wearing shabby clothes and unkempt 
@@ -744,7 +746,7 @@ const AreasOfIdentity = () => {
                 <p>
                   Age or generation also has cultural implications in that different generations often 
                   trend differently in relation to attitudes about <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> 
-                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender and reproductive rights,</a> sexual orientation, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, gender expression, and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>immigration policy</a>, 
+                  <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender and reproductive rights,</a> sexual orientation, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>immigration policy</a>, 
                   and have different levels of skill and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
                   economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
@@ -905,7 +907,7 @@ const AreasOfIdentity = () => {
                   straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). 
                   Some people are attracted to neither sex and are called asexual, while someone who falls 
                   between asexual and sexual is called graysexual or demisexual. Sexual orientation is 
-                  distinct from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, gender expression, or the sex assigned at birth. For 
+                  distinct from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, or the sex assigned at birth. For 
                   instance, a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>nonbinary and genderqueer</a> person (who identifies with both genders or neither) 
                   may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
                 </p> 
@@ -1018,7 +1020,7 @@ const AreasOfIdentity = () => {
                   remain unchanged. Thus, a transman who previously was attracted to women while 
                   living as a lesbian may still keep those attractions, and be perceived as 
                   heterosexual. Or, he might find his attractions shifting to men, or to both genders. 
-                  His gender expression, which had originally been gender-nonconforming, may remain 
+                  His <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, which had originally been gender-nonconforming, may remain 
                   gender-non-conforming, but it may become traditionally masculine. 
 
                 </p> 
@@ -1050,7 +1052,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>some children experience and declare themselves as identifying with the opposite sex</a>
 
                    
-                  to the one they were assigned and therefore want to <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>express their gender</a> accordingly. 
+                  to the one they were assigned and therefore want to <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>express their gender</a> accordingly. 
                   In many societies, such declarations and gender expressions are met with resistance, 
                   and sometimes with abuse at home and at school because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
                   identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
