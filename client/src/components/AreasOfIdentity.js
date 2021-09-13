@@ -169,8 +169,7 @@ const AreasOfIdentity = () => {
                   Childhood <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income</a> is the income your family lived on when you were a 
                   child, which should also include household wealth or debt load. If you grew up 
                   in multiple households (
-                    <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because your parents or other guardians</a> didn’t live 
-                    together), you can answer this for as many households as you lived in. Keep in 
+                    <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because your parents or other guardians</a> <a href="/identity#parentsMaritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>didn’t live together</a>), you can answer this for as many households as you lived in. Keep in 
                   mind that a particular income then had more <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>buying power than today</a> if you are 
                   adult now, because of inflation. Also consider when and where you lived, since 
                   both <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> and <a href="/identity#geoRegion" 
@@ -188,7 +187,9 @@ const AreasOfIdentity = () => {
                 <p>
                   Childhood <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income</a> is the income your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> lived on when they were 
                   children, together with household wealth or debt. If they grew up in multiple households 
-                  (<a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because their own parents or guardians</a> didn’t live together), you can answer this 
+                  (<a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because their own parents or guardians</a>
+                  <a href="/identity#parentsMaritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>didn’t live together</a> 
+                    ), you can answer this 
                   for as many households as they lived in. Keep in mind that <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>a particular income then had more 
                     buying power than today</a> or during your own childhood, because of inflation. Also consider 
                   when and where your parents or guardians lived, since both <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>historical period</a> and <a href="/identity#geoRegion" 
@@ -802,7 +803,7 @@ const AreasOfIdentity = () => {
                 </p> 
             </Typography>
 
-            <Typography id="guardiansMaritalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
+            <Typography id="parentsMaritalStatus" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Marital Status</p>
                 <p>
                   Being raised by parents who are married to each other is a privileged 
