@@ -137,11 +137,11 @@ const AreasOfIdentity = () => {
                     
                     <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women making much less and having less wealth 
                     than White men</a>
-                    ) and <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>lesbian</a> couples 
-                    
+                    ) and <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>lesbian</a> 
+                    <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a>
                     <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>making less and having less wealth 
                   than heterosexual couples</a>
-                  , <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>while gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> couples make more and have more 
+                  , <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>while gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a> make more and have more 
                   wealth. <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Transgender</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown people</a> generally make less and have 
                   less wealth than all other groups.
                 </p>
@@ -546,7 +546,7 @@ const AreasOfIdentity = () => {
                   conviction, and/or imprisonment in a criminal matter, because one 
                   is a victim in a criminal case, or through involvement in family court 
                   that can award or remove from parents the custody <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> and 
-                  visitation , as well as deciding on adoption, divorce or alimony decrees. 
+                  visitation , as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or alimony decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
@@ -570,7 +570,7 @@ const AreasOfIdentity = () => {
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
-                  of violent crimes. Parents, partners, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> and other loved ones 
+                  of violent crimes. Parents, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> and other loved ones 
                   also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
                   courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>evicted from public housing</a> for letting a formerly incarcerated relative 
@@ -740,7 +740,7 @@ const AreasOfIdentity = () => {
                   and across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy, middle-income and wealthy countries</a>, although minors are 
                   generally are more dependent and have fewer rights than adults. In poorer <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a>, even <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>families'</a> economic necessity may force even very young 
                   children to <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>abandon - or never have the chance</a> <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>to attend – school</a> – and into 
-                  demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls</a>, marriage, even before puberty. 
+                  demanding and underpaid <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work</a> or, for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marriage</a>, even before puberty. 
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
                   higher education</a> as well, which offers youth and the adults they become both 
@@ -825,22 +825,22 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Parental Status</p>
                 <p>
                   Whether being a parent or guardian is privileged or marginalized depends on 
-                  one’s <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, marital status, <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>,  and whether one (or one’s child) 
+                  one’s <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marital status</a>, <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>,  and whether one (or one’s child) 
                   is <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender, transgender, or genderqueer</a>. Parental status is also affected by 
                   household income and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
                   paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
                   and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>before one's 20s</a> is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
                   is marginalized and a source of pity or moral judgment, even when that is a 
-                  thought-out choice and not the unwelcome result of <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>infertility</a> or being single. 
-                  Becoming a parent without being in a <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>heterosexual</a> marriage is marginalized in 
+                  thought-out choice and not the unwelcome result of <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>infertility</a> or <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>being single</a>. 
+                  Becoming a parent without being in a <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>heterosexual</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marriage</a> is marginalized in 
                   many or most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and regions world-wide</a>, especially those with a 
                   dominant <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a> that is socially conservative.
                 </p> 
 
                 <p>
-                  It is increasingly common for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> in committed <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>lesbian</a> couples to 
-                  become parents, while <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> couples, who, as men tend to have higher 
+                  It is increasingly common for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> in committed <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>lesbian</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a> to 
+                  become parents, while <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a>, who, as men tend to have higher 
                   incomes, may face opposing pressures to parent or to remain childfree, 
                   depending on their local and gay community. This marginalization is less 
                   prevalent in areas that are <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically liberal</a>, and that provide 
@@ -923,7 +923,7 @@ const AreasOfIdentity = () => {
                 <p>
                   A person’s relative privilege or marginalization on the basis of sexual orientation 
                   varies considerably with the <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a> and prevailing <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religion</a> of their <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>community or region</a>. In some countries, especially (but not only) those led by theocracies, any 
-                  sexual behavior other than heterosexual behavior within marriage is illegal; in some 
+                  sexual behavior other than heterosexual behavior within <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marriage</a> is illegal; in some 
                   extreme cases, homosexuality is legally punishable by death. In contrast, some 
                   indigenous cultures, including many <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Native American nations</a>, embrace gays and 
                   lesbians (as well as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> people) as two-spirit people with special roles in 
