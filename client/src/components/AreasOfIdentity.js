@@ -207,7 +207,7 @@ const AreasOfIdentity = () => {
                     care and education), information (for instance, knowing how to search for information 
                     online), and influence (political, professional, or otherwise). This access is especially 
                     affected by <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>education</a>, 
-                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> and language(s) spoken, as well as <a href="/identity#geoRegion" 
+                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> and <a href="/identity#language" style={{ fontSize: '20px', textDecoration: 'none' }}>language(s),</a> spoken, as well as <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a> , which influences how close <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>medical care</a> is, how specialized the services, 
                     and even how inclusive local buildings, roads and transportation are to <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>people with disabilities</a>. 
                 </p> 
