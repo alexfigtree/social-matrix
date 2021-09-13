@@ -232,12 +232,14 @@ const AreasOfIdentity = () => {
                   impact. How privileged or marginalized you experience your racial identity to be 
                   may vary with <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>where you live</a>, and with other areas of relative privilege or 
-                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> and citizenship 
-                  status, as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
+                  marginalization, such as <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational attainment</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a>, <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income,</a> and 
+                  <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>citizenship 
+                  status</a>
+                  , as well as with your skin color and visible physical features. <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>Historical 
                   era</a> also makes a difference, as older people of color lived through institutionalized 
                   and legally-enforced segregation and discrimination (particularly for Black and 
                     Indigenous people) , as well as <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>exclusion acts controlling immigration</a> and, more 
-                  recently, hate crimes, particularly against Asians). You may identify with more 
+                  recently, hate crimes, particularly against <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>Asians</a>). You may identify with more 
                   than one race, or as biracial or multiracial. <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>Ethnicity and tribe</a> are a different area of 
                   identity, even though they may have a relationship to race. 
                 </p> 
@@ -265,8 +267,10 @@ const AreasOfIdentity = () => {
                   in part on what <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>region of the world and what region</a> of your country you live In. 
                   It may also depend on as well whether your ethnic/tribal group is <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>persecuted</a>, facing 
-                  <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>legal quotas on immigration</a> into a country (as was the case for Chinese people, Jews, 
-                    Southern Europeans and Arabs and for <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Jews</a> at different times) or otherwise marginalized in the 
+                  <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>legal quotas on immigration</a> into a country (as was the case for 
+                  <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>Chinese people, Jews, 
+                    Southern Europeans and Arabs</a>
+                   and for <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Jews</a> at different times) or otherwise marginalized in the 
                   <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}> country of residence</a>. <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>Educational level</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation</a> also can play a role in how 
                   marginalized one is ethnically, in that higher education and more prestigious 
@@ -276,7 +280,7 @@ const AreasOfIdentity = () => {
                   in the <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>US or in some postcolonial parts of Africa</a> than those who are darker-skinned.  
                   Historically, and even into the present, some countries have deemed particular ethnic 
-                  groups or tribes and not others as “foreign,” and targeted them for <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>discrimination, 
+                  groups or tribes and not others as <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>"foreign",</a> and targeted them for <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>discrimination, 
                   persecution, and even ethnic cleansing or genocide.</a>
                 </p>
             </Typography>
@@ -326,7 +330,7 @@ const AreasOfIdentity = () => {
                   greater disadvantage speaking with an accent if you are a <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Person of 
                   Color,</a> as racism intersects with language discrimination, unless that 
                   accent marks you as from a <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. Immigrants who 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy or colonizing nation</a>. <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>Immigrants</a> who 
                   do not speak the dominant language of their country of residence, or who 
                   speak that language with a heavy accent may be actively discriminated 
                   against in <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>job applications or applications,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>looking for housing</a>, in 
@@ -411,7 +415,7 @@ const AreasOfIdentity = () => {
                   party is illegal and risks imprisonment, torture, or death in some 
                   dictatorships and authoritarian regimes <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>around the world</a> and in some cases 
-                  is therefore a reason for seeking asylum in other countries.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
+                  is therefore a reason for <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>seeking asylum in other countries</a>.  Even being <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>the child of a parent</a> who participated in a banned political party can mean <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>not 
                   getting jobs,</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>housing, or benefits.</a> In addition, the prevailing politics of a 
                   country affects what human rights and what <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health</a> and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>educational resources</a> 
                   are <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>accessible</a> to all residents.
@@ -481,8 +485,11 @@ const AreasOfIdentity = () => {
                   marginalization they experience, and how they are perceived by others. Examples 
                   of such movements include the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>US Civil Rights Movement</a>;the <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>Women's Rights Movement</a>; 
                   and <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>Rights for gays and lesbians</a>, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>trans people,</a>, and <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender non-conforming people</a>; 
-                  and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for documented and undocumented 
-                  immigrants and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
+                  and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black Lives Matter</a> in many countries; and for 
+                  
+                  <a href="/identity#nationOfOrigin" style={{ fontSize: '20px', textDecoration: 'none' }}>documented and undocumented 
+                  immigrants</a>
+                   and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Stop Asian Hate</a> in the U.S., as well as nation-specific movements 
                   like the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>anti-Apartheid movement in South Africa.</a> Other examples of major changes 
                   that differentially affect people’s <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to information, education, healthcare, 
                   and even to geographically distant loved ones involve technological changes in 
