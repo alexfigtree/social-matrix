@@ -152,7 +152,10 @@ const AreasOfIdentity = () => {
                   <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthier</a> and <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>longer-lived</a> than poorer people, because they have better 
                   <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthcare and healthy food</a>,  and tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> 
-                  with more trees (which decrease overheating and pollution), while poorer 
+                  
+                <a href="https://www.americanforests.org/our-work/urban-forestry/" style={{ fontSize: '20px', textDecoration: 'none' }}>with more trees (which decrease overheating and pollution</a> 
+
+                  ), while poorer 
                   people tend to live in <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>neighborhoods</a> with little greenery and more 
                   <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>unhealthful</a> pollution-creating industries. 
@@ -163,7 +166,7 @@ const AreasOfIdentity = () => {
             <Typography id="childhoodHouseholdIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Childhood Household Income</p>
                 <p>
-                  Childhood household income is the income your family lived on when you were a 
+                  Childhood <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income</a> is the income your family lived on when you were a 
                   child, which should also include household wealth or debt load. If you grew up 
                   in multiple households (
                     <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because your parents or other guardians</a> didn’t live 
@@ -183,7 +186,7 @@ const AreasOfIdentity = () => {
             <Typography id="guardiansChildhoodIncome" variant="h6" align="left" style={{ marginLeft: '15%', marginRight: '15%', paddingBottom: '20px', paddingTop: '0px'}}>
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Guardians’ Childhood Household Income</p>
                 <p>
-                  Childhood household income is the income your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> lived on when they were 
+                  Childhood <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income</a> is the income your <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parents or guardians</a> lived on when they were 
                   children, together with household wealth or debt. If they grew up in multiple households 
                   (<a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>because their own parents or guardians</a> didn’t live together), you can answer this 
                   for as many households as they lived in. Keep in mind that <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>a particular income then had more 
@@ -418,7 +421,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Geographical Region</p>
                 <p>
                   The region of the world you live in can affect your privilege or marginalization, 
-                  in that some countries are affluent and others are poor. Some regions and 
+                  in that some countries are <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>affluent and others are poor</a>. Some regions and 
                   countries are harshly affected by <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic</a> <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>conflict, war, and/or a variety of 
                   environmental disasters and resultant displacement</a>,  while others are relatively 
                   protected from those serious problems. The region you live in affects your <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access to resources</a>, in that some regions have greater access than others to adequate 
@@ -439,9 +442,12 @@ const AreasOfIdentity = () => {
                     Black people out of white neighborhoods was another institutionalized policy. 
                     <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}> Having less access</a> to adequate housing, in turn, led to <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>Black and Brown</a> people 
                     have greater <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>health risks</a>. In addition, some countries in the developed world 
-                    (but not the U.S.) guarantee paid parental leave, subsidies for children, and 
-                    subsidized child and elder care, as well as universal health care and free or 
-                    subsidized <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a>, which means increased wealth for even poor people 
+                    (but not the U.S.) guarantee 
+                    
+                    <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>paid parental leave, subsidies for children, and 
+                    subsidized child and elder care, as well as universal health care</a>
+                     and free or 
+                    subsidized <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a>, which means <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>increased wealth for even poor people</a>
                     because they are not spending their own money for those essential needs.
                 </p> 
             </Typography>
@@ -529,7 +535,7 @@ const AreasOfIdentity = () => {
                   Native people</a> were routinely sent to be “cannon fodder” or to menial 
                   labor in the military until quite recently. From <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>World War II until 
                   after the Vietnam War,</a> the <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>government subsidized mortgages and education</a> for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, through the GI Bill, creating 
-                  generations of upward mobility for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
+                  generations of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>upward mobility</a> for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>white</a> veterans, but not for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black</a> veterans. It also denied openly <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>LGBTQ people</a> the right to 
                   serve in the military until quite recently as well, and until 
                   2021, even <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender,</a> service members were <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>denied the right</a> 
@@ -546,7 +552,7 @@ const AreasOfIdentity = () => {
                   conviction, and/or imprisonment in a criminal matter, because one 
                   is a victim in a criminal case, or through involvement in family court 
                   that can award or remove from parents the custody <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> and 
-                  visitation , as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or alimony decrees. 
+                  visitation , as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>alimony</a> decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
@@ -565,7 +571,7 @@ const AreasOfIdentity = () => {
                   or plaintiff in a criminal case can be traumatizing as well. 
                 </p> 
                 <p>
-                  Poorer, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>Poorere</a>, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> People of Color,</a> as well as people with histories of substance abuse
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
@@ -576,7 +582,7 @@ const AreasOfIdentity = () => {
                   courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>evicted from public housing</a> for letting a formerly incarcerated relative 
                   stay with them; they may also exclude relatives who have been 
                   incarcerated from family events. Entire communities that are 
-                  poor and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>poor</a> and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
                   violent, policing, which means disproportionate arrests, 
                   incarcerations and even deaths at the hands of the police.</a> People 
                   with mental illness and substance abuse problems are also 
@@ -687,14 +693,14 @@ const AreasOfIdentity = () => {
                 <p>
                     Appearance can be a source of privilege if one is considered attractive or if 
                     one’s phenotype or dress is consistent with the <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>dominant racial,</a> <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic/tribal</a>,  
-                    <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious</a>, or economic group. It can be marginalizing if not, especially in the 
+                    <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious</a>, or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> group. It can be marginalizing if not, especially in the 
                     case of disfigurement or <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>visible disability</a>. In many societies, being tall is 
                     privileging, as is looking <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>lean and physically fit</a>, and, in most western societies, 
                     <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>youthful</a>. In <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>most western societies</a>, being either obese or overly thin is marginalizing, 
                     although an overweight or even obese appearance is privileged as a mark of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>wealth</a> 
                     in 
                     <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>some cultures</a>
-                    . Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more affluent (or sometimes even economically 
+                    . Some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies</a>, and more <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>affluent</a> (or sometimes even economically 
                       struggling) people in most societies emphasize appearance to the point that many 
                     people actively transform their appearance through expensive and time-consuming 
                     non-invasive cosmetic procedures, 
@@ -705,7 +711,7 @@ const AreasOfIdentity = () => {
                     
                     <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer, or transgender, or gender nonconforming</a>
                      or as <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> or is marginalizing 
-                    in most contexts. Dress is often a signal of income,  and occupation, which can be either 
+                    in most contexts. Dress is often a signal of <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>income</a>,  and occupation, which can be either 
                     privileging or marginalizing. In addition, dressing and grooming oneself in a way 
                     that stands out as “different” or “odd (such as wearing shabby clothes and unkempt 
                       hair to an office, or the mismatched, gaudy clothing and makeup and unkempt hair 
@@ -744,7 +750,7 @@ const AreasOfIdentity = () => {
                   In contrast, youth in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>wealthy nations</a>, especially those in more class-privileged 
                   families, usually benefit from <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>finishing secondary school and a large minority get 
                   higher education</a> as well, which offers youth and the adults they become both 
-                  economic and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational</a> protection.
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> and <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational</a> protection.
                 </p>
                 <p>
                   Age or generation also has cultural implications in that different generations often 
@@ -752,7 +758,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender and reproductive rights,</a> <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>immigration policy</a>, 
                   and have different levels of skill and <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to computers and smart phones, among other 
                   things. Finally, as life expectancy increases (however unequally among <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racial</a> and 
-                  economic groups,  with shorter life spans for poorer people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic groups</a>,  with shorter life spans for <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>poorer</a> people <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>worldwide</a> and for 
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> Black and Native American</a> <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>and US-born Latinx</a> people in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>), how people can 
                   expect to live out their family and work lives have shifted.
                 </p>
@@ -827,7 +833,7 @@ const AreasOfIdentity = () => {
                   Whether being a parent or guardian is privileged or marginalized depends on 
                   one’s <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>age</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>marital status</a>, <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>,  and whether one (or one’s child) 
                   is <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>cisgender, transgender, or genderqueer</a>. Parental status is also affected by 
-                  household income and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income</a> and <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>, since some countries’ governments offer 
                   paid parental leave and subsidized childcare, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>as well as free primary, secondary, 
                   and in some cases, higher education,</a> while others do not. In many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities or regions</a>, becoming a parent or guardian <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>before one's 20s</a> is marginalized, while in 
                   others, doing so is common; in most areas, not becoming a parent before one’s 40s 
@@ -840,11 +846,12 @@ const AreasOfIdentity = () => {
 
                 <p>
                   It is increasingly common for <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> in committed <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>lesbian</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a> to 
-                  become parents, while <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a>, who, as men tend to have higher 
-                  incomes, may face opposing pressures to parent or to remain childfree, 
+                  become parents, while <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>male</a> <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>couples</a>, who, as men tend to have 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>higher incomes</a>, may face opposing pressures to parent or to remain childfree, 
                   depending on their local and gay community. This marginalization is less 
                   prevalent in areas that are <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically liberal</a>, and that provide 
-                  economic and child care support to families with children. 
+                  <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic and child care support to families with children.</a>
+                  
                 </p>
 
                 <p>
@@ -863,7 +870,7 @@ const AreasOfIdentity = () => {
                     limited cognitive ability is marginalizing, especially if the parent 
                     has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
                     services for the child. Being a parent with adequate personal or 
-                    extended family assets and income or higher is privileging, while 
+                    extended family <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>assets and income</a> or higher is privileging, while 
                     being a parent who is poor is marginalizing. Being a <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay, lesbian</a>, 
                     or a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a> parent, or one with problems of 
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of mental illness or substance abuse 
@@ -966,7 +973,7 @@ const AreasOfIdentity = () => {
                   who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                   conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
                   parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
-                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without financial support from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
+                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial support</a> from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
                   risk of physical and sexual exploitation as a result. 
 
                 </p> 
@@ -1009,7 +1016,7 @@ const AreasOfIdentity = () => {
                 </p>
 
                 <p>
-                  These medical treatments can be hard to come by for economic and societal reasons, 
+                  These medical treatments can be hard to come by for <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> and societal reasons, 
                   including clinician bias and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
                   psychiatric diagnosis of “gender dysphoria” (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many prisons 
