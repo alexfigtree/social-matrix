@@ -520,7 +520,9 @@ const AreasOfIdentity = () => {
                   
                   <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>moral injuries, psychological trauma</a>
                    or 
-                  cognitive problems caused by brain injury? These difficulties can also 
+                   
+                   <a href="/identity#cognitiveAbility" style={{ fontSize: '20px', textDecoration: 'none' }}>cognitive problems caused by brain injury</a>
+                  ? These difficulties can also 
                   affect family relations, including <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>parenting</a>, as well as social relationships 
                   and may limit <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupational opportunities. What rank did the service member 
                   hold and how respected did they feel in that position?</a>
@@ -679,7 +681,7 @@ const AreasOfIdentity = () => {
                   Health problems and various kinds of physical disabilities are stigmatized and therefore 
                   marginalized in many societies. Many healthy, able-bodied people feel anxious around 
                   persons with significant and <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>visible</a> illness or disability, and may treat them as if 
-                  they were invisible or completely incompetent. Some healthy, able-bodied people even 
+                  they were invisible or completely <a href="/identity#cognitiveAbility" style={{ fontSize: '20px', textDecoration: 'none' }}>incompetent</a>. Some healthy, able-bodied people even 
                   blame people with illness or disabilities for their problems. Lack of inclusive 
                   community and regional planning, as well as lack of health care for all, can make it 
                   difficult to participate fully or at all in community activities like <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>work,</a> socializing, 
@@ -757,7 +759,7 @@ const AreasOfIdentity = () => {
                   seen as sources of wisdom to be respected and obeyed as a result, although that is 
                   changing somewhat with globalization. In the U.S. and other western societies, in 
                   contrast, youth is exalted and is generally privileged (with some exceptions), 
-                  while old age is associated with being <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>decrepit</a> or senile and is often marginalized, 
+                  while old age is associated with being <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>decrepit</a> or <a href="/identity#cognitiveAbility" style={{ fontSize: '20px', textDecoration: 'none' }}>senile</a> and is often marginalized, 
                     especially occupationally. This is somewhat less the case in professional <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupations </a> 
                   that require <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>higher education</a> and that value experience over physical strength or 
                   technological savvy, while working-class occupations tend to require strength or 
@@ -888,10 +890,11 @@ const AreasOfIdentity = () => {
                     the parent. In contrast, having given up custody of one’s child or 
                     children via adoption or abandonment or having <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>lost custody in court</a> 
                     is marginalizing, as, in most cases, being a surrogate mother. 
-                    Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a particular 
-                    talent, and who does not have <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>problems with mental health or substance abuse</a> is privileging for parents, while having a child who has 
+                    Having a child who is <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>healthy and able bodied</a>, who has a 
+                    <a href="/identity#cognitiveAbility" style={{ fontSize: '20px', textDecoration: 'none' }}>particular talent</a>
+                    , and who does not have <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>problems with mental health or substance abuse</a> is privileging for parents, while having a child who has 
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronically illness or disability</a> (especially if those are <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>apparent to others</a>) or who has <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>problems with mental health or substance abuse</a> or 
-                    limited cognitive ability is marginalizing, especially if the parent 
+                    <a href="/identity#cognitiveAbility" style={{ fontSize: '20px', textDecoration: 'none' }}>limited cognitive ability</a> is marginalizing, especially if the parent 
                     has limited <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> to needed health or mental health care or other 
                     services for the child. Being a parent with adequate personal or 
                     extended family <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>assets and income</a> or higher is privileging, while 
