@@ -721,7 +721,7 @@ const Results = () => {
             <br />
             20) <i>Relation to Legal System: </i> {relationLegalSystem}
             <br /> 
-            21) <i>MH/Subst. Abuse: </i> {mHSubstanceUse}
+            21) <i>MH/Subst. Use: </i> {mHSubstanceUse}
             <br /> 
             22) <i>Cognitive Ability/Style: </i> {cognitiveAbilityStyle}
             <br />
