@@ -627,55 +627,52 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h6" align="left">11) <i>Ethnicity / Tribe:</i>  Jewish (Ashkenazi & Sephardi)
                     </Typography>
-                    <Typography variant="h6" align="left">12) <i>Person's Nation of Origin:</i>  US
+                    <Typography variant="h6" align="left">12) <i>Nation of Origin / Citizenship</i>  US; US; b. US
                     </Typography>
-                    <Typography variant="h6" align="left">13) <i>Citizenship Status. Income:</i>  US; b. US
+
+                    <Typography variant="h6" align="left">13) <i>Language(s) Spoken:</i>  English; Spanish, French, a little Hebrew and Yiddish
                     </Typography>
-                    <Typography variant="h6" align="left">15) <i>Language(s) Spoken:</i>  English; Spanish, French, a little Hebrew and Yiddish
+                    <Typography variant="h6" align="left">14) <i>Family Religion:</i> Judaism (reform); More acceptance of non-Christian religions, except by the radical right
                     </Typography>
-                    <Typography variant="h6" align="left">16) <i>Family Religion:</i> Judaism (reform); More acceptance of non-Christian religions, except by the radical right
+                    <Typography variant="h6" align="left">15) <i>Chosen Religion:</i> Judaism (reform); Less antisemitism, more religious inclusion (except for radical right)
                     </Typography>
-                    <Typography variant="h6" align="left">17) <i>Chosen Religion:</i> Judaism (reform); Less antisemitism, more religious inclusion (except for radical right)
+                    <Typography variant="h6" align="left">16) <i>Politics:</i> progressive/socialist; Somewhat marginalized, less so in my community
                     </Typography>
-                    <Typography variant="h6" align="left">18) <i>Politics:</i> progressive/socialist; Somewhat marginalized, less so in my community
+                    <Typography variant="h6" align="left">17) <i>Geo. Region:</i> Grew up in NY, now in MA 
                     </Typography>
-                    <Typography variant="h6" align="left">19) <i>Geo. Region:</i> Grew up in NY, now in MA 
+                    <Typography variant="h6" align="left">18) <i>Impact of Historical Times:</i> I grew up during a more antisemitic time, post-WWII. I've gained privilege b/c my interracial, multi-faith family is less marginalized now. Feminism is more accepted. Importance of medical advances
                     </Typography>
-                    <Typography variant="h6" align="left">20) <i>Impact of Historical Times:</i> I grew up during a more antisemitic time, post-WWII. I've gained privilege b/c my interracial, multi-faith family is less marginalized now. Feminism is more accepted. Importance of medical advances
+                    <Typography variant="h6" align="left">19) <i>Relation to Military:</i> Father drafted into Navy as a lieutenant (doctor) when I was 3-5; Father was in US Navy
                     </Typography>
-                    <Typography variant="h6" align="left">21) <i>Relation to Military:</i> Father drafted into Navy as a lieutenant (doctor) when I was 3-5; Father was in US Navy
+                    <Typography variant="h6" align="left">20) <i>Relation to Legal System:</i> had a close family member involved in legal system as a defendant
                     </Typography>
-                    <Typography variant="h6" align="left">22) <i>Relation to Legal System:</i> had a close family member involved in legal system as a defendant
+                    <Typography variant="h6" align="left">21) <i>MH/Subst. Use:</i> Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy; Family issues, death of son with Mental Illness, close relative of someone with SA
                     </Typography>
-                    <Typography variant="h6" align="left">23) <i>Relation to MH System:</i> Currently or previously in short-term outtpatient psychiatric treatment or psychotherapy
+                    <Typography variant="h6" align="left">22) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
                     </Typography>
-                    <Typography variant="h6" align="left">24) <i>MH/Subst. Use:</i> Family issues, death of son with Mental Illness, close relative of someone with SA
+                    <Typography variant="h6" align="left">23) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies --> life-threatening heart condition @68
                     </Typography>
-                    <Typography variant="h6" align="left">25) <i>Cognitive Ability/Style:</i> Very intelligent, 2 TBIs left minor difficulties w/ executive functioning
+                    <Typography variant="h6" align="left">24) <i>Appearance:</i> Attractive, gray hair, short
                     </Typography>
-                    <Typography variant="h6" align="left">26) <i>Health/Ability:</i> chronic asthma, GERD, controlled hypertension, arthritis, allergies --> life-threatening heart condition @68
+                    <Typography variant="h6" align="left">25) <i>Age:</i> 68 (b. 1952)
                     </Typography>
-                    <Typography variant="h6" align="left">27) <i>Appearance:</i> Attractive, gray hair, short
+                    <Typography variant="h6" align="left">26) <i>Raised By:</i> Raised by Mo & Fa; Parent 1: Straight, Parent 2: Straight; Parent 1: cis-gender woman/Parent 2: cis-gender man; Mother 19, Father 22; No; No
                     </Typography>
-                    <Typography variant="h6" align="left">28) <i>Age:</i> 68 (b. 1952)
+                    <Typography variant="h6" align="left">27) <i>Guardians’ Marital Status:</i> Birth parents married till I was 25; N/A
                     </Typography>
-                    <Typography variant="h6" align="left">29) <i>Raised By:</i> Raised by Mo & Fa; Parent 1: Straight, Parent 2: Straight; Parent 1: cis-gender woman/Parent 2: cis-gender man; Mother 19, Father 22; No; No
+                    <Typography variant="h6" align="left">28) <i>Parental Status:</i> Adoptive parent of child w/ serious mental illness who died, stepparent of multiracial grown children; Gained stepchildren at age 29; adoptive mother at 34, child died when I was 53; Adoptive child had mental illness, died at 19; stepchildren are multiracial
                     </Typography>
-                    <Typography variant="h6" align="left">30) <i>Guardians’ Marital Status:</i> Birth parents married till I was 25; N/A
+                    <Typography variant="h6" align="left">29) <i>Marital Status:</i> in 2nd marriage; LT @ 18, m. at 21, Div. @ 26; LT @ 29, m. @ 30; Opposite sex
                     </Typography>
-                    <Typography variant="h6" align="left">31) <i>Parental Status:</i> Adoptive parent of child w/ serious mental illness who died, stepparent of multiracial grown children; Gained stepchildren at age 29; adoptive mother at 34, child died when I was 53; Adoptive child had mental illness, died at 19; stepchildren are multiracial
+                    <Typography variant="h6" align="left">30) <i>Sexual Orientation:</i> Straight
                     </Typography>
-                    <Typography variant="h6" align="left">32) <i>Marital Status:</i> in 2nd marriage; LT @ 18, m. at 21, Div. @ 26; LT @ 29, m. @ 30; Opposite sex
+                    <Typography variant="h6" align="left">31) <i>Gender ID:</i> Cis-gender woman
                     </Typography>
-                    <Typography variant="h6" align="left">33) <i>Sexual Orientation:</i> Straight
+                    <Typography variant="h6" align="left">32) <i>Gender Expression:</i> Feminine-looking woman
                     </Typography>
-                    <Typography variant="h6" align="left">34) <i>Gender ID:</i> Cis-gender woman
+                    <Typography variant="h6" align="left">33) <i>Sex Assigned at Birth:</i> Female
                     </Typography>
-                    <Typography variant="h6" align="left">35) <i>Gender Expression:</i> Feminine-looking woman
-                    </Typography>
-                    <Typography variant="h6" align="left">36) <i>Sex Assigned at Birth:</i> Female
-                    </Typography>
-                    <Typography variant="h6" align="left">37) <i>Unique History:</i> Son's death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
+                    <Typography variant="h6" align="left">34) <i>Unique History:</i> Son's death; in multiracial, multifaith family, grew up with very sick brother, family Hx of refugee experience, rare, life-threatening illness
                     </Typography>
             </Container>
 
