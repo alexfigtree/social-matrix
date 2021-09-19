@@ -26,6 +26,11 @@ const Contact = () => {
 
             <Typography variant="h2" style={{ marginBottom: '20px', paddingTop: '50px' }} align="center">Contact</Typography>
      
+            <Typography variant="h5" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
+                You can reach any of the Social Matrix team <a href="mailto: contact.social.matrix@gmail.com">here</a>.
+                <p>You can reach Jodie Kliman, Ph.D. directly at <a href="mailto: jodiekliman52@gmail.com">jodiekliman52@gmail.com</a> or <a href="mailto: jodiekliman@socialmatrixdiagram.org">jodiekliman@socialmatrixdiagram.org</a> </p>
+            </Typography>
+
 
         </div>
 
