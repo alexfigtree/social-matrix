@@ -537,7 +537,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a> and marginalizing or a source of social status, 
                   depending on the politics of the home community. Many <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls (and some boys)</a> forced into such groups are also forced to serve as 
                   <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>sex slaves</a> and are ostracized if they are able to get back home, 
-                  especially if they had children by their rapists. In countries 
+                  especially if they <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>had children</a> by their rapists. In countries 
                   like <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>, which has not had a military draft <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>since the 
                   Vietnam War,</a> do you feel privileged by your (or your loved one’s) 
@@ -575,9 +575,11 @@ const AreasOfIdentity = () => {
                 <p>
                   A person can get involved in the legal system because of arrest, 
                   conviction, and/or imprisonment in a criminal matter, because one 
-                  is a victim in a criminal case, or through involvement in family court 
-                  that can award or remove from parents the custody <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> and 
-                  visitation , as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>alimony</a> decrees. 
+                  is a victim in a criminal case, or through 
+                  
+                  <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>involvement in family court 
+                  that can award or remove from parents the custody</a>
+                  <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>and visitation</a>, as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>alimony</a> decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
@@ -601,7 +603,7 @@ const AreasOfIdentity = () => {
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
-                  of violent crimes. Parents, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and other loved ones</a> 
+                  of violent crimes. <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>Parents</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and other loved ones</a> 
                   also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
                   courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>evicted from public housing</a> for letting a formerly incarcerated relative 
@@ -822,8 +824,13 @@ const AreasOfIdentity = () => {
                   so as divorce and remarriage has become the statistical norm in many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. 
                   Being raised by foster parents, even when they are birth relatives, is highly 
                   marginalizing. In many countries, therefore, children who do not come from two-parent 
-                  families are raised in orphanages (and infertile or single adults go involuntarily 
-                  childless). Some children live apart from one or both parents because of parental 
+                  families are raised in orphanages (and 
+                  
+                  <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>infertile or single adults go involuntarily 
+                  childless</a>
+                  
+
+                  ). Some children live apart from one or both parents because of parental 
                   death or abandonment, or 
                   <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>court-decided custody arrangements, or parental imprisonment</a>
                   . 
@@ -921,7 +928,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Marital Status</p>
                 <p>
                 In most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>societies and communities</a>,  being married is privileged over being single, 
-                divorced, or widowed, especially for people who are parenting children, except among 
+                divorced, or widowed, especially for people who are <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>parenting children</a>, except among 
                 those generally considered too <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>young</a> to marry. Some communities and 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>some social welfare states</a>may be somewhat indifferent to marital status, however. The age at which one is 
                 considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
