@@ -536,7 +536,7 @@ const AreasOfIdentity = () => {
                   are often forced into service, even as <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a>, which can be highly 
                   <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a> and marginalizing or a source of social status, 
                   depending on the politics of the home community. Many <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>girls (and some boys)</a> forced into such groups are also forced to serve as 
-                  sex slaves and are ostracized if they are able to get back home, 
+                  <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>sex slaves</a> and are ostracized if they are able to get back home, 
                   especially if they had children by their rapists. In countries 
                   like <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>the U.S.</a>, which has not had a military draft <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>since the 
@@ -601,7 +601,7 @@ const AreasOfIdentity = () => {
                   or certain mental illnesses are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
-                  of violent crimes. Parents, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> and other loved ones 
+                  of violent crimes. Parents, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and other loved ones</a> 
                   also often are often stigmatized 
                   when loved ones are arrested, tried, and/or imprisoned, and when 
                   courts decide <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>custody arrangements</a>. Family members can be <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>evicted from public housing</a> for letting a formerly incarcerated relative 
@@ -609,7 +609,7 @@ const AreasOfIdentity = () => {
                   incarcerated from family events. Entire communities that are 
                   <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>poor</a> and of <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>color can be marginalized by aggressive, sometimes 
                   violent, policing, which means disproportionate arrests, 
-                  incarcerations and even deaths at the hands of the police.</a> People 
+                  incarcerations <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and even deaths</a> at the hands of the police.</a> People 
                   with 
                   
                   <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>mental illness and substance abuse problems</a>
@@ -827,7 +827,10 @@ const AreasOfIdentity = () => {
                   death or abandonment, or 
                   <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>court-decided custody arrangements, or parental imprisonment</a>
                   . 
-                  Other children are kicked out of, or run away from, their homes because their parents 
+                  Other children are 
+                  
+                  <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>kicked out of, or run away from, their homes</a>
+                   because their parents 
                   respond abusively to their coming out as <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay or lesbian</a>, or as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transgender, or genderqueer</a>. Still others 
                   lose their parents in <a href="/identity#impactHistTimes" style={{ fontSize: '20px', textDecoration: 'none' }}>war or refugee situations, or during a large-scale disaster or 
                   pandemic.</a>
@@ -907,8 +910,8 @@ const AreasOfIdentity = () => {
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>chronic illness or disability</a> or of <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>mental illness or substance abuse</a> 
                     is marginalizing in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. Finally, having aborted a 
                     pregnancy is often marginalized and is <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>illegal</a> in religiously and 
-                    <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while miscarrying 
-                    or having a stillbirth are grievous losses that go widely 
+                    <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically conservative</a> <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>regions and countries</a>, while 
+                    <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>miscarrying or having a stillbirth</a> are grievous losses that go widely 
                     unrecognized by others. 
 
                 </p>
@@ -1005,10 +1008,13 @@ const AreasOfIdentity = () => {
                   straight (that is, as LGBTQ+) may also be abused and/or rejected or even murdered 
                   by their families and others in their personal lives. For this reason, many people 
                   who were other than straight hid their sexuality, or stayed in the closet, <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>in earlier generations</a>. The need to do that continues in many <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politically</a> and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
-                  conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are physically abused by 
-                  parents, peers, or strangers because of their sexuality. Of note, LGBTQ+ youth 
+                  conservative <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and regions</a> today. Some youth are 
+                  
+                  <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>physically abused by 
+                  parents, peers, or strangers</a>
+                   because of their sexuality. Of note, LGBTQ+ youth 
                   are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial support</a> from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
-                  risk of physical and sexual exploitation as a result. 
+                  risk of <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>physical and sexual exploitation</a> as a result. 
 
                 </p> 
             </Typography>
@@ -1058,7 +1064,7 @@ const AreasOfIdentity = () => {
                    (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>prisons and jails</a> deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
                   transgender people, particularly transgender <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women</a> <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of Color,</a> are extremely 
-                  vulnerable to violent assault and murder because of a combination of transphobia, 
+                  vulnerable to <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>violent assault and murder</a> because of a combination of transphobia, 
                   <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>homophobia</a>, and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racism.</a> They are also vulnerable to suicidality because of the 
                   extreme stigma they face and the lack of emotional support and affirmation from 
                   <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> and the cisgender community.
@@ -1107,7 +1113,7 @@ const AreasOfIdentity = () => {
                    
                   to the one they were assigned and therefore want to <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>express their gender</a> accordingly. 
                   In many societies, such declarations and gender expressions are met with resistance, 
-                  and sometimes with abuse at home and at school because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
+                  and sometimes with <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>abuse</a> at home and at school because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
                   identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
                 </p>
 
@@ -1125,8 +1131,8 @@ const AreasOfIdentity = () => {
                    
                     <a href="/identity#health" style={{ fontSize: '20px', textDecoration: 'none' }}>female hormones 
                     and even after breast reduction surgeryy</a>
-                    , may still have <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>visibly male features</a> and are 
-                    at risk of violence).
+                    , may still have <a href="/identity#appearance" style={{ fontSize: '20px', textDecoration: 'none' }}>visibly male features</a>  
+                    <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and are at risk of violence</a>).
                 </p>
 
                 <p>
