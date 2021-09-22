@@ -387,7 +387,7 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Chosen Religion</p>
                 <p>
                   This area of identity refers to your own religious affiliation and practice, if any, 
-                  which may (or ay not) differ from those of your <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a>. Unlike <a href="/identity#geoRegion" 
+                  which may (or ay not) differ from those of your <a href="/identity#familyReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a>. Unlike <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>most of the world, in the US</a>, about 40% of American adults identify with a different religion than 
                   the one in which they were raised. In <a href="/identity#geoRegion" 
                 style={{ fontSize: '20px', textDecoration: 'none' }}>some countries</a>, converting to a new religion may 
@@ -399,7 +399,7 @@ const AreasOfIdentity = () => {
                   Converts may also be rejected by <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family of origin</a> and in some cases, not be welcomed 
                   as full members of their new religion. Choosing not to affiliate with any religion 
                   can be also marginalizing within the family and in larger society. (For more on 
-                  religious affiliation, whether through birth or conversion, see <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>Family Religion</a>.) 
+                  religious affiliation, whether through birth or conversion, see <a href="/identity#familyReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>Family Religion</a>.) 
                 </p> 
             </Typography>
 
@@ -599,8 +599,11 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>Poorere</a>, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
-                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> People of Color,</a> as well as people with histories of substance abuse
-                  or certain mental illnesses are more likely to be arrested, and 
+                  <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}> People of Color,</a> as well as people with histories of 
+                  <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>substance abuse
+                  or certain mental illnesses</a>
+
+                  are more likely to be arrested, and 
                   if arrested, to be convicted and imprisoned. At the same time, 
                     people in those groups are less likely to be believed as victims 
                   of violent crimes. <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>Parents</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>partners</a>, <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a> <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>and other loved ones</a> 
@@ -673,7 +676,9 @@ const AreasOfIdentity = () => {
                   <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>geographical region</a>. In addition, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>children of color</a> are more likely to be 
                   incorrectly diagnosed with learning disabilities than white children, or 
                   have their learning disabilities misunderstood as lack of intelligence 
-                  because of implicit bias. In addition, children with learning disabilities 
+                  because of 
+                  <a href="https://implicit.harvard.edu/implicit/takeatest.html" style={{ fontSize: '20px', textDecoration: 'none' }}>implicit bias</a>
+                  . In addition, children with learning disabilities 
                   are often disciplined and seen as having <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>behavioral problems</a> rather than 
                   helped in school settings, with disproportionate school suspensions and 
                   expulsions, especially when they are <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>of color.</a> These disciplinary responses 
@@ -707,9 +712,9 @@ const AreasOfIdentity = () => {
                   that are saddled with toxic waste and pollution</a>. Highly marginalized diseases include 
                   HIV/AIDS (because of its association with <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay men</a> and <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>IV-drug users</a>), hepatitis (again, 
                     because of the association with <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>drug users</a>), and lung diseases (which are often blamed 
-                    on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, clinician bias, 
+                    on smoking rather than <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>environmental issues</a>). In addition, <a href="https://implicit.harvard.edu/implicit/takeatest.html" style={{ fontSize: '20px', textDecoration: 'none' }}>clinician bias</a>, 
                     institutional racism, and language barriers make the problems of <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>access</a> and inclusion 
-                    all the greater for people of color and immigrants.  At the same time, lack of 
+                    all the greater for <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>people of color</a> <a href="/identity#language" style={{ fontSize: '20px', textDecoration: 'none' }}>and immigrants</a>.  At the same time, lack of 
                     information and clinician bias, including <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>homophobia</a>, <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>, and racism, <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>limit or block access</a> to needed health care (
                     
                     <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>including hormone replacement therapy, 
@@ -801,15 +806,14 @@ const AreasOfIdentity = () => {
                 <p style={{ textDecoration: 'underline', fontWeight: 'bold' }}>Raised By</p>
                 <p>
                   In most, but not all, societies, being raised, or having been raised by both birth parents who are in a 
-                  <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>heterosexual</a> first marriage to each other is privileging, although that no longer 
+                  <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>heterosexual</a> <a href="/identity#parentsMaritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>first marriage to each other</a> is privileging, although that no longer 
                   describes the majority of households with children in most <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>western societies</a>. In recent 
-                  years, many western countries have legalized 
+                  years, many western countries have <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>legalized</a> 
                   
                   <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>same-sex marriage and have recognized the 
                   gay and lesbian</a>
                    partners of birth parents as adoptive and stepparents. Those family 
-                  constellations are still somewhat to very marginalized, especially in some religious 
-                  communities, some of which see <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>same-sex relationships</a> as sinful and as bad for 
+                  constellations are still somewhat to very marginalized, especially in some r<a href="/identity#familyReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious communities</a>, some of which see <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>same-sex relationships</a> as sinful and as bad for 
                   children (which research does not bear out). Two-parent families are still more 
                   privileged in most countries, regardless of <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a> and whether those 
                   parents are birth parents, adoptive parents, or stepparents. 
@@ -821,7 +825,7 @@ const AreasOfIdentity = () => {
                   members are often asked about their “real” parents or children, as if adoption did not 
                   create real families) in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>some societies</a> but highly stigmatized in others. Being raised 
                   by a stepparent (or series of stepparents) can be marginalizing as well, although less 
-                  so as divorce and remarriage has become the statistical norm in many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. 
+                  so as <a href="/identity#parentsMaritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce and remarriage</a> has become the statistical norm in many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities</a>. 
                   Being raised by foster parents, even when they are birth relatives, is highly 
                   marginalizing. In many countries, therefore, children who do not come from two-parent 
                   families are raised in orphanages (and 
@@ -853,12 +857,12 @@ const AreasOfIdentity = () => {
                   recent decades and has largely disappeared in some European countries, 
                   it continues in <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries and communities</a> that are more <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                   and <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> conservative. Even in communities that are fully 
-                  accepting single parent families, however, household income is 
+                  accepting single parent families, however, <a href="/identity#guardiansChildhoodIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income </a> is 
                   generally much lower in those families, especially the majority 
                   that are headed by <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>women,</a> than in families headed by single <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>men</a> or 
-                  heterosexual or gay male couples because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>income disparities</a> 
+                  <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>heterosexual or gay male couples</a> because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>income disparities</a> 
                   between the genders. That income disparity is all the greater in 
-                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and communities of color, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
+                  <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>poor communities</a> and <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>communities of color</a>, although some <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a> 
                   provide enough <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>universal financial support for families</a>, including 
                   childcare and subsidies for children, that that disparity is blunted. 
                   In many societies, especially <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>culturally</a> and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> conservative 
@@ -939,8 +943,8 @@ const AreasOfIdentity = () => {
                 <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious 
                 contract controlled by religious </a>
                 
-                <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a civil contract 
-                controlled by the state. Until recently, marriage was only legal between <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>one man and one woman</a> in most countries, although some societies allow 
+                <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>civil contract</a> 
+                controlled by the state. Until recently, marriage was only <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>legal</a> between <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>one man and one woman</a> in most countries, although some societies allow 
                  
                  
                 <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>men to marry more than one woman</a> 
@@ -980,9 +984,9 @@ const AreasOfIdentity = () => {
                   lesbians (as well as <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> people) as two-spirit people with special roles in 
                   society. The degree to which any sexual orientation other than heterosexual is 
                   marginalized is also influenced by the person’s <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>race, ethnicity, or tribe</a>, class 
-                  privilege (household income, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
+                  privilege (<a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>household income,</a>, <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>occupation,</a> and <a href="/identity#education" 
                     style={{ fontSize: '20px', textDecoration: 'none' }}>educational level</a>), 
-                    and <a href="/identity#religion" style={{ fontSize: '20px', textDecoration: 'none' }}>family religion</a> 
+                    and <a href="/identity#familyReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>family religion</a> 
                   and <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>chosen religion</a>, in that those aspects of identity 
                   can influence how the person’s immediate reference group perceives their sexual orientation. 
                 </p> 
@@ -1020,7 +1024,7 @@ const AreasOfIdentity = () => {
                   <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>physically abused by 
                   parents, peers, or strangers</a>
                    because of their sexuality. Of note, LGBTQ+ youth 
-                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial support</a> from family, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
+                  are more likely than straight youth to <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>run away or from or be kicked out of their homes</a> and, without <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>financial support</a> <a href="/identity#guardiansChildhoodIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>from family</a>, to become <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>homeless</a> and at 
                   risk of <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>physical and sexual exploitation</a> as a result. 
 
                 </p> 
@@ -1066,7 +1070,7 @@ const AreasOfIdentity = () => {
 
                 <p>
                   These medical treatments can be hard to come by for <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>economic</a> and societal reasons, 
-                  including clinician bias and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
+                  including <a href="https://implicit.harvard.edu/implicit/takeatest.html" style={{ fontSize: '20px', textDecoration: 'none' }}>clinician bias</a> and <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>prejudicial</a> <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>insurance policies</a>, such as requiring a 
                   <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>psychiatric diagnosis of “gender dysphoria”</a>
                    (which refers to distress over one’s 
                   assigned gender contradicting one’s experienced gender). In addition, many <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>prisons and jails</a> deny such treatments, as the <a href="/identity#relationToMilitary" style={{ fontSize: '20px', textDecoration: 'none' }}>U.S. military</a> did until 2021. Finally, 
@@ -1120,7 +1124,7 @@ const AreasOfIdentity = () => {
                    
                   to the one they were assigned and therefore want to <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>express their gender</a> accordingly. 
                   In many societies, such declarations and gender expressions are met with resistance, 
-                  and sometimes with <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>abuse</a> at home and at school because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
+                  and sometimes with <a href="/identity#uniqueHistory" style={{ fontSize: '20px', textDecoration: 'none' }}>abuse</a> at home and <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>at school</a> because of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>transphobia</a>.  Others 
                   identify as outside the gender binary – they may identify as genderqueer or as nonbinary.  
                 </p>
 
@@ -1172,13 +1176,15 @@ const AreasOfIdentity = () => {
                   Unique history involves any events or situations in the life of an individual or <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family </a> 
                    that does not fall under any of the other areas of identity in the Social Matrix Diagram.  
                   Examples might include having suffered severe physical, sexual, or emotional abuse at the 
-                  hands of family members or others, having lived in many countries or regions, having been 
+                  hands of <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family members</a>, or others, having lived in many <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>countries or regions</a>,, having been 
                   <a href="/identity#relationToLegalSystem" style={{ fontSize: '20px', textDecoration: 'none' }}>victimized by human trafficking</a>, or living through an individual, family, or collective 
-                  disaster. Unique history can also include being famous (or infamous) or in the family of 
-                  someone famous (or infamous), or in a leadership position in a tribe or clan or in politics, 
-                  all of which offer greater access to influence and resources.    
+                  disaster. Unique history can also include being famous (or infamous) or in the <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>family</a> of 
+                  someone famous (or infamous), or in a <a href="/identity#guardiansAccess" style={{ fontSize: '20px', textDecoration: 'none' }}>leadership position</a> in a <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>tribe or clan</a> or in <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>politics</a>, 
+                  <a href="/identity#access" style={{ fontSize: '20px', textDecoration: 'none' }}>all of which offer greater access to influence and resources</a>
+
+                  .    
                   It might also involve something like being a twin or triplet, which is a unique relationship 
-                  and which has special status in some ethnic and tribal groups. In addition, having an unusual 
+                  and which has special status in some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnic and tribal groups</a>. In addition, having an unusual 
                   talent, having a sibling who is or was very ill, or having been bereaved of a close family 
                   member in childhood. Unique history is included in the Social Matrix Diagram in order to 
                   ensure that any circumstances that are not addressed elsewhere in the diagram, but that 
