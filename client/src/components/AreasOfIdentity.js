@@ -579,7 +579,7 @@ const AreasOfIdentity = () => {
                   
                   <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>involvement in family court 
                   that can award or remove from parents the custody</a>
-                  <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>and visitation</a>, as well as deciding on adoption, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>alimony</a> decrees. 
+                  <a href="/identity#raisedBy" style={{ fontSize: '20px', textDecoration: 'none' }}>of children</a> <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>and visitation</a>, as well as deciding on <a href="/identity#parentalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>adoption</a>, <a href="/identity#maritalStatus" style={{ fontSize: '20px', textDecoration: 'none' }}>divorce</a> or <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>alimony</a> decrees. 
                   In addition, one can be involved in civil lawsuits as defendant or 
                   plaintiff. Finally, attorneys, judges, jurors, bailiffs, probation 
                   officers, parole officials, and police officers are also involved 
@@ -594,8 +594,8 @@ const AreasOfIdentity = () => {
                   In addition, imprisonment itself is often highly <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a>, 
                   especially when solitary confinement or physical threat from either 
                   from other incarcerated people or from correctional officers, 
-                  leading to life-long psychological difficulties. Being a victim 
-                  or plaintiff in a criminal case can be traumatizing as well. 
+                  leading to <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>life-long psychological difficulties</a>. Being a victim 
+                  or plaintiff in a criminal case can be <a href="/identity#mentalHealth" style={{ fontSize: '20px', textDecoration: 'none' }}>traumatizing</a> as well. 
                 </p> 
                 <p>
                   <a href="/identity#householdIncome" style={{ fontSize: '20px', textDecoration: 'none' }}>Poorere</a>, <a href="/identity#education" style={{ fontSize: '20px', textDecoration: 'none' }}>less well-educated</a>, and more <a href="/identity#occupation" style={{ fontSize: '20px', textDecoration: 'none' }}>unreliably employed</a> people and 
