@@ -529,7 +529,8 @@ const AreasOfIdentity = () => {
                 </p> 
                 <p>
                   In some <a href="/identity#geoRegion" 
-                style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a>, military service is mandatory for men (and for women, 
+                style={{ fontSize: '20px', textDecoration: 'none' }}>countries</a>, military service is mandatory for
+                <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>men (and for women,</a> 
                   in a few). In that case, is it marginalizing or a privilege not to have 
                   served?  In countries with <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>paramilitary or guerilla fighters</a>, people 
                   are often forced into service, even as <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>children</a>, which can be highly 
@@ -547,9 +548,12 @@ const AreasOfIdentity = () => {
                   The military in many countries have historically (and often still) 
                   engaged prejudicially on the basis of <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender</a>, <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>race,</a> 
                   <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>sexual orientation</a>, and, in some countries, <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>ethnicity</a>. 
-                  For instance, in the U.S., men were required to register for the 
+                  For instance, in the U.S., 
+                  
+                  <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>men were required to register for the 
                   draft (although there has not been a draft since 1973) and women 
-                  were not. Women are still discriminated against within the military, 
+                  were not. Women </a> 
+                  are still discriminated against within the military, 
                   and are far more likely to risk sexually assault and sexual harassment 
                   and being passed over for promotions than men. The U.S. military was <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>
                   <a href="/identity#race" style={{ fontSize: '20px', textDecoration: 'none' }}>racially segregated</a> until after World War II and Black, Brown, and 
@@ -919,14 +923,17 @@ const AreasOfIdentity = () => {
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>some social welfare states</a>may be somewhat indifferent to marital status, however. The age at which one is 
                 considered marriageable varies across <a href="/identity#geoRegion" style={{ fontSize: '20px', textDecoration: 'none' }}>communities and societies</a>, with more <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religiously</a> 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>conservative</a> regions often accepting <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>earlier marriage, in some cases even before puberty,</a> 
-                especially for girls. The same societies and communities are more likely than secular ones 
+                especially for <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>girls</a>. The same societies and communities are more likely than secular ones 
                 to marginalize or even prohibit divorce. In some countries, marriage is a 
                 
                 <a href="/identity#chosenReligion" style={{ fontSize: '20px', textDecoration: 'none' }}>religious 
                 contract controlled by religious </a>
                 
                 <a href="/identity#politics" style={{ fontSize: '20px', textDecoration: 'none' }}>leaders</a>, but in most countries it is a civil contract 
-                controlled by the state. Until recently, marriage was only legal between <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>one man and one woman</a> in most countries, although some societies allow men to marry more than one woman 
+                controlled by the state. Until recently, marriage was only legal between <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>one man and one woman</a> in most countries, although some societies allow 
+                 
+                 
+                <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>men to marry more than one woman</a> 
                 at a time and some <a href="/identity#ethnicity" style={{ fontSize: '20px', textDecoration: 'none' }}>indigenous cultures</a> have allowed <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>same-sex marriage</a> and marriage of 
                 both <a href="/identity#sexOrientation" style={{ fontSize: '20px', textDecoration: 'none' }}>gay</a> and <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>genderqueer</a> (both of whom those cultures call 
                 
@@ -949,7 +956,7 @@ const AreasOfIdentity = () => {
                   straight), both sexes (bisexual), or to people across a continuum of genders (pansexual). 
                   Some people are attracted to neither sex and are called asexual, while someone who falls 
                   between asexual and sexual is called graysexual or demisexual. Sexual orientation is 
-                  distinct from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, or the sex assigned at birth. For 
+                  distinct from <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity</a>, <a href="/identity#genderExpression" style={{ fontSize: '20px', textDecoration: 'none' }}>gender expression</a>, or the <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>sex assigned at birth</a>. For 
                   instance, a <a href="/identity#gender" style={{ fontSize: '20px', textDecoration: 'none' }}>nonbinary and genderqueer</a> person (who identifies with both genders or neither) 
                   may identify as straight, gay, lesbian, or bisexual, or as pansexual. 
                 </p> 
@@ -1011,9 +1018,8 @@ const AreasOfIdentity = () => {
                 <p>
                   Gender identity involves one’s identification as a woman, man, or as both or neither. 
                   Gender is a social construct involving what gender(s) people identify with and how 
-                  they are perceived, unlike sex, which is assigned at birth based on genitals. 
-                  Cisgender people identify with the gender that is consistent with the sex they 
-                  were assigned at birth and adhere to a gender binary. However, increasing numbers 
+                  they are perceived, unlike <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>sex</a>, which is assigned at birth based on genitals. 
+                  Cisgender people identify with the gender that is consistent with the <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>sex they were assigned at birth</a> and adhere to a gender binary. However, increasing numbers 
                   of people, especially in <a href="/identity#age" style={{ fontSize: '20px', textDecoration: 'none' }}>younger generations</a>, perceive themselves on a non-binary 
                   gender continuum and call themselves non-binary, genderqueer or queer, gender 
                   non-conforming, gender fluid, or gender-expansive. These terms all mean that they 
@@ -1024,7 +1030,10 @@ const AreasOfIdentity = () => {
 
                 <p>
                   In addition, some people identify as transgender, meaning they experience 
-                  themselves as having the gender identity opposite to the one assigned at birth. 
+                  themselves as having the 
+                  
+                  <a href="/identity#sexAtBirth" style={{ fontSize: '20px', textDecoration: 'none' }}>gender identity opposite to the one assigned at birth. </a>
+                  
                   People who identify as female but were assigned a male sex at birth are transwomen 
                   and those who who identify as  male but were assigned a female sex at birth are 
                   transmen regardless of whether they have used hormonal  interventions. Transgender 
