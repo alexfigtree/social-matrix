@@ -134,7 +134,7 @@ const FormPostContainer = () => {
 
             <Typography variant="h6" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
               If you have any questions, you can contact the primary investigator, 
-              Jodie Kliman, PhD, at <a href = "mailto:jodiekliman@socialmatrixdiagram.org">jodiekliman@socialmatrixdiagram.org</a> or at <a href="info@socialmatrixdiagram.org">info@socialmatrixdiagram.org</a>.  
+              Jodie Kliman, PhD, at <a href = "mailto:jodiekliman@socialmatrixdiagram.org">jodiekliman@socialmatrixdiagram.org</a> or at <a href="mailto:info@socialmatrixdiagram.org">info@socialmatrixdiagram.org</a>.  
             </Typography>
 
 
