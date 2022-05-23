@@ -10,3 +10,6 @@ Pre-Installation Instructions:
 Instructions:
 1) Download a copy of this repository: Click on green Copy button on upper right hand corner.
 2) Navigate to directory either through terminal(Mac) or PowerShell (Windows)
+3) In client directory, run `npm start`. This will open a browser window and navigate to http://localhost:3000/ to run the project
+
+To create a production build, use npm run build.
