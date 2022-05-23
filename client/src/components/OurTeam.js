@@ -29,7 +29,7 @@ const OurTeam = () => {
             
             <br/>
             <Typography variant="h5" align="left" style={{ marginLeft: '10%', marginRight: '10%', paddingBottom: '20px', paddingTop: '20px'}}>
-                JODIE KLIMAN, Ph.D. is a social-clinical psychologist and Professor of Clinical 
+                TEST JODIE KLIMAN, Ph.D. is a social-clinical psychologist and Professor of Clinical 
                 Psychology at William James College. She is the original and lead developer of the 
                 Social Matrix Diagram and has published extensively on social justice issues, trauma, 
                 multiculturalism, feminism, and intersectionality in the practice and teaching of 
