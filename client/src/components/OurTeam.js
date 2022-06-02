@@ -59,7 +59,7 @@ const OurTeam = () => {
                 clinical and practical uses of acculturation and the impact of level of acculturation 
                 and acculturative stress on mental health. Yacihuilca is also interested in understanding 
                 how clinicians’ intersecting identities impacts the therapeutic relationship. She can be 
-                reached at <a href="mailto:tainos1844@gmail.com">tainos1844@gmail.com</a>.
+                reached at <a href="mailto:tainos1844@gmail.com">tainos1844@gmail.com test</a>.
             </Typography>
 
 
