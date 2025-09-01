@@ -30,7 +30,7 @@ export let data = [
     {axis:"Family Religion",value:6},
     {axis:"Language(s) Spoken",value:1},
 
-    {axis:"Nation of Origin / Citizenship",value:1},
+    {axis:"Nation of Origin / Citizenship / Immigration History",value:1},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:2}, //two values
@@ -72,7 +72,7 @@ export let data = [
     {axis:"Family Religion",value:6},
     {axis:"Language(s) Spoken",value:1},
 
-    {axis:"Nation of Origin / Citizenship",value:3},
+    {axis:"Nation of Origin / Citizenship / Immigration History",value:3},
     {axis:"Ethnicity / Tribe",value:5},
     {axis:"Race(s)",value:4},
     {axis:"Guardians’ Access",value:3}, //two values
